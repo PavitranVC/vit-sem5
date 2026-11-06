@@ -1,0 +1,371 @@
+# CAD (AWS folder) slide map: page ranges by slide title
+
+Generated from the PDFs' own slide titles. Open these files from the `AWS/` folder. Use it to jump to the right pages for each study block.
+
+## Module 1 - Session 1  (Module 1/M1_Session1.pdf, 32 pages)
+- p.1: BCSE355L – Cloud Architecture Design
+- p.2: Cloud computing defined
+- p.3: Introduction to Cloud Computing
+- p.4: Evolution of Cloud Computing
+- p.5: Characteristics of Cloud Computing- NIST
+- p.6: Knowledge Check
+- p.7: Virtualization
+- p.8: Physical Vs Virtual Machine
+- p.9: Cloud service classification
+- p.10: Cloud service models
+- p.11: Cloud computing deployment models
+- p.12-13: Knowledge Check
+- p.14: What are web services?
+- p.15: What is AWS?
+- p.16: Categories of AWS services
+- p.17: Services covered in this course
+- p.18: Choosing a service
+- p.19: Similarities between AWS and traditional IT
+- p.20: Simple solution example
+- p.21: Three ways to interact with AWS
+- p.22: AWS Global Infrastructure
+- p.23: AWS Regions
+- p.24: Selecting a Region
+- p.25: Availability Zones
+- p.26: AWS data centers
+- p.27: Points of Presence
+- p.28: AWS infrastructure features
+- p.29: (image/blank)
+- p.30-31: Knowledge Check
+- p.32: Thank
+
+## Module 1 - Session 2  (Module 1/M1_Session2.pdf, 25 pages)
+- p.1: BCSE355L – Cloud Architecture Design
+- p.2: AWS shared responsibility model
+- p.3: AWS responsibility: Security of the cloud
+- p.4: Customer responsibility: Security in the cloud
+- p.5-6: Service characteristics and security responsibility
+- p.7: Activity: Scenario 1 of 2
+- p.8: Activity: Scenario 2 of 2
+- p.9: AWS Identity and Access Management
+- p.10: IAM: Essential components
+- p.11: Authenticate as an IAM user to gain access
+- p.12: IAM MFA
+- p.13: Authorization: What actions are permitted
+- p.14: IAM: Authorization
+- p.15: IAM policies
+- p.16: IAM policy example
+- p.17: Resource-based policies
+- p.18: IAM permissions
+- p.19: IAM groups
+- p.20: IAM roles
+- p.21: IAM Best Practices
+- p.22: Example use of an IAM role
+- p.23: Case Study-1
+- p.24: Lab -1: Introduction to AWS IAM
+- p.25: Thank
+
+## Module 2 (compute and storage)  (Module 2.pdf, 105 pages)
+- p.1: BCSE355L – Cloud Architecture Design
+- p.2: Amazon EC2 (Elastic Compute Cloud)
+- p.3: AWS compute services
+- p.4: Categorizing compute services
+- p.5: Choosing the optimal compute service
+- p.6: Amazon Elastic Compute Cloud (Amazon EC2)
+- p.7: Amazon EC2 overview
+- p.8: Launching an Amazon EC2
+- p.9: 1. Select an AMI
+- p.10: Creating a new AMI: Example
+- p.11: 2. Select an instance type
+- p.12: EC2 instance type naming and sizes
+- p.13: Select instance type: Based on use case
+- p.14: 3. Specify network settings
+- p.15: 4. Attach IAM role (optional)
+- p.16: 5. User data script (optional)
+- p.17: 6. Specify storage
+- p.18: Amazon EC2 storage options
+- p.19: Example storage options
+- p.20: 7. Add tags
+- p.21: 8. Security group settings
+- p.22: 9. Identify or create the key pair
+- p.23: Amazon EC2 console view of a running EC2 instance
+- p.24: Another option: Launch an EC2 instance with the AWS Command Line Inter
+- p.25: Amazon EC2 instance lifecycle
+- p.26: Instance hibernation option
+- p.27: Consider using an Elastic IP address
+- p.28: EC2 instance metadata
+- p.29: Amazon CloudWatch for monitoring
+- p.30-31: Elastic Load Balancing
+- p.32: Types of load balancers
+- p.33: How Elastic Load Balancing works
+- p.34-35: Elastic Load Balancing use cases
+- p.36: Activity: Elastic Load Balancing
+- p.37: Load balancer monitoring
+- p.38: Amazon EC2 Auto Scaling
+- p.39: Why is scaling important?
+- p.40: Amazon EC2 Auto Scaling
+- p.41: Typical weekly traffic at
+- p.42: November traffic to Amazon.com
+- p.43: Auto Scaling groups
+- p.44: Scaling out versus scaling in
+- p.45: How Amazon EC2 Auto Scaling works
+- p.46: Implementing dynamic scaling
+- p.47: AWS Auto Scaling
+- p.48: Scenario
+- p.49: Final product
+- p.50: Amazon EC2 Pricing Models
+- p.51: Amazon EC2 pricing models
+- p.52: Amazon EC2 pricing models: Benefits
+- p.53: Amazon EC2 pricing models: Use cases
+- p.54: The four pillars of cost optimization
+- p.55: Pillar 1: Right size
+- p.56: Pillar 2: Increase elasticity
+- p.57: Pillar 3: Optimal pricing model
+- p.58: Pillar 4: Optimize storage choices
+- p.59: Measure, monitor, and improve
+- p.60: Activity: Check your understanding
+- p.61: Storage Services
+- p.62: Core AWS services
+- p.63: Storage
+- p.64: AWS storage options: Block storage versus object storage
+- p.65: Amazon EBS
+- p.66: Amazon EBS volume types
+- p.67: Amazon EBS volume type use cases
+- p.68: Amazon EBS features
+- p.69: Amazon EBS: Volumes, IOPS, and pricing
+- p.70: Amazon EBS: Snapshots and data transfer
+- p.71: Amazon Simple Storage Service (Amazon S3)
+- p.72: Storage
+- p.73: Amazon S3 overview
+- p.74: Amazon S3 storage classes
+- p.75: Amazon S3 bucket URLs (two styles)
+- p.76: Data is redundantly stored in the Region
+- p.77: Access the data anywhere
+- p.78: Common use cases
+- p.79: Amazon S3 common scenarios
+- p.80: Amazon S3 pricing
+- p.81-82: Amazon S3: Storage pricing
+- p.83: Amazon Elastic File System (Amazon EFS)
+- p.84: Storage
+- p.85: Amazon EFS features
+- p.86: Amazon EFS architecture
+- p.87: Amazon EFS implementation
+- p.88: Amazon EFS resources
+- p.89: Amazon EBS vs EFS
+- p.90: Amazon S3 Glacier
+- p.91: Storage
+- p.92: Amazon S3 Glacier review
+- p.93: Amazon S3 Glacier
+- p.94: Amazon S3 Glacier use cases
+- p.95: Using Amazon S3 Glacier
+- p.96: Lifecycle policies
+- p.97: Storage comparison
+- p.98: Server-side encryption
+- p.99: Security with Amazon S3 Glacier
+- p.100: Amazon CloudWatch
+- p.101: Monitoring AWS resources
+- p.102: Amazon CloudWatch
+- p.103: CloudWatch alarms
+- p.104: Activity: Amazon CloudWatch
+- p.105: Thank
+
+## Module 3 (networking)  (Module 3.pdf, 59 pages)
+- p.1: BCSE355L – Cloud Architecture Design
+- p.2: Networking basics
+- p.3: Networks
+- p.4: IP addresses
+- p.5: IPv4 and IPv6 addresses
+- p.6: Classless Inter-Domain Routing (CIDR)
+- p.7: Open Systems Interconnection (OSI) model
+- p.8: ○ Module 5: Networking and Content Delivery
+- p.9: Amazon VPC
+- p.10: VPCs and subnets
+- p.11: IP addressing
+- p.12: Reserved IP addresses
+- p.13: Public IP address types
+- p.14: Elastic network interface
+- p.15: Route tables and routes
+- p.16: VPC networking
+- p.17: Internet gateway
+- p.18: Network address translation (NAT) gateway
+- p.19-20: VPC sharing
+- p.21-22: VPC peering
+- p.23-24: AWS Site-to-Site VPN
+- p.25-26: AWS Direct Connect
+- p.27-28: VPC endpoints
+- p.29: Transit gateway: A transit hub that can be used to interconnect
+- p.30: Activity: Label this network diagram
+- p.31: Activity: Solution
+- p.32: VPC security
+- p.33-34: Security groups
+- p.35: Custom security groups
+- p.36: Network access control lists (network ACLs)
+- p.37: Network ACLs
+- p.38: Custom network ACLs
+- p.39: Security groups versus network ACLs
+- p.40: Activity: Design a VPC
+- p.41: Case Study Activity
+- p.42: Presentation Activity
+- p.43-44: Amazon Route 53
+- p.45: Amazon Route 53 DNS resolution
+- p.46-47: Amazon Route 53 supported routing
+- p.48: Use case: Multi-region deployment
+- p.49-50: Amazon Route 53 DNS failover
+- p.51: DNS failover for a multi-tiered web application
+- p.52: Amazon CloudFront
+- p.53: Content delivery and network latency
+- p.54: Content delivery network (CDN)
+- p.55: Amazon CloudFront
+- p.56: Amazon CloudFront infrastructure
+- p.57: Amazon CloudFront benefits
+- p.58: Amazon CloudFront pricing
+- p.59: Thank
+
+## Module 4 (databases)  (Module4.pdf, 73 pages)
+- p.1: BCSE355L – Cloud Architect Design
+- p.2-3: Databases
+- p.4-5: Amazon Relational Database Service
+- p.6: Unmanaged versus managed
+- p.7: Challenges of relational databases
+- p.8: Amazon RDS
+- p.9: From on-premises databases to Amazon
+- p.10: Managed services responsibilities
+- p.11: Amazon RDS DB instances
+- p.12: Amazon RDS in a virtual private cloud
+- p.13-15: High availability with Multi-AZ
+- p.16-17: Amazon RDS read replicas
+- p.18: When to Use Amazon RDS
+- p.19: Use cases
+- p.20: Amazon RDS: Clock-hour billing and
+- p.21: Amazon RDS: DB purchase type and
+- p.22: Amazon RDS: Storage
+- p.23: Amazon RDS: Deployment type and
+- p.24: Lab 5: Scenario
+- p.25: Lab 5: Tasks
+- p.26: Lab 5: Final product
+- p.27-28: Amazon Aurora
+- p.29: Amazon Aurora service benefits
+- p.30: High availability
+- p.31: Resilient design
+- p.32: key takeaways Amazon Aurora features:
+- p.33-34: Amazon RDS vs Aurora
+- p.35: Amazon DynamoDB
+- p.36: Relational versus non-relational databases
+- p.37: What is Amazon DynamoDB?
+- p.38-39: Amazon DynamoDB core
+- p.40-41: Table, Item, Attributes : Example
+- p.42-43: Items in a table must have a key
+- p.44: Partitioning
+- p.45: Secondary Index
+- p.46-50: Amazon DynamoDB Streams
+- p.51: Amazon DynamoDB Streams - Types
+- p.52-54: Amazon DynamoDB Streams
+- p.55: Amazon DynamoDB:
+- p.56: DynamoDB Streams
+- p.57: Amazon DynamoDB demonstration
+- p.58-72: DynamoDB Streams
+- p.73: Thank
+
+## Module 5 main  (Module 5/Module-5.pdf, 36 pages)
+- p.1: Module 5
+- p.2: AWS Management Tools & Cost
+- p.3-35: AWS service management tools
+- p.36: THANK YOU
+
+## Module 5 - CloudWatch  (Module 5/AWS CloudWatch.pdf, 20 pages)
+- p.1-2: AWS Management Tools & Cost
+- p.3: Amazon CloudWatch
+- p.4: AWS CloudWatch
+- p.5-11: Amazon CloudWatch
+- p.12: Amazon CloudWatch Use Cases
+- p.13-14: Amazon CloudWatch
+- p.15-18: Pricing
+- p.19: Activity: Amazon CloudWatch
+- p.20: THANK YOU
+
+## Module 5 - Cost Mgmt  (Module 5/AWS Cost Management.pdf, 20 pages)
+- p.1: AWS Billing and
+- p.2: AWS Billing and Cost Management
+- p.3-6: (image/blank)
+- p.7: The four pillars of cost optimization
+- p.8: Cost analysis
+- p.9-10: © 2019 Amazon Web Services, Inc. or its Affiliates. All rights reserve
+- p.11: Cost Organization
+- p.12: Budget and Planning
+- p.13: AWS Budget
+- p.14: AWS Free Tier
+- p.15: AWS Trusted Advisor
+- p.16: AWS Trusted Advisor Working
+- p.17: AWS Trusted Advisor Dashboard
+- p.18-19: Case Study
+- p.20: Thank you
+
+## Module 5 - CloudTrail  (Module 5/CloudTrial.pdf, 16 pages)
+- p.1: AWS Management Tools & Cost
+- p.2-3: Amazon CloudTrail
+- p.4: Amazon CloudTrail Working
+- p.5-11: Amazon CloudTrail
+- p.12-13: Amazon CloudTrail- Pricing
+- p.14-15: Cloud Watch vs CloudTrail
+- p.16: THANK YOU
+
+## Module 6 - Security and Compliance  (Module 6/AWS Security and Compliance_M6.pdf, 15 pages)
+- p.1: Module 6
+- p.2: Outline
+- p.3: AWS Security and Compliance Services
+- p.4: AWS Security and Compliance
+- p.5: Benefits of AWS security
+- p.6-14: AWS Security and Compliance
+- p.15: THANK YOU
+
+## Module 6 - Shared Responsibility  (Module 6/Shared Responsibility model.pdf, 11 pages)
+- p.1-3: AWS Shared Responsibility Model
+- p.4: AWS Responsibility(Security of the Cloud)
+- p.5: Customer Responsibility(Security in the Cloud)
+- p.6-8: Service Characteristics and Security Responsibility
+- p.9-10: Activity
+- p.11: THANK YOU
+
+## Module 6 - KMS  (Module 6/AWS KMS.pdf, 24 pages)
+- p.1: Module 6 AWS Security and Compliance
+- p.2-23: AWS Key Management Service
+- p.24: THANK YOU
+
+## Module 6 - WAF  (Module 6/WAF.pdf, 27 pages)
+- p.1: Module 6
+- p.2-26: AWS Web Application Firewall
+- p.27: THANK YOU
+
+## Module 6 - Shield  (Module 6/AWS Shield.pdf, 13 pages)
+- p.1-7: AWS Shield
+- p.8-9: AWS Shield Standard
+- p.10-11: AWS Shield Advanced
+- p.12: SCOPE,VIT Module 6
+- p.13: THANK YOU
+
+## Module 6 - Best Practices  (Module 6/Security best Practices.pdf, 19 pages)
+- p.1-18: AWS Security Best Practices
+- p.19: THANK YOU
+
+## Module 7 [external notes]  (Dhivyaa CR's AWS Notes[external]/FALLSEM2026-27_VL_BCSE355L_00200_TH_2026-10-23_Module-7.pdf, 101 pages)
+- p.1: BCSE355L
+- p.2: BCSE355L -AWS Solutions Architect
+- p.3-5: AWS Application Integration
+- p.6-19: Amazon SQS (Simple Queue Service)
+- p.20-21: s
+- p.22-25: Amazon SQS (Simple Queue Service)
+- p.26-44: Amazon SNS (Simple Notification Service)
+- p.45-63: Amazon SWS (Simple Workflow Service)
+- p.64-81: AWS Step Functions
+- p.82-91: AWS Well-Architected Framework
+- p.92-96: Design Principles for AWS Cloud Architectures
+- p.97-98: Scalability and Elasticity
+- p.99: AWS cloud elasticity
+- p.100-101: High Availability and Fault Tolerance
+
+## Module 8 [external notes]  (Dhivyaa CR's AWS Notes[external]/FALLSEM2026-27_VL_BCSE355L_00200_TH_2026-10-23_Module-8.pdf, 51 pages)
+- p.1: BCSE355L
+- p.2: BCSE355L -AWS Solutions Architect
+- p.3-14: AWS Migration and Hybrid Architecture
+- p.15-29: AWS Database Migration Service (DMS)
+- p.30-34: AWS Server Migration Service (SMS)
+- p.35-36: AWS Snow Family
+- p.37-42: AWS Snow ball
+- p.43-45: AWS Snowball Edge
+- p.46-50: AWS Snowmobile
+- p.51: Comparison

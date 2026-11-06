@@ -1,0 +1,521 @@
+# OS (Operating Systems): slide map (page ranges by slide title)
+
+Generated from each file's own slide titles. Paths are relative to the repo root. 
+
+## OS/MOD 1/Module1.pdf  (67 pages)
+- p.1: BCSE303L-
+- p.2: Text Book(s)
+- p.3: 3
+- p.4: ◎ Introduction to OS: - Functionality of
+- p.5: Let’s Discuss
+- p.6: A program that acts as an
+- p.7: ➢A computer program that acts as an
+- p.8: Role #1: Resource coordinator (I.e., manager)
+- p.9: • Hardware resources of a computer:
+- p.10: Role #2: abstract resources
+- p.11: • Memory Management
+- p.12: Memory Management
+- p.13: Processor Management
+- p.14: Device Management
+- p.15: File Management
+- p.16: Other Important Activities
+- p.17: Services
+- p.18: ❑ Manipulation of File System: The Operating System is responsible for
+- p.19: Resource Management
+- p.20: Four Components of a Computer System
+- p.21: OS Abstraction
+- p.22: • Abstraction
+- p.23: Abstraction layers used in OS design
+- p.24: HAL (Hardware Abstraction Layer)
+- p.25: OS in relationship to hardware
+- p.26: Role of device, device controller and
+- p.27: • Desirable qualities of an OS
+- p.28: History of the OS
+- p.29: Evolution of OS
+- p.30: • Multitasking or Multiprogramming OS
+- p.31: • Multiprogramming needed for
+- p.32: • Multi-programming systems demand
+- p.33: Multiprocessor system
+- p.34: Types of OS
+- p.35: Timesharing OS
+- p.36: Distributed OS
+- p.37: Network OS
+- p.38: The advantages of network operating systems are as follows −
+- p.39: • Real-Time OS
+- p.40: Other OS
+- p.41: Two modes of operation
+- p.42: ARCHITECTURAL APPROACHES TO
+- p.43: • Monolithic single-kernel OS approach written as a single program ( n
+- p.44: 44
+- p.45: • Disadvantages
+- p.46: Layered Operating System
+- p.47: 47
+- p.48: • The operating system is divided into a number of layers
+- p.49: 49
+- p.50: Modular Approach
+- p.51: 51
+- p.52: • Microkernel OS approach
+- p.53: 53
+- p.54: • OS Design Issues
+- p.55: Operating System- Design Issues
+- p.56: 1. Transparency
+- p.57: Access Transparency
+- p.58: 2. Flexibility
+- p.59: Types of OS Flexibility
+- p.60: 3. Reliability
+- p.61: Why Current OSs May Be Unreliable?
+- p.62: 4. Performance
+- p.63: 5. Scalability
+- p.64: 6. Naming
+- p.65: 7. Replication
+- p.66: 8. Synchronization
+- p.67: 9. Security
+
+## OS/MOD 2/Module2.pdf  (84 pages)
+- p.1: Module 2
+- p.2: System Calls
+- p.3: Example of System Calls
+- p.4: Standard C Library Example
+- p.5: System calls
+- p.6: (image/blank)
+- p.7: Examples of Windows and
+- p.8: 8
+- p.9: API – System Call – OS Relationship
+- p.10-11: Difference between API and System call
+- p.12: 12
+- p.13: Registers
+- p.14: 2. Memory Block (or Table)
+- p.15: 3. Stack-Based Passing
+- p.16: 16
+- p.17-18: Operating system operations
+- p.19: Exception and interrupts
+- p.20: Transition from user to kernel mode
+- p.21: Exception and interrupt handler
+- p.22-23: (image/blank)
+- p.24: Process Concept
+- p.25: Process in Memory
+- p.26: Program to Process
+- p.27: Process Concept (Cont.)
+- p.28: Program, executable and process
+- p.29: Process State
+- p.30: State Transition
+- p.31: Process Control Block (PCB)
+- p.32: Process Scheduling
+- p.33: Ready Queue And Various I/O Device Queues
+- p.34: Representation of Process Scheduling
+- p.35: Schedulers
+- p.36: Addition of Medium Term Scheduling
+- p.37: State Transition with suspended states
+- p.38: Context Switch
+- p.39: CPU Switch From Process to Process
+- p.40: Operations on Processes
+- p.41: Process Creation
+- p.42: Process Creation (Cont.)
+- p.43: Process Management - System calls
+- p.44: Process Mgt. - System Calls
+- p.45: fork() - example
+- p.46: C Program Forking Separate Process
+- p.47-48: Process Termination
+- p.49: Orphans
+- p.50: Wait
+- p.51: Zombies
+- p.52: Threads
+- p.53: Definition
+- p.54: Single and Multithreaded Processes
+- p.55: Single thread Vs multi thread
+- p.56: Each thread has:
+- p.57: Benefits
+- p.58: Less time to Threads enhance
+- p.59: Threads
+- p.60: Thread Execution States
+- p.61: Thread Execution
+- p.62: Multicore programming
+- p.63: Challenges in programming for
+- p.64: Types of Threads
+- p.65: User-Level Threads (ULTs)
+- p.66: Relationships Between ULT
+- p.67: Advantages of ULTs
+- p.68: Disadvantages of ULTs
+- p.69: Kernel-Level Threads (KLTs)
+- p.70: Advantages of KLTs
+- p.71: Disadvantage of KLTs
+- p.72: Combined Approaches
+- p.73: Multithreading Models
+- p.74-75: Many-to-One Model
+- p.76: One-to-one Model
+- p.77: One-to-One
+- p.78-79: Many-to-Many Model
+- p.80-81: Two-level Model
+- p.82: Thread Libraries
+- p.83: Pthreads
+- p.84: Java Threads
+
+## OS/MOD 3/deadlocks.pdf  (44 pages)
+- p.1-2: Deadlocks
+- p.3: The Deadlock Problem
+- p.4: Bridge Crossing Example
+- p.5: System Model
+- p.6: Deadlock Characterization
+- p.7: Resource-Allocation Graph
+- p.8: Resource-Allocation Graph (Cont.)
+- p.9: Example of a Resource Allocation Graph
+- p.10: Resource Allocation Graph With A Deadlock
+- p.11: Graph With A Cycle But No Deadlock
+- p.12: Basic Facts
+- p.13: Methods for Handling Deadlocks
+- p.14: Deadlock Prevention
+- p.15: Deadlock Prevention (Cont.)
+- p.16: Let R ={ R1,R2,R3}
+- p.17: Deadlock Avoidance
+- p.18: Safe State
+- p.19: Basic Facts
+- p.20: Safe, Unsafe , Deadlock State
+- p.21: Avoidance algorithms
+- p.22: Resource-Allocation Graph Scheme
+- p.23: Resource-Allocation Graph
+- p.24: Unsafe State In Resource-Allocation Graph
+- p.25: Resource-Allocation Graph Algorithm
+- p.26: Banker’s Algorithm
+- p.27: Data Structures for the Banker’s Algorithm
+- p.28: Safety Algorithm
+- p.29: Resource-Request Algorithm for Process Pi
+- p.30: Example of Banker’s Algorithm
+- p.31: Example (Cont.)
+- p.32: Example: P1 Request (1,0,2)
+- p.33: If a request from a process P4 arrived for additional resources of (1,
+- p.34: Deadlock Detection
+- p.35: Single Instance of Each Resource Type
+- p.36: Resource-Allocation Graph and Wait-for Graph
+- p.37: Several Instances of a Resource Type
+- p.38: Detection Algorithm
+- p.39: Detection Algorithm (Cont.)
+- p.40: Example of Detection Algorithm
+- p.41: Example (Cont.)
+- p.42: Detection-Algorithm Usage
+- p.43: Recovery from Deadlock: Process Termination
+- p.44: Recovery from Deadlock: Resource Preemption
+
+## OS/MOD 3/module3.pdf  (40 pages)
+- p.1: CPU Scheduling
+- p.2: Basic Concepts
+- p.3: Scheduling Criteria
+- p.4: Scheduling Algorithm Optimization Criteria
+- p.5: CPU Scheduling Algorithms
+- p.6: First- Come, First-Served (FCFS) Scheduling
+- p.7: FCFS Scheduling (Cont.)
+- p.8: Shortest-Job-First (SJF) Scheduling
+- p.9: Example of SJF
+- p.10: Priority Scheduling
+- p.11: Example of Priority Scheduling
+- p.12: Process Arrival Time Burst Time Priority
+- p.13: Pre-emptive Algorithms
+- p.14: Example of Shortest-remaining-time-first
+- p.15: Pre-emptive Priority
+- p.16: Round Robin (RR)
+- p.17: Example of RR with Time Quantum = 4
+- p.18: Time Quantum and Context Switch Time
+- p.19: Turnaround Time Varies With The Time Quantum
+- p.20: (image/blank)
+- p.21: Multilevel Queue
+- p.22: Multilevel Queue Scheduling
+- p.23: (image/blank)
+- p.24: Multilevel Feedback Queue
+- p.25: Example of Multilevel Feedback Queue
+- p.26: (image/blank)
+- p.27: Multiprocessor Scheduling
+- p.28: Approaches
+- p.29: (image/blank)
+- p.30-31: Processor Affinity
+- p.32: CPU Scheduling problems with IO burst time
+- p.33: Total Burst Time I/O Burst CPU Burst I/O Burst
+- p.34: Percentage of time CPU remains idle
+- p.35: Consider the set of 4 processes whose arrival time and burst time are 
+- p.36: Average Turn Around time = (11 + 7 + 7 + 11) / 4 = 36 / 4 = 9 units
+- p.37: Waiting Time
+- p.38: Consider the set of 4 processes whose arrival time and burst time are 
+- p.39: Assuming Arrival Time 0 calculate the AWT
+- p.40: (image/blank)
+
+## OS/MOD 4/concurrency-material.pdf  (65 pages)
+- p.1: Module 4
+- p.2: Interprocess Communication
+- p.3: Communications Models
+- p.4: Producer-Consumer Problem
+- p.5: Bounded-Buffer – Shared-Memory Solution
+- p.6: Bounded-Buffer – Producer
+- p.7: Bounded Buffer – Consumer
+- p.8: Interprocess Communication – Shared Memory
+- p.9: Interprocess Communication – Message Passing
+- p.10: Message Passing (Cont.)
+- p.11: Direct Communication
+- p.12-14: Indirect Communication
+- p.15-16: Pipes
+- p.17: Ordinary Pipes
+- p.18: (image/blank)
+- p.19: #include<stdio.h>
+- p.20: if(pid<0)
+- p.21: Process Synchronization
+- p.22: Producer-Consumer Problem
+- p.23: Bounded-Buffer – Shared-Memory Solution
+- p.24: Bounded-Buffer – Insert() Method
+- p.25: Bounded Buffer – Remove() Method
+- p.26: Background
+- p.27: Producer
+- p.28: Consumer
+- p.29: Race Condition
+- p.30: Critical Sections
+- p.31: Solution to Critical-Section Problem
+- p.32: Peterson’s Solution
+- p.33: Algorithm for Process Pi
+- p.34: (image/blank)
+- p.35: Bakery Algorithm
+- p.36: Hardware Solution to CS
+- p.37: TestAndSet Atomic Instruction
+- p.38: Solution to CS using TestAndSet
+- p.39: Shared variable: boolean waiting[n]; boolean lock;
+- p.40: Swap Atomic Instruction
+- p.41: Solution using Swap
+- p.42: Semaphore
+- p.43: Semaphore as General Synchronization Tool
+- p.44: Classical Problems of Synchronization
+- p.45: Bounded-Buffer Problem
+- p.46: The structure of the producer process
+- p.47: The structure of the consumer process
+- p.48: Readers-Writers Problem
+- p.49-50: Readers-Writers Problem (Cont.)
+- p.51: Dining-Philosophers Problem
+- p.52: Philo 1
+- p.53: Dining-Philosophers Problem (Cont.)
+- p.54: Problems with Semaphores
+- p.55: Semaphore Implementation with no Busy waiting
+- p.56: Semaphore Implementation with no Busy waiting (Cont.)
+- p.57: Deadlock and Starvation
+- p.58: Monitors
+- p.59: Schematic view of a Monitor
+- p.60: Condition Variables
+- p.61: Now suppose that, when the x.signal() operation is invoked by a proces
+- p.62: Monitor with Condition Variables
+- p.63: Producer - Consumer
+- p.64: void putdown (int i) {
+- p.65: Solution to Dining Philosophers (cont)
+
+## OS/MOD 6/File-systems.pdf  (52 pages)
+- p.1: File Systems
+- p.2: ➢File is a named collection of
+- p.3: ➢File has certain defined structure ,according to
+- p.4: File Attributes
+- p.5: File Operations
+- p.6: File Types
+- p.7: Open Files
+- p.8: File Structure
+- p.9: Access Methods
+- p.10: Sequential Access
+- p.11: Direct Access(Relative access)
+- p.12: Other Access Methods
+- p.13: ➢It is built on top of the direct access
+- p.14: File System
+- p.15: Layered File System
+- p.16: File System Layers
+- p.17: File System Layers (Cont.)
+- p.18: Directory Structure
+- p.19: (image/blank)
+- p.20: Information in the directory
+- p.21: Operations performed on a
+- p.22: Single Level Directory
+- p.23: Two-Level Directory
+- p.24: Tree-Structured Directories
+- p.25: ➢ This generalization allows users to create their own sub-
+- p.26: Graph Directories
+- p.27: Allocation Methods
+- p.28: Contiguous Allocation
+- p.29: Contiguous Allocation of Disk
+- p.30: Extent-Based Systems
+- p.31: An extent is a contiguous group of blocks on disk.
+- p.32: Linked Allocation
+- p.33: Linked Allocation (Cont.)
+- p.34: Linked Allocation
+- p.35: File-Allocation Table
+- p.36: Indexed Allocation
+- p.37: Example of Indexed Allocation
+- p.38: Indexed Allocation (Cont.)
+- p.39: Indexed Allocation – Mapping
+- p.40: Recovery
+- p.41: Log Structured File Systems
+- p.42: • Without journaling, a crash during file operations could leave:
+- p.43: Distributed File System
+- p.44: Features
+- p.45: DFS Structure
+- p.46: 3. Namespace / Metadata Manager
+- p.47: Naming and Transparency
+- p.48: Naming Structures
+- p.49: Remote File Access
+- p.50: Cache
+- p.51: Cache Update Policy
+- p.52: Consistency
+
+## OS/MOD 6/virtualization.pdf  (23 pages)
+- p.1: Module 6
+- p.2: Virtual Machines-Overview
+- p.3: System Models
+- p.4: Types of Virtualization:
+- p.5: Advantages of Virtualization
+- p.6: Requirements For Virtualization
+- p.7: Types of Hypervisors
+- p.8: 2. Type 2 Hypervisor (Hosted Hypervisor)
+- p.9: (image/blank)
+- p.10: • Variants of Virtualization:
+- p.11-12: Benefits and Features
+- p.13: Building Blocks – Trap and Emulate
+- p.14: How dual mode transitions work in a VM
+- p.15: Trap-and-Emulate Virtualization
+- p.16: Binary Translation
+- p.17: Nested Page Tables
+- p.18: Building Blocks – Hardware Assistance
+- p.19: Types of VMs – Programming Environment
+- p.20: Virtualization and Operating-System
+- p.21: OS Component – CPU Scheduling
+- p.22: OS Component – Memory Management
+- p.23: OS Component – I/O
+
+## OS/MOD 7/module-7.pdf  (53 pages)
+- p.1: Mass-Storage Systems
+- p.2: Moving-head Disk Mechanism
+- p.3: Overview of Mass Storage Structure
+- p.4: Disk Structure
+- p.5: Operating System Concepts – 9th Edition 10.5 Silberschatz, Galvin and 
+- p.6: Disk Overheads
+- p.7: Disk Scheduling
+- p.8: Disk Scheduling (Cont.)
+- p.9: FCFS
+- p.10: SSTF
+- p.11: SCAN
+- p.12: SCAN (Cont.)
+- p.13: C-SCAN
+- p.14: C-SCAN (Cont.)
+- p.15: C-LOOK
+- p.16: C-LOOK (Cont.)
+- p.17: On a disk with 1000 cylinders numbers 0 to 999, compute the number of 
+- p.18: Access Control
+- p.19: Protection - Access Control
+- p.20: Protection – UNIX Access Lists and Groups
+- p.21: Protection - summary
+- p.22: Principles of Protection
+- p.23: Domain of Protection
+- p.24: Domain Structure
+- p.25: Domain Implementation (UNIX)
+- p.26: Access Matrix - contd
+- p.27: Access Matrix
+- p.28-29: Access Matrix - contd
+- p.30: Domain Switching: Access Matrix with
+- p.31: Access Matrix with Copy Rights
+- p.32-33: Access Matrix with Copy Rights - contd
+- p.34: Access Matrix With Owner Rights
+- p.35-36: Access Matrix With Control Rights
+- p.37: Access Matrix Implementation
+- p.38: Security Threats and Attacks
+- p.39: Friends and enemies: Alice, Bob, Trudy
+- p.40: Eavesdropping - Message
+- p.41: Integrity Attack - Tampering With
+- p.42: Authenticity Attack - Fabrication
+- p.43: Attack on Availability
+- p.44: Classify Security Attacks as
+- p.45: Security Policy and Mechanism
+- p.46: OSI Security Architecture
+- p.47-48: Model for Network Security
+- p.49: . Sender Creates a Message
+- p.50: 4. Recipient Performs Security-related Transformation (Decryption)
+- p.51-52: Model for Network Access Security
+- p.53: The Security Life Cycle
+
+## OS/MOD 5/memory-management.pptx  (95 slides)
+- p.1-2: Memory Management
+- p.3: Objectives
+- p.4: Background
+- p.5: Base and Limit Registers
+- p.6: Hardware Address Protection
+- p.7: Binding of Instructions and Data to Memory
+- p.8: Dynamic relocation using a relocation register
+- p.9: Logical vs. Physical Address Space
+- p.10: Contiguous Allocation
+- p.11: Contiguous Allocation (Cont.)
+- p.12: Hardware Support for Relocation and Limit Registers
+- p.13: Multiple-partition allocation
+- p.14: Dynamic Storage-Allocation Problem
+- p.15: Given five memory partitions of 100Kb, 500Kb, 200Kb, 300Kb, 600Kb (in 
+- p.16: Fragmentation
+- p.17: Fragmentation (Cont.)
+- p.18: Paging
+- p.19: Paging Model of Logical and Physical Memory
+- p.20: Paging Hardware
+- p.21: Paging Example
+- p.22: Address Translation Scheme
+- p.23: Paging (Cont.)
+- p.24: Consider a paging system with a page size of 2 KB, physical memory of 
+- p.25: Free Frames
+- p.26: Implementation of Page Table
+- p.27: Implementation of Page Table (Cont.)
+- p.28: Associative Memory
+- p.29: Paging Hardware With TLB
+- p.30: Effective Access Time
+- p.31: Memory Protection
+- p.32: Valid (v) or Invalid (i) Bit In A Page Table
+- p.33: Structure of the Page Table
+- p.34: Hierarchical Page Tables
+- p.35: Two-Level Page-Table Scheme
+- p.36: Two-Level Paging Example
+- p.37: Address-Translation Scheme
+- p.38: 64-bit Logical Address Space
+- p.39: Three-level Paging Scheme
+- p.40-42: (image/blank)
+- p.43: Hashed Page Tables
+- p.44: Hashed Page Table
+- p.45: Inverted Page Table
+- p.46: Inverted Page Table Architecture
+- p.47: Segmentation
+- p.48: User’s View of a Program
+- p.49: Logical View of Segmentation
+- p.50: Segmentation Architecture
+- p.51: Segmentation Hardware
+- p.52: Example of Segmentation
+- p.53: Example
+- p.54: Virtual Memory
+- p.55: Background
+- p.56: Virtual Memory That is Larger Than Physical Memory
+- p.57: Demand Paging
+- p.58: Transfer of a Paged Memory to Contiguous Disk Space
+- p.59: Valid-Invalid Bit
+- p.60: Page Table When Some Pages Are Not in Main Memory
+- p.61: Page Fault
+- p.62: Steps in Handling a Page Fault
+- p.63: Operating System Concepts
+- p.64: Performance of Demand Paging
+- p.65: Demand Paging Example
+- p.66: What happens if there is no free frame?
+- p.67: Need For Page Replacement
+- p.68: Page Replacement
+- p.69: Basic Page Replacement
+- p.70: Page Replacement
+- p.71: Page Replacement Algorithms
+- p.72: Graph of Page Faults Versus The Number of Frames
+- p.73: Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5
+- p.74: FIFO Page Replacement
+- p.75: First-In-First-Out (FIFO) Algorithm
+- p.76: FIFO Illustrating Belady’s Anamoly
+- p.77: Optimal Algorithm
+- p.78: Optimal Page Replacement
+- p.79: Least Recently Used (LRU) Algorithm
+- p.80: LRU Page Replacement
+- p.81: LRU Algorithm (Cont.)
+- p.82: Use Of A Stack to Record The Most Recent Page References
+- p.83: LRU Approximation Algorithms
+- p.84: Second-Chance (clock) Page-Replacement Algorithm
+- p.85: Counting Algorithms
+- p.86: Allocation of Frames
+- p.87: Fixed Allocation
+- p.88: Priority Allocation
+- p.89: Global vs. Local Allocation
+- p.90-91: Thrashing
+- p.92: Locality In A Memory-Reference Pattern
+- p.93: Working-Set Model
+- p.94: Working-set model
+- p.95: Page-Fault Frequency Scheme

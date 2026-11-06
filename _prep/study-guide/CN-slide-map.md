@@ -1,0 +1,737 @@
+# CN (Computer Networks): slide map (page ranges by slide title)
+
+Generated from each file's own slide titles. Paths are relative to the repo root. 
+
+## CN/MOD 1/Module-1.pptx  (25 slides)
+- p.1: 1.1
+- p.2: 1.2
+- p.3: 1.3
+- p.4: 1.4
+- p.5: 1.5
+- p.6: 1.6
+- p.7: 1.7
+- p.8: 1.8
+- p.9: 1.9
+- p.10: 1.10
+- p.11: 1.11
+- p.12: 1.12
+- p.13: 1.13
+- p.14: LAN
+- p.15: 1.15
+- p.16: 1.16
+- p.17: 1.17
+- p.18: 1.18
+- p.19: 1.19
+- p.20: A Brief History
+- p.21: 1.21
+- p.22: 1.22
+- p.23: Protocol
+- p.24: Standards
+- p.25: Standards Organization
+
+## CN/MOD 1/OSI-Model.pptx  (55 slides)
+- p.1: 2.1
+- p.2: 2.2
+- p.3: 2.3
+- p.4: 2.4
+- p.5: 2.5
+- p.6: 2.6
+- p.7: 2.7
+- p.8: 2.8
+- p.9: 2.9
+- p.10: 2.10
+- p.11: 2.11
+- p.12: 2.12
+- p.13: 2.13
+- p.14: 2.14
+- p.15: 2.15
+- p.16: 2.16
+- p.17: 2.17
+- p.18: 2.18
+- p.19: 2.19
+- p.20: 2.20
+- p.21: 2.21
+- p.22: 2.22
+- p.23: 2.23
+- p.24-30: (image/blank)
+- p.31: 2.31
+- p.32: 2.32
+- p.33: 2.33
+- p.34: (image/blank)
+- p.35: 2.35
+- p.36: 2.36
+- p.37: 2.37
+- p.38: 2.38
+- p.39: 2.39
+- p.40: 2.40
+- p.41: 2.41
+- p.42: 2.42
+- p.43: 2.43
+- p.44: 2.44
+- p.45: 2.45
+- p.46: 2.46
+- p.47: 2.47
+- p.48: 2.48
+- p.49: 2.49
+- p.50: 2.50
+- p.51: 2.51
+- p.52: 2.52
+- p.53: 2.53
+- p.54: 2.54
+- p.55: 2.55
+
+## CN/MOD 2/Switching.pptx  (45 slides)
+- p.1: 8.1
+- p.2: 8.2
+- p.3: 8.3
+- p.4: 8.4
+- p.5: 8.5
+- p.6: 8.6
+- p.7: 8.7
+- p.8: 8.8
+- p.9: 8.9
+- p.10: 8.10
+- p.11: 8.11
+- p.12: 8.12
+- p.13: 8.13
+- p.14: 8.14
+- p.15: 8.15
+- p.16: 8.16
+- p.17: 8.17
+- p.18: 8.18
+- p.19: 8.19
+- p.20: 8.20
+- p.21: 8.21
+- p.22: 8.22
+- p.23: 8.23
+- p.24: 8.24
+- p.25: 8.25
+- p.26: 8.26
+- p.27: 8.27
+- p.28: 8.28
+- p.29: 8.29
+- p.30: 8.30
+- p.31: 8.31
+- p.32: 8.32
+- p.33: Transmission media
+- p.34: Causes Of Transmission Impairment
+- p.35: 3.35
+- p.36: 3.36
+- p.37: 3.37
+- p.38: 3.38
+- p.39: 3.39
+- p.40: 3.40
+- p.41: 3.41
+- p.42-43: Performance
+- p.44: 8.44
+- p.45: 8.45
+
+## CN/MOD 3/Access Control.pptx  (61 slides)
+- p.1: Chapter 12
+- p.2: Figure 12.1 Data link layer divided into two functionality-oriented su
+- p.3: Figure 12.2 Taxonomy of multiple-access protocols discussed in this ch
+- p.4: 12-1 RANDOM ACCESS
+- p.5: Aloha
+- p.6: Figure 12.3 Frames in a pure ALOHA network
+- p.7: Figure 12.4 Procedure for pure ALOHA protocol
+- p.8: The stations on a wireless ALOHA network are a maximum of 600 km apart
+- p.9: b. For K = 2, the range is {0, 1, 2, 3}. This means that TB
+- p.10: Figure 12.5 Vulnerable time for pure ALOHA protocol
+- p.11: A pure ALOHA network transmits 200-bit frames on a shared channel of 2
+- p.12: The throughput for pure ALOHA is 
+- p.13: A pure ALOHA network transmits 200-bit frames on a shared channel of 2
+- p.14: Example 12.3 (continued)
+- p.15: Figure 12.6 Frames in a slotted ALOHA network
+- p.16: The throughput for slotted ALOHA is 
+- p.17: Figure 12.7 Vulnerable time for slotted ALOHA protocol
+- p.18: A slotted ALOHA network transmits 200-bit frames on a shared channel o
+- p.19: Example 12.4 (continued)
+- p.20-21: (image/blank)
+- p.22: CSMA
+- p.23: Figure 12.10 Behavior of three persistence methods
+- p.24: Figure 12.11 Flow diagram for three persistence methods
+- p.25: Figure 12.8 Space/time model of the collision in CSMA
+- p.26: Figure 12.9 Vulnerable time in CSMA
+- p.27: Figure 12.12 Collision of the first bit in CSMA/CD
+- p.28: Figure 12.13 Collision and abortion in CSMA/CD
+- p.29: Figure 12.14 Flow diagram for the CSMA/CD
+- p.30: A network using CSMA/CD has a bandwidth of 10 Mbps. If the maximum pro
+- p.31: Figure 12.15 Energy level during transmission, idleness, or collision
+- p.32: Figure 12.16 Timing in CSMA/CA
+- p.33: In CSMA/CA, the IFS can also be used to define the priority of a stati
+- p.34: In CSMA/CA, if the station finds the channel busy, it does not restart
+- p.35: Figure 12.17 Flow diagram for CSMA/CA
+- p.36: 12-2 CONTROLLED ACCESS
+- p.37: Figure 12.18 Reservation access method
+- p.38: Figure 12.19 Select and poll functions in polling access method
+- p.39: Token Ring
+- p.40: Token Passing Mechanism
+- p.41: If a station has a frame to transmit when it receives a token, it send
+- p.42: Figure 12.20 Logical ring and physical topology in token-passing acces
+- p.43: 12-3 CHANNELIZATION
+- p.44: We see the application of all these methods in Chapter 16 when
+- p.45: Figure 12.21 Frequency-division multiple access (FDMA)
+- p.46: In FDMA, the available bandwidth 
+- p.47: Figure 12.22 Time-division multiple access (TDMA)
+- p.48: In TDMA, the bandwidth is just one channel that is timeshared between 
+- p.49: In CDMA, one channel carries all transmissions simultaneously.
+- p.50: Figure 12.23 Simple idea of communication with code
+- p.51: Figure 12.24 Chip sequences
+- p.52: Figure 12.25 Data representation in CDMA
+- p.53: Figure 12.26 Sharing channel in CDMA
+- p.54: Figure 12.27 Digital signal created by four stations in CDMA
+- p.55: Figure 12.28 Decoding of the composite signal for one in CDMA
+- p.56: Figure 12.29 General rule and examples of creating Walsh tables
+- p.57: The number of sequences in a Walsh table needs to be N = 2m.
+- p.58: Find the chips for a network with
+- p.59: What is the number of sequences if we have 90 stations in our network?
+- p.60: Prove that a receiving station can get the data sent by a specific sen
+- p.61: Example 12.8 (continued)
+
+## CN/MOD 3/Error Detection and Correction.pptx  (93 slides)
+- p.1: 10.1
+- p.2: 10.2
+- p.3: 10.3
+- p.4: 10.4
+- p.5: 10.5
+- p.6: 10.6
+- p.7: 10.7
+- p.8: 10.8
+- p.9: 10.9
+- p.10: 10.10
+- p.11: 10.11
+- p.12: 10.12
+- p.13: 10.13
+- p.14: 10.14
+- p.15: 10.15
+- p.16: 10.16
+- p.17: 10.17
+- p.18: 10.18
+- p.19: 10.19
+- p.20: 10.20
+- p.21: 10.21
+- p.22: 10.22
+- p.23: 10.23
+- p.24: 10.24
+- p.25: 10.25
+- p.26: 10.26
+- p.27: 10.27
+- p.28: 10.28
+- p.29: 10.29
+- p.30: 10.30
+- p.31: 10.31
+- p.32: 10.32
+- p.33: 10.33
+- p.34: 10.34
+- p.35: 10.35
+- p.36: 10.36
+- p.37: 10.37
+- p.38: 10.38
+- p.39: 10.39
+- p.40: 10.40
+- p.41: 10.41
+- p.42: 10.42
+- p.43: 10.43
+- p.44: 10.44
+- p.45: 10.45
+- p.46: 10.46
+- p.47: 10.47
+- p.48: 10.48
+- p.49: 10.49
+- p.50: 10.50
+- p.51: 10.51
+- p.52: 10.52
+- p.53: 10.53
+- p.54: 10.54
+- p.55: 10.55
+- p.56: 10.56
+- p.57: 10.57
+- p.58: 10.58
+- p.59: 10.59
+- p.60: 10.60
+- p.61: 10.61
+- p.62: 10.62
+- p.63: 10.63
+- p.64: 10.64
+- p.65: 10.65
+- p.66: 10.66
+- p.67: 10.67
+- p.68: 10.68
+- p.69: 10.69
+- p.70: 10.70
+- p.71: 10.71
+- p.72: 10.72
+- p.73: 10.73
+- p.74: 10.74
+- p.75: 10.75
+- p.76: 10.76
+- p.77: 10.77
+- p.78: 10.78
+- p.79: 10.79
+- p.80: 10.80
+- p.81: 10.81
+- p.82: 10.82
+- p.83: 10.83
+- p.84: 10.84
+- p.85: 10.85
+- p.86: 10.86
+- p.87: 10.87
+- p.88: 10.88
+- p.89: 10.89
+- p.90: 10.90
+- p.91: 10.91
+- p.92: 10.92
+- p.93: 10.93
+
+## CN/MOD 3/Flow Control.pptx  (103 slides)
+- p.1: 11.1
+- p.2: 11.2
+- p.3: 11.3
+- p.4: 11.4
+- p.5: 11.5
+- p.6: 11.6
+- p.7: 11.7
+- p.8: 11.8
+- p.9: 11.9
+- p.10: 11.10
+- p.11: 11.11
+- p.12: 11.12
+- p.13: 11.13
+- p.14: 11.14
+- p.15: 11.15
+- p.16: 11.16
+- p.17: 11.17
+- p.18: 11.18
+- p.19: 11.19
+- p.20: 11.20
+- p.21: 11.21
+- p.22: 11.22
+- p.23: 11.23
+- p.24: 11.24
+- p.25: 11.25
+- p.26: 11.26
+- p.27: 11.27
+- p.28: 11.28
+- p.29: 11.29
+- p.30: 11.30
+- p.31: 11.31
+- p.32: 11.32
+- p.33: 11.33
+- p.34: 11.34
+- p.35: 11.35
+- p.36: 11.36
+- p.37: 11.37
+- p.38: 11.38
+- p.39: 11.39
+- p.40: 11.40
+- p.41: 11.41
+- p.42: 11.42
+- p.43: 11.43
+- p.44: 11.44
+- p.45: 11.45
+- p.46: 11.46
+- p.47: 11.47
+- p.48: 11.48
+- p.49: 11.49
+- p.50: 11.50
+- p.51: 11.51
+- p.52: 11.52
+- p.53: 11.53
+- p.54: 11.54
+- p.55: 11.55
+- p.56: 11.56
+- p.57: 11.57
+- p.58: 11.58
+- p.59: 11.59
+- p.60: 11.60
+- p.61: 11.61
+- p.62: 11.62
+- p.63: 11.63
+- p.64: 11.64
+- p.65: 11.65
+- p.66: 11.66
+- p.67: 11.67
+- p.68: 11.68
+- p.69: 11.69
+- p.70: 11.70
+- p.71: 11.71
+- p.72: 11.72
+- p.73: 11.73
+- p.74: 11.74
+- p.75: 11.75
+- p.76: 11.76
+- p.77: 11.77
+- p.78: 11.78
+- p.79: 11.79
+- p.80: 11.80
+- p.81: 11.81
+- p.82: 11.82
+- p.83: 11.83
+- p.84: 11.84
+- p.85: 11.85
+- p.86: 11.86
+- p.87: 11.87
+- p.88: 11.88
+- p.89: 11.89
+- p.90: 11.90
+- p.91: 11.91
+- p.92: 11.92
+- p.93: 11.93
+- p.94: 11.94
+- p.95: 11.95
+- p.96: 11.96
+- p.97: 11.97
+- p.98: 11.98
+- p.99: 11.99
+- p.100: 11.100
+- p.101: 11.101
+- p.102: 11.102
+- p.103: 11.103
+
+## CN/MOD 3/Wired LAN.pptx  (41 slides)
+- p.1: 13.1
+- p.2: 13.2
+- p.3: 13.3
+- p.4: 13.4
+- p.5: 13.5
+- p.6: 13.6
+- p.7: 13.7
+- p.8: 13.8
+- p.9: 13.9
+- p.10: 13.10
+- p.11: 13.11
+- p.12: 13.12
+- p.13: 13.13
+- p.14: 13.14
+- p.15: 13.15
+- p.16: 13.16
+- p.17: 13.17
+- p.18: 13.18
+- p.19: 13.19
+- p.20: 13.20
+- p.21: 13.21
+- p.22: 13.22
+- p.23: 13.23
+- p.24: 13.24
+- p.25: 13.25
+- p.26: 13.26
+- p.27: 13.27
+- p.28: 13.28
+- p.29: 13.29
+- p.30: 13.30
+- p.31: 13.31
+- p.32: 13.32
+- p.33: 13.33
+- p.34: 13.34
+- p.35: 13.35
+- p.36: 13.36
+- p.37: 13.37
+- p.38: 13.38
+- p.39: 13.39
+- p.40: 13.40
+- p.41: 13.41
+
+## CN/MOD 3/Wireless LAN .pptx  (16 slides)
+- p.1: 14.1
+- p.2: 14.2
+- p.3: 14.3
+- p.4: 14.4
+- p.5: 14.5
+- p.6: 14.6
+- p.7: 14.7
+- p.8: 14.8
+- p.9: 14.9
+- p.10: 14.10
+- p.11: 14.11
+- p.12: 14.12
+- p.13: 14.13
+- p.14: 14.14
+- p.15: 14.15
+- p.16: 14.16
+
+## CN/MOD 4/IP.pptx  (52 slides)
+- p.1: 20.1
+- p.2: 20.2
+- p.3: 20.3
+- p.4: 20.4
+- p.5: 20.5
+- p.6: 20.6
+- p.7: 20.7
+- p.8: 20.8
+- p.9: 20.9
+- p.10: 20.10
+- p.11: 20.11
+- p.12: 20.12
+- p.13: 20.13
+- p.14: 20.14
+- p.15: 20.15
+- p.16: 20.16
+- p.17: 20.17
+- p.18: 20.18
+- p.19: 20.19
+- p.20: 20.20
+- p.21: 20.21
+- p.22: 20.22
+- p.23: 20.23
+- p.24: 20.24
+- p.25: 20.25
+- p.26: 20.26
+- p.27: 20.27
+- p.28: 20.28
+- p.29: 20.29
+- p.30: 20.30
+- p.31: 20.31
+- p.32: 20.32
+- p.33: 20.33
+- p.34: 20.34
+- p.35: 20.35
+- p.36: 20.36
+- p.37: 20.37
+- p.38: 20.38
+- p.39: 20.39
+- p.40: 20.40
+- p.41: 20.41
+- p.42: 20.42
+- p.43: 20.43
+- p.44: 20.44
+- p.45: 20.45
+- p.46: 20.46
+- p.47: 20.47
+- p.48: 20.48
+- p.49: 20.49
+- p.50: 20.50
+- p.51: 20.51
+- p.52: 20.52
+
+## CN/MOD 4/Logical Addressing.pptx  (60 slides)
+- p.1: 19.1
+- p.2: 19.2
+- p.3: 19.3
+- p.4: 19.4
+- p.5: 19.5
+- p.6: 19.6
+- p.7: 19.7
+- p.8: 19.8
+- p.9: 19.9
+- p.10: 19.10
+- p.11: 19.11
+- p.12: 19.12
+- p.13: 19.13
+- p.14: 19.14
+- p.15: 19.15
+- p.16: 19.16
+- p.17: 19.17
+- p.18: 19.18
+- p.19: 19.19
+- p.20: 19.20
+- p.21: 19.21
+- p.22: 19.22
+- p.23: 19.23
+- p.24: 19.24
+- p.25: 19.25
+- p.26: 19.26
+- p.27: 19.27
+- p.28: 19.28
+- p.29: 19.29
+- p.30: 19.30
+- p.31: 19.31
+- p.32: 19.32
+- p.33: 19.33
+- p.34: 19.34
+- p.35: 19.35
+- p.36: 19.36
+- p.37: 19.37
+- p.38: 19.38
+- p.39: 19.39
+- p.40: 19.40
+- p.41: 19.41
+- p.42: 19.42
+- p.43: 19.43
+- p.44: 19.44
+- p.45: 19.45
+- p.46: 19.46
+- p.47: 19.47
+- p.48: 19.48
+- p.49: 19.49
+- p.50: 19.50
+- p.51: 19.51
+- p.52: 19.52
+- p.53: 19.53
+- p.54: 19.54
+- p.55: 19.55
+- p.56: 19.56
+- p.57: 19.57
+- p.58: 19.58
+- p.59: 19.59
+- p.60: 19.60
+
+## CN/MOD 5/Routing Protocols.pptx  (83 slides)
+- p.1: Chapter 22
+- p.2: 22-1 DELIVERY
+- p.3: Figure 22.1 Direct and indirect delivery
+- p.4: 22-2 FORWARDING
+- p.5: Figure 22.2 Route method versus next-hop method
+- p.6: Figure 22.3 Host-specific versus network-specific method
+- p.7: Figure 22.4 Default method
+- p.8: Figure 22.5 Simplified forwarding module in classless address
+- p.9: In classless addressing, we need at least four columns in a routing ta
+- p.10: Make a routing table for router R1, using the configuration in Figure 
+- p.11: Figure 22.6 Configuration for Example 22.1
+- p.12: Table 22.1 Routing table for router R1 in Figure 22.6
+- p.13-14: Show the forwarding process if a packet arrives at R1 in Figure 22.6 w
+- p.15: Example 22.3 (continued)
+- p.16: Show the forwarding process if a packet arrives at R1 in Figure 22.6 w
+- p.17: Figure 22.7 Address aggregation
+- p.18: Figure 22.8 Longest mask matching
+- p.19: As an example of hierarchical routing, let us consider Figure 22.9. A 
+- p.20: The second local ISP has divided its block into 4 blocks and has assig
+- p.21: Figure 22.9 Hierarchical routing with ISPs
+- p.22: Figure 22.10 Common fields in a routing table
+- p.23: One utility that can be used to find the contents of a routing table f
+- p.24-25: Example 22.6 (continued)
+- p.26: Figure 22.11 Configuration of the server for Example 22.6
+- p.27: 22-3 UNICAST ROUTING PROTOCOLS
+- p.28: Figure 22.12 Autonomous systems
+- p.29: Figure 22.13 Popular routing protocols
+- p.30: Figure 22.14 Distance vector routing tables
+- p.31: Figure 22.15 Initialization of tables in distance vector routing
+- p.32: In distance vector routing, each node shares its routing table with it
+- p.33: Figure 22.16 Updating in distance vector routing
+- p.34: Figure 22.17 Two-node instability
+- p.35: Figure 22.18 Three-node instability
+- p.36: Figure 22.19 Example of a domain using RIP
+- p.37: Figure 22.20 Concept of link state routing
+- p.38: Figure 22.21 Link state knowledge
+- p.39: Figure 22.22 Dijkstra algorithm
+- p.40: Figure 22.23 Example of formation of shortest path tree
+- p.41: Table 22.2 Routing table for node A
+- p.42: Figure 22.24 Areas in an autonomous system
+- p.43: Figure 22.25 Types of links
+- p.44: Figure 22.26 Point-to-point link
+- p.45: Figure 22.27 Transient link
+- p.46: Figure 22.28 Stub link
+- p.47: Figure 22.29 Example of an AS and its graphical representation in OSPF
+- p.48: Figure 22.30 Initial routing tables in path vector routing
+- p.49: Figure 22.31 Stabilized tables for three autonomous systems
+- p.50: Figure 22.32 Internal and external BGP sessions
+- p.51: 22-4 MULTICAST ROUTING PROTOCOLS
+- p.52: Figure 22.33 Unicasting
+- p.53: In unicasting, the router forwards the received packet through
+- p.54: Figure 22.34 Multicasting
+- p.55: In multicasting, the router may 
+- p.56: Figure 22.35 Multicasting versus multiple unicasting
+- p.57: Emulation of multicasting through multiple unicasting is not efficient
+- p.58: In unicast routing, each router in the domain has a table that defines
+- p.59: Figure 22.36 Shortest path tree in unicast routing
+- p.60: In multicast routing, each involved router needs to construct
+- p.61: Figure 22.37 Source-based tree approach
+- p.62: In the source-based tree approach, each router needs to have one short
+- p.63: Figure 22.38 Group-shared tree approach
+- p.64: In the group-shared tree approach, only the core router, which has a s
+- p.65: Figure 22.39 Taxonomy of common multicast protocols
+- p.66: Multicast link state routing uses the source-based tree approach.
+- p.67: Flooding broadcasts packets, but creates loops in the systems.
+- p.68: RPF eliminates the loop in the 
+- p.69: Figure 22.40 Reverse path forwarding (RPF)
+- p.70: Figure 22.41 Problem with RPF
+- p.71: Figure 22.42 RPF Versus RPB
+- p.72: RPB creates a shortest path broadcast tree from the source to each des
+- p.73: Figure 22.43 RPF, RPB, and RPM
+- p.74: RPM adds pruning and grafting to RPB to create a multicast shortest
+- p.75: Figure 22.44 Group-shared tree with rendezvous router
+- p.76: Figure 22.45 Sending a multicast packet to the rendezvous router
+- p.77: In CBT, the source sends the multicast packet (encapsulated in a unica
+- p.78: PIM-DM is used in a dense multicast environment, such as a LAN.
+- p.79: PIM-DM uses RPF and pruning and grafting strategies to handle multicas
+- p.80: PIM-SM is used in a sparse multicast environment such as a WAN.
+- p.81: PIM-SM is similar to CBT but uses a simpler procedure.
+- p.82: Figure 22.46 Logical tunneling
+- p.83: Figure 22.47 MBONE
+
+## CN/MOD 6/UDP TCP.pptx  (49 slides)
+- p.1: 23.1
+- p.2: 23.2
+- p.3: 23.3
+- p.4: 23.4
+- p.5: 23.5
+- p.6: 23.6
+- p.7: 23.7
+- p.8: 23.8
+- p.9: 23.9
+- p.10: 23.10
+- p.11: 23.11
+- p.12: 23.12
+- p.13: 23.13
+- p.14: 23.14
+- p.15: 23.15
+- p.16: 23.16
+- p.17: 23.17
+- p.18: 23.18
+- p.19: 23.19
+- p.20: 23.20
+- p.21: 23.21
+- p.22: 23.22
+- p.23: 23.23
+- p.24: 23.24
+- p.25: 23.25
+- p.26: 23.26
+- p.27: 23.27
+- p.28: 23.28
+- p.29: 23.29
+- p.30: 23.30
+- p.31: 23.31
+- p.32: 23.32
+- p.33: 23.33
+- p.34: 23.34
+- p.35: 23.35
+- p.36: 23.36
+- p.37: 23.37
+- p.38: 23.38
+- p.39: 23.39
+- p.40: 23.40
+- p.41: 23.41
+- p.42: 23.42
+- p.43: 23.43
+- p.44: 23.44
+- p.45: 23.45
+- p.46: 23.46
+- p.47: 23.47
+- p.48: 23.48
+- p.49: 23.49
+
+## CN/MOD 4/Module 4 Notes.pdf  (9 pages)
+- p.1-9: (image/blank)
+
+## CN/MOD 5/Routing Notes.pdf  (1 pages)
+- p.1: A To Gut
+
+## CN/MOD 7/DNS.pdf  (29 pages)
+- p.1: Chapter 25
+- p.2: Figure 25.1 Example of using the DNS service
+- p.3: 25--1 NAME SPACE
+- p.4: 25--2 DOMAIN NAME SPACE
+- p.5: Figure 25.2 Domain name space
+- p.6: Figure 25.3 Domain names and labels
+- p.7: Figure 25.4 FQDN and PQDN
+- p.8: Figure 25.5 Domains
+- p.9: 25--3 DISTRIBUTION OF NAME SPACE
+- p.10: Figure 25.6 Hierarchy of name servers
+- p.11: Figure 25.7 Zones and domains
+- p.12: Note
+- p.13: 25--4 DNS IN THE INTERNET
+- p.14: Figure 25.8 DNS IN THE INTERNET
+- p.15: Figure 25.9 Generic domains
+- p.16: Table 25.1 Generic domain labels
+- p.17: Figure 25.10 Country domains
+- p.18: Figure 25.11 Inverse domain
+- p.19: 25--5 RESOLUTION
+- p.20: Figure 25.12 Recursive resolution
+- p.21: Figure 25.13 Iterative resolution
+- p.22: 25--6 DNS MESSAGES
+- p.23: Figure 25.14 Query and response messages
+- p.24: Figure 25.15 Header format
+- p.25: 25--7 TYPES OF RECORDS
+- p.26: 25--8 REGISTRARS
+- p.27: 25--9 DYNAMIC DOMAIN NAME
+- p.28: 25--10 ENCAPSULATION
+- p.29: Note

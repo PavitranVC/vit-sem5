@@ -1,0 +1,658 @@
+# DBS (Database Systems): slide map (page ranges by slide title)
+
+Generated from each file's own slide titles. Paths are relative to the repo root. 
+
+## DBS/Module-1---Lecture-1.pdf  (42 pages)
+- p.1: (image/blank)
+- p.2: CHAPTER 1
+- p.3: OUTLINE
+- p.4: What is data, database, DBMS
+- p.5: Types of Databases and Database
+- p.6: Recent Developments (1)
+- p.7: Recent Developments (2)
+- p.8: What is “big data”?
+- p.9: Why is “big data” a “big deal”?
+- p.10: Lifecycle of Data: 4 “A”s
+- p.11: Basic Definitions
+- p.12: Impact of Databases and Database
+- p.13-14: A simplified architecture for a
+- p.15: What a DBMS Facilitates
+- p.16: Other DBMS Functionalities
+- p.17: Application Programs and DBMS
+- p.18-19: Example of a Database
+- p.20: Example of a Simple Database
+- p.21: The relational model
+- p.22: Main Characteristics of the Database
+- p.23: Example of a Simplified Database
+- p.24-25: Main Characteristics of the Database
+- p.26: Database Users
+- p.27: Database Users – Actors on the Scene
+- p.28: Database End Users
+- p.29: Database End Users (continued)
+- p.30: Database Users – Actors on the Scene
+- p.31: Database Users – Actors behind the
+- p.32-33: Advantages of Using the Database
+- p.34-35: Additional Implications of Using the
+- p.36-38: Historical Development of Database
+- p.39: Extending Database Capabilities (1)
+- p.40-41: When not to use a DBMS
+- p.42: Chapter Summary
+
+## DBS/Module-1---Lecture-2.pdf  (47 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 2
+- p.3: Outline
+- p.4: Data Models
+- p.5: Data Models (continued)
+- p.6: Categories of Data Models
+- p.7: Schemas versus Instances
+- p.8: Example of a Database Schema
+- p.9: Schemas versus Instances
+- p.10-11: Database Schema
+- p.12: Example of a Database Schema
+- p.13: Example of a database state
+- p.14-15: Three-Schema Architecture
+- p.16: The three-schema architecture
+- p.17: Three-Schema Architecture
+- p.18: Data Independence
+- p.19: Data Independence (continued)
+- p.20-22: DBMS Languages
+- p.23: Types of DML
+- p.24: DBMS Interfaces
+- p.25: DBMS Programming Language Interfaces
+- p.26: User-Friendly DBMS Interfaces
+- p.27: Other DBMS Interfaces
+- p.28: Database System Utilities
+- p.29: Other Tools
+- p.30: Typical DBMS Component Modules
+- p.31: Centralized and
+- p.32: A Physical Centralized Architecture
+- p.33: Basic 2-tier Client-Server Architectures
+- p.34: Clients
+- p.35: DBMS Server
+- p.36: Two Tier Client-Server Architecture
+- p.37: Three Tier Client-Server Architecture
+- p.38: Three-tier client-server architecture
+- p.39: Classification of DBMSs
+- p.40: Variations of Distributed DBMSs
+- p.41: Cost considerations for DBMSs
+- p.42: Other Considerations
+- p.43: History of Data Models (Additional
+- p.44-46: History of Data Models
+- p.47: Chapter Summary
+
+## DBS/Module-2---Lecture-1---Relational-Model_-Constraints.pdf  (48 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 5
+- p.3: Chapter Outline
+- p.4-5: Relational Model Concepts
+- p.6: Informal Definitions
+- p.7: Example of a Relation
+- p.8: Informal Definitions
+- p.9: Formal Definitions - Schema
+- p.10: Formal Definitions - Tuple
+- p.11: Formal Definitions - Domain
+- p.12: Formal Definitions - State
+- p.13: Formal Definitions - Summary
+- p.14: Formal Definitions - Example
+- p.15: Definition Summary
+- p.16: Example – A relation STUDENT
+- p.17: Characteristics Of Relations
+- p.18: Same state as previous Figure (but
+- p.19-20: Characteristics Of Relations
+- p.21: CONSTRAINTS
+- p.22: Relational Integrity Constraints
+- p.23: Key Constraints
+- p.24-25: Key Constraints (continued)
+- p.26: CAR table with two candidate keys –
+- p.27: Relational Database Schema
+- p.28: COMPANY Database Schema
+- p.29: Relational Database State
+- p.30: Populated database state
+- p.31: Populated database state for COMPANY
+- p.32: Entity Integrity
+- p.33-34: Referential Integrity
+- p.35: Referential Integrity (or foreign key)
+- p.36: Displaying a relational database
+- p.37: Referential Integrity Constraints for COMPANY database
+- p.38: Other Types of Constraints
+- p.39-40: Update Operations on Relations
+- p.41: Possible violations for each operation
+- p.42: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 5- 42
+- p.43: Possible violations for each operation
+- p.44: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 5- 44
+- p.45: Possible violations for each operation
+- p.46: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 5- 46
+- p.47: Summary
+- p.48: In-Class Exercise
+
+## DBS/Module-2---Lecture-2---ER-Diagram.pdf  (58 pages)
+- p.1: Copyright © 2016 Ramez Elmasr and Shamkant B. Navathei
+- p.2: CHAPTER 3
+- p.3: Chapter Outline
+- p.4-5: Overview of Database Design Process
+- p.6: Methodologies for Conceptual
+- p.7-8: Example COMPANY Database
+- p.9: ER Model Concepts
+- p.10: Types of Attributes (1)
+- p.11: Types of Attributes (2)
+- p.12: Example of a composite attribute
+- p.13: Entity Types and Key Attributes (1)
+- p.14: Entity Types and Key Attributes (2)
+- p.15: Entity Set
+- p.16: Value Sets (Domains) of Attributes
+- p.17: Displaying an Entity type
+- p.18: NOTATION for ER diagrams
+- p.19: Entity Type CAR with two keys and a
+- p.20: Initial Conceptual Design of Entity Types
+- p.21: Initial Design of Entity Types:
+- p.22: Refining the initial design by introducing
+- p.23: Relationships and Relationship Types (1)
+- p.24: Relationship instances of the WORKS_FOR N:1
+- p.25: Relationship instances of the M:N WORKS_ON
+- p.26: Relationship type vs. relationship set (1)
+- p.27: Relationship type vs. relationship set (2)
+- p.28: Refining the COMPANY database
+- p.29: ER DIAGRAM – Relationship Types are:
+- p.30: Discussion on Relationship Types
+- p.31: Constraints on Relationships
+- p.32: Many-to-one (N:1) Relationship
+- p.33: Many-to-many (M:N) Relationship
+- p.34: Recursive Relationship Type
+- p.35: Displaying a recursive
+- p.36: A Recursive Relationship Supervision`
+- p.37: Recursive Relationship Type is: SUPERVISION
+- p.38: Weak Entity Types
+- p.39: Attributes of Relationship types
+- p.40: Example Attribute of a Relationship Type:
+- p.41: Notation for Constraints on
+- p.42: Alternative (min, max) notation for
+- p.43: The (min,max) notation for
+- p.44: COMPANY ER Schema Diagram using (min,
+- p.45: Alternative diagrammatic notation
+- p.46: Summary of notation for ER diagrams
+- p.47: UML class diagrams
+- p.48: UML class diagram for COMPANY
+- p.49: Other alternative diagrammatic notations
+- p.50: Relationships of Higher Degree
+- p.51: Discussion of n-ary relationships (n > 2)
+- p.52: Example of a ternary relationship
+- p.53: Another Example: A UNIVERSITY
+- p.54: UNIVERSITY database conceptual schema
+- p.55-57: Another example
+- p.58: Chapter Summary
+
+## DBS/Module-2---Lecture-3---EER-Diagram.pdf  (47 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 4
+- p.3: Chapter Outline
+- p.4: Subclasses and Superclasses (1)
+- p.5: Subclasses and Superclasses
+- p.6: Subclasses and Superclasses (2)
+- p.7: Subclasses and Superclasses (3)
+- p.8: Subclasses and Superclasses (4)
+- p.9: Specialization (3)
+- p.10: Attribute Inheritance in Superclass /
+- p.11: Representing Specialization in EER
+- p.12: Specialization (1)
+- p.13: Specialization (3)
+- p.14: Generalization
+- p.15: Generalization (2)
+- p.16: Generalization and Specialization (2)
+- p.17: Types of Specialization
+- p.18: Constraints on Specialization and
+- p.19: Displaying an attribute-defined
+- p.20-23: Constraints on Specialization and
+- p.24: Example of disjoint partial Specialization
+- p.25: Example of overlapping total Specialization
+- p.26: Specialization/Generalization Hierarchies,
+- p.27: Shared Subclass “Engineering_Manager”
+- p.28: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 4- 31
+- p.29-30: Specialization/Generalization Hierarchies,
+- p.31: Specialization / Generalization Lattice
+- p.32: Categories (UNION TYPES) (1)
+- p.33: Categories (UNION TYPES) (2)
+- p.34: Two categories (UNION types):
+- p.35: Formal Definitions of EER Model (1)
+- p.36: Formal Definitions of EER Model (2)
+- p.37: Formal Definitions of EER Model (3)
+- p.38: Formal Definitions of EER Model (4)
+- p.39: Alternative diagrammatic notations
+- p.40: UML Example for Displaying
+- p.41: Alternative Diagrammatic Notations
+- p.42: Knowledge Representation (KR)-1
+- p.43: Knowledge Representation (KR)-2
+- p.44: Knowledge Representation (KR)-3
+- p.45: General Basis for Conceptual Modeling
+- p.46: Ontologies
+- p.47: Summary
+
+## DBS/Module-2---Lecture-4---ER_EER-to-Relational-Schema.pdf  (38 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 9
+- p.3: Chapter Outline
+- p.4: GOALS during Mapping
+- p.5: ER-to-Relational Mapping Algorithm
+- p.6: Figure 9.1 The ER conceptual schema
+- p.7-12: ER-to-Relational Mapping Algorithm (contd.)
+- p.13: Figure 9.2 Result of mapping the
+- p.14: FIGURE 3.17
+- p.15: Mapping the n-ary relationship type SUPPLY
+- p.16: Summary of Mapping constructs and
+- p.17: Mapping of Generalization and
+- p.18-19: Mapping EER Model Constructs to
+- p.20: Mapping EER Model Constructs to Relations
+- p.21: FIGURE 4.4
+- p.22: Mapping the EER schema in Figure 4.4 using option 8A
+- p.23: Mapping the EER schema in Figure 4.4 using option 8C
+- p.24: FIGURE 4.3 (b)
+- p.25: Mapping the EER schema in Figure 4.3b using option
+- p.26: FIGURE 4.5
+- p.27: Mapping Figure 4.5 using option 8D with
+- p.28: Different Options for Mapping
+- p.29: Fig. 9.5: Different Options for Mapping
+- p.30: Mapping EER Model Constructs to
+- p.31: FIGURE 4.7
+- p.32: FIGURE 9.6
+- p.33: Mapping EER Model Constructs to
+- p.34: FIGURE 4.8
+- p.35: FIGURE 9.7
+- p.36: Mapping Exercise-1
+- p.37: Mapping Exercise-2
+- p.38: Chapter Summary
+
+## DBS/Module-3---Lecture-1---Normalization.pdf  (67 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 14
+- p.3-5: Chapter Outline
+- p.6: 1. Informal Design Guidelines for
+- p.7: Informal Design Guidelines for Relational
+- p.8: 1.1 Semantics of the Relational
+- p.9: Figure 14.1 A simplified COMPANY
+- p.10: 1.2 Redundant Information in Tuples and
+- p.11: EXAMPLE OF AN UPDATE ANOMALY
+- p.12: EXAMPLE OF AN INSERT ANOMALY
+- p.13: EXAMPLE OF A DELETE ANOMALY
+- p.14: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 14- 14
+- p.15: Figure 14.3 Two relation schemas
+- p.16: Figure 14.4 Sample states for
+- p.17: Guideline for Redundant Information in
+- p.18: 1.3 Null Values in Tuples
+- p.19: 1.4 Generation of Spurious Tuples – avoid
+- p.20: Spurious Tuples (2)
+- p.21: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 14- 21
+- p.22: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 14- 22
+- p.23: 2. Functional Dependencies
+- p.24: 2.1 Defining Functional Dependencies
+- p.25: Examples of FD constraints (1)
+- p.26: Examples of FD constraints (2)
+- p.27: Defining FDs from instances
+- p.28: Figure 14.7 Ruling Out FDs
+- p.29: Figure 14.8 What FDs may exist?
+- p.30: 3 Normal Forms Based on Primary Keys
+- p.31: 3.1 Normalization of Relations (1)
+- p.32: Normalization of Relations (2)
+- p.33: 3.2 Practical Use of Normal Forms
+- p.34: 3.3 Definitions of Keys and Attributes
+- p.35: Definitions of Keys and Attributes
+- p.36: 1.1 Inference Rules for FDs (1)
+- p.37: Inference Rules for FDs (2)
+- p.38: Inference Rules for FDs (3)
+- p.39: 3.4 First Normal Form
+- p.40: Figure 14.9 Normalization into 1NF
+- p.41: Figure 14.10 Normalizing nested relations
+- p.42: 3.5 Second Normal Form (1)
+- p.43: Second Normal Form (2)
+- p.44: Figure 14.11 Normalizing into 2NF and
+- p.45: Figure 14.12 Normalization into 2NF and
+- p.46: 3.6 Third Normal Form (1)
+- p.47: Third Normal Form (2)
+- p.48: Normal Forms Defined Informally
+- p.49: 4. General Normal Form Definitions (For
+- p.50: 4.1 General Definition of 2NF (For
+- p.51: 4.2 General Definition of Third Normal
+- p.52-53: 4.3 Interpreting the General Definition of
+- p.54: 5. BCNF (Boyce-Codd Normal Form)
+- p.55: Figure 14.13 Boyce-Codd normal form
+- p.56: Figure 14.14 A relation TEACH that is in
+- p.57: Achieving the BCNF by Decomposition (1)
+- p.58: Achieving the BCNF by Decomposition (2)
+- p.59-60: Test for checking non-additivity of Binary
+- p.61: General Procedure for achieving BCNF
+- p.62: 5. Multivalued Dependencies and Fourth
+- p.63: Multivalued Dependencies and Fourth Normal
+- p.64: Figure 14.15 Fourth and fifth normal
+- p.65: 6. Join Dependencies and Fifth Normal Form
+- p.66: Join Dependencies and Fifth Normal Form (2)
+- p.67: Chapter Summary
+
+## DBS/Module-3---Lecture-2---Functional-Dependencies.pdf  (58 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 15
+- p.3-4: Chapter Outline
+- p.5: 1. Functional Dependencies : Inference
+- p.6: Defining Functional Dependencies
+- p.7: 1.1 Inference Rules for FDs (1)
+- p.8: Inference Rules for FDs (2)
+- p.9: Inference Rules for FDs (3)
+- p.10: Closure
+- p.11: Algorithm to determine Closure
+- p.12: Example of Closure (1)
+- p.13: Example of Closure (2)
+- p.14: 1.2 Equivalence of Sets of FDs
+- p.15: 1.3 Finding Minimal Cover of F.D.s (1)
+- p.16: Minimal Sets of FDs (2)
+- p.17: Minimal Sets of FDs (3)
+- p.18: Computing the Minimal Sets of FDs (4)
+- p.19: Minimal Sets of FDs (5)
+- p.20: DESIGNING A SET OF RELATIONS (1)
+- p.21: DESIGNING A SET OF RELATIONS (2)
+- p.22: Algorithm to determine the key of a
+- p.23: 2. Properties of Relational Decompositions
+- p.24-32: Properties of Relational Decompositions
+- p.33: Test for checking non-additivity of Binary
+- p.34: Properties of Relational Decompositions
+- p.35: 3. Algorithms for Relational Database
+- p.36: Algorithms for Relational Database
+- p.37: 4. Problems with Null Values and
+- p.38-41: Problems with Null Values and Dangling
+- p.42: About Normalization Algorithms
+- p.43-44: Summary of Algorithms for Relational
+- p.45: 5. Multivalued Dependencies and Fourth
+- p.46-50: Multivalued Dependencies and Fourth Normal
+- p.51: 6. Other Dependencies and Normal Forms
+- p.52: Join Dependencies and Fifth Normal Form
+- p.53: Inclusion Dependencies (1)
+- p.54: Inclusion Dependencies (2)
+- p.55-56: Functional Dependencies based on Arithmetic
+- p.57: Other Dependencies and Normal Forms
+- p.58: Recap
+
+## DBS/Module-4---Lecture-1---File-Storage---Hashing.pdf  (34 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 16
+- p.3: 16.1 Introduction
+- p.4: Memory Hierarchies and Storage
+- p.5: Storage Types and Characteristics
+- p.6: Storage Organization of Databases
+- p.7: 16.2 Secondary Storage Devices
+- p.8: Single-Sided Disk and Disk Pack
+- p.9: Sectors on a Disk
+- p.10-12: Secondary Storage Devices (cont’d.)
+- p.13: Solid State Device Storage
+- p.14: Magnetic Tape Storage Devices
+- p.15: 16.3 Buffering of Blocks
+- p.16: Buffering of Blocks (cont’d.)
+- p.17: Buffer Management and
+- p.18: 16.4 Placing File Records on Disk
+- p.19: Placing File Records on Disk
+- p.20-22: Record Blocking and Spanned
+- p.23: 16.5 Operations on Files
+- p.24: Operations on Files (cont’d.)
+- p.25: 16.6 Files of Unordered Records
+- p.26: 16.7 Files of Ordered Records
+- p.27: Access Times for Various File
+- p.28: 16.8 Hashing Techniques
+- p.29-31: Hashing Techniques (cont’d.)
+- p.32: Extendible Hashing
+- p.33: Dynamic Hashing
+- p.34: 16.9 Other Primary File
+
+## DBS/Module-4---Lecture-2---Indexing-Structures.pdf  (34 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 17
+- p.3: Introduction
+- p.4: 17.1 Types of Single-Level Ordered
+- p.5: Types of Single-Level Ordered
+- p.6: Primary Indexes
+- p.7-8: Primary Indexes (cont’d.)
+- p.9: Clustering Indexes
+- p.10: Clustering Indexes (cont’d.)
+- p.11: Secondary Indexes
+- p.12: Secondary Indexes (cont’d.)
+- p.13: Types of Single-Level Ordered
+- p.14: 17.2 Multilevel Indexes
+- p.15: Figure 17.6 A two-level
+- p.16: 17.3 Dynamic Multilevel Indexes
+- p.17: Tree Data Structure
+- p.18: Search Trees and B-Trees
+- p.19: Search Trees and B-Trees (cont’d.)
+- p.20: B-Trees
+- p.21: B-Tree Structures
+- p.22-23: B+ -Trees
+- p.24: B+ -Trees (cont’d.)
+- p.25: Searching for a Record With Search
+- p.26: 17.4 Indexes on Multiple Keys
+- p.27: Indexes on Multiple Keys (cont’d.)
+- p.28: 17.5 Other Types of Indexes
+- p.29: Hash Indexes (cont’d.)
+- p.30: Bitmap Indexes
+- p.31: Function-Based Indexing
+- p.32: Index Creation
+- p.33: Indexing of Strings
+- p.34: 17.8 Summary
+
+## DBS/Module-4---Lecture-3---Relational-Algebra.pdf  (52 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 8
+- p.3: Chapter Outline
+- p.4: Relational Algebra Overview
+- p.5: Relational Algebra Overview (continued)
+- p.6: Relational Algebra Overview
+- p.7: Database State for COMPANY
+- p.8-10: Unary Relational Operations: SELECT
+- p.11: The following query results refer to this
+- p.12-14: Unary Relational Operations: PROJECT
+- p.15: Examples of applying SELECT and
+- p.16: Relational Algebra Expressions
+- p.17: Single expression versus sequence of
+- p.18-20: Unary Relational Operations: RENAME
+- p.21: Example of applying multiple operations
+- p.22-23: Relational Algebra Operations from
+- p.24: Figure 8.3 Result of the UNION
+- p.25: Relational Algebra Operations from
+- p.26-27: Relational Algebra Operations from Set
+- p.28: Example to illustrate the result of UNION,
+- p.29: Some properties of UNION, INTERSECT,
+- p.30-32: Relational Algebra Operations from Set
+- p.33: Binary Relational Operations: JOIN
+- p.34: Binary Relational Operations: JOIN (cont.)
+- p.35-36: Some properties of JOIN
+- p.37: Binary Relational Operations: EQUIJOIN
+- p.38: Binary Relational Operations:
+- p.39: Binary Relational Operations
+- p.40: Complete Set of Relational Operations
+- p.41: Binary Relational Operations: DIVISION
+- p.42: Example of DIVISION
+- p.43-44: Table 8.1 Operations of Relational
+- p.45: Query Tree Notation
+- p.46: Example of Query Tree
+- p.47: Additional Relational Operations:
+- p.48: Aggregate Function Operation
+- p.49: Using Grouping with Aggregation
+- p.50: Figure 8.10 The aggregate function
+- p.51-52: Additional Relational Operations
+
+## DBS/Module-4---Lecture-4---Query-Optimization.pdf  (26 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 19
+- p.3: Query Processing
+- p.4: 18.1 Translating SQL Queries into
+- p.5: Translating SQL Queries (cont’d.)
+- p.6: Introduction
+- p.7: 19.1 Query Trees and Heuristics for
+- p.8: Query Trees and Heuristics for Query
+- p.9: Query Trees and Query Graph
+- p.10: Query Trees and Heuristics for Query
+- p.11: Heuristic Optimization of Query
+- p.12-16: Query Transformation Example
+- p.17-19: +
+- p.20: + Pictorial Depiction of Equivalence
+- p.21: +
+- p.22: + Equivalence Rules (Cont.)
+- p.23: +
+- p.24: General Transformation Rules for
+- p.25: Summary of Heuristics for Algebraic
+- p.26: 19.11 Summary
+
+## DBS/Module-5---Lecture-1---Transaction-Processing---Conflict-serializability.pdf  (44 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 20
+- p.3: Introduction
+- p.4: 20.1 Introduction to Transaction
+- p.5-6: Introduction to Transaction
+- p.7: Transactions
+- p.8: Database Items
+- p.9: Read and Write Operations
+- p.10: Read and Write Operations (cont’d.)
+- p.11: DBMS Buffers
+- p.12: Concurrency Control
+- p.13: The Lost Update Problem
+- p.14: The Temporary Update Problem
+- p.15: The Incorrect Summary Problem
+- p.16: The Unrepeatable Read Problem
+- p.17: Why Recovery is Needed
+- p.18: Why Recovery is Needed (cont’d.)
+- p.19: 20.2 Transaction and System
+- p.20: Transaction and System Concepts
+- p.21: The System Log
+- p.22: Commit Point of a Transaction
+- p.23-24: DBMS-Specific Buffer Replacement
+- p.25: 20.3 Desirable Properties of
+- p.26: Desirable Properties of Transactions
+- p.27: 20.4 Characterizing Schedules
+- p.28-30: Characterizing Schedules Based on
+- p.31: 20.5 Characterizing Schedules
+- p.32: Figure 20.5 Examples of serial and nonserial schedules involving trans
+- p.33-37: Characterizing Schedules Based on
+- p.38: How Serializability is Used for
+- p.39-40: View Equivalence and View
+- p.41: 20.6 Transaction Support in SQL
+- p.42-43: Transaction Support in SQL (cont’d.)
+- p.44: 20.7 Summary
+
+## DBS/Module-5---Lecture-2---Recovery.pdf  (34 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 22
+- p.3: Introduction
+- p.4: 22.1 Recovery Concepts
+- p.5-12: Recovery Concepts (cont’d.)
+- p.13-14: Checkpoints in the System Log and
+- p.15: Transaction Rollback
+- p.16: Figure 22.1 Illustrating
+- p.17: Transactions that Do Not Affect the
+- p.18: 22.2 NO-UNDO/REDO Recovery
+- p.19-20: NO-UNDO/REDO Recovery Based
+- p.21: Figure 22.3 An example
+- p.22: 22.3 Recovery Techniques Based
+- p.23: 22.4 Shadow Paging
+- p.24-25: Shadow Paging (cont’d.)
+- p.26: 22.5 The ARIES Recovery Algorithm
+- p.27-28: The ARIES Recovery Algorithm
+- p.29: ARIES Recovery Example
+- p.30: 22.6 Recovery in Multidatabase
+- p.31: Recovery in Multidatabase Systems
+- p.32: 22.7 Database Backup and Recovery
+- p.33: Database Backup and Recovery
+- p.34: 22.8 Summary
+
+## DBS/Module-6--Lecture-1---Concurrency.pdf  (42 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 21
+- p.3: Introduction
+- p.4: 21.1 Two-Phase Locking Techniques
+- p.5-7: Two-Phase Locking Techniques
+- p.8: Figure 21.2 Locking and
+- p.9: Two-Phase Locking Techniques
+- p.10: Guaranteeing Serializability by Two-
+- p.11: Figure 21.3 Transactions that
+- p.12: Guaranteeing Serializability by Two-
+- p.13-14: Variations of Two-Phase Locking
+- p.15-18: Dealing with Deadlock and Starvation
+- p.19: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe Slide 21- 19
+- p.20: 21.2 Concurrency Control Based
+- p.21-23: Concurrency Control Based
+- p.24: Timestamp Allocation
+- p.25: Basic T/O
+- p.26: Basic T/O – Reads
+- p.27: Basic T/O – Writes
+- p.28-33: Basic T/O – Example 1
+- p.34-35: Basic T/O – Example 2
+- p.36: Thomas Write Rule
+- p.37: Basic T/O – Example 2
+- p.38: 21.5 Granularity of Data Items and
+- p.39-42: Multiple Granularity Level Locking
+
+## DBS/Module-7---NoSQL-Databases.pdf  (36 pages)
+- p.1: Copyright © 2016 Ramez Elmasri and Shamkant B. Navathe
+- p.2: CHAPTER 24
+- p.3: Introduction
+- p.4: Introduction (cont’d.)
+- p.5: 24.1 Introduction to NOSQL Systems
+- p.6-8: Introduction to NOSQL Systems
+- p.9: BASE Properties
+- p.10: 24.2 The CAP Theorem
+- p.11: The CAP Theorem (cont’d.)
+- p.12: CAP Theorem
+- p.13: 24.3 Document-Based NOSQL
+- p.14: MongoDB Data Model
+- p.15: MongoDB Data Model (cont’d.)
+- p.16: Figure 24.1 (continues)
+- p.17: Figure 24.1 (cont’d.)
+- p.18-20: MongoDB Distributed Systems
+- p.21: 24.4 NOSQL Key-Value Stores
+- p.22: Voldemort Key-Value Distributed
+- p.23: Figure 24.2 Example of consistent
+- p.24: Examples of Other Key-Value Stores
+- p.25: 24.5 Column-Based or Wide Column
+- p.26: 24.6 NOSQL Graph Databases and
+- p.27-31: Neo4j (cont’d.)
+- p.32-34: The Cypher Query Language of
+- p.35: Neo4j Interfaces and Distributed
+- p.36: 24.7 Summary
+
+## DBS/Module-7---NoSQL.pdf  (30 pages)
+- p.1: NoSQL!
+- p.2: RDBMS Characteristics
+- p.3: Transactions – ACID Properties
+- p.4: No SQL?
+- p.5: NoSQL Definition
+- p.6: Where does NoSQL come from?
+- p.7: Dynamo and BigTable
+- p.8: NoSQL and Big Data
+- p.9: How did we get here?
+- p.10: Why are RDBMS not suitable for Big Data
+- p.11: NoSQL Distinguishing Characteristics
+- p.12: NoSQL Database Types
+- p.13-14: Document Databases (Document Store)
+- p.15: Document Databases, JSON
+- p.16: Key/Value stores
+- p.17: Sorted Ordered Column-Oriented Stores
+- p.18: Graph Databases
+- p.19: Dealing with Big Data and Scalability
+- p.20: Scaling RDBMS
+- p.21: NoSQL, No ACID
+- p.22: BASE Transactions
+- p.23: CAP Theorem
+- p.24: CAP Theorem: Two out of Three
+- p.25: Consistency or Availability
+- p.26: Performance
+- p.27: Where would I use it?
+- p.28: Don’t forget about the DBA
+- p.29: The Perfect Storm
+- p.30: Summary
+
+## DBS/Module6_Worksheet.pdf  (3 pages)
+- p.1: Worksheet – Module 6: Concurrency Control in Transaction Processing
+- p.2: Operatio R-TS(Q) W-TS(Q) Basic TO: Thomas Write Rule:
+- p.3: 12. Multi-Granularity Locking
+
+## DBS/Module 4---Relational Calculus.pptx  (9 slides)
+- p.1-2: Relational Calculus
+- p.3: Relational Calculus (continued)
+- p.4: Tuple Relational Calculus
+- p.5: Tuple Relational Calculus (continued)
+- p.6: The Existential and Universal Quantifiers
+- p.7: The Existential and Universal Quantifiers (continued)
+- p.8: Example Query Using Existential Quantifier
+- p.9: For every project located in ‘Stafford’, list the project number, the 
