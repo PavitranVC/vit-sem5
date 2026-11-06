@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1790338891 source:c:\education\vit\sem 5\cn lab\lab\routing\dv_routing\main.c
+	<stdio.h>
+	<stdbool.h>
+

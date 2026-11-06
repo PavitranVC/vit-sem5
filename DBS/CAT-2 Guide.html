@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Systems (DBMS) - Comprehensive CAT-2 Master Guide</title>
+    <style>
+        :root {
+            --bg-body: #f4f7f6;
+            --bg-content: #ffffff;
+            --sidebar-bg: #1e293b;
+            --sidebar-text: #f8fafc;
+            --primary: #2563eb;
+            --secondary: #0f172a;
+            --accent: #d97706;
+            --success: #059669;
+            --danger: #dc2626;
+            --border: #e2e8f0;
+            --math-bg: #f8fafc;
+            --pyq-bg: #fffbeb;
+            --pyq-border: #fcd34d;
+            --text-main: #334155;
+            --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            --font-mono: 'Cascadia Code', 'Consolas', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-main); }
+
+        body { display: flex; background-color: var(--bg-body); color: var(--text-main); line-height: 1.6; }
+
+        /* Sidebar */
+        aside { width: 300px; background-color: var(--sidebar-bg); color: var(--sidebar-text); height: 100vh; position: fixed; overflow-y: auto; padding: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); z-index: 100; }
+        aside h2 { font-size: 1.5rem; color: #38bdf8; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #334155; }
+        aside ul { list-style: none; }
+        aside li { margin-bottom: 12px; }
+        aside a { text-decoration: none; color: #cbd5e1; font-weight: 500; display: block; padding: 6px 10px; border-radius: 4px; transition: 0.2s; }
+        aside a:hover { background-color: #334155; color: #fff; }
+        .nav-section { margin-top: 20px; color: #94a3b8; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+
+        /* Main Content */
+        main { margin-left: 300px; padding: 40px; width: calc(100% - 300px); max-width: 1400px; }
+        h1 { font-size: 2.8rem; color: var(--secondary); margin-bottom: 10px; }
+        h2 { font-size: 2rem; color: var(--primary); margin-top: 50px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 3px solid var(--primary); }
+        h3 { font-size: 1.4rem; color: var(--secondary); margin-top: 30px; margin-bottom: 15px; }
+        h4 { font-size: 1.1rem; color: var(--accent); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+        p { margin-bottom: 16px; font-size: 1.05rem; }
+        ul, ol { margin-bottom: 20px; padding-left: 25px; }
+        li { margin-bottom: 8px; font-size: 1.05rem; }
+
+        /* Textbook Concept Boxes */
+        .concept-box { background: var(--bg-content); border-left: 5px solid var(--primary); padding: 25px; margin: 25px 0; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .concept-box h4 { color: var(--primary); display: flex; align-items: center; }
+        .concept-box h4::before { content: "📖"; margin-right: 10px; font-size: 1.4rem; }
+
+        /* Mathematics & Formula Boxes */
+        .math-box { background: var(--math-bg); border: 1px solid var(--border); padding: 20px; margin: 20px 0; border-radius: 8px; font-family: var(--font-mono); font-size: 0.95rem; color: #0f172a; overflow-x: auto; }
+        .math-box .formula { font-size: 1.1rem; font-weight: bold; color: var(--primary); margin-bottom: 10px; display: block; }
+
+        /* PYQ Solution Boxes */
+        .pyq-box { background: var(--pyq-bg); border: 1px solid var(--pyq-border); border-top: 6px solid var(--accent); padding: 30px; margin: 40px 0; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.08); }
+        .pyq-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px dashed #fcd34d; padding-bottom: 15px; margin-bottom: 20px; }
+        .pyq-header h4 { margin: 0; color: #b45309; font-size: 1.3rem; font-weight: 700; }
+        .pyq-badge { background: var(--accent); color: white; padding: 4px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: bold; }
+        .question-text { font-style: italic; color: #451a03; margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.6); border-radius: 4px; }
+        
+        /* Step-by-Step Lists */
+        .step-list { list-style: none; padding: 0; }
+        .step-list > li { position: relative; padding-left: 45px; margin-bottom: 25px; }
+        .step-list > li::before { content: counter(step-counter); counter-increment: step-counter; position: absolute; left: 0; top: -2px; width: 30px; height: 30px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-family: var(--font-mono); }
+        .step-list { counter-reset: step-counter; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; background: var(--bg-content); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        th, td { border: 1px solid var(--border); padding: 14px 16px; text-align: left; }
+        th { background-color: var(--sidebar-bg); color: white; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+
+        /* B+ Tree and Relational Algebra Visuals */
+        .tree-visual { display: flex; flex-direction: column; align-items: center; background: white; padding: 30px; border: 1px solid var(--border); border-radius: 8px; margin: 20px 0; overflow-x: auto; }
+        .tree-row { display: flex; justify-content: center; gap: 30px; margin-bottom: 30px; position: relative; }
+        .node { display: flex; border: 2px solid var(--secondary); border-radius: 6px; overflow: hidden; font-family: var(--font-mono); font-weight: bold; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .ptr { padding: 8px 6px; background: #e2e8f0; border-right: 1px solid #cbd5e1; color: #64748b; font-size: 0.8rem; display: flex; align-items: center; }
+        .key { padding: 8px 16px; border-right: 1px solid #cbd5e1; color: var(--secondary); }
+        .node .ptr:last-child { border-right: none; }
+        
+        .ra-operator { font-family: var(--font-mono); font-weight: bold; color: var(--primary); background: #eff6ff; padding: 2px 6px; border-radius: 4px; border: 1px solid #bfdbfe; }
+        .highlight { background: #fef08a; padding: 2px 6px; border-radius: 3px; font-weight: 600; }
+        
+        /* Tree Diagrams */
+        .tree-container { display: flex; flex-direction: column; align-items: center; margin: 20px 0; padding: 20px; background: white; border: 1px solid var(--border); border-radius: 8px; }
+        .tree-node { background: var(--math-bg); border: 2px solid var(--primary); padding: 10px 20px; border-radius: 8px; margin: 10px; font-weight: bold; font-family: var(--font-mono); text-align: center; }
+
+        @media (max-width: 1024px) {
+            aside { width: 240px; }
+            main { margin-left: 240px; width: calc(100% - 240px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside>
+        <h2>DBMS CAT-2</h2>
+        <div class="nav-section">Module 3: Design</div>
+        <ul>
+            <li><a href="#mod3-bcnf">Boyce-Codd Normal Form (BCNF)</a></li>
+            <li><a href="#pyq-bcnf">📝 PYQ: BCNF Decomposition</a></li>
+            <li><a href="#mod3-mvd">Multivalued Dependencies (4NF)</a></li>
+            <li><a href="#pyq-4nf">📝 PYQ: 4NF & 5NF</a></li>
+        </ul>
+
+        <div class="nav-section">Module 4: Physical & Queries</div>
+        <ul>
+            <li><a href="#mod4-storage">File Organization & Math</a></li>
+            <li><a href="#pyq-disk">📝 PYQ: Disk Block Calculations</a></li>
+            <li><a href="#mod4-btree">B+ Tree Indexing</a></li>
+            <li><a href="#pyq-btree">📝 PYQ: B+ Tree Construction</a></li>
+            <li><a href="#mod4-hash">Dynamic Hashing</a></li>
+            <li><a href="#mod4-ra">Relational Algebra</a></li>
+            <li><a href="#pyq-ra">📝 PYQ: RA Translations</a></li>
+            <li><a href="#mod4-opt">Heuristic Query Optimization</a></li>
+            <li><a href="#pyq-opt">📝 PYQ: Query Tree Optimization</a></li>
+        </ul>
+
+        <div class="nav-section">Module 5: Transactions</div>
+        <ul>
+            <li><a href="#mod5-acid">ACID & Schedules</a></li>
+            <li><a href="#mod5-serial">Conflict Serializability</a></li>
+            <li><a href="#pyq-serial">📝 PYQ: Precedence Graphs</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <header style="margin-bottom: 50px;">
+            <h1 style="color: var(--secondary);">Database Systems Master Study Guide</h1>
+            <p style="font-size: 1.2rem; color: #64748b;">Comprehensive step-by-step textbook and PYQ solver for Schema Refinement, Storage, Query Optimization, and Transaction Processing.</p>
+        </header>
+
+        <!-- ==========================================
+             MODULE 3: RELATIONAL DATABASE DESIGN 
+             ========================================== -->
+        <section id="mod3">
+            <h2>Module 3: Relational Database Design</h2>
+            <p>Database design is the mathematical process of removing redundancy. We use <strong>Functional Dependencies (FDs)</strong> to determine how attributes relate, and <strong>Normal Forms</strong> to split tables systematically without losing information[cite: 10, 11].</p>
+
+            <div class="concept-box" id="mod3-bcnf">
+                <h4>Understanding Boyce-Codd Normal Form (BCNF)</h4>
+                <p>A relation is in BCNF if and only if for every non-trivial functional dependency X &rarr; Y, the left-hand side (X) is a <strong>Superkey</strong>[cite: 10].</p>
+                <p><strong>The Golden Rule:</strong> <em>Every arrow must start from a key.</em> If an attribute that is NOT a key uniquely identifies another attribute, your table is broken and must be decomposed.</p>
+                <div class="math-box">
+                    <span class="formula">How to decompose a BCNF Violation:</span>
+                    If X &rarr; Y violates BCNF in relation R:
+                    <br>1. Create R<sub>1</sub>(X &cup; Y) &mdash; The table for the violating FD. The key is X.
+                    <br>2. Create R<sub>2</sub>(R - Y) &mdash; The original table minus the right-hand side of the violating FD.
+                </div>
+            </div>
+
+            <div class="pyq-box" id="pyq-bcnf">
+                <div class="pyq-header">
+                    <h4>PYQ: BCNF Check & Decomposition</h4>
+                    <span class="pyq-badge">Fall 2024-2025</span>
+                </div>
+                <div class="question-text">
+                    Consider the relation R = (A,B,C,D) and set of functional dependencies F = {AB &rarr; C, B &rarr; D, C &rarr; A}[cite: 3].
+                    <br>(i) What are the candidate keys?
+                    <br>(ii) Is the relation in BCNF? If not, decompose into BCNF.
+                    <br>(iii) Is the decomposed relation dependency preserving?
+                </div>
+                
+                <p><strong>Step-by-Step Solution:</strong></p>
+                <ol class="step-list">
+                    <li>
+                        <strong>Calculate Attribute Closures to find Candidate Keys.</strong>
+                        <p>We need to find which combinations of attributes can determine all attributes {A,B,C,D}. Look at the FDs: B is never on the right side of an arrow, so B <em>must</em> be part of any candidate key.</p>
+                        <ul style="margin-top: 10px;">
+                            <li>Start with B: B<sup>+</sup> = {B, D} (Using B &rarr; D). This is not all attributes.</li>
+                            <li>Try AB: (AB)<sup>+</sup> = {A, B, C, D} (Using AB &rarr; C gives {A,B,C}, then B &rarr; D gives {A,B,C,D}). <strong>AB is a Candidate Key</strong>[cite: 3].</li>
+                            <li>Try BC: (BC)<sup>+</sup> = {B, C, A, D} (Using C &rarr; A gives {A,B,C}, then B &rarr; D gives {A,B,C,D}). <strong>BC is a Candidate Key</strong>[cite: 3].</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Check BCNF Conditions for each FD.</strong>
+                        <p>For BCNF, the left side of every FD must be a Candidate Key or Superkey.</p>
+                        <ul>
+                            <li>AB &rarr; C: Is AB a key? Yes. (Passes BCNF).</li>
+                            <li>B &rarr; D: Is B a key? No. (<strong>Violates BCNF</strong>)[cite: 3].</li>
+                            <li>C &rarr; A: Is C a key? No. (<strong>Violates BCNF</strong>)[cite: 3].</li>
+                        </ul>
+                        <p>Because there are violations, R is <strong>NOT in BCNF</strong>.</p>
+                    </li>
+                    <li>
+                        <strong>Decompose the Relation.</strong>
+                        <p>Let's use the violating FD B &rarr; D to decompose R(A,B,C,D).</p>
+                        <ul>
+                            <li>R<sub>1</sub>(B, D) — Formed from the FD itself. Key is B. In BCNF[cite: 3].</li>
+                            <li>R<sub>2</sub>(A, B, C) — Formed by (R - D). We must check if R<sub>2</sub> is in BCNF.</li>
+                        </ul>
+                        <p>Check R<sub>2</sub>(A, B, C) against remaining FDs (AB &rarr; C, C &rarr; A):</p>
+                        <ul>
+                            <li>C &rarr; A violates BCNF in R<sub>2</sub> because C is not a key of R<sub>2</sub> (C<sup>+</sup> = {A,C}).</li>
+                            <li>Decompose R<sub>2</sub> using C &rarr; A:</li>
+                            <li>R<sub>2a</sub>(C, A) — Key is C. In BCNF[cite: 3].</li>
+                            <li>R<sub>2b</sub>(B, C) — (R<sub>2</sub> - A). Key is BC. In BCNF[cite: 3].</li>
+                        </ul>
+                        <p><strong>Final Decomposition:</strong> (B,D), (C,A), (B,C)[cite: 3].</p>
+                    </li>
+                    <li>
+                        <strong>Check Dependency Preservation.</strong>
+                        <p>We originally had AB &rarr; C. In our final tables, A, B, and C are never in the same table together. Therefore, we have lost the ability to check AB &rarr; C without performing a join. <strong>This decomposition is NOT dependency preserving</strong>[cite: 3].</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="concept-box" id="mod3-mvd">
+                <h4>Understanding Multivalued Dependencies (4NF)</h4>
+                <p>A Multivalued Dependency (MVD) X &rarr;&rarr; Y means that for a single value of X, there is a set of values for Y, and this set is completely independent of any other attribute Z in the table[cite: 10].</p>
+                <p>If a student is enrolled in 3 subjects and participates in 2 sports, putting this in one table creates 3 &times; 2 = 6 duplicate rows. <strong>4NF Rule:</strong> A relation is in 4NF if it contains no non-trivial MVDs where X is not a superkey[cite: 11]. To fix it, split the independent multi-valued attributes into their own tables.</p>
+            </div>
+
+            <div class="pyq-box" id="pyq-4nf">
+                <div class="pyq-header">
+                    <h4>PYQ: 4NF Normalization</h4>
+                    <span class="pyq-badge">Fall 2023-2024</span>
+                </div>
+                <div class="question-text">
+                    Consider a Student table which has information about the subjects and the activity the students have enrolled in. Subject and Activity are two attributes that are independent of each other. Check whether the given table is in 4NF? If not, partition the table and convert to 4NF[cite: 1].
+                </div>
+                <p><strong>Step-by-Step Solution:</strong></p>
+                <ol class="step-list">
+                    <li>
+                        <strong>Identify the MVDs:</strong>
+                        <p>Because a Student has multiple Subjects, and multiple Activities, and they are independent, the table exhibits the following MVDs[cite: 1]:</p>
+                        <p class="math-box" style="padding: 10px; margin: 10px 0;">Student &rarr;&rarr; Subject<br>Student &rarr;&rarr; Activity</p>
+                        <p>Because `Student` is not a unique primary key (due to the multiple rows per student), this violates 4NF.</p>
+                    </li>
+                    <li>
+                        <strong>Decompose into 4NF:</strong>
+                        <p>We separate the independent multi-valued attributes into two relations, both linked by the determining attribute (`Student`)[cite: 1].</p>
+                        <ul>
+                            <li><code>R1(Student, Subject)</code> — Key: {Student, Subject}</li>
+                            <li><code>R2(Student, Activity)</code> — Key: {Student, Activity}</li>
+                        </ul>
+                        <p>This removes the Cartesian product of duplicates and satisfies 4NF[cite: 1].</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             MODULE 4: PHYSICAL STORAGE & QUERIES
+             ========================================== -->
+        <section id="mod4">
+            <h2>Module 4: Physical Database Design & Query Processing</h2>
+            <p>This module transitions from logical design to how data physically sits on hard disks, how we build indexes to find it, and how we optimize the mathematical queries used to retrieve it[cite: 12, 13, 14, 15].</p>
+
+            <div class="concept-box" id="mod4-storage">
+                <h4>File Organization & Storage Mathematics</h4>
+                <p>Data on disks is divided into <strong>Blocks</strong> (size B). Database <strong>Records</strong> (size R) are packed into these blocks[cite: 12].</p>
+                <ul>
+                    <li><strong>Blocking Factor (bfr):</strong> The number of whole records that fit into one block. 
+                    <br>Formula: bfr = &lfloor; B / R &rfloor; records/block. (We round down because we assume <em>unspanned</em> records, meaning a record cannot be split across two blocks)[cite: 12].</li>
+                    <li><strong>Blocks Required (b):</strong> Total blocks to hold a file of r records.
+                    <br>Formula: b = &lceil; r / bfr &rceil; blocks. (We round up because remaining records need a partial block).</li>
+                    <li><strong>Binary Search Cost:</strong> If the file is sorted, the maximum block accesses to find a record is &lceil; log<sub>2</sub>(b) &rceil;[cite: 12].</li>
+                </ul>
+            </div>
+
+            <div class="pyq-box" id="pyq-disk">
+                <div class="pyq-header">
+                    <h4>PYQ: Disk Block & Search Calculations</h4>
+                    <span class="pyq-badge">Fall 2023-2024</span>
+                </div>
+                <div class="question-text">
+                    Consider an ordered file with 50,000 records stored on a disk with block size B=512 bytes. File records are of fixed size and are un-spanned, with record length R=50 bytes[cite: 1].
+                    <br>(a) How many blocks are needed for the file?
+                    <br>(b) How many blocks access is needed if a binary search is performed?
+                </div>
+                <p><strong>Step-by-Step Solution:</strong></p>
+                <ol class="step-list">
+                    <li>
+                        <strong>Calculate Blocking Factor (bfr):</strong>
+                        <p>We divide block size by record size: bfr = &lfloor; 512 / 50 &rfloor; = &lfloor; 10.24 &rfloor; = 10 records/block[cite: 1].</p>
+                    </li>
+                    <li>
+                        <strong>Calculate Total Blocks (b):</strong>
+                        <p>Divide total records by blocking factor: b = &lceil; 50000 / 10 &rceil; = 5000 blocks[cite: 1].</p>
+                    </li>
+                    <li>
+                        <strong>Calculate Binary Search Cost:</strong>
+                        <p>Binary search formula: &lceil; log<sub>2</sub>(b) &rceil; = &lceil; log<sub>2</sub>(5000) &rceil;[cite: 1].</p>
+                        <p>Since 2<sup>12</sup> = 4096 and 2<sup>13</sup> = 8192, it takes 13 block accesses[cite: 1].</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="concept-box" id="mod4-btree">
+                <h4>Dynamic Multilevel Indexing: B+ Trees</h4>
+                <p>A B+ tree is the industry standard for database indexing. It differs from a standard B-tree in one critical way: <strong>Data pointers are stored ONLY at the leaf nodes</strong>[cite: 13]. Internal nodes only contain search keys to guide the traversal. Leaf nodes are linked together to allow fast sequential scanning[cite: 13].</p>
+                <p>For a B+ tree of order p:</p>
+                <ul>
+                    <li>Internal nodes have maximum p pointers and p-1 search keys[cite: 13].</li>
+                    <li>When a node overflows (reaches p keys), it <strong>SPLITS</strong>.</li>
+                    <li><strong>B+ Tree Split Rule:</strong> The middle key is sent UP to the parent. However, because all data must reside at the leaf level, if a <em>leaf node</em> splits, the middle key is <strong>copied</strong> up, but also remains in the right-half leaf node.</li>
+                </ul>
+            </div>
+
+            <div class="pyq-box" id="pyq-btree">
+                <div class="pyq-header">
+                    <h4>PYQ: Constructing a B+ Tree</h4>
+                    <span class="pyq-badge">Fall 2024-2025</span>
+                </div>
+                <div class="question-text">
+                    Construct a B+-tree for the following set of values (2, 3, 5, 7, 11, 17, 19, 23, 29, and 31). Assume the tree is initially empty and values are inserted in ascending order. Construct for the case where the number m of pointers that will fit a node is 4[cite: 3].
+                </div>
+                <p><strong>Step-by-Step Solution:</strong></p>
+                <ol class="step-list">
+                    <li>
+                        <strong>Understand the Constraints:</strong> Order m=4. Max keys per node = m-1 = 3. An overflow happens when we try to insert a 4th key into a node.
+                    </li>
+                    <li>
+                        <strong>Insert 2, 3, 5:</strong> These fit comfortably into the initial root (which is a leaf)[cite: 3].
+                        <div class="tree-visual" style="padding: 15px;">
+                            <div class="node"><div class="ptr">*</div><div class="key">2</div><div class="ptr">*</div><div class="key">3</div><div class="ptr">*</div><div class="key">5</div><div class="ptr">NULL</div></div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Insert 7 (Overflow & Split):</strong> Node becomes [2, 3, 5, 7]. We split it. Left leaf gets [2, 3], Right leaf gets [5, 7]. The smallest key in the right leaf (5) is copied UP to form a new root[cite: 3].
+                        <div class="tree-visual" style="padding: 15px;">
+                            <div class="tree-row" style="margin-bottom: 20px;">
+                                <div class="node" style="border-color: #d97706;"><div class="ptr">|</div><div class="key">5</div><div class="ptr">|</div></div>
+                            </div>
+                            <div class="tree-row" style="margin-bottom: 0;">
+                                <div class="node"><div class="ptr">*</div><div class="key">2</div><div class="ptr">*</div><div class="key">3</div><div class="ptr">&rarr;</div></div>
+                                <div class="node"><div class="ptr">*</div><div class="key">5</div><div class="ptr">*</div><div class="key">7</div><div class="ptr">NULL</div></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Insert 11:</strong> Traverses right of 5. Placed in right leaf: [5, 7, 11].
+                    </li>
+                    <li>
+                        <strong>Insert 17 (Overflow & Split):</strong> Right leaf becomes [5, 7, 11, 17]. Split into [5, 7] and [11, 17]. Copy 11 UP to root[cite: 3]. Root becomes [5, 11].
+                    </li>
+                    <li>
+                        <strong>Fast Forward to 31:</strong> You continue inserting into the right-most leaf. When the root node eventually fills up and overflows (e.g. [5, 11, 19, 29]), the root splits, pushing the middle key up to create a new level (a height of 3)[cite: 3].
+                    </li>
+                </ol>
+            </div>
+
+            <div class="concept-box" id="mod4-ra">
+                <h4>Relational Algebra Translation</h4>
+                <p>Relational algebra is the theoretical mathematical foundation of SQL. You must know the Greek symbols[cite: 14]:</p>
+                <table style="box-shadow: none;">
+                    <tr><td class="ra-operator">&sigma; (Sigma)</td><td><strong>SELECT:</strong> Filters <em>rows</em> (WHERE clause). e.g., &sigma;<sub>Salary > 5000</sub>(Emp)</td></tr>
+                    <tr><td class="ra-operator">&Pi; (Pi)</td><td><strong>PROJECT:</strong> Filters <em>columns</em> (SELECT clause). e.g., &Pi;<sub>Name</sub>(Emp)</td></tr>
+                    <tr><td class="ra-operator">&#8904; (Bowtie)</td><td><strong>JOIN:</strong> Combines tables based on a condition.</td></tr>
+                    <tr><td class="ra-operator">&rho; (Rho)</td><td><strong>RENAME:</strong> Renames a table or columns. e.g., &rho;<sub>E</sub>(Employee)</td></tr>
+                </table>
+            </div>
+
+            <div class="pyq-box" id="pyq-ra">
+                <div class="pyq-header">
+                    <h4>PYQ: Relational Algebra Translation</h4>
+                    <span class="pyq-badge">Fall 2023-2024</span>
+                </div>
+                <div class="question-text">
+                    Relations: <code>employee(emp-name, street, city)</code>, <code>works(emp-name, company-name, salary)</code>, <code>company(company-name, city)</code>.
+                    <br>Write RA for: "Find the names, street address, and cities of residence of all employees who work for Honda Company and earn more than 10,000"[cite: 1].
+                </div>
+                <p><strong>Step-by-Step Solution:</strong></p>
+                <ol class="step-list">
+                    <li>
+                        <strong>Identify the required output columns (Projection &Pi;):</strong>
+                        We need names, street address, and cities. These belong to the <code>employee</code> table.
+                        <br>&Pi;<sub>emp-name, street, city</sub>(...)[cite: 1]
+                    </li>
+                    <li>
+                        <strong>Identify the conditions (Selection &sigma;):</strong>
+                        Company must be 'honda' and salary > 10000. These belong to the <code>works</code> table.
+                        <br>&sigma;<sub>company-name='honda' AND salary>10000</sub>(...)[cite: 1]
+                    </li>
+                    <li>
+                        <strong>Join the tables:</strong>
+                        Since we need output from <code>employee</code> but conditions from <code>works</code>, we must join them on their common attribute <code>emp-name</code>. We can rename <code>employee</code> to <code>e</code> for simplicity.
+                        <br>(&rho;<sub>e</sub>(employee) &#8904;<sub>e.emp-name=works.emp-name</sub> works)[cite: 1]
+                    </li>
+                    <li>
+                        <strong>Combine into final expression:</strong>
+                        <div class="math-box">
+                            &Pi;<sub>e.emp-name, e.street, e.city</sub> ( &sigma;<sub>company-name='honda' AND salary>10000</sub> ( &rho;<sub>e</sub>(employee) &#8904;<sub>e.emp-name=works.emp-name</sub> works ) )[cite: 1]
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="concept-box" id="mod4-opt">
+                <h4>Heuristic Query Optimization (Query Trees)</h4>
+                <p>A Query Tree represents the mathematical order of operations for a query. The <strong>Optimizer</strong> uses <em>heuristic rules</em> to transform the tree to run faster[cite: 15]. The primary rule is: <strong>Filter as early as possible.</strong> By pushing Selection (&sigma;) and Projection (&Pi;) operations down the tree toward the base tables, we drastically reduce the size of intermediate tables generated by Joins[cite: 15].</p>
+            </div>
+
+            <div class="pyq-box" id="pyq-opt">
+                <div class="pyq-header">
+                    <h4>PYQ: Query Tree Optimization</h4>
+                    <span class="pyq-badge">Fall 2025-2026</span>
+                </div>
+                <div class="question-text">
+                    Schema: <code>EMP(ENO, ENAME)</code>, <code>PROJ(PNO, PNAME)</code>, <code>ASG(ENO, PNO, DUR)</code>.
+                    <br>Query: <code>SELECT ENAME FROM PROJ P, ASG G, EMP E WHERE G.ENO=E.ENO AND G.PNO=P.PNO AND E.ENAME &ne; 'J. Doe' AND P.PNAME='CAD/CAM' AND (G.DUR=12 OR G.DUR=24)</code>
+                    <br>Construct Initial Query Tree and Optimized Query Tree using Heuristics[cite: 4].
+                </div>
+                <p><strong>Step-by-Step Solution:</strong></p>
+                <ol class="step-list">
+                    <li>
+                        <strong>Construct the Initial Query Tree:</strong>
+                        <p>The initial canonical tree takes the dumbest possible approach: It Cartesian multiplies (&times;) all tables together at the bottom, applies ONE giant Selection (&sigma;) with all the WHERE conditions above it, and does ONE Projection (&Pi;) at the top[cite: 4].</p>
+                        <div class="tree-container" style="font-size: 0.95rem;">
+                            <div class="tree-node">&Pi; <sub>ENAME</sub></div>
+                            <div style="text-align: center;">|</div>
+                            <div class="tree-node">&sigma; <sub>G.ENO=E.ENO AND G.PNO=P.PNO AND E.ENAME &ne; 'J. Doe' ...</sub></div>
+                            <div style="text-align: center;">|</div>
+                            <div class="tree-node">&times;</div>
+                            <div style="display: flex; gap: 40px;">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <div class="tree-node">&times;</div>
+                                    <div style="display: flex; gap: 20px;">
+                                        <div class="tree-node">EMP</div>
+                                        <div class="tree-node">ASG</div>
+                                    </div>
+                                </div>
+                                <div class="tree-node">PROJ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Apply Optimization Rule 1: Push Down Selections (&sigma;)</strong>
+                        <p>We break the giant &sigma; into individual conditions and push them down to the specific tables they apply to, so we filter rows <em>before</em> joining[cite: 15].</p>
+                        <ul>
+                            <li>Push &sigma;<sub>ENAME &ne; 'J. Doe'</sub> down to sit right above <code>EMP</code>[cite: 4].</li>
+                            <li>Push &sigma;<sub>PNAME = 'CAD/CAM'</sub> down to sit right above <code>PROJ</code>[cite: 4].</li>
+                            <li>Push &sigma;<sub>DUR=12 OR DUR=24</sub> down to sit right above <code>ASG</code>[cite: 4].</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Apply Optimization Rule 2: Convert Cartesian Products to Theta Joins (&#8904;)</strong>
+                        <p>We combine the join conditions (G.ENO=E.ENO and G.PNO=P.PNO) with the &times; operators to turn them into efficient Join operations[cite: 15].</p>
+                        <div class="tree-container" style="font-size: 0.95rem;">
+                            <div class="tree-node" style="background: var(--success); color: white; border-color: #064e3b;">&Pi; <sub>ENAME</sub></div>
+                            <div style="text-align: center;">|</div>
+                            <div class="tree-node" style="background: var(--success); color: white; border-color: #064e3b;">&#8904; <sub>G.ENO = E.ENO</sub></div>
+                            <div style="display: flex; gap: 40px;">
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <div class="tree-node" style="background: var(--success); color: white; border-color: #064e3b;">&#8904; <sub>G.PNO = P.PNO</sub></div>
+                                    <div style="display: flex; gap: 20px;">
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <div class="tree-node">&sigma; <sub>PNAME='CAD/CAM'</sub></div>
+                                            <div class="tree-node">PROJ</div>
+                                        </div>
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <div class="tree-node">&sigma; <sub>DUR=12 OR DUR=24</sub></div>
+                                            <div class="tree-node">ASG</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <div class="tree-node">&sigma; <sub>ENAME &ne; 'J. Doe'</sub></div>
+                                    <div class="tree-node">EMP</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             MODULE 5: TRANSACTION PROCESSING
+             ========================================== -->
+        <section id="mod5">
+            <h2>Module 5: Transaction Processing and Recovery</h2>
+            <p>A transaction is a logical unit of work (e.g., transferring money). Because databases handle thousands of users concurrently, operations interleave. We must ensure these interleaved schedules don't destroy data integrity[cite: 16].</p>
+
+            <div class="concept-box" id="mod5-acid">
+                <h4>ACID Properties & Types of Anomalies</h4>
+                <ul>
+                    <li><strong>Atomicity:</strong> Transaction is performed in its entirety or not at all (managed by Recovery subsystem)[cite: 16].</li>
+                    <li><strong>Consistency:</strong> Database transitions from one valid state to another[cite: 16].</li>
+                    <li><strong>Isolation:</strong> Transactions executing concurrently do not interfere with each other (managed by Concurrency Control)[cite: 16].</li>
+                    <li><strong>Durability:</strong> Once committed, changes are permanent and survive crashes[cite: 16].</li>
+                </ul>
+                <p><strong>Concurrency Anomalies:</strong></p>
+                <ul>
+                    <li><strong>Lost Update:</strong> T<sub>1</sub> reads X, T<sub>2</sub> reads X, T<sub>1</sub> writes X, T<sub>2</sub> writes X. T<sub>1</sub>'s update is overwritten and lost[cite: 16].</li>
+                    <li><strong>Dirty Read (Temporary Update):</strong> T<sub>1</sub> modifies X. T<sub>2</sub> reads X. T<sub>1</sub> crashes and rolls back. T<sub>2</sub> now has "dirty" data that technically never existed[cite: 16].</li>
+                </ul>
+            </div>
+
+            <div class="concept-box" id="mod5-serial">
+                <h4>Conflict Serializability</h4>
+                <p>A concurrent schedule is "safe" if its operations can be rearranged into a strict serial schedule (T<sub>1</sub> completes, then T<sub>2</sub> completes) without changing the outcome. We call this <strong>Conflict Serializable</strong>[cite: 16].</p>
+                <p>Two operations conflict if they are from <em>different</em> transactions, access the <em>same</em> data item, and at least one is a <em>Write</em> (i.e., R-W, W-R, W-W)[cite: 16].</p>
+                <p><strong>The Precedence Graph Algorithm:</strong></p>
+                <ol>
+                    <li>Create a node for each transaction.</li>
+                    <li>For every conflict between T<sub>A</sub> and T<sub>B</sub>, draw a directed edge from T<sub>A</sub> &rarr; T<sub>B</sub> if T<sub>A</sub>'s operation occurs first in time[cite: 16].</li>
+                    <li>If the graph has a <strong>CYCLE</strong>, the schedule is NOT serializable[cite: 16].</li>
+                </ol>
+            </div>
+
+            <div class="pyq-box" id="pyq-serial">
+                <div class="pyq-header">
+                    <h4>PYQ: Precedence Graphs & Serializability</h4>
+                    <span class="pyq-badge">Fall 2024-2025</span>
+                </div>
+                <div class="question-text">
+                    Check whether the given Schedule S1 is conflict serializable by constructing a precedence graph[cite: 3].
+                    <br><code>S1: r1(A); r3(B); r3(A); r2(B); r2(C); w3(B); w2(C); r1(C); w1(A); w1(C)</code>
+                </div>
+                <p><strong>Step-by-Step Solution:</strong></p>
+                <ol class="step-list">
+                    <li>
+                        <strong>Create Nodes:</strong>
+                        <p>We have transactions T<sub>1</sub>, T<sub>2</sub>, and T<sub>3</sub>. Draw three circles[cite: 16].</p>
+                    </li>
+                    <li>
+                        <strong>Scan for Conflicts (Left to Right):</strong>
+                        <p>Look for conflicting pairs (R-W, W-R, W-W) on the <em>same variable</em> by <em>different transactions</em>.</p>
+                        <ul>
+                            <li>Look at <code>r3(A)</code>. It happens before <code>w1(A)</code>. This is a Read-Write conflict on variable A. T<sub>3</sub> operates before T<sub>1</sub>. <br><span class="highlight">Draw edge T<sub>3</sub> &rarr; T<sub>1</sub></span>[cite: 3].</li>
+                            <li>Look at <code>r2(B)</code>. It happens before <code>w3(B)</code>. This is a Read-Write conflict on variable B. T<sub>2</sub> operates before T<sub>3</sub>. <br><span class="highlight">Draw edge T<sub>2</sub> &rarr; T<sub>3</sub></span>[cite: 3].</li>
+                            <li>Look at <code>w2(C)</code>. It happens before <code>r1(C)</code> and <code>w1(C)</code>. This is a Write-Read and Write-Write conflict on variable C. T<sub>2</sub> operates before T<sub>1</sub>. <br><span class="highlight">Draw edge T<sub>2</sub> &rarr; T<sub>1</sub></span>[cite: 3].</li>
+                        </ul>
+                        <p><em>(Note: <code>r1(A)</code> before <code>w1(A)</code> is NOT a conflict because they are the same transaction).</em></p>
+                    </li>
+                    <li>
+                        <strong>Check for Cycles:</strong>
+                        <p>Our graph has edges: T<sub>2</sub> &rarr; T<sub>3</sub>, T<sub>3</sub> &rarr; T<sub>1</sub>, and T<sub>2</sub> &rarr; T<sub>1</sub>.</p>
+                        <p>Trace the paths: You can go from T<sub>2</sub> to T<sub>3</sub> to T<sub>1</sub>. You can go from T<sub>2</sub> to T<sub>1</sub>. You CANNOT loop back around to where you started. <strong>There is no cycle</strong>[cite: 3].</p>
+                    </li>
+                    <li>
+                        <strong>Conclusion & Equivalent Serial Schedule:</strong>
+                        <p>Since there are no cycles, <strong>Schedule S1 IS conflict serializable</strong>[cite: 3].</p>
+                        <p>To find the equivalent serial schedule, perform a topological sort (node with 0 incoming edges goes first). T<sub>2</sub> has no incoming edges. After T<sub>2</sub>, T<sub>3</sub> has no incoming edges. Then T<sub>1</sub>. <br>Equivalent Schedule: <strong>T<sub>2</sub> &rarr; T<sub>3</sub> &rarr; T<sub>1</sub></strong>[cite: 3].</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

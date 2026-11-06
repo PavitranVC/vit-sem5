@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BCSE306L AI — CAT-2 Ultimate Mindmap & Cheat Sheet</title>
+  <style>
+    :root {
+      --bg-main: #0b0f19;
+      --bg-card: #131b2e;
+      --bg-card-alt: #18233c;
+      --bg-table-head: #1e293b;
+      --border-color: #2a3958;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent-blue: #38bdf8;
+      --accent-indigo: #818cf8;
+      --accent-emerald: #34d399;
+      --accent-amber: #fbbf24;
+      --accent-rose: #fb7185;
+      --accent-purple: #c084fc;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      padding-bottom: 4rem;
+    }
+
+    /* Sticky Header & Controls */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 15, 25, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.85rem 1.5rem;
+    }
+
+    .header-top {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-badge {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-indigo));
+      color: #0b0f19;
+      font-weight: 800;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      letter-spacing: 0.04em;
+    }
+
+    .brand h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .search-input {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      width: 240px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-blue);
+    }
+
+    .btn {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn:hover {
+      border-color: var(--accent-blue);
+      color: var(--accent-blue);
+    }
+
+    .nav-pills {
+      max-width: 1440px;
+      margin: 0.75rem auto 0;
+      display: flex;
+      gap: 0.45rem;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
+    }
+
+    .pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+
+    .pill.active, .pill:hover {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1440px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Visual Mindmap Tree Banner */
+    .mindmap-box {
+      background: radial-gradient(circle at top left, #172554 0%, var(--bg-card) 70%);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .mindmap-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mindmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .mm-branch {
+      background: rgba(11, 15, 25, 0.65);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 10px;
+      padding: 0.9rem;
+    }
+
+    .mm-branch.mod3 { border-left-color: var(--accent-amber); }
+    .mm-branch.mod4 { border-left-color: var(--accent-blue); }
+    .mm-branch.mod5 { border-left-color: var(--accent-emerald); }
+
+    .mm-branch h3 {
+      font-size: 0.92rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mm-nodes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .mm-node {
+      font-size: 0.74rem;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      padding: 0.2rem 0.55rem;
+      border-radius: 5px;
+      color: var(--text-main);
+    }
+
+    .mm-node.hot {
+      border-color: var(--accent-rose);
+      color: #fda4af;
+      background: rgba(251, 113, 133, 0.12);
+      font-weight: 600;
+    }
+
+    /* Section Headers */
+    .topic-section {
+      margin-bottom: 2.25rem;
+      scroll-margin-top: 130px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    .topic-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .tag-blue { background: rgba(56, 189, 248, 0.18); color: var(--accent-blue); border: 1px solid var(--accent-blue); }
+    .tag-amber { background: rgba(251, 191, 36, 0.18); color: var(--accent-amber); border: 1px solid var(--accent-amber); }
+    .tag-emerald { background: rgba(52, 211, 153, 0.18); color: var(--accent-emerald); border: 1px solid var(--accent-emerald); }
+    .tag-rose { background: rgba(251, 113, 133, 0.18); color: var(--accent-rose); border: 1px solid var(--accent-rose); }
+    .tag-purple { background: rgba(192, 132, 252, 0.18); color: var(--accent-purple); border: 1px solid var(--accent-purple); }
+
+    /* Grid Layouts for Cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 600px) {
+      .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Cheat Sheet Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.15rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      padding-bottom: 0.45rem;
+    }
+
+    /* Tables */
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 0.4rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+    }
+
+    th, td {
+      padding: 0.55rem 0.7rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--bg-table-head);
+      color: var(--accent-blue);
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Code & Formula pills */
+    code, .math {
+      font-family: var(--font-mono);
+      background: rgba(15, 23, 42, 0.85);
+      color: #e2e8f0;
+      padding: 0.15rem 0.4rem;
+      border-radius: 5px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      font-size: 0.82rem;
+    }
+
+    .formula-block {
+      font-family: var(--font-mono);
+      background: #090d16;
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent-indigo);
+      padding: 0.65rem 0.85rem;
+      border-radius: 8px;
+      margin: 0.55rem 0;
+      font-size: 0.83rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+    }
+
+    /* Callouts & Exam Traps */
+    .callout {
+      padding: 0.65rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      margin-top: 0.65rem;
+    }
+
+    .callout-trap {
+      background: rgba(251, 113, 133, 0.1);
+      border: 1px solid rgba(251, 113, 133, 0.4);
+      color: #fecdd3;
+    }
+
+    .callout-tip {
+      background: rgba(52, 211, 153, 0.1);
+      border: 1px solid rgba(52, 211, 153, 0.4);
+      color: #a7f3d0;
+    }
+
+    .callout-warn {
+      background: rgba(251, 191, 36, 0.1);
+      border: 1px solid rgba(251, 191, 36, 0.4);
+      color: #fde68a;
+    }
+
+    /* Flow Pipeline Pills */
+    .pipeline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 0.6rem 0;
+    }
+
+    .pipe-step {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--accent-indigo);
+      padding: 0.35rem 0.7rem;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .pipe-arrow {
+      color: var(--accent-blue);
+      font-weight: 800;
+    }
+
+    ul.compact-list {
+      padding-left: 1.1rem;
+      font-size: 0.84rem;
+    }
+
+    ul.compact-list li {
+      margin-bottom: 0.35rem;
+    }
+
+    .t-true { color: var(--accent-emerald); font-weight: 700; }
+    .t-false { color: var(--accent-rose); font-weight: 700; }
+
+    @media print {
+      header { position: static; background: #fff; color: #000; }
+      body { background: #fff; color: #000; }
+      .card, .mindmap-box { background: #fff; border: 1px solid #ccc; box-shadow: none; break-inside: avoid; }
+      .controls, .nav-pills { display: none; }
+      code, .math, .formula-block { background: #f1f5f9; color: #000; border: 1px solid #cbd5e1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="brand">
+        <span class="brand-badge">BCSE306L</span>
+        <h1>Artificial Intelligence — CAT-2 Visual Mindmap & Master Cheat Sheet</h1>
+      </div>
+      <div class="controls">
+        <input type="text" id="searchBox" class="search-input" placeholder="Search laws, FOL, Skolem, Bayes..." oninput="filterCards()" />
+        <button class="btn" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+    <nav class="nav-pills">
+      <button class="pill active" onclick="filterSection('all', this)">All Topics</button>
+      <button class="pill" onclick="filterSection('sec-4-1', this)">4.1 KRR & Wumpus World</button>
+      <button class="pill" onclick="filterSection('sec-4-2', this)">4.2 & 4.3 Propositional Logic & Laws</button>
+      <button class="pill" onclick="filterSection('sec-4-4', this)">4.4 & 4.5 First-Order Logic (FOL)</button>
+      <button class="pill" onclick="filterSection('sec-4-6', this)">4.6 FOL Inference & Unification</button>
+      <button class="pill" onclick="filterSection('sec-4-7', this)">4.7 Forward & Backward Chaining</button>
+      <button class="pill" onclick="filterSection('sec-4-8', this)">4.8 CNF & Resolution Proofs</button>
+      <button class="pill" onclick="filterSection('sec-mod3-5', this)">Mod 3 & 5 Quick Formulas</button>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- VISUAL MINDMAP OVERVIEW -->
+    <section class="mindmap-box">
+      <div class="mindmap-title">
+        <span>CAT-2 Complete Syllabus Mindmap & Weightage Radar (50 Marks Total)</span>
+        <span>Red Badges = Guaranteed Exam Questions</span>
+      </div>
+      <div class="mindmap-grid">
+        <div class="mm-branch mod3">
+          <h3><span>Module 3: Adversarial Search</span> <span class="topic-tag tag-amber">10M</span></h3>
+          <div class="mm-nodes">
+            <span class="mm-node hot">3.4 Game Trees (100%)</span>
+            <span class="mm-node hot">Minimax Backed-up Values</span>
+            <span class="mm-node hot">Alpha-Beta Pruning (L-to-R & R-to-L)</span>
+            <span class="mm-node">Pruned Node Justification</span>
+          </div>
+        </div>
+
+        <div class="mm-branch mod4">
+          <h3><span>Module 4A: KRR & Propositional Logic</span> <span class="topic-tag tag-blue">12M</span></h3>
+          <div class="mm-nodes">
+            <span class="mm-node">4.1 KRR Agent & 5 Knowledge Types</span>
+            <span class="mm-node">Wumpus World PEAS</span>
+            <span class="mm-node">Models & Entailment (KB ⊨ α)</span>
+            <span class="mm-node hot">4.2 Truth Tables & Validity</span>
+            <span class="mm-node hot">4.3 Equivalence Laws & 3-Chests Puzzle</span>
+            <span class="mm-node">5 Inference Rules (MP, MT, HS, DS, Res)</span>
+          </div>
+        </div>
+
+        <div class="mm-branch mod4">
+          <h3><span>Module 4B: FOL, Chaining & Resolution</span> <span class="topic-tag tag-purple">18M</span></h3>
+          <div class="mm-nodes">
+            <span class="mm-node hot">4.4/4.5 English → FOL Clones (100%)</span>
+            <span class="mm-node">Quantifier Rules (∀→, ∃∧)</span>
+            <span class="mm-node">4.6 UI, EI, UG, EG & Unification (MGU)</span>
+            <span class="mm-node hot">4.7 Forward & Backward Chaining</span>
+            <span class="mm-node hot">4.8 6-Step CNF & Skolemization</span>
+            <span class="mm-node hot">4.8 Resolution Refutation Tree (83%)</span>
+          </div>
+        </div>
+
+        <div class="mm-branch mod5">
+          <h3><span>Module 5: Uncertainty & Bayes</span> <span class="topic-tag tag-emerald">10M</span></h3>
+          <div class="mm-nodes">
+            <span class="mm-node hot">5.1 Bayes' Rule Word Problems (83%)</span>
+            <span class="mm-node">Conditional & Joint Independence</span>
+            <span class="mm-node hot">5.2 Naive Bayes Table Classifier (83%)</span>
+            <span class="mm-node">Bayesian Belief Networks (DAG)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.1: INTRODUCTION TO KRR, AGENTS, WUMPUS WORLD & ENTAILMENT -->
+    <!-- ================================================================= -->
+    <section class="topic-section" id="sec-4-1">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="topic-tag tag-blue">Topic 4.1</span>
+          <span>Knowledge Representation & Reasoning (KRR), Wumpus World & Logic Foundations</span>
+        </div>
+        <span class="topic-tag tag-amber">Probability: 50% (2–5 Marks)</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- KRR Core & Agent Cycle -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>KRR Architecture & Knowledge-Based Agent Cycle</span>
+            <span>Slides 6–9, 67–75</span>
+          </div>
+          <p style="font-size:0.83rem; color:var(--text-muted); margin-bottom:0.5rem;">
+            <strong>Knowledge Representation (KR):</strong> How knowledge is stored formally. <strong>Reasoning:</strong> How new knowledge is inferred.
+          </p>
+          <div class="pipeline">
+            <span class="pipe-step">1. Perceive</span><span class="pipe-arrow">→</span>
+            <span class="pipe-step">2. TELL (KB)</span><span class="pipe-arrow">→</span>
+            <span class="pipe-step">3. Infer / ASK (KB)</span><span class="pipe-arrow">→</span>
+            <span class="pipe-step">4. Act</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Component / Level</th>
+                  <th>Definition & Role</th>
+                  <th>Examples</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Knowledge Base (KB)</strong></td>
+                  <td>Domain-specific collection of formal sentences (Facts, Rules, Constraints).</td>
+                  <td><code>Student(Ravi)</code>, <code>Student(x) ∧ Studies(x) → Pass(x)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Inference Engine</strong></td>
+                  <td>Domain-independent algorithms that apply logical rules to KB to deduce new facts.</td>
+                  <td>Modus Ponens, Forward/Backward Chaining, Resolution</td>
+                </tr>
+                <tr>
+                  <td><strong>Knowledge Level</strong></td>
+                  <td><em>"What does the agent know?"</em> (Abstract knowledge independent of code).</td>
+                  <td>Pit is in nearby room; Gold is present.</td>
+                </tr>
+                <tr>
+                  <td><strong>Implementation Level</strong></td>
+                  <td><em>"How is knowledge stored & manipulated?"</em> (Data structures & algorithms).</td>
+                  <td>Arrays, Graphs, Hash Tables, Logic Clauses.</td>
+                </tr>
+                <tr>
+                  <td><strong>Semantic Matching</strong></td>
+                  <td>Matches <em>meaning/intent</em> (synonyms, ontologies) rather than exact surface strings.</td>
+                  <td><em>"Navy Sedan with Crimson Hatches"</em> ≡ <em>"Blue Car with Red Doors"</em>.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5 Types of Knowledge & KB vs DB -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>5 Types of Knowledge & KB vs. Database</span>
+            <span>Slides 10–13, 68–71</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Knowledge Type</th>
+                  <th>Core Meaning</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. Declarative</strong></td>
+                  <td><em>"Know What"</em> — static facts, concepts, objects.</td>
+                  <td><code>Capital(TamilNadu, Chennai)</code>, Water boils at 100°C.</td>
+                </tr>
+                <tr>
+                  <td><strong>2. Procedural</strong></td>
+                  <td><em>"Know How"</em> — imperative steps, algorithms, strategies to perform tasks.</td>
+                  <td>Algorithm to compute circle area: obtain $r$, compute $A = \pi r^2$.</td>
+                </tr>
+                <tr>
+                  <td><strong>3. Meta-Knowledge</strong></td>
+                  <td><em>"Knowledge about Knowledge"</em> — reliability, rule priority, confidence.</td>
+                  <td>"Apply Rule 1 before Rule 2", "Source A is reliable".</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Heuristic</strong></td>
+                  <td><em>"Rule of Thumb"</em> — expert experience; fast & useful, <strong>not guaranteed</strong>.</td>
+                  <td>"Control center of chessboard", "Check battery first if laptop won't boot".</td>
+                </tr>
+                <tr>
+                  <td><strong>5. Structural</strong></td>
+                  <td>Relationships organizing concepts/objects.</td>
+                  <td><code>IS-A</code> (Car IS-A Vehicle), <code>PART-OF</code> (Engine PART-OF Car).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-tip" style="margin-top:0.6rem;">
+            <strong>KB vs. Database:</strong> A <strong>Database</strong> stores large volumes of flat facts on disk (updated by clerks, retrieves data only, implicit rules). A <strong>Knowledge Base</strong> stores explicit facts + rules in main memory (updated by domain experts, actively <em>infers</em> new conclusions).
+          </div>
+        </div>
+
+        <!-- Wumpus World Cheat Card -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>The Wumpus World Environment & Logic Rules</span>
+            <span>Slides 76–94, 104</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Aspect</th>
+                  <th>Specification in 4×4 Wumpus Cave</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Performance (P)</strong></td>
+                  <td><code>+1000</code> (pick gold), <code>-1000</code> (fall in Pit / eaten by Wumpus), <code>-1</code> per step, <code>-10</code> using arrow.</td>
+                </tr>
+                <tr>
+                  <td><strong>Environment (E)</strong></td>
+                  <td>4×4 grid, Agent starts at <code>[1,1]</code>. Pits cause <strong>Breeze</strong> in orthogonally adjacent rooms; Wumpus causes <strong>Stench</strong> in adjacent rooms.</td>
+                </tr>
+                <tr>
+                  <td><strong>Actuators (A)</strong></td>
+                  <td><code>LeftTurn</code>, <code>RightTurn</code>, <code>Forward</code>, <code>Grab</code> (Gold), <code>Release</code>, <code>Shoot</code> (1 arrow).</td>
+                </tr>
+                <tr>
+                  <td><strong>Sensors (S)</strong></td>
+                  <td>5-bit Percept vector: <code>[Stench, Breeze, Glitter, Bump, Scream]</code>. E.g., <code>[None, Breeze, None, None, None]</code>.</td>
+                </tr>
+                <tr>
+                  <td><strong>Characterization</strong></td>
+                  <td><strong>Partially Observable</strong> (local percepts), <strong>Deterministic</strong>, <strong>Sequential</strong>, <strong>Static</strong>, <strong>Discrete</strong>, <strong>Single-Agent</strong>.</td>
+                </tr>
+                <tr>
+                  <td><strong>Wumpus Logic Rules</strong></td>
+                  <td>
+                    Breeze iff adjacent Pit: <code>B₁,₁ ⇔ (P₁,₂ ∨ P₂,₁)</code> and <code>B₂,₁ ⇔ (P₁,₁ ∨ P₂,₂ ∨ P₃,₁)</code><br/>
+                    Stench iff adjacent Wumpus: <code>S₁,₂ ⇔ (W₁,₁ ∨ W₂,₂ ∨ W₁,₃)</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Models, Entailment, Soundness & Completeness -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Models, Entailment ($KB \models \alpha$), Soundness & Completeness</span>
+            <span>Slides 17–18, 86–95, 103–104</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Term / Symbol</th>
+                  <th>Formal Definition & Exam Key Point</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Syntax vs. Semantics</strong></td>
+                  <td><strong>Syntax:</strong> What expressions are legally formed ($x+2 \ge y$). <strong>Semantics:</strong> Truth meaning of a sentence in a possible world.</td>
+                </tr>
+                <tr>
+                  <td><strong>Model ($m$) & $M(\alpha)$</strong></td>
+                  <td>A possible world assigning T/F to every variable ($n$ vars $\Rightarrow 2^n$ models). $M(\alpha)$ is the set of all models where $\alpha$ is True.</td>
+                </tr>
+                <tr>
+                  <td><strong>Logical Entailment ($KB \models \alpha$)</strong></td>
+                  <td>$\alpha$ logically follows from $KB$: in <strong>every model</strong> where $KB$ is True, $\alpha$ is also True. Formally: <code>M(KB) ⊆ M(α)</code>.</td>
+                </tr>
+                <tr>
+                  <td><strong>Entailment ($\models$) vs. Implication ($\rightarrow$)</strong></td>
+                  <td><code>P → Q</code> is a syntactic formula inside logic; <code>KB ⊨ Q</code> is a semantic meta-relationship between KB and conclusion.</td>
+                </tr>
+                <tr>
+                  <td><strong>Soundness ($KB \vdash_i \alpha \Rightarrow KB \models \alpha$)</strong></td>
+                  <td>Inference procedure $i$ is <strong>sound</strong> if it proves <em>only true</em> statements (never proves anything wrong).</td>
+                </tr>
+                <tr>
+                  <td><strong>Completeness ($KB \models \alpha \Rightarrow KB \vdash_i \alpha$)</strong></td>
+                  <td>Inference procedure $i$ is <strong>complete</strong> if it can prove <em>every sentence</em> that is logically entailed by KB.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-warn">
+            <strong>PYQ Entailment Trick (Slot B1 Q3b):</strong> Adding a disjunct <em>weakens</em> a clause so it IS entailed: $(A \vee B)$ entails $(A \vee B \vee C)$. Removing a literal from a clause <em>strengthens</em> it so it is NOT entailed: $(\neg C \vee \neg D \vee E)$ does <strong>not</strong> entail $(\neg D \vee E)$!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.2 & 4.3: PROPOSITIONAL LOGIC, EQUIVALENCES & INFERENCE    -->
+    <!-- ================================================================= -->
+    <section class="topic-section" id="sec-4-2">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="topic-tag tag-rose">Topics 4.2 & 4.3</span>
+          <span>Propositional Logic: Truth Tables, Equivalences, Normal Forms & Inference Rules</span>
+        </div>
+        <span class="topic-tag tag-rose">Probability: 83.3% (4–10 Marks)</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- Connectives & Master Truth Table -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>5 Logical Connectives & Master Truth Table</span>
+            <span>Slides 19–20, 55, 98–103</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>$P$</th>
+                  <th>$Q$</th>
+                  <th>Negation<br/>$\neg P$</th>
+                  <th>AND<br/>$P \wedge Q$</th>
+                  <th>OR<br/>$P \vee Q$</th>
+                  <th>Implication<br/>$P \rightarrow Q$</th>
+                  <th>Biconditional<br/>$P \leftrightarrow Q$</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t-true">T</td>
+                  <td class="t-true">T</td>
+                  <td class="t-false">F</td>
+                  <td class="t-true">T</td>
+                  <td class="t-true">T</td>
+                  <td class="t-true">T</td>
+                  <td class="t-true">T</td>
+                </tr>
+                <tr>
+                  <td class="t-true">T</td>
+                  <td class="t-false">F</td>
+                  <td class="t-false">F</td>
+                  <td class="t-false">F</td>
+                  <td class="t-true">T</td>
+                  <td class="t-false">F (Only False!)</td>
+                  <td class="t-false">F</td>
+                </tr>
+                <tr>
+                  <td class="t-false">F</td>
+                  <td class="t-true">T</td>
+                  <td class="t-true">T</td>
+                  <td class="t-false">F</td>
+                  <td class="t-true">T</td>
+                  <td class="t-true">T (Vacuous)</td>
+                  <td class="t-false">F</td>
+                </tr>
+                <tr>
+                  <td class="t-false">F</td>
+                  <td class="t-false">F</td>
+                  <td class="t-true">T</td>
+                  <td class="t-false">F</td>
+                  <td class="t-false">F</td>
+                  <td class="t-true">T (Vacuous)</td>
+                  <td class="t-true">T</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-trap">
+            <strong>What is NOT a Proposition? (Slide 18):</strong> Questions (<em>"What time is it?"</em>), Commands (<em>"Close the door"</em>), and open equations with free variables (<em>"$x + 2 = 5$"</em>) are <strong>NOT propositions</strong> because they do not have a fixed True/False value.
+          </div>
+        </div>
+
+        <!-- Tricky English Phrases to PL Mapping -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Tricky English Phrases → Propositional Logic Mapping</span>
+            <span>Slides 57–61</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>English Phrase Pattern</th>
+                  <th>Formal Translation</th>
+                  <th>Why / Memory Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>"A <strong>if</strong> B"</td>
+                  <td><code>B → A</code></td>
+                  <td>B is the trigger/cause for A. (e.g., <em>"I pass if I study"</em>: $\text{Study} \rightarrow \text{Pass}$).</td>
+                </tr>
+                <tr>
+                  <td>"A <strong>only if</strong> B"</td>
+                  <td><code>A → B</code></td>
+                  <td><strong>TRAP!</strong> B is a necessary condition for A. (<em>"I pass only if I study"</em>: $\text{Pass} \rightarrow \text{Study}$).</td>
+                </tr>
+                <tr>
+                  <td>"A <strong>unless</strong> B"</td>
+                  <td><code>¬B → A</code> $\equiv$ <code>A ∨ B</code></td>
+                  <td>"If not B, then A" (<em>"Walk unless it rains"</em>: $\neg\text{Rain} \rightarrow \text{Walk}$).</td>
+                </tr>
+                <tr>
+                  <td>"A <strong>if and only if (iff)</strong> B"</td>
+                  <td><code>A ↔ B</code></td>
+                  <td>Both directions hold: $(A \rightarrow B) \wedge (B \rightarrow A)$.</td>
+                </tr>
+                <tr>
+                  <td>"<strong>Neither</strong> A <strong>nor</strong> B"</td>
+                  <td><code>¬A ∧ ¬B</code> $\equiv$ <code>¬(A ∨ B)</code></td>
+                  <td>Both A and B are false (De Morgan's Law).</td>
+                </tr>
+                <tr>
+                  <td>"<strong>Either</strong> A <strong>or</strong> B, <strong>but not both</strong>"</td>
+                  <td><code>(A ∨ B) ∧ ¬(A ∧ B)</code></td>
+                  <td>Exclusive OR (XOR).</td>
+                </tr>
+                <tr>
+                  <td>"A, but B" / "A, yet B" / "A, moreover B"</td>
+                  <td><code>A ∧ B</code></td>
+                  <td>"But", "yet", "also" always translate to logical <strong>AND ($\wedge$)</strong>!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Laws of Logical Equivalence -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Laws of Logical Equivalence ($\alpha \equiv \beta$)</span>
+            <span>Slides 41–44, 105, 111</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Law Name</th>
+                  <th>Formal Equivalence Formula</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Implication Elimination</strong></td>
+                  <td><code>(α ⇒ β) ≡ (¬α ∨ β)</code> <em>(Most used law in CAT-2!)</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Contraposition (Contrapositive)</strong></td>
+                  <td><code>(α ⇒ β) ≡ (¬β ⇒ ¬α)</code> (e.g., $\neg\text{Sunny} \Rightarrow \text{Umbrella} \equiv \neg\text{Umbrella} \Rightarrow \text{Sunny}$)</td>
+                </tr>
+                <tr>
+                  <td><strong>Biconditional Elimination</strong></td>
+                  <td><code>(α ⇔ β) ≡ (α ⇒ β) ∧ (β ⇒ α)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>De Morgan's Laws</strong></td>
+                  <td><code>¬(α ∧ β) ≡ (¬α ∨ ¬β)</code> &nbsp;and&nbsp; <code>¬(α ∨ β) ≡ (¬α ∧ ¬β)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Distributivity (∨ over ∧ for CNF)</strong></td>
+                  <td><code>α ∨ (β ∧ γ) ≡ (α ∨ β) ∧ (α ∨ γ)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Distributivity (∧ over ∨ for DNF)</strong></td>
+                  <td><code>α ∧ (β ∨ γ) ≡ (α ∧ β) ∨ (α ∧ γ)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Double Negation & Commutativity</strong></td>
+                  <td><code>¬(¬α) ≡ α</code> &nbsp;|&nbsp; <code>(α ∧ β) ≡ (β ∧ α)</code> &nbsp;|&nbsp; <code>(α ∨ β) ≡ (β ∨ α)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Nested Implication Exportation</strong></td>
+                  <td><code>α ⇒ (β ⇒ γ) ≡ (α ∧ β) ⇒ γ</code> (Used in Marcus BC slide 89!)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-tip">
+            <strong>CNF vs. DNF Quick Check (Slides 41–42):</strong><br/>
+            • <strong>CNF (Conjunctive Normal Form):</strong> <code>AND outside, OR inside</code> $\rightarrow (A \vee B) \wedge (\neg P \vee Q)$.<br/>
+            • <strong>DNF (Disjunctive Normal Form):</strong> <code>OR outside, AND inside</code> $\rightarrow (A \wedge B) \vee (\neg P \wedge Q)$.
+          </div>
+        </div>
+
+        <!-- Validity, Satisfiability & Propositional Inference Rules -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Validity, Satisfiability & 5 Propositional Inference Rules</span>
+            <span>Slides 34–40, 101–106, 110</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Concept / Rule</th>
+                  <th>Formula / Structure</th>
+                  <th>Key Meaning & Memory Trick</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Valid (Tautology)</strong></td>
+                  <td>True in <strong>ALL</strong> models ($T, T, \dots, T$)</td>
+                  <td><strong>Deduction Theorem:</strong> $KB \models \alpha \iff (KB \Rightarrow \alpha)$ is Valid.</td>
+                </tr>
+                <tr>
+                  <td><strong>Satisfiable</strong></td>
+                  <td>True in <strong>$\ge 1$</strong> model</td>
+                  <td>Every valid formula is also satisfiable! If true in some & false in some = <em>Contingency</em>.</td>
+                </tr>
+                <tr>
+                  <td><strong>Unsatisfiable (Contradiction)</strong></td>
+                  <td>True in <strong>NO</strong> models ($F, F, \dots, F$)</td>
+                  <td><strong>Refutation Theorem:</strong> $KB \models \alpha \iff (KB \wedge \neg\alpha)$ is Unsatisfiable (Basis of Resolution!).</td>
+                </tr>
+                <tr>
+                  <td><strong>1. Modus Ponens (MP)</strong></td>
+                  <td><code>P → Q, &nbsp;P &nbsp;∴ Q</code></td>
+                  <td><em>Confirm the cause $\rightarrow$ get the result.</em></td>
+                </tr>
+                <tr>
+                  <td><strong>2. Modus Tollens (MT)</strong></td>
+                  <td><code>P → Q, &nbsp;¬Q &nbsp;∴ ¬P</code></td>
+                  <td><em>Deny the conclusion $\rightarrow$ reject the cause.</em> (Note: $P \rightarrow Q, Q \therefore P$ is <strong>INVALID</strong>!).</td>
+                </tr>
+                <tr>
+                  <td><strong>3. Hypothetical Syllogism (HS)</strong></td>
+                  <td><code>P → Q, &nbsp;Q → R &nbsp;∴ P → R</code></td>
+                  <td><em>Chain Rule</em> of implications.</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Disjunctive Syllogism (DS)</strong></td>
+                  <td><code>P ∨ Q, &nbsp;¬P &nbsp;∴ Q</code></td>
+                  <td><em>Unit Resolution:</em> Eliminate one option in OR $\rightarrow$ keep the other.</td>
+                </tr>
+                <tr>
+                  <td><strong>5. Resolution Rule</strong></td>
+                  <td><code>P ∨ Q, &nbsp;¬P ∨ R &nbsp;∴ Q ∨ R</code></td>
+                  <td>Cancel complementary literals ($P, \neg P$) and join remaining disjuncts.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.4 & 4.5: FIRST-ORDER LOGIC (FOL) & TRANSLATIONS           -->
+    <!-- ================================================================= -->
+    <section class="topic-section" id="sec-4-4">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="topic-tag tag-purple">Topics 4.4 & 4.5</span>
+          <span>First-Order Logic (FOL): Syntax, Quantifiers & High-Yield Translations</span>
+        </div>
+        <span class="topic-tag tag-rose">Probability: 100% (Guaranteed 4–10 Marks)</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- PL vs FOL & Syntax Elements -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Propositional Logic vs. First-Order Logic & FOL Syntax</span>
+            <span>Slides 27–31, 152–158</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Propositional Logic (PL)</th>
+                  <th>First-Order Logic (FOL)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Ontology (World View)</strong></td>
+                  <td>Atomic Facts ($P, Q, R$)</td>
+                  <td>Objects, Properties (Unary Predicates), Relations ($n$-ary), Functions</td>
+                </tr>
+                <tr>
+                  <td><strong>Syntax Building Blocks</strong></td>
+                  <td>Proposition symbols + Connectives ($\neg, \wedge, \vee, \rightarrow, \leftrightarrow$)</td>
+                  <td><strong>Terms</strong> (Constants, Variables, Functions) + <strong>WFF Sentences</strong> (Predicates, Quantifiers $\forall, \exists$, $=$)</td>
+                </tr>
+                <tr>
+                  <td><strong>Predicate vs. Function</strong></td>
+                  <td>N/A</td>
+                  <td><strong>Predicate</strong> returns <code>True/False</code> (<code>Tall(John)</code>). <strong>Function</strong> returns an <code>Object</code> (<code>FatherOf(Mary) = John</code>).</td>
+                </tr>
+                <tr>
+                  <td><strong>Inference & Complexity</strong></td>
+                  <td>Truth Tables, DPLL, GSAT — <strong>NP-Complete</strong> (Decidable)</td>
+                  <td>Unification, GMP, FC/BC, Resolution — <strong>Semi-decidable</strong> (Infinite interpretations if functions exist)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-tip">
+            <strong>Ground Term vs. WFF (Slide 158):</strong> A <strong>Ground Term</strong> has NO variables (e.g., <code>FatherOf(John)</code>). A <strong>Well-Formed Formula (WFF)</strong> has NO "free" variables—every variable is bound by $\forall$ or $\exists$.
+          </div>
+        </div>
+
+        <!-- Quantifier Rules & Duality -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Quantifier Golden Rules, Scope & De Morgan's Duality</span>
+            <span>Slides 30, 49–50, 159–162</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rule / Property</th>
+                  <th>Universal Quantifier ($\forall x$)</th>
+                  <th>Existential Quantifier ($\exists x$)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Standard Connective</strong></td>
+                  <td>Pairs with <strong>Implication ($\rightarrow$)</strong>:<br/><code>∀x (Elephant(x) → Gray(x))</code></td>
+                  <td>Pairs with <strong>Conjunction ($\wedge$)</strong>:<br/><code>∃x (Student(x) ∧ Smart(x))</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Fatal Exam Mistake!</strong></td>
+                  <td><strong>NEVER write</strong> <code>∀x (Elephant(x) ∧ Gray(x))</code> (Means everything in universe is a gray elephant!).</td>
+                  <td><strong>NEVER write</strong> <code>∃x (Student(x) → Smart(x))</code> (Trivially true if a non-student object exists!).</td>
+                </tr>
+                <tr>
+                  <td><strong>Swapping Quantifiers</strong></td>
+                  <td colspan="2">
+                    • Same quantifiers commute: <code>∀x ∀y P(x,y) ⇔ ∀y ∀x P(x,y)</code> and <code>∃x ∃y P(x,y) ⇔ ∃y ∃x P(x,y)</code>.<br/>
+                    • <strong>Mixed quantifiers DO NOT commute:</strong><br/>
+                    &nbsp;&nbsp;<code>∀x ∃y Likes(x,y)</code> = "Everyone likes someone" $\neq$ <code>∃y ∀x Likes(x,y)</code> = "Someone is liked by everyone".
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>De Morgan's Quantifier Laws</strong></td>
+                  <td colspan="2">
+                    • <code>¬∀x P(x) ⇔ ∃x ¬P(x)</code> &nbsp;&nbsp;|&nbsp;&nbsp; <code>∀x ¬P(x) ⇔ ¬∃x P(x)</code><br/>
+                    • <code>¬∃x P(x) ⇔ ∀x ¬P(x)</code> &nbsp;&nbsp;|&nbsp;&nbsp; <code>∃x P(x) ⇔ ¬∀x ¬P(x)</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Master English-to-FOL Table (Slides + Cloned PYQs) -->
+      <div class="card searchable" style="margin-top:1.25rem;">
+        <div class="card-title">
+          <span>Master English-to-FOL & CNF Translation Table (Slide Examples + 100% Repeating PYQ Clones)</span>
+          <span>Slides 32, 61, 167 + PYQs B1/E1/E2/D1/D2</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Pattern Category</th>
+                <th>English Sentence (Slides & PYQ Clones)</th>
+                <th>First-Order Logic (FOL) & Skolemized CNF</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Universal Comparison</strong><br/><em>(B1, E1, E2, D2)</em></td>
+                <td>"Any house in Parson costs less than any apartment in Chennai."<br/><em>(Also: Book in library vs. Magazine in store / Smartphone vs. Laptop)</em></td>
+                <td>
+                  <strong>FOL:</strong> <code>∀x ∀y ((House(x) ∧ In(x, Parson) ∧ Apt(y) ∧ In(y, Chennai)) → LessCost(x, y))</code><br/>
+                  <strong>CNF:</strong> <code>¬House(x) ∨ ¬In(x, Parson) ∨ ¬Apt(y) ∨ ¬In(y, Chennai) ∨ LessCost(x, y)</code>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2. Universal Conjunction</strong><br/><em>(E1, E2)</em></td>
+                <td>"Any electric car is more efficient and produces less pollution than a gasoline car."<br/><em>(Also: 3-star vs. 5-star washing machine)</em></td>
+                <td>
+                  <strong>FOL:</strong> <code>∀x ∀y ((EC(x) ∧ GC(y)) → (Efficient(x,y) ∧ LessPollution(x,y)))</code><br/>
+                  <strong>CNF:</strong> <code>(¬EC(x) ∨ ¬GC(y) ∨ Efficient(x,y)) ∧ (¬EC(x) ∨ ¬GC(y) ∨ LessPollution(x,y))</code>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>3. Uniqueness ("Exactly One")</strong><br/><em>(B1, E1, E2)</em></td>
+                <td>"There is <strong>exactly one</strong> student whose GPA is 4.0."<br/><em>(Also: House in Parson costing 20L / Person with JEE rank 14)</em></td>
+                <td>
+                  <strong>FOL:</strong> <code>∃x (Student(x) ∧ GPA(x, 4.0) ∧ ∀y ((Student(y) ∧ GPA(y, 4.0)) → (x = y)))</code><br/>
+                  <strong>CNF (Skolem const $c$):</strong> <code>Student(c) ∧ GPA(c, 4.0) ∧ (¬Student(y) ∨ ¬GPA(y, 4.0) ∨ (y = c))</code>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>4. Uniqueness ("Exactly Two")</strong><br/><em>(Slide 32 & 167)</em></td>
+                <td>"There are <strong>exactly two</strong> purple mushrooms."</td>
+                <td>
+                  <strong>FOL:</strong> <code>∃x ∃y (Mushroom(x) ∧ Purple(x) ∧ Mushroom(y) ∧ Purple(y) ∧ (x ≠ y) ∧ ∀z ((Mushroom(z) ∧ Purple(z)) → (z = x ∨ z = y)))</code>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>5. Superlative ("Any Other")</strong><br/><em>(B1, E1, E2)</em></td>
+                <td>"There is a restaurant in Paris that serves better food than <strong>any other</strong> restaurant in the city."<br/><em>(Also: House in Parson / Villa in Mumbai)</em></td>
+                <td>
+                  <strong>FOL:</strong> <code>∃x (Rest(x) ∧ In(x, Paris) ∧ ∀y ((Rest(y) ∧ In(y, Paris) ∧ (y ≠ x)) → Better(x, y)))</code><br/>
+                  <strong>CNF (Skolem const $c$):</strong> <code>Rest(c) ∧ In(c, Paris) ∧ (¬Rest(y) ∨ ¬In(y, Paris) ∨ (y = c) ∨ Better(c, y))</code>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>6. Universal-Existential</strong><br/><em>(E1, E2)</em></td>
+                <td>"A person who helps others is respected by everyone."<br/><em>(Also: Person who loves his mother is loved by everyone)</em></td>
+                <td>
+                  <strong>FOL:</strong> <code>∀x ((Person(x) ∧ ∃y (Person(y) ∧ Helps(x,y))) → ∀z (Person(z) → Respects(z,x)))</code><br/>
+                  <strong>CNF:</strong> <code>¬Person(x) ∨ ¬Person(y) ∨ ¬Helps(x,y) ∨ ¬Person(z) ∨ Respects(z,x)</code>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>7. "Fooling People" Quote</strong><br/><em>(Slide 167 & D1 Q2a)</em></td>
+                <td>"You can fool some of the people all of the time, and all of the people some of the time, but not all of the people all of the time."</td>
+                <td>
+                  • Some people all time: <code>∃x (Person(x) ∧ ∀t (Time(t) → CanFool(you, x, t)))</code><br/>
+                  • All people some time: <code>∀x (Person(x) → ∃t (Time(t) ∧ CanFool(you, x, t)))</code><br/>
+                  • Not all people all time: <code>¬∀x ∀t ((Person(x) ∧ Time(t)) → CanFool(you, x, t))</code>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>8. Transitive Closure</strong><br/><em>(Slide 32 & 167)</em></td>
+                <td>"X is above Y iff X is directly on top of Y or on top of a pile ending at Y."</td>
+                <td>
+                  <strong>FOL:</strong> <code>∀x ∀y (Above(x,y) ↔ (On(x,y) ∨ ∃z (On(x,z) ∧ Above(z,y))))</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.6: INFERENCE IN FOL & UNIFICATION (MGU)                   -->
+    <!-- ================================================================= -->
+    <section class="topic-section" id="sec-4-6">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="topic-tag tag-emerald">Topic 4.6</span>
+          <span>Inference in First-Order Logic, Instantiation Rules & Unification (MGU)</span>
+        </div>
+        <span class="topic-tag tag-emerald">Probability: 83.3% (Core to Chaining & Resolution)</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- 4 Quantified Instantiation & Generalization Rules -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>4 Quantified Inference Rules (UI, EI, UG, EG)</span>
+            <span>Slides 62–64, 163–166, 174–175</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rule Name</th>
+                  <th>Inference Form</th>
+                  <th>Restriction & Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. Universal Instantiation (UI)</strong><br/><em>(Universal Elimination)</em></td>
+                  <td>$$\frac{\forall v \; \alpha}{\text{Subst}(\{v/g\}, \alpha)}$$</td>
+                  <td><strong>Everyone $\rightarrow$ One:</strong> Replace $v$ with <em>any ground term</em> $g$ (constant or ground function like <code>Father(John)</code>). Can be applied multiple times.</td>
+                </tr>
+                <tr>
+                  <td><strong>2. Existential Instantiation (EI)</strong><br/><em>(Existential Elimination / Skolemization)</em></td>
+                  <td>$$\frac{\exists v \; \alpha}{\text{Subst}(\{v/k\}, \alpha)}$$</td>
+                  <td><strong>Someone exists $\rightarrow$ Give a brand-new name:</strong> Replace $v$ with a <strong>Skolem constant $k$</strong> that <em>does not appear anywhere else in KB</em>. Applied once, then discard $\exists$.</td>
+                </tr>
+                <tr>
+                  <td><strong>3. Universal Generalization (UG)</strong></td>
+                  <td>$$\frac{P(x) \text{ (for arbitrary } x\text{)}}{\forall x \; P(x)}$$</td>
+                  <td><strong>Arbitrary one $\rightarrow$ Everyone:</strong> If proven for an arbitrary variable $x$, generalize to $\forall x$.</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Existential Generalization (EG)</strong><br/><em>(Existential Introduction)</em></td>
+                  <td>$$\frac{P(a)}{\exists x \; P(x)}$$</td>
+                  <td><strong>One known object $\rightarrow$ Someone exists:</strong> From <code>Student(Ravi)</code>, infer <code>∃x Student(x)</code>.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-warn">
+            <strong>Propositionalization Problem (Slides 176–178):</strong> Converting FOL to PL via UI generates irrelevant facts (e.g., <code>Greedy(Richard)</code>) and becomes <strong>infinite</strong> when function symbols exist (<code>Father(Father(Father(John)))</code>). Unification + Generalized Modus Ponens solves this!
+          </div>
+        </div>
+
+        <!-- Unification & MGU -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Unification Algorithm & Most General Unifier (MGU)</span>
+            <span>Slides 65–67, 179–189</span>
+          </div>
+          <p style="font-size:0.83rem; color:var(--text-muted);">
+            <code>UNIFY(p, q) = θ</code> returns the <strong>Most General Unifier (MGU)</strong> substitution $\theta$ such that $p\theta = q\theta$.
+          </p>
+          <ul class="compact-list" style="margin:0.45rem 0;">
+            <li><strong>Condition 1:</strong> Predicate symbols must be identical (<code>Likes</code> cannot unify with <code>Knows</code>).</li>
+            <li><strong>Condition 2:</strong> Number of arguments must be identical.</li>
+            <li><strong>Condition 3 (Conflict / Occurs Check):</strong> A variable cannot unify with two different constants in the same scope, nor with a function of itself (e.g., $x$ with $f(x)$).</li>
+          </ul>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Expression $p$</th>
+                  <th>Expression $q$</th>
+                  <th>MGU $\theta = \text{UNIFY}(p, q)$</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>Knows(John, x)</code></td>
+                  <td><code>Knows(John, Jane)</code></td>
+                  <td><code>{x / Jane}</code></td>
+                </tr>
+                <tr>
+                  <td><code>Knows(John, x)</code></td>
+                  <td><code>Knows(y, OJ)</code></td>
+                  <td><code>{y / John, x / OJ}</code></td>
+                </tr>
+                <tr>
+                  <td><code>Knows(John, x)</code></td>
+                  <td><code>Knows(y, Mother(y))</code></td>
+                  <td><code>{y / John, x / Mother(John)}</code></td>
+                </tr>
+                <tr>
+                  <td><code>Knows(John, x)</code></td>
+                  <td><code>Knows(x, OJ)</code></td>
+                  <td><strong class="t-false">FAIL</strong> ($x$ cannot be both <code>John</code> and <code>OJ</code>! Must standardize apart to $x_1, x_2$ first).</td>
+                </tr>
+                <tr>
+                  <td><code>Knows(John, x)</code></td>
+                  <td><code>Knows(y, z)</code></td>
+                  <td><code>{y / John, x / z}</code> <em>(More general than $\{y/\text{John}, x/\text{John}, z/\text{John}\}$)</em></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.7: FORWARD AND BACKWARD CHAINING ALGORITHMS               -->
+    <!-- ================================================================= -->
+    <section class="topic-section" id="sec-4-7">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="topic-tag tag-amber">Topic 4.7</span>
+          <span>Forward Chaining vs. Backward Chaining & Horn Clauses</span>
+        </div>
+        <span class="topic-tag tag-amber">Probability: 66.7% (6–10 Marks)</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- FC vs BC Comparison & Horn Clauses -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Horn Clauses & Forward vs. Backward Chaining Comparison</span>
+            <span>Slides 68–80, 94, 121–145, 196–207</span>
+          </div>
+          <div class="formula-block">
+            • <strong>Horn Clause:</strong> Disjunction with <strong>at most 1 positive literal</strong>: e.g., (¬C ∨ ¬B ∨ A) or (¬P ∨ ¬W).<br/>
+            • <strong>Definite Clause:</strong> Disjunction with <strong>exactly 1 positive literal</strong> ≡ Implication: (C ∧ B ⇒ A) or Fact: A.<br/>
+            • <strong>Datalog KB:</strong> First-order definite clauses + NO functions (FC guaranteed to terminate!).
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Forward Chaining (FC)</th>
+                  <th>Backward Chaining (BC)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Reasoning Style</strong></td>
+                  <td><strong>Data-Driven</strong> (Bottom-Up, automatic)</td>
+                  <td><strong>Goal-Driven</strong> (Top-Down, depth-first search)</td>
+                </tr>
+                <tr>
+                  <td><strong>Direction</strong></td>
+                  <td><code>Known Facts → Fire Rules → Goal</code></td>
+                  <td><code>Goal Query → Subgoals (Premises) → Known Facts</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Main Question</strong></td>
+                  <td><em>"What new facts can I derive from what I know?"</em></td>
+                  <td><em>"What premises do I need to prove this specific goal?"</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Time Complexity</strong></td>
+                  <td>Linear in size of Horn KB, but derives <strong>many irrelevant facts</strong>.</td>
+                  <td>Often <strong>much less than linear</strong> (only touches relevant rules). Space is linear in proof depth.</td>
+                </tr>
+                <tr>
+                  <td><strong>Pitfalls & Fixes</strong></td>
+                  <td>Redundant rule matching $\rightarrow$ Fix with <em>Incremental FC</em> & database indexing.</td>
+                  <td>Infinite loops & repeated subgoals $\rightarrow$ Fix by checking goal stack & caching (tabling).</td>
+                </tr>
+                <tr>
+                  <td><strong>Best Used For</strong></td>
+                  <td>Expert monitoring, reactive systems, deductive databases.</td>
+                  <td>Diagnostic queries, Prolog, theorem proving for a single query.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Worked Colonel West & Working Memory Exam Format -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Colonel West Case Study & PYQ Working Memory Format</span>
+            <span>Slides 70–74, 190–206 + PYQs B2/E1</span>
+          </div>
+          <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.4rem;">
+            <strong>Colonel West KB Rules & Facts (Slides 71–74, 191):</strong>
+          </p>
+          <div class="formula-block">
+            R1: American(x) ∧ Weapon(y) ∧ Sells(x,y,z) ∧ Hostile(z) ⇒ Criminal(x)<br/>
+            R2: Missile(x) ∧ Owns(Nono, x) ⇒ Sells(West, x, Nono)<br/>
+            R3: Missile(x) ⇒ Weapon(x) &nbsp;|&nbsp; R4: Enemy(x, America) ⇒ Hostile(x)<br/>
+            Facts: American(West), Owns(Nono, M₁), Missile(M₁), Enemy(Nono, America)
+          </div>
+          <p style="font-size:0.82rem; margin-top:0.5rem;">
+            <strong>Forward Chaining Iterations (Bottom-Up):</strong><br/>
+            • <strong>Iter 1:</strong> Fire R3 with <code>{x/M₁}</code> $\rightarrow$ add <code>Weapon(M₁)</code>; Fire R2 with <code>{x/M₁}</code> $\rightarrow$ add <code>Sells(West, M₁, Nono)</code>; Fire R4 with <code>{x/Nono}</code> $\rightarrow$ add <code>Hostile(Nono)</code>.<br/>
+            • <strong>Iter 2:</strong> Fire R1 with <code>{x/West, y/M₁, z/Nono}</code> $\rightarrow$ derive <code>Criminal(West)</code>! (Fixed point reached).
+          </p>
+          <p style="font-size:0.82rem; margin-top:0.4rem;">
+            <strong>Backward Chaining Tree (Top-Down):</strong><br/>
+            • Goal <code>Criminal(West)</code> unifies with head of R1 <code>{x/West}</code> $\rightarrow$ Subgoals: <code>American(West)</code> (Fact ✓), <code>Weapon(y)</code> $\rightarrow$ R3 <code>Missile(y)</code> $\rightarrow$ Fact <code>Missile(M₁)</code> ✓ <code>{y/M₁}</code>, <code>Sells(West, M₁, z)</code> $\rightarrow$ R2 $\rightarrow$ Facts ✓ <code>{z/Nono}</code>, <code>Hostile(Nono)</code> $\rightarrow$ R4 $\rightarrow$ Fact ✓.
+          </p>
+          <div class="callout callout-tip">
+            <strong>How to Write PYQ Working Memory Answers (Fluffy Tiger / Speedster Motorcycle):</strong><br/>
+            Always write: <code>R1: ?x gives milk → Fluffy gives milk (succeeds due to A4) → WM := WM + {A6: Fluffy is a mammal}</code>. If a premise is missing (e.g., Whiskers lays eggs), explicitly write: <code>fails → hence R2 is not triggered</code>!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.8: CNF CONVERSION, SKOLEMIZATION & RESOLUTION PROOFS      -->
+    <!-- ================================================================= -->
+    <section class="topic-section" id="sec-4-8">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="topic-tag tag-rose">Topic 4.8</span>
+          <span>6-Step FOL-to-CNF Pipeline, Skolemization & Resolution Refutation Proofs</span>
+        </div>
+        <span class="topic-tag tag-rose">Probability: 83.3% (6–10 Marks)</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- 6-Step CNF Pipeline -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>6-Step FOL-to-CNF Conversion Pipeline (With Skolemization Rules)</span>
+            <span>Slides 83, 96–97, 111</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Step</th>
+                  <th>Rule / Action</th>
+                  <th>Worked Transformation Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Step 1</strong></td>
+                  <td><strong>Eliminate Biconditionals ($\Leftrightarrow$)</strong></td>
+                  <td>$\alpha \Leftrightarrow \beta \;\longrightarrow\; (\alpha \Rightarrow \beta) \wedge (\beta \Rightarrow \alpha)$</td>
+                </tr>
+                <tr>
+                  <td><strong>Step 2</strong></td>
+                  <td><strong>Eliminate Implications ($\Rightarrow$)</strong></td>
+                  <td>$\alpha \Rightarrow \beta \;\longrightarrow\; \neg\alpha \vee \beta$<br/><em>Trap:</em> $(A \vee B) \Rightarrow C$ becomes $(\neg A \vee C) \wedge (\neg B \vee C)$ (2 clauses!).</td>
+                </tr>
+                <tr>
+                  <td><strong>Step 3</strong></td>
+                  <td><strong>Move Negation Inwards ($\neg$)</strong></td>
+                  <td>Apply De Morgan's & Quantifier Negation:<br/>$\neg\forall x\, P(x) \rightarrow \exists x\,\neg P(x)$ &nbsp;|&nbsp; $\neg\exists x\, P(x) \rightarrow \forall x\,\neg P(x)$</td>
+                </tr>
+                <tr>
+                  <td><strong>Step 4</strong></td>
+                  <td><strong>Standardize Variables Apart</strong></td>
+                  <td>Rename dummy variables so each quantifier has a unique variable: $(\forall x\, P(x)) \vee (\forall x\, Q(x)) \rightarrow (\forall x\, P(x)) \vee (\forall y\, Q(y))$.</td>
+                </tr>
+                <tr>
+                  <td><strong>Step 5</strong></td>
+                  <td><strong>Skolemization (Eliminate $\exists$)</strong></td>
+                  <td>
+                    • <strong>Case A (No outer $\forall$):</strong> Replace $\exists x$ with a new <strong>Skolem Constant $c$</strong>: $\exists x\, Student(x) \rightarrow Student(c)$.<br/>
+                    • <strong>Case B ($\exists y$ inside $\forall x$):</strong> Replace $y$ with a <strong>Skolem Function $f(x)$</strong>: $\forall x \exists y\, LoyalTo(x,y) \rightarrow \forall x\, LoyalTo(x, f(x))$.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Step 6</strong></td>
+                  <td><strong>Drop $\forall$ & Distribute $\vee$ over $\wedge$</strong></td>
+                  <td>Omit $\forall$ quantifiers and distribute $A \vee (B \wedge C) \rightarrow (A \vee B) \wedge (A \vee C)$ to get clauses.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Marcus & Caesar Resolution Proof -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Worked Resolution Refutation: Marcus & Caesar (Slides 81–87)</span>
+            <span>Goal: Prove <code>Hate(Marcus, Caesar)</code></span>
+          </div>
+          <div class="formula-block">
+            <strong>CNF Knowledge Base Clauses:</strong><br/>
+            C1: Man(Marcus) &nbsp;|&nbsp; C2: Pompeian(Marcus) &nbsp;|&nbsp; C3: ¬Pompeian(x) ∨ Roman(x)<br/>
+            C4: Ruler(Caesar) &nbsp;|&nbsp; C5: ¬Roman(x) ∨ LoyalTo(x, Caesar) ∨ Hate(x, Caesar)<br/>
+            C6: LoyalTo(x, f(x)) &nbsp;<em>[From ∀x ∃y LoyalTo(x,y)]</em><br/>
+            C7: ¬Man(x) ∨ ¬Ruler(y) ∨ ¬TryAssassinate(x,y) ∨ ¬LoyalTo(x,y)<br/>
+            C8: TryAssassinate(Marcus, Caesar)<br/>
+            <strong>C9 (Negated Goal):</strong> ¬Hate(Marcus, Caesar)
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Step</th>
+                  <th>Clauses Resolved</th>
+                  <th>Unifier $\theta$</th>
+                  <th>Derived Resolvent Clause</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>R1</strong></td>
+                  <td>C2 &amp; C3</td>
+                  <td><code>{x / Marcus}</code></td>
+                  <td><code>Roman(Marcus)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>R2</strong></td>
+                  <td>R1 &amp; C5</td>
+                  <td><code>{x / Marcus}</code></td>
+                  <td><code>LoyalTo(Marcus, Caesar) ∨ Hate(Marcus, Caesar)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>R3</strong></td>
+                  <td>R2 &amp; C9 (Neg Goal)</td>
+                  <td>—</td>
+                  <td><code>LoyalTo(Marcus, Caesar)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>R4</strong></td>
+                  <td>C1 &amp; C7</td>
+                  <td><code>{x / Marcus}</code></td>
+                  <td><code>¬Ruler(y) ∨ ¬TryAssassinate(Marcus, y) ∨ ¬LoyalTo(Marcus, y)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>R5</strong></td>
+                  <td>R4 &amp; C4</td>
+                  <td><code>{y / Caesar}</code></td>
+                  <td><code>¬TryAssassinate(Marcus, Caesar) ∨ ¬LoyalTo(Marcus, Caesar)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>R6</strong></td>
+                  <td>R5 &amp; C8</td>
+                  <td>—</td>
+                  <td><code>¬LoyalTo(Marcus, Caesar)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>R7</strong></td>
+                  <td>R3 &amp; R6</td>
+                  <td>—</td>
+                  <td><strong class="t-false">□ (Empty Clause / Contradiction!)</strong> $\Rightarrow$ <code>Hate(Marcus, Caesar)</code> is True!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- MODULE 3 & MODULE 5 QUICK REFERENCE FORMULAS & WORKFLOWS          -->
+    <!-- ================================================================= -->
+    <section class="topic-section" id="sec-mod3-5">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="topic-tag tag-emerald">Modules 3 & 5</span>
+          <span>Fast-Glance Formula Sheet: Minimax, Alpha-Beta Pruning, Bayes' Rule & Naive Bayes</span>
+        </div>
+        <span class="topic-tag tag-amber">Weightage: 20 Marks (10M Mod 3 + 10M Mod 5)</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- Module 3: Minimax & Alpha-Beta Pruning -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Module 3 (Topic 3.4): Game Trees, Minimax & Alpha-Beta Pruning</span>
+            <span>100% Guaranteed Q1 (10 Marks)</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Concept / Parameter</th>
+                  <th>Rule / Formula</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Maximizer Node (MAX)</strong></td>
+                  <td>Picks highest child value: $V(s) = \max_{s' \in \text{children}(s)} V(s')$. Updates $\alpha = \max(\alpha, V)$.</td>
+                </tr>
+                <tr>
+                  <td><strong>Minimizer Node (MIN)</strong></td>
+                  <td>Picks lowest child value: $V(s) = \min_{s' \in \text{children}(s)} V(s')$. Updates $\beta = \min(\beta, V)$.</td>
+                </tr>
+                <tr>
+                  <td><strong>Initial Bounds at Root</strong></td>
+                  <td>$\alpha = -\infty$ (best already guaranteed for MAX along path), $\beta = +\infty$ (best already guaranteed for MIN along path).</td>
+                </tr>
+                <tr>
+                  <td><strong>Pass Down vs. Pass Up</strong></td>
+                  <td>$\alpha$ and $\beta$ values are <strong>passed DOWN</strong> to children; backed-up node values $V$ are <strong>passed UP</strong> to parents.</td>
+                </tr>
+                <tr>
+                  <td><strong>Pruning Condition</strong></td>
+                  <td>Prune remaining sibling branches whenever <strong class="t-false">$\alpha \ge \beta$</strong> (or $V \le \alpha$ at a MIN node / $V \ge \beta$ at a MAX node).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-trap">
+            <strong>3 Exam Checkpoints for Q1:</strong><br/>
+            1. Check if the root player is <strong>MAX</strong> (default) or <strong>MIN</strong> (Slot E2 2024 started with MIN at root!).<br/>
+            2. Check traversal order: <strong>Left-to-Right</strong> vs. <strong>Right-to-Left</strong> (Slot D1 2025 asked both!).<br/>
+            3. Always write 1 sentence per pruned branch: <em>"Pruned node X because $\beta = -2 \le \alpha = 4$"</em> (Worth 2 marks!).
+          </div>
+        </div>
+
+        <!-- Module 5: Uncertainty, Bayes' Rule & Naive Bayes -->
+        <div class="card searchable">
+          <div class="card-title">
+            <span>Module 5 (Topics 5.1 & 5.2): Bayes' Rule, Independence & Naive Bayes</span>
+            <span>100% Guaranteed Q4/Q5 (10 Marks)</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Formula Name</th>
+                  <th>Mathematical Expression & Usage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Conditional Probability</strong></td>
+                  <td>$$P(A \mid B) = \frac{P(A \wedge B)}{P(B)} \quad \Longleftrightarrow \quad P(A \wedge B) = P(A \mid B) P(B)$$</td>
+                </tr>
+                <tr>
+                  <td><strong>Statistical Independence</strong></td>
+                  <td>$A$ and $B$ are independent iff: $P(A \mid B) = P(A)$ &nbsp;or&nbsp; $P(A \wedge B) = P(A) P(B)$.</td>
+                </tr>
+                <tr>
+                  <td><strong>Bayes' Theorem (Total Prob)</strong></td>
+                  <td>$$P(H \mid E) = \frac{P(E \mid H) P(H)}{P(E)} = \frac{P(E \mid H) P(H)}{P(E \mid H) P(H) + P(E \mid \neg H) P(\neg H)}$$</td>
+                </tr>
+                <tr>
+                  <td><strong>Multiple Conditional Indep. Symptoms</strong><br/><em>(Slot D2 Q4A Flu/Fever/Cough)</em></td>
+                  <td>If $V, C$ conditionally independent given $F$:<br/>$P(V \wedge C \mid F) = P(V \mid F) \times P(C \mid F)$ and $P(V \wedge C \mid \neg F) = P(V \mid \neg F) \times P(C \mid \neg F)$.</td>
+                </tr>
+                <tr>
+                  <td><strong>Naive Bayes Classifier</strong><br/><em>(Tabular Dataset Prediction)</em></td>
+                  <td>For query features $X = (x_1, x_2, \dots, x_n)$, compute score for each class $C_k$:<br/>$$\text{Score}(C_k) = P(C_k) \times \prod_{i=1}^{n} P(x_i \mid C_k)$$ Pick class $C_k$ with maximum score!</td>
+                </tr>
+                <tr>
+                  <td><strong>Bayesian Belief Network (DAG)</strong></td>
+                  <td>Joint probability of all nodes: $P(X_1, \dots, X_n) = \prod_{i=1}^{n} P(X_i \mid \text{Parents}(X_i))$.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function filterSection(secId, btn) {
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const sections = document.querySelectorAll('.topic-section');
+      sections.forEach(sec => {
+        if (secId === 'all' || sec.id === secId) {
+          sec.style.display = 'block';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+    }
+
+    function filterCards() {
+      const query = document.getElementById('searchBox').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.searchable');
+      document.querySelectorAll('.topic-section').forEach(sec => sec.style.display = 'block');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

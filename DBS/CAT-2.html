@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS CAT-2 Master Reference Guide</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-mod3: #3b82f6;
+            --accent-mod4: #10b981;
+            --accent-mod5: #ef4444;
+            --accent-pyq: #a855f7;
+            --border-color: #334155;
+            --code-bg: #020617;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+        body { background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; display: flex; }
+
+        /* Sidebar Navigation */
+        nav { width: 280px; height: 100vh; position: fixed; background: var(--bg-secondary); border-right: 1px solid var(--border-color); padding: 20px; overflow-y: auto; }
+        nav h2 { font-size: 1.2rem; margin-bottom: 20px; color: var(--text-primary); border-bottom: 2px solid var(--accent-mod3); padding-bottom: 10px; }
+        nav ul { list-style: none; }
+        nav li { margin-bottom: 10px; }
+        nav a { text-decoration: none; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; display: block; padding: 5px; border-radius: 4px; }
+        nav a:hover { color: var(--text-primary); background: var(--border-color); }
+        .nav-mod3 { border-left: 3px solid var(--accent-mod3); padding-left: 10px; }
+        .nav-mod4 { border-left: 3px solid var(--accent-mod4); padding-left: 10px; }
+        .nav-mod5 { border-left: 3px solid var(--accent-mod5); padding-left: 10px; }
+        .nav-pyq { border-left: 3px solid var(--accent-pyq); padding-left: 10px; }
+
+        /* Main Content */
+        main { margin-left: 280px; padding: 40px; width: calc(100% - 280px); max-width: 1400px; }
+        
+        section { margin-bottom: 60px; background: var(--bg-secondary); border-radius: 12px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border: 1px solid var(--border-color); }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { font-size: 1.8rem; margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
+        h3 { font-size: 1.3rem; margin-top: 20px; margin-bottom: 10px; color: #cbd5e1; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+
+        /* Custom Accents */
+        .mod3-header { color: var(--accent-mod3); }
+        .mod4-header { color: var(--accent-mod4); }
+        .mod5-header { color: var(--accent-mod5); }
+        .pyq-header { color: var(--accent-pyq); }
+
+        /* Data Tables */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: var(--bg-primary); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { background-color: var(--border-color); font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+
+        /* Algorithm/Formula Boxes */
+        .algo-box { background: var(--code-bg); border-left: 4px solid var(--accent-mod3); padding: 20px; border-radius: 0 8px 8px 0; margin: 20px 0; font-family: 'Fira Code', monospace; font-size: 0.9rem; overflow-x: auto; color: #e2e8f0; }
+        .pyq-box { border-left-color: var(--accent-pyq); }
+        .mod4-box { border-left-color: var(--accent-mod4); }
+        .mod5-box { border-left-color: var(--accent-mod5); }
+        
+        .highlight { color: #fef08a; font-weight: bold; }
+        .keyword { color: #c678dd; }
+        .operator { color: #56b6c2; }
+        .variable { color: #e5c07b; }
+
+        /* Mindmap CSS (Tree Structure) */
+        .mindmap { display: flex; justify-content: center; margin: 40px 0; overflow-x: auto; padding: 20px; background: var(--bg-primary); border-radius: 8px; }
+        .tree ul { padding-top: 20px; position: relative; transition: all 0.5s; display: flex; justify-content: center; }
+        .tree li { float: left; text-align: center; list-style-type: none; position: relative; padding: 20px 10px 0 10px; transition: all 0.5s; }
+        
+        /* Connectors */
+        .tree li::before, .tree li::after { content: ''; position: absolute; top: 0; right: 50%; border-top: 2px solid var(--border-color); width: 50%; height: 20px; }
+        .tree li::after { right: auto; left: 50%; border-left: 2px solid var(--border-color); }
+        .tree li:only-child::after, .tree li:only-child::before { display: none; }
+        .tree li:only-child { padding-top: 0; }
+        .tree li:first-child::before, .tree li:last-child::after { border: 0 none; }
+        .tree li:first-child::after { border-radius: 5px 0 0 0; }
+        .tree li:last-child::before { border-right: 2px solid var(--border-color); border-radius: 0 5px 0 0; }
+        .tree ul ul::before { content: ''; position: absolute; top: 0; left: 50%; border-left: 2px solid var(--border-color); width: 0; height: 20px; }
+        
+        .tree a { border: 1px solid var(--border-color); padding: 10px 15px; text-decoration: none; color: var(--text-primary); font-size: 0.9rem; display: inline-block; border-radius: 8px; background: var(--bg-secondary); transition: all 0.3s; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        .tree a:hover { background: var(--border-color); border-color: #f8fafc; color: #fff; }
+
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; margin-left: 8px; }
+        .badge-danger { background: #7f1d1d; color: #fca5a5; }
+        .badge-success { background: #14532d; color: #86efac; }
+        .badge-warn { background: #78350f; color: #fcd34d; }
+
+        @media (max-width: 1024px) {
+            nav { width: 220px; }
+            main { margin-left: 220px; width: calc(100% - 220px); padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav>
+        <h2>DBMS CAT-2 Index</h2>
+        <ul>
+            <li class="nav-mod3"><a href="#mod3-intro">Mod 3: Schema Refinement</a></li>
+            <li class="nav-mod3"><a href="#mod3-fds">Functional Dependencies</a></li>
+            <li class="nav-mod3"><a href="#mod3-closure">Closures & Minimal Cover</a></li>
+            <li class="nav-mod3"><a href="#mod3-nf">Normal Forms (1NF - 5NF)</a></li>
+            
+            <li class="nav-mod4" style="margin-top: 15px;"><a href="#mod4-storage">Mod 4: Physical Storage</a></li>
+            <li class="nav-mod4"><a href="#mod4-hashing">Hashing Techniques</a></li>
+            <li class="nav-mod4"><a href="#mod4-indexing">Indexing Structures</a></li>
+            <li class="nav-mod4"><a href="#mod4-btrees">B-Trees & B+-Trees</a></li>
+            <li class="nav-mod4"><a href="#mod4-ra">Relational Algebra</a></li>
+            <li class="nav-mod4"><a href="#mod4-opt">Query Optimization</a></li>
+
+            <li class="nav-mod5" style="margin-top: 15px;"><a href="#mod5-tx">Mod 5: Transaction Processing</a></li>
+            <li class="nav-mod5"><a href="#mod5-acid">ACID & Anomalies</a></li>
+            <li class="nav-mod5"><a href="#mod5-schedules">Schedules & Recoverability</a></li>
+            <li class="nav-mod5"><a href="#mod5-serial">Conflict Serializability</a></li>
+
+            <li class="nav-pyq" style="margin-top: 15px;"><a href="#pyq-bcnf">PYQ: BCNF Solver</a></li>
+            <li class="nav-pyq"><a href="#pyq-btree">PYQ: B+ Tree Logic</a></li>
+            <li class="nav-pyq"><a href="#pyq-qtree">PYQ: Query Trees</a></li>
+            <li class="nav-pyq"><a href="#pyq-graph">PYQ: Precedence Graphs</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <header style="margin-bottom: 40px;">
+            <h1 style="color: #f8fafc; font-size: 3rem;">Database Systems: CAT-2 Master Guide</h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">Comprehensive open-book reference for Schema Refinement, Storage, Algebra, and Transactions.</p>
+        </header>
+
+        <!-- ==========================================
+             MODULE 3: RELATIONAL DATABASE DESIGN 
+             ========================================== -->
+        <section id="mod3-intro">
+            <h2 class="mod3-header" id="mod3-fds">Module 3: Relational Database Design</h2>
+            
+            <h3>1. Informal Design Guidelines[cite: 10]</h3>
+            <ul>
+                <li><strong>Semantics:</strong> Each tuple should represent one entity or relationship instance. Keep attributes of different entities separate.</li>
+                <li><strong>Redundancy & Anomalies:</strong>
+                    <ul>
+                        <li><span class="highlight">Insertion Anomaly:</span> Cannot insert a project unless an employee is assigned to it.</li>
+                        <li><span class="highlight">Deletion Anomaly:</span> Deleting the last employee on a project deletes the project itself.</li>
+                        <li><span class="highlight">Update Anomaly:</span> Changing a project name requires updating 100 employee tuples.</li>
+                    </ul>
+                </li>
+                <li><strong>Null Values:</strong> Minimize them. If an attribute is frequently null, place it in a separate relation with the primary key.</li>
+                <li><strong>Spurious Tuples:</strong> Design relations to satisfy the <em>lossless join condition</em>. Never generate fake records when performing natural joins.</li>
+            </ul>
+
+            <h3 id="mod3-closure">2. Functional Dependencies (FDs)[cite: 10, 11]</h3>
+            <p><strong>Definition:</strong> <code>X &rarr; Y</code> means if two tuples have the same value for X, they must have the same value for Y. X functionally determines Y.</p>
+            
+            <h4>Armstrong's Inference Rules (Sound & Complete)[cite: 11]</h4>
+            <div class="algo-box">
+                <span class="keyword">IR1 (Reflexive):</span> If Y &subseteq; X, then X &rarr; Y<br>
+                <span class="keyword">IR2 (Augmentation):</span> If X &rarr; Y, then XZ &rarr; YZ<br>
+                <span class="keyword">IR3 (Transitive):</span> If X &rarr; Y and Y &rarr; Z, then X &rarr; Z<br><br>
+                <span class="keyword">Additional Rules:</span><br>
+                <span class="operator">Decomposition:</span> If X &rarr; YZ, then X &rarr; Y and X &rarr; Z<br>
+                <span class="operator">Union:</span> If X &rarr; Y and X &rarr; Z, then X &rarr; YZ<br>
+                <span class="operator">Pseudotransitivity:</span> If X &rarr; Y and WY &rarr; Z, then WX &rarr; Z
+            </div>
+
+            <h4>Algorithm 15.1: Attribute Closure (X⁺)[cite: 11]</h4>
+            <div class="algo-box">
+                <span class="keyword">Input:</span> Set of FDs F, subset of attributes X<br>
+                <span class="keyword">Initialize:</span> X⁺ := X<br>
+                <span class="keyword">Repeat:</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;oldX⁺ := X⁺<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">For each</span> Y &rarr; Z in F:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">If</span> X⁺ &supseteq; Y <span class="keyword">then</span> X⁺ := X⁺ &cup; Z<br>
+                <span class="keyword">Until</span> (X⁺ == oldX⁺)<br><br>
+                <em>* If X⁺ contains all attributes in the relation, X is a Superkey.</em>
+            </div>
+
+            <h4>Algorithm 15.2: Minimal Cover[cite: 11]</h4>
+            <p>A set of FDs is minimal if: 1) Every RHS has a single attribute. 2) No FD can be removed without changing equivalence. 3) No attribute in LHS can be removed.</p>
+            <div class="algo-box">
+                1. <span class="operator">Decomposition:</span> Replace X &rarr; {A,B} with X &rarr; A and X &rarr; B.<br>
+                2. <span class="operator">Remove Extraneous LHS Attributes:</span> For X &rarr; A, if replacing X with (X-B) leaves the FD set equivalent, remove B from X.<br>
+                3. <span class="operator">Remove Redundant FDs:</span> For each X &rarr; A, if it can be inferred from the remaining FDs, remove it.
+            </div>
+
+            <h3 id="mod3-nf">3. Normal Forms (1NF to 5NF)[cite: 10]</h3>
+            
+            <div class="mindmap">
+                <div class="tree">
+                    <ul>
+                        <li>
+                            <a href="#">Universal Relation</a>
+                            <ul>
+                                <li>
+                                    <a href="#">1NF <span class="badge badge-success">Atomic</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">2NF <span class="badge badge-success">Full FD on Key</span></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">3NF <span class="badge badge-success">No Transitive</span></a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">BCNF <span class="badge badge-success">LHS is Superkey</span></a>
+                                                            <ul>
+                                                                <li><a href="#">4NF <span class="badge badge-warn">No MVDs</span></a>
+                                                                    <ul><li><a href="#">5NF <span class="badge badge-danger">No JDs</span></a></li></ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <table>
+                <tr><th>Normal Form</th><th>Rule / Definition[cite: 10]</th></tr>
+                <tr><td><strong>1NF</strong></td><td>No composite attributes, no multi-valued attributes, no nested relations. All values must be atomic.</td></tr>
+                <tr><td><strong>2NF</strong></td><td>Every non-prime attribute is <em>fully functionally dependent</em> on every key of R. (No partial dependencies).</td></tr>
+                <tr><td><strong>3NF</strong></td><td>For every FD <code>X &rarr; A</code>, either: <br>a) X is a superkey, OR <br>b) A is a prime attribute. (No transitive dependencies).</td></tr>
+                <tr><td><strong>BCNF</strong></td><td>For every FD <code>X &rarr; A</code>, <strong>X must be a superkey</strong>. (Stricter than 3NF, drops condition b).</td></tr>
+                <tr><td><strong>4NF</strong></td><td>For every non-trivial Multivalued Dependency (MVD) <code>X &rarr;&rarr; Y</code>, X must be a superkey.</td></tr>
+                <tr><td><strong>5NF (PJNF)</strong></td><td>For every non-trivial Join Dependency (JD), every R<sub>i</sub> is a superkey of R.</td></tr>
+            </table>
+
+            <h4>Properties of Decomposition[cite: 11]</h4>
+            <ul>
+                <li><strong>Dependency Preservation:</strong> The union of projections of F on each decomposed relation is equivalent to F. (You shouldn't need to join tables to check an FD constraint).</li>
+                <li><strong>Lossless (Non-additive) Join (NJB Test):</strong> Decomposition into R1 and R2 is lossless IF AND ONLY IF: <br>
+                <code>(R1 &cap; R2) &rarr; (R1 - R2)</code> OR <code>(R1 &cap; R2) &rarr; (R2 - R1)</code> is in F⁺. <br>
+                <em>(The common attributes must be a superkey for at least one of the decomposed relations).</em>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- ==========================================
+             MODULE 4: STORAGE, INDEXING, RA & OPT
+             ========================================== -->
+        <section id="mod4-storage">
+            <h2 class="mod4-header">Module 4: Physical Database Design & Query Processing</h2>
+
+            <h3>1. File Storage & Organization[cite: 12]</h3>
+            <ul>
+                <li><strong>Spanned vs Unspanned Records:</strong> 
+                    <br><em>Unspanned:</em> Records cannot cross block boundaries. Wastes space at end of block.
+                    <br><em>Spanned:</em> Records can span across multiple blocks (using pointers). Good for variable-length.
+                </li>
+                <li><strong>Blocking Factor (bfr):</strong> Average number of records per block. <code>bfr = &lfloor; B / R &rfloor;</code> (where B = Block size, R = Record size).</li>
+                <li><strong>Heap (Unordered) Files:</strong> Records appended to the end. Linear search takes <code>b/2</code> accesses on average.</li>
+                <li><strong>Sorted (Ordered) Files:</strong> Ordered by a specific field. Binary search takes <code>&lceil; log&sub2;(b) &rceil;</code> accesses.</li>
+            </ul>
+
+            <h3 id="mod4-hashing">2. Hashing Techniques[cite: 12]</h3>
+            <ul>
+                <li><strong>Static Hashing:</strong> Fixed number of buckets. Collisions handled by open addressing or chaining (overflow files).</li>
+                <li><strong>Extendible Hashing (Dynamic):</strong> Uses a directory of pointers. 
+                    <br> - <strong>Global Depth (d):</strong> Directory has 2<sup>d</sup> entries. Looks at first 'd' bits of hash.
+                    <br> - <strong>Local Depth (d'):</strong> Attached to each bucket.
+                    <br> - <em>Split Rule:</em> If bucket full and <code>d' = d</code>, double directory size (d=d+1) and split bucket (d'=d'+1). If <code>d' < d</code>, just split bucket and update pointers.
+                </li>
+                <li><strong>Linear Hashing (Dynamic):</strong> Allows expansion/shrinking without a directory structure.</li>
+            </ul>
+
+            <h3 id="mod4-indexing">3. Indexing Structures[cite: 13]</h3>
+            <table>
+                <tr>
+                    <th>Type of Index</th>
+                    <th>Ordered Data File?</th>
+                    <th>Indexing Field</th>
+                    <th>Dense / Nondense</th>
+                </tr>
+                <tr>
+                    <td><strong>Primary Index</strong></td>
+                    <td>Yes</td>
+                    <td>Primary Key</td>
+                    <td><strong>Nondense</strong> (One entry per disk block)</td>
+                </tr>
+                <tr>
+                    <td><strong>Clustering Index</strong></td>
+                    <td>Yes</td>
+                    <td>Non-Key</td>
+                    <td><strong>Nondense</strong> (One entry per distinct value)</td>
+                </tr>
+                <tr>
+                    <td><strong>Secondary Index</strong></td>
+                    <td>No (Or ordered by something else)</td>
+                    <td>Any (Key or Non-Key)</td>
+                    <td><strong>Dense</strong> (One entry per record/value)</td>
+                </tr>
+            </table>
+
+            <h3 id="mod4-btrees">4. B-Trees and B+-Trees[cite: 13]</h3>
+            <ul>
+                <li><strong>B-Tree:</strong> Search tree where every node is at least half-full. Data pointers are stored at <em>both</em> internal nodes and leaf nodes.</li>
+                <li><strong>B+-Tree:</strong> 
+                    <br> - Data pointers are stored <strong>ONLY</strong> at the leaf nodes. 
+                    <br> - Internal nodes only store search keys to guide the search.
+                    <br> - Leaf nodes are linked together (linked list) to provide extremely fast sequential access.
+                    <br> - Node capacity: Max <code>p-1</code> search values, <code>p</code> tree pointers.
+                </li>
+            </ul>
+
+            <h3 id="mod4-ra">5. Relational Algebra[cite: 14]</h3>
+            <div class="algo-box mod4-box">
+                <span class="keyword">Unary Operators:</span><br>
+                <strong>&sigma; (SELECT):</strong> Filters rows. e.g., <code>&sigma;<sub>Salary>30000</sub>(EMPLOYEE)</code><br>
+                <strong>&pi; (PROJECT):</strong> Filters columns. Eliminates duplicates. e.g., <code>&pi;<sub>Lname, Salary</sub>(EMPLOYEE)</code><br>
+                <strong>&rho; (RENAME):</strong> Renames relation/attributes. e.g., <code>&rho;<sub>S(B1,B2)</sub>(R)</code><br><br>
+
+                <span class="keyword">Binary Set Operators (Require Type-Compatibility):</span><br>
+                <strong>&cup; (UNION):</strong> Tuples in R or S or both.<br>
+                <strong>&cap; (INTERSECTION):</strong> Tuples in both R and S.<br>
+                <strong>&minus; (DIFFERENCE):</strong> Tuples in R but not S.<br><br>
+
+                <span class="keyword">Join Operators:</span><br>
+                <strong>&times; (CARTESIAN PRODUCT):</strong> Every tuple in R paired with every tuple in S.<br>
+                <strong>&#8904; (THETA JOIN):</strong> <code>R &#8904;<sub>&theta;</sub> S</code> = <code>&sigma;<sub>&theta;</sub>(R &times; S)</code><br>
+                <strong>* (NATURAL JOIN):</strong> Equijoin on attributes with the same name. Drops the duplicate column.<br>
+                <strong>&divide; (DIVISION):</strong> <code>R(Z) &divide; S(X)</code>. Returns tuples in Y (where Z=X&cup;Y) that match with <em>every</em> tuple in S(X).<br><br>
+
+                <span class="keyword">Aggregate Functions:</span><br>
+                <strong>&#8497; (AGGREGATE):</strong> e.g., <code><sub>DNO</sub> &#8497; <sub>COUNT SSN, AVG Salary</sub> (EMPLOYEE)</code>
+            </div>
+
+            <h3 id="mod4-opt">6. Query Optimization (Heuristics)[cite: 15]</h3>
+            <p>The query optimizer restructures the Query Tree using equivalence rules to execute faster.</p>
+            <ul>
+                <li><strong>Cascade of &sigma;:</strong> <code>&sigma;<sub>c1 AND c2</sub>(R) = &sigma;<sub>c1</sub>(&sigma;<sub>c2</sub>(R))</code></li>
+                <li><strong>Commutativity of &sigma;:</strong> <code>&sigma;<sub>c1</sub>(&sigma;<sub>c2</sub>(R)) = &sigma;<sub>c2</sub>(&sigma;<sub>c1</sub>(R))</code></li>
+                <li><strong>Commutativity of Joins:</strong> <code>R &#8904; S = S &#8904; R</code></li>
+                <li><strong>Distributing &sigma; over &#8904;:</strong> Push selections down the tree as early as possible to reduce intermediate result sizes.</li>
+                <li><strong>Distributing &pi; over &#8904;:</strong> Push projections down to drop unused attributes early.</li>
+            </ul>
+        </section>
+
+
+        <!-- ==========================================
+             MODULE 5: TRANSACTION PROCESSING
+             ========================================== -->
+        <section id="mod5-tx">
+            <h2 class="mod5-header">Module 5: Transaction Processing</h2>
+
+            <h3 id="mod5-acid">1. ACID Properties[cite: 16]</h3>
+            <ul>
+                <li><strong>Atomicity:</strong> Transaction performed in its entirety or not at all (managed by Recovery subsystem).</li>
+                <li><strong>Consistency Preservation:</strong> Takes database from one valid state to another.</li>
+                <li><strong>Isolation:</strong> Execution is not interfered with by other concurrent transactions (managed by Concurrency Control).</li>
+                <li><strong>Durability:</strong> Once committed, changes must persist, even if system crashes.</li>
+            </ul>
+
+            <h3>2. Concurrency Anomalies[cite: 16]</h3>
+            <table>
+                <tr><th>Anomaly</th><th>Description</th></tr>
+                <tr><td><strong>Lost Update</strong> (W-W)</td><td>T1 reads X. T2 reads X. T1 writes X. T2 writes X. T1's write is overwritten and lost.</td></tr>
+                <tr><td><strong>Dirty Read / Temporary Update</strong> (W-R)</td><td>T1 writes X. T2 reads X. T1 aborts/rolls back. T2 now has an invalid "dirty" value.</td></tr>
+                <tr><td><strong>Incorrect Summary</strong></td><td>T3 is summing up values while T1 is actively moving amounts between them.</td></tr>
+                <tr><td><strong>Unrepeatable Read</strong> (R-W)</td><td>T1 reads X. T2 writes X. T1 reads X again and gets a completely different value.</td></tr>
+            </table>
+
+            <h3 id="mod5-schedules">3. Schedules and Recoverability[cite: 16]</h3>
+            <div class="mindmap" style="margin: 20px 0;">
+                <div class="tree">
+                    <ul>
+                        <li>
+                            <a href="#">All Schedules</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Recoverable <br><span style="font-size:0.75rem; color:#94a3b8;">Commit order matters</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Cascadeless <br><span style="font-size:0.75rem; color:#94a3b8;">No dirty reads</span></a>
+                                            <ul>
+                                                <li><a href="#">Strict <br><span style="font-size:0.75rem; color:#94a3b8;">No uncommitted R/W</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                <li><strong>Recoverable:</strong> If T2 reads data written by T1, T1 MUST commit <em>before</em> T2 commits.</li>
+                <li><strong>Cascadeless:</strong> Avoids cascading rollbacks. A transaction only reads items that are <em>already committed</em>.</li>
+                <li><strong>Strict:</strong> A transaction can neither read NOR write an item X until the last transaction that wrote X has committed/aborted.</li>
+            </ul>
+
+            <h3 id="mod5-serial">4. Serializability[cite: 16]</h3>
+            <p>A schedule is <strong>Serializable</strong> if it is equivalent to some serial execution of the same transactions.</p>
+            <ul>
+                <li><strong>Conflict Equivalence:</strong> Two schedules are conflict equivalent if the relative order of any two conflicting operations is the same in both.</li>
+                <li><strong>Conflicting Operations:</strong> Two operations conflict if they belong to <em>different transactions</em>, access the <em>same data item</em>, and at least one is a <em>Write</em>.
+                    <br>(Read-Write, Write-Read, Write-Write).
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- ==========================================
+             PYQ CHEAT CODES (ALGORITHMS)
+             ========================================== -->
+        <section style="background: #1e1b4b; border-color: var(--accent-pyq);">
+            <h2 class="pyq-header">PYQ Cheat Codes: Master Algorithms</h2>
+            <p style="color: #cbd5e1;">Follow these mechanical steps verbatim to secure full marks on the heavily tested 10-mark questions.</p>
+
+            <h3 id="pyq-bcnf" style="color: #a855f7;">Code 1: BCNF Decomposition</h3>
+            <div class="algo-box pyq-box">
+                <span class="keyword">Problem:</span> "Check if relation is in BCNF. If not, decompose."<br><br>
+                <span class="operator">Step 1: Find Candidate Keys</span><br>
+                - List all attributes not on the RHS of any FD.<br>
+                - Find their closure. If they determine all attributes, they are the key.<br><br>
+                <span class="operator">Step 2: Check BCNF Condition</span><br>
+                - For EVERY given FD (X &rarr; Y), check if LHS (X) is a Candidate Key (or Superkey).<br>
+                - If ANY FD has an LHS that is NOT a key &rarr; The relation is NOT in BCNF.<br><br>
+                <span class="operator">Step 3: Decompose</span><br>
+                - Let the violating FD be X &rarr; Y.<br>
+                - Split relation R into:<br>
+                &nbsp;&nbsp;&nbsp;<code>R1(X &cup; Y)</code> &nbsp;&nbsp;// The violating FD attributes<br>
+                &nbsp;&nbsp;&nbsp;<code>R2(R - Y)</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Original attributes MINUS the RHS of violating FD<br>
+                - Check if R1 and R2 are in BCNF. If not, repeat.
+            </div>
+
+            <h3 id="pyq-btree" style="color: #a855f7;">Code 2: B+ Tree Insertion Logic</h3>
+            <div class="algo-box pyq-box">
+                <span class="keyword">Problem:</span> "Construct a B+ tree of order p=4 with values..."<br><br>
+                <span class="operator">Node Constraints for p=4:</span><br>
+                - Max pointers = 4. Max keys = 3.<br>
+                - Min pointers = 2 (for internal nodes).<br><br>
+                <span class="operator">Insertion Rules:</span><br>
+                - ALWAYS insert into a leaf node keeping it sorted.<br>
+                - If leaf overflows (has 4 keys): <span class="highlight">SPLIT</span>.<br>
+                - <strong>B+ Tree Split Rule:</strong> Split into Left and Right.<br>
+                &nbsp;&nbsp;&nbsp;- Left gets first &lceil;n/2&rceil; keys.<br>
+                &nbsp;&nbsp;&nbsp;- Right gets the rest.<br>
+                &nbsp;&nbsp;&nbsp;- <span class="highlight">COPY</span> the first key of the Right node UP to the parent. (Unlike B-trees where it is moved, in B+ trees it stays in the leaf for data access).<br>
+                - Keep linking leaf nodes horizontally!
+            </div>
+
+            <h3 id="pyq-qtree" style="color: #a855f7;">Code 3: Heuristic Query Optimization</h3>
+            <div class="algo-box pyq-box">
+                <span class="keyword">Problem:</span> "Construct Initial Query Tree and Optimized Query Tree using heuristics."<br><br>
+                <span class="operator">Initial Tree:</span><br>
+                1. Put all tables at the bottom, joined by Cartesian Products (X).<br>
+                2. Put ONE giant SELECT (&sigma;) node above them containing ALL WHERE conditions.<br>
+                3. Put ONE PROJECT (&pi;) node at the very top with the SELECT columns.<br><br>
+                <span class="operator">Optimization Steps:</span><br>
+                1. <strong>Deconstruct &sigma;:</strong> Break the giant &sigma; into individual &sigma; nodes.<br>
+                2. <strong>Push &sigma; down:</strong> Move &sigma; conditions down the tree to sit directly above the base tables they filter. (e.g., <code>&sigma; Dept='CSE'</code> goes right above Department table).<br>
+                3. <strong>Convert &times; to &#8904;:</strong> Replace Cartesian Products that have a join condition immediately above them into a Theta-Join (&#8904;) node.<br>
+                4. <strong>Push &pi; down:</strong> Add Projection nodes right above tables to filter out unused columns early. (Keep primary/foreign keys needed for joins higher up).
+            </div>
+
+            <h3 id="pyq-graph" style="color: #a855f7;">Code 4: Conflict Serializability (Precedence Graph)</h3>
+            <div class="algo-box pyq-box">
+                <span class="keyword">Problem:</span> "Check if schedule S is conflict serializable."[cite: 16]<br><br>
+                <span class="operator">Algorithm 20.1:</span><br>
+                1. Draw a circle (node) for each transaction (T1, T2, T3).<br>
+                2. Scan the schedule left-to-right. Look for operations on the <strong>same item</strong> by <strong>different transactions</strong> where at least one is a <strong>WRITE</strong>.<br>
+                3. Draw directed edges for conflicts:<br>
+                &nbsp;&nbsp;&nbsp;- <strong>Read-Write:</strong> If T1 reads X, then T2 writes X &rarr; Draw <code>T1 &rarr; T2</code><br>
+                &nbsp;&nbsp;&nbsp;- <strong>Write-Read:</strong> If T1 writes X, then T2 reads X &rarr; Draw <code>T1 &rarr; T2</code><br>
+                &nbsp;&nbsp;&nbsp;- <strong>Write-Write:</strong> If T1 writes X, then T2 writes X &rarr; Draw <code>T1 &rarr; T2</code><br>
+                4. <strong>The Verdict:</strong><br>
+                &nbsp;&nbsp;&nbsp;- If the graph contains a <span class="highlight">CYCLE</span> (e.g., T1&rarr;T2&rarr;T1) &rarr; <strong>NOT Conflict Serializable.</strong><br>
+                &nbsp;&nbsp;&nbsp;- If NO cycle &rarr; <strong>Conflict Serializable.</strong><br>
+                5. <strong>Equivalent Serial Schedule:</strong> Perform a topological sort (node with 0 incoming edges goes first).
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>

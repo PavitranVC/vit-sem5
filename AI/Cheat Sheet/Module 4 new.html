@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCSE306L AI CAT-2 | Complete Visual Mindmap &amp; Cheat Sheet</title>
+  <style>
+    :root {
+      --bg-main: #0b0f19;
+      --bg-card: #131b2e;
+      --bg-card-alt: #18233c;
+      --bg-table-head: #1e293b;
+      --bg-table-row: #151f34;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #263554;
+      --accent-blue: #38bdf8;
+      --accent-purple: #a855f7;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --accent-indigo: #6366f1;
+      --code-bg: #090d16;
+    }
+
+    body.light-mode {
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f1f5f9;
+      --bg-table-head: #e2e8f0;
+      --bg-table-row: #f8fafc;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #cbd5e1;
+      --accent-blue: #0284c7;
+      --accent-purple: #7e22ce;
+      --accent-emerald: #059669;
+      --accent-amber: #d97706;
+      --accent-rose: #e11d48;
+      --accent-indigo: #4f46e5;
+      --code-bg: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding: 20px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    /* Header & Controls */
+    .top-bar {
+      max-width: 1440px;
+      margin: 0 auto 20px auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 20px 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .title-row h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .title-row h1 span {
+      color: var(--accent-blue);
+    }
+
+    .subtitle {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .action-btns {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+
+    .btn:hover {
+      border-color: var(--accent-blue);
+      color: var(--accent-blue);
+    }
+
+    .controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      background: var(--bg-card-alt);
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .pill.active, .pill:hover {
+      background: var(--accent-blue);
+      color: #0b0f19;
+      border-color: var(--accent-blue);
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      max-width: 340px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--code-bg);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent-blue);
+    }
+
+    /* Mindmap Flow Banner */
+    .mindmap-banner {
+      max-width: 1440px;
+      margin: 0 auto 22px auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      overflow-x: auto;
+    }
+
+    .mindmap-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .flow-chain {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 900px;
+    }
+
+    .flow-node {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-blue);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      flex: 1;
+    }
+
+    .flow-node strong {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--text-main);
+    }
+
+    .flow-node span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    .flow-arrow {
+      color: var(--accent-blue);
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    /* Main Grid */
+    .grid-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .col-12 { grid-column: span 12; }
+    .col-8  { grid-column: span 8; }
+    .col-6  { grid-column: span 6; }
+    .col-4  { grid-column: span 4; }
+
+    @media (max-width: 1100px) {
+      .col-8, .col-6, .col-4 { grid-column: span 12; }
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card.border-blue    { border-top: 4px solid var(--accent-blue); }
+    .card.border-purple  { border-top: 4px solid var(--accent-purple); }
+    .card.border-emerald { border-top: 4px solid var(--accent-emerald); }
+    .card.border-amber   { border-top: 4px solid var(--accent-amber); }
+    .card.border-rose    { border-top: 4px solid var(--accent-rose); }
+    .card.border-indigo  { border-top: 4px solid var(--accent-indigo); }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .badge-blue    { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); }
+    .badge-purple  { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); }
+    .badge-emerald { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+    .badge-amber   { background: rgba(245, 158, 11, 0.15);  color: var(--accent-amber); }
+    .badge-rose    { background: rgba(244, 63, 94, 0.15);  color: var(--accent-rose); }
+
+    /* Tables */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.83rem;
+      text-align: left;
+    }
+
+    th {
+      background: var(--bg-table-head);
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: var(--bg-table-row);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Code & Logic Blocks */
+    .f-box {
+      font-family: "Consolas", "Monaco", "Courier New", monospace;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      color: var(--accent-blue);
+      font-size: 0.82rem;
+      display: inline-block;
+      margin: 1px 0;
+    }
+
+    .f-block {
+      font-family: "Consolas", "Monaco", "Courier New", monospace;
+      background: var(--code-bg);
+      padding: 10px 12px;
+      border-radius: 8px;
+      border-left: 3px solid var(--accent-purple);
+      font-size: 0.82rem;
+      overflow-x: auto;
+      margin: 4px 0;
+    }
+
+    .alert-box {
+      background: rgba(244, 63, 94, 0.1);
+      border: 1px solid rgba(244, 63, 94, 0.35);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+    }
+
+    .alert-box strong {
+      color: var(--accent-rose);
+    }
+
+    .tip-box {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+    }
+
+    .tip-box strong {
+      color: var(--accent-emerald);
+    }
+
+    /* Visual Tree / Mindmap Nodes */
+    .tree-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mini-box {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 0.82rem;
+    }
+
+    .mini-box h4 {
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+      color: var(--accent-amber);
+    }
+
+    ul.clean-list {
+      padding-left: 16px;
+      font-size: 0.83rem;
+    }
+
+    ul.clean-list li {
+      margin-bottom: 4px;
+    }
+
+    .t-true  { color: var(--accent-emerald); font-weight: 700; }
+    .t-false { color: var(--accent-rose); font-weight: 700; }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+      .top-bar .controls-row, .action-btns {
+        display: none !important;
+      }
+      .card, .mindmap-banner, .top-bar {
+        box-shadow: none;
+        border: 1px solid #999;
+        break-inside: avoid;
+        margin-bottom: 12px;
+      }
+      .col-8, .col-6, .col-4 {
+        grid-column: span 12;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <div class="title-row">
+      <div>
+        <h1>BCSE306L Artificial Intelligence <span>CAT-2 Master Mindmap &amp; Cheat Sheet</span></h1>
+        <p class="subtitle">Complete Topic-Wise Summary of Module 4 Slides (1 &amp; 2) + Module 3 &amp; 5 High-Yield Exam Formulas</p>
+      </div>
+      <div class="action-btns">
+        <button class="btn" onclick="toggleTheme()">Toggle Light / Dark</button>
+        <button class="btn" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+
+    <div class="controls-row">
+      <div class="filter-pills">
+        <button class="pill active" onclick="filterTopic('all', this)">All Topics</button>
+        <button class="pill" onclick="filterTopic('t41', this)">4.1 KRR &amp; Wumpus</button>
+        <button class="pill" onclick="filterTopic('t42', this)">4.2-4.3 Prop. Logic &amp; Laws</button>
+        <button class="pill" onclick="filterTopic('t44', this)">4.4-4.5 FOL &amp; Translations</button>
+        <button class="pill" onclick="filterTopic('t46', this)">4.6 Unification &amp; CNF</button>
+        <button class="pill" onclick="filterTopic('t47', this)">4.7 Forward / Backward Chaining</button>
+        <button class="pill" onclick="filterTopic('t48', this)">4.8 Resolution Proofs</button>
+        <button class="pill" onclick="filterTopic('t35', this)">Mod 3 &amp; 5 Quick Ref</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search law, formula, Marcus, Wumpus, Skolem..." onkeyup="searchCards()">
+      </div>
+    </div>
+  </header>
+
+  <!-- VISUAL MINDMAP PIPELINE -->
+  <section class="mindmap-banner">
+    <div class="mindmap-title">Module 4 Architecture Mindmap &mdash; How Everything Connects</div>
+    <div class="flow-chain">
+      <div class="flow-node">
+        <strong>1. KRR Agent (4.1)</strong>
+        <span>Perceive &rarr; TELL KB &rarr; ASK KB &rarr; Act</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>2. Propositional Logic (4.2-4.3)</strong>
+        <span>Connectives, Truth Tables, Equivalence Laws</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>3. First-Order Logic (4.4-4.5)</strong>
+        <span>Objects, Predicates, &forall; (&rarr;) &amp; &exist; (&and;)</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>4. Unification &amp; CNF (4.6)</strong>
+        <span>UI, EI, Skolemization, MGU(&theta;)</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>5. Reasoning Engine (4.7-4.8)</strong>
+        <span>Forward / Backward Chaining &amp; Resolution (&#9633;)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CHEAT SHEET GRID -->
+  <main class="grid-container" id="cardGrid">
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.1: KRR, KNOWLEDGE TYPES, KB vs DB, WUMPUS WORLD           -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-blue" data-topic="t41">
+      <div class="card-header">
+        <h2 class="card-title">4.1 Knowledge Representation &amp; Reasoning (KRR)</h2>
+        <span class="badge badge-blue">Topic 4.1</span>
+      </div>
+
+      <div class="f-block">
+        <strong>KB-Agent Cycle:</strong> Perceive &rarr; <strong>TELL</strong>(KB, Percept) &rarr; Infer &rarr; <strong>ASK</strong>(KB, Action) &rarr; Act
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>5 Types of Knowledge</th>
+              <th>Core Meaning</th>
+              <th>Slide Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Declarative</strong></td>
+              <td>"Know What" &mdash; facts, concepts, static truths</td>
+              <td><span class="f-box">Student(Ravi)</span>, Chennai is in TN</td>
+            </tr>
+            <tr>
+              <td><strong>2. Procedural</strong></td>
+              <td>"Know How" &mdash; step-by-step rules, algorithms</td>
+              <td>Area of circle: obtain <em>r</em>, compute &pi;r<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td><strong>3. Meta-Knowledge</strong></td>
+              <td>"Knowledge about knowledge" &mdash; reliability, priority</td>
+              <td>"Apply Rule 1 before Rule 2"</td>
+            </tr>
+            <tr>
+              <td><strong>4. Heuristic</strong></td>
+              <td>"Rule of Thumb" &mdash; experience-based, not guaranteed</td>
+              <td>"Control the center of the board in chess"</td>
+            </tr>
+            <tr>
+              <td><strong>5. Structural</strong></td>
+              <td>Relationships: <strong>IS-A</strong>, <strong>PART-OF</strong>, <strong>BELONG-TO</strong></td>
+              <td>Car IS-A Vehicle; Engine PART-OF Car</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tree-grid">
+        <div class="mini-box">
+          <h4>Two Levels of AI System</h4>
+          <ul class="clean-list">
+            <li><strong>Knowledge Level:</strong> <em>What</em> the agent knows (e.g., Gold is present, Pit nearby).</li>
+            <li><strong>Implementation Level:</strong> <em>How</em> it is stored (arrays, graphs, logic clauses).</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h4>Knowledge Base (KB) vs Database (DB)</h4>
+          <ul class="clean-list">
+            <li><strong>KB:</strong> Explicit rules + facts, experts update, main-memory based, <em>infers new facts</em>.</li>
+            <li><strong>DB:</strong> Mostly passive facts, clerks update, disk-based, <em>only retrieves</em>.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="card col-6 border-blue" data-topic="t41">
+      <div class="card-header">
+        <h2 class="card-title">4.1 Wumpus World, Models &amp; Entailment</h2>
+        <span class="badge badge-blue">Topic 4.1</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Concept</th>
+              <th>Formula / Notation</th>
+              <th>Key Exam Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Syntax vs Semantics</strong></td>
+              <td><span class="f-box">x + 2 &ge; y</span> vs <span class="f-box">x2 + y &gt;</span></td>
+              <td><strong>Syntax:</strong> legally formed expressions. <strong>Semantics:</strong> truth meaning in a world.</td>
+            </tr>
+            <tr>
+              <td><strong>Model (<em>m</em>)</strong></td>
+              <td><span class="f-box">2<sup>n</sup></span> models for <em>n</em> variables</td>
+              <td>A possible world assigning True/False to every proposition symbol.</td>
+            </tr>
+            <tr>
+              <td><strong>Logical Entailment</strong></td>
+              <td><span class="f-box">KB &#8872; &alpha;</span> iff <span class="f-box">M(KB) &sube; M(&alpha;)</span></td>
+              <td>In <strong>every model</strong> where KB is True, &alpha; must also be True.</td>
+            </tr>
+            <tr>
+              <td><strong>Soundness</strong></td>
+              <td>If <span class="f-box">KB &#8866;<sub>i</sub> &alpha;</span> then <span class="f-box">KB &#8872; &alpha;</span></td>
+              <td>Inference procedure <em>i</em> never proves anything wrong (truth-preserving).</td>
+            </tr>
+            <tr>
+              <td><strong>Completeness</strong></td>
+              <td>If <span class="f-box">KB &#8872; &alpha;</span> then <span class="f-box">KB &#8866;<sub>i</sub> &alpha;</span></td>
+              <td>Inference procedure <em>i</em> can derive every sentence that is logically entailed.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tree-grid">
+        <div class="mini-box">
+          <h4>Wumpus World PEAS</h4>
+          <ul class="clean-list">
+            <li><strong>Performance:</strong> Gold +1000, Death -1000, Step -1, Arrow -10.</li>
+            <li><strong>Sensors (5 bits):</strong> <span class="f-box">[Stench, Breeze, Glitter, Bump, Scream]</span></li>
+            <li><strong>Rules:</strong> Pit &harr; Breeze in adjacent squares; Wumpus &harr; Stench in adjacent squares.</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h4>Wumpus Environment Properties</h4>
+          <ul class="clean-list">
+            <li><strong>Fully Observable?</strong> No (only local perception)</li>
+            <li><strong>Deterministic?</strong> Yes &bull; <strong>Static?</strong> Yes</li>
+            <li><strong>Sequential?</strong> Yes (not episodic)</li>
+            <li><strong>Discrete &amp; Single-Agent?</strong> Yes</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.2 & 4.3: PROPOSITIONAL LOGIC, LAWS, TRUTH TABLES, PUZZLES -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-purple" data-topic="t42">
+      <div class="card-header">
+        <h2 class="card-title">4.2 Propositional Connectives &amp; English Mapping Traps</h2>
+        <span class="badge badge-purple">Topic 4.2 &amp; 4.3</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>P</th>
+              <th>Q</th>
+              <th>&not;P (NOT)</th>
+              <th>P &and; Q (AND)</th>
+              <th>P &or; Q (OR)</th>
+              <th>P &rarr; Q (IF-THEN)</th>
+              <th>P &harr; Q (IFF)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="t-true">T</td>
+              <td class="t-true">T</td>
+              <td class="t-false">F</td>
+              <td class="t-true">T</td>
+              <td class="t-true">T</td>
+              <td class="t-true">T</td>
+              <td class="t-true">T</td>
+            </tr>
+            <tr>
+              <td class="t-true">T</td>
+              <td class="t-false">F</td>
+              <td class="t-false">F</td>
+              <td class="t-false">F</td>
+              <td class="t-true">T</td>
+              <td class="t-false">F (Only False Case!)</td>
+              <td class="t-false">F</td>
+            </tr>
+            <tr>
+              <td class="t-false">F</td>
+              <td class="t-true">T</td>
+              <td class="t-true">T</td>
+              <td class="t-false">F</td>
+              <td class="t-true">T</td>
+              <td class="t-true">T (Vacuously True)</td>
+              <td class="t-false">F</td>
+            </tr>
+            <tr>
+              <td class="t-false">F</td>
+              <td class="t-false">F</td>
+              <td class="t-true">T</td>
+              <td class="t-false">F</td>
+              <td class="t-false">F</td>
+              <td class="t-true">T (Vacuously True)</td>
+              <td class="t-true">T</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tricky English Phrase</th>
+              <th>Formal Mapping</th>
+              <th>Why / Exam Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"A <strong>if</strong> B"</td>
+              <td><span class="f-box">B &rarr; A</span></td>
+              <td>B is the trigger/cause for A ("Pass if I study" &rarr; Study &rarr; Pass)</td>
+            </tr>
+            <tr>
+              <td>"A <strong>only if</strong> B"</td>
+              <td><span class="f-box">A &rarr; B</span></td>
+              <td>B is a necessary condition for A ("Pass only if I study" &rarr; Pass &rarr; Study)</td>
+            </tr>
+            <tr>
+              <td>"A <strong>unless</strong> B"</td>
+              <td><span class="f-box">&not;B &rarr; A</span> &equiv; <span class="f-box">A &or; B</span></td>
+              <td>"If not B, then A" ("Walk unless it rains" &rarr; &not;Rain &rarr; Walk)</td>
+            </tr>
+            <tr>
+              <td>"<strong>Neither</strong> A <strong>nor</strong> B"</td>
+              <td><span class="f-box">&not;A &and; &not;B</span> &equiv; <span class="f-box">&not;(A &or; B)</span></td>
+              <td>Both A and B are false</td>
+            </tr>
+            <tr>
+              <td>"<strong>Either</strong> A <strong>or</strong> B (not both)"</td>
+              <td><span class="f-box">(A &or; B) &and; &not;(A &and; B)</span></td>
+              <td>Exclusive OR (XOR) pattern</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card col-6 border-purple" data-topic="t42">
+      <div class="card-header">
+        <h2 class="card-title">4.3 Equivalence Laws, Validity &amp; Rules of Inference</h2>
+        <span class="badge badge-purple">50% PYQ Weight</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Law / Rule Name</th>
+              <th>Formula / Equivalence</th>
+              <th>Key Idea / Memory Trick</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Implication Elimination</strong></td>
+              <td><span class="f-box">(&alpha; &rarr; &beta;) &equiv; (&not;&alpha; &or; &beta;)</span></td>
+              <td>Step 1 of every CNF conversion &amp; equivalence proof</td>
+            </tr>
+            <tr>
+              <td><strong>Contrapositive Law</strong></td>
+              <td><span class="f-box">(&alpha; &rarr; &beta;) &equiv; (&not;&beta; &rarr; &not;&alpha;)</span></td>
+              <td>Flip and negate both sides ("Not sunny &rarr; Umbrella" &equiv; "No umbrella &rarr; Sunny")</td>
+            </tr>
+            <tr>
+              <td><strong>Biconditional Elim.</strong></td>
+              <td><span class="f-box">(&alpha; &harr; &beta;) &equiv; (&alpha; &rarr; &beta;) &and; (&beta; &rarr; &alpha;)</span></td>
+              <td>Two-way implication</td>
+            </tr>
+            <tr>
+              <td><strong>De Morgan's Laws</strong></td>
+              <td><span class="f-box">&not;(&alpha; &and; &beta;) &equiv; (&not;&alpha; &or; &not;&beta;)</span><br><span class="f-box">&not;(&alpha; &or; &beta;) &equiv; (&not;&alpha; &and; &not;&beta;)</span></td>
+              <td>Push negation inside brackets and flip &and; / &or;</td>
+            </tr>
+            <tr>
+              <td><strong>Distributive Laws</strong></td>
+              <td><span class="f-box">&alpha; &or; (&beta; &and; &gamma;) &equiv; (&alpha; &or; &beta;) &and; (&alpha; &or; &gamma;)</span><br><span class="f-box">&alpha; &and; (&beta; &or; &gamma;) &equiv; (&alpha; &and; &beta;) &or; (&alpha; &and; &gamma;)</span></td>
+              <td>Top row converts to <strong>CNF</strong> (AND of ORs); bottom row converts to <strong>DNF</strong> (OR of ANDs)</td>
+            </tr>
+            <tr>
+              <td><strong>Modus Ponens (MP)</strong></td>
+              <td><span class="f-box">P &rarr; Q, &nbsp; P &nbsp; &#8756; &nbsp; Q</span></td>
+              <td><strong>Confirm P &rarr; Get Q</strong> (Affirming the antecedent)</td>
+            </tr>
+            <tr>
+              <td><strong>Modus Tollens (MT)</strong></td>
+              <td><span class="f-box">P &rarr; Q, &nbsp; &not;Q &nbsp; &#8756; &nbsp; &not;P</span></td>
+              <td><strong>Deny Q &rarr; Reject P</strong> (Denying the consequent)</td>
+            </tr>
+            <tr>
+              <td><strong>Hypothetical Syllogism</strong></td>
+              <td><span class="f-box">P &rarr; Q, &nbsp; Q &rarr; R &nbsp; &#8756; &nbsp; P &rarr; R</span></td>
+              <td>Chain Rule of implications</td>
+            </tr>
+            <tr>
+              <td><strong>Disjunctive Syllogism</strong></td>
+              <td><span class="f-box">P &or; Q, &nbsp; &not;P &nbsp; &#8756; &nbsp; Q</span></td>
+              <td>Unit Resolution: OR + NOT one &rarr; keep the other</td>
+            </tr>
+            <tr>
+              <td><strong>Resolution Rule</strong></td>
+              <td><span class="f-box">P &or; Q, &nbsp; &not;P &or; R &nbsp; &#8756; &nbsp; Q &or; R</span></td>
+              <td>Cancel complementary literals (<span class="f-box">P</span> and <span class="f-box">&not;P</span>) and join the rest</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tree-grid">
+        <div class="mini-box">
+          <h4>Valid vs Satisfiable vs Unsatisfiable</h4>
+          <ul class="clean-list">
+            <li><strong>Valid (Tautology):</strong> True in <em>all</em> models (e.g., <span class="f-box">P &or; &not;P</span>).</li>
+            <li><strong>Satisfiable:</strong> True in <em>at least one</em> model (e.g., <span class="f-box">P &or; Q</span>).</li>
+            <li><strong>Unsatisfiable (Contradiction):</strong> True in <em>no</em> models (<span class="f-box">P &and; &not;P</span>).</li>
+            <li><strong> Theorems:</strong> <span class="f-box">KB &#8872; &alpha;</span> iff <span class="f-box">(KB &rarr; &alpha;)</span> is Valid, iff <span class="f-box">(KB &and; &not;&alpha;)</span> is Unsatisfiable.</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h4>Cloned PYQ Puzzle: 3 Chests / 3 Toppers</h4>
+          <ul class="clean-list">
+            <li><strong>Clues:</strong> Box 1 / Anjali: <span class="f-box">&not;B1</span> | Box 2 / Braian: <span class="f-box">&not;B2</span> | Box 3 / Chenna: <span class="f-box">B2</span>.</li>
+            <li><strong>Rule:</strong> Exactly 1 box has treasure &amp; only 1 clue is True.</li>
+            <li><strong>Winner:</strong> Row <span class="f-box">(B1=T, B2=F, B3=F)</span> makes Clue 2 (<span class="f-box">&not;B2</span>) True and Clues 1 &amp; 3 False &rarr; <strong>Chest 1 / Anjali</strong>!</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.4 & 4.5: FIRST-ORDER LOGIC & CLONED EXAM TRANSLATIONS     -->
+    <!-- ================================================================= -->
+    <article class="card col-12 border-emerald" data-topic="t44">
+      <div class="card-header">
+        <h2 class="card-title">4.4 &amp; 4.5 First-Order Logic (FOL) Architecture &amp; Guaranteed PYQ Translations</h2>
+        <span class="badge badge-emerald">100% Exam Probability</span>
+      </div>
+
+      <div class="tree-grid">
+        <div class="mini-box">
+          <h4>Propositional Logic (PL) vs First-Order Logic (FOL)</h4>
+          <ul class="clean-list">
+            <li><strong>Ontology:</strong> PL represents atomic facts (<span class="f-box">P, Q</span>); FOL models <strong>Objects, Properties, Relations, Functions</strong>.</li>
+            <li><strong>Terms (Return Objects):</strong> Constants (<span class="f-box">John, Mumbai</span>), Variables (<span class="f-box">x, y</span>), Functions (<span class="f-box">FatherOf(Mary)</span>). A term with no variables is a <strong>Ground Term</strong>.</li>
+            <li><strong>Sentences / WFF (Return True/False):</strong> Predicates (<span class="f-box">Brother(x,y)</span>), Connectives, Quantifiers. A <strong>WFF</strong> has all variables bound by quantifiers (no free variables).</li>
+            <li><strong>Complexity:</strong> PL inference is <em>NP-Complete</em> (DPLL, GSAT); FOL inference is <em>Semi-decidable</em>.</li>
+          </ul>
+        </div>
+
+        <div class="mini-box">
+          <h4>Golden Quantifier Rules &amp; Duality</h4>
+          <ul class="clean-list">
+            <li><strong>Universal (&forall;x) pairs with &rarr;:</strong> <span class="f-box">&forall;x (Student(x) &rarr; Smart(x))</span>. <em>Trap:</em> <span class="f-box">&forall;x (Student(x) &and; Smart(x))</span> means everyone in the world is a student!</li>
+            <li><strong>Existential (&exist;x) pairs with &and;:</strong> <span class="f-box">&exist;x (Student(x) &and; Smart(x))</span>. <em>Trap:</em> <span class="f-box">&exist;x (Student(x) &rarr; Smart(x))</span> is trivially true for any non-student!</li>
+            <li><strong>Mixed Quantifier Order Matters:</strong> <span class="f-box">&forall;x &exist;y Likes(x,y)</span> (Everyone likes someone) &ne; <span class="f-box">&exist;y &forall;x Likes(x,y)</span> (Someone is liked by everyone).</li>
+            <li><strong>Quantifier De Morgan Laws:</strong> <span class="f-box">&forall;x &not;P(x) &equiv; &not;&exist;x P(x)</span> &nbsp;|&nbsp; <span class="f-box">&not;&forall;x P(x) &equiv; &exist;x &not;P(x)</span> &nbsp;|&nbsp; <span class="f-box">&exist;x P(x) &equiv; &not;&forall;x &not;P(x)</span>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Pattern Category</th>
+              <th>English Sentence (From Lecture Slides &amp; Past Papers B1, E1, E2, D1, D2)</th>
+              <th>First-Order Logic (FOL) &amp; Clause Form (CNF)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>PYQ Clone #1: Universal 2-Object Comparison</strong></td>
+              <td>"Any house in Parson/Bhopal costs less than any apartment in Chennai/Pune."<br><em>(Also: "Any book in the library is more expensive than any magazine in the store.")</em></td>
+              <td>
+                <strong>FOL:</strong> <span class="f-box">&forall;x &forall;y ((House(x) &and; In(x, Parson) &and; Apt(y) &and; In(y, Chennai)) &rarr; LessCost(x, y))</span><br>
+                <strong>CNF:</strong> <span class="f-box">&not;House(x) &or; &not;In(x, Parson) &or; &not;Apt(y) &or; &not;In(y, Chennai) &or; LessCost(x, y)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ Clone #2: Conjunction in Consequent</strong></td>
+              <td>"Any electric car is more efficient and produces less pollution than a gasoline car."<br><em>(Also: "Any 3-star washing machine costs less but consumes more power than a 5-star...")</em></td>
+              <td>
+                <strong>FOL:</strong> <span class="f-box">&forall;x &forall;y ((EC(x) &and; GC(y)) &rarr; (Efficient(x, y) &and; LessPollution(x, y)))</span><br>
+                <strong>CNF:</strong> <span class="f-box">(&not;EC(x) &or; &not;GC(y) &or; Efficient(x, y)) &and; (&not;EC(x) &or; &not;GC(y) &or; LessPollution(x, y))</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ Clone #3: "Exactly One" (Uniqueness)</strong></td>
+              <td>"There is exactly one student whose GPA is 4.0."<br><em>(Also: "Exactly one house in Parson costing Rs 20,00,000" / "Exactly one person with JEE rank 14")</em></td>
+              <td>
+                <strong>FOL:</strong> <span class="f-box">&exist;x (S(x) &and; GPA(x, 4.0) &and; &forall;y ((S(y) &and; GPA(y, 4.0)) &rarr; (x = y)))</span><br>
+                <strong>CNF (Skolem constant <em>c</em>):</strong> <span class="f-box">S(c) &and; GPA(c, 4.0) &and; (&not;S(y) &or; &not;GPA(y, 4.0) &or; (y = c))</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ Clone #4: Superlative ("Any Other")</strong></td>
+              <td>"There is a restaurant in Paris that serves better food than any other restaurant in the city."<br><em>(Also: "House in Parson / Villa in Mumbai that costs more than any other...")</em></td>
+              <td>
+                <strong>FOL:</strong> <span class="f-box">&exist;x (R(x) &and; Paris(x) &and; &forall;y ((R(y) &and; Paris(y) &and; (y &ne; x)) &rarr; BetterFood(x, y)))</span><br>
+                <strong>CNF (Skolem constant <em>c</em>):</strong> <span class="f-box">R(c) &and; Paris(c) &and; (&not;R(y) &or; &not;Paris(y) &or; (y = c) &or; BetterFood(c, y))</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ Clone #5: Universal + Nested Existential</strong></td>
+              <td>"A person who helps others is respected by everyone."<br><em>(Also: "A person who loves his mother is loved by everyone.")</em></td>
+              <td>
+                <strong>FOL:</strong> <span class="f-box">&forall;x ((Person(x) &and; &exist;y (Person(y) &and; Helps(x, y))) &rarr; &forall;z (Person(z) &rarr; RespectedBy(z, x)))</span><br>
+                <strong>CNF:</strong> <span class="f-box">&not;Person(x) &or; &not;Person(y) &or; &not;Helps(x, y) &or; &not;Person(z) &or; RespectedBy(z, x)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Slide Classics: Mushrooms &amp; Stacks</strong></td>
+              <td>1. "No purple mushroom is poisonous."<br>2. "There are exactly two purple mushrooms."<br>3. "X is above Y iff X is directly on Y or on a stack ending at Y."</td>
+              <td>
+                1. <span class="f-box">&forall;x ((Mushroom(x) &and; Purple(x)) &rarr; &not;Poisonous(x))</span> &equiv; <span class="f-box">&not;&exist;x (Mushroom(x) &and; Purple(x) &and; Poisonous(x))</span><br>
+                2. <span class="f-box">&exist;x &exist;y (M(x) &and; P(x) &and; M(y) &and; P(y) &and; (x &ne; y) &and; &forall;z ((M(z) &and; P(z)) &rarr; (z = x &or; z = y)))</span><br>
+                3. <span class="f-box">&forall;x &forall;y (Above(x, y) &harr; (On(x, y) &or; &exist;z (On(x, z) &and; Above(z, y))))</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Slide + D1 2025: Lincoln Quote</strong></td>
+              <td>"You can fool some of the people all of the time, and all of the people some of the time, but not all of the people all of the time."</td>
+              <td>
+                1. Some people all time: <span class="f-box">&exist;x (Person(x) &and; &forall;t (Time(t) &rarr; CanFool(you, x, t)))</span><br>
+                2. All people some time: <span class="f-box">&forall;x (Person(x) &rarr; &exist;t (Time(t) &and; CanFool(you, x, t)))</span><br>
+                3. Not all people all time: <span class="f-box">&not;(&forall;x &forall;t ((Person(x) &and; Time(t)) &rarr; CanFool(you, x, t)))</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.6: FOL INFERENCE, UNIFICATION (MGU) & CNF CONVERSION      -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-amber" data-topic="t46">
+      <div class="card-header">
+        <h2 class="card-title">4.6 Quantified Inference Rules &amp; Unification (MGU)</h2>
+        <span class="badge badge-amber">Topic 4.6</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>FOL Inference Rule</th>
+              <th>Formal Rule</th>
+              <th>Meaning &amp; Restrictions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Universal Instantiation (UI)</strong></td>
+              <td><span class="f-box">&forall;v &alpha; &nbsp; &#8756; &nbsp; Subst({v/g}, &alpha;)</span></td>
+              <td><em>Everyone &rarr; One:</em> Replace universal variable <em>v</em> with any ground term <em>g</em> (e.g., <span class="f-box">x/Ravi</span>).</td>
+            </tr>
+            <tr>
+              <td><strong>Existential Instantiation (EI)</strong></td>
+              <td><span class="f-box">&exist;v &alpha; &nbsp; &#8756; &nbsp; Subst({v/k}, &alpha;)</span></td>
+              <td><em>Someone &rarr; New Name:</em> Replace existential variable <em>v</em> with a <strong>brand-new Skolem constant <em>k</em></strong> not in KB.</td>
+            </tr>
+            <tr>
+              <td><strong>Universal Generalization (UG)</strong></td>
+              <td><span class="f-box">P(x) (arbitrary x) &nbsp; &#8756; &nbsp; &forall;x P(x)</span></td>
+              <td><em>Arbitrary one &rarr; Everyone:</em> If proven for arbitrary <em>x</em>, holds for all <em>x</em>.</td>
+            </tr>
+            <tr>
+              <td><strong>Existential Generalization (EG)</strong></td>
+              <td><span class="f-box">P(c) &nbsp; &#8756; &nbsp; &exist;x P(x)</span></td>
+              <td><em>Known object &rarr; Someone exists:</em> From <span class="f-box">Student(Ravi)</span> infer <span class="f-box">&exist;x Student(x)</span>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert-box">
+        <strong>3 Conditions for Unification &mdash; UNIFY(p, q) = &theta;:</strong><br>
+        1. Predicate symbols must be identical. &nbsp; 2. Number of arguments must be identical.<br>
+        3. <strong>Variable Collision / Occurs Check:</strong> Cannot bind a variable to two different values in the same expression!
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Expression <em>p</em></th>
+              <th>Expression <em>q</em></th>
+              <th>MGU (&theta;)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="f-box">Knows(John, x)</span></td>
+              <td><span class="f-box">Knows(John, Jane)</span></td>
+              <td><span class="f-box">{x / Jane}</span></td>
+            </tr>
+            <tr>
+              <td><span class="f-box">Knows(John, x)</span></td>
+              <td><span class="f-box">Knows(y, OJ)</span></td>
+              <td><span class="f-box">{y / John, x / OJ}</span></td>
+            </tr>
+            <tr>
+              <td><span class="f-box">Knows(John, x)</span></td>
+              <td><span class="f-box">Knows(y, Mother(y))</span></td>
+              <td><span class="f-box">{y / John, x / Mother(John)}</span></td>
+            </tr>
+            <tr>
+              <td><span class="f-box">Knows(John, x)</span></td>
+              <td><span class="f-box">Knows(x, OJ)</span></td>
+              <td class="t-false">FAIL (<em>x</em> cannot be both John and OJ; must standardize apart first!)</td>
+            </tr>
+            <tr>
+              <td><span class="f-box">Knows(John, x)</span></td>
+              <td><span class="f-box">Knows(y, z)</span></td>
+              <td><span class="f-box">{y / John, x / z}</span> (Most General Unifier &mdash; least restrictive)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card col-6 border-amber" data-topic="t46">
+      <div class="card-header">
+        <h2 class="card-title">4.6 6-Step FOL-to-CNF Conversion Pipeline</h2>
+        <span class="badge badge-amber">Required for Resolution</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>Operation</th>
+              <th>Transformation Rule / Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Step 1</strong></td>
+              <td>Eliminate Biconditionals (<span class="f-box">&harr;</span>)</td>
+              <td>Replace <span class="f-box">&alpha; &harr; &beta;</span> with <span class="f-box">(&alpha; &rarr; &beta;) &and; (&beta; &rarr; &alpha;)</span></td>
+            </tr>
+            <tr>
+              <td><strong>Step 2</strong></td>
+              <td>Eliminate Implications (<span class="f-box">&rarr;</span>)</td>
+              <td>Replace <span class="f-box">&alpha; &rarr; &beta;</span> with <span class="f-box">&not;&alpha; &or; &beta;</span></td>
+            </tr>
+            <tr>
+              <td><strong>Step 3</strong></td>
+              <td>Move Negations (<span class="f-box">&not;</span>) Inward</td>
+              <td>Apply De Morgan's Laws &amp; Quantifier Negation:<br><span class="f-box">&not;&forall;x P(x) &rArr; &exist;x &not;P(x)</span> &nbsp;|&nbsp; <span class="f-box">&not;&exist;x P(x) &rArr; &forall;x &not;P(x)</span></td>
+            </tr>
+            <tr>
+              <td><strong>Step 4</strong></td>
+              <td>Standardize Variables Apart</td>
+              <td>Rename duplicate bound variables so each quantifier has its own unique variable: <span class="f-box">(&forall;x P(x)) &or; (&forall;x Q(x)) &rArr; (&forall;x P(x)) &or; (&forall;y Q(y))</span></td>
+            </tr>
+            <tr>
+              <td><strong>Step 5</strong></td>
+              <td><strong>Skolemization</strong> (Eliminate <span class="f-box">&exist;</span>)</td>
+              <td>
+                &bull; If <span class="f-box">&exist;x</span> is NOT inside any <span class="f-box">&forall;</span>: replace with <strong>Skolem Constant</strong> (<span class="f-box">&exist;x Student(x) &rArr; Student(c)</span>).<br>
+                &bull; If <span class="f-box">&exist;y</span> IS inside <span class="f-box">&forall;x</span>: replace with <strong>Skolem Function</strong> (<span class="f-box">&forall;x &exist;y LoyalTo(x,y) &rArr; LoyalTo(x, f(x))</span>).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 6</strong></td>
+              <td>Drop <span class="f-box">&forall;</span> &amp; Distribute <span class="f-box">&or;</span> over <span class="f-box">&and;</span></td>
+              <td>Remove all <span class="f-box">&forall;</span> symbols and apply <span class="f-box">A &or; (B &and; C) &equiv; (A &or; B) &and; (A &or; C)</span> to get clauses.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tip-box">
+        <strong>Slide Wumpus CNF Example:</strong> Convert <span class="f-box">B1,1 &harr; (P1,2 &or; P2,1)</span><br>
+        1. Elim &harr;: <span class="f-box">(B1,1 &rarr; (P1,2 &or; P2,1)) &and; ((P1,2 &or; P2,1) &rarr; B1,1)</span><br>
+        2. Elim &rarr;: <span class="f-box">(&not;B1,1 &or; P1,2 &or; P2,1) &and; (&not;(P1,2 &or; P2,1) &or; B1,1)</span><br>
+        3. De Morgan: <span class="f-box">(&not;B1,1 &or; P1,2 &or; P2,1) &and; ((&not;P1,2 &and; &not;P2,1) &or; B1,1)</span><br>
+        4. Distribute: <span class="f-box">(&not;B1,1 &or; P1,2 &or; P2,1) &and; (&not;P1,2 &or; B1,1) &and; (&not;P2,1 &or; B1,1)</span>
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.7: FORWARD & BACKWARD CHAINING                            -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-indigo" data-topic="t47">
+      <div class="card-header">
+        <h2 class="card-title">4.7 Forward Chaining vs Backward Chaining</h2>
+        <span class="badge badge-blue">66.7% PYQ Probability</span>
+      </div>
+
+      <div class="f-block">
+        <strong>Horn Clause:</strong> Clause with <em>at most one</em> positive literal (e.g., <span class="f-box">&not;C &or; &not;B &or; A</span> &equiv; <span class="f-box">(C &and; B) &rarr; A</span>).<br>
+        <strong>Definite Clause:</strong> Clause with <em>exactly one</em> positive literal (either a known Fact or a Rule <span class="f-box">Body &rarr; Head</span>).<br>
+        <strong>Generalized Modus Ponens (GMP):</strong> From <span class="f-box">p1', ..., pn'</span> and <span class="f-box">(p1 &and; ... &and; pn &rarr; q)</span> where <span class="f-box">p_i'&theta; = p_i&theta;</span>, infer <span class="f-box">q&theta;</span>.
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Forward Chaining (FC)</th>
+              <th>Backward Chaining (BC)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Reasoning Style</strong></td>
+              <td><strong>Data-Driven</strong> (Bottom-Up, Automatic)</td>
+              <td><strong>Goal-Driven</strong> (Top-Down, Query-Directed)</td>
+            </tr>
+            <tr>
+              <td><strong>Direction</strong></td>
+              <td>Known Facts &rarr; Fire Rules &rarr; Add New Facts to WM</td>
+              <td>Goal Query &rarr; Find matching Rule Head &rarr; Prove Body Subgoals</td>
+            </tr>
+            <tr>
+              <td><strong>Search Strategy</strong></td>
+              <td>Breadth-first / iterative fixed-point (Linear time for Horn KB)</td>
+              <td>Depth-first recursive proof search (Linear space in proof size)</td>
+            </tr>
+            <tr>
+              <td><strong>Best Used For</strong></td>
+              <td>Monitoring, reactive agents, deriving all consequences</td>
+              <td>Medical diagnosis, Prolog queries, proving a single target goal</td>
+            </tr>
+            <tr>
+              <td><strong>Main Limitation</strong></td>
+              <td>Derives many irrelevant facts unrelated to the goal</td>
+              <td>Can get stuck in infinite loops (must check goal stack &amp; cache subgoals)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mini-box">
+        <h4>Slide Example: Colonel West Proof (FC &amp; BC)</h4>
+        <ul class="clean-list">
+          <li><strong>Facts:</strong> <span class="f-box">American(West)</span>, <span class="f-box">Missile(M1)</span>, <span class="f-box">Owns(Nono, M1)</span>, <span class="f-box">Enemy(Nono, America)</span></li>
+          <li><strong>Rules:</strong>
+            R1: <span class="f-box">American(x) &and; Weapon(y) &and; Sells(x,y,z) &and; Hostile(z) &rarr; Criminal(x)</span><br>
+            R2: <span class="f-box">Missile(x) &and; Owns(Nono, x) &rarr; Sells(West, x, Nono)</span><br>
+            R3: <span class="f-box">Missile(x) &rarr; Weapon(x)</span> &nbsp;|&nbsp; R4: <span class="f-box">Enemy(x, America) &rarr; Hostile(x)</span>
+          </li>
+          <li><strong>FC Iteration 1:</strong> Fire R3 &rarr; <span class="f-box">Weapon(M1)</span>; Fire R2 &rarr; <span class="f-box">Sells(West, M1, Nono)</span>; Fire R4 &rarr; <span class="f-box">Hostile(Nono)</span>.</li>
+          <li><strong>FC Iteration 2:</strong> Fire R1 with <span class="f-box">{x/West, y/M1, z/Nono}</span> &rarr; <span class="f-box">Criminal(West)</span>.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 4.8: RESOLUTION REFUTATION PROOFS                           -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-rose" data-topic="t48">
+      <div class="card-header">
+        <h2 class="card-title">4.8 Resolution Refutation Proof Blueprint</h2>
+        <span class="badge badge-rose">83.3% PYQ Probability</span>
+      </div>
+
+      <div class="f-block">
+        <strong>Full FOL Resolution Rule:</strong> Given <span class="f-box">(l1 &or; ... &or; lk)</span> and <span class="f-box">(m1 &or; ... &or; mn)</span>, if <span class="f-box">UNIFY(li, &not;mj) = &theta;</span>, derive resolvent with <span class="f-box">li</span> and <span class="f-box">mj</span> cancelled and substitution <span class="f-box">&theta;</span> applied.<br>
+        <strong>5-Step Exam Format:</strong> 1. Translate English to FOL/PL &rarr; 2. Convert KB to CNF Clauses (C1..Cn) &rarr; 3. Add <strong>Negated Goal (&not;Goal)</strong> &rarr; 4. Resolve pairs with Unification &theta; &rarr; 5. Reach <strong>Empty Clause (&#9633; / &perp;)</strong>.
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Slide / PYQ Story</th>
+              <th>CNF Clauses + Negated Goal</th>
+              <th>Resolution Derivation Chain to &#9633;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Slide Story: Marcus &amp; Caesar</strong><br>Prove: <span class="f-box">Hate(Marcus, Caesar)</span></td>
+              <td>
+                C1: <span class="f-box">Man(Marcus)</span> | C2: <span class="f-box">Pompeian(Marcus)</span><br>
+                C3: <span class="f-box">&not;Pompeian(x) &or; Roman(x)</span><br>
+                C4: <span class="f-box">Ruler(Caesar)</span><br>
+                C5: <span class="f-box">&not;Roman(x) &or; LoyalTo(x, Caesar) &or; Hate(x, Caesar)</span><br>
+                C6: <span class="f-box">LoyalTo(x, f(x))</span><br>
+                C7: <span class="f-box">&not;Man(x) &or; &not;Ruler(y) &or; &not;TryAssassinate(x,y) &or; &not;LoyalTo(x,y)</span><br>
+                C8: <span class="f-box">TryAssassinate(Marcus, Caesar)</span><br>
+                <strong>C9 (Neg Goal):</strong> <span class="f-box">&not;Hate(Marcus, Caesar)</span>
+              </td>
+              <td>
+                1. Res(C2, C3) <span class="f-box">{x/Marcus}</span> &rArr; R1: <span class="f-box">Roman(Marcus)</span><br>
+                2. Res(R1, C5) <span class="f-box">{x/Marcus}</span> &rArr; R2: <span class="f-box">LoyalTo(M, C) &or; Hate(M, C)</span><br>
+                3. Res(R2, C9) &rArr; R3: <span class="f-box">LoyalTo(Marcus, Caesar)</span><br>
+                4. Res(C7, C1) <span class="f-box">{x/Marcus}</span> &rArr; R4: <span class="f-box">&not;Ruler(y) &or; &not;TryAssassinate(M,y) &or; &not;LoyalTo(M,y)</span><br>
+                5. Res(R4, C4) <span class="f-box">{y/Caesar}</span> &rArr; R5: <span class="f-box">&not;TryAssassinate(M,C) &or; &not;LoyalTo(M,C)</span><br>
+                6. Res(R5, C8) &rArr; R6: <span class="f-box">&not;LoyalTo(Marcus, Caesar)</span><br>
+                7. Res(R6, R3) &rArr; <strong>&#9633; (Contradiction! Proved)</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ B1 / D2 Clone: Lucky John / Alice</strong><br>Prove: <span class="f-box">happy(john)</span></td>
+              <td>
+                C1: <span class="f-box">&not;pass(X, history) &or; &not;win(X, lottery) &or; happy(X)</span><br>
+                C2: <span class="f-box">&not;study(Y) &or; pass(Y, Z)</span><br>
+                C3: <span class="f-box">&not;lucky(W) &or; pass(W, V)</span><br>
+                C4: <span class="f-box">&not;study(john)</span> | C5: <span class="f-box">lucky(john)</span><br>
+                C6: <span class="f-box">&not;lucky(U) &or; win(U, lottery)</span><br>
+                <strong>C7 (Neg Goal):</strong> <span class="f-box">&not;happy(john)</span>
+              </td>
+              <td>
+                1. Res(C1, C7) <span class="f-box">{X/john}</span> &rArr; R1: <span class="f-box">&not;pass(john, history) &or; &not;win(john, lottery)</span><br>
+                2. Res(R1, C6) <span class="f-box">{U/john}</span> &rArr; R2: <span class="f-box">&not;pass(john, history) &or; &not;lucky(john)</span><br>
+                3. Res(R2, C5) &rArr; R3: <span class="f-box">&not;pass(john, history)</span><br>
+                4. Res(R3, C3) <span class="f-box">{W/john, V/history}</span> &rArr; R4: <span class="f-box">&not;lucky(john)</span><br>
+                5. Res(R4, C5) &rArr; <strong>&#9633; (Contradiction! Proved)</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- MODULE 3 & MODULE 5 QUICK REFERENCE CARDS                         -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-emerald" data-topic="t35">
+      <div class="card-header">
+        <h2 class="card-title">Module 3 (3.4): Minimax &amp; Alpha-Beta Pruning</h2>
+        <span class="badge badge-emerald">10 Marks Guaranteed</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Role &amp; Initial Value</th>
+              <th>Update &amp; Pruning Rule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>MAX Node (&alpha;)</strong></td>
+              <td>Best (highest) value found so far along path for MAX.<br>Initialize: <span class="f-box">&alpha; = -&infin;</span></td>
+              <td>At MAX node: <span class="f-box">&alpha; = max(&alpha;, child_value)</span>.<br><strong>Prune remaining children if <span class="f-box">&alpha; &ge; &beta;</span></strong> (&beta;-cutoff).</td>
+            </tr>
+            <tr>
+              <td><strong>MIN Node (&beta;)</strong></td>
+              <td>Best (lowest) value found so far along path for MIN.<br>Initialize: <span class="f-box">&beta; = +&infin;</span></td>
+              <td>At MIN node: <span class="f-box">&beta; = min(&beta;, child_value)</span>.<br><strong>Prune remaining children if <span class="f-box">&alpha; &ge; &beta;</span></strong> (&alpha;-cutoff).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tip-box">
+        <strong>3 Steps to Get 10/10 in Q1:</strong><br>
+        1. Propagate values bottom-up first (<span class="f-box">MIN</span> takes minimum of children; <span class="f-box">MAX</span> takes maximum) and state the optimal top move.<br>
+        2. Pass <span class="f-box">(&alpha;, &beta;)</span> down to children; pass backed-up values up to update parent's <span class="f-box">&alpha;</span> or <span class="f-box">&beta;</span>.<br>
+        3. Explicitly list every pruned node and write the 1-line justification: <em>"Node X is pruned because &beta; (&le; value) &le; &alpha;."</em>
+      </div>
+    </article>
+
+    <article class="card col-6 border-rose" data-topic="t35">
+      <div class="card-header">
+        <h2 class="card-title">Module 5 (5.1-5.2): Bayes' Rule &amp; Naive Bayes</h2>
+        <span class="badge badge-rose">10 Marks Guaranteed</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Formula Name</th>
+              <th>Mathematical Equation</th>
+              <th>When to Apply</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Bayes' Theorem</strong></td>
+              <td><span class="f-box">P(H | E) = [ P(E | H) &times; P(H) ] / P(E)</span></td>
+              <td>Single symptom/evidence word problems (London rain, C-language placement).</td>
+            </tr>
+            <tr>
+              <td><strong>Total Probability</strong></td>
+              <td><span class="f-box">P(E) = P(E | H)P(H) + P(E | &not;H)P(&not;H)</span></td>
+              <td>When denominator <span class="f-box">P(E)</span> is not directly given (e.g., D2 Flu problem).</td>
+            </tr>
+            <tr>
+              <td><strong>Independence Check</strong></td>
+              <td><span class="f-box">P(A &and; B) = P(A) &times; P(B)</span> or <span class="f-box">P(A | B) = P(A)</span></td>
+              <td>Joint probability table questions (B1 Rain/Wind/Headache).</td>
+            </tr>
+            <tr>
+              <td><strong>Naive Bayes Classifier</strong></td>
+              <td><span class="f-box">Score(C_k) = P(C_k) &times; &prod; P(x_i | C_k)</span></td>
+              <td>Tabular dataset classification &mdash; compute score for each class and pick the maximum!</td>
+            </tr>
+            <tr>
+              <td><strong>Laplace Smoothing</strong></td>
+              <td><span class="f-box">P(x_i | C_k) = (count + 1) / (Total_Ck + |V|)</span></td>
+              <td>Use when a feature count is <strong>0</strong> so the product doesn't collapse to zero.</td>
+            </tr>
+            <tr>
+              <td><strong>Bayesian Network</strong></td>
+              <td><span class="f-box">P(X1, ..., Xn) = &prod; P(Xi | Parents(Xi))</span></td>
+              <td>Multiply conditional probabilities from each node's parent table (D1/D2 Q5).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </main>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    function filterTopic(topic, btn) {
+      const pills = document.querySelectorAll('.pill');
+      pills.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#cardGrid .card');
+      cards.forEach(card => {
+        if (topic === 'all' || card.getAttribute('data-topic') === topic) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function searchCards() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('#cardGrid .card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(query)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

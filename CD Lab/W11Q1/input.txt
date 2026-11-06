@@ -1,0 +1,5 @@
+int counter;
+int limit;
+for (counter = 0; counter < limit; counter++) {
+    val = counter;
+}

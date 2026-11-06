@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Compilation Question Bank (AMOLED Neon Void Edition)</title>
+    <style>
+        :root {
+            /* AMOLED Deep Void Palette - TRUE BLACK */
+            --bg-void: #000000;         
+            --bg-void-elevated: #050505;
+            
+            /* Eye-Care Typography (No pure white to prevent haloing) */
+            --text-main: #a1a1aa;       /* Zinc 400 */
+            --text-bright: #e4e4e7;     /* Zinc 200 */
+            --text-muted: #52525b;      /* Zinc 600 */
+            
+            /* Crisp Neon Accents */
+            --neon-cyan: #00f3ff;
+            --neon-pink: #ff00ff;
+            --neon-green: #00ff66;
+            --neon-purple: #b026ff;
+            --neon-amber: #ffaa00;
+            --neon-blue: #3b82f6;
+
+            /* Dim Borders for structure */
+            --border-dim: #18181b;      
+            
+            /* Fonts */
+            --font-main: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            --font-mono: 'Fira Code', 'Consolas', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-main); }
+
+        body { 
+            display: flex; 
+            background-color: var(--bg-void); 
+            color: var(--text-main); 
+            line-height: 1.7; 
+            font-size: 16px;
+        }
+
+        /* 
+         * AMOLED TEXTURE OVERLAY 
+         * Microscopic SVG noise filter to prevent banding and give a soothing 'matte' feel 
+         */
+        .void-texture {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.035; /* Extremely subtle */
+            background: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+        }
+
+        /* Sidebar Navigation */
+        aside { 
+            width: 300px; 
+            background-color: var(--bg-void); 
+            height: 100vh; 
+            position: fixed; 
+            overflow-y: auto; 
+            padding: 30px 20px; 
+            border-right: 1px solid var(--border-dim);
+            box-shadow: 5px 0 15px rgba(0, 243, 255, 0.02);
+            z-index: 100; 
+        }
+        aside h2 { 
+            font-size: 1.4rem; 
+            color: var(--neon-cyan); 
+            margin-bottom: 25px; 
+            padding-bottom: 15px; 
+            border-bottom: 1px solid var(--border-dim); 
+            letter-spacing: 1px; 
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
+        }
+        aside ul { list-style: none; }
+        aside li { margin-bottom: 8px; }
+        aside a { 
+            text-decoration: none; 
+            color: var(--text-muted); 
+            font-weight: 500; 
+            display: block; 
+            padding: 8px 12px; 
+            border-radius: 6px; 
+            transition: all 0.3s ease; 
+            border: 1px solid transparent;
+        }
+        aside a:hover { 
+            color: var(--neon-cyan); 
+            background-color: rgba(0, 243, 255, 0.05);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            box-shadow: inset 0 0 10px rgba(0, 243, 255, 0.1);
+        }
+        .nav-section { margin-top: 25px; margin-bottom: 10px; color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold; }
+
+        /* Main Content Area */
+        main { margin-left: 300px; padding: 50px; width: calc(100% - 300px); max-width: 1300px; }
+        
+        h1 { font-size: 2.8rem; color: var(--text-bright); margin-bottom: 10px; font-weight: 300; letter-spacing: -0.5px; text-shadow: 0 0 20px rgba(255,255,255,0.1); }
+        h2 { font-size: 1.8rem; color: var(--neon-cyan); margin-top: 60px; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid var(--border-dim); font-weight: 400; text-shadow: 0 0 10px rgba(0, 243, 255, 0.3); }
+        h3 { 
+            font-size: 1.2rem; 
+            color: var(--neon-amber); 
+            margin-top: 40px; 
+            margin-bottom: 20px; 
+            font-weight: 500; 
+            display: inline-block; 
+            border-bottom: 1px solid var(--neon-amber); 
+            padding-bottom: 5px; 
+            text-shadow: 0 0 8px rgba(255, 170, 0, 0.4);
+        }
+        
+        p { margin-bottom: 16px; }
+        ul, ol { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+
+        /* Question Cards (Neon Outlines) */
+        .question-card { 
+            background-color: var(--bg-void); 
+            border: 1px solid rgba(0, 243, 255, 0.15); 
+            border-radius: 8px; 
+            padding: 30px; 
+            margin-top: 35px; 
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.02), inset 0 0 20px rgba(0, 243, 255, 0.01);
+        }
+        .question-card:hover {
+            border-color: rgba(0, 243, 255, 0.5);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.05), inset 0 0 20px rgba(0, 243, 255, 0.03);
+        }
+        .question-text { 
+            font-weight: 500; 
+            font-size: 1.1rem; 
+            margin-bottom: 25px; 
+            color: var(--text-bright); 
+            line-height: 1.6;
+        }
+
+        /* Meta Data: Semester & Source */
+        .ans-meta { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 20px; 
+            font-family: var(--font-main); 
+            font-size: 0.85rem; 
+            border-bottom: 1px solid var(--border-dim);
+            padding-bottom: 12px;
+        }
+
+        /* NEON SEMESTER TEXT */
+        .paper-src { 
+            color: var(--neon-pink); 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            text-shadow: 0 0 8px rgba(255, 0, 255, 0.6), 0 0 15px rgba(255, 0, 255, 0.3);
+        }
+
+        /* Hollow Neon Tags */
+        .tag-teacher { 
+            color: var(--neon-green); 
+            font-weight: 600; 
+            background: transparent;
+            border: 1px solid var(--neon-green); 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px; 
+            box-shadow: 0 0 8px rgba(0, 255, 102, 0.3), inset 0 0 8px rgba(0, 255, 102, 0.2);
+        }
+        .tag-ai { 
+            color: var(--neon-purple); 
+            font-weight: 600; 
+            background: transparent;
+            border: 1px solid var(--neon-purple); 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px; 
+            box-shadow: 0 0 8px rgba(176, 38, 255, 0.3), inset 0 0 8px rgba(176, 38, 255, 0.2);
+        }
+
+        /* Answer Blocks - Fading into the void */
+        .answer-block { 
+            background: linear-gradient(90deg, rgba(0, 255, 102, 0.03) 0%, rgba(0,0,0,0) 100%);
+            border-left: 2px solid var(--neon-green); 
+            padding: 20px; 
+            margin-top: 20px; 
+            border-radius: 0 8px 8px 0; 
+            font-family: var(--font-mono); 
+            font-size: 0.95rem; 
+            color: var(--text-main); 
+        }
+        .answer-block.ai-generated { 
+            background: linear-gradient(90deg, rgba(176, 38, 255, 0.03) 0%, rgba(0,0,0,0) 100%);
+            border-left-color: var(--neon-purple); 
+        }
+        
+        .step-heading { 
+            font-family: var(--font-main); 
+            font-weight: 600; 
+            color: var(--neon-cyan); 
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            font-size: 1.05rem; 
+            text-shadow: 0 0 5px rgba(0, 243, 255, 0.3);
+        }
+
+        /* Step-by-Step Lists */
+        .step-list { list-style: none; padding: 0; }
+        .step-list > li { position: relative; padding-left: 35px; margin-bottom: 25px; }
+        .step-list > li::before { 
+            content: "▹"; 
+            position: absolute; 
+            left: 0; 
+            top: 2px; 
+            color: var(--neon-amber); 
+            font-size: 1.4rem;
+            text-shadow: 0 0 8px rgba(255, 170, 0, 0.6);
+        }
+
+        /* B+ Tree and Relational Algebra Visuals */
+        .tree-visual { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 30px; 
+            margin: 20px 0; 
+            font-family: var(--font-mono); 
+            border-radius: 8px;
+            border: 1px solid rgba(0, 243, 255, 0.1);
+            background: var(--bg-void-elevated);
+        }
+        .tree-row { display: flex; justify-content: center; gap: 30px; margin-bottom: 30px; position: relative; }
+        .node { 
+            display: flex; 
+            border: 1px solid var(--neon-cyan); 
+            border-radius: 4px; 
+            overflow: hidden; 
+            background: var(--bg-void); 
+            box-shadow: 0 0 10px rgba(0, 243, 255, 0.1), inset 0 0 10px rgba(0, 243, 255, 0.05);
+        }
+        .ptr { 
+            padding: 6px 8px; 
+            border-right: 1px solid rgba(0, 243, 255, 0.3); 
+            color: var(--text-muted); 
+            font-size: 0.8rem; 
+            display: flex; 
+            align-items: center; 
+        }
+        .key { 
+            padding: 6px 14px; 
+            border-right: 1px solid rgba(0, 243, 255, 0.3); 
+            color: var(--text-bright); 
+        }
+        .node .ptr:last-child { border-right: none; }
+        
+        /* Query Trees */
+        .tree-container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin: 20px 0; 
+            padding: 30px; 
+            border: 1px solid var(--border-dim); 
+            border-radius: 8px; 
+            background: var(--bg-void-elevated); 
+        }
+        .tree-node { 
+            border: 1px solid var(--neon-cyan); 
+            padding: 8px 16px; 
+            border-radius: 4px; 
+            margin: 10px; 
+            font-family: var(--font-mono); 
+            text-align: center; 
+            color: var(--text-bright); 
+            background: var(--bg-void); 
+            box-shadow: 0 0 8px rgba(0, 243, 255, 0.15);
+        }
+
+        /* Hollow Tables */
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; }
+        th, td { border: 1px solid var(--border-dim); padding: 12px 16px; text-align: left; }
+        th { background-color: var(--bg-void-elevated); color: var(--neon-blue); font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        .ra-operator { font-family: var(--font-mono); color: var(--neon-cyan); font-size: 1.1rem; text-shadow: 0 0 5px rgba(0, 243, 255, 0.4); }
+        .highlight { color: var(--neon-amber); font-weight: 600; text-shadow: 0 0 8px rgba(255, 170, 0, 0.5); }
+
+        /* Custom Scrollbar for Void Mode */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-void); }
+        ::-webkit-scrollbar-thumb { background: var(--border-dim); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+        @media (max-width: 1024px) {
+            aside { width: 220px; }
+            main { margin-left: 220px; width: calc(100% - 220px); padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Microscopic Noise Texture for OLED -->
+    <div class="void-texture"></div>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside>
+        <h2>DBMS CAT-2</h2>
+        <div class="nav-section">Module 3: Design</div>
+        <ul>
+            <li><a href="#q1">Q1. BCNF Keys & Minimal Cover</a></li>
+            <li><a href="#q2">Q2. FD Equivalence</a></li>
+            <li><a href="#q3">Q3. BCNF Decomposition</a></li>
+            <li><a href="#q4">Q4. BCNF & Dependency</a></li>
+            <li><a href="#q5">Q5. BCNF & Equivalence</a></li>
+            <li><a href="#q6">Q6. 4NF Violation</a></li>
+            <li><a href="#q7">Q7. Super Keys & FDs</a></li>
+            <li><a href="#q8">Q8. 4NF & 5NF Check</a></li>
+            <li><a href="#q9">Q9. 4NF Normalization</a></li>
+            <li><a href="#q10">Q10. 3NF to BCNF</a></li>
+            <li><a href="#q11">Q11. Project 3NF</a></li>
+            <li><a href="#q12">Q12. Restaurant 3NF</a></li>
+        </ul>
+
+        <div class="nav-section">Module 4: Storage & RA</div>
+        <ul>
+            <li><a href="#q13">Q13. Sequential Blocks</a></li>
+            <li><a href="#q14">Q14. Extendible Hashing</a></li>
+            <li><a href="#q15">Q15. Extendible Hash Names</a></li>
+            <li><a href="#q16">Q16. Open Hashing</a></li>
+            <li><a href="#q17">Q17. Disk & Index Blocks</a></li>
+            <li><a href="#q18">Q18. B+ Tree Accesses</a></li>
+            <li><a href="#q19">Q19. B+ Tree Insert/Delete</a></li>
+            <li><a href="#q20">Q20. B+ Tree Order 4</a></li>
+            <li><a href="#q21">Q21. B+ Tree Ascending</a></li>
+            <li><a href="#q22">Q22. B+ Tree 42,18...</a></li>
+            <li><a href="#q23">Q23. RA: Employee/Honda</a></li>
+            <li><a href="#q24">Q24. RA: Movies</a></li>
+            <li><a href="#q25">Q25. RA: Flights</a></li>
+            <li><a href="#q26">Q26. RA: Books</a></li>
+            <li><a href="#q27">Q27. RA: Vehicles</a></li>
+            <li><a href="#q28">Q28. RA: Borrower</a></li>
+            <li><a href="#q29">Q29. RA: Doctor/Patient</a></li>
+            <li><a href="#q30">Q30. RA: Passenger</a></li>
+            <li><a href="#q31">Q31. RA: IPL</a></li>
+            <li><a href="#q32">Q32. Query Tree: Project</a></li>
+            <li><a href="#q33">Q33. Query Tree: Student</a></li>
+            <li><a href="#q34">Q34. Query Tree: ASG</a></li>
+            <li><a href="#q35">Q35. Query Tree: Tom Hanks</a></li>
+            <li><a href="#q36">Q36. Query Tree: Onwd</a></li>
+        </ul>
+
+        <div class="nav-section">Module 5: Transactions</div>
+        <ul>
+            <li><a href="#q37">Q37. ACID Terms</a></li>
+            <li><a href="#q38">Q38. Concurrent A/B</a></li>
+            <li><a href="#q39">Q39. Conflict Serializability 1</a></li>
+            <li><a href="#q40">Q40. Conflict Serializability 2</a></li>
+            <li><a href="#q41">Q41. E-Commerce Schedules</a></li>
+            <li><a href="#q42">Q42. Schedule r1(A)...</a></li>
+            <li><a href="#q43">Q43. Two Schedules S1/S2</a></li>
+            <li><a href="#q44">Q44. Non Serial S1</a></li>
+            <li><a href="#q45">Q45. Strict/Cascadeless</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <header style="margin-bottom: 60px; border-bottom: 1px solid var(--border-dim); padding-bottom: 30px;">
+            <h1>Database Systems Question Bank</h1>
+            <p style="font-size: 1.1rem; color: var(--text-muted);">AMOLED Void Edition. Optimized for zero eye strain with true black backgrounds, neon borders, and low-luminosity zinc typography.</p>
+        </header>
+
+        <!-- ==========================================
+             MODULE 3: RELATIONAL DATABASE DESIGN 
+             ========================================== -->
+        <section id="mod3">
+            <h2>Module 3: Relational Database Design</h2>
+
+            <div class="question-card" id="q1">
+                <div class="question-text">
+                    Q1. Consider the following relation and functional dependencies. R(A,B,C,D,E,F), F= {A &rarr; BC, AC &rarr; DEF, F &rarr; AB}.<br>
+                    i. List all of the candidate keys.<br>
+                    ii. Give the minimal cover for F.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2023-2024</span>
+                    </div>
+                    <strong>Answer i: [4 Marks]</strong><br>
+                    A<sup>+</sup> = A<br>
+                    A &rarr; BC = ABC<br>
+                    AC &rarr; DEF = ABCDEF<br>
+                    F<sup>+</sup> = F<br>
+                    F &rarr; AB = FAB<br>
+                    FABC = FABCDE<br>
+                    Candidate Keys are A and F.<br><br>
+                    
+                    <strong>Answer ii: [6 Marks]</strong><br>
+                    A &rarr; BC:<br>
+                    Case 1: B can be extraneous?<br>
+                    F' = {A &rarr; C, AC &rarr; DEF, F &rarr; AB}<br>
+                    A<sup>+</sup> on F' = ACDEFB. It contains attribute B, So B is extraneous.<br>
+                    F = {A &rarr; C, AC &rarr; DEF, F &rarr; AB}<br><br>
+                    
+                    AC &rarr; DEF:<br>
+                    Case 1.1: A is extraneous?<br>
+                    C<sup>+</sup> = C does not contain attribute DEF, So A is not Extraneous.<br>
+                    Case 1.2: C is extraneous?<br>
+                    A<sup>+</sup> = ADEFCB does contain attribute DEF, So C is Extraneous.<br>
+                    F = {A &rarr; C, A &rarr; DEF, F &rarr; AB}<br><br>
+                    
+                    A &rarr; DEF:<br>
+                    Case 1.3: D is extranoeus?<br>
+                    F' = {A &rarr; C, A &rarr; EF, F &rarr; AB}<br>
+                    A<sup>+</sup> on F' = CEFAB. Does not contain D, Hence D is not extra.<br>
+                    Case 1.4: E is extraneous?<br>
+                    F' = {A &rarr; C, A &rarr; DF, F &rarr; AB}<br>
+                    A<sup>+</sup> on F' = CDFAB. Does not contain E, E is not extra.<br>
+                    Case 1.5: F is extraneous?<br>
+                    F' = {A &rarr; C, A &rarr; DE, F &rarr; AB}<br>
+                    A<sup>+</sup> on F' = CDEAB. Does not contain F, F is not extra.<br><br>
+                    
+                    F &rarr; AB:<br>
+                    Case 1.6: A is extraneous?<br>
+                    F' = {A &rarr; C, A &rarr; DEF, F &rarr; B}<br>
+                    F<sup>+</sup> on F' = FB. Does not contain A, A is not extra.<br>
+                    Case 1.7: B is extraneous?<br>
+                    F' = {A &rarr; C, A &rarr; DEF, F &rarr; A}<br>
+                    F<sup>+</sup> on F' = FACDEF. Does not contain B, B is not extra.<br>
+                    Fc = {A &rarr; C, A &rarr; DEF, F &rarr; AB}. All left hand side are unique and no extraneous attribute in FD.<br><br>
+                    
+                    A &rarr; BC:<br>
+                    Case 2: C can be extraneous<br>
+                    F' = {A &rarr; B, AC &rarr; DEF, F &rarr; AB}<br>
+                    A<sup>+</sup> on F' = AB. Does not contain attribute C, C is not extra.<br>
+                    So Final minimal cover Fc = {A &rarr; CDEF, F &rarr; AB}
+                </div>
+            </div>
+
+            <div class="question-card" id="q2">
+                <div class="question-text">
+                    Q2. Given a relational schema R(A,B,C,D,E) and a set of functional dependencies P and Q such that: P = {A &rarr; B, AB &rarr; C, D &rarr; AC, D &rarr; E}, Q = {A &rarr; BC, D &rarr; AE}. Check whether P and Q are equivalent?
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2023-2024</span>
+                    </div>
+                    <strong>Answer: [4 Marks]</strong><br>
+                    To check P &sube; Q<br>
+                    Let's find closure of the left side of each FD of P using FD Q.<br>
+                    1. A<sup>+</sup> = ABC (using A &rarr; BC)<br>
+                    2. AB<sup>+</sup> = ABC (using A &rarr; BC)<br>
+                    3. D<sup>+</sup> = DAEBC (using D &rarr; AE and A &rarr; BC)<br>
+                    4. D<sup>+</sup> = DAEBC (using D &rarr; AE and A &rarr; BC)<br>
+                    Now compare closure of each A, AB, D and D calculated using FD Q with the right-hand side of FD P. Closure of each A, AB, D and D has all the attributes which are on the right-hand side of each FD of P. Hence, we can say P is a subset of Q.<br><br>
+
+                    To check Q &sube; P<br>
+                    Using definition of equivalence of FD set, let us determine the right-hand side of the FD set of Q using FD set P.<br>
+                    Given P = {A &rarr; B, AB &rarr; C, D &rarr; AC, D &rarr; E} and Q = {A &rarr; BC, D &rarr; AE}<br>
+                    Let us find closure of the left side of each FD of Q using FD P.<br>
+                    1. A<sup>+</sup> = ABC (using A &rarr; B and AB &rarr; C)<br>
+                    2. D<sup>+</sup> = DACEB (using D &rarr; AC, D &rarr; E, and A &rarr; B)<br>
+                    Now compare closure of each A, D calculated using FD P with the right-hand side of FD Q. Closure of each A and D has all the attributes which are on the right-hand side of each FD of Q. Q is a subset of P.<br>
+                    Hence P is equivalent to Q.
+                </div>
+            </div>
+
+            <div class="question-card" id="q3">
+                <div class="question-text">
+                    Q3. Consider the following relation and set of functional dependencies and answer the following: R = (ABCD), F = {AB &rarr; C, B &rarr; D; C &rarr; A}.<br>
+                    (i) What is/are the candidate key?<br>
+                    (ii) Is the given relation present in the BCNF or not? If not then decompose into BCNF.<br>
+                    (iii) Is that the decomposed relation preserving the functional dependencies? If no then list the functional dependencies that are not preserved and state the reason.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    <strong>Answer: [10 Marks]</strong><br>
+                    <div class="step-heading">Step 1: Compute Attribute Closure</div>
+                    A<sup>+</sup> = A, B<sup>+</sup> = BD, C<sup>+</sup> = AC, D<sup>+</sup> = D<br>
+                    AB<sup>+</sup> = ABCD, BC<sup>+</sup> = ABCD<br>
+                    So our candidate keys are AB and BC.<br><br>
+                    
+                    <div class="step-heading">Step 2: Check BCNF Violation</div>
+                    AB &rarr; C<br>
+                    Does the first violate BCNF, i.e. is AB a key for R? The answer is yes, so no violation.<br>
+                    B &rarr; D<br>
+                    Does this violate BCNF? Yes, because B is not a key. So we create 2 relations: R1(BD) and R2(ABC).<br><br>
+
+                    <div class="step-heading">Step 3: Decompose</div>
+                    For (BD) the candidate key is B. The only FD that applies here is B &rarr; D so it is in BCNF.<br>
+                    For (ABC), the candidate keys are AB and BC. The first FD applies, AB &rarr; C and AB is a key so it is in BCNF. The second FD doesn't apply (there is no D in it), and the third FD does apply (C &rarr; A). Is C a key no, so we need to decompose by creating a new relation schema made up of the FD, and pulling out the right side of the FD from the original.<br>
+                    Final state: (BD)(CA)(BC)<br>
+                    BD is still in BCNF as before.<br>
+                    CA has C as the candidate key, and the only FD that applies is C &rarr; A. It is in BCNF. BC has BC as the candidate key, and no FDs apply, so it is in BCNF.<br>
+                    Our final decomposition is: (BD)(CA)(BC).<br><br>
+                    
+                    <div class="step-heading">Step 4: Dependency Preservation</div>
+                    This BCNF decomposition did not preserve dependencies. We have lost the ability to check AB &rarr; C without doing a join. In this case a 3NF decomposition would be better served, which was back at: (BD)(ABC).
+                </div>
+            </div>
+
+            <div class="question-card" id="q4">
+                <div class="question-text">
+                    Q4. Given a relation scheme R(ABCDE) with a set of FDs let F = {A &rarr; BC, BC &rarr; A, BCD &rarr; E, E &rarr; C}.<br>
+                    (i) Is the given relation present in the BCNF or not? If not then decompose into BCNF.<br>
+                    (ii) Is that the decomposed relation preserving the functional dependencies? If no then list the functional dependencies that are not preserved and state the reason.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <strong>Answer: [10 Marks]</strong><br>
+                    (i) Candidate Key r = {AD, BCD}.<br>
+                    Observe BC &rarr; A is such that BC is not a super key. Therefore R is not in BCNF and should be decomposed:<br>
+                    R1 = (ABC) {A &rarr; BC, BC &rarr; A} in BCNF (super key = {A, BC})<br>
+                    R2 = (BCDE) {BCD &rarr; E, E &rarr; C} not in BCNF (E &rarr; C and E is not a super key).<br>
+                    We continue decomposing R2 into R21 = (BDE) no FDs. R21 is in BCNF.<br>
+                    R22 = (EC) {E &rarr; C} E is a super key R22 is in BCNF.<br><br>
+
+                    (ii) BCDE is not preserved.<br>
+                    In BCNF decomposition, relations are split to satisfy the super key condition, sometimes breaking up the set of attributes needed to enforce certain FDs.<br>
+                    BCD &rarr; E requires B, C, D to appear together in a single relation to enforce it, but the BCNF decomposition separates them into different relations.<br>
+                    Therefore, BCD &rarr; E cannot be enforced in any single relation in this decomposition.
+                </div>
+            </div>
+
+            <div class="question-card" id="q5">
+                <div class="question-text">
+                    Q5. a) Determine if the relations below are in BCNF. If the relation is not in BCNF, decompose it into BCNF relations.<br>
+                    R2(A,B,C,D,E) with functional dependencies D &rarr; B, CE &rarr; A, A &rarr; E.<br>
+                    b) Evaluate if the functional dependencies given below are equivalent or not equivalent.<br>
+                    R(A,B,C,D,E,F), F1:{A &rarr; BC, AB &rarr; D, D &rarr; EF}, F2:{A &rarr; B, D &rarr; F, AB &rarr; CD, D &rarr; E}
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <strong>Answer a: [5 Marks]</strong><br>
+                    Key: {CDE}<br>
+                    2NF - R2a(B,D), R2b(A,C,E), R2c(C,D,E)<br>
+                    R2a, R2b & R2c are in 3NF<br>
+                    R2b - Not in BCNF<br>
+                    R2b1(A,E), R2b2(A,C)<br><br>
+
+                    <strong>Answer b: [5 Marks]</strong><br>
+                    Show F1 covers F2<br>
+                    A<sup>+</sup> = {A,B,C,D,E,F}<br>
+                    D<sup>+</sup> = {D,E,F}<br>
+                    (AB)<sup>+</sup> = {A,B,C,D,E,F}<br>
+                    All the functional dependencies in F2 can be derived from F1. So F1 covers F2.<br><br>
+                    
+                    Show F2 covers F1<br>
+                    A<sup>+</sup> = {A,B,C,D,E,F}<br>
+                    (AB)<sup>+</sup> = {A,B,D,C,E,F}<br>
+                    D<sup>+</sup> = {D,E,F}<br>
+                    All the functional dependencies in F1 can be derived from F2. So F2 covers F1.<br>
+                    Both F1 and F2 are equivalent.
+                </div>
+            </div>
+
+            <div class="question-card" id="q6">
+                <div class="question-text">
+                    Q6. Consider a relation R(StudentID, CourseID, Hobby, Instructor, InstructorOffice, CourseDept) used in a University Academic System, where: F = {CourseID &rarr; Instructor, Instructor &rarr; InstructorOffice, CourseID &rarr; CourseDept} and MVD: StudentID &rarr;&rarr; Hobby. Determine candidate keys, explain why it violates 4NF, and decompose step-by-step to 4NF.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2025-2026</span>
+                    </div>
+                    <div class="step-heading">Step 1: Determine Candidate Keys</div>
+                    Looking at the FDs, CourseID determines all course-related attributes (Instructor, InstructorOffice, CourseDept). StudentID and CourseID must be paired to uniquely identify an enrollment, but since a student can have multiple hobbies independently of courses, we must include Hobby in the key.<br>
+                    (StudentID, CourseID, Hobby)<sup>+</sup> = {StudentID, CourseID, Hobby, Instructor, InstructorOffice, CourseDept}.<br>
+                    Candidate Key: {StudentID, CourseID, Hobby}.<br><br>
+                    
+                    <div class="step-heading">Step 2: Check 4NF Violation</div>
+                    A relation violates 4NF if it contains a non-trivial Multivalued Dependency (MVD) X &rarr;&rarr; Y where X is NOT a superkey.<br>
+                    We are given the MVD: StudentID &rarr;&rarr; Hobby.<br>
+                    Since StudentID alone is NOT a superkey (it cannot determine CourseID or Instructor), this MVD causes massive data redundancy (every hobby a student has is repeated for every course they take). Thus, it violates 4NF.<br><br>
+
+                    <div class="step-heading">Step 3: Decompose to 4NF</div>
+                    We isolate the independent multivalued attribute into its own table, linking it by the determinant.<br>
+                    R1(StudentID, Hobby) &mdash; Key: {StudentID, Hobby}. In 4NF.<br>
+                    R2(StudentID, CourseID, Instructor, InstructorOffice, CourseDept) &mdash; This removes the MVD, making R2 in 4NF (though technically it violates BCNF and needs further normalization to fully normalize). For the 4NF requirement, the primary MVD violation is removed.
+                </div>
+            </div>
+
+            <div class="question-card" id="q7">
+                <div class="question-text">
+                    Q7. Let R=(B,C,D,E,F,G) be a relation schema with dependencies: D &rarr; G, F &rarr; B, FD &rarr; E, B &rarr; C. Find all possible super keys and minimal super keys. Find implied FDs applying axiom rules.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall Inter Sem 2023-2024</span>
+                    </div>
+                    <div class="step-heading">Step 1: Find Minimal Super Keys (Candidate Keys)</div>
+                    Identify attributes that never appear on the right side of any FD: F and D.<br>
+                    Calculate closure of (FD)<sup>+</sup>:<br>
+                    - From D &rarr; G: {F, D, G}<br>
+                    - From F &rarr; B: {F, D, G, B}<br>
+                    - From B &rarr; C: {F, D, G, B, C}<br>
+                    - From FD &rarr; E: {F, D, G, B, C, E}<br>
+                    Since (FD)<sup>+</sup> contains all attributes of R, and neither F nor D alone can determine all attributes, <strong>FD is the sole minimal super key (Candidate Key)</strong>.<br><br>
+
+                    <div class="step-heading">Step 2: Find Possible Super Keys</div>
+                    A super key is any combination of attributes that contains the minimal super key. Since FD is the minimal key, any set containing {F, D} is a super key. Examples: {F,D}, {F,D,A}, {F,D,B}, {F,D,B,C}, etc. (Total of 2<sup>4</sup> = 16 super keys since 4 attributes are remaining).<br><br>
+
+                    <div class="step-heading">Step 3: Implied FDs using Axioms</div>
+                    1. Transitivity Rule: If F &rarr; B and B &rarr; C, then <strong>F &rarr; C</strong>.<br>
+                    2. Augmentation Rule: If D &rarr; G, then adding F to both sides gives <strong>FD &rarr; FG</strong>.<br>
+                    3. Union Rule: Since F &rarr; B and F &rarr; C (from step 1), then <strong>F &rarr; BC</strong>.<br>
+                    4. Decomposition: Since FD &rarr; E, we know FD uniquely identifies E.
+                </div>
+            </div>
+
+            <div class="question-card" id="q8">
+                <div class="question-text">
+                    Q8. Consider a Student table which has information about the subjects and the activity the students have enrolled in. Subject and Activity are the two attributes that are independent of each other. Check whether the given table is in 4NF? If not, partition the table and convert to 4NF. If the partition tables are in 4NF, check whether it is in 5NF?
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2023-2024</span>
+                    </div>
+                    The table consists of multivalue dependency since all the column of the table has duplicate values.<br>
+                    And the Subject and Activity are independent. Hence Student &rarr;&rarr; Subject and Student &rarr;&rarr; Activity exists in the table.<br>
+                    All the attribute of the table act as key. So the Given table is not in 4NF.<br><br>
+
+                    We decompose the table into R1, R2, and R3 such as:<br>
+                    Table R1: Student, Subject. Key: {Student, Subject}<br>
+                    Table R2: Student, Activity. Key: {Student, Activity}<br>
+                    Table R3: Subject, Activity. Key: {Subject, Activity}<br>
+                    Hence the table are in 4NF.<br><br>
+
+                    b. If above partition is considered then it is not in 5NF.<br>
+                    To check R1, R2 and R3 are in 5NF should satisfy R1 &#8904; R3 &#8904; R2 &equiv; R<br>
+                    We perform R1 &#8904;<sub>subject</sub> R3.<br>
+                    We perform (R1 &#8904;<sub>subject</sub> R3) &#8904;<sub>activity</sub> R2.<br>
+                    R1 &#8904; R3 &#8904; R2 = R. Hence R1, R2 and R3 are in 5NF.
+                </div>
+            </div>
+
+            <div class="question-card" id="q9">
+                <div class="question-text">
+                    Q9. Identify the MVDs present in the table and normalize it to 4NF. Fields: Name, Areacode, Phone, likes, manufacturer.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    4NF<br>
+                    R1 &rarr; Name &rarr;&rarr; Area code, Phone<br>
+                    R2 &rarr; Name &rarr;&rarr; likes, Manufacturer
+                </div>
+            </div>
+
+            <div class="question-card" id="q10">
+                <div class="question-text">
+                    Q10. Check R1 and R2 for BCNF, if it is not in BCNF, convert it into BCNF: R1 (elevator_no, building_no, capacity, building_name), R2 (elevator_no, building_no, capacity). FD = {elevator_no &rarr; building_no, capacity and building_no &rarr; building_name}
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    R1 is not in 3NF because of non-key dependencies.<br>
+                    non-key dependency building_no &rarr; building_name, that is the non-key attribute building_no uniquely determines the other non-key attribute building_name.<br>
+                    To convert R1 into 3NF relations, decompose R1 on non-key dependencies. Thus, we get the following relations:<br>
+                    R1a (elevator_no, building_no, capacity). From FD elevator_no &rarr; building_no, capacity.<br>
+                    R1b (building_no, building_name). From FD building_no &rarr; building_name a non-key dependency.<br>
+                    determinants of the functional dependencies are the primary keys. Hence the relations R1a and R1b are in BCNF.<br>
+                    R1a = R2. R2 is in BCNF.
+                </div>
+            </div>
+
+            <div class="question-card" id="q11">
+                <div class="question-text">
+                    Q11. A company maintains details of its employees' project assignments in the table Emp_Proj_Info. Normalize this table to Third Normal Form (3NF) and explain with appropriate decomposition and functional dependencies clearly.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <div class="step-heading">Step 1: Identify Initial Schema and Dependencies</div>
+                    Fields: Employee Name, Employee Grade, Department Code, Department Name, Project Code, Employee ID, Project Name, Project Type, Hours.<br>
+                    Functional Dependencies (FDs):<br>
+                    1. Employee ID &rarr; Employee Name, Employee Grade, Department Code<br>
+                    2. Department Code &rarr; Department Name<br>
+                    3. Project Code &rarr; Project Name, Project Type<br>
+                    4. (Employee ID, Project Code) &rarr; Hours<br><br>
+
+                    <div class="step-heading">Step 2: 1NF and 2NF Normalization</div>
+                    To meet 1NF, we ensure no repeating groups. The primary key is the composite key (Employee ID, Project Code).<br>
+                    To meet 2NF, we remove partial dependencies. Attributes dependent only on part of the primary key are separated:<br>
+                    - EMP(Employee ID, Employee Name, Employee Grade, Department Code)<br>
+                    - PROJ(Project Code, Project Name, Project Type)<br>
+                    - WORKS_ON(Employee ID, Project Code, Hours)<br><br>
+
+                    <div class="step-heading">Step 3: 3NF Normalization</div>
+                    To meet 3NF, we remove transitive dependencies. In the EMP table, Employee ID &rarr; Department Code, and Department Code &rarr; Department Name.<br>
+                    Decompose EMP into:<br>
+                    - EMPLOYEE(Employee ID, Employee Name, Employee Grade, Department Code)<br>
+                    - DEPARTMENT(Department Code, Department Name)<br><br>
+
+                    <div class="step-heading">Final 3NF Relations</div>
+                    1. EMPLOYEE (<u>Employee ID</u>, Employee Name, Employee Grade, <em>Department Code</em>)<br>
+                    2. DEPARTMENT (<u>Department Code</u>, Department Name)<br>
+                    3. PROJECT (<u>Project Code</u>, Project Name, Project Type)<br>
+                    4. WORKS_ON (<u><em>Employee ID</em></u>, <u><em>Project Code</em></u>, Hours)
+                </div>
+            </div>
+
+            <div class="question-card" id="q12">
+                <div class="question-text">
+                    Q12. Imagine you are building a restaurant management application which needs to store the data about the company's employees detail as given in the table. Normalize the given table, up to the 3-NF with proper justifications for violations in each form.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall Inter Sem 2023-2024</span>
+                    </div>
+                    <div class="step-heading">Step 1: Identify Schema and Dependencies</div>
+                    Fields: EMP_ID, NAME, JOB_CODE, JOB, STATE_CODE, HOME_STATE, MAIL-ID<br>
+                    Dependencies:<br>
+                    - EMP_ID &rarr; NAME, JOB_CODE, STATE_CODE, MAIL-ID<br>
+                    - JOB_CODE &rarr; JOB<br>
+                    - STATE_CODE &rarr; HOME_STATE<br><br>
+
+                    <div class="step-heading">Step 2: Convert to 1NF</div>
+                    <strong>Violation:</strong> The MAIL-ID column for E005 contains multiple comma-separated values (melvin@gmail.com, waiter@gmail.com).<br>
+                    <strong>Resolution:</strong> Separate the multi-valued attribute into a new row or a separate table. Let's create a separate table for emails.<br>
+                    R1(EMP_ID, NAME, JOB_CODE, JOB, STATE_CODE, HOME_STATE)<br>
+                    EMP_EMAIL(EMP_ID, MAIL-ID)<br><br>
+
+                    <div class="step-heading">Step 3: Convert to 2NF</div>
+                    <strong>Violation:</strong> Since R1 has a single-attribute primary key (EMP_ID), there are no partial dependencies. Thus, R1 is already in 2NF.<br><br>
+
+                    <div class="step-heading">Step 4: Convert to 3NF</div>
+                    <strong>Violation:</strong> 3NF prohibits transitive dependencies (Non-key attribute determining another non-key attribute). Here, EMP_ID &rarr; JOB_CODE &rarr; JOB, and EMP_ID &rarr; STATE_CODE &rarr; HOME_STATE.<br>
+                    <strong>Resolution:</strong> Isolate the transitive dependencies into new tables.<br>
+                    1. EMPLOYEE (<u>EMP_ID</u>, NAME, <em>JOB_CODE</em>, <em>STATE_CODE</em>)<br>
+                    2. JOB_ROLE (<u>JOB_CODE</u>, JOB)<br>
+                    3. LOCATIONS (<u>STATE_CODE</u>, HOME_STATE)<br>
+                    4. EMP_EMAIL (<u><em>EMP_ID</em></u>, <u>MAIL-ID</u>)
+                </div>
+            </div>
+        </section>
+
+        <hr style="border-color: var(--border-dim); margin: 60px 0;">
+
+        <!-- ==========================================
+             MODULE 4: PHYSICAL STORAGE & QUERIES
+             ========================================== -->
+        <section id="mod4">
+            <h2>Module 4: Physical Database Design and Query Processing</h2>
+
+            <div class="question-card" id="q13">
+                <div class="question-text">
+                    Q13. A sequential file is ordered on EmployeeID. The file has 100,000 records, block size = 1,000 bytes, record size = 100 bytes.<br>
+                    I. How many records per block? How many blocks total?<br>
+                    II. If you insert 2,000 new employees randomly, how many block splits or reorganizations are expected?<br>
+                    III. Suppose a primary index is built with one index entry per block. Compute the number of index blocks required. Assume index entry size = 10 bytes for key + 4 bytes for pointer.<br>
+                    IV. Suggest an alternative file organization to reduce insertion cost, and justify mathematically.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    i) Record Per block = &lfloor; Block size / Record size &rfloor; = &lfloor; 1000 / 100 &rfloor; = 10 records.<br>
+                    Total Blocks required = &lceil; Total records / Records Per block &rceil; = 100000 / 10 = 10,000 blocks.<br>
+                    Each Block can hold 10 records.<br><br>
+                    
+                    ii) Estimated block Splits/reorganizations = New records / Records per blocks = 2000 / 10 = 200 blocks.<br><br>
+
+                    iii) Index entry size = Key size + block pointer = 10 + 4 = 14 bytes.<br>
+                    Index entry Per block = &lfloor; Block size / Index entry size &rfloor; = &lfloor; 1000 / 14 &rfloor; = 71 index entries.<br>
+                    Number of Index Blocks = &lceil; Total Blocks / Entry Per index block &rceil; = &lceil; 10000 / 71 &rceil; = 141 index Block required.<br><br>
+
+                    iv) Suggestion: B+ Tree organization. Instead of strictly sequential storage, use of B+ Tree indexing on EmployeeID is better. Insertion cost is reduced because only need to split the leaf node rather than reorganize large portions of the file.<br>
+                    Max entries per node (fan-out) p = &lfloor; Block size / (Key + ptr) &rfloor; = &lfloor; 1000 / 14 &rfloor; = 71.<br>
+                    So Internal node can have up to 71 Child Pointer.<br>
+                    So, number of leaf nodes = &lceil; 100000 / 71 &rceil; = 1409 leaves.<br>
+                    The tree height = Smallest integer h with 71<sup>h-1</sup> &ge; 1409. 71<sup>1</sup>=71, 71<sup>2</sup>=5041. So need two level of indexing.<br>
+                    So height = root + one internal level + leaves = 3.<br>
+                    So Average insertion cost = 2 reads + 1 write = 3.
+                </div>
+            </div>
+
+            <div class="question-card" id="q14">
+                <div class="question-text">
+                    Q14. Suppose that we are using extendable hashing on a file that contains records with the following search key values 2,3,5,7,11,17,19,23,29,31. Show the extensible hash structure for this file, if the hash function is h(x) = x mod 8 and buckets can hold 2 records.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2023-2024</span>
+                    </div>
+                    <div class="step-heading">Step 1: Calculate Hash Values (Binary)</div>
+                    h(x) = x mod 8, which yields a 3-bit binary value.<br>
+                    2 &rarr; 010<br>
+                    3 &rarr; 011<br>
+                    5 &rarr; 101<br>
+                    7 &rarr; 111<br>
+                    11 &rarr; 011<br>
+                    17 &rarr; 001<br>
+                    19 &rarr; 011<br>
+                    23 &rarr; 111<br>
+                    29 &rarr; 101<br>
+                    31 &rarr; 111<br><br>
+
+                    <div class="step-heading">Step 2: Insert into Buckets (Max size = 2)</div>
+                    Start with Global Depth (GD) = 1, Local Depth (LD) = 1.<br>
+                    Insert 2 (010) &rarr; Bucket 0<br>
+                    Insert 3 (011) &rarr; Bucket 1<br>
+                    Insert 5 (101) &rarr; Bucket 1<br>
+                    Insert 7 (111) &rarr; Bucket 1 OVERFLOWS (contains 3, 5).<br><br>
+
+                    <div class="step-heading">Step 3: Directory Expansion and Splitting</div>
+                    GD increases to 2. Directory entries: 00, 01, 10, 11. LD of Bucket 1 increases to 2.<br>
+                    Bucket 1 splits. Values ending in '01' go to one bucket, '11' to another.<br>
+                    5 (101) &rarr; Bucket 01.<br>
+                    3 (011) &rarr; Bucket 11.<br>
+                    7 (111) &rarr; Bucket 11.<br><br>
+
+                    <div class="step-heading">Step 4: Continue Insertion</div>
+                    Insert 11 (011) &rarr; Bucket 11 OVERFLOWS (contains 3, 7).<br>
+                    GD increases to 3. Directory entries: 000, 001, 010, 011, 100, 101, 110, 111.<br>
+                    Bucket 11 splits based on 3rd bit. LD increases to 3.<br>
+                    3 (011) &rarr; Bucket 011.<br>
+                    11 (011) &rarr; Bucket 011.<br>
+                    7 (111) &rarr; Bucket 111.<br><br>
+
+                    <div class="step-heading">Step 5: Final Overflows</div>
+                    Insert 17 (001) &rarr; Bucket 001.<br>
+                    Insert 19 (011) &rarr; Bucket 011 OVERFLOWS (contains 3, 11). Since LD=3 and GD=3, GD must increase to 4 (directory doubles to 16 entries). LD of the split bucket becomes 4, allowing the collision between 3, 11, and 19 to resolve depending on the 4th bit (requiring h(x) = x mod 16, but if restricted to mod 8, an overflow chain/bucket must be used as they produce identical hash keys). Assuming a pure mod 8 function, the bucket 011 will permanently overflow, requiring an overflow chain block.
+                </div>
+            </div>
+
+            <div class="question-card" id="q15">
+                <div class="question-text">
+                    Q15. A university stores student names in a database using extendible hashing method. Assume that the following student names arrive in order: Aarav, Reena, Riyas, Abdul, Cathy, John, Bheem, David, Ananya, Balu. Apply extendible hashing, show initial/final values for global/local depth, and Bucket splits/Directory Doubling.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <div class="step-heading">Step 1: Hash Function Generation</div>
+                    Function: ASCII of first char to binary, use last 'd' bits.<br>
+                    Aarav (A=65) &rarr; 0100 0001 &rarr; Ends in ...001<br>
+                    Reena (R=82) &rarr; 0101 0010 &rarr; Ends in ...010<br>
+                    Riyas (R=82) &rarr; 0101 0010 &rarr; Ends in ...010<br>
+                    Abdul (A=65) &rarr; 0100 0001 &rarr; Ends in ...001<br>
+                    Cathy (C=67) &rarr; 0100 0011 &rarr; Ends in ...011<br>
+                    John (J=74) &rarr; 0100 1010 &rarr; Ends in ...010<br>
+                    Bheem (B=66) &rarr; 0100 0010 &rarr; Ends in ...010<br>
+                    David (D=68) &rarr; 0100 0100 &rarr; Ends in ...100<br>
+                    Ananya (A=65) &rarr; 0100 0001 &rarr; Ends in ...001<br>
+                    Balu (B=66) &rarr; 0100 0010 &rarr; Ends in ...010<br><br>
+
+                    <div class="step-heading">Step 2: Insertion & Splits (Bucket Size = 4)</div>
+                    Initial: Global Depth (GD) = 1, Local Depth (LD) = 1.<br>
+                    Insert Aarav (...1), Reena (...0), Riyas (...0), Abdul (...1), Cathy (...1).<br>
+                    Bucket 1 (...1) contains: Aarav, Abdul, Cathy. (3/4 full)<br>
+                    Bucket 0 (...0) contains: Reena, Riyas. (2/4 full)<br><br>
+                    
+                    Insert John (...0), Bheem (...0).<br>
+                    Bucket 0 (...0) contains: Reena, Riyas, John, Bheem. (4/4 full - FULL).<br><br>
+                    
+                    Insert David (...0).<br>
+                    <strong>Bucket Split & Directory Doubling!</strong><br>
+                    GD increases to 2 (00, 01, 10, 11). Bucket 0 splits based on last 2 bits.<br>
+                    Reena (...10), Riyas (...10), John (...10), Bheem (...10), David (...00).<br>
+                    Bucket '10' receives 4 records. Bucket '00' receives 1 (David). LD for these buckets = 2.<br><br>
+
+                    Insert Ananya (...1) &rarr; Bucket '01' (Aarav, Abdul, Cathy, Ananya - FULL).<br>
+                    Insert Balu (...10) &rarr; Bucket '10' (Reena, Riyas, John, Bheem - FULL).<br>
+                    <strong>Bucket Split & Directory Doubling!</strong><br>
+                    GD increases to 3. Bucket '10' must split based on 3 bits, but since R, J, and B all share the exact same ASCII prefix, their bits will collide up to the 8th bit. A permanent overflow bucket will be generated for the '010' bucket.<br><br>
+                    
+                    <div class="step-heading">Final State Summary</div>
+                    Initial Global Depth: 1<br>
+                    Final Global Depth: 3 (Directory size = 8)<br>
+                    Total Directory Doublings: 2<br>
+                    Total Bucket Splits: 2
+                </div>
+            </div>
+
+            <div class="question-card" id="q16">
+                <div class="question-text">
+                    Q16. Apply Linear, Quadratic, and double hashing techniques to implement the open hashing concept for the set of key values (3, 2, 13, 18, 11, 6, 73). Assume that size of the bucket is 10, where h1(Key) = Key % 10 and h2(Key) = 1 + (Key % 8). Illustrate the dense and sparse index associated with the above specification.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall Inter Sem 2023-2024</span>
+                    </div>
+                    <div class="step-heading">Technique 1: Linear Probing</div>
+                    Function: H(k) = (k % 10 + i) % 10, where i = 0, 1, 2...<br>
+                    3 &rarr; Index 3<br>
+                    2 &rarr; Index 2<br>
+                    13 &rarr; 13 % 10 = 3 (Collision). i=1 &rarr; (3+1) = Index 4.<br>
+                    18 &rarr; Index 8<br>
+                    11 &rarr; Index 1<br>
+                    6 &rarr; Index 6<br>
+                    73 &rarr; 73 % 10 = 3 (Collision). i=1 &rarr; 4 (Col). i=2 &rarr; Index 5.<br>
+                    Final Array: [NULL, 11, 2, 3, 13, 73, 6, NULL, 18, NULL]<br><br>
+
+                    <div class="step-heading">Technique 2: Quadratic Probing</div>
+                    Function: H(k) = (k % 10 + i<sup>2</sup>) % 10, where i = 0, 1, 2...<br>
+                    3 &rarr; Index 3<br>
+                    2 &rarr; Index 2<br>
+                    13 &rarr; 13 % 10 = 3 (Collision). i=1 &rarr; (3 + 1<sup>2</sup>) = Index 4.<br>
+                    18 &rarr; Index 8<br>
+                    11 &rarr; Index 1<br>
+                    6 &rarr; Index 6<br>
+                    73 &rarr; 73 % 10 = 3 (Collision). i=1 &rarr; (3 + 1) = 4 (Col). i=2 &rarr; (3 + 2<sup>2</sup>) = 7. Index 7.<br>
+                    Final Array: [NULL, 11, 2, 3, 13, NULL, 6, 73, 18, NULL]<br><br>
+
+                    <div class="step-heading">Technique 3: Double Hashing</div>
+                    Function: H(k) = (h1(k) + i * h2(k)) % 10. h2(k) = 1 + (k % 8).<br>
+                    3 &rarr; Index 3<br>
+                    2 &rarr; Index 2<br>
+                    13 &rarr; h1=3 (Col). h2(13) = 1+(13%8) = 6. H(13) = (3 + 1*6) % 10 = 9. Index 9.<br>
+                    18 &rarr; Index 8<br>
+                    11 &rarr; Index 1<br>
+                    6 &rarr; Index 6<br>
+                    73 &rarr; h1=3 (Col). h2(73) = 1+(73%8) = 2. H(73) = (3 + 1*2) % 10 = 5. Index 5.<br>
+                    Final Array: [NULL, 11, 2, 3, NULL, 73, 6, NULL, 18, 13]
+                </div>
+            </div>
+
+            <div class="question-card" id="q17">
+                <div class="question-text">
+                    Q17. Consider an ordered file with 50,000 records stored on a disk with block size B=512 bytes. File records are of fixed size and are un-spanned, with record length R=50 bytes.<br>
+                    a. How many blocks are needed for the file?<br>
+                    b. How many blocks access is needed if a binary search is performed?<br>
+                    c. Consider the ordering key field of the file is 8 bytes long, a block pointer, P=5 bytes long, and a primary index is constructed for the file. What is the size of the index file? Blocking factor? Index entries? Index blocks? Block access using index?<br>
+                    d. Consider non-ordering key field of the file is 10 bytes long and block pointer P=5 bytes long, secondary index is constructed. Size of secondary index? Blocking factor? Index blocks? Block access using secondary index?
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2023-2024</span>
+                    </div>
+                    a. Blocking Factor bfr = &lfloor;(B/R)&rfloor; = &lfloor;(512/50)&rfloor; = 10 record/block<br>
+                    Block needed for file b = &lceil;(r/bfr)&rceil; = &lceil;(50000/10)&rceil; = 5000 blocks<br><br>
+
+                    b. Binary search takes = &lceil;log<sub>2</sub>(b)&rceil; = &lceil;log<sub>2</sub>(5000)&rceil; = 13 block access.<br><br>
+
+                    c. i. Size of index R<sub>i</sub> = V+P = 8+5 = 13 bytes.<br>
+                    ii. Blocking factor bfr<sub>i</sub> = &lfloor;(B/R<sub>i</sub>)&rfloor; = &lfloor;(512/13)&rfloor; = 39 record/block<br>
+                    iii. No.of index entries = No.of blocks of file b = 5000 entries<br>
+                    iv. No. of index block b<sub>i</sub> = &lceil;(r<sub>i</sub>/bfr<sub>i</sub>)&rceil; = &lceil;(5000/39)&rceil; = 129 blocks<br>
+                    For Linear search = 129 block access in worst case.<br>
+                    For Binary search = &lceil;log<sub>2</sub>(b)&rceil; = &lceil;log<sub>2</sub>(129)&rceil; = 7+1 = 8 block access<br><br>
+
+                    d. i. Size of Secondary index R<sub>i</sub> = V+P = 10+5 = 15 bytes.<br>
+                    ii. Blocking factor bfr<sub>i</sub> = &lfloor;(B/R<sub>i</sub>)&rfloor; = &lfloor;(512/15)&rfloor; = 34 record/block<br>
+                    iii. No.of index entries r<sub>i</sub> = No.of records in file = 50000 entries<br>
+                    No. of index block b<sub>i</sub> = &lceil;(r<sub>i</sub>/bfr<sub>i</sub>)&rceil; = &lceil;(50000/34)&rceil; = 1471 blocks<br>
+                    For Linear search = 1471 block access in worst case.<br>
+                    For Binary search = &lceil;log<sub>2</sub>(b)&rceil; = &lceil;log<sub>2</sub>(1471)&rceil; = 11+1 = 12 block access
+                </div>
+            </div>
+
+            <div class="question-card" id="q18">
+                <div class="question-text">
+                    Q18. Consider the block size of 256 bytes and block pointer of size 6 byte and search key value of 5bytes and 3bytes for primary index and clustering index on an ordered field respectively. Size of each entry in the data file is 20bytes with 50000 records and record pointer of size 5 bytes. Clustering index has 500 zipcode values. Find blocking factors, number of blocks, number of accesses, and order p of a B+- tree.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    i) Find the blocking factor for the data file, primary and clustering index.<br>
+                    bfr = &lfloor;(B/R)&rfloor; = &lfloor;(256/20)&rfloor; = 12 records/block for data file<br>
+                    bfr<sub>i</sub> = &lfloor;(B/R<sub>i</sub>)&rfloor; = &lfloor;(256/11)&rfloor; = 23 records/block for primary index file (5+6=11)<br>
+                    bfr<sub>i</sub> = &lfloor;(B/R<sub>i</sub>)&rfloor; = &lfloor;(256/9)&rfloor; = 28 records/block for clustering index file (3+6=9)<br><br>
+
+                    ii) Find the number of blocks required for data file, primary and clustering index<br>
+                    b = &lceil;(r/bfr)&rceil; = &lceil;(50,000/12)&rceil; = 4167 blocks for data file<br>
+                    b<sub>i</sub> = &lceil;(r<sub>i</sub>/bfr<sub>i</sub>)&rceil; = &lceil;(4167/23)&rceil; = 18 blocks for primary index file<br>
+                    b<sub>i</sub> = &lceil;(r<sub>i</sub>/bfr<sub>i</sub>)&rceil; = &lceil;(500/28)&rceil; = 18 blocks for clustering index file<br><br>
+
+                    iii) For the primary and clustering index - calculate the number of accesses needed.<br>
+                    &lceil;log<sub>2</sub>(b<sub>i</sub>)&rceil; = &lceil;log<sub>2</sub>(18)&rceil; = 7 block accesses (Primary). <em>(Transcribed directly from key despite mathematical inaccuracy)</em><br>
+                    &lceil;log<sub>2</sub>(b<sub>i</sub>)&rceil; = &lceil;log<sub>2</sub>(18)&rceil; = 4 block accesses (Clustering).<br><br>
+
+                    iv) To calculate the order p of a B+- tree:<br>
+                    (p * P) + ((p - 1) * V) &le; B<br>
+                    (p * 6) + ((p - 1) * 3) &le; 256 &rarr; p = 29<br>
+                    Order Pleaf for the leaf nodes is: (p<sub>leaf</sub> * (Pr + V)) + P &le; B<br>
+                    (p<sub>leaf</sub> * (5 + 3)) + 6 &le; 256 &rarr; p<sub>leaf</sub> = 32<br>
+                    On average, each internal node will have 29 * 0.69 or approximately 20 pointers, 19 values.<br>
+                    Each leaf node, on average, will hold 0.69 * p<sub>leaf</sub> = 0.69 * 32 or 22 data record pointers.<br>
+                    Root node &rarr; 1 node, 19 key entries, 20 pointers<br>
+                    Internal node 1 &rarr; 20 nodes, 380 entries, 400 pointers<br>
+                    Leaf node &rarr; 400 nodes, 8800 data record pointers
+                </div>
+            </div>
+
+            <div class="question-card" id="q19">
+                <div class="question-text">
+                    Q19. Construct a B+-tree for the following set of values (2, 3, 5, 7, 11, 17, 19, 23, 29, and 31). Assume that the tree is initially empty and values are inserted in ascending order. (i) Construct B+-trees where m=4. (ii) Show form after Insert 9, 10. (iii) Show form after Delete 19, 23.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    <em>The document provides hand-drawn diagrams for this answer.</em><br>
+                    Step 1 (Insert 2,3,5): Leaf node [2, 3, 5]<br>
+                    Step 2 (Insert 7, 11): Root [5, 11]. Leaves: [2,3], [5,7], [11,19]<br>
+                    Step 3 (Insert 17, 19, 23...): Root becomes 19. Children are [5, 11] and [29]. Leaves: [2,3], [5,7], [11,17], [19,23], [29,31]<br>
+                    After Insert 9, 10: Root 19. Children [5, 9, 11] and [29]. Leaves: [2,3], [5,7], [9,10], [11,17], [19,23], [29,31]<br>
+                    After Delete 19, 23: Root 29. Children [5, 9, 11] and [31]. Leaves: [2,3], [5,7], [9,10], [11,17], [29], [31]
+                </div>
+            </div>
+
+            <div class="question-card" id="q20">
+                <div class="question-text">
+                    Q20. Create a self-balancing hierarchical index structure of order 4 for the given list of primary keys: 10, 20, 5, 6, 12, 30, 7, 17, 3, 25, 2, 8, 15. Show the tree after values added: 27 and 1. Show the tree after deletion: 20, 8 and 15.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <em>The document provides visual block diagrams showing the B+ tree structure.</em><br>
+                    Final Base Tree Root: [0015]. Internal nodes: [0006, 0010] and [0020]. Leaves: [0002, 0003, 0005], [0006, 0007, 0008], [0010, 0012], [0015, 0017], [0020, 0025, 0030]<br>
+                    After adding 27 and 1: Root [0015]. Leaves include [0001, 0002, 0003, 0005] leading to splits.<br>
+                    After deletion of 20, 8, 15: Root [0017]. Leaves rebalance.
+                </div>
+            </div>
+
+            <div class="question-card" id="q21">
+                <div class="question-text">
+                    Q21. Construct a B+-tree for the following set of key values (2, 3, 5, 7, 11, 17, 19, 23, 29, 31). Assume tree is empty and values added in ascending order.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2023-2024</span>
+                    </div>
+                    <div class="step-heading">Step 1: Understand Constraints</div>
+                    Assuming a standard order of p=4 (max 3 keys per node, 4 pointers). The tree builds from the bottom up, splitting when a node hits 4 keys.<br><br>
+
+                    <div class="step-heading">Step 2: Insert 2, 3, 5</div>
+                    Root Leaf: [2, 3, 5]<br><br>
+
+                    <div class="step-heading">Step 3: Insert 7 (Split)</div>
+                    Root hits [2, 3, 5, 7]. Splits into [2, 3] and [5, 7]. The 5 copies UP.<br>
+                    Root: [5]. Children: [2, 3] and [5, 7].<br><br>
+
+                    <div class="step-heading">Step 4: Insert 11, 17, 19</div>
+                    - Insert 11: Right leaf becomes [5, 7, 11].<br>
+                    - Insert 17: Right leaf [5, 7, 11, 17] SPLITS. Left=[5, 7], Right=[11, 17]. 11 goes UP.<br>
+                    &nbsp;&nbsp;Root: [5, 11]. Children: [2, 3], [5, 7], [11, 17].<br>
+                    - Insert 19: Right leaf becomes [11, 17, 19].<br><br>
+
+                    <div class="step-heading">Step 5: Insert 23, 29, 31</div>
+                    - Insert 23: Right leaf [11, 17, 19, 23] SPLITS. Left=[11, 17], Right=[19, 23]. 19 goes UP.<br>
+                    &nbsp;&nbsp;Root: [5, 11, 19]. Children: [2, 3], [5, 7], [11, 17], [19, 23].<br>
+                    - Insert 29: Right leaf becomes [19, 23, 29].<br>
+                    - Insert 31: Right leaf [19, 23, 29, 31] SPLITS. Left=[19, 23], Right=[29, 31]. 29 goes UP.<br>
+                    &nbsp;&nbsp;Root hits [5, 11, 19, 29]. Root SPLITS! Left=[5, 11], Right=[29]. 19 goes UP.<br>
+                    &nbsp;&nbsp;New Root: [19]. Internal Children: [5, 11] and [29].<br>
+                    &nbsp;&nbsp;Leaf level: [2, 3], [5, 7], [11, 17], [19, 23], [29, 31].
+                </div>
+            </div>
+
+            <div class="question-card" id="q22">
+                <div class="question-text">
+                    Q22. Construct a B+ Tree of order 4 by inserting 42, 18, 73, 55, 61, 27, 84, 12, 67, 30, 49, 75. Show tree after deleting 61 and 42.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2025-2026</span>
+                    </div>
+                    <div class="step-heading">Step 1: Insert values (Order 4)</div>
+                    - Insert 42, 18, 73 &rarr; Sorted: [18, 42, 73]<br>
+                    - Insert 55 &rarr; Overflows! Splits into [18, 42] and [55, 73]. 55 copies UP.<br>
+                    &nbsp;&nbsp;Root: [55]. Leaves: [18, 42], [55, 73].<br>
+                    - Insert 61 &rarr; Right leaf: [55, 61, 73].<br>
+                    - Insert 27 &rarr; Left leaf: [18, 27, 42].<br>
+                    - Insert 84 &rarr; Right leaf [55, 61, 73, 84] splits. 73 goes UP. <br>
+                    &nbsp;&nbsp;Root: [55, 73]. Leaves: [18, 27, 42], [55, 61], [73, 84].<br>
+                    - Insert 12 &rarr; Left leaf [12, 18, 27, 42] splits. 27 goes UP.<br>
+                    &nbsp;&nbsp;Root: [27, 55, 73]. Leaves: [12, 18], [27, 42], [55, 61], [73, 84].<br>
+                    - Insert 67 &rarr; Middle-right leaf [55, 61, 67].<br>
+                    - Insert 30 &rarr; Middle-left leaf [27, 30, 42].<br>
+                    - Insert 49 &rarr; Middle-left leaf [27, 30, 42, 49] splits. 42 goes UP.<br>
+                    &nbsp;&nbsp;Root [27, 42, 55, 73] OVERFLOWS. Splits into [27, 42] and [73]. 55 goes UP.<br>
+                    &nbsp;&nbsp;New Root: [55]. Internal nodes: [27, 42] and [73].<br>
+                    - Insert 75 &rarr; Right leaf [73, 75, 84].<br><br>
+
+                    <div class="step-heading">Step 2: Delete 61</div>
+                    Locate 61 in leaf [55, 61, 67]. Remove it. Leaf becomes [55, 67]. Since order p=4, minimum keys in a leaf is &lceil;4/2&rceil; - 1 = 1. The leaf has 2 keys, which is valid. No underflow.<br><br>
+
+                    <div class="step-heading">Step 3: Delete 42</div>
+                    Locate 42 in leaf [42, 49]. Remove it. Leaf becomes [49]. Since minimum keys is 1, it's valid. However, 42 is an internal routing key! The internal key must be replaced by its inorder successor (49) to maintain search integrity.<br>
+                    Update internal node [27, 42] to [27, 49].
+                </div>
+            </div>
+
+            <hr style="border-color: var(--border-dim); margin: 60px 0;">
+
+            <div class="question-card" id="q23">
+                <div class="question-text">
+                    Q23. Consider the relational database: employee(emp-name, street, city), works(emp-name, company-name, salary), company(company-name, city), manages(emp-name, manager-name). Give expression in relational algebra for:<br>
+                    a. Find the employee's name whose salary is greater than 5000.<br>
+                    b. Find the names, street address, and cities of residence of all employees who work for Honda Company and earn more than 10,000.<br>
+                    c. Find the names of all employees in this database who live in the same city as the company for which they work.<br>
+                    d. Find the names of all employees in this database who do not work for Honda Company.<br>
+                    e. Find the total salary, minimum salary and maximum salary for each company.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2023-2024</span>
+                    </div>
+                    a. &Pi;<sub>emp-name</sub>(&sigma;<sub>salary &gt; 5000</sub>(works))<br>
+                    b. &Pi;<sub>e.emp-name, e.street, e.city</sub>(&sigma;<sub>company-name='honda' AND salary &gt; 10000</sub> (&rho;<sub>e</sub>(employee) &#8904;<sub>e.emp-name = emp-name</sub> works))<br>
+                    c. &Pi;<sub>emp-name</sub>(emp &#8904;<sub>emp-name = w.emp-name AND city = c.city AND w.company-name = c.company-name</sub> &rho;<sub>w</sub>(works) &#8904; &rho;<sub>c</sub>(company))<br>
+                    d. &Pi;<sub>emp-name</sub>(works) - &Pi;<sub>emp-name</sub>(&sigma;<sub>company='honda'</sub>(works))<br>
+                    e. company-name G<sub>sum(salary), min(salary), max(salary)</sub>(works)
+                </div>
+            </div>
+
+            <div class="question-card" id="q24">
+                <div class="question-text">
+                    Q24. Derive equivalent relational Algebra expression/SQL for the following:
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    i) &Pi;<sub>movieTitle, starName</sub>(&sigma;<sub>birthdate=1960</sub>(MovieStar))<br>
+                    ii) &Pi;<sub>movieTitle, starName</sub>(&sigma;<sub>M.name=name AND birthdate=1960</sub> (StarsIn &times; MovieStar))<br>
+                    iii) &Pi;<sub>fname, lname</sub>(&sigma;<sub>dno=4 AND salary &gt; 50000</sub>(employee))<br>
+                    iv) Select Id, Name From Person Where Hobby = 'stamps' OR Hobby = 'coins'<br>
+                    v) Select StudId, CrsCode From Transcript Where Grade != 'F'
+                </div>
+            </div>
+
+            <div class="question-card" id="q25">
+                <div class="question-text">
+                    Q25. Consider relations: Flights(flno, from, to, distance, departs, arrives, aid), Aircraft(aid, aname, total_capacity, range), Certified(eid, aid), Employees(eid, ename, salary). Write relational algebra:<br>
+                    (i) List the names of pilots certified for some Boeing aircraft.<br>
+                    (ii) List the flight number that can be piloted by every pilot whose salary is more than Rs.150,000.<br>
+                    (iii) Find the total amount paid as salaries to Boeing certified pilot.<br>
+                    (iv) Find the names of pilots who can operate planes with a range greater than 3,000 miles but are not certified on any Boeing aircraft.<br>
+                    (v) Find the aids of all aircraft that can be used on non-stop flights from Chennai to Delhi.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    (i) &Pi;<sub>ename</sub>(&sigma;<sub>aname='Boeing'</sub>(Aircraft &#8904; Certified &#8904; Employees))<br>
+                    (ii) &Pi;<sub>Flno</sub>(&sigma;<sub>salary &gt; 150,000</sub>(Employees) &#8904; Certified &#8904; Flights)<br>
+                    (iii) G<sub>sum(salary)</sub>(&sigma;<sub>aname='Boeing'</sub>(Aircraft) &#8904; Certified &#8904; Employees)<br>
+                    (iv) &rho;(R1, &Pi;<sub>eid</sub>(&sigma;<sub>range &gt; 3000</sub>(Aircraft &#8904; Certified)))<br>
+                    &Pi;<sub>ename</sub>(Employees &#8904; (R1 - &Pi;<sub>eid</sub>(&sigma;<sub>aname='Boeing'</sub>(Aircraft &#8904; Certified))))<br>
+                    (v) &rho;(R1, &sigma;<sub>from='chennai' AND to='Delhi'</sub>(Flights))<br>
+                    &Pi;<sub>aid</sub>(&sigma;<sub>range &gt; distance</sub>(Aircraft &#8904; R1))
+                </div>
+            </div>
+
+            <div class="question-card" id="q26">
+                <div class="question-text">
+                    Q26. Assume the following relations: BOOKS, STUDENTS, AUTHORS, borrows, has-written, describes.<br>
+                    (i) List names of all authors of books borrowed by student named 'Smith'.<br>
+                    (ii) Retrieve titles of books containing keywords 'database' and 'programming'.<br>
+                    (iii) List names of students older than 30 and major not Computer Science.<br>
+                    (iv) Retrieve titles of books published by McGraw-Hill prior to 1990.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    (i) &Pi;<sub>AName</sub>(&sigma;<sub>StName='Smith'</sub>(has-written &#8904; borrows &#8904; Students))<br>
+                    (ii) &Pi;<sub>Title</sub>(Books &#8904; (&Pi;<sub>BId</sub>(&sigma;<sub>Keyword='database'</sub>(Describes)) &cap; &Pi;<sub>BId</sub>(&sigma;<sub>Keyword='Programming'</sub>(Describes))))<br>
+                    (iii) &Pi;<sub>StName</sub>(&sigma;<sub>Age &gt; 30 AND Major &ne; 'Computer Science'</sub>(Students))<br>
+                    (iv) &Pi;<sub>Title</sub>(&sigma;<sub>Publisher='McGraw-Hill' AND Year &lt; 1990</sub>(Books))
+                </div>
+            </div>
+
+            <div class="question-card" id="q27">
+                <div class="question-text">
+                    Q27. Relations: Vehicles, Branches, Renters, Rentals. Write RA for:<br>
+                    a) List the make and model of all the vehicles manufactured in or after the year 2020.<br>
+                    b) Find the average daily rate for all the vehicles.<br>
+                    c) List the name and email of all the renters who have rented a Toyota.<br>
+                    d) List the name of all the renters who have picked up a Toyota from Chennai.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    a) &Pi;<sub>make, model</sub>(&sigma;<sub>Year &ge; 2020</sub>(Vehicles))<br>
+                    b) G<sub>AVG(daily_rate)</sub>(Vehicles)<br>
+                    c) &Pi;<sub>name, email</sub>(Renters &#8904;<sub>renter_id</sub> (&Pi;<sub>renter_id</sub>(Rentals &#8904;<sub>vehicle_id</sub> (&sigma;<sub>make='Toyota'</sub>(Vehicles)))))<br>
+                    d) &Pi;<sub>name</sub>(Renters &#8904;<sub>renter_id</sub> (&Pi;<sub>renter_id</sub>((Rentals &#8904;<sub>vehicle_id</sub> (&sigma;<sub>make='Toyota'</sub>(Vehicles))) &#8904;<sub>pickup_branchID=branch_id</sub> (&Pi;<sub>branch_id</sub>(&sigma;<sub>city='Chennai'</sub>(Branches))))))
+                </div>
+            </div>
+
+            <div class="question-card" id="q28">
+                <div class="question-text">
+                    Q28. Relational schema: Book, Borrower, Borrowing. Retrieve titles authored by "J.K. Rowling". Names/emails of borrowers after Jan 1, 2023. Titles borrowed but not returned.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2023-2024</span>
+                    </div>
+                    <div class="step-heading">i. Retrieve the titles of all books authored by "J.K. Rowling"</div>
+                    &Pi;<sub>Title</sub>(&sigma;<sub>Author='J.K. Rowling'</sub>(Book))<br><br>
+
+                    <div class="step-heading">ii. Find names and emails of all borrowers who borrowed on or after Jan 1, 2023</div>
+                    &Pi;<sub>Name, Email</sub>(Borrower &#8904;<sub>Card ID</sub> &sigma;<sub>Borrow Date &ge; '2023-01-01'</sub>(Borrowing))<br><br>
+
+                    <div class="step-heading">iii. List the titles of books borrowed but not yet returned</div>
+                    &Pi;<sub>Title</sub>(Book &#8904;<sub>ISBN</sub> &sigma;<sub>Return Date IS NULL</sub>(Borrowing))
+                </div>
+            </div>
+
+            <div class="question-card" id="q29">
+                <div class="question-text">
+                    Q29. Relations: Doctor, Patient, Appointment. Write RA queries.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2025-2026</span>
+                    </div>
+                    <div class="step-heading">a) Retrieve doctor's name and specialization for "Paediatrics"</div>
+                    &Pi;<sub>DoctorName, Specialization</sub>(&sigma;<sub>Specialization='Paediatrics'</sub>(Doctor))<br><br>
+
+                    <div class="step-heading">b) Total number of doctors available in each specialization</div>
+                    Specialization G<sub>COUNT(DoctorID)</sub>(Doctor)<br><br>
+
+                    <div class="step-heading">c) Patient name, doctor name, specialization, date for confirmed appts in "Neurology"</div>
+                    &Pi;<sub>PatientName, DoctorName, Specialization, AppointmentDate</sub><br>
+                    (&sigma;<sub>Department='Neurology' AND Status='Confirmed'</sub>(Patient &#8904; Appointment &#8904; Doctor))<br><br>
+                    
+                    <div class="step-heading">d) Names of doctors who consulted patients from more than one department</div>
+                    &Pi;<sub>DoctorName, DistinctDepts</sub>(&sigma;<sub>DistinctDepts > 1</sub><br>
+                    (&rho;<sub>(DoctorID, DistinctDepts)</sub> (DoctorID G<sub>COUNT(DISTINCT Department)</sub> (Appointment &#8904; Patient)) &#8904; Doctor))
+                </div>
+            </div>
+
+            <div class="question-card" id="q30">
+                <div class="question-text">
+                    Q30. Schema: passenger, agency, flight, booking. Answer using SQL and RA.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <div class="step-heading">i. Flights scheduled on both 01/12/2025 AND 02/12/2025 at 16:00</div>
+                    <strong>RA:</strong> (&Pi;<sub>fid</sub>(&sigma;<sub>fdate='01/12/2025' AND time='16:00'</sub>(flight))) &cap; (&Pi;<sub>fid</sub>(&sigma;<sub>fdate='02/12/2025' AND time='16:00'</sub>(flight)))<br><br>
+
+                    <div class="step-heading">ii. Details of male passengers associated with 'Jet' agency</div>
+                    <strong>RA:</strong> &Pi;<sub>pid, pname, pcity</sub>(&sigma;<sub>pgender='M' AND aname='Jet'</sub>(passenger &#8904; booking &#8904; agency))<br><br>
+
+                    <div class="step-heading">iii. Flight numbers for pid=123 to Chennai before 06/11/2025</div>
+                    <strong>RA:</strong> &Pi;<sub>fid</sub>(&sigma;<sub>pid=123 AND dest='Chennai' AND fdate &lt; '06/11/2025'</sub>(booking &#8904; flight))<br><br>
+
+                    <div class="step-heading">iv. Details about all flights from Chennai to New Delhi</div>
+                    <strong>RA:</strong> &sigma;<sub>src='Chennai' AND dest='New Delhi'</sub>(flight)<br><br>
+                    
+                    <div class="step-heading">v. Passengers details who booked more than two flights</div>
+                    <strong>SQL:</strong> SELECT p.* FROM passenger p JOIN booking b ON p.pid = b.pid GROUP BY p.pid HAVING COUNT(b.fid) > 2;
+                </div>
+            </div>
+
+            <div class="question-card" id="q31">
+                <div class="question-text">
+                    Q31. Player, IPL, TestMatch. Write SQL and Relational algebra expressions.
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall Inter Sem 2023-2024</span>
+                    </div>
+                    <div class="step-heading">(i) Players who scored runs &ge; 50</div>
+                    <strong>RA:</strong> &sigma;<sub>Runs &ge; 50</sub>(Player)<br>
+                    <strong>SQL:</strong> SELECT * FROM Player WHERE Runs &ge; 50;<br><br>
+
+                    <div class="step-heading">(ii) Player ID, Team ID, Matches Played from IPL > 10 matches</div>
+                    <strong>RA:</strong> &Pi;<sub>PlayerId, TeamId, MatchesPlayed</sub>(&sigma;<sub>MatchesPlayed > 10</sub>(IPL))<br>
+                    <strong>SQL:</strong> SELECT PlayerId, TeamId, MatchesPlayed FROM IPL WHERE MatchesPlayed > 10;<br><br>
+
+                    <div class="step-heading">(iii) Players details who have not played for IPL</div>
+                    <strong>RA:</strong> Player - (&Pi;<sub>Player.*</sub>(Player &#8904; IPL))<br>
+                    <strong>SQL:</strong> SELECT * FROM Player WHERE PlayerId NOT IN (SELECT PlayerId FROM IPL);<br><br>
+
+                    <div class="step-heading">(iv) Count number of players who played for both IPL and Test Match</div>
+                    <strong>RA:</strong> G<sub>COUNT(PlayerId)</sub>(&Pi;<sub>PlayerId</sub>(IPL) &cap; &Pi;<sub>PlayerId</sub>(TestMatch))<br>
+                    <strong>SQL:</strong> SELECT COUNT(DISTINCT i.PlayerId) FROM IPL i JOIN TestMatch t ON i.PlayerId = t.PlayerId;<br><br>
+
+                    <div class="step-heading">(v) Player names and age, who played for IPL team 'CSK'</div>
+                    <strong>RA:</strong> &Pi;<sub>PlayerName, Age</sub>(&sigma;<sub>TeamName='CSK'</sub>(Player &#8904; IPL))<br>
+                    <strong>SQL:</strong> SELECT p.PlayerName, p.Age FROM Player p JOIN IPL i ON p.PlayerId = i.PlayerId WHERE i.TeamName = 'CSK';<br><br>
+
+                    <div class="step-heading">(vi) Rename relation IPL to IPLCricket</div>
+                    <strong>RA:</strong> &rho;<sub>IPLCricket</sub>(IPL)<br>
+                    <strong>SQL:</strong> RENAME TABLE IPL TO IPLCricket;
+                </div>
+            </div>
+
+            <hr style="border-color: var(--border-dim); margin: 60px 0;">
+
+            <div class="question-card" id="q32">
+                <div class="question-text">
+                    Q32. Find the optimal query tree for the SQL query: <code>Select P.Pnumber, P.Dnum, D.Address From Project as P, Department as D Where P.Dnum=D.Dnumber And D.location='SJT' And D.name='CSE'</code>
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    <em>The document provides a drawn query tree.</em><br>
+                    Top node: &Pi;<sub>P.Pnumber, P.Dnum, D.Address</sub><br>
+                    Join node: &#8904;<sub>P.Dnum = D.Dnumber</sub><br>
+                    Left branch: &Pi;<sub>P.Dnum</sub>(Project)<br>
+                    Right branch: &Pi;<sub>D.Dnumber, D.Address</sub>(&sigma;<sub>D.location='SJT' AND D.name='CSE'</sub>(Department))
+                </div>
+            </div>
+
+            <div class="question-card" id="q33">
+                <div class="question-text">
+                    Q33. Construct an Initial Query Tree and Optimized Query Tree using Heuristic Query Optimization Techniques for the SQL query: <code>SELECT StudId, Fname FROM Student s, Grades g, Course c WHERE s.StudId = g.StudId AND g.CrsId= c.CrsId AND Grade ='S' AND Dept = 'DataScience' AND Major = 'AI'</code>
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    <em>The document provides visual hand-drawn trees.</em><br>
+                    <strong>Initial Query Tree:</strong><br>
+                    &Pi;<sub>StudId, FName</sub> (&sigma;<sub>s.StudId=g.StudId AND g.CrsId=c.CrsId AND Grade='S' AND Major='AI' AND Dept='DataScience'</sub>(Course &times; (Student &times; Grades)))<br>
+                    <strong>Optimized Query Tree Steps:</strong><br>
+                    Step 1: Push down selections. &sigma;<sub>Major='AI'</sub>(Student), &sigma;<sub>Grade='S'</sub>(Grades), &sigma;<sub>Dept='DataScience'</sub>(Course)<br>
+                    Step 2: Convert &times; to &#8904;. &#8904;<sub>s.StudId=g.StudId</sub> and &#8904;<sub>g.CrsId=c.CrsId</sub><br>
+                    Step 3: Push down projections. Final optimized tree joins the filtered Student, Grades, and Course tables and projects StudId and FName.
+                </div>
+            </div>
+
+            <div class="question-card" id="q34">
+                <div class="question-text">
+                    Q34. Construct an Initial Query Tree and Optimized Query Tree using Heuristic Query Optimization Techniques for the SQL query: <code>SELECT ENAME FROM PROJ P, ASG G, EMP E WHERE G.ENO=E.ENO AND G.PNO=P.PNO AND E.ENAME &ne; 'J. Doe' AND P.PNAME='CAD/CAM' AND (G.DUR=12 OR G.DUR=24)</code>
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <em>The document provides visual hand-drawn trees for the initial and optimized trees.</em><br>
+                    <strong>Initial Query Tree:</strong><br>
+                    Top node: &Pi;<sub>Ename</sub>. Condition node: &sigma;<sub>PNO=PNO AND ENO=ENO AND ENAME &ne; 'Mohan Bakasi' AND PNAME='AI Based Resume Screener' AND (DUR=12 OR DUR=36)</sub> (Note: the hand-drawn key uses different string constants than the question prompt). Base relations: EMP, ASG, PROJ multiplied together.<br>
+                    <strong>Optimized Query Tree:</strong><br>
+                    Selections are pushed down:<br>
+                    - &sigma;<sub>ENAME &ne; 'Mohan Bakasi'</sub>(EMP)<br>
+                    - &sigma;<sub>PNAME='AI Based Resume Screener'</sub>(PROJ)<br>
+                    - &sigma;<sub>DUR=12 OR DUR=36</sub>(ASG)<br>
+                    Cartesian products replaced by joins: &#8904;<sub>PNO=PNO</sub> and &#8904;<sub>ENO=ENO</sub>. Projections are pushed down to filter columns early.
+                </div>
+            </div>
+
+            <div class="question-card" id="q35">
+                <div class="question-text">
+                    Q35. From the given relations: Movies, Actors, Casts. Find the titles of movies released before the year 2010 in which actor Tom Hanks has acted, and list the roles he played in those movies. Using detailed steps, demonstrate how a heuristic query optimizer optimizes your query.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <em>The document provides hand-drawn query optimization steps.</em><br>
+                    &Pi;<sub>m.title, c.role</sub> (&sigma;<sub>a.name='Tom Hanks' AND m.year &lt; 2010</sub> (movies &#8904;<sub>m.movie_id=c.movie_id</sub> casts &#8904;<sub>c.actor_id=a.actor_id</sub> actors))<br>
+                    It shows pushing down the selections &sigma;<sub>a.name='Tom Hanks'</sub> and &sigma;<sub>m.year &lt; 2010</sub> to the respective base relations before joining them.
+                </div>
+            </div>
+
+            <div class="question-card" id="q36">
+                <div class="question-text">
+                    Q36. Show the query execution plan for the above query by using heuristic optimization techniques (Employee, Project, etc).
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2023-2024</span>
+                    </div>
+                    <div class="step-heading">Query to Optimize</div>
+                    Find the name of employees born after 1970 who work on a project named 'Onwd'.<br><br>
+
+                    <div class="step-heading">Step 1: Canonical Tree</div>
+                    &Pi;<sub>EName</sub> ( &sigma;<sub>DDOB > 1970 AND ProjName = 'Onwd' AND EID = E-ID AND ProNo = P-No</sub> ( Employee &times; WorksOn &times; Project ) )<br><br>
+
+                    <div class="step-heading">Step 2: Push Down Selections</div>
+                    - Push &sigma;<sub>DDOB > 1970</sub> down to the <code>Employee</code> table.<br>
+                    - Push &sigma;<sub>ProjName = 'Onwd'</sub> down to the <code>Project</code> table.<br><br>
+
+                    <div class="step-heading">Step 3: Convert Cartesian Products to Joins</div>
+                    - Join <code>Employee</code> and <code>WorksOn</code> on <code>EID = E-ID</code>.<br>
+                    - Join the result with <code>Project</code> on <code>ProNo = P-No</code>.<br><br>
+
+                    <div class="step-heading">Step 4: Push Down Projections</div>
+                    - From <code>Project</code>, only project <code>ProNo</code>.<br>
+                    - From <code>Employee</code>, only project <code>EID</code> and <code>EName</code>.<br>
+                    - From <code>WorksOn</code>, only project <code>E-ID</code> and <code>P-No</code>.<br><br>
+
+                    <div class="step-heading">Final Optimized Tree</div>
+                    &Pi;<sub>EName</sub> ( (&Pi;<sub>EID, EName</sub>(&sigma;<sub>DDOB > 1970</sub>(Employee))) &#8904;<sub>EID = E-ID</sub> (&Pi;<sub>E-ID, P-No</sub>(WorksOn)) &#8904;<sub>P-No = ProNo</sub> (&Pi;<sub>ProNo</sub>(&sigma;<sub>ProjName = 'Onwd'</sub>(Project))) )
+                </div>
+            </div>
+        </section>
+
+        <hr style="border-color: var(--border-dim); margin: 60px 0;">
+
+        <!-- ==========================================
+             MODULE 5: TRANSACTION PROCESSING
+             ========================================== -->
+        <section id="mod5">
+            <h2>Module 5: Transaction Processing and Recovery</h2>
+
+            <div class="question-card" id="q37">
+                <div class="question-text">
+                    Q37. Find which of these terms refers to Atomicity, Consistency, Isolation, Durability; and explain with example.<br>
+                    a. The changes of a successful transaction occurs even if the system fail occurs.<br>
+                    b. The transaction takes place at once or doesn't happen at all.<br>
+                    c. Multiple transactions occur independently without interference.<br>
+                    d. The database must be consistent before and after the transaction.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2023-2024</span>
+                    </div>
+                    a. Durability<br>
+                    b. Atomicity<br>
+                    c. Isolation<br>
+                    d. Consistency
+                </div>
+            </div>
+
+            <div class="question-card" id="q38">
+                <div class="question-text">
+                    Q38. Assume that the initial value of A and B is 200 and 150. Concurrent execution of T1 and T2 is given.<br>
+                    (i) What is the value of A and B after the concurrent execution of both transactions?<br>
+                    (ii) Check whether any conflict present or not. If yes then identify the operation.<br>
+                    (iii) Which ACID property/properties are at risk in this schedule? Explain.<br>
+                    (iv) Which anomaly occurs here?
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    (i) A = 230 and B = 415.2<br>
+                    t2: Read(A) &rarr; A=200<br>
+                    t3: A = A + A % 20 = 200 + 0 = 200<br>
+                    t4: Write(A) &rarr; A=200 (no change)<br>
+                    t5: Read(A) &rarr; A=200 (from t4)<br>
+                    t6: A = A * 1.15 = 200 * 1.15 = 230<br>
+                    t7: Write(A) &rarr; A=230<br>
+                    t8: Read(B) &rarr; B=150<br>
+                    t9: B = (B + A) * 1.04 = (150 + 230) * 1.04 = 380 * 1.04 = 395.2<br>
+                    t10: Write(B) &rarr; B=395.2<br>
+                    t12: Read(B) &rarr; B=395.2<br>
+                    t13: B = 395.2 + 20 = 415.2<br>
+                    t14: Write(B) &rarr; B=415.2<br><br>
+
+                    (ii) Conflicts occur when: Two operations are from different transactions, they access the same data item, at least one of them is a write.<br>
+                    Conflict 1: T1 writes A at t4, then T2 reads A at t5 (W-R conflict).<br>
+                    Conflict 2: T1 writes A at t4, then T2 writes A at t7 (W-W conflict).<br>
+                    Conflict 3: T2 writes B at t10, T1 reads B at t12 (W-R conflict).<br>
+                    Conflict 4: T2 writes B at t10, T1 writes B at t14 (W-W conflict).<br>
+                    Yes, conflicts exist at operations (t4-t5), (t10-t12), (t10-t14).<br><br>
+
+                    (iii) ACID properties:<br>
+                    1. Atomicity: T1 and T2 both eventually commit, so atomicity is maintained.<br>
+                    2. Consistency: Both transactions committed so no issue with consistency.<br>
+                    3. Isolation: Isolation is at risk &rarr; the schedule allows dirty read and is not conflict serializable. Isolation is violated: the interleaving is equivalent to a lower isolation level (read uncommitted) rather than strict serializability.<br>
+                    4. Durability: Both transactions commit; durability is ok.<br><br>
+
+                    (iv) Check for anomalies:<br>
+                    Potential anomaly: Lost update occurs if two transactions read the same value and write back, causing one update to be lost.<br>
+                    Dirty read: Uncommitted Data read. T2 reads A written by T1 before T1 committed. If T1 aborted after T2 commits, then T2 results would become invalid.
+                </div>
+            </div>
+
+            <div class="question-card" id="q39">
+                <div class="question-text">
+                    Q39. Draw the precedence graph for the schedule of 4 transactions: W3(B), R1(C), W4(B), W4(A), R1(A), W3(C), W2(A), R2(D), W2(B), R3(D). Identify whether it is conflict serializable or not? Present the equivalent serial schedules.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    <em>Precedence graph drawn with edges between T1, T2, T3, T4.</em><br>
+                    conflict serializable or not - 4m:<br>
+                    This schedule isn't conflict serializable because there is two cycles (T1, T3, T4) and (T1, T2, T3, T4) in the graph. Moreover, this schedule is not conflict equivalent (every pair of conflicting operations is ordered in the same way) to any serial schedule of transaction execution.<br><br>
+                    
+                    equivalent serial schedules - In general, as there are 4 transactions, there is 4! no of Serial Schedules possible = 24. But, as there exists cycle in the graph, this cannot be converted to any serial schedule.
+                </div>
+            </div>
+
+            <div class="question-card" id="q40">
+                <div class="question-text">
+                    Q40. Consider the transactions T1, T2, and T3 and the schedules S1 and S2 given below.<br>
+                    S1: r1(A); r3(B); r3(A); r2(B); r2(C); w3(B); w2(C); r1(C); w1(A); w1(C)<br>
+                    S2: r1(A); r3(B); r2(B); r3(A); r1(C); r2(C); w3(B); w1(A); w2(C); w1(C)<br>
+                    Check whether the given Schedules S1 or S2 are conflict serializable or not? Give justification to your answer with neat explanation.
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2024-2025</span>
+                    </div>
+                    S1: Precedence graph shows edges from T3 to T1 (on A), T2 to T3 (on B), and T2 to T1 (on C).<br>
+                    There is no loop present here. So, It is Conflict Serializable.<br><br>
+
+                    S2: Precedence graph shows edges from T3 to T1 (on A), T2 to T3 (on B), T1 to T2 (on C).<br>
+                    There is a loop present in the graph, So It is not conflict Serializable.
+                </div>
+            </div>
+
+            <div class="question-card" id="q41">
+                <div class="question-text">
+                    Q41. Consider the following schedules for an e-commerce website. Identify the schedule that can be called an equivalent to a serial schedule of transactions. Explain and justify your answer.<br>
+                    S1: R2(X) R3(X) W3(X) R1(X) W1(X) R2(Y) W2(Y) R2(Z) R4(Y) R4(X)<br>
+                    S2: R1(X) W1(X) R4(Z) W4(X) R2(X) R3(Y) R3(Z) W3(Z) R1(Z) W2(X)
+                </div>
+                <div class="answer-block">
+                    <div class="ans-meta">
+                        <span class="tag-teacher">Teacher's Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <strong>S1:</strong><br>
+                    Conflicting Operations:<br>
+                    T2 &rarr; T3 (from R2(X) before W3(X))<br>
+                    T2 &rarr; T1 (from R2(X) before W1(X))<br>
+                    T3 &rarr; T1 (from R3(X) / W3(X) before R1(X) / W1(X))<br>
+                    T3 &rarr; T4 (from W3(X) before R4(X))<br>
+                    T1 &rarr; T4 (from W1(X) before R4(X))<br>
+                    T2 &rarr; T4 (from W2(Y) before R4(Y))<br>
+                    Example Equivalent Serial Schedule: T2 &rarr; T3 &rarr; T1 &rarr; T4<br><br>
+
+                    <strong>S2:</strong><br>
+                    Conflicts:<br>
+                    W1(X) (op 2, T1) &rarr; W4(X) (op 4, T4) &rArr; edge T1 &rarr; T4 (write-write).<br>
+                    W1(X) (op 2, T1) &rarr; R2(X) (op 5, T2) &rArr; edge T1 &rarr; T2 (write-read).<br>
+                    W1(X) (op 2, T1) &rarr; W2(X) (op10, T2) &rArr; edge T1 &rarr; T2 (write-write) - same edge as above.<br>
+                    W4(X) (op 4, T4) &rarr; R2(X) (op 5, T2) &rArr; edge T4 &rarr; T2 (write-read).<br>
+                    W4(X) (op 4, T4) &rarr; W2(X) (op10, T2) &rArr; edge T4 &rarr; T2 (write-write) - same edge repeated.<br>
+                    (R1(X) op1 before W4(X) op4 produces T1 &rarr; T4 as well - duplicate edge.)<br>
+                    R4(Z) (op 3, T4) &rarr; W3(Z) (op 8, T3) &rArr; edge T4 &rarr; T3 (read-write).<br>
+                    W3(Z) (op 8, T3) &rarr; R1(Z) (op 9, T1) &rArr; edge T3 &rarr; T1 (write-read).<br>
+                    The precedence graph is cyclic. Therefore, this schedule is not conflict-serializable.
+                </div>
+            </div>
+
+            <div class="question-card" id="q42">
+                <div class="question-text">
+                    Q42. Check whether the given schedule S is conflict serializable or not. If yes, then determine all the possible serialized schedules.<br>
+                    S: r1(A), r2(A), r3(A), w2(B), w1(A), w2(B), r3(B)
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2023-2024</span>
+                    </div>
+                    <div class="step-heading">Step 1: Identify Conflicting Operations</div>
+                    Look for Write-Read, Read-Write, and Write-Write conflicts on the same variable by different transactions:<br>
+                    - <strong>Variable A:</strong><br>
+                    &nbsp;&nbsp;r2(A) occurs before w1(A) &rarr; Conflict! Edge: T2 &rarr; T1.<br>
+                    &nbsp;&nbsp;r3(A) occurs before w1(A) &rarr; Conflict! Edge: T3 &rarr; T1.<br>
+                    - <strong>Variable B:</strong><br>
+                    &nbsp;&nbsp;w2(B) occurs before r3(B) &rarr; Conflict! Edge: T2 &rarr; T3.<br><br>
+
+                    <div class="step-heading">Step 2: Construct Precedence Graph</div>
+                    Nodes: T1, T2, T3.<br>
+                    Edges: T2 &rarr; T1, T3 &rarr; T1, T2 &rarr; T3.<br><br>
+
+                    <div class="step-heading">Step 3: Analyze for Cycles</div>
+                    Following the directed edges: T2 goes to T3 and T1. T3 goes to T1. T1 goes nowhere.<br>
+                    There are NO cycles in the graph. Therefore, <strong>Schedule S is Conflict Serializable</strong>.<br><br>
+                    
+                    <div class="step-heading">Step 4: Determine Serialized Schedules</div>
+                    Perform a topological sort (nodes with 0 incoming edges go first).<br>
+                    T2 has 0 incoming edges. T2 goes first.<br>
+                    Removing T2 leaves T3 &rarr; T1. T3 has 0 incoming edges. T3 goes second.<br>
+                    T1 goes last.<br>
+                    Equivalent Serial Schedule: <strong>T2 &rarr; T3 &rarr; T1</strong>.
+                </div>
+            </div>
+
+            <div class="question-card" id="q43">
+                <div class="question-text">
+                    Q43. Consider the following two schedules S1 and S2. Construct precedence graph, determine serializability, identify equivalent serial transactions.<br>
+                    S1: r2(C); r3(A); r2(B); w1(C); w1(A); w3(B); w2(C);<br>
+                    S2: r1(C); r2(B); r3(A); w1(C); w2(C); w1(A); w3(B);
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Winter 2025-2026</span>
+                    </div>
+                    <div class="step-heading">Schedule S1 Analysis</div>
+                    <strong>Conflicts in S1:</strong><br>
+                    - r2(C) before w1(C) &rarr; T2 &rarr; T1<br>
+                    - r2(C) before w2(C) &rarr; Same transaction, ignore.<br>
+                    - r3(A) before w1(A) &rarr; T3 &rarr; T1<br>
+                    - r2(B) before w3(B) &rarr; T2 &rarr; T3<br>
+                    - w1(C) before w2(C) &rarr; T1 &rarr; T2<br>
+                    <strong>Cycle Check:</strong> We have T2 &rarr; T1 AND T1 &rarr; T2 (on variable C).<br>
+                    Because of this cycle, <strong>S1 is NOT Conflict Serializable.</strong><br><br>
+
+                    <div class="step-heading">Schedule S2 Analysis</div>
+                    <strong>Conflicts in S2:</strong><br>
+                    - r1(C) before w2(C) &rarr; T1 &rarr; T2<br>
+                    - r2(B) before w3(B) &rarr; T2 &rarr; T3<br>
+                    - r3(A) before w1(A) &rarr; T3 &rarr; T1<br>
+                    - w1(C) before w2(C) &rarr; T1 &rarr; T2<br>
+                    <strong>Cycle Check:</strong> Edges are T1 &rarr; T2, T2 &rarr; T3, T3 &rarr; T1. This forms a continuous loop (T1 &rarr; T2 &rarr; T3 &rarr; T1).<br>
+                    Because of this cycle, <strong>S2 is NOT Conflict Serializable.</strong>
+                </div>
+            </div>
+
+            <div class="question-card" id="q44">
+                <div class="question-text">
+                    Q44. Consider the following non serial schedule S1. Write conflicting instructions, construct precedence graph, provide serial schedule.<br>
+                    S1: r3(Y); w3(Z); r4(Z); r4(X); r2(Z); w2(Z); r3(A); r2(B); w2(B); r4(B); w4(B); r3(Z); r1(Y); r1(B);
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <div class="step-heading">Step 1: Write Conflicting Instructions</div>
+                    Variable Y: No conflicts. (r3 and r1 are both reads).<br>
+                    Variable Z:<br>
+                    - w3(Z) before r4(Z) &rarr; Conflict (T3 &rarr; T4)<br>
+                    - w3(Z) before r2(Z) &rarr; Conflict (T3 &rarr; T2)<br>
+                    - w3(Z) before w2(Z) &rarr; Conflict (T3 &rarr; T2)<br>
+                    - r4(Z) before w2(Z) &rarr; Conflict (T4 &rarr; T2)<br>
+                    - r2(Z) before r3(Z) &rarr; No conflict, both reads.<br>
+                    - w2(Z) before r3(Z) &rarr; Conflict (T2 &rarr; T3)<br>
+                    Variable B:<br>
+                    - w2(B) before r4(B) &rarr; Conflict (T2 &rarr; T4)<br>
+                    - w2(B) before w4(B) &rarr; Conflict (T2 &rarr; T4)<br>
+                    - w2(B) before r1(B) &rarr; Conflict (T2 &rarr; T1)<br>
+                    - w4(B) before r1(B) &rarr; Conflict (T4 &rarr; T1)<br><br>
+
+                    <div class="step-heading">Step 2: Construct Precedence Graph</div>
+                    Edges: T3 &rarr; T4, T3 &rarr; T2, T4 &rarr; T2, T2 &rarr; T3, T2 &rarr; T4, T2 &rarr; T1, T4 &rarr; T1.<br><br>
+
+                    <div class="step-heading">Step 3: Analyze for Cycles</div>
+                    We have T2 &rarr; T3 and T3 &rarr; T2. We also have T2 &rarr; T4 and T4 &rarr; T2.<br>
+                    Because of these multiple cycles, <strong>S1 is NOT Conflict Serializable.</strong> Therefore, no equivalent serial schedule can be provided.
+                </div>
+            </div>
+
+            <div class="question-card" id="q45">
+                <div class="question-text">
+                    Q45. Determine whether the below schedule S2 is strict, cascadeless, recoverable, or nonrecoverable and justify your answer.<br>
+                    S2: r1(A); r2(C); r3(A); r1(C); r2(B); r3(B); w1(A); c1; w2(C); w3(B); w2(B); c3; c2;
+                </div>
+                <div class="answer-block ai-generated">
+                    <div class="ans-meta">
+                        <span class="tag-ai">AI-Generated Solution</span>
+                        <span class="paper-src">Fall 2025-2026</span>
+                    </div>
+                    <div class="step-heading">1. Recoverable / Cascadeless Analysis</div>
+                    A schedule is <strong>Cascadeless</strong> if no transaction reads data written by an uncommitted transaction. Let's trace the reads:<br>
+                    - r1(A), r2(C), r3(A), r1(C), r2(B), r3(B): All these reads occur <em>before</em> any transaction performs a write operation. Therefore, they all read the initial committed values from the database.<br>
+                    Since no transaction reads uncommitted data, <strong>S2 is Cascadeless.</strong><br>
+                    Because every cascadeless schedule is strictly recoverable, <strong>S2 is Recoverable.</strong><br><br>
+
+                    <div class="step-heading">2. Strict Analysis</div>
+                    A schedule is <strong>Strict</strong> if a transaction can neither read <em>nor write</em> an item X until the last transaction that wrote X has committed or aborted.<br>
+                    Let's trace the writes:<br>
+                    - w1(A): Overwrites initial A. (Strict). c1 commits T1.<br>
+                    - w2(C): Overwrites initial C. (Strict).<br>
+                    - w3(B): Overwrites initial B. (Strict).<br>
+                    - <strong>w2(B):</strong> T2 overwrites the value of B written by T3. However, T3 has <strong>NOT committed yet</strong> (c3 happens after w2(B)).<br>
+                    Because T2 writes to B before T3 commits, <strong>S2 is NOT Strict.</strong><br><br>
+
+                    <strong>Final Verdict:</strong> S2 is Cascadeless and Recoverable, but it is NOT Strict.
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

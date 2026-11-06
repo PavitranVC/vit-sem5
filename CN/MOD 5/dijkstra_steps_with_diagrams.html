@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dijkstra's Algorithm - Step by Step with Trees</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #212529;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.5;
+    }
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+        color: #0d6efd;
+        border-bottom: 2px solid #e9ecef;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+    .badge-tentative {
+        background-color: #fff3cd;
+        color: #856404;
+        border: 1px solid #ffeeba;
+    }
+    .badge-permanent {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #dee2e6;
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background-color: #f1f3f5;
+        color: #495057;
+        font-weight: 700;
+        font-size: 1.05rem;
+    }
+    tr:hover {
+        background-color: #f8f9fa;
+    }
+    .step-number {
+        font-weight: bold;
+        text-align: center;
+        width: 50px;
+        font-size: 1.1rem;
+    }
+    .node-list {
+        margin: 0;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    .node-list li {
+        padding: 3px 0;
+    }
+    .node-highlight {
+        font-weight: bold;
+        color: #0d6efd;
+    }
+    .svg-container {
+        text-align: center;
+        background: #fafafa;
+        border-radius: 6px;
+        padding: 5px;
+        border: 1px dashed #ced4da;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dijkstra's Algorithm Execution</h1>
+        <p>This table traces the execution of Dijkstra's algorithm step-by-step. The <strong>Shortest Path Tree</strong> column visually mimics the provided reference format, showing nodes forming the tree. Permanent nodes (processed) are shown in orange (with the root in dark gray), while tentative nodes (unprocessed neighbors) are shown as white circles with black borders. Minimum path costs are written in magenta text next to the nodes.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th class="step-number">Step</th>
+                    <th><span class="badge badge-tentative">Tentative List</span></th>
+                    <th><span class="badge badge-permanent">Permanent List</span></th>
+                    <th>Action Taken</th>
+                    <th>Shortest Path Tree Diagram</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+    <tr>
+        <td class="step-number">0</td>
+        <td><ul class='node-list'><li>0 (0)</li></ul></td>
+        <td><em>(Empty)</em></td>
+        <td>Initialize root node to <strong>0</strong> and move it to the tentative list with a cost of 0.</td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">1</td>
+        <td><ul class='node-list'><li>1 (4)</li><li>7 (8)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li></ul></td>
+        <td>Move <strong>0</strong> to permanent list. Add unprocessed neighbors (1, 7) to tentative list.</td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">2</td>
+        <td><ul class='node-list'><li>7 (8)</li><li>2 (12)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li></ul></td>
+        <td>Move <strong>1</strong> to permanent list. Add neighbor 2. <br><small><em>Node 7 update ignored (8 < 15).</em></small></td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="250" cy="170" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">3</td>
+        <td><ul class='node-list'><li>2 (12)</li><li>6 (9)</li><li>8 (15)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li><li>7 (8)</li></ul></td>
+        <td>Move <strong>7</strong> to permanent list. Add neighbors 6 and 8.</td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="50" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="150" y2="150" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="250" cy="170" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text><circle cx="50" cy="170" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="50" y="170" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">6</text><text x="28" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">9</text><circle cx="150" cy="150" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="150" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">8</text><text x="162" y="132" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">15</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">4</td>
+        <td><ul class='node-list'><li>2 (12)</li><li>8 (15)</li><li>5 (11)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li><li>7 (8)</li><li>6 (9)</li></ul></td>
+        <td>Move <strong>6</strong> to permanent list. Add neighbor 5. <br><small><em>Node 8 update ignored (15 == 15).</em></small></td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="50" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="150" y2="150" stroke="#333" stroke-width="2"/><line x1="50" y1="170" x2="70" y2="240" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="50" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">6</text><text x="28" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">9</text><circle cx="250" cy="170" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text><circle cx="150" cy="150" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="150" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">8</text><text x="162" y="132" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">15</text><circle cx="70" cy="240" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="70" y="240" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">5</text><text x="48" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">11</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">5</td>
+        <td><ul class='node-list'><li>2 (12)</li><li>8 (15)</li><li>3 (25)</li><li>4 (21)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li><li>7 (8)</li><li>6 (9)</li><li>5 (11)</li></ul></td>
+        <td>Move <strong>5</strong> to permanent list. Add neighbors 3 and 4. <br><small><em>Node 2 update ignored (12 < 15).</em></small></td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="50" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="150" y2="150" stroke="#333" stroke-width="2"/><line x1="50" y1="170" x2="70" y2="240" stroke="#333" stroke-width="2"/><line x1="70" y1="240" x2="230" y2="240" stroke="#333" stroke-width="2"/><line x1="70" y1="240" x2="150" y2="280" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="50" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">6</text><text x="28" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">9</text><circle cx="70" cy="240" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="70" y="240" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">5</text><text x="48" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">11</text><circle cx="250" cy="170" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text><circle cx="150" cy="150" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="150" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">8</text><text x="162" y="132" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">15</text><circle cx="230" cy="240" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="230" y="240" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">3</text><text x="252" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">25</text><circle cx="150" cy="280" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="280" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">4</text><text x="150" y="302" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="middle" dy=".3em">21</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">6</td>
+        <td><ul class='node-list'><li class='node-highlight'>8 (14)</li><li class='node-highlight'>3 (19)</li><li>4 (21)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li><li>7 (8)</li><li>6 (9)</li><li>5 (11)</li><li>2 (12)</li></ul></td>
+        <td>Move <strong>2</strong> to permanent list. <br><strong>Update existing nodes:</strong> Node 8 path improves via 2 (14 < 15). Node 3 path improves via 2 (19 < 25).</td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="50" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="170" x2="70" y2="240" stroke="#333" stroke-width="2"/><line x1="70" y1="240" x2="150" y2="280" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="150" y2="150" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="230" y2="240" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="50" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">6</text><text x="28" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">9</text><circle cx="70" cy="240" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="70" y="240" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">5</text><text x="48" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">11</text><circle cx="250" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text><circle cx="150" cy="150" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="150" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">8</text><text x="162" y="132" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">14</text><circle cx="230" cy="240" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="230" y="240" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">3</text><text x="252" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">19</text><circle cx="150" cy="280" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="280" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">4</text><text x="150" y="302" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="middle" dy=".3em">21</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">7</td>
+        <td><ul class='node-list'><li>3 (19)</li><li>4 (21)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li><li>7 (8)</li><li>6 (9)</li><li>5 (11)</li><li>2 (12)</li><li>8 (14)</li></ul></td>
+        <td>Move <strong>8</strong> to permanent list. No unprocessed neighbors to add.</td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="50" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="170" x2="70" y2="240" stroke="#333" stroke-width="2"/><line x1="70" y1="240" x2="150" y2="280" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="150" y2="150" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="230" y2="240" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="50" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">6</text><text x="28" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">9</text><circle cx="70" cy="240" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="70" y="240" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">5</text><text x="48" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">11</text><circle cx="250" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text><circle cx="150" cy="150" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="150" y="150" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">8</text><text x="162" y="132" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">14</text><circle cx="230" cy="240" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="230" y="240" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">3</text><text x="252" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">19</text><circle cx="150" cy="280" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="280" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">4</text><text x="150" y="302" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="middle" dy=".3em">21</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">8</td>
+        <td><ul class='node-list'><li>4 (21)</li></ul></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li><li>7 (8)</li><li>6 (9)</li><li>5 (11)</li><li>2 (12)</li><li>8 (14)</li><li>3 (19)</li></ul></td>
+        <td>Move <strong>3</strong> to permanent list. <br><small><em>Node 4 update ignored (21 < 28).</em></small></td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="50" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="170" x2="70" y2="240" stroke="#333" stroke-width="2"/><line x1="70" y1="240" x2="150" y2="280" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="150" y2="150" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="230" y2="240" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="50" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">6</text><text x="28" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">9</text><circle cx="70" cy="240" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="70" y="240" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">5</text><text x="48" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">11</text><circle cx="250" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text><circle cx="150" cy="150" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="150" y="150" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">8</text><text x="162" y="132" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">14</text><circle cx="230" cy="240" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="230" y="240" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">3</text><text x="252" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">19</text><circle cx="150" cy="280" r="14" fill="#fff" stroke="#333" stroke-width="2"/><text x="150" y="280" fill="#333" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">4</text><text x="150" y="302" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="middle" dy=".3em">21</text></svg></div></td>
+    </tr>
+    
+    <tr>
+        <td class="step-number">9</td>
+        <td><em>(Empty)</em></td>
+        <td><ul class='node-list'><li>0 (0)</li><li>1 (4)</li><li>7 (8)</li><li>6 (9)</li><li>5 (11)</li><li>2 (12)</li><li>8 (14)</li><li>3 (19)</li><li>4 (21)</li></ul></td>
+        <td>Move <strong>4</strong> to permanent list. The tentative list is empty. <strong>Stop</strong>.</td>
+        <td><div class="svg-container"><svg viewBox="0 0 300 300" width="220" height="220" xmlns="http://www.w3.org/2000/svg"><line x1="150" y1="30" x2="250" y2="90" stroke="#333" stroke-width="2"/><line x1="150" y1="30" x2="50" y2="90" stroke="#333" stroke-width="2"/><line x1="250" y1="90" x2="250" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="90" x2="50" y2="170" stroke="#333" stroke-width="2"/><line x1="50" y1="170" x2="70" y2="240" stroke="#333" stroke-width="2"/><line x1="70" y1="240" x2="150" y2="280" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="150" y2="150" stroke="#333" stroke-width="2"/><line x1="250" y1="170" x2="230" y2="240" stroke="#333" stroke-width="2"/><circle cx="150" cy="30" r="14" fill="#333" stroke="#333" stroke-width="2"/><text x="150" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">0</text><text x="128" y="30" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">0</text><circle cx="250" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">1</text><text x="272" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">4</text><circle cx="50" cy="90" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="90" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">7</text><text x="28" y="90" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">8</text><circle cx="50" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="50" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">6</text><text x="28" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">9</text><circle cx="70" cy="240" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="70" y="240" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">5</text><text x="48" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="end" dy=".3em">11</text><circle cx="250" cy="170" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="250" y="170" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">2</text><text x="272" y="170" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">12</text><circle cx="150" cy="150" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="150" y="150" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">8</text><text x="162" y="132" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">14</text><circle cx="230" cy="240" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="230" y="240" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">3</text><text x="252" y="240" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="start" dy=".3em">19</text><circle cx="150" cy="280" r="14" fill="#ff8c00" stroke="#333" stroke-width="2"/><text x="150" y="280" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" dy=".3em">4</text><text x="150" y="302" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="middle" dy=".3em">21</text></svg></div></td>
+    </tr>
+    
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

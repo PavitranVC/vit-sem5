@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Database Systems Course Syllabus</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #2d3748;
+            line-height: 1.6;
+            font-size: 14px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .header-container {
+            border-bottom: 3px solid #2c5282;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+        }
+        .course-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2b6cb0;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .course-meta {
+            font-size: 14px;
+            color: #4a5568;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        .overview-box {
+            background-color: #f7fafc;
+            border-left: 4px solid #3182ce;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 0 4px 4px 0;
+        }
+        .overview-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #4a5568;
+        }
+        .module-card {
+            margin-bottom: 35px;
+        }
+        .module-header {
+            background-color: #2c5282;
+            color: #ffffff;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px 4px 0 0;
+        }
+        .module-co {
+            float: right;
+            background-color: #4299e1;
+            color: #ffffff;
+            padding: 2px 8px;
+            font-size: 12px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #edf2f7;
+            color: #2d3748;
+            font-weight: 600;
+            text-align: left;
+            padding: 12px;
+            font-size: 13px;
+            border-bottom: 2px solid #cbd5e0;
+            text-transform: uppercase;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 14px;
+            vertical-align: top;
+        }
+        tr:nth-child(even) td {
+            background-color: #f7fafc;
+        }
+        .topic-num {
+            width: 8%;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        .topic-desc {
+            width: 67%;
+        }
+        .taxonomy-cell {
+            width: 25%;
+            text-align: right;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 4px;
+            text-transform: uppercase;
+            text-align: center;
+            min-width: 90px;
+        }
+        .badge-understand { background-color: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+        .badge-apply { background-color: #f0fff4; color: #22543d; border: 1px solid #c6f6d5; }
+        .badge-evaluate { background-color: #fff5f5; color: #742a2a; border: 1px solid #fed7d7; }
+        
+        .taxonomy-legend {
+            margin-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+        .legend-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #4a5568;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .legend-item {
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #4a5568;
+        }
+        .legend-item .badge {
+            margin-right: 10px;
+        }
+        @media print {
+            body { margin: 0; padding: 0; }
+            .module-card { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1 class="course-title">Database Systems</h1>
+        <div class="course-meta">Course Syllabus &amp; Curriculum Mapping (Bloom's Taxonomy)</div>
+    </div>
+
+    <div class="overview-box">
+        <p><strong>Course Overview:</strong> Technical blueprint mapping database design mechanics, architecture paradigms, physical organization, transactional states, and distributed models to targeted Course Outcomes (CO) and cognitive levels.</p>
+    </div>
+
+    <!-- Module 1 -->
+    <div class="module-card">
+        <div class="module-header">
+            <span class="module-co">CO: 1</span>
+            Module 1: Database Systems Concepts and Architecture
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="topic-num">Topic</th>
+                    <th class="topic-desc">Topic Description</th>
+                    <th class="taxonomy-cell">Bloom's Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="topic-num">1.1</td>
+                    <td class="topic-desc">Need for database systems, Characteristics of Database Approach, Advantages of using DBMS approach</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">1.2</td>
+                    <td class="topic-desc">Actors on the Database Management Scene: Database Administrator, Classification of database management systems</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">1.3</td>
+                    <td class="topic-desc">Data Models, Schemas and Instances, Three-Schema Architecture, The Database System Environment</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">1.4</td>
+                    <td class="topic-desc">Centralized and Client Server Architectures for DBMSs, Overall Architecture of Database Management Systems</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Module 2 -->
+    <div class="module-card">
+        <div class="module-header">
+            <span class="module-co">CO: 1</span>
+            Module 2: Relational Model and E-R Modeling
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="topic-num">Topic</th>
+                    <th class="topic-desc">Topic Description</th>
+                    <th class="taxonomy-cell">Bloom's Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="topic-num">2.1</td>
+                    <td class="topic-desc">Relational Model: Candidate Keys, Primary Keys, Foreign Keys</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">2.2</td>
+                    <td class="topic-desc">Integrity Constraints, Handling of Nulls</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">2.3</td>
+                    <td class="topic-desc">Entity Relationship Model: Types of Attributes, Relationships</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">2.4</td>
+                    <td class="topic-desc">Structural Constraints, Relational model Constraints</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">2.5</td>
+                    <td class="topic-desc">Mapping ER model to a relational schema</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">2.6</td>
+                    <td class="topic-desc">Extended ER Model: Generalization, Specialization, Aggregations</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Module 3 -->
+    <div class="module-card">
+        <div class="module-header">
+            <span class="module-co">CO: 2</span>
+            Module 3: Relational Database Design
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="topic-num">Topic</th>
+                    <th class="topic-desc">Topic Description</th>
+                    <th class="taxonomy-cell">Bloom's Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="topic-num">3.1</td>
+                    <td class="topic-desc">Database Design: Schema Refinement</td>
+                    <td class="taxonomy-cell"><span class="badge badge-evaluate">Evaluate</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">3.2</td>
+                    <td class="topic-desc">Guidelines for Relational Schema: Functional dependencies</td>
+                    <td class="taxonomy-cell"><span class="badge badge-evaluate">Evaluate</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">3.3</td>
+                    <td class="topic-desc">Axioms on Functional Dependencies</td>
+                    <td class="taxonomy-cell"><span class="badge badge-evaluate">Evaluate</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">3.4</td>
+                    <td class="topic-desc">Normalization: First, Second and Third Normal Forms</td>
+                    <td class="taxonomy-cell"><span class="badge badge-evaluate">Evaluate</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">3.5</td>
+                    <td class="topic-desc">Boyce Codd Normal Form, Multi-valued dependency: Fourth Normal Form</td>
+                    <td class="taxonomy-cell"><span class="badge badge-evaluate">Evaluate</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">3.6</td>
+                    <td class="topic-desc">Join dependency and Fifth Normal Form</td>
+                    <td class="taxonomy-cell"><span class="badge badge-evaluate">Evaluate</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Module 4 -->
+    <div class="module-card">
+        <div class="module-header">
+            <span class="module-co">CO: 3</span>
+            Module 4: Physical Database Design and Query Processing
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="topic-num">Topic</th>
+                    <th class="topic-desc">Topic Description</th>
+                    <th class="taxonomy-cell">Bloom's Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="topic-num">4.1</td>
+                    <td class="topic-desc">File Organization</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">4.2</td>
+                    <td class="topic-desc">Indexing: Single level indexing, multilevel indexing</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">4.3</td>
+                    <td class="topic-desc">Dynamic multilevel Indexing: B plus Tree Indexing</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">4.4</td>
+                    <td class="topic-desc">Hashing Techniques: Static and Dynamic Hashing</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">4.5</td>
+                    <td class="topic-desc">Relational Algebra: Translating SQL Queries into Relational Algebra</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">4.6</td>
+                    <td class="topic-desc">Query Processing &amp; Optimization: Algebraic Query Optimization</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">4.7</td>
+                    <td class="topic-desc">Heuristic query optimization Rules</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">4.8</td>
+                    <td class="topic-desc">Join Query Optimization using Indexing and Hashing, Tuple Relational Calculus</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Module 5 -->
+    <div class="module-card">
+        <div class="module-header">
+            <span class="module-co">CO: 4</span>
+            Module 5: Transaction Processing and Recovery
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="topic-num">Topic</th>
+                    <th class="topic-desc">Topic Description</th>
+                    <th class="taxonomy-cell">Bloom's Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="topic-num">5.1</td>
+                    <td class="topic-desc">Introduction to Transaction Processing</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">5.2</td>
+                    <td class="topic-desc">Transaction concepts: ACID Properties of Transactions</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">5.3</td>
+                    <td class="topic-desc">Transaction States: Serial and Serializable Schedules</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">5.4</td>
+                    <td class="topic-desc">Schedules based on recoverability, Schedules based on Serializability</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">5.5</td>
+                    <td class="topic-desc">Conflict Serializability</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">5.6</td>
+                    <td class="topic-desc">Recovery Concepts: Log-Based Recovery Protocols</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">5.7</td>
+                    <td class="topic-desc">Recovery based on deferred update</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">5.8</td>
+                    <td class="topic-desc">Recovery techniques based on immediate update, Shadow Paging Algorithm</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Module 6 -->
+    <div class="module-card">
+        <div class="module-header">
+            <span class="module-co">CO: 4</span>
+            Module 6: Concurrency Control In Transaction Processing
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="topic-num">Topic</th>
+                    <th class="topic-desc">Topic Description</th>
+                    <th class="taxonomy-cell">Bloom's Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="topic-num">6.1</td>
+                    <td class="topic-desc">Concurrent Transactions: Lost Update Problem</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">6.2</td>
+                    <td class="topic-desc">Concurrency Control Techniques: Time Stamp Based Protocols</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">6.3</td>
+                    <td class="topic-desc">Thomas Write Rule, Lock Based Protocols</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">6.4</td>
+                    <td class="topic-desc">Lock Compatibility Matrix, Two-Phase Locking Protocol, Lock Conversions</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">6.5</td>
+                    <td class="topic-desc">Graph Based Protocols for Concurrency Control, Tree Protocol for Concurrency Control</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">6.6</td>
+                    <td class="topic-desc">Deadlocks Based on Locks in Transactions, Deadlock Handling Techniques</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">6.7</td>
+                    <td class="topic-desc">Transaction Deadlock Detection Techniques, Transaction Deadlock Prevention Techniques</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">6.8</td>
+                    <td class="topic-desc">Multi-Granularity Locking for avoiding Transaction Deadlocks</td>
+                    <td class="taxonomy-cell"><span class="badge badge-apply">Apply</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Module 7 -->
+    <div class="module-card">
+        <div class="module-header">
+            <span class="module-co">CO: 5</span>
+            Module 7: NOSQL Database Management
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="topic-num">Topic</th>
+                    <th class="topic-desc">Topic Description</th>
+                    <th class="taxonomy-cell">Bloom's Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="topic-num">7.1</td>
+                    <td class="topic-desc">Introduction, Need of NoSQL</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">7.2</td>
+                    <td class="topic-desc">CAP Theorem, different NoSQL databases: Key-value data stores</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+                <tr>
+                    <td class="topic-num">7.3</td>
+                    <td class="topic-desc">Columnar families, Document databases, Graph databases</td>
+                    <td class="taxonomy-cell"><span class="badge badge-understand">Understand</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Legend -->
+    <div class="taxonomy-legend">
+        <div class="legend-title">Bloom's Taxonomy Level Legend</div>
+        <div class="legend-item"><span class="badge badge-understand">Understand</span> Construct meaning / explain concepts.</div>
+        <div class="legend-item"><span class="badge badge-apply">Apply</span> Use information in new situations or solve computational exercises.</div>
+        <div class="legend-item"><span class="badge badge-evaluate">Evaluate</span> Justify structural architectures or check structural integrity constraints.</div>
+    </div>
+
+</body>
+</html>

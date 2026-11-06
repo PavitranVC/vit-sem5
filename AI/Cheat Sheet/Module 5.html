@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCSE306L AI Module 5 (5.1 &amp; 5.2) | Uncertainty &amp; Bayes' Rule Cheat Sheet</title>
+  <style>
+    :root {
+      --bg-main: #0b0f19;
+      --bg-card: #131b2e;
+      --bg-card-alt: #18233c;
+      --bg-table-head: #1e293b;
+      --bg-table-row: #151f34;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #263554;
+      --accent-blue: #38bdf8;
+      --accent-purple: #a855f7;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --accent-indigo: #6366f1;
+      --code-bg: #090d16;
+    }
+
+    body.light-mode {
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f1f5f9;
+      --bg-table-head: #e2e8f0;
+      --bg-table-row: #f8fafc;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #cbd5e1;
+      --accent-blue: #0284c7;
+      --accent-purple: #7e22ce;
+      --accent-emerald: #059669;
+      --accent-amber: #d97706;
+      --accent-rose: #e11d48;
+      --accent-indigo: #4f46e5;
+      --code-bg: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding: 20px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    /* Header & Controls */
+    .top-bar {
+      max-width: 1440px;
+      margin: 0 auto 20px auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 20px 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .title-row h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .title-row h1 span {
+      color: var(--accent-emerald);
+    }
+
+    .subtitle {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .action-btns {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+
+    .btn:hover {
+      border-color: var(--accent-emerald);
+      color: var(--accent-emerald);
+    }
+
+    .controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      background: var(--bg-card-alt);
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .pill.active, .pill:hover {
+      background: var(--accent-emerald);
+      color: #0b0f19;
+      border-color: var(--accent-emerald);
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      max-width: 340px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--code-bg);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent-emerald);
+    }
+
+    /* Mindmap Flow Banner */
+    .mindmap-banner {
+      max-width: 1440px;
+      margin: 0 auto 22px auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      overflow-x: auto;
+    }
+
+    .mindmap-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-emerald);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .flow-chain {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 920px;
+    }
+
+    .flow-node {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-emerald);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      flex: 1;
+    }
+
+    .flow-node strong {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--text-main);
+    }
+
+    .flow-node span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    .flow-arrow {
+      color: var(--accent-emerald);
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    /* Main Grid */
+    .grid-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .col-12 { grid-column: span 12; }
+    .col-8  { grid-column: span 8; }
+    .col-6  { grid-column: span 6; }
+    .col-4  { grid-column: span 4; }
+
+    @media (max-width: 1100px) {
+      .col-8, .col-6, .col-4 { grid-column: span 12; }
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card.border-blue    { border-top: 4px solid var(--accent-blue); }
+    .card.border-purple  { border-top: 4px solid var(--accent-purple); }
+    .card.border-emerald { border-top: 4px solid var(--accent-emerald); }
+    .card.border-amber   { border-top: 4px solid var(--accent-amber); }
+    .card.border-rose    { border-top: 4px solid var(--accent-rose); }
+    .card.border-indigo  { border-top: 4px solid var(--accent-indigo); }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .badge-blue    { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); }
+    .badge-purple  { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); }
+    .badge-emerald { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+    .badge-amber   { background: rgba(245, 158, 11, 0.15);  color: var(--accent-amber); }
+    .badge-rose    { background: rgba(244, 63, 94, 0.15);  color: var(--accent-rose); }
+
+    /* Tables */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.83rem;
+      text-align: left;
+    }
+
+    th {
+      background: var(--bg-table-head);
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: var(--bg-table-row);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Code & Formula Blocks */
+    .f-box {
+      font-family: "Consolas", "Monaco", "Courier New", monospace;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      color: var(--accent-blue);
+      font-size: 0.82rem;
+      display: inline-block;
+      margin: 1px 0;
+    }
+
+    .f-block {
+      font-family: "Consolas", "Monaco", "Courier New", monospace;
+      background: var(--code-bg);
+      padding: 10px 12px;
+      border-radius: 8px;
+      border-left: 3px solid var(--accent-emerald);
+      font-size: 0.82rem;
+      overflow-x: auto;
+      margin: 4px 0;
+    }
+
+    .alert-box {
+      background: rgba(244, 63, 94, 0.1);
+      border: 1px solid rgba(244, 63, 94, 0.35);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+    }
+
+    .alert-box strong {
+      color: var(--accent-rose);
+    }
+
+    .tip-box {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+    }
+
+    .tip-box strong {
+      color: var(--accent-emerald);
+    }
+
+    .tree-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mini-box {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 0.82rem;
+    }
+
+    .mini-box h4 {
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+      color: var(--accent-amber);
+    }
+
+    ul.clean-list {
+      padding-left: 16px;
+      font-size: 0.83rem;
+    }
+
+    ul.clean-list li {
+      margin-bottom: 4px;
+    }
+
+    .t-true  { color: var(--accent-emerald); font-weight: 700; }
+    .t-false { color: var(--accent-rose); font-weight: 700; }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+      .top-bar .controls-row, .action-btns {
+        display: none !important;
+      }
+      .card, .mindmap-banner, .top-bar {
+        box-shadow: none;
+        border: 1px solid #999;
+        break-inside: avoid;
+        margin-bottom: 12px;
+      }
+      .col-8, .col-6, .col-4 {
+        grid-column: span 12;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <div class="title-row">
+      <div>
+        <h1>BCSE306L AI Module 5 <span>Uncertainty &amp; Bayes' Rule Mindmap Cheat Sheet</span></h1>
+        <p class="subtitle">Complete Coverage of Topics 5.1 &amp; 5.2 (Classes 11 &amp; 12) + All Slide Examples &amp; Past Exam Numerical Templates</p>
+      </div>
+      <div class="action-btns">
+        <button class="btn" onclick="toggleTheme()">Toggle Light / Dark</button>
+        <button class="btn" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+
+    <div class="controls-row">
+      <div class="filter-pills">
+        <button class="pill active" onclick="filterTopic('all', this)">All Module 5 (5.1-5.2)</button>
+        <button class="pill" onclick="filterTopic('u51', this)">5.1 Uncertainty &amp; Axioms</button>
+        <button class="pill" onclick="filterTopic('p51', this)">5.1 Probability Rules &amp; Joint Tables</button>
+        <button class="pill" onclick="filterTopic('b52', this)">5.2 Bayes' Theorem &amp; Base Rate</button>
+        <button class="pill" onclick="filterTopic('n52', this)">5.2 Multi-Evidence &amp; Naive Bayes</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search SLAM, Bayes, Spam, Sensitivity, Laplace..." onkeyup="searchCards()">
+      </div>
+    </div>
+  </header>
+
+  <!-- VISUAL MINDMAP PIPELINE -->
+  <section class="mindmap-banner">
+    <div class="mindmap-title">Module 5 (5.1 &amp; 5.2) Reasoning Under Uncertainty Mindmap</div>
+    <div class="flow-chain">
+      <div class="flow-node">
+        <strong>1. Real-World Uncertainty</strong>
+        <span>Noise, Incomplete Info, Stochasticity, SLAM</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>2. Probability Axioms</strong>
+        <span>0 &le; P(A) &le; 1, P(S)=1, Complement &amp; Addition</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>3. Joint &amp; Conditional</strong>
+        <span>P(A,B), Marginal &sum;P(A,B), P(A|B) = P(A&cap;B)/P(B)</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>4. Bayes' Belief Engine (5.1)</strong>
+        <span>Posterior = [Likelihood &times; Prior] / Evidence</span>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-node">
+        <strong>5. Statistical Inference (5.2)</strong>
+        <span>Cond. Independence &amp; Naive Bayes Classifiers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CHEAT SHEET GRID -->
+  <main class="grid-container" id="cardGrid">
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 5.1A: UNCERTAINTY IN AI, 7 SOURCES, SLAM, AXIOMS            -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-blue" data-topic="u51">
+      <div class="card-header">
+        <h2 class="card-title">5.1 Introduction to Uncertainty in AI &amp; SLAM</h2>
+        <span class="badge badge-blue">Topic 5.1 Theory</span>
+      </div>
+
+      <div class="f-block">
+        <strong>Why Classical Logic Fails in Real World:</strong> Classical logic assumes clean, binary (True/False), complete facts. Rule-based systems become <em>brittle</em> on unseen cases and cannot weigh risks.<br>
+        <strong>Rational Decision Rule:</strong> Weigh <strong>Probability + Consequence</strong> (e.g., Self-driving car: Action A = 95% safe / 5% crash vs Action B = Stop &rarr; 100% safe, slight delay).
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>7 Sources of Uncertainty in AI</th>
+              <th>Meaning &amp; Slide Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Incomplete Information</strong></td>
+              <td>Missing access to all facts (e.g., medical system lacking full patient history).</td>
+            </tr>
+            <tr>
+              <td><strong>2. Sensor / Measurement Noise</strong></td>
+              <td>Cameras, LiDAR, GPS, thermometers have physical measurement errors.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Ambiguity in Data</strong></td>
+              <td>Multiple valid interpretations (e.g., word "bank" = financial vs riverbank).</td>
+            </tr>
+            <tr>
+              <td><strong>4. Non-deterministic / Stochastic</strong></td>
+              <td>Same action yields different outcomes (rolling dice, weather prediction).</td>
+            </tr>
+            <tr>
+              <td><strong>5. Limitations of the Model</strong></td>
+              <td>AI models are simplifications of reality and omit hidden variables.</td>
+            </tr>
+            <tr>
+              <td><strong>6. Exceptions &amp; Rare Events</strong></td>
+              <td>Unseen edge cases not covered during rule design or training.</td>
+            </tr>
+            <tr>
+              <td><strong>7. Conflicting Evidence</strong></td>
+              <td>Different sensors or information sources disagree with each other.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mini-box">
+        <h4>Slide Case Study: Robotics SLAM (Simultaneous Localization &amp; Mapping)</h4>
+        <ul class="clean-list">
+          <li><strong>The Dual Problem:</strong> Robot in an unknown building must simultaneously know <strong>1. Localization</strong> (<em>Where am I?</em>) and <strong>2. Mapping</strong> (<em>What does my environment look like?</em>).</li>
+          <li><strong>Numerical Slide Example:</strong> Robot starts at <span class="f-box">(0, 0)</span> and moves forward <span class="f-box">5 m</span> (ideal: <span class="f-box">(5, 0)</span>).
+            <br>&bull; Wheel slip causes odometry to estimate <span class="f-box">(4.8, 0.2)</span> &rarr; <strong>Localization Uncertainty</strong>.
+            <br>&bull; LiDAR measures a wall at <span class="f-box">9.8 m</span> instead of actual <span class="f-box">10 m</span> &rarr; <strong>Mapping Uncertainty</strong>.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card col-6 border-blue" data-topic="u51">
+      <div class="card-header">
+        <h2 class="card-title">5.1 Probability Fundamentals &amp; The 3 Axioms</h2>
+        <span class="badge badge-blue">Topic 5.1 Basics</span>
+      </div>
+
+      <div class="tree-grid">
+        <div class="mini-box">
+          <h4>Core Definitions</h4>
+          <ul class="clean-list">
+            <li><strong>Random Variable:</strong> Variable taking values with probabilities. Can be <em>Discrete</em> (coin toss: H/T) or <em>Continuous</em> (temperature, height).</li>
+            <li><strong>Sample Space (S):</strong> Set of all possible outcomes. Die roll: <span class="f-box">S = {1, 2, 3, 4, 5, 6}</span>.</li>
+            <li><strong>Event:</strong> Subset of <em>S</em> (e.g., Even = <span class="f-box">{2, 4, 6}</span>).</li>
+          </ul>
+        </div>
+        <div class="mini-box">
+          <h4>Probability Scale [0, 1]</h4>
+          <ul class="clean-list">
+            <li><span class="f-box">P(Event) = 0</span> &rarr; Event is <strong>Impossible</strong> (<span class="f-box">P(&empty;) = 0</span>).</li>
+            <li><span class="f-box">P(Event) = 1</span> &rarr; Event is <strong>Certain</strong>.</li>
+            <li><span class="f-box">0 &lt; P(Event) &lt; 1</span> &rarr; Uncertain degree of belief.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Axiom / Property</th>
+              <th>Mathematical Formula</th>
+              <th>Slide Die-Roll Verification (S = {1, 2, 3, 4, 5, 6})</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Axiom 1: Non-Negativity</strong></td>
+              <td><span class="f-box">P(A) &ge; 0</span></td>
+              <td>Let A = Even = <span class="f-box">{2, 4, 6}</span> &rArr; <span class="f-box">P(A) = 3/6 = 1/2 &ge; 0</span> (Never negative).</td>
+            </tr>
+            <tr>
+              <td><strong>Axiom 2: Normalization</strong></td>
+              <td><span class="f-box">P(S) = 1</span></td>
+              <td>One of the 6 faces must appear &rArr; <span class="f-box">P(S) = 6/6 = 1</span>.</td>
+            </tr>
+            <tr>
+              <td><strong>Axiom 3: Additivity</strong><br><em>(Mutually Exclusive)</em></td>
+              <td>If <span class="f-box">A &cap; B = &empty;</span>:<br><span class="f-box">P(A &cup; B) = P(A) + P(B)</span></td>
+              <td>Let C = <span class="f-box">{1}</span>, D = <span class="f-box">{6}</span> (<span class="f-box">C &cap; D = &empty;</span>).<br><span class="f-box">P(C &cup; D) = 1/6 + 1/6 = 2/6 = 1/3</span>.</td>
+            </tr>
+            <tr>
+              <td><strong>Complement Rule</strong></td>
+              <td><span class="f-box">P(&not;A) = 1 - P(A)</span></td>
+              <td><span class="f-box">&not;A = {1, 3, 5}</span> &rArr; <span class="f-box">P(&not;A) = 1 - 1/2 = 1/2</span>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tip-box">
+        <strong>9 AI Domains Using Uncertainty (Slide Table):</strong> Medical Diagnosis, Autonomous Vehicles, Natural Language Processing (NLP), Robotics (SLAM), Spam Filtering (Naive Bayes), Recommendation Systems, Financial Forecasting, Weather Prediction, Game-Playing AI (Poker, Backgammon).
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 5.1B: PROBABILITY RULES, JOINT TABLES & INDEPENDENCE        -->
+    <!-- ================================================================= -->
+    <article class="card col-12 border-purple" data-topic="p51">
+      <div class="card-header">
+        <h2 class="card-title">5.1 Master Formula Table: Joint, Marginal, Conditional, Product, Chain &amp; Independence</h2>
+        <span class="badge badge-purple">Core Formulas</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rule / Concept</th>
+              <th>Formula</th>
+              <th>When to Use &amp; Slide Worked Examples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Addition Rule (Overlapping Events)</strong></td>
+              <td><span class="f-box">P(A &cup; B) = P(A) + P(B) - P(A &cap; B)</span></td>
+              <td>
+                <strong>Die Example:</strong> A = Even <span class="f-box">{2,4,6}</span>, B = Greater than 3 <span class="f-box">{4,5,6}</span>. Overlap <span class="f-box">A &cap; B = {4,6}</span>.<br>
+                <span class="f-box">P(A &cup; B) = 3/6 + 3/6 - 2/6 = 4/6 = 2/3</span>.<br>
+                <strong>Weather Example:</strong> <span class="f-box">P(Rain)=0.30, P(Cloudy)=0.50, P(R &cap; C)=0.20 &rArr; P(R &cup; C) = 0.30 + 0.50 - 0.20 = 0.60</span>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Joint Probability</strong></td>
+              <td><span class="f-box">P(A, B) = P(A &cap; B)</span></td>
+              <td>Probability that both A and B happen together (e.g., <span class="f-box">P(Rain, Traffic)</span>).</td>
+            </tr>
+            <tr>
+              <td><strong>3. Marginal Probability (Marginalization)</strong></td>
+              <td><span class="f-box">P(A) = &sum;<sub>B</sub> P(A, B) = P(A, B) + P(A, &not;B)</span></td>
+              <td>Probability of a single event obtained by summing over all possible values of the other variable(s).</td>
+            </tr>
+            <tr>
+              <td><strong>4. Conditional Probability</strong></td>
+              <td><span class="f-box">P(A | B) = P(A &cap; B) / P(B)</span> &nbsp; <em>(for P(B) &gt; 0)</em></td>
+              <td>
+                <strong>Die Example:</strong> Roll &gt; 4 (<span class="f-box">A={5,6}</span>) given Even (<span class="f-box">B={2,4,6}</span>): <span class="f-box">P(A &cap; B)=1/6, P(B)=3/6 &rArr; P(A|B) = (1/6)/(3/6) = 1/3</span>.<br>
+                <strong>Weather Example:</strong> <span class="f-box">P(Rain | Cloudy) = P(Rain &cap; Cloudy) / P(Cloudy) = 0.20 / 0.50 = 0.40 (40%)</span>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5. Multiplication / Product Rule (Dependent)</strong></td>
+              <td><span class="f-box">P(A &cap; B) = P(A) &middot; P(B | A) = P(B) &middot; P(A | B)</span></td>
+              <td>
+                <strong>Bag Without Replacement:</strong> 5 Red, 3 Blue balls (Total 8). Draw 2 Red:<br>
+                <span class="f-box">P(R1) = 5/8</span>, <span class="f-box">P(R2 | R1) = 4/7</span> &rArr; <span class="f-box">P(R1 &cap; R2) = (5/8) &times; (4/7) = 20/56 = 5/14</span>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6. Multiplication Rule (Independent)</strong></td>
+              <td><span class="f-box">P(A &cap; B) = P(A) &middot; P(B)</span> &nbsp; <em>iff</em> &nbsp; <span class="f-box">P(A | B) = P(A)</span></td>
+              <td>
+                Occurrence of A does not affect B.<br>
+                &bull; Two coin tosses (both Heads): <span class="f-box">1/2 &times; 1/2 = 1/4</span>. &nbsp; &bull; Coin Heads &amp; Die 6: <span class="f-box">1/2 &times; 1/6 = 1/12</span>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>7. Chain Rule (Multiple Variables)</strong></td>
+              <td><span class="f-box">P(X1, X2, ..., Xn) = P(X1) &middot; P(X2 | X1) &middot; P(X3 | X1, X2) ...</span></td>
+              <td>Breaks complex joint distributions into a product of conditional probabilities (foundation of Bayesian Networks).</td>
+            </tr>
+            <tr>
+              <td><strong>8. Conditional Independence</strong></td>
+              <td><span class="f-box">P(A, B | C) = P(A | C) &middot; P(B | C)</span><br>or <span class="f-box">P(A | B, C) = P(A | C)</span></td>
+              <td>Once C (e.g., Disease status) is known, knowing B (Test result) gives no extra info about A (Doctor's check).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tree-grid">
+        <div class="mini-box">
+          <h4>Slide Worked Table: 1,000 Patients Tested</h4>
+          <ul class="clean-list">
+            <li><strong>Row 1 (Disease A):</strong> Pos (<span class="f-box">B</span>) = 80 | Neg (<span class="f-box">&not;B</span>) = 20 | <strong>Row Total = 100</strong></li>
+            <li><strong>Row 2 (No Disease &not;A):</strong> Pos (<span class="f-box">B</span>) = 90 | Neg (<span class="f-box">&not;B</span>) = 810 | <strong>Row Total = 900</strong></li>
+            <li><strong>Column Totals:</strong> Pos (<span class="f-box">B</span>) = 170 | Neg (<span class="f-box">&not;B</span>) = 830 | <strong>Grand Total = 1000</strong></li>
+            <li><strong>1. Joint <span class="f-box">P(A &cap; B)</span>:</strong> Disease AND Pos = <span class="f-box">80 / 1000 = 0.08 (8%)</span></li>
+            <li><strong>2. Marginal <span class="f-box">P(A)</span>:</strong> Disease alone = <span class="f-box">100 / 1000 = 0.10 (10%)</span></li>
+            <li><strong>3. Conditional <span class="f-box">P(A | B)</span>:</strong> Disease given Pos = <span class="f-box">(80/1000) / (170/1000) = 80/170 = 47.06%</span></li>
+          </ul>
+        </div>
+
+        <div class="mini-box">
+          <h4>Slide 5-Part Problem: Disease (S), Test (T), Doctor (D)</h4>
+          <ul class="clean-list">
+            <li><strong>Given:</strong> <span class="f-box">P(S)=0.02</span>, <span class="f-box">P(T|S)=0.95</span>, <span class="f-box">P(T|&not;S)=0.03</span>, <span class="f-box">P(D|S)=0.85</span>, <span class="f-box">P(D|&not;S)=0.05</span></li>
+            <li><strong>1. Product Rule <span class="f-box">P(S &cap; T)</span>:</strong> <span class="f-box">0.95 &times; 0.02 = 0.019 (1.9%)</span></li>
+            <li><strong>2. Marginal <span class="f-box">P(T)</span>:</strong> <span class="f-box">0.019 + (0.03 &times; 0.98) = 0.019 + 0.0294 = 0.0484 (4.84%)</span></li>
+            <li><strong>3. Bayes <span class="f-box">P(S | T)</span>:</strong> <span class="f-box">0.019 / 0.0484 &approx; 0.3926 (39.26%)</span></li>
+            <li><strong>4. Chain Rule <span class="f-box">P(S, T, D)</span>:</strong> <span class="f-box">0.02 &times; 0.95 &times; 0.85 = 0.01615 (1.615%)</span></li>
+            <li><strong>5. Cond. Indep. <span class="f-box">P(T, D | S)</span>:</strong> <span class="f-box">P(T|S) &times; P(D|S) = 0.95 &times; 0.85 = 0.8075 (80.75%)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <strong>PYQ B1 Q4b Exam Pattern &mdash; 2&times;2&times;2 Joint Probability Table (Rain, Wind, Headache):</strong><br>
+        &bull; Given a 3-variable joint table <span class="f-box">P(R, W, H)</span>, first sum cells to get marginals: e.g., <span class="f-box">P(W) = 0.432 + 0.16 + 0.16 + 0.048 = 0.80</span>, <span class="f-box">P(R) = 0.432 + 0.16 + 0.084 + 0.072 = 0.748</span>.<br>
+        &bull; To check if <strong>Wind increases given Rain</strong>: compare <span class="f-box">P(W | R) = P(W &cap; R) / P(R)</span> against <span class="f-box">P(W)</span>. If <span class="f-box">P(W | R) = P(W)</span>, they are <strong>Independent</strong>; if unequal, they are <strong>Dependent</strong>.<br>
+        &bull; To check if <strong>Rain is conditionally independent of Headache given Wind</strong>: test if <span class="f-box">P(R, H | W) = P(R | W) &times; P(H | W)</span>.
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 5.2A: BAYES' THEOREM, BASE RATE FALLACY & 1-EVIDENCE CASES  -->
+    <!-- ================================================================= -->
+    <article class="card col-6 border-emerald" data-topic="b52">
+      <div class="card-header">
+        <h2 class="card-title">5.2 Bayes' Rule Architecture &amp; Base Rate Fallacy</h2>
+        <span class="badge badge-emerald">Topic 5.2 Core</span>
+      </div>
+
+      <div class="f-block">
+        <strong>Bayes' Theorem:</strong> &nbsp; <span class="f-box">P(H | E) = [ P(E | H) &middot; P(H) ] / P(E)</span><br>
+        <strong>Expanded (Law of Total Probability):</strong><br>
+        <span class="f-box">P(H | E) = [ P(E | H) &middot; P(H) ] / [ P(E | H)&middot;P(H) + P(E | &not;H)&middot;P(&not;H) ]</span><br>
+        <strong>Belief Revision Engine:</strong> &nbsp; <span class="f-box">Posterior &prop; Likelihood &times; Prior</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Term</th>
+              <th>Name</th>
+              <th>Meaning &amp; Medical Test Equivalent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="f-box">P(H)</span></td>
+              <td><strong>Prior Probability</strong></td>
+              <td>Initial belief in hypothesis <em>H</em> before seeing evidence (Base rate / disease prevalence in population).</td>
+            </tr>
+            <tr>
+              <td><span class="f-box">P(E | H)</span></td>
+              <td><strong>Likelihood</strong></td>
+              <td>Probability of observing evidence <em>E</em> assuming <em>H</em> is true. In medicine: <strong>Sensitivity (True Positive Rate)</strong>.</td>
+            </tr>
+            <tr>
+              <td><span class="f-box">P(E | &not;H)</span></td>
+              <td><strong>False Positive Rate</strong></td>
+              <td>Probability of observing evidence <em>E</em> when <em>H</em> is false.<br><strong>Trap:</strong> <span class="f-box">P(+ | &not;Disease) = 1 - Specificity</span>!</td>
+            </tr>
+            <tr>
+              <td><span class="f-box">P(E)</span></td>
+              <td><strong>Evidence (Marginal)</strong></td>
+              <td>Normalizing constant across all hypotheses so posteriors sum to 1: <span class="f-box">P(E|H)P(H) + P(E|&not;H)P(&not;H)</span>.</td>
+            </tr>
+            <tr>
+              <td><span class="f-box">P(H | E)</span></td>
+              <td><strong>Posterior Probability</strong></td>
+              <td>Updated belief in hypothesis <em>H</em> after incorporating evidence <em>E</em>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert-box">
+        <strong>The Base Rate Fallacy (Slide Highlight):</strong><br>
+        When a condition is very rare (low prior <span class="f-box">P(H) = 1%</span>), even a test with <strong>95% sensitivity</strong> and <strong>90% specificity</strong> gives only an <strong>8.76% posterior chance</strong> of actually having the disease! Why? Because 10% false positives across the massive 99% healthy population (<span class="f-box">0.099</span>) outnumber true positives from the tiny 1% sick population (<span class="f-box">0.0095</span>) by more than 10-to-1.
+      </div>
+    </article>
+
+    <article class="card col-6 border-emerald" data-topic="b52">
+      <div class="card-header">
+        <h2 class="card-title">5.2 Single-Evidence Bayes Worked Problems (Slides + PYQs)</h2>
+        <span class="badge badge-emerald">4-7 Marks Each</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Problem Source</th>
+              <th>Given Values</th>
+              <th>Step-by-Step Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Slide Ex 1: Disease Diagnosis</strong><br>(Sensitivity &amp; Specificity)</td>
+              <td>
+                Prevalence <span class="f-box">P(D) = 0.01</span> &rArr; <span class="f-box">P(&not;D) = 0.99</span><br>
+                Sensitivity <span class="f-box">P(+ | D) = 0.95</span><br>
+                Specificity = 90% &rArr; <span class="f-box">P(+ | &not;D) = 0.10</span>
+              </td>
+              <td>
+                1. <span class="f-box">P(+) = (0.95 &times; 0.01) + (0.10 &times; 0.99) = 0.0095 + 0.099 = 0.1085</span><br>
+                2. <span class="f-box">P(D | +) = 0.0095 / 0.1085 &approx; 0.0876 (8.76%)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Slide Ex 2A: Spam Filter</strong><br>(Single Word: "free")</td>
+              <td>
+                <span class="f-box">P(Spam) = 0.40</span>, <span class="f-box">P(&not;Spam) = 0.60</span><br>
+                <span class="f-box">P("free" | Spam) = 0.70</span><br>
+                <span class="f-box">P("free" | &not;Spam) = 0.10</span>
+              </td>
+              <td>
+                1. <span class="f-box">P("free") = (0.70 &times; 0.40) + (0.10 &times; 0.60) = 0.28 + 0.06 = 0.34</span><br>
+                2. <span class="f-box">P(Spam | "free") = 0.28 / 0.34 &approx; 0.8235 (82.4%)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Slide Ex 3A: University Admission</strong><br>(Strong Letter)</td>
+              <td>
+                <span class="f-box">P(Admitted) = 0.25</span><br>
+                <span class="f-box">P(Strong) = 0.30</span><br>
+                <span class="f-box">P(Strong | Admitted) = 0.80</span>
+              </td>
+              <td>
+                1. <span class="f-box">P(Strong &cap; Admitted) = 0.80 &times; 0.25 = 0.20</span><br>
+                2. <span class="f-box">P(Admitted | Strong) = 0.20 / 0.30 &approx; 0.667 (66.7%)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ E2 Q5: Sweta Placement</strong><br>(1000 Students, C Language)</td>
+              <td>
+                Total = 1000; Placed = 700 &rArr; <span class="f-box">P(P) = 0.70</span><br>
+                Strong in C = 660 &rArr; <span class="f-box">P(C) = 0.66</span><br>
+                <span class="f-box">P(C | P) = 0.82</span>
+              </td>
+              <td>
+                <span class="f-box">P(P | C) = [ P(C | P) &times; P(P) ] / P(C)</span><br>
+                <span class="f-box">= (0.82 &times; 0.70) / 0.66 = 0.574 / 0.66 &approx; 0.8697 (86.97%)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ B2 Q5b: London Winter Rain</strong></td>
+              <td>
+                <span class="f-box">P(Rain) = 0.50</span>, <span class="f-box">P(Cloudy) = 0.80</span><br>
+                <span class="f-box">P(Cloudy | Rain) = 1.00</span>
+              </td>
+              <td>
+                <span class="f-box">P(Rain | Cloudy) = (1.0 &times; 0.50) / 0.80 = 0.625 (62.5% or 5/8)</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ================================================================= -->
+    <!-- TOPIC 5.2B: MULTI-EVIDENCE BAYES & NAIVE BAYES CLASSIFIERS        -->
+    <!-- ================================================================= -->
+    <article class="card col-12 border-amber" data-topic="n52">
+      <div class="card-header">
+        <h2 class="card-title">5.2 Applying Bayes' Rule with Multiple Evidences &amp; Naive Bayes Classification</h2>
+        <span class="badge badge-amber">83.3% PYQ Probability (10 Marks)</span>
+      </div>
+
+      <div class="f-block">
+        <strong>Naive Bayes Conditional Independence Assumption:</strong> Features <span class="f-box">E1, E2, ..., Ek</span> are conditionally independent given the class <span class="f-box">H</span>:<br>
+        1. <strong>Combined Likelihood for Class H:</strong> &nbsp; <span class="f-box">P(E1, E2, ..., Ek | H) = P(E1 | H) &times; P(E2 | H) &times; ... &times; P(Ek | H)</span><br>
+        2. <strong>Combined Likelihood for Class &not;H:</strong> &nbsp; <span class="f-box">P(E1, E2, ..., Ek | &not;H) = P(E1 | &not;H) &times; P(E2 | &not;H) &times; ... &times; P(Ek | &not;H)</span><br>
+        3. <strong>Evidence Denominator P(E):</strong> &nbsp; <span class="f-box">P(E) = P(E1..Ek | H)&middot;P(H) + P(E1..Ek | &not;H)&middot;P(&not;H)</span><br>
+        4. <strong>Posterior Probability:</strong> &nbsp; <span class="f-box">P(H | E1..Ek) = [ P(E1..Ek | H) &middot; P(H) ] / P(E)</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Slide / PYQ Multi-Evidence Problem</th>
+              <th>Given Priors &amp; Feature Likelihoods</th>
+              <th>Step-by-Step Naive Bayes Calculation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Slide Ex 2B: Two-Word Spam Filter</strong><br>Words: <span class="f-box">"free" + "win"</span></td>
+              <td>
+                <span class="f-box">P(S) = 0.40</span>, <span class="f-box">P(&not;S) = 0.60</span><br>
+                <span class="f-box">P(Free|S)=0.70</span>, <span class="f-box">P(Free|&not;S)=0.10</span><br>
+                <span class="f-box">P(Win|S)=0.60</span>, <span class="f-box">P(Win|&not;S)=0.05</span>
+              </td>
+              <td>
+                &bull; <span class="f-box">P(Free, Win | S) = 0.70 &times; 0.60 = 0.42</span><br>
+                &bull; <span class="f-box">P(Free, Win | &not;S) = 0.10 &times; 0.05 = 0.005</span><br>
+                &bull; <span class="f-box">P(E) = (0.42 &times; 0.40) + (0.005 &times; 0.60) = 0.168 + 0.003 = 0.171</span><br>
+                &bull; <span class="f-box">P(S | Free, Win) = 0.168 / 0.171 &approx; 0.9825 (98.25%)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Slide Ex 2C: Three-Word Spam Filter</strong><br>Words: <span class="f-box">"free" + "win" + "prize"</span></td>
+              <td>
+                Same as above, plus:<br>
+                <span class="f-box">P(Prize|S) = 0.50</span><br>
+                <span class="f-box">P(Prize|&not;S) = 0.02</span>
+              </td>
+              <td>
+                &bull; <span class="f-box">P(E | S) = 0.70 &times; 0.60 &times; 0.50 = 0.21</span><br>
+                &bull; <span class="f-box">P(E | &not;S) = 0.10 &times; 0.05 &times; 0.02 = 0.0001</span><br>
+                &bull; <span class="f-box">P(E) = (0.21 &times; 0.40) + (0.0001 &times; 0.60) = 0.084 + 0.00006 = 0.08406</span><br>
+                &bull; <span class="f-box">P(S | E) = 0.084 / 0.08406 &approx; 0.999286 (99.93%)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Slide Ex 3B: Student Admission (2 Features)</strong><br>Features: <span class="f-box">Strong Letter (S) + High GPA (G)</span></td>
+              <td>
+                <span class="f-box">P(A) = 0.25</span>, <span class="f-box">P(&not;A) = 0.75</span><br>
+                <span class="f-box">P(S|A)=0.80</span>, <span class="f-box">P(S|&not;A)=0.20</span><br>
+                <span class="f-box">P(G|A)=0.70</span>, <span class="f-box">P(G|&not;A)=0.10</span>
+              </td>
+              <td>
+                &bull; <span class="f-box">P(S, G | A) = 0.80 &times; 0.70 = 0.56</span><br>
+                &bull; <span class="f-box">P(S, G | &not;A) = 0.20 &times; 0.10 = 0.02</span><br>
+                &bull; <span class="f-box">P(S, G) = (0.56 &times; 0.25) + (0.02 &times; 0.75) = 0.14 + 0.015 = 0.155</span><br>
+                &bull; <span class="f-box">P(A | S, G) = 0.14 / 0.155 &approx; 0.9032 (90.32%)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>PYQ D2 Q4A: Medical Assistant Flu (F)</strong><br>Symptoms: <span class="f-box">Fever (V) &and; Cough (C)</span></td>
+              <td>
+                <span class="f-box">P(F) = 0.05</span>, <span class="f-box">P(&not;F) = 0.95</span><br>
+                <span class="f-box">P(V|F)=0.9, P(C|F)=0.8</span><br>
+                <span class="f-box">P(V|&not;F)=0.1, P(C|&not;F)=0.2</span>
+              </td>
+              <td>
+                &bull; <span class="f-box">P(V &and; C | F) = 0.9 &times; 0.8 = 0.72</span><br>
+                &bull; <span class="f-box">P(V &and; C | &not;F) = 0.1 &times; 0.2 = 0.02</span><br>
+                &bull; <span class="f-box">P(V &and; C) = (0.72 &times; 0.05) + (0.02 &times; 0.95) = 0.036 + 0.019 = 0.055</span><br>
+                &bull; <span class="f-box">P(F | V &and; C) = 0.036 / 0.055 &approx; 0.6545 (65.45%)</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tree-grid">
+        <div class="mini-box">
+          <h4>PYQ Tabular Naive Bayes Recipe (B1, B2, D1, D2, E1)</h4>
+          <ul class="clean-list">
+            <li><strong>Step 1 (Priors):</strong> Count rows per class: <span class="f-box">P(C_k) = Count(C_k) / Total_Rows</span>.</li>
+            <li><strong>Step 2 (Likelihoods):</strong> For each query attribute <span class="f-box">x_i</span>, count how many rows in class <span class="f-box">C_k</span> have <span class="f-box">x_i</span>: <span class="f-box">P(x_i | C_k) = Count(x_i &cap; C_k) / Count(C_k)</span>.</li>
+            <li><strong>Step 3 (Class Score):</strong> Multiply <span class="f-box">Score(C_k) = P(C_k) &times; &prod; P(x_i | C_k)</span>.</li>
+            <li><strong>Step 4 (Zero-Count / Laplace Smoothing):</strong> If any <span class="f-box">Count(x_i &cap; C_k) = 0</span>, state raw score is <span class="f-box">0</span> AND show Laplace smoothed probability: <span class="f-box">(count + 1) / (Count(C_k) + num_distinct_values)</span>.</li>
+          </ul>
+        </div>
+
+        <div class="mini-box">
+          <h4>PYQ Part-(b) Sub-Questions on Datasets (B2 Q4b &amp; E1 Q5b)</h4>
+          <ul class="clean-list">
+            <li><strong>Question Type:</strong> <em>"Using the table, what is P(Class = High | Female, Postgraduate)?"</em></li>
+            <li><strong>Method A (Naive Bayes Formula &mdash; B2 Key):</strong><br>
+              <span class="f-box">[ P(Female | High) &times; P(Postgrad | High) &times; P(High) ] / [ P(Female) &times; P(Postgrad) ]</span>
+            </li>
+            <li><strong>Method B (Exact Joint Count &mdash; E1 Key):</strong><br>
+              <span class="f-box">[ P(F1, F2 | Class) &times; P(Class) ] / P(F1, F2)</span> where <span class="f-box">P(F1, F2)</span> is the fraction of total rows having both features. <em>(Tip: Write both in the exam to guarantee full marks regardless of answer key!)</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    function filterTopic(topic, btn) {
+      const pills = document.querySelectorAll('.pill');
+      pills.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#cardGrid .card');
+      cards.forEach(card => {
+        if (topic === 'all' || card.getAttribute('data-topic') === topic) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function searchCards() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('#cardGrid .card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(query)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
