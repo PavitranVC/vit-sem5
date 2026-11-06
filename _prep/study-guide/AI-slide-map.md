@@ -1,0 +1,673 @@
+# AI (Artificial Intelligence): slide map (page ranges by slide title)
+
+Generated from each file's own slide titles. Paths are relative to the repo root. The [external] folder holds the lecture slides for several modules; top-level Module-N.pdf are the course modules.
+
+## AI/Module-1.pdf  (47 pages)
+- p.1: BCSE306L- Artificial Intelligence
+- p.2-5: BCSE306L
+- p.6: Final Outcome
+- p.7-8: Dr Praveen Kumar, Research Paper Publications
+- p.9: Achievements :
+- p.10: Mentors for students and their laurel achievements to VIT
+- p.11: LOR Submitted to students 2026
+- p.12: LOR Submitted to students Dec 2025
+- p.13: LOR Submitted to students Mar 2025
+- p.14: LOR Submitted to students Nov 2024
+- p.15: How many of you used AI today? AI
+- p.16-22: AI
+- p.23-25: State of the Art — Different Types of Artificial Intelligence
+- p.26: Patient
+- p.27: (image/blank)
+- p.28: Disease Probability
+- p.29: Applications of AI
+- p.30-32: Subfields of AI
+- p.33-43: Intelligent Agents
+- p.44-46: Environments
+- p.47: CAT 1 Syllabus :
+
+## AI/Module-2.pdf  (51 pages)
+- p.1: BCSE306L- Artificial Intelligence
+- p.2-5: BCSE306L
+- p.6: Introduction to Problem Solving by searching Methods
+- p.7-9: -State Space search
+- p.10-11: Uninformed Search Methods
+- p.12-13: Informed Search (Heuristic Search) Methods
+- p.14: Uninformed Search Methods
+- p.15-18: Uniform Cost Search
+- p.19-21: Breadth First Search
+- p.22-26: Depth First Search
+- p.27-29: Depth limited search
+- p.30: Using Limit, ℓ=3
+- p.31: Depth limited search (DLS)
+- p.32: Depth limited search
+- p.33-38: Iterative deepening depth-first
+- p.39-41: Best First Search
+- p.42-51: A* Search
+
+## AI/Module-3-2.pdf  (49 pages)
+- p.1: BCSE306L- Artificial Intelligence
+- p.2-5: BCSE306L
+- p.6: Local Search Algorithms
+- p.7: Local Search Algorithms- Hill climbing
+- p.8-11: Blocks World Problem using Hill Climbing with a Local Heuristic Functi
+- p.12-14: Blocks World Problem using Hill Climbing with a Global Heuristic Funct
+- p.15-20: Simulated Annealing
+- p.21-22: Genetic Algorithm (GA)
+- p.23-34: Genetic Algorithm
+- p.35-37: Min Max Algorithm
+- p.38-45: Adversarial Search: Game Trees and Minimax Evaluation
+- p.46: Tic-Tac-Toe
+- p.47: Tic-Tac-Toe X (MAX)
+- p.48-49: Alpha–Beta Pruning
+
+## AI/Module-3.pdf  (36 pages)
+- p.1: BCSE306L- Artificial Intelligence
+- p.2-5: BCSE306L
+- p.6: Local Search Algorithms
+- p.7: Local Search Algorithms- Hill climbing
+- p.8-11: Blocks World Problem using Hill Climbing with a Local Heuristic Functi
+- p.12-14: Blocks World Problem using Hill Climbing with a Global Heuristic Funct
+- p.15-20: Simulated Annealing
+- p.21-22: Genetic Algorithm (GA)
+- p.23-35: Genetic Algorithm
+- p.36: Introduction to Genetic Algorithm Local Search Algorithms
+
+## AI/Module-4-1.pdf  (110 pages)
+- p.1: BCSE306L- Artificial Intelligence
+- p.2-5: BCSE306L
+- p.6-16: Knowledge Representation and Reasoning (KRR)
+- p.17-22: Introduction to Logic and Reasoning
+- p.23-40: Predicate (First-Order) Logic
+- p.41-44: Normal Forms
+- p.45-50: Predicate (First-Order) Logic
+- p.51-60: Introduction to Logic and Reasoning
+- p.61: Translating English Sentences into FOL
+- p.62: Inference in First-Order Logic
+- p.63-64: Translating English Sentences into FOL
+- p.65-67: Unification
+- p.68-71: Forward and Backward Chaining
+- p.72: Rules Forward and Backward Chaining
+- p.73-87: Forward and Backward Chaining
+- p.88-91: Backward Chaining
+- p.92-94: Forward and Backward Chaining
+- p.95-97: Resolution in First-Order Logic
+- p.98: Resolution in FOL Forward and Backward Chaining
+- p.99-100: Forward and Backward Chaining
+- p.101: 1. Valid and Invalid
+- p.102-104: Important Logical Concepts
+- p.105-107: Forward and Backward Chaining
+- p.108-110: Introduction to Logic and Reasoning
+
+## AI/Module-4-2.pdf  (212 pages)
+- p.1: BCSE306L- Artificial Intelligence
+- p.2-5: BCSE306L
+- p.6-16: Knowledge Representation and Reasoning (KRR)
+- p.17-22: Introduction to Logic and Reasoning
+- p.23-51: Predicate (First-Order) Logic
+- p.52-61: Introduction to Logic and Reasoning
+- p.62: Knowledge Representation
+- p.63: Outline
+- p.64: (image/blank)
+- p.65: “Navy sedan with crimson hatches”
+- p.66: : ‫مشکالت وب موجود‬
+- p.67: Knowledge bases
+- p.68: Types of Knowledge
+- p.69-70: Types of knowledge
+- p.71: Knowledge Base Vs Database
+- p.72: Knowledge Based Systems
+- p.73: Knowledge Representation
+- p.74: Issues in Knowledge Representation
+- p.75: A simple knowledge-based agent
+- p.76: Knowledge-Based Agent
+- p.77: Wumpus world
+- p.78: Wumpus World PEAS description
+- p.79: Wumpus world
+- p.80: 1. [None, None, None, None, None]
+- p.81: Wumpus world characterization
+- p.82-85: Exploring a wumpus world
+- p.86: Logic in general
+- p.87: Entailment
+- p.88: Models
+- p.89: Entailment in the wumpus world
+- p.90-94: Wumpus models
+- p.95: Inference
+- p.96: (image/blank)
+- p.97: Propositional logic: Syntax
+- p.98: Propositional logic: Semantics
+- p.99: BNF(Backus-Normal Form)
+- p.100-102: (image/blank)
+- p.103: Truth tables for connectives
+- p.104: Wumpus world sentences
+- p.105: Logical equivalence
+- p.106: Validity and satisfiability
+- p.107-108: Resolution Method
+- p.109: Resolution
+- p.110: Rules for Inference for Propositional Logic
+- p.111: Conversion to CNF
+- p.112: Resolution using Propositional
+- p.113: Resolution Method in Propositional Logic
+- p.114-115: Example of Propositional Resolution
+- p.116: Proof by Refutation (Contradiction)
+- p.117: Proof with Resolution (Without
+- p.118: • We first put each hypothesis in CNF:
+- p.119: • We then use resolution on the hypotheses to derive the conclusion (
+- p.120: • We can redo the previous proof (about Joe and his umbrella) using pr
+- p.121-122: Forward and backward chaining
+- p.123: Forward chaining
+- p.124: Forward chaining algorithm
+- p.125-132: Forward chaining example
+- p.133: Proof of completeness
+- p.134: Backward chaining
+- p.135-144: Backward chaining example
+- p.145: Forward vs. backward chaining
+- p.146: First-Order Logic
+- p.147: Problems with Propositional Logic
+- p.148: Propositional logic is a weak language
+- p.149: Example
+- p.150: FOL
+- p.151: Problems with the
+- p.152: Davis--Putnam-Logemann-Loveland - DPLL, GSAT -
+- p.153: First-Order Logic
+- p.154: First-order logic
+- p.155: FOL
+- p.156: User provides
+- p.157: FOL Provides
+- p.158: Sentences are built from terms and atoms
+- p.159-160: Quantifiers
+- p.161: Quantifier Scope
+- p.162: Connections between All and Exists
+- p.163: Quantified inference rules
+- p.164: Universal instantiation
+- p.165: Existential instantiation
+- p.166: Existential generalization
+- p.167: Translating English to FOL
+- p.168: Example: A simple genealogy KB by FOL
+- p.169: • Rules for genealogical relations
+- p.170: Semantics of FOL
+- p.171: • Model: an interpretation of a set of sentences such that every
+- p.172: Inference in First-Order Logic (FOL)
+- p.173: Outline
+- p.174: Universal instantiation (UI)
+- p.175: Existential instantiation (EI)
+- p.176: Reduction to propositional inference
+- p.177: Reduction contd.
+- p.178: Problems with propositionalization
+- p.179-180: Unification
+- p.181: Conditions for unification
+- p.182-187: Unification
+- p.188: Example
+- p.189: Generalized Modus Ponens (GMP)
+- p.190: Example knowledge base
+- p.191: Example knowledge base contd.
+- p.192: Forward chaining algorithm
+- p.193-195: Forward chaining proof
+- p.196: Properties of forward chaining
+- p.197: Efficiency of forward chaining
+- p.198: Backward chaining algorithm
+- p.199-206: Backward chaining example
+- p.207: Properties of backward chaining
+- p.208: Resolution: brief summary
+- p.209: Steps for Resolution
+- p.210: Example knowledge base
+- p.211: Example knowledge base contd.
+- p.212: Resolution proof: definite clauses
+
+## AI/Module-5.pdf  (50 pages)
+- p.1: BCSE306L- Artificial Intelligence
+- p.2-5: BCSE306L
+- p.6: Class 11: Quantifying Uncertainty
+- p.7: Class 12: Bayes Rule
+- p.8-10: Quantifying Uncertainty
+- p.11: Need for Reasoning Under Uncertainty
+- p.12-16: Quantifying Uncertainty
+- p.17: Find 𝑃 𝐴 Quantifying Uncertainty
+- p.18-19: Quantifying Uncertainty
+- p.20: Suppose 1,000 patients are tested for a disease. Quantifying Uncertain
+- p.21-34: Quantifying Uncertainty
+- p.35: Bayes' Rule
+- p.36: Quantifying Uncertainty
+- p.37: 3. Likelihood
+- p.38-50: Quantifying Uncertainty
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-08-12_module1-agents.pdf  (37 pages)
+- p.1: Agents
+- p.2: What is an Agent?
+- p.3: Structure of Intelligent Agents
+- p.4: Examples of Agents
+- p.5: Agents and Environments
+- p.6: Agents and Their Actions
+- p.7: Vacuum Cleaner World
+- p.8: Performance of Agents
+- p.9: Rational Agent
+- p.10: Performance measure of Vacuum Agent
+- p.11: PEAS
+- p.12: VacBot PEAS Description
+- p.13: Automated Taxi Driver PEAS Description
+- p.14: MIT’s mini cheetah robot is springy and light on its feet, with a
+- p.15: Environment Properties/ Task
+- p.16: The Space Genius is a tall, thin robot that
+- p.17: Skeleton Agent Program
+- p.18: Table Agent Program
+- p.19: Vacuum Cleaner Agent function
+- p.20: Agent Program Types/
+- p.21: Simple Reflex Agent
+- p.22: Reflex Agent Diagram
+- p.23: Reflex Vacuum Agent
+- p.24: Reflex Agent Program
+- p.25: Model-Based Reflex Agent
+- p.26: Model-Based Reflex Agent Diagram
+- p.27: Model based Reflex Vacuum
+- p.28: Model-Based Reflex Agent
+- p.29: Goal-Based Agent
+- p.30: Goal-Based Agent Diagram
+- p.31: Utility-Based Agent
+- p.32: Utility-Based Agent Diagram
+- p.33: Learning Agent
+- p.34: Learning Agent Diagram
+- p.35: Task Environments
+- p.36: A taxi company wants to optimize its drivers' routes to
+- p.37: Chapter Summary
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-08-12_module1-introduction.pdf  (32 pages)
+- p.1: BCSE306L-
+- p.2: 7/24/2025
+- p.3: Textbook
+- p.4: Definition
+- p.5: Other definitions
+- p.6: Definition
+- p.7: How it
+- p.8: Acting humanly/ Turing Test
+- p.9: What would a computer need
+- p.10: •Vision (for Total Turing test): to recognize the
+- p.11: Thinking Humanly
+- p.12: Thinking Rationally
+- p.13: Thinking Rationally: Laws
+- p.14: Acting Rationally
+- p.15-16: Which of these exhibit intelligence?
+- p.17: Other applications of AI
+- p.18: Foundations of AI
+- p.19: History of AI
+- p.20: Puzzle solving
+- p.21: ELIZA CHATBOT
+- p.22: Major Milestones
+- p.23: 7/24/2025
+- p.24: Types of AI
+- p.25: Type 1
+- p.26-27: Type 1 Contd..
+- p.28: 7/24/2025
+- p.29: Type 2
+- p.30-32: Type 2 Contd..
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-08-12_module2.pdf  (75 pages)
+- p.1: Module 2
+- p.2: Problem-Solving Agents
+- p.3: A simplified Romania map
+- p.4: A simple problem-solving agent
+- p.5: Well-defined problems and solutions
+- p.6: Romania Agent
+- p.7: A simple agent
+- p.8: Formulating Problems
+- p.9: Measuring problem-solving
+- p.10: Example Problems
+- p.11: Toy problem (1)
+- p.12: 12
+- p.13: Toy problem (2)
+- p.14: Toy problem (3)
+- p.15: Imagine you are on the bank of a river with a leaky
+- p.16: Four soldiers need to cross a river. One of them is arrogant (A), one 
+- p.17: Robot Assembly
+- p.18: Search
+- p.19: Search Space Definitions
+- p.20: Key concepts in search
+- p.21: Searching for Solutions
+- p.22-23: 8-puzzle
+- p.24: Generic search algorithm
+- p.25: Uninformed search
+- p.26: Properties of breadth-first search
+- p.27: BFS Examples
+- p.28: Analysis
+- p.29: Implementing depth-first search
+- p.30: Properties of depth-first search
+- p.31: DFS Examples
+- p.32: Analysis
+- p.33: BFS in graphs
+- p.34: DFS in graphs / Possibility of
+- p.35-36: (image/blank)
+- p.37: Combining good properties of BFS and DFS
+- p.38: (image/blank)
+- p.39: Uniform Cost Search
+- p.40-57: UCS Example
+- p.58: (image/blank)
+- p.59: Bidirectional search
+- p.60: Making bidirectional search work
+- p.61: Comparison of Search
+- p.62: Informed search – Heuristic based
+- p.63: • Key notion: heuristic function h(n) gives an
+- p.64: Greedy Best-First Search
+- p.65: A bad example for greedy
+- p.66: A*
+- p.67: Algorithm A* (with any h on search Graph)
+- p.68-69: (image/blank)
+- p.70: Admissibility
+- p.71: Optimality of A*
+- p.72: Consistency
+- p.73: Theorem: If h(n) is consistent, f along any path is
+- p.74: An A* guided by consistent heuristic finds optimal
+- p.75: Inconsistent but admissible
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-08-12_module3_tillGA.pdf  (24 pages)
+- p.1: Module 3
+- p.2: Local Search Algorithms
+- p.3-6: (image/blank)
+- p.7: Variants of Hill Climbing
+- p.8: Simulated Annealing Search
+- p.9: (image/blank)
+- p.10: Local beam search
+- p.11: Stochastic Beam Search
+- p.12: Genetic Algorithm
+- p.13: What is GA
+- p.14: Selection
+- p.15: Crossover
+- p.16: Mutation
+- p.17-21: (image/blank)
+- p.22: GA Pseudo-code
+- p.23: • Fitness function: number of non-attacking pairs of queens
+- p.24: (image/blank)
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-09-19_FOL.pdf  (20 pages)
+- p.1: First Order Logic
+- p.2: Pros and Cons of Propositional
+- p.3: Limitations of propositional logic
+- p.4: Problems with propositional logic
+- p.5: Elements of first-order logic
+- p.6: Squares neighbouring the wumpus are smelly
+- p.7-9: First-Order Logic (FOL)
+- p.10: Truth in FOL
+- p.11: Model in FOL
+- p.12: Truth Example
+- p.13: Reasoning about many objects at once
+- p.14: Universal Quantification
+- p.15: Existential Quantification
+- p.16: Properties of quantifiers
+- p.17: Duality
+- p.18: Equality
+- p.19: English to FOL
+- p.20: Contd…
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-09-19_adversarial-search.pdf  (17 pages)
+- p.1: Adversarial Search
+- p.2: Games Vs. search problems
+- p.3: Defining a game as a search
+- p.4: Game tree (2-player,
+- p.5: Optimal Strategy
+- p.6: Minimax
+- p.7: Minimax algorithm
+- p.8-12: α-β pruning example
+- p.13: Properties of α-β
+- p.14: Why is it called α-β?
+- p.15: The α-β algorithm
+- p.16-17: (image/blank)
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-09-19_inference-in-FOL.pdf  (45 pages)
+- p.1: Inference in First Order
+- p.2: Outline
+- p.3: Universal Instantiation
+- p.4: Existential Instantiation
+- p.5: Reduction to Propositional
+- p.6-12: Unification
+- p.13: Unification Algorithm
+- p.14-18: Example Proof With
+- p.19-20: Example knowledge base
+- p.21: Nono … has some missiles,
+- p.22: All of its missiles were sold to it by Colonel West
+- p.23: Missiles are weapons:
+- p.24: An enemy of America counts as "hostile“:
+- p.25: West, who is American …
+- p.26: The country Nono, an enemy of America …
+- p.27-29: Forward chaining proof
+- p.30-35: Backward chaining example
+- p.36: Conversion to CNF (FOL)
+- p.37: Resolution
+- p.38: • FA x [Read(x) -> Literate(x)]
+- p.39-40: Example
+- p.41: • Dog(D)
+- p.42: Example
+- p.43: Resolution Strategies
+- p.44: Man(Marcus) 1. Man(Marcus)
+- p.45: • Proof:
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-09-19_propositional-logic.pdf  (68 pages)
+- p.1: Module 4
+- p.2: Knowledge Representation
+- p.3: Role of KR and Deductive
+- p.4: A Knowledge-Based Agent
+- p.5: Knowledge
+- p.6: A simple knowledge-based agent
+- p.7: Wumpus World PEAS
+- p.8: • Performance measure
+- p.9: Wumpus world
+- p.10-17: Sample Run
+- p.18: Other tight spots
+- p.19: Logic in general
+- p.20: Entailment
+- p.21: Entailment Examples
+- p.22: (image/blank)
+- p.23: Entailment in the wumpus
+- p.24-28: Wumpus models
+- p.29: Inference
+- p.30: Definitions
+- p.31: Validity and satisfiability
+- p.32: Examples
+- p.33: Propositional logic: Syntax
+- p.34: Propositional logic: Semantics
+- p.35: Propositional Logic
+- p.36: Proof methods
+- p.37: Wumpus world sentences
+- p.38: Rules of inference
+- p.39: Logical equivalence
+- p.40: Normal Forms
+- p.41: Resolution
+- p.42: Conversion to CNF
+- p.43: Resolution algorithm
+- p.44: Resolution example
+- p.45: Prove by resolution
+- p.46: Forward and backward
+- p.47: Forward chaining
+- p.48-55: Forward chaining example
+- p.56: Backward chaining
+- p.57-66: Backward chaining example
+- p.67: Forward vs. backward chaining
+- p.68: Summary
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-09-30_bayes-net.pdf  (21 pages)
+- p.1: Bayesian Belief Networks
+- p.2: Bayesian networks
+- p.3: • Bayes classifier assumes all the variables to be conditionally
+- p.4: Structure
+- p.5: Bayesian network
+- p.6: Conditional independence
+- p.7: • Each node is conditionally independent of its non-descendants
+- p.8: • A Bayesian belief network represents the joint probability
+- p.9: The joint probability for any desired assignment of values (yl, . . . 
+- p.10-11: Example: Burglar Alarm
+- p.12: Conditional probability distributions
+- p.13: The joint probability
+- p.14: Compactness
+- p.15: Inference in Bayes Net
+- p.16-18: (image/blank)
+- p.19: • What is the probability that the sprinkler was on overnight,
+- p.20: A more realistic Bayes Network:
+- p.21: Summary
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-09-30_probability-and-bayes-rule.pdf  (30 pages)
+- p.1: Uncertainty
+- p.2: Non-monotonic Logic
+- p.3-4: Uncertainty
+- p.5: Probability
+- p.6: Making decisions under uncertainty
+- p.7: Probability Explanation
+- p.8: Random variables
+- p.9: Random Variables
+- p.10: Events
+- p.11: Syntax
+- p.12: Kolmogorov’s axioms of
+- p.13: Joint Probability Distribution
+- p.14: Joint probability distributions
+- p.15: Marginal probability
+- p.16: Inference by enumeration
+- p.17: Conditional &Unconditional
+- p.18-19: Conditional probability
+- p.20: Inference by enumeration
+- p.21: Bayes’ Rule
+- p.22-23: Bayes’ Rule example
+- p.24-25: Bayes’ rule: Another example
+- p.26: Independence: Example
+- p.27: Conditional Independence
+- p.28: Independence
+- p.29-30: (image/blank)
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-11-11_module-6.pdf  (53 pages)
+- p.1: Planning
+- p.2-5: (image/blank)
+- p.6: STRIPS (STanford Research Institute Problem
+- p.7: (image/blank)
+- p.8: State of the world (STRIPS language)
+- p.9-10: (image/blank)
+- p.11: Representing Operators
+- p.12: (image/blank)
+- p.13: Cargo Transportation Problem
+- p.14: Spare Tire Problem
+- p.15: Blocks Problem
+- p.16: Find a solution
+- p.17: Examples
+- p.18: An action: TakeObject
+- p.19: Another action
+- p.20: Yet another action
+- p.21: A goal and a plan
+- p.22: Let’s Try
+- p.23: Forward state-space search (progression planning)
+- p.24: Backward state-space search (regression
+- p.25: Planning Graphs
+- p.26: • In a planning graph, two elements (actions or literals/states) are s
+- p.27: (image/blank)
+- p.28: A partial-order plan
+- p.29: Not everything decomposes into multiple
+- p.30: An incorrect partial order plan for the Sussman Anomaly
+- p.31: Corrected partial order plan for the Sussman Anomaly
+- p.32: Hierarchical Task Planning
+- p.33: (image/blank)
+- p.34: Build house Example
+- p.35: (image/blank)
+- p.36: Properties
+- p.37-39: (image/blank)
+- p.40: Gift of the Magi
+- p.41: Planning in Non-Deterministic Domains
+- p.42: Types of planning in Non-Deterministic
+- p.43: Non- Deterministic Domain
+- p.44: To solve a partially observable problem, the agent will have to reason
+- p.45: Sensorless Planning
+- p.46-47: Conditional Planning
+- p.48: Execution Monitoring and Replanning
+- p.49: Continuous Planning
+- p.50-53: (image/blank)
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2025-26_VL_BCSE306L_00100_TH_2025-11-11_module-7.pdf  (97 pages)
+- p.1: Module #7
+- p.2: Natural Language Processing (NLP)
+- p.3: Natural language processing
+- p.4: Where does it fit in the CS Taxonomy
+- p.5: What NLP does?
+- p.6: Fundamentals of Language
+- p.7: Ambiguity
+- p.8: Knowledge of Language
+- p.9: concerns how sentences are used in different
+- p.10: Stages in NLP
+- p.11: Stages of NLP
+- p.12: ▪ Semantic Analysis
+- p.13: Probabilistic Language Processing
+- p.14: Uses of Language Models
+- p.15: Completion Prediction
+- p.16: Probabilistic Language Modelling
+- p.17: 11/11/2025 17
+- p.18: 11/11/2025 18
+- p.19: 11/11/2025 19
+- p.20: How to calculate these probabilities
+- p.21-22: Markov Assumption
+- p.23: Unigram Model
+- p.24: Bigram Model
+- p.25: N Gram Models
+- p.26: Estimating the Bigram Probabilities
+- p.27: Bigram Simple Example
+- p.28-32: (image/blank)
+- p.33: HMM - Language
+- p.34: ▪ Example: Word Sequencing for POS Tagging
+- p.35: Hidden states (Q):
+- p.36: We want:
+- p.37: NLP TASKS – Information Retrieval
+- p.38: What is Information Retrieval?
+- p.39: Information Retrieval -Definition
+- p.40: Text Indexing
+- p.41: Text Retrieval
+- p.42: Steps in Basic Text Retrieval
+- p.43: Some Possible Scenarios
+- p.44: IR Models
+- p.45: 45
+- p.46: 46
+- p.47: Matrix Representation
+- p.48: 48
+- p.49: Pre-Processing
+- p.50: Indexing
+- p.51: Precision and Recall
+- p.52: Page Rank Algorithm
+- p.53: 53
+- p.54: Information Extraction
+- p.55: Definition
+- p.56: 56
+- p.57: 57
+- p.58: Information Extraction
+- p.59: (image/blank)
+- p.60: The Stages of IE System
+- p.61: 61
+- p.62: 62
+- p.63: Proper Names Identification
+- p.64: 64
+- p.65: 65
+- p.66: 66
+- p.67: Named Entity Recognition
+- p.68: Applications
+- p.69: Object Detection
+- p.70-71: (image/blank)
+- p.72: Motivations for Deep Architectures
+- p.73: (image/blank)
+- p.74: CNN over FNN for images
+- p.75: ○ Translation Invariance: Due to weight sharing, CNNs can recognize ob
+- p.76: • A convolutional neural network (CNN) is a type of artificial
+- p.77: Key components and functions
+- p.78: Applications
+- p.79: Advantages & Disadvantages
+- p.80: Convolution Neural Networks are neural networks that share their param
+- p.81: ○ Let’s take an example by running a convnets on of image of dimension
+- p.82-97: (image/blank)
+
+## AI/Geraldine Bessie Amali's AI Materials[external]/FALLSEM2026-27_VL_BCSE306L_00100_TH_2026-11-03_Mod-7_--Perception-Image-Formation.pdf  (21 pages)
+- p.1: 24 PERCEPTION
+- p.2: Section 24.1. Image Formation 929
+- p.3: 930 Chapter 24. Perception
+- p.4: Section 24.1. Image Formation 931
+- p.5: 932 Chapter 24. Perception
+- p.6: Section 24.1. Image Formation 933
+- p.7: 934 Chapter 24. Perception
+- p.8: Section 24.2. Early Image-Processing Operations 935
+- p.9: 936 Chapter 24. Perception
+- p.10: Section 24.2. Early Image-Processing Operations 937
+- p.11: 938 Chapter 24. Perception
+- p.12: Section 24.2. Early Image-Processing Operations 939
+- p.13: 940 Chapter 24. Perception
+- p.14: Section 24.2. Early Image-Processing Operations 941
+- p.15: 942 Chapter 24. Perception
+- p.16: Section 24.3. Object Recognition by Appearance 943
+- p.17: 944 Chapter 24. Perception
+- p.18: Section 24.3. Object Recognition by Appearance 945
+- p.19: 946 Chapter 24. Perception
+- p.20: Section 24.4. Reconstructing the 3D World 947
+- p.21: 948 Chapter 24. Perception
