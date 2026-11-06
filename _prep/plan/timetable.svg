@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190" height="1156" viewBox="0 0 1190 1156" font-family="Inter, Arial, Helvetica, sans-serif">
+<rect width="1190" height="1156" fill="#ffffff"/>
+<text x="20" y="42" font-size="28" font-weight="700" fill="#111827">FAT Study Timetable · 7 – 30 Nov 2026</text>
+<text x="20" y="68" font-size="14" fill="#4b5563">Morning 9:00–12:30 · Afternoon 2:00–5:30 · Evening 7:30–10:00 · dark cells = exam · faded cells = light recall (sleep by 11)</text>
+<rect x="20" y="92" width="73" height="28" rx="14" fill="#FDE68A" stroke="#F59E0B" stroke-width="2"/>
+<circle cx="36" cy="106" r="6" fill="#F59E0B"/>
+<text x="50" y="111" font-size="14" font-weight="600" fill="#111827">CAD</text>
+<rect x="103" y="92" width="64" height="28" rx="14" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+<circle cx="119" cy="106" r="6" fill="#3B82F6"/>
+<text x="133" y="111" font-size="14" font-weight="600" fill="#111827">OS</text>
+<rect x="177" y="92" width="64" height="28" rx="14" fill="#DDD6FE" stroke="#8B5CF6" stroke-width="2"/>
+<circle cx="193" cy="106" r="6" fill="#8B5CF6"/>
+<text x="207" y="111" font-size="14" font-weight="600" fill="#111827">AI</text>
+<rect x="251" y="92" width="73" height="28" rx="14" fill="#A7F3D0" stroke="#10B981" stroke-width="2"/>
+<circle cx="267" cy="106" r="6" fill="#10B981"/>
+<text x="281" y="111" font-size="14" font-weight="600" fill="#111827">DBS</text>
+<rect x="334" y="92" width="64" height="28" rx="14" fill="#FECACA" stroke="#EF4444" stroke-width="2"/>
+<circle cx="350" cy="106" r="6" fill="#EF4444"/>
+<text x="364" y="111" font-size="14" font-weight="600" fill="#111827">CD</text>
+<rect x="408" y="92" width="64" height="28" rx="14" fill="#A5F3FC" stroke="#06B6D4" stroke-width="2"/>
+<circle cx="424" cy="106" r="6" fill="#06B6D4"/>
+<text x="438" y="111" font-size="14" font-weight="600" fill="#111827">CN</text>
+<rect x="482" y="92" width="73" height="28" rx="14" fill="#FBCFE8" stroke="#EC4899" stroke-width="2"/>
+<circle cx="498" cy="106" r="6" fill="#EC4899"/>
+<text x="512" y="111" font-size="14" font-weight="600" fill="#111827">ACC</text>
+<rect x="565" y="92" width="154" height="28" rx="14" fill="#D9F99D" stroke="#84CC16" stroke-width="2"/>
+<circle cx="581" cy="106" r="6" fill="#84CC16"/>
+<text x="595" y="111" font-size="14" font-weight="600" fill="#111827">Constitution</text>
+<text x="20" y="144" font-size="13" fill="#6b7280">Exact files and pages for each block: _prep/study-guide/ · full plan and rules: _prep/plan/schedule.md</text>
+<rect x="20" y="150" width="117" height="34" rx="6" fill="#111827"/>
+<text x="30" y="172" font-size="14" font-weight="700" fill="#ffffff">Date</text>
+<rect x="140" y="150" width="340" height="34" rx="6" fill="#111827"/>
+<text x="150" y="172" font-size="14" font-weight="700" fill="#ffffff">Morning 9:00–12:30</text>
+<rect x="483" y="150" width="340" height="34" rx="6" fill="#111827"/>
+<text x="493" y="172" font-size="14" font-weight="700" fill="#ffffff">Afternoon 2:00–5:30</text>
+<rect x="826" y="150" width="340" height="34" rx="6" fill="#111827"/>
+<text x="836" y="172" font-size="14" font-weight="700" fill="#ffffff">Evening 7:30–10:00</text>
+<rect x="20" y="188" width="117" height="34" rx="6" fill="#e5e7eb"/>
+<text x="30" y="210" font-size="15" font-weight="700" fill="#111827">7 Nov <tspan font-weight="500" fill="#4b5563">Sat</tspan></text>
+<rect x="140" y="188" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="140" y="188" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="158" y="210" font-size="14" font-weight="600" fill="#111827">CAD M1–2</text>
+<rect x="483" y="188" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="483" y="188" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="501" y="210" font-size="14" font-weight="600" fill="#111827">CAD M3–4</text>
+<rect x="826" y="188" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="826" y="188" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="844" y="210" font-size="14" font-weight="600" fill="#111827">OS M4a: race cond., semaphores</text>
+<rect x="20" y="226" width="117" height="34" rx="6" fill="#e5e7eb"/>
+<text x="30" y="248" font-size="15" font-weight="700" fill="#111827">8 Nov <tspan font-weight="500" fill="#4b5563">Sun</tspan></text>
+<rect x="140" y="226" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="140" y="226" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="158" y="248" font-size="14" font-weight="600" fill="#111827">CAD M5–6</text>
+<rect x="483" y="226" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="483" y="226" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="501" y="248" font-size="14" font-weight="600" fill="#111827">CAD M7–8</text>
+<rect x="826" y="226" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="826" y="226" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="844" y="248" font-size="14" font-weight="600" fill="#111827">OS M4b: classical problems</text>
+<rect x="20" y="264" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="286" font-size="15" font-weight="700" fill="#111827">9 Nov <tspan font-weight="500" fill="#4b5563">Mon</tspan></text>
+<rect x="140" y="264" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="140" y="264" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="158" y="286" font-size="14" font-weight="600" fill="#111827">CAD revision 1</text>
+<rect x="483" y="264" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="483" y="264" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="501" y="286" font-size="14" font-weight="600" fill="#111827">OS M5 memory, paging</text>
+<rect x="826" y="264" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="826" y="264" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="844" y="286" font-size="14" font-weight="600" fill="#111827">OS M5 page repl. + M3</text>
+<rect x="20" y="302" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="324" font-size="15" font-weight="700" fill="#111827">10 Nov <tspan font-weight="500" fill="#4b5563">Tue</tspan></text>
+<rect x="140" y="302" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="140" y="302" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="158" y="324" font-size="14" font-weight="600" fill="#111827">OS M6 virtualization, FS</text>
+<rect x="483" y="302" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="483" y="302" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="501" y="324" font-size="14" font-weight="600" fill="#111827">OS M7 disk, protection</text>
+<rect x="826" y="302" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="826" y="302" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="844" y="324" font-size="14" font-weight="600" fill="#111827">DBS M3 first look (FDs)</text>
+<rect x="20" y="340" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="362" font-size="15" font-weight="700" fill="#111827">11 Nov <tspan font-weight="500" fill="#4b5563">Wed</tspan></text>
+<rect x="140" y="340" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="140" y="340" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="158" y="362" font-size="14" font-weight="600" fill="#111827">CAD revision 2</text>
+<rect x="483" y="340" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="483" y="340" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="501" y="362" font-size="14" font-weight="600" fill="#111827">OS semaphores again</text>
+<rect x="826" y="340" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="340" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="844" y="362" font-size="14" font-weight="600" fill="#111827">CD M1 phases, regex→DFA</text>
+<rect x="20" y="378" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="400" font-size="15" font-weight="700" fill="#111827">12 Nov <tspan font-weight="500" fill="#4b5563">Thu</tspan></text>
+<rect x="140" y="378" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="140" y="378" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="158" y="400" font-size="14" font-weight="600" fill="#111827">CAD final recall</text>
+<rect x="483" y="378" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="483" y="378" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="501" y="400" font-size="14" font-weight="600" fill="#111827">CAD scenario questions</text>
+<rect x="826" y="378" width="340" height="34" rx="6" fill="#FDE68A" fill-opacity="0.35" stroke="#F59E0B" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+<text x="840" y="400" font-size="13" font-style="italic" fill="#4b5563">light CAD recall</text>
+<rect x="20" y="416" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="438" font-size="15" font-weight="700" fill="#111827">13 Nov <tspan font-weight="500" fill="#4b5563">Fri</tspan></text>
+<rect x="140" y="416" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="416" width="8" height="34" rx="3" fill="#F59E0B"/>
+<text x="158" y="438" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · CAD</text>
+<rect x="483" y="416" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="483" y="416" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="501" y="438" font-size="14" font-weight="600" fill="#111827">OS timed mixed paper</text>
+<rect x="826" y="416" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="826" y="416" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="844" y="438" font-size="14" font-weight="600" fill="#111827">AI M1–2</text>
+<rect x="20" y="454" width="117" height="34" rx="6" fill="#e5e7eb"/>
+<text x="30" y="476" font-size="15" font-weight="700" fill="#111827">14 Nov <tspan font-weight="500" fill="#4b5563">Sat</tspan></text>
+<rect x="140" y="454" width="340" height="34" rx="6" fill="#BFDBFE"/><rect x="140" y="454" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="158" y="476" font-size="14" font-weight="600" fill="#111827">OS semaphores + weak spots</text>
+<rect x="483" y="454" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="483" y="454" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="501" y="476" font-size="14" font-weight="600" fill="#111827">AI M2 search (A*)</text>
+<rect x="826" y="454" width="340" height="34" rx="6" fill="#BFDBFE" fill-opacity="0.35" stroke="#3B82F6" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+<text x="840" y="476" font-size="13" font-style="italic" fill="#4b5563">light OS recall</text>
+<rect x="20" y="492" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="514" font-size="15" font-weight="700" fill="#111827">15 Nov <tspan font-weight="500" fill="#4b5563">Sun</tspan></text>
+<rect x="140" y="492" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="492" width="8" height="34" rx="3" fill="#3B82F6"/>
+<text x="158" y="514" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · OS</text>
+<rect x="483" y="492" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="483" y="492" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="501" y="514" font-size="14" font-weight="600" fill="#111827">AI M3 local, minimax</text>
+<rect x="826" y="492" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="826" y="492" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="844" y="514" font-size="14" font-weight="600" fill="#111827">AI M4a prop. + FOL logic</text>
+<rect x="20" y="530" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="552" font-size="15" font-weight="700" fill="#111827">16 Nov <tspan font-weight="500" fill="#4b5563">Mon</tspan></text>
+<rect x="140" y="530" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="140" y="530" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="158" y="552" font-size="14" font-weight="600" fill="#111827">AI M4b resolution, chaining</text>
+<rect x="483" y="530" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="483" y="530" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="501" y="552" font-size="14" font-weight="600" fill="#111827">DBS M3 practice</text>
+<rect x="826" y="530" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="826" y="530" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="844" y="552" font-size="14" font-weight="600" fill="#111827">AI M5 Bayes</text>
+<rect x="20" y="568" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="590" font-size="15" font-weight="700" fill="#111827">17 Nov <tspan font-weight="500" fill="#4b5563">Tue</tspan></text>
+<rect x="140" y="568" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="140" y="568" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="158" y="590" font-size="14" font-weight="600" fill="#111827">AI M6–7</text>
+<rect x="483" y="568" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="483" y="568" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="501" y="590" font-size="14" font-weight="600" fill="#111827">DBS M4 indexing, B+ tree</text>
+<rect x="826" y="568" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="826" y="568" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="844" y="590" font-size="14" font-weight="600" fill="#111827">DBS M4 hashing, algebra</text>
+<rect x="20" y="606" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="628" font-size="15" font-weight="700" fill="#111827">18 Nov <tspan font-weight="500" fill="#4b5563">Wed</tspan></text>
+<rect x="140" y="606" width="340" height="34" rx="6" fill="#DDD6FE"/><rect x="140" y="606" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="158" y="628" font-size="14" font-weight="600" fill="#111827">AI final timed</text>
+<rect x="483" y="606" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="483" y="606" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="501" y="628" font-size="14" font-weight="600" fill="#111827">DBS M5 transactions</text>
+<rect x="826" y="606" width="340" height="34" rx="6" fill="#DDD6FE" fill-opacity="0.35" stroke="#8B5CF6" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+<text x="840" y="628" font-size="13" font-style="italic" fill="#4b5563">light AI recall</text>
+<rect x="20" y="644" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="666" font-size="15" font-weight="700" fill="#111827">19 Nov <tspan font-weight="500" fill="#4b5563">Thu</tspan></text>
+<rect x="140" y="644" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="644" width="8" height="34" rx="3" fill="#8B5CF6"/>
+<text x="158" y="666" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · AI</text>
+<rect x="483" y="644" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="483" y="644" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="501" y="666" font-size="14" font-weight="600" fill="#111827">DBS M5 recovery</text>
+<rect x="826" y="644" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="826" y="644" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="844" y="666" font-size="14" font-weight="600" fill="#111827">DBS M6 locking, 2PL</text>
+<rect x="20" y="682" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="704" font-size="15" font-weight="700" fill="#111827">20 Nov <tspan font-weight="500" fill="#4b5563">Fri</tspan></text>
+<rect x="140" y="682" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="140" y="682" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="158" y="704" font-size="14" font-weight="600" fill="#111827">DBS M6 deadlock, MGL</text>
+<rect x="483" y="682" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="483" y="682" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="501" y="704" font-size="14" font-weight="600" fill="#111827">DBS M7 + ER mapping</text>
+<rect x="826" y="682" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="826" y="682" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="844" y="704" font-size="14" font-weight="600" fill="#111827">DBS mixed problems</text>
+<rect x="20" y="720" width="117" height="34" rx="6" fill="#e5e7eb"/>
+<text x="30" y="742" font-size="15" font-weight="700" fill="#111827">21 Nov <tspan font-weight="500" fill="#4b5563">Sat</tspan></text>
+<rect x="140" y="720" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="140" y="720" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="158" y="742" font-size="14" font-weight="600" fill="#111827">DBS timed paper</text>
+<rect x="483" y="720" width="340" height="34" rx="6" fill="#A7F3D0"/><rect x="483" y="720" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="501" y="742" font-size="14" font-weight="600" fill="#111827">DBS weak spots</text>
+<rect x="826" y="720" width="340" height="34" rx="6" fill="#A7F3D0" fill-opacity="0.35" stroke="#10B981" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+<text x="840" y="742" font-size="13" font-style="italic" fill="#4b5563">light DBS recall</text>
+<rect x="20" y="758" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="780" font-size="15" font-weight="700" fill="#111827">22 Nov <tspan font-weight="500" fill="#4b5563">Sun</tspan></text>
+<rect x="140" y="758" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="758" width="8" height="34" rx="3" fill="#10B981"/>
+<text x="158" y="780" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · DBS</text>
+<rect x="483" y="758" width="340" height="34" rx="6" fill="#FBCFE8"/><rect x="483" y="758" width="8" height="34" rx="3" fill="#EC4899"/>
+<text x="501" y="780" font-size="14" font-weight="600" fill="#111827">ACC M1–3</text>
+<rect x="826" y="758" width="340" height="34" rx="6" fill="#FBCFE8"/><rect x="826" y="758" width="8" height="34" rx="3" fill="#EC4899"/>
+<text x="844" y="780" font-size="14" font-weight="600" fill="#111827">ACC M4–5</text>
+<rect x="20" y="796" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="818" font-size="15" font-weight="700" fill="#111827">23 Nov <tspan font-weight="500" fill="#4b5563">Mon</tspan></text>
+<rect x="140" y="796" width="340" height="34" rx="6" fill="#FBCFE8"/><rect x="140" y="796" width="8" height="34" rx="3" fill="#EC4899"/>
+<text x="158" y="818" font-size="14" font-weight="600" fill="#111827">ACC M6–7</text>
+<rect x="483" y="796" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="796" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="501" y="818" font-size="14" font-weight="600" fill="#111827">CD M2a FIRST/FOLLOW, LL(1)</text>
+<rect x="826" y="796" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="796" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="844" y="818" font-size="14" font-weight="600" fill="#111827">CD M2b shift-reduce, SLR</text>
+<rect x="20" y="834" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="856" font-size="15" font-weight="700" fill="#111827">24 Nov <tspan font-weight="500" fill="#4b5563">Tue</tspan></text>
+<rect x="140" y="834" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="834" width="8" height="34" rx="3" fill="#EC4899"/>
+<text x="158" y="856" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">ACC quick run, EXAM 11:00</text>
+<rect x="483" y="834" width="340" height="34" rx="6" fill="#A5F3FC"/><rect x="483" y="834" width="8" height="34" rx="3" fill="#06B6D4"/>
+<text x="501" y="856" font-size="14" font-weight="600" fill="#111827">CN M1–3 refresher</text>
+<rect x="826" y="834" width="340" height="34" rx="6" fill="#A5F3FC"/><rect x="826" y="834" width="8" height="34" rx="3" fill="#06B6D4"/>
+<text x="844" y="856" font-size="14" font-weight="600" fill="#111827">CN M4 subnetting, headers</text>
+<rect x="20" y="872" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="894" font-size="15" font-weight="700" fill="#111827">25 Nov <tspan font-weight="500" fill="#4b5563">Wed</tspan></text>
+<rect x="140" y="872" width="340" height="34" rx="6" fill="#A5F3FC"/><rect x="140" y="872" width="8" height="34" rx="3" fill="#06B6D4"/>
+<text x="158" y="894" font-size="14" font-weight="600" fill="#111827">CN M5 routing</text>
+<rect x="483" y="872" width="340" height="34" rx="6" fill="#A5F3FC"/><rect x="483" y="872" width="8" height="34" rx="3" fill="#06B6D4"/>
+<text x="501" y="894" font-size="14" font-weight="600" fill="#111827">CN M6–7 + timed mixed</text>
+<rect x="826" y="872" width="340" height="34" rx="6" fill="#A5F3FC" fill-opacity="0.35" stroke="#06B6D4" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+<text x="840" y="894" font-size="13" font-style="italic" fill="#4b5563">light CN recall</text>
+<rect x="20" y="910" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="932" font-size="15" font-weight="700" fill="#111827">26 Nov <tspan font-weight="500" fill="#4b5563">Thu</tspan></text>
+<rect x="140" y="910" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="910" width="8" height="34" rx="3" fill="#06B6D4"/>
+<text x="158" y="932" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · CN</text>
+<rect x="483" y="910" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="910" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="501" y="932" font-size="14" font-weight="600" fill="#111827">CD M2c CLR, LALR</text>
+<rect x="826" y="910" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="910" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="844" y="932" font-size="14" font-weight="600" fill="#111827">CD M3 SDD / SDT</text>
+<rect x="20" y="948" width="117" height="34" rx="6" fill="#f3f4f6"/>
+<text x="30" y="970" font-size="15" font-weight="700" fill="#111827">27 Nov <tspan font-weight="500" fill="#4b5563">Fri</tspan></text>
+<rect x="140" y="948" width="340" height="34" rx="6" fill="#FECACA"/><rect x="140" y="948" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="158" y="970" font-size="14" font-weight="600" fill="#111827">CD M4 intermediate code</text>
+<rect x="483" y="948" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="948" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="501" y="970" font-size="14" font-weight="600" fill="#111827">CD M5 optimization, DAG</text>
+<rect x="826" y="948" width="340" height="34" rx="6" fill="#D9F99D"/><rect x="826" y="948" width="8" height="34" rx="3" fill="#84CC16"/>
+<text x="844" y="970" font-size="14" font-weight="600" fill="#111827">Indian Constitution</text>
+<rect x="20" y="986" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="1008" font-size="15" font-weight="700" fill="#111827">28 Nov <tspan font-weight="500" fill="#4b5563">Sat</tspan></text>
+<rect x="140" y="986" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="986" width="8" height="34" rx="3" fill="#84CC16"/>
+<text x="158" y="1008" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · Constitution 9:00</text>
+<rect x="483" y="986" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="986" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="501" y="1008" font-size="14" font-weight="600" fill="#111827">CD M6–7 codegen, parallel.</text>
+<rect x="826" y="986" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="986" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="844" y="1008" font-size="14" font-weight="600" fill="#111827">CD parsing practice</text>
+<rect x="20" y="1024" width="117" height="34" rx="6" fill="#e5e7eb"/>
+<text x="30" y="1046" font-size="15" font-weight="700" fill="#111827">29 Nov <tspan font-weight="500" fill="#4b5563">Sun</tspan></text>
+<rect x="140" y="1024" width="340" height="34" rx="6" fill="#FECACA"/><rect x="140" y="1024" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="158" y="1046" font-size="14" font-weight="600" fill="#111827">CD mixed problems</text>
+<rect x="483" y="1024" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="1024" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="501" y="1046" font-size="14" font-weight="600" fill="#111827">CD timed paper + gaps</text>
+<rect x="826" y="1024" width="340" height="34" rx="6" fill="#FECACA" fill-opacity="0.35" stroke="#EF4444" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+<text x="840" y="1046" font-size="13" font-style="italic" fill="#4b5563">light CD recall</text>
+<rect x="20" y="1062" width="117" height="34" rx="6" fill="#fde68a"/>
+<text x="30" y="1084" font-size="15" font-weight="700" fill="#111827">30 Nov <tspan font-weight="500" fill="#4b5563">Mon</tspan></text>
+<rect x="140" y="1062" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="1062" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="158" y="1084" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · CD</text>
+<rect x="483" y="1062" width="340" height="34" rx="6" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="826" y="1062" width="340" height="34" rx="6" fill="#f9fafb" stroke="#e5e7eb"/>
+<text x="20" y="1132" font-size="13" fill="#6b7280">Also: one Java (ACC) program a day as a 30-minute warm-up. If you fall behind, drop theory topics, not problem-solving topics.</text>
+</svg>
