@@ -23,7 +23,7 @@ CAD = Cloud Architecture Design (folder `AWS/`), OS, AI, DBS, CD, CN, ACC, plus 
 | CN | pending | done | pending |
 | ACC | no PYQs (slides in `ACC/`) | n/a | pending |
 
-Topic-frequency analysis is deliberately postponed until all subjects are indexed.
+Topic-frequency analysis was postponed until all subjects were indexed. CAD is the exception (done early on request): see `analysis/CAD.md`. Other subjects follow once indexed.
 
 ## Rules for any agent working here
 - Additive only: create or edit files under `_prep/`. Do not delete, rename or move existing files.
