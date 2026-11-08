@@ -33,4 +33,4 @@ Topic-frequency analysis was postponed until all subjects were indexed. CAD is t
 - Ignore labs, projects, case studies and build artifacts when planning study.
 - The student's registration number appears in some file names. The repo is private; keep it that way.
 
-`analysis/important-topics.html` is a single-page topic matrix for all subjects (open it in a browser). It shows which topics appeared in which FAT papers, a priority label and what to practise. Raw working notes: `analysis/raw-tallies.md`.
+`analysis/important-topics.html` is a single-page topic matrix for all subjects (open it in a browser). It shows which topics appeared in which FAT papers, a priority label and what to practise. Each subject tab has a second view, "Every topic in every paper", listing every topic in every FAT paper with paper + question number, plus a search box. Raw working notes: `analysis/raw-tallies.md`.
