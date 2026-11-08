@@ -32,3 +32,5 @@ Topic-frequency analysis was postponed until all subjects were indexed. CAD is t
 - Check PDFs for extractable text first (`pdftotext`); scanned or photographed papers need to be read as images.
 - Ignore labs, projects, case studies and build artifacts when planning study.
 - The student's registration number appears in some file names. The repo is private; keep it that way.
+
+`analysis/important-topics.html` is a single-page topic matrix for all subjects (open it in a browser). It shows which topics appeared in which FAT papers, a priority label and what to practise. Raw working notes: `analysis/raw-tallies.md`.
