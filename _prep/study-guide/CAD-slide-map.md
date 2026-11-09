@@ -369,3 +369,31 @@ Generated from the PDFs' own slide titles. Open these files from the `AWS/` fold
 - p.43-45: AWS Snowball Edge
 - p.46-50: AWS Snowmobile
 - p.51: Comparison
+
+
+## Teacher's own Module 7 and 8 files (added 9 Nov): use these first
+These are shorter than the external notes and match what your teacher will examine. The external notes (above) are the backup for anything missing here.
+
+### Module 7 (`AWS/Module 7/`)
+- `BCSE355L_SQS.pdf` (22 pp): p.2-6 what SQS is and use cases (batch, order processing); p.8-10 benefits (security, availability, reliability); p.11-12 distributed queues; p.13-17 message lifecycle and visibility timeout; p.18-19 fan-out pattern (SNS + SQS); p.20-21 console steps.
+- `BCSE355L_SNS.pdf` (23 pp): p.2-4 what SNS is (A2A and A2P); p.5-6 features and message fanout; p.7-9 Standard vs FIFO topics; p.10-11 publishers and subscribers; p.12-14 benefits (push-based delivery); p.15-22 console configuration steps (skim).
+- `BCSE355L_Application Integration.pdf` (15 pp): p.3-8 what application integration is and its mechanisms; p.9-14 AWS services: API Gateway, AppFlow, AppSync, EventBridge, SNS, SQS (one line each).
+- `BCSE355L_Module-7.pdf` (30 pp): p.2-10 SWF (e-commerce example p.4-6, components p.7, running a workflow p.8, lifecycle p.9, failure handling p.10); p.11-18 Step Functions (state machine p.14, state types table p.14, benefits p.16, use cases p.17); p.19 SWF vs Step Functions table; p.20-29 Well-Architected Framework, six pillars with design principles (ops excellence p.24, security p.25, reliability p.26, performance p.27, cost p.28, sustainability p.29).
+- Not in the teacher slides: Standard vs Express workflows. Use external Module 7 p.66-68 (Express is on p.67).
+
+### Module 8 (`AWS/BCSE355L_Module-8.pdf`, 34 pp)
+- p.2-3 hybrid cloud and benefits; p.4-6 AWS hybrid services (picture slides): Compute = Outposts, Wavelength, Local Zones, Snow; Storage = Storage Gateway, Backup, DataSync, Transfer Family; Networking = Direct Connect, Route 53 Resolver.
+- p.7-8 Server Migration Service; p.9-11 AWS Transform MGN (formerly Application Migration Service) and its workflow.
+- p.12-19 Database Migration Service: benefits p.14, how it works p.15-17, key features p.18, sources and targets p.19.
+- p.20-24 Snowball; p.25-30 Snowball Edge (configurations p.28, how it works p.29-30); p.31-33 Snowmobile.
+- Not in the teacher slides: Schema Conversion Tool (SCT). Past FAT papers asked Oracle-to-Aurora style migrations, so also read external Module 8 pp.15-29 for SCT and heterogeneous migration. Also not listed: the "challenges" of server and database migration; write generic ones (downtime, compatibility, bandwidth, security, cost, data loss).
+
+### Teacher's CAT-2 DA list (`AWS/BCSE355L_CAT-2 Slow Learners_DA.pdf`, 8 questions, all from Modules 7 and 8)
+1. SQS vs SNS (delivery, communication, use cases) -> SQS p.2-10, SNS p.2-14
+2. Fan-out pattern with SNS + SQS for an e-commerce order (inventory, payment, shipping) -> SQS p.18-19, SNS p.6, external M7 p.33
+3. SWF vs Step Functions with an example -> Module-7 p.2-19
+4. Standard vs Express workflows -> external M7 p.66-68
+5. Six pillars of the Well-Architected Framework -> Module-7 p.20-29
+6. Server migration service: challenges and steps -> M8 p.7-11
+7. Database migration service: challenges and steps -> M8 p.12-19
+8. Snowball, Snowball Edge, Snowmobile features -> M8 p.20-33

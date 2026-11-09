@@ -49,7 +49,7 @@ Learn:
 - Module 6 files: `AWS KMS.pdf`, `WAF.pdf`, `AWS Shield.pdf`, `Shared Responsibility model.pdf`, `Security best Practices.pdf` (skim the first 3 for what each protects against)
 - `Dhivyaa CR's AWS Notes[external]/..._Module-7.pdf`: pp.6-25 (SQS), 26-44 (SNS), 45-63 (SWF), 64-81 (Step Functions), 82-101 (Well-Architected, scalability, HA and fault tolerance)
 - `Dhivyaa CR's AWS Notes[external]/..._Module-8.pdf`: pp.15-34 (DMS, SMS), 35-51 (Snow Family and comparison)
-These two "external" files are your only Module 7 and 8 slides, so they are not clutter.
+UPDATE 9 Nov: your teacher's own Module 7 and 8 files are now in the repo (`AWS/Module 7/` and `AWS/BCSE355L_Module-8.pdf`). Use those first; page map is at the end of `CAD-slide-map.md`. The external notes are the backup for Standard vs Express workflows and the Schema Conversion Tool.
 Build:
 - Table 11: KMS vs WAF vs Shield (what each stops)
 - Table 12: SQS vs SNS vs SWF vs Step Functions
@@ -61,3 +61,10 @@ Build:
 - Wed 11 Nov morning (revision 2): answer PYQ scenarios from `_prep/pyq-index/CAD.md` using the 4-line template; open the actual paper PDFs from `AWS/PYQ/FAT` and `AWS/PYQ/CAT2`.
 - Thu 12 Nov morning (final recall): tables again, from memory, then fix the gaps.
 - Thu 12 Nov afternoon: timed scenario practice (about 10 questions, 15 minutes each, using the 4-line template).
+
+
+## Update 9 Nov: Module 7 and 8 from the teacher's files
+Modules 7 and 8 carry 20 marks each in the FAT, and the teacher's CAT-2 DA lists 8 questions, all from these two modules. Treat that list as the likely FAT questions. Work through them in this order:
+- Mon 9 Eve (about 90 min from 21:00): DA Q1 to Q4. SQS (`Module 7/BCSE355L_SQS.pdf`), SNS (`BCSE355L_SNS.pdf`), fan-out (SQS pp.18-19), SWF and Step Functions (`BCSE355L_Module-7.pdf` pp.2-19). End with the SQS vs SNS and SWF vs Step Functions tables from memory. For Q4, read external Module 7 pp.66-68.
+- Tue 10 AM: DA Q5 to Q8. Six pillars (`BCSE355L_Module-7.pdf` pp.20-29), then `BCSE355L_Module-8.pdf`: Server Migration and Transform MGN (pp.7-11), DMS (pp.12-19), Snow family (pp.20-33), and the hybrid services page list (pp.4-6).
+For each DA question write the answer once in the 4-line template, 10 minutes each. That is your answer bank.

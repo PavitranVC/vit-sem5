@@ -56,15 +56,15 @@
 <rect x="483" y="264" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="483" y="264" width="8" height="34" rx="3" fill="#F59E0B"/>
 <text x="501" y="286" font-size="14" font-weight="600" fill="#111827">CAD P1b · RDS + monitoring</text>
 <rect x="826" y="264" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="826" y="264" width="8" height="34" rx="3" fill="#F59E0B"/>
-<text x="844" y="286" font-size="14" font-weight="600" fill="#111827">CAD P1c · SQS/SNS/SF + Snow</text>
+<text x="844" y="286" font-size="14" font-weight="600" fill="#111827">CAD P1c · SQS, SNS, fan-out, SWF/SF</text>
 <rect x="20" y="302" width="117" height="34" rx="6" fill="#f3f4f6"/>
 <text x="30" y="324" font-size="15" font-weight="700" fill="#111827">10 Nov <tspan font-weight="500" fill="#4b5563">Tue</tspan></text>
 <rect x="140" y="302" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="140" y="302" width="8" height="34" rx="3" fill="#F59E0B"/>
-<text x="158" y="324" font-size="14" font-weight="600" fill="#111827">CAD P2a · EC2, ASG/ELB, storage</text>
+<text x="158" y="324" font-size="14" font-weight="600" fill="#111827">CAD P1d · 6 pillars, DMS, SMS, Snow</text>
 <rect x="483" y="302" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="483" y="302" width="8" height="34" rx="3" fill="#F59E0B"/>
-<text x="501" y="324" font-size="14" font-weight="600" fill="#111827">CAD P2b · KMS, WAF, Shield, cost</text>
+<text x="501" y="324" font-size="14" font-weight="600" fill="#111827">CAD P2a · EC2, ASG/ELB, storage, KMS</text>
 <rect x="826" y="302" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="826" y="302" width="8" height="34" rx="3" fill="#F59E0B"/>
-<text x="844" y="324" font-size="14" font-weight="600" fill="#111827">CAD P2c · DMS/SMS, WA, VPN</text>
+<text x="844" y="324" font-size="14" font-weight="600" fill="#111827">CAD P2b · WAF, Shield, cost, NACL, VPN</text>
 <rect x="20" y="340" width="117" height="34" rx="6" fill="#f3f4f6"/>
 <text x="30" y="362" font-size="15" font-weight="700" fill="#111827">11 Nov <tspan font-weight="500" fill="#4b5563">Wed</tspan></text>
 <rect x="140" y="340" width="340" height="34" rx="6" fill="#FDE68A"/><rect x="140" y="340" width="8" height="34" rx="3" fill="#F59E0B"/>

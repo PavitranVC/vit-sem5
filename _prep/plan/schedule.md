@@ -1,6 +1,6 @@
 # FAT study schedule: 7 Nov to 30 Nov 2026
 
-Last updated: Sun 8 Nov 2026, 22:45 IST (priority-first version). Owner: V C Pavitran. Edit this file when the plan changes (and note why at the bottom).
+Last updated: Mon 9 Nov 2026, 21:30 IST (priority-first version, CAD M7/M8 from teacher's files). Owner: V C Pavitran. Edit this file when the plan changes (and note why at the bottom).
 
 ## Exam dates (FAT, all FN)
 | Date | Course | Time |
@@ -36,8 +36,8 @@ Legend: 🟧 CAD 🟦 OS 🟪 AI 🟩 DBS 🟥 CD 🟨 CN 🟫 ACC ⬜ Constitut
 |---|---|---|---|
 | 7 Nov Sat | 🟧 CAD M1–2 | 🟧 CAD M3–4 | 🟦 OS M4a: race cond., semaphores |
 | 8 Nov Sun |  |  | 🟧 CAD P1 start: VPC (45 min) |
-| 9 Nov Mon | 🟧 CAD P1a · VPC + IAM | 🟧 CAD P1b · RDS + monitoring | 🟧 CAD P1c · SQS/SNS/SF + Snow |
-| 10 Nov Tue | 🟧 CAD P2a · EC2, ASG/ELB, storage | 🟧 CAD P2b · KMS, WAF, Shield, cost | 🟧 CAD P2c · DMS/SMS, WA, VPN |
+| 9 Nov Mon | 🟧 CAD P1a · VPC + IAM | 🟧 CAD P1b · RDS + monitoring | 🟧 CAD P1c · SQS, SNS, fan-out, SWF/SF |
+| 10 Nov Tue | 🟧 CAD P1d · 6 pillars, DMS, SMS, Snow | 🟧 CAD P2a · EC2, ASG/ELB, storage, KMS | 🟧 CAD P2b · WAF, Shield, cost, NACL, VPN |
 | 11 Nov Wed | 🟧 CAD timed paper A1'25 + gaps | 🟧 CAD timed paper G1'25 + gaps | 🟦 OS P1a · sched, Banker, disk, paging |
 | 12 Nov Thu | 🟧 CAD recall: P1 closed-book | 🟦 OS P1b · structure, files, virtual. | 🟧 _light CAD recall_ |
 | **13 Nov Fri** | ⬛ **EXAM · CAD** | 🟦 OS P2a · semaphores, race, R-W | 🟦 OS P2b · classics, threads, paging bits |
@@ -73,3 +73,4 @@ CAD 8 (+ 2 recall), OS 6, AI 8, DBS 10, ACC 3 (+ daily warm-ups), CN 3, CD 11, I
 ## Change log
 - 6 Nov 23:10: first version. Built from the 7 syllabi, the FAT timetable, and self-ratings (see `context.md`). Block counts rebalanced after learning CN and OS numericals are strong and DBS, CD, OS semaphores are weak.
 - 8 Nov 22:45: priority-first rewrite after losing 8 Nov. P1 (Must) blocks come first in every subject, then P2, then the timed paper. CAD now takes all of 9-12 Nov; OS starts Wed 11 Nov evening; the CD and DBS starts moved later but their P1 topics all finish well before the exam. Topic lists per block are in `priority-blocks.md`.
+- 9 Nov 21:30: teacher's Module 7 and 8 files added to the repo. CAD M7/M8 are 20 marks each and the teacher's CAT-2 DA lists 8 questions from them, so Mon evening is now M7 (SQS, SNS, fan-out, SWF vs Step Functions) and Tue morning is a new block P1d (six pillars, server migration, DMS, Snow family). The Tue P2 blocks were compressed from three to two.

@@ -6,6 +6,7 @@ Start rule: 25 minutes on the first item, phone away. Then decide.
 
 ## CAD (exam Fri 13 Nov)
 Answer shape for every question: requirement, services, small diagram, one line of "why" per requirement.
+Modules 7 and 8 are worth 20 marks each, and your teacher's CAT-2 DA lists 8 questions all from them (see `_prep/study-guide/CAD-slide-map.md`, end of file). Those 8 are the likely FAT questions.
 - **P1a Mon 9 AM**
   - [ ] VPC: public/private subnet, IGW, NAT, route tables (5 of 5 papers). Draw the standard diagram twice.
   - [ ] IAM: users, groups, roles, policies, MFA, least privilege (4/5)
@@ -14,22 +15,28 @@ Answer shape for every question: requirement, services, small diagram, one line 
   - [ ] RDS Multi-AZ vs Read Replica (4/5)
   - [ ] RDS vs Aurora vs DynamoDB choice (3/5)
   - [ ] CloudWatch + CloudTrail + Config together (4/5)
-- **P1c Mon 9 Eve**
-  - [ ] SQS, SNS, Step Functions, SWF (4/5)
-  - [ ] Snow family: Snowball, Snowball Edge, Snowmobile, when to use each (4/5)
-- **P2a Tue 10 AM**
+- **P1c Mon 9 Eve** (teacher's Module 7 files, from 21:00, stop by 22:45 and sleep)
+  - [ ] SQS vs SNS: delivery, communication, use cases (DA Q1; SQS p.2-10, SNS p.2-14)
+  - [ ] Fan-out pattern with SNS + SQS for an order flow (DA Q2; SQS p.18-19)
+  - [ ] SWF vs Step Functions with an example (DA Q3; Module-7 p.2-19)
+  - [ ] Standard vs Express workflows (DA Q4; external Module 7 p.66-68)
+- **P1d Tue 10 AM** (teacher's Module 7 and 8 files)
+  - [ ] Six Well-Architected pillars, one line of principles each (DA Q5; Module-7 p.20-29) (2/5 papers)
+  - [ ] Server migration: SMS and Transform MGN steps, plus challenges (DA Q6; M8 p.7-11) (3/5)
+  - [ ] DMS: how it works, features, sources and targets (DA Q7; M8 p.12-19) (3/5)
+  - [ ] Snowball, Snowball Edge, Snowmobile: capacity and when to use each (DA Q8; M8 p.20-33) (4/5)
+  - [ ] Hybrid services names (Outposts, Storage Gateway, DataSync, Direct Connect...) one line each (M8 p.4-6)
+  - [ ] Schema Conversion Tool: one paragraph from external Module 8 pp.15-29
+- **P2a Tue 10 PM**
   - [ ] EC2 launch steps (9), instance types, lifecycle (2/5)
   - [ ] Auto Scaling + ELB (3/5)
   - [ ] Storage choice: S3, EBS, EFS, Glacier, lifecycle (3/5)
-- **P2b Tue 10 PM**
   - [ ] KMS and encryption types (3/5)
+- **P2b Tue 10 Eve**
   - [ ] WAF rules, Shield (3/5 each)
   - [ ] Cost control: Budgets, Cost Explorer, Trusted Advisor (3/5)
-- **P2c Tue 10 Eve**
-  - [ ] DMS + Schema Conversion Tool, Server Migration Service (3/5 each)
-  - [ ] Well-Architected pillars and HA design (2/5)
   - [ ] Security group vs NACL, VPN / Direct Connect / peering, CloudFront (2/5)
-  - [ ] Systems Manager + Config remediation (2/5), NIST definition and global infrastructure (2/5)
+  - [ ] Systems Manager + Config remediation (2/5); NIST definition and global infrastructure (2/5) (cut these two first if you run out of time)
 - **Wed 11 AM and PM**: two timed papers (A1'25, then G1'25), 3 hours each is too long, so do 5 questions in 90 min, then fix gaps.
 - **Thu 12 AM**: close the notes, write the 6 P1 topics from memory, then pick which either/or questions you will choose (see `_prep/analysis/CAD.md`).
 
