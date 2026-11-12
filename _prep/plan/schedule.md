@@ -1,6 +1,6 @@
 # FAT study schedule: 7 Nov to 30 Nov 2026
 
-Last updated: Mon 9 Nov 2026, 21:30 IST (priority-first version, CAD M7/M8 from teacher's files). Owner: V C Pavitran. Edit this file when the plan changes (and note why at the bottom).
+Last updated: Thu 12 Nov 2026, 16:00 IST (priority-first version, CAD M7/M8 from teacher's files, marks update). Owner: V C Pavitran. Edit this file when the plan changes (and note why at the bottom).
 
 ## Exam dates (FAT, all FN)
 | Date | Course | Time |
@@ -49,20 +49,20 @@ Legend: 🟧 CAD 🟦 OS 🟪 AI 🟩 DBS 🟥 CD 🟨 CN 🟫 ACC ⬜ Constitut
 | **19 Nov Thu** | ⬛ **EXAM · AI** | 🟩 DBS P1d · serializability, ACID | 🟩 DBS P1e · 2PL, NoSQL, CAP |
 | 20 Nov Fri | 🟩 DBS P2a · rel. algebra, decomp. | 🟩 DBS P2b · recovery, deadlock, TO | 🟩 DBS mixed problems |
 | 21 Nov Sat | 🟩 DBS timed paper | 🟩 DBS weak spots | 🟩 _light DBS recall_ |
-| **22 Nov Sun** | ⬛ **EXAM · DBS** | 🟫 ACC P1 · Java I/O, arrays, sieve | 🟫 ACC P2 · bits, sorting, strings |
-| 23 Nov Mon | 🟫 ACC P2 · recursion, backtracking | 🟥 CD P1a · phases, regex→DFA | 🟥 CD P1b · FIRST/FOLLOW, LL(1) |
+| **22 Nov Sun** | ⬛ **EXAM · DBS** | 🟫 ACC P1 · Java I/O, arrays, sieve | 🟥 CD P1a · phases, regex→DFA |
+| 23 Nov Mon | 🟫 ACC P2 · bits, strings, backtracking | 🟥 CD P1b · FIRST/FOLLOW, LL(1) | 🟥 CD P1c · SDD / SDT |
 | **24 Nov Tue** | ⬛ **ACC quick run, EXAM 11:00** | 🟨 CN P1a · M1–3: delay, CRC, MAC | 🟨 CN P1b · subnet, frag, routing |
 | 25 Nov Wed | 🟨 CN P1c · congestion, DNS, HTTP | 🟨 CN timed paper + gaps | 🟨 _light CN recall_ |
-| **26 Nov Thu** | ⬛ **EXAM · CN** | 🟥 CD P1c · SDD / SDT | 🟥 CD P1d · TAC, quads, backpatching |
-| 27 Nov Fri | 🟥 CD P1e · basic blocks, optimisation | 🟥 CD P1f · scheduling, parallelism | ⬜ Indian Constitution |
-| **28 Nov Sat** | ⬛ **EXAM · Constitution 9:00** | 🟥 CD P2a · LALR/CLR, SLR, DAG | 🟥 CD P2b · reg. alloc, codegen, Lex |
+| **26 Nov Thu** | ⬛ **EXAM · CN** | 🟥 CD P1d · TAC, quads, backpatching | 🟥 CD P1e · basic blocks, optimisation |
+| 27 Nov Fri | 🟥 CD P1f · scheduling, parallelism | 🟥 CD P2a · LALR/CLR, SLR, DAG | ⬜ Indian Constitution |
+| **28 Nov Sat** | ⬛ **EXAM · Constitution 9:00** | 🟥 CD P2b · reg. alloc, codegen, Lex | 🟥 CD mixed problems 1 |
 | 29 Nov Sun | 🟥 CD mixed problems | 🟥 CD timed paper + gaps | 🟥 _light CD recall_ |
 | **30 Nov Mon** | ⬛ **EXAM · CD** |  |  |
 
 Also: one ACC (Java) program a day as a 30-minute warm-up from 7 Nov.
 
 ## Block counts (full study blocks, from 9 Nov)
-CAD 8 (+ 2 recall), OS 6, AI 8, DBS 10, ACC 3 (+ daily warm-ups), CN 3, CD 11, Indian Constitution 1. OS and CN were trimmed from the first version because their P1 topics are mostly numericals you already do well.
+CAD 8 (+ 2 recall), OS 6, AI 8, DBS 10, ACC 2 (+ daily warm-ups), CN 3, CD 12, Indian Constitution 1. OS and CN were trimmed from the first version because their P1 topics are mostly numericals you already do well.
 
 ## Rules for adjusting
 - If you fall behind, cut the P2 topics of the next block (and P3 always). Never cut P1.
@@ -74,3 +74,4 @@ CAD 8 (+ 2 recall), OS 6, AI 8, DBS 10, ACC 3 (+ daily warm-ups), CN 3, CD 11, I
 - 6 Nov 23:10: first version. Built from the 7 syllabi, the FAT timetable, and self-ratings (see `context.md`). Block counts rebalanced after learning CN and OS numericals are strong and DBS, CD, OS semaphores are weak.
 - 8 Nov 22:45: priority-first rewrite after losing 8 Nov. P1 (Must) blocks come first in every subject, then P2, then the timed paper. CAD now takes all of 9-12 Nov; OS starts Wed 11 Nov evening; the CD and DBS starts moved later but their P1 topics all finish well before the exam. Topic lists per block are in `priority-blocks.md`.
 - 9 Nov 21:30: teacher's Module 7 and 8 files added to the repo. CAD M7/M8 are 20 marks each and the teacher's CAT-2 DA lists 8 questions from them, so Mon evening is now M7 (SQS, SNS, fan-out, SWF vs Step Functions) and Tue morning is a new block P1d (six pillars, server migration, DMS, Snow family). The Tue P2 blocks were compressed from three to two.
+- 12 Nov 16:00: new internal marks posted (AI quizzes II and III, CAD CAT-II 10/50, CD CAT-II 22/50). ACC already meets the pass criteria, so one ACC block (Sun 22 Eve) was given to CD, which starts a block earlier and gains a mixed-problems block on Sat 28 Eve. DBS and CD stay the highest-risk subjects; any spare block goes to DBS.
