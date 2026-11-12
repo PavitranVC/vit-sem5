@@ -16,18 +16,18 @@
 | Computer Networks (CN) | knows most numericals; relaxed | low |
 | Advanced Competitive Coding (ACC) | starting fresh; relaxed | low |
 
-## Internal marks posted so far (weightage marks)
-Partial: some components are not posted yet. Percentage is posted marks over posted weightage.
+## Internal marks posted so far (weightage marks), updated Thu 12 Nov 2026
+Percentage is posted marks over posted weightage. DBS, CN and CD have only part of their internals posted (50, 50 and 30 out of a usual 60).
 | Course | Posted | % | Notes |
 |---|---|---|---|
-| ACC | 50.5 / 60 | 84 | CAT-I 23/30, CAT-II 18/30 |
-| CN | 33.8 / 50 | 68 | CAT-I 28/50, CAT-II 28/50 |
-| OS | 39.7 / 60 | 66 | CAT-I 33/50, CAT-II 21/50 |
-| CAD | 37.8 / 60 | 63 | CAT-I 31/50, CAT-II 5/50 |
-| CD | 8.4 / 15 | 56 | only CAT-I (28/50) posted; CAT-II below 15/50 per the student |
-| DBS | 24.5 / 50 | 49 | CAT-I 19/50, CAT-II 16/50 |
-| AI | 19.1 / 40 | 48 | CAT-I 26/50, CAT-II 21/50 |
-Labs (CN, OS, DBS) are at or near full marks. Grading is relative, so exact FAT targets cannot be computed.
+| ACC | 50.5 / 60 | 84 | CAT-I 23/30, CAT-II 18/30; STS pass criteria already met |
+| CN | 33.8 / 50 | 68 | CAT-I 28/50, CAT-II 28/50; Quiz I not posted |
+| OS | 39.7 / 60 | 66 | CAT-I 33/50, CAT-II 21/50; portal: needs only 40/100 in FAT to pass |
+| CAD | 39.3 / 60 | 66 | CAT-I 31/50, CAT-II 10/50 (marked slow learner); portal: needs only 40/100 in FAT |
+| AI | 38.1 / 60 | 64 | CAT-I 26/50, CAT-II 21/50, quizzes 5, 9, 10; portal: needs only 40/100 in FAT |
+| CD | 15.0 / 30 | 50 | CAT-I 28/50, CAT-II 22/50; rest not posted |
+| DBS | 24.5 / 50 | 49 | CAT-I 19/50, CAT-II 16/50, quizzes 7 and 7; rest not posted |
+Labs: CN lab 88/100, OS lab 87/100, DBS lab 69/70. Grading is relative, so exact FAT targets cannot be computed.
 
 ## Conventions
 - The folder `AWS/` is the course Cloud Architecture Design (CAD, BCSE355L).

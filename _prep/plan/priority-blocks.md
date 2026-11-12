@@ -82,10 +82,9 @@ Say the word and I will teach each block step by step with your slides' notation
 - **Fri 20 Eve and Sat 21**: mixed problems, timed paper, weak spots.
 
 ## ACC (practical Tue 24 Nov, 11:00-12:30)
-No papers exist, so this is a guess from the syllabus. Warm-up every day from now: one Java program, 30 minutes, written from a blank file.
+No papers exist, so this is a guess from the syllabus. ACC internals are 50.5/60 and the portal says the STS pass criteria are already met, so ACC is the safest subject: it gets 2 blocks, and the freed block goes to CD. Warm-up every day: one Java program, 30 minutes, written from a blank file.
 - **P1 Sun 22 PM**: Java I/O, loops and class structure; arrays (max product subarray, leaders, majority element); sieve
-- **P2 Sun 22 Eve**: bit tricks and GCD; quick sort and selection sort; string problems (palindromes, weighted substring)
-- **P2 Mon 23 AM**: recursion and backtracking (N-Queens, maze, permutations); activity selection and Kruskal if time
+- **P2 Mon 23 AM**: bit tricks and GCD; quick sort and selection sort; string problems; recursion and backtracking (N-Queens, maze, permutations)
 
 ## CN (exam Thu 26 Nov)
 You know most numericals, so this is mostly a fast pass with timed practice.
@@ -95,15 +94,16 @@ You know most numericals, so this is mostly a fast pass with timed practice.
 - **Wed 25 PM**: timed paper + gaps. Evening: light recall.
 
 ## CD (exam Mon 30 Nov)
-Order matters here because later topics build on earlier ones. All P1 are done by Fri 27 PM, with 3 days spare.
-- **P1a Mon 23 PM**: phases of a compiler on a code snippet (6/7); regex to DFA by direct method (P2, 4/7)
-- **P1b Mon 23 Eve**: FIRST, FOLLOW and LL(1) table (5/7)
-- **P1c Thu 26 PM**: SDD / SDT, attribute grammars (7/7)
-- **P1d Thu 26 Eve**: three-address code, quadruples, triples, indirect triples (6/7); backpatching (5/7)
-- **P1e Fri 27 AM**: basic blocks and flow graph (7/7); identify and apply optimisation techniques (5/7)
-- **P1f Fri 27 PM**: instruction scheduling, software pipelining, parallelism (6/7)
-- **P2a Sat 28 PM**: LALR(1) / CLR(1) items and table (4/7); SLR(1) table and conflicts (3/7); DAG of a basic block (3/7)
-- **P2b Sat 28 Eve**: register allocation (4/7); code generator design issues (3/7); Lex program, Thompson NFA (3/7)
+Order matters here because later topics build on earlier ones. CD internals are only 15/30 posted and it is one of your two most worried subjects, so it got one extra block (taken from ACC). All P1 are done by Fri 27 AM, with 3 days spare.
+- **P1a Sun 22 Eve**: phases of a compiler on a code snippet (6/7); regex to DFA by direct method (P2, 4/7)
+- **P1b Mon 23 PM**: FIRST, FOLLOW and LL(1) table (5/7)
+- **P1c Mon 23 Eve**: SDD / SDT, attribute grammars (7/7)
+- **P1d Thu 26 PM**: three-address code, quadruples, triples, indirect triples (6/7); backpatching (5/7)
+- **P1e Thu 26 Eve**: basic blocks and flow graph (7/7); identify and apply optimisation techniques (5/7)
+- **P1f Fri 27 AM**: instruction scheduling, software pipelining, parallelism (6/7)
+- **P2a Fri 27 PM**: LALR(1) / CLR(1) items and table (4/7); SLR(1) table and conflicts (3/7); DAG of a basic block (3/7)
+- **P2b Sat 28 PM**: register allocation (4/7); code generator design issues (3/7); Lex program, Thompson NFA (3/7)
+- **Sat 28 Eve**: mixed problems from past papers (extra block)
 - **Sun 29**: mixed problems, timed paper + gaps, light recall.
 
 ## Indian Constitution (exam Sat 28 Nov, 1 hour)

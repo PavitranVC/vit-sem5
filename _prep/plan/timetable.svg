@@ -159,16 +159,16 @@
 <text x="158" y="780" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · DBS</text>
 <rect x="483" y="758" width="340" height="34" rx="6" fill="#FBCFE8"/><rect x="483" y="758" width="8" height="34" rx="3" fill="#EC4899"/>
 <text x="501" y="780" font-size="14" font-weight="600" fill="#111827">ACC P1 · Java I/O, arrays, sieve</text>
-<rect x="826" y="758" width="340" height="34" rx="6" fill="#FBCFE8"/><rect x="826" y="758" width="8" height="34" rx="3" fill="#EC4899"/>
-<text x="844" y="780" font-size="14" font-weight="600" fill="#111827">ACC P2 · bits, sorting, strings</text>
+<rect x="826" y="758" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="758" width="8" height="34" rx="3" fill="#EF4444"/>
+<text x="844" y="780" font-size="14" font-weight="600" fill="#111827">CD P1a · phases, regex→DFA</text>
 <rect x="20" y="796" width="117" height="34" rx="6" fill="#f3f4f6"/>
 <text x="30" y="818" font-size="15" font-weight="700" fill="#111827">23 Nov <tspan font-weight="500" fill="#4b5563">Mon</tspan></text>
 <rect x="140" y="796" width="340" height="34" rx="6" fill="#FBCFE8"/><rect x="140" y="796" width="8" height="34" rx="3" fill="#EC4899"/>
-<text x="158" y="818" font-size="14" font-weight="600" fill="#111827">ACC P2 · recursion, backtracking</text>
+<text x="158" y="818" font-size="14" font-weight="600" fill="#111827">ACC P2 · bits, strings, backtracking</text>
 <rect x="483" y="796" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="796" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="501" y="818" font-size="14" font-weight="600" fill="#111827">CD P1a · phases, regex→DFA</text>
+<text x="501" y="818" font-size="14" font-weight="600" fill="#111827">CD P1b · FIRST/FOLLOW, LL(1)</text>
 <rect x="826" y="796" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="796" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="844" y="818" font-size="14" font-weight="600" fill="#111827">CD P1b · FIRST/FOLLOW, LL(1)</text>
+<text x="844" y="818" font-size="14" font-weight="600" fill="#111827">CD P1c · SDD / SDT</text>
 <rect x="20" y="834" width="117" height="34" rx="6" fill="#fde68a"/>
 <text x="30" y="856" font-size="15" font-weight="700" fill="#111827">24 Nov <tspan font-weight="500" fill="#4b5563">Tue</tspan></text>
 <rect x="140" y="834" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="834" width="8" height="34" rx="3" fill="#EC4899"/>
@@ -190,15 +190,15 @@
 <rect x="140" y="910" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="910" width="8" height="34" rx="3" fill="#06B6D4"/>
 <text x="158" y="932" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · CN</text>
 <rect x="483" y="910" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="910" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="501" y="932" font-size="14" font-weight="600" fill="#111827">CD P1c · SDD / SDT</text>
+<text x="501" y="932" font-size="14" font-weight="600" fill="#111827">CD P1d · TAC, quads, backpatching</text>
 <rect x="826" y="910" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="910" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="844" y="932" font-size="14" font-weight="600" fill="#111827">CD P1d · TAC, quads, backpatching</text>
+<text x="844" y="932" font-size="14" font-weight="600" fill="#111827">CD P1e · basic blocks, optimisation</text>
 <rect x="20" y="948" width="117" height="34" rx="6" fill="#f3f4f6"/>
 <text x="30" y="970" font-size="15" font-weight="700" fill="#111827">27 Nov <tspan font-weight="500" fill="#4b5563">Fri</tspan></text>
 <rect x="140" y="948" width="340" height="34" rx="6" fill="#FECACA"/><rect x="140" y="948" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="158" y="970" font-size="14" font-weight="600" fill="#111827">CD P1e · basic blocks, optimisation</text>
+<text x="158" y="970" font-size="14" font-weight="600" fill="#111827">CD P1f · scheduling, parallelism</text>
 <rect x="483" y="948" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="948" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="501" y="970" font-size="14" font-weight="600" fill="#111827">CD P1f · scheduling, parallelism</text>
+<text x="501" y="970" font-size="14" font-weight="600" fill="#111827">CD P2a · LALR/CLR, SLR, DAG</text>
 <rect x="826" y="948" width="340" height="34" rx="6" fill="#D9F99D"/><rect x="826" y="948" width="8" height="34" rx="3" fill="#84CC16"/>
 <text x="844" y="970" font-size="14" font-weight="600" fill="#111827">Indian Constitution</text>
 <rect x="20" y="986" width="117" height="34" rx="6" fill="#fde68a"/>
@@ -206,9 +206,9 @@
 <rect x="140" y="986" width="340" height="34" rx="6" fill="#111827"/><rect x="140" y="986" width="8" height="34" rx="3" fill="#84CC16"/>
 <text x="158" y="1008" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="0.5">EXAM · Constitution 9:00</text>
 <rect x="483" y="986" width="340" height="34" rx="6" fill="#FECACA"/><rect x="483" y="986" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="501" y="1008" font-size="14" font-weight="600" fill="#111827">CD P2a · LALR/CLR, SLR, DAG</text>
+<text x="501" y="1008" font-size="14" font-weight="600" fill="#111827">CD P2b · reg. alloc, codegen, Lex</text>
 <rect x="826" y="986" width="340" height="34" rx="6" fill="#FECACA"/><rect x="826" y="986" width="8" height="34" rx="3" fill="#EF4444"/>
-<text x="844" y="1008" font-size="14" font-weight="600" fill="#111827">CD P2b · reg. alloc, codegen, Lex</text>
+<text x="844" y="1008" font-size="14" font-weight="600" fill="#111827">CD mixed problems 1</text>
 <rect x="20" y="1024" width="117" height="34" rx="6" fill="#e5e7eb"/>
 <text x="30" y="1046" font-size="15" font-weight="700" fill="#111827">29 Nov <tspan font-weight="500" fill="#4b5563">Sun</tspan></text>
 <rect x="140" y="1024" width="340" height="34" rx="6" fill="#FECACA"/><rect x="140" y="1024" width="8" height="34" rx="3" fill="#EF4444"/>
