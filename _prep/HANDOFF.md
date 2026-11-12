@@ -1,6 +1,6 @@
 # Handoff for another AI agent (Antigravity, Gemini, Cursor, anything)
 
-Read this first, then `_prep/README.md`, `_prep/plan/priority-blocks.md`, `_prep/context.md`. Last updated Thu 12 Nov 2026, 15:45 IST.
+Read this first, then `_prep/README.md`, `_prep/plan/priority-blocks.md`, `_prep/context.md`. Last updated Thu 12 Nov 2026, 19:50 IST.
 
 ## Who and what
 V C Pavitran, VIT Vellore B.Tech CSE. FAT exams 13-30 Nov 2026 (dates in `_prep/plan/schedule.md`). He started late, panics when he sits down to study, and learns badly by passively reading slides. Be calm, short, practical. Remind him to sleep (by midnight on the night before an exam).
@@ -13,6 +13,7 @@ V C Pavitran, VIT Vellore B.Tech CSE. FAT exams 13-30 Nov 2026 (dates in `_prep/
 ## State right now
 - His exam tomorrow is CAD (Cloud Architecture Design, folder `AWS/`), Fri 13 Nov 9:30. He has prepared Module 1 only. Everything else is from scratch.
 - CAD FAT shape: 10 questions x 10 marks, one scenario question per module, answers are designs. Modules 1, 2, 4, 6 weigh 10 marks each; 3, 5, 7, 8 weigh 20. About 10 of the 50 questions give a choice.
+- Update 19:40: he has already started with Antigravity, which is asking the most important questions and showing a model answer for him to write out and compare. KEEP DOING THAT; do not restart Module 1 or go back to reading slides. He has done Module 1 only, so do not spend more time on it.
 - Teaching method that works for him: TEST him, do not lecture. Ask one question, let him answer in his own words, say what is right, correct the missing part in 2-3 lines, ask the next. A session of 5 questions per topic gives him proof he remembers.
 
 ## CAD triage for the last ~18 hours (priority order, from `_prep/analysis/CAD.md` and `_prep/plan/priority-blocks.md`)
@@ -21,6 +22,9 @@ P2 (3 of 5): EC2 launch steps, Auto Scaling + ELB, S3/EBS/EFS/Glacier choice, KM
 Teacher's CAT-2 DA lists 8 likely questions, all Modules 7 and 8: SQS vs SNS, fan-out with SNS+SQS, SWF vs Step Functions, Standard vs Express workflows, six pillars, server migration, DMS, Snowball family. Page map: end of `_prep/study-guide/CAD-slide-map.md`.
 Answer template he should use for every scenario: 1) restate the requirement, 2) name the services, 3) small diagram, 4) one line of why per requirement (availability, scalability, security, cost).
 Already covered with him in chat: public vs private subnet, NAT vs IGW, security group vs NACL. Next quiz question was "list the VPC components for a web tier + database tier".
+
+## The plan to follow (do not reorder)
+Tonight's order, strictly: P1 topics first (VPC, IAM, RDS Multi-AZ vs read replica, CloudWatch/CloudTrail/Config, SQS/SNS/Step Functions/SWF, Snow family), then the 8 DA questions for Modules 7 and 8, then P2 topics only if time is left. Each P1 topic: question, he writes the answer, model answer, he fixes it. After each topic, tick it in `_prep/plan/priority-blocks.md` (CAD section) in your reply, do not edit the file. Stop at 23:30 and let him sleep; the exam is 9:30 tomorrow. In the morning: 20 minutes of closed-book recall of the 6 P1 topics only.
 
 ## Suggested session shape for tomorrow-before-exam and tonight
 1. Quiz him on the 6 P1 topics, 5 questions each, using the slides in `AWS/`.
