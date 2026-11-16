@@ -1,0 +1,165 @@
+[
+ {
+  "target": "BCSE355L-FAT-A2-Fall-2026-2027",
+  "slot1_used": "BCSE355L-FAT-A1-2026-2027",
+  "train_papers": 19,
+  "predicted_top10": [
+   {
+    "topic": "WAF / Shield / GuardDuty",
+    "p": 0.889,
+    "ratio": "6 of 6",
+    "hit": true
+   },
+   {
+    "topic": "VPC design (subnets/IGW/NAT)",
+    "p": 0.889,
+    "ratio": "6 of 6",
+    "hit": true
+   },
+   {
+    "topic": "CloudWatch / CloudTrail / Config",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": true
+   },
+   {
+    "topic": "RDS Multi-AZ / read replica",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": true
+   },
+   {
+    "topic": "Snow family",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": true
+   },
+   {
+    "topic": "Auto Scaling + ELB",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": true
+   },
+   {
+    "topic": "Cloud models / shared responsibility",
+    "p": 0.667,
+    "ratio": "4 of 6",
+    "hit": false
+   },
+   {
+    "topic": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+    "p": 0.667,
+    "ratio": "4 of 6",
+    "hit": true
+   },
+   {
+    "topic": "SQS / SNS",
+    "p": 0.667,
+    "ratio": "4 of 6",
+    "hit": false
+   },
+   {
+    "topic": "IAM users/groups/roles/policies",
+    "p": 0.556,
+    "ratio": "4 of 6",
+    "hit": false
+   }
+  ],
+  "hits": 7,
+  "of": 10,
+  "precision": "7 of 10",
+  "recall": "7 of 12 distinct target topics",
+  "naive_older_fat_top10_hits": "7 of 10",
+  "slot1_topic_overlap": "8 of 12 target topics also in slot-1 FAT",
+  "missed_target_topics": [
+   "Global infrastructure / multi-region DR",
+   "Route 53 routing policies",
+   "Server migration / 6 Rs",
+   "Step Functions / SWF",
+   "Well-Architected pillars"
+  ]
+ },
+ {
+  "target": "BCSE355L-FAT-B2-2026-2027",
+  "slot1_used": "BCSE355L-FAT-B1-2026-2027",
+  "train_papers": 19,
+  "predicted_top10": [
+   {
+    "topic": "WAF / Shield / GuardDuty",
+    "p": 0.889,
+    "ratio": "6 of 6",
+    "hit": false
+   },
+   {
+    "topic": "VPC design (subnets/IGW/NAT)",
+    "p": 0.889,
+    "ratio": "6 of 6",
+    "hit": false
+   },
+   {
+    "topic": "RDS Multi-AZ / read replica",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": false
+   },
+   {
+    "topic": "Snow family",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": true
+   },
+   {
+    "topic": "IAM users/groups/roles/policies",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": true
+   },
+   {
+    "topic": "Auto Scaling + ELB",
+    "p": 0.778,
+    "ratio": "5 of 6",
+    "hit": false
+   },
+   {
+    "topic": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+    "p": 0.667,
+    "ratio": "4 of 6",
+    "hit": false
+   },
+   {
+    "topic": "SQS / SNS",
+    "p": 0.667,
+    "ratio": "4 of 6",
+    "hit": false
+   },
+   {
+    "topic": "CloudWatch / CloudTrail / Config",
+    "p": 0.556,
+    "ratio": "4 of 6",
+    "hit": true
+   },
+   {
+    "topic": "Cloud models / shared responsibility",
+    "p": 0.444,
+    "ratio": "3 of 6",
+    "hit": false
+   }
+  ],
+  "hits": 3,
+  "of": 10,
+  "precision": "3 of 10",
+  "recall": "3 of 11 distinct target topics",
+  "naive_older_fat_top10_hits": "3 of 10",
+  "slot1_topic_overlap": "2 of 11 target topics also in slot-1 FAT",
+  "missed_target_topics": [
+   "Aurora",
+   "CloudFront",
+   "DMS",
+   "DynamoDB",
+   "EC2 instance types / launch / pricing",
+   "KMS / encryption",
+   "Server migration / 6 Rs",
+   "Step Functions / SWF"
+  ]
+ }
+]

@@ -1,0 +1,171 @@
+[
+ {
+  "target": "BCSE303L-FAT-A2-2026-2027",
+  "slot1_used": "BCSE303L-FAT-A1-2026-2027",
+  "train_papers": 23,
+  "predicted_top10": [
+   {
+    "topic": "Disk scheduling",
+    "p": 0.909,
+    "ratio": "8 of 8",
+    "hit": true
+   },
+   {
+    "topic": "CPU scheduling (FCFS/SJF/RR/priority)",
+    "p": 0.909,
+    "ratio": "8 of 8",
+    "hit": true
+   },
+   {
+    "topic": "File allocation methods",
+    "p": 0.818,
+    "ratio": "7 of 8",
+    "hit": true
+   },
+   {
+    "topic": "Banker's algorithm",
+    "p": 0.818,
+    "ratio": "7 of 8",
+    "hit": true
+   },
+   {
+    "topic": "Critical section: Peterson / TSL / mutex / bakery",
+    "p": 0.727,
+    "ratio": "6 of 8",
+    "hit": false
+   },
+   {
+    "topic": "Semaphores / producer-consumer",
+    "p": 0.636,
+    "ratio": "6 of 8",
+    "hit": true
+   },
+   {
+    "topic": "OS structure / functions / types",
+    "p": 0.545,
+    "ratio": "4 of 8",
+    "hit": true
+   },
+   {
+    "topic": "Page replacement (FIFO/LRU/Optimal)",
+    "p": 0.545,
+    "ratio": "5 of 8",
+    "hit": false
+   },
+   {
+    "topic": "Contiguous allocation (first/best/worst fit)",
+    "p": 0.545,
+    "ratio": "4 of 8",
+    "hit": false
+   },
+   {
+    "topic": "System calls / fork",
+    "p": 0.545,
+    "ratio": "5 of 8",
+    "hit": false
+   }
+  ],
+  "hits": 6,
+  "of": 10,
+  "precision": "6 of 10",
+  "recall": "6 of 15 distinct target topics",
+  "naive_older_fat_top10_hits": "7 of 10",
+  "slot1_topic_overlap": "8 of 15 target topics also in slot-1 FAT",
+  "missed_target_topics": [
+   "Deadlock conditions/prevention",
+   "Deadlock detection / RAG",
+   "Directory structure",
+   "Protection / access matrix",
+   "Security threats",
+   "Segmentation",
+   "TLB / EAT",
+   "Threads / multithreading",
+   "Virtual machines / hypervisor"
+  ]
+ },
+ {
+  "target": "BCSE303L-FAT-B2-Fall-2026-27",
+  "slot1_used": "BCSE303L-FAT-B1-2026-2027",
+  "train_papers": 23,
+  "predicted_top10": [
+   {
+    "topic": "Disk scheduling",
+    "p": 0.909,
+    "ratio": "8 of 8",
+    "hit": true
+   },
+   {
+    "topic": "CPU scheduling (FCFS/SJF/RR/priority)",
+    "p": 0.909,
+    "ratio": "8 of 8",
+    "hit": false
+   },
+   {
+    "topic": "Banker's algorithm",
+    "p": 0.818,
+    "ratio": "7 of 8",
+    "hit": true
+   },
+   {
+    "topic": "Page replacement (FIFO/LRU/Optimal)",
+    "p": 0.727,
+    "ratio": "6 of 8",
+    "hit": false
+   },
+   {
+    "topic": "Virtual machines / hypervisor",
+    "p": 0.727,
+    "ratio": "6 of 8",
+    "hit": true
+   },
+   {
+    "topic": "Threads / multithreading",
+    "p": 0.727,
+    "ratio": "6 of 8",
+    "hit": false
+   },
+   {
+    "topic": "Semaphores / producer-consumer",
+    "p": 0.636,
+    "ratio": "6 of 8",
+    "hit": false
+   },
+   {
+    "topic": "File allocation methods",
+    "p": 0.636,
+    "ratio": "6 of 8",
+    "hit": true
+   },
+   {
+    "topic": "OS structure / functions / types",
+    "p": 0.545,
+    "ratio": "4 of 8",
+    "hit": true
+   },
+   {
+    "topic": "Critical section: Peterson / TSL / mutex / bakery",
+    "p": 0.545,
+    "ratio": "5 of 8",
+    "hit": true
+   }
+  ],
+  "hits": 6,
+  "of": 10,
+  "precision": "6 of 10",
+  "recall": "6 of 16 distinct target topics",
+  "naive_older_fat_top10_hits": "5 of 10",
+  "slot1_topic_overlap": "5 of 16 target topics also in slot-1 FAT",
+  "missed_target_topics": [
+   "Demand paging",
+   "Dining philosophers",
+   "Directory structure",
+   "Disk structure / addressing",
+   "Distributed file systems",
+   "Dual-mode operation",
+   "Paging / address translation",
+   "Protection / access matrix",
+   "TLB / EAT",
+   "Thrashing / working set"
+  ]
+ }
+]

@@ -12,7 +12,7 @@ BASE = "_prep/analysis"
 COLS = ["subject", "course_code", "year", "exam", "slot", "q_no", "marks", "syllabus_module", "type",
         "bloom_level", "file_name", "has_scenario_wrapper", "one_line_core_task", "ocr_flag",
         "topic", "or_group", "has_figure", "page", "is_answer_key", "step_marks", "required_keywords",
-        "penalties", "key_final_answer", "batch_id"]
+        "penalties", "key_final_answer", "batch_id", "marks_imputed"]
 TYPES = {"numerical", "trace", "theory", "scenario"}
 # Files whose filename year is wrong (verified from the printed header). Never rename the PDFs.
 # Rows corrected after orchestrator re-read (see <subject>/verification.md)
@@ -50,6 +50,27 @@ def load(prefix):
     return rows, papers, errs
 
 
+def impute_marks(rows, papers):
+    """Fill empty leaf marks from an 'N x M' paper header. Marked marks_imputed=1. Never overrides printed marks."""
+    pm = {p.get("file_name"): p for p in papers}
+    by = defaultdict(lambda: defaultdict(list))
+    for r in rows:
+        by[r.get("file_name")][(r.get("or_group") or "") + "|" + (str(r.get("q_no")).split(".")[0].lower() if r.get("or_group") else root_q(r.get("q_no")))].append(r)
+    for f, groups in by.items():
+        p = pm.get(f, {})
+        m = re.search(r"(\d+)\s*[xX×*]\s*(\d+)", str(p.get("instructions", "")) + " " + str(p.get("notes", "")))
+        if not m:
+            continue
+        per = float(m.group(2))
+        for key, rs in groups.items():
+            known = sum(num(r.get("marks")) or 0 for r in rs if num(r.get("marks")) is not None)
+            unk = [r for r in rs if num(r.get("marks")) is None]
+            if unk and known < per:
+                for r in unk:
+                    r["marks"] = round((per - known) / len(unk), 2)
+                    r["marks_imputed"] = 1
+
+
 def root_q(q):
     m = re.match(r"\s*Q?(\d+)", str(q))
     return m.group(1) if m else str(q)
@@ -75,7 +96,7 @@ def validate(rows, papers, inv_paths):
         if str(r.get("ocr_flag")) not in ("0", "1"):
             issues.append(f"BAD ocr_flag '{r.get('ocr_flag')}' {tag}")
         mod = str(r.get("syllabus_module", ""))
-        if not (re.match(r"^M[1-7] ", mod) or mod.startswith("derived:")) and str(r.get("ocr_flag")) != "1":
+        if not (re.match(r"^M[1-9] ", mod) or mod.startswith("derived:")) and str(r.get("ocr_flag")) != "1":
             issues.append(f"BAD module '{mod}' {tag}")
     # marks per paper
     pmeta = {p.get("file_name"): p for p in papers}
@@ -128,6 +149,7 @@ def main():
         out = f"{BASE}/{subj}"
         os.makedirs(out, exist_ok=True)
         rows, papers, errs = load(prefix)
+        impute_marks(rows, papers)
         issues, summary = validate(rows, papers, inv_paths)
         with open(f"{out}/questions.csv", "w", newline="", encoding="utf-8") as fh:
             w = csv.writer(fh, delimiter="|")

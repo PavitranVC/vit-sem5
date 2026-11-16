@@ -187,7 +187,7 @@
     "BCSE306L-FAT-D2-2025-2026:Q10a",
     "BCSE306L-FAT-B1-2024-2025:Q10"
    ],
-   "marks_share_fat": 0.062,
+   "marks_share_fat": 0.06,
    "types": {
     "theory": 7,
     "scenario": 1
@@ -238,7 +238,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q1b",
     "BCSE306L-FAT-B1-2024-2025:Q1b"
    ],
-   "marks_share_fat": 0.042,
+   "marks_share_fat": 0.04,
    "types": {
     "theory": 16,
     "scenario": 4
@@ -290,7 +290,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q1b",
     "BCSE306L-FAT-B1-2024-2025:Q1a"
    ],
-   "marks_share_fat": 0.062,
+   "marks_share_fat": 0.06,
    "types": {
     "theory": 14,
     "scenario": 7
@@ -334,7 +334,7 @@
     "BCSE306L-FAT-B1-2026-2027:Q3",
     "BCSE306L-FAT-B1-2024-2025:Q2"
    ],
-   "marks_share_fat": 0.049,
+   "marks_share_fat": 0.048,
    "types": {
     "theory": 4,
     "trace": 6,
@@ -383,7 +383,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q2b",
     "BCSE306L-FAT-B1-2024-2025:Q2"
    ],
-   "marks_share_fat": 0.062,
+   "marks_share_fat": 0.065,
    "types": {
     "trace": 12,
     "theory": 4
@@ -424,7 +424,7 @@
     "BCSE306L-FAT-D1-2025-2026:Q2",
     "BCSE306L-FAT-D2-2025-2026:Q2a"
    ],
-   "marks_share_fat": 0.025,
+   "marks_share_fat": 0.03,
    "types": {
     "trace": 9,
     "theory": 1
@@ -476,7 +476,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q3",
     "BCSE306L-FAT-B1-2024-2025:Q3"
    ],
-   "marks_share_fat": 0.086,
+   "marks_share_fat": 0.083,
    "types": {
     "trace": 14,
     "theory": 2,
@@ -523,7 +523,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q4",
     "BCSE306L-FAT-B1-2024-2025:Q12"
    ],
-   "marks_share_fat": 0.062,
+   "marks_share_fat": 0.06,
    "types": {
     "theory": 9,
     "scenario": 2,
@@ -562,7 +562,7 @@
     "BCSE306L-FAT-D2-2025-2026:Q5",
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q5"
    ],
-   "marks_share_fat": 0.037,
+   "marks_share_fat": 0.036,
    "types": {
     "theory": 4,
     "numerical": 3
@@ -614,7 +614,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q4",
     "BCSE306L-FAT-B1-2024-2025:Q4"
    ],
-   "marks_share_fat": 0.086,
+   "marks_share_fat": 0.083,
    "types": {
     "trace": 18,
     "numerical": 3
@@ -666,7 +666,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q7a",
     "BCSE306L-FAT-B1-2024-2025:Q5"
    ],
-   "marks_share_fat": 0.079,
+   "marks_share_fat": 0.076,
    "types": {
     "theory": 14,
     "trace": 5,
@@ -711,7 +711,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q6",
     "BCSE306L-FAT-B1-2024-2025:Q5"
    ],
-   "marks_share_fat": 0.062,
+   "marks_share_fat": 0.065,
    "types": {
     "trace": 8,
     "scenario": 4,
@@ -754,7 +754,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q7b",
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q7c"
    ],
-   "marks_share_fat": 0.02,
+   "marks_share_fat": 0.031,
    "types": {
     "trace": 11
    }
@@ -802,7 +802,7 @@
     "BCSE306L-FAT-B1-2024-2025:Q11a",
     "BCSE306L-FAT-B1-2024-2025:Q11b"
    ],
-   "marks_share_fat": 0.037,
+   "marks_share_fat": 0.042,
    "types": {
     "numerical": 1,
     "trace": 6,
@@ -881,7 +881,7 @@
     "BCSE306L-FAT-B1-2024-2025:Q6a",
     "BCSE306L-FAT-B1-2024-2025:Q6b"
    ],
-   "marks_share_fat": 0.074,
+   "marks_share_fat": 0.071,
    "types": {
     "numerical": 12,
     "theory": 3
@@ -922,7 +922,7 @@
     "BCSE306L-FAT-B1-2024-2025:Q7a",
     "BCSE306L-FAT-B1-2024-2025:Q7b"
    ],
-   "marks_share_fat": 0.074,
+   "marks_share_fat": 0.071,
    "types": {
     "numerical": 9,
     "theory": 1
@@ -960,7 +960,7 @@
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q4",
     "BCSE306L-FAT-D1-2025-2026:Q8"
    ],
-   "marks_share_fat": 0.025,
+   "marks_share_fat": 0.024,
    "types": {
     "numerical": 7
    }
@@ -1002,7 +1002,7 @@
     "BCSE306L-FAT-B1-2024-2025:Q9A",
     "BCSE306L-FAT-B1-2024-2025:Q9B"
    ],
-   "marks_share_fat": 0.117,
+   "marks_share_fat": 0.113,
    "types": {
     "theory": 8,
     "trace": 1,
@@ -1040,7 +1040,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q9b.2",
     "BCSE306L-FAT-B1-2024-2025:Q8"
    ],
-   "marks_share_fat": 0.062,
+   "marks_share_fat": 0.06,
    "types": {
     "theory": 5,
     "scenario": 1
@@ -1080,7 +1080,7 @@
     "BCSE306L - FAT - G2 - 2025 - Question Paper:Q10b",
     "BCSE306L-FAT-B1-2024-2025:Q10"
    ],
-   "marks_share_fat": 0.111,
+   "marks_share_fat": 0.107,
    "types": {
     "scenario": 3,
     "theory": 6
@@ -1113,7 +1113,7 @@
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q8",
     "BCSE306L-FAT-D1-2025-2026:Q10b"
    ],
-   "marks_share_fat": 0.025,
+   "marks_share_fat": 0.024,
    "types": {
     "theory": 2
    }
@@ -1201,7 +1201,7 @@
   "FAT": {
    "older": {
     "n_q": 88,
-    "marks": 690.0,
+    "marks": 720.0,
     "mean_bloom": 3.26,
     "bloom_dist": {
      "2": 20,
@@ -1211,11 +1211,11 @@
      "6": 9
     },
     "scenario_wrapper_pct_q": 27.3,
-    "scenario_wrapper_pct_marks": 30.9,
+    "scenario_wrapper_pct_marks": 29.6,
     "type_scenario_pct_q": 11.4,
     "computational_marks_pct": 51.7,
-    "theory_marks_pct": 34.3,
-    "num_trace_to_theory_mark_ratio": 1.51,
+    "theory_marks_pct": 35.0,
+    "num_trace_to_theory_mark_ratio": 1.48,
     "papers": 6
    },
    "recent_2026_27": {
@@ -1241,7 +1241,7 @@
   "ALL": {
    "older": {
     "n_q": 183,
-    "marks": 1300.0,
+    "marks": 1330.0,
     "mean_bloom": 3.23,
     "bloom_dist": {
      "1": 4,
@@ -1252,11 +1252,11 @@
      "6": 16
     },
     "scenario_wrapper_pct_q": 26.2,
-    "scenario_wrapper_pct_marks": 31.2,
+    "scenario_wrapper_pct_marks": 30.5,
     "type_scenario_pct_q": 13.7,
     "computational_marks_pct": 50.2,
-    "theory_marks_pct": 32.7,
-    "num_trace_to_theory_mark_ratio": 1.54,
+    "theory_marks_pct": 33.1,
+    "num_trace_to_theory_mark_ratio": 1.52,
     "papers": 19
    },
    "recent_2026_27": {
@@ -1341,7 +1341,7 @@
    },
    "2025": {
     "n_q": 77,
-    "marks": 490.0,
+    "marks": 520.0,
     "mean_bloom": 3.3,
     "bloom_dist": {
      "2": 14,
@@ -1351,11 +1351,11 @@
      "6": 7
     },
     "scenario_wrapper_pct_q": 29.9,
-    "scenario_wrapper_pct_marks": 39.6,
+    "scenario_wrapper_pct_marks": 37.3,
     "type_scenario_pct_q": 10.4,
-    "computational_marks_pct": 51.8,
-    "theory_marks_pct": 31.8,
-    "num_trace_to_theory_mark_ratio": 1.63,
+    "computational_marks_pct": 51.7,
+    "theory_marks_pct": 32.9,
+    "num_trace_to_theory_mark_ratio": 1.57,
     "papers": 7
    },
    "2026": {
@@ -2089,8 +2089,8 @@
    },
    "by_marks_pct": {
     "Identical": 0.0,
-    "Same concept new numbers": 86.0,
-    "Same module only": 14.0,
+    "Same concept new numbers": 84.2,
+    "Same module only": 15.8,
     "Unrelated": 0.0
    },
    "detail": [
@@ -2103,14 +2103,14 @@
     },
     {
      "q": "BCSE306L-FAT-D2-2025-2026:Q2a",
-     "marks": null,
+     "marks": 5.0,
      "category": "Same module only",
      "best_match": "BCSE306L-FAT-D1-2025-2026:Q2",
      "text_sim": 0.06
     },
     {
      "q": "BCSE306L-FAT-D2-2025-2026:Q2b",
-     "marks": null,
+     "marks": 5.0,
      "category": "Same concept new numbers",
      "best_match": "BCSE306L-FAT-D1-2025-2026:Q2",
      "text_sim": 0.15
@@ -2152,14 +2152,14 @@
     },
     {
      "q": "BCSE306L-FAT-D2-2025-2026:Q7a",
-     "marks": null,
+     "marks": 5.0,
      "category": "Same concept new numbers",
      "best_match": "BCSE306L-FAT-D1-2025-2026:Q5b",
      "text_sim": 0.03
     },
     {
      "q": "BCSE306L-FAT-D2-2025-2026:Q7b",
-     "marks": null,
+     "marks": 5.0,
      "category": "Same concept new numbers",
      "best_match": "BCSE306L-FAT-D1-2025-2026:Q6",
      "text_sim": 0.02
@@ -2219,8 +2219,8 @@
   },
   "by_marks_pct": {
    "Identical": 0.0,
-   "Same concept new numbers": 69.1,
-   "Same module only": 30.9,
+   "Same concept new numbers": 69.3,
+   "Same module only": 30.7,
    "Unrelated": 0.0
   }
  },
@@ -2241,9 +2241,9 @@
   },
   "by_marks_pct": {
    "Identical": 0.0,
-   "Same concept new numbers": 66.7,
-   "Same module only": 30.2,
-   "Unrelated": 3.1
+   "Same concept new numbers": 66.3,
+   "Same module only": 30.7,
+   "Unrelated": 3.0
   }
  },
  "cross_letter": [

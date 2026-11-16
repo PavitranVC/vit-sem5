@@ -73,7 +73,7 @@ Suggested teach order (I): tier p >= 0.75 by module (M2 search -> M3 minimax -> 
 | CAT-2 | (numerical+trace) % of marks | 64.7 | 92.0 |
 | FAT | mean Bloom | 3.26 (6) | 2.82 (1 paper: B1) |
 | FAT | scenario wrapper % of questions | 27.3 | 5.9 |
-| FAT | (numerical+trace) : theory marks | 1.51 | 0.77 |
+| FAT | (numerical+trace) : theory marks | 1.48 (marks for unprinted sub-parts imputed from "10 x 10") | 0.77 |
 | all | scenario wrapper % by start year | 2022: 12.5, 2023: 16.1, 2024: 28.4, 2025: 29.9, 2026: 31.7 | |
 
 Reading: topics mostly follow the baseline. The 2026-27 FAT contained 6 of the 10 most frequent pre-2026 FAT archetypes (missing: STRIPS planning, AI foundations, PEAS/environment, Bayes' rule) and 5 lower-frequency ones (agent rationality, 8-puzzle parity, hill climbing, Bayes net, HTN planning) (O). Style is mixed: scenario wrappers rose steadily from 2022 to 2025 (O) and stayed flat in 2026-27 CAT-1. The one 2026-27 FAT is less scenario-heavy and more theory-heavy than older FATs. With n=1 that is **no clear pattern** for the FAT.

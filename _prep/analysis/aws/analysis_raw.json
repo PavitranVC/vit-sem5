@@ -1,0 +1,2688 @@
+{
+ "subject": "aws",
+ "core_code": "BCSE355L",
+ "student_slot": "-",
+ "coverage_windows": {
+  "CAT1": [
+   "M1",
+   "M2",
+   "M3"
+  ],
+  "CAT2": [
+   "M3",
+   "M4",
+   "M5"
+  ],
+  "FAT": [
+   "M1",
+   "M2",
+   "M3",
+   "M4",
+   "M5",
+   "M6",
+   "M7",
+   "M8"
+  ]
+ },
+ "aliases_merged": {},
+ "papers_core": {
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper": {
+   "exam": "CAT1",
+   "slot": "A2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key": {
+   "exam": "CAT1",
+   "slot": "F2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key": {
+   "exam": "CAT1",
+   "slot": "G1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L-CAT-2-A1-2025-2026": {
+   "exam": "CAT2",
+   "slot": "A1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L-CAT-2-A2-2025-2026": {
+   "exam": "CAT2",
+   "slot": "A2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L-CAT-2-F1-2024-2025": {
+   "exam": "CAT2",
+   "slot": "F1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE355L-CAT-2-F2-2024-2025": {
+   "exam": "CAT2",
+   "slot": "F2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L-CAT-2-G1-2025-2026": {
+   "exam": "CAT2",
+   "slot": "G1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L-CAT-2-G2-2025-2026": {
+   "exam": "CAT2",
+   "slot": "G2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L-FAT-A1-2025-2026": {
+   "exam": "FAT",
+   "slot": "A1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 12
+  },
+  "BCSE355L-FAT-A2-2025-2026": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 12
+  },
+  "BCSE355L-FAT-A2-Fall-2026-2027": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 13
+  },
+  "BCSE355L-FAT-F1-2024-2025": {
+   "exam": "FAT",
+   "slot": "F1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 13
+  },
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper": {
+   "exam": "CAT1",
+   "slot": "A1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key": {
+   "exam": "CAT1",
+   "slot": "F1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key": {
+   "exam": "CAT1",
+   "slot": "G1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper": {
+   "exam": "CAT1",
+   "slot": "G2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE355L-FAT-A1-2026-2027": {
+   "exam": "FAT",
+   "slot": "A1",
+   "year": "2026",
+   "recent": true,
+   "n_q": 14
+  },
+  "BCSE355L-FAT-B1-2026-2027": {
+   "exam": "FAT",
+   "slot": "B1",
+   "year": "2026",
+   "recent": true,
+   "n_q": 12
+  },
+  "BCSE355L-FAT-B2-2026-2027": {
+   "exam": "FAT",
+   "slot": "B2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 12
+  },
+  "BCSE355L-FAT-G1-2025-2026": {
+   "exam": "FAT",
+   "slot": "G1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 12
+  },
+  "BCSE355L-FAT-G2-2025-2026": {
+   "exam": "FAT",
+   "slot": "G2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 12
+  }
+ },
+ "topic_stats": {
+  "VPC design (subnets/IGW/NAT)": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 5,
+    "ratio": "8 of 9",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "5 of 5",
+    "probability": 0.8
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 11,
+    "n_older": 18,
+    "ratio": "14 of 22",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "11 of 18",
+    "probability": 0.643
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q5",
+    "BCSE355L-CAT-2-F1-2024-2025:Q1",
+    "BCSE355L-CAT-2-F2-2024-2025:Q1",
+    "BCSE355L-FAT-A1-2025-2026:Q3",
+    "BCSE355L-FAT-A2-2025-2026:Q3",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q9b",
+    "BCSE355L-FAT-F1-2024-2025:Q4i",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q5",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q5",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q5",
+    "BCSE355L-FAT-A1-2026-2027:Q2b",
+    "BCSE355L-FAT-B1-2026-2027:Q3",
+    "BCSE355L-FAT-B1-2026-2027:Q10b",
+    "BCSE355L-FAT-G1-2025-2026:Q5",
+    "BCSE355L-FAT-G2-2025-2026:Q5a"
+   ],
+   "types": {
+    "theory": 2,
+    "scenario": 13
+   },
+   "marks_share_fat": 0.073
+  },
+  "CloudWatch / CloudTrail / Config": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 4,
+    "n_older": 5,
+    "ratio": "7 of 9",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "4 of 5",
+    "probability": 0.733
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 10,
+    "n_older": 11,
+    "ratio": "13 of 15",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "10 of 11",
+    "probability": 0.81
+   },
+   "support": [
+    "BCSE355L-CAT-2-A1-2025-2026:Q3",
+    "BCSE355L-CAT-2-A2-2025-2026:Q3",
+    "BCSE355L-CAT-2-F1-2024-2025:Q4",
+    "BCSE355L-CAT-2-F2-2024-2025:Q5",
+    "BCSE355L-CAT-2-G1-2025-2026:Q4",
+    "BCSE355L-CAT-2-G2-2025-2026:Q4",
+    "BCSE355L-FAT-A1-2025-2026:Q5a",
+    "BCSE355L-FAT-A1-2025-2026:Q5b",
+    "BCSE355L-FAT-A2-2025-2026:Q5a",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q7",
+    "BCSE355L-FAT-A1-2026-2027:Q4",
+    "BCSE355L-FAT-B2-2026-2027:Q5",
+    "BCSE355L-FAT-B2-2026-2027:Q9b",
+    "BCSE355L-FAT-G1-2025-2026:Q7",
+    "BCSE355L-FAT-G2-2025-2026:Q7"
+   ],
+   "types": {
+    "scenario": 10,
+    "theory": 5
+   },
+   "marks_share_fat": 0.083
+  },
+  "IAM users/groups/roles/policies": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 4,
+    "n_older": 5,
+    "ratio": "6 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "4 of 5",
+    "probability": 0.6
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 9,
+    "n_older": 12,
+    "ratio": "11 of 16",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "9 of 12",
+    "probability": 0.636
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q2",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q2",
+    "BCSE355L-FAT-A2-2025-2026:Q1",
+    "BCSE355L-FAT-F1-2024-2025:Q2",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q2",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q2",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q2",
+    "BCSE355L-FAT-B1-2026-2027:Q1",
+    "BCSE355L-FAT-B1-2026-2027:Q9b",
+    "BCSE355L-FAT-B2-2026-2027:Q1",
+    "BCSE355L-FAT-G1-2025-2026:Q2",
+    "BCSE355L-FAT-G2-2025-2026:Q2"
+   ],
+   "types": {
+    "scenario": 8,
+    "theory": 4
+   },
+   "marks_share_fat": 0.065
+  },
+  "RDS Multi-AZ / read replica": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 4,
+    "n_older": 5,
+    "ratio": "7 of 9",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "4 of 5",
+    "probability": 0.733
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 9,
+    "n_older": 11,
+    "ratio": "12 of 15",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "9 of 11",
+    "probability": 0.762
+   },
+   "support": [
+    "BCSE355L-CAT-2-A1-2025-2026:Q1",
+    "BCSE355L-CAT-2-A2-2025-2026:Q2",
+    "BCSE355L-CAT-2-F2-2024-2025:Q3",
+    "BCSE355L-CAT-2-G1-2025-2026:Q2",
+    "BCSE355L-CAT-2-G2-2025-2026:Q2",
+    "BCSE355L-FAT-A2-2025-2026:Q9",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q3",
+    "BCSE355L-FAT-F1-2024-2025:Q5",
+    "BCSE355L-FAT-A1-2026-2027:Q3a",
+    "BCSE355L-FAT-B1-2026-2027:Q4",
+    "BCSE355L-FAT-G1-2025-2026:Q6",
+    "BCSE355L-FAT-G2-2025-2026:Q6"
+   ],
+   "types": {
+    "scenario": 10,
+    "theory": 2
+   },
+   "marks_share_fat": 0.06
+  },
+  "EC2 instance types / launch / pricing": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "4 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.4
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 9,
+    "n_older": 12,
+    "ratio": "10 of 16",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "9 of 12",
+    "probability": 0.545
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q3",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q3",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q3",
+    "BCSE355L-FAT-F1-2024-2025:Q7",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q3",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q4",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q3",
+    "BCSE355L-FAT-B2-2026-2027:Q2",
+    "BCSE355L-FAT-G1-2025-2026:Q3",
+    "BCSE355L-FAT-G2-2025-2026:Q4"
+   ],
+   "types": {
+    "scenario": 6,
+    "theory": 4
+   },
+   "marks_share_fat": 0.037
+  },
+  "Cost tools (Budgets/Cost Explorer/Trusted Advisor)": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "6 of 9",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.667
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 7,
+    "n_older": 11,
+    "ratio": "10 of 15",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "7 of 11",
+    "probability": 0.667
+   },
+   "support": [
+    "BCSE355L-CAT-2-A1-2025-2026:Q4",
+    "BCSE355L-CAT-2-A2-2025-2026:Q4",
+    "BCSE355L-CAT-2-F1-2024-2025:Q5",
+    "BCSE355L-CAT-2-G1-2025-2026:Q5",
+    "BCSE355L-FAT-A1-2025-2026:Q9",
+    "BCSE355L-FAT-A2-2025-2026:Q5b",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q4",
+    "BCSE355L-FAT-F1-2024-2025:Q6",
+    "BCSE355L-FAT-A1-2026-2027:Q7",
+    "BCSE355L-FAT-B1-2026-2027:Q5"
+   ],
+   "types": {
+    "scenario": 7,
+    "theory": 3
+   },
+   "marks_share_fat": 0.056
+  },
+  "Auto Scaling + ELB": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 4,
+    "n_older": 5,
+    "ratio": "7 of 9",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "4 of 5",
+    "probability": 0.733
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 6,
+    "n_older": 12,
+    "ratio": "9 of 16",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "6 of 12",
+    "probability": 0.591
+   },
+   "support": [
+    "BCSE355L-FAT-A1-2025-2026:Q2",
+    "BCSE355L-FAT-A2-2025-2026:Q2",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q2",
+    "BCSE355L-FAT-F1-2024-2025:Q1",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q4",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q3",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q5",
+    "BCSE355L-FAT-A1-2026-2027:Q10b",
+    "BCSE355L-FAT-B1-2026-2027:Q2",
+    "BCSE355L-FAT-G2-2025-2026:Q3"
+   ],
+   "types": {
+    "scenario": 9,
+    "theory": 1
+   },
+   "marks_share_fat": 0.065
+  },
+  "Snow family": {
+   "module": "M8",
+   "fat": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 4,
+    "n_older": 5,
+    "ratio": "8 of 9",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "4 of 5",
+    "probability": 0.867
+   },
+   "all": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 4,
+    "n_older": 5,
+    "ratio": "8 of 9",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "4 of 5",
+    "probability": 0.867
+   },
+   "support": [
+    "BCSE355L-FAT-A1-2025-2026:Q8b",
+    "BCSE355L-FAT-A2-2025-2026:Q8b",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q10b",
+    "BCSE355L-FAT-F1-2024-2025:Q10b",
+    "BCSE355L-FAT-A1-2026-2027:Q9b",
+    "BCSE355L-FAT-B1-2026-2027:Q8",
+    "BCSE355L-FAT-B1-2026-2027:Q10a",
+    "BCSE355L-FAT-B2-2026-2027:Q10b",
+    "BCSE355L-FAT-G1-2025-2026:Q10a"
+   ],
+   "types": {
+    "scenario": 7,
+    "theory": 2
+   },
+   "marks_share_fat": 0.083
+  },
+  "S3 storage classes / lifecycle": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 5,
+    "ratio": "2 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "0 of 5",
+    "probability": 0.333
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 12,
+    "ratio": "7 of 16",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "5 of 12",
+    "probability": 0.455
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q4",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q4",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5a",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q4",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q4",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q3",
+    "BCSE355L-FAT-A1-2026-2027:Q10a",
+    "BCSE355L-FAT-B1-2026-2027:Q9a"
+   ],
+   "types": {
+    "scenario": 5,
+    "theory": 3
+   },
+   "marks_share_fat": 0.019
+  },
+  "Cloud models / shared responsibility": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "4 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.4
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 10,
+    "n_older": 12,
+    "ratio": "11 of 16",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "10 of 12",
+    "probability": 0.591
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q1",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q1",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q2",
+    "BCSE355L-FAT-A1-2025-2026:Q1",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q1",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q1",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q1a",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q1b",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1",
+    "BCSE355L-FAT-A1-2026-2027:Q1",
+    "BCSE355L-FAT-G1-2025-2026:Q1",
+    "BCSE355L-FAT-G2-2025-2026:Q1"
+   ],
+   "types": {
+    "theory": 7,
+    "scenario": 5
+   },
+   "marks_share_fat": 0.037
+  },
+  "WAF / Shield / GuardDuty": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 5,
+    "ratio": "8 of 9",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "5 of 5",
+    "probability": 0.8
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 5,
+    "ratio": "8 of 9",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "5 of 5",
+    "probability": 0.8
+   },
+   "support": [
+    "BCSE355L-FAT-A1-2025-2026:Q6",
+    "BCSE355L-FAT-A2-2025-2026:Q6",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q5",
+    "BCSE355L-FAT-F1-2024-2025:Q8",
+    "BCSE355L-FAT-A1-2026-2027:Q5",
+    "BCSE355L-FAT-B1-2026-2027:Q6",
+    "BCSE355L-FAT-G1-2025-2026:Q8",
+    "BCSE355L-FAT-G2-2025-2026:Q8a"
+   ],
+   "types": {
+    "scenario": 7,
+    "theory": 1
+   },
+   "marks_share_fat": 0.074
+  },
+  "DynamoDB": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 5,
+    "ratio": "2 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 5",
+    "probability": 0.267
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 6,
+    "n_older": 11,
+    "ratio": "7 of 15",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "6 of 11",
+    "probability": 0.429
+   },
+   "support": [
+    "BCSE355L-CAT-2-A2-2025-2026:Q1",
+    "BCSE355L-CAT-2-F1-2024-2025:Q3",
+    "BCSE355L-CAT-2-F2-2024-2025:Q4",
+    "BCSE355L-CAT-2-G1-2025-2026:Q3",
+    "BCSE355L-CAT-2-G2-2025-2026:Q3",
+    "BCSE355L-FAT-A1-2025-2026:Q4",
+    "BCSE355L-FAT-B2-2026-2027:Q4"
+   ],
+   "types": {
+    "scenario": 4,
+    "theory": 3
+   },
+   "marks_share_fat": 0.019
+  },
+  "SQS / SNS": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "5 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.533
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "5 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.533
+   },
+   "support": [
+    "BCSE355L-CAT-2-A1-2025-2026:Q2",
+    "BCSE355L-FAT-A2-2025-2026:Q10",
+    "BCSE355L-FAT-F1-2024-2025:Q9a",
+    "BCSE355L-FAT-A1-2026-2027:Q6",
+    "BCSE355L-FAT-B1-2026-2027:Q7",
+    "BCSE355L-FAT-G1-2025-2026:Q9a"
+   ],
+   "types": {
+    "scenario": 5,
+    "theory": 1
+   },
+   "marks_share_fat": 0.046
+  },
+  "Well-Architected pillars": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 5,
+    "ratio": "4 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "2 of 5",
+    "probability": 0.467
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 5,
+    "ratio": "4 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "2 of 5",
+    "probability": 0.467
+   },
+   "support": [
+    "BCSE355L-FAT-A1-2025-2026:Q7",
+    "BCSE355L-FAT-A1-2025-2026:Q10",
+    "BCSE355L-FAT-A2-2025-2026:Q7",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q8",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q2",
+    "BCSE355L-FAT-A1-2026-2027:Q8"
+   ],
+   "types": {
+    "scenario": 3,
+    "theory": 3
+   },
+   "marks_share_fat": 0.046
+  },
+  "Step Functions / SWF": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "5 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.533
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "5 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.533
+   },
+   "support": [
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q6i",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q6ii",
+    "BCSE355L-FAT-F1-2024-2025:Q9b",
+    "BCSE355L-FAT-B2-2026-2027:Q7",
+    "BCSE355L-FAT-G1-2025-2026:Q9b",
+    "BCSE355L-FAT-G2-2025-2026:Q9"
+   ],
+   "types": {
+    "theory": 4,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.046
+  },
+  "EBS vs EFS vs S3": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 5,
+    "ratio": "2 of 9",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "2 of 5",
+    "probability": 0.2
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 4,
+    "n_older": 12,
+    "ratio": "4 of 16",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "4 of 12",
+    "probability": 0.227
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5b",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5c",
+    "BCSE355L-FAT-F1-2024-2025:Q3",
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q4",
+    "BCSE355L-FAT-G1-2025-2026:Q4"
+   ],
+   "types": {
+    "theory": 1,
+    "scenario": 4
+   },
+   "marks_share_fat": 0.019
+  },
+  "Server migration / 6 Rs": {
+   "module": "M8",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "5 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.533
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 5,
+    "ratio": "5 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "3 of 5",
+    "probability": 0.533
+   },
+   "support": [
+    "BCSE355L-FAT-A2-2025-2026:Q8a",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q10a",
+    "BCSE355L-FAT-F1-2024-2025:Q10a",
+    "BCSE355L-FAT-B2-2026-2027:Q10a",
+    "BCSE355L-FAT-G1-2025-2026:Q10b"
+   ],
+   "types": {
+    "theory": 3,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.046
+  },
+  "CloudFront": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 5,
+    "ratio": "1 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 5",
+    "probability": 0.2
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 18,
+    "ratio": "4 of 22",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "3 of 18",
+    "probability": 0.214
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q5",
+    "BCSE355L-CAT-2-F1-2024-2025:Q2a",
+    "BCSE355L-CAT-2-F2-2024-2025:Q2",
+    "BCSE355L-FAT-B2-2026-2027:Q3"
+   ],
+   "types": {
+    "theory": 2,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.009
+  },
+  "KMS / encryption": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 5,
+    "ratio": "2 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 5",
+    "probability": 0.267
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 5,
+    "ratio": "2 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 5",
+    "probability": 0.267
+   },
+   "support": [
+    "BCSE355L-CAT-2-A1-2025-2026:Q5",
+    "BCSE355L-CAT-2-A2-2025-2026:Q5",
+    "BCSE355L-FAT-B2-2026-2027:Q6",
+    "BCSE355L-FAT-G2-2025-2026:Q8b"
+   ],
+   "types": {
+    "scenario": 3,
+    "theory": 1
+   },
+   "marks_share_fat": 0.019
+  },
+  "DMS": {
+   "module": "M8",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 5,
+    "ratio": "4 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "2 of 5",
+    "probability": 0.467
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 5,
+    "ratio": "4 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "2 of 5",
+    "probability": 0.467
+   },
+   "support": [
+    "BCSE355L-FAT-A1-2025-2026:Q8a",
+    "BCSE355L-FAT-A1-2026-2027:Q9a",
+    "BCSE355L-FAT-B2-2026-2027:Q8",
+    "BCSE355L-FAT-G2-2025-2026:Q10"
+   ],
+   "types": {
+    "theory": 1,
+    "scenario": 3
+   },
+   "marks_share_fat": 0.037
+  },
+  "Aurora": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 5,
+    "ratio": "3 of 9",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "1 of 5",
+    "probability": 0.4
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "3 of 15",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "1 of 11",
+    "probability": 0.286
+   },
+   "support": [
+    "BCSE355L-FAT-A2-2025-2026:Q4",
+    "BCSE355L-FAT-A1-2026-2027:Q3b",
+    "BCSE355L-FAT-B2-2026-2027:Q9a"
+   ],
+   "types": {
+    "scenario": 2,
+    "theory": 1
+   },
+   "marks_share_fat": 0.023
+  },
+  "VPN / Direct Connect / VPC peering": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 5,
+    "ratio": "1 of 9",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "1 of 5",
+    "probability": 0.133
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 18,
+    "ratio": "3 of 22",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "3 of 18",
+    "probability": 0.143
+   },
+   "support": [
+    "BCSE355L-CAT-2-F1-2024-2025:Q2b",
+    "BCSE355L-CAT-2-G1-2025-2026:Q1",
+    "BCSE355L-FAT-G2-2025-2026:Q5b"
+   ],
+   "types": {
+    "theory": 2,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.009
+  },
+  "SG vs NACL": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 5,
+    "ratio": "2 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 5",
+    "probability": 0.267
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 18,
+    "ratio": "3 of 22",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "2 of 18",
+    "probability": 0.179
+   },
+   "support": [
+    "BCSE355L-CAT-2-G2-2025-2026:Q1",
+    "BCSE355L-FAT-F1-2024-2025:Q4ii",
+    "BCSE355L-FAT-A1-2026-2027:Q2a"
+   ],
+   "types": {
+    "scenario": 1,
+    "theory": 2
+   },
+   "marks_share_fat": 0.01
+  },
+  "Global infrastructure / multi-region DR": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 5,
+    "ratio": "1 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 5",
+    "probability": 0.2
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 12,
+    "ratio": "2 of 16",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 12",
+    "probability": 0.182
+   },
+   "support": [
+    "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q1",
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q1"
+   ],
+   "types": {
+    "theory": 1,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.009
+  },
+  "Systems Manager features": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 5,
+    "ratio": "0 of 9",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "0 of 5",
+    "probability": 0.067
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 15",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "1 of 11",
+    "probability": 0.095
+   },
+   "support": [
+    "BCSE355L-CAT-2-G2-2025-2026:Q5"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.0
+  },
+  "Route 53 routing policies": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 5,
+    "ratio": "1 of 9",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 5",
+    "probability": 0.2
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 18,
+    "ratio": "1 of 22",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 18",
+    "probability": 0.107
+   },
+   "support": [
+    "BCSE355L-FAT-A2-Fall-2026-2027:Q9a"
+   ],
+   "types": {
+    "scenario": 1
+   },
+   "marks_share_fat": 0.009
+  }
+ },
+ "ranking": [
+  "Snow family",
+  "WAF / Shield / GuardDuty",
+  "VPC design (subnets/IGW/NAT)",
+  "CloudWatch / CloudTrail / Config",
+  "RDS Multi-AZ / read replica",
+  "Auto Scaling + ELB",
+  "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "IAM users/groups/roles/policies",
+  "SQS / SNS",
+  "Step Functions / SWF",
+  "Server migration / 6 Rs",
+  "Well-Architected pillars",
+  "DMS",
+  "Cloud models / shared responsibility",
+  "EC2 instance types / launch / pricing",
+  "Aurora",
+  "S3 storage classes / lifecycle",
+  "DynamoDB",
+  "KMS / encryption",
+  "SG vs NACL",
+  "EBS vs EFS vs S3",
+  "CloudFront",
+  "Global infrastructure / multi-region DR",
+  "Route 53 routing policies",
+  "VPN / Direct Connect / VPC peering",
+  "Systems Manager features"
+ ],
+ "drift": {
+  "CAT1": {
+   "older": {
+    "papers": 7,
+    "n_q": 38,
+    "mean_bloom": 3.61,
+    "scenario_wrapper_pct_q": 71.1,
+    "scenario_wrapper_pct_marks": 73.3,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 35.0,
+    "num_trace_to_theory_mark_ratio": 0.0
+   },
+   "recent_2026_27": {
+    "papers": 0,
+    "n_q": 0,
+    "mean_bloom": 0.0,
+    "scenario_wrapper_pct_q": 0.0,
+    "scenario_wrapper_pct_marks": 0.0,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 0.0,
+    "num_trace_to_theory_mark_ratio": null
+   }
+  },
+  "CAT2": {
+   "older": {
+    "papers": 6,
+    "n_q": 31,
+    "mean_bloom": 3.87,
+    "scenario_wrapper_pct_q": 80.6,
+    "scenario_wrapper_pct_marks": 80.0,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 30.0,
+    "num_trace_to_theory_mark_ratio": 0.0
+   },
+   "recent_2026_27": {
+    "papers": 0,
+    "n_q": 0,
+    "mean_bloom": 0.0,
+    "scenario_wrapper_pct_q": 0.0,
+    "scenario_wrapper_pct_marks": 0.0,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 0.0,
+    "num_trace_to_theory_mark_ratio": null
+   }
+  },
+  "FAT": {
+   "older": {
+    "papers": 5,
+    "n_q": 61,
+    "mean_bloom": 3.72,
+    "scenario_wrapper_pct_q": 52.5,
+    "scenario_wrapper_pct_marks": 53.3,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 33.3,
+    "num_trace_to_theory_mark_ratio": 0.0
+   },
+   "recent_2026_27": {
+    "papers": 4,
+    "n_q": 51,
+    "mean_bloom": 3.86,
+    "scenario_wrapper_pct_q": 84.3,
+    "scenario_wrapper_pct_marks": 86.2,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 22.1,
+    "num_trace_to_theory_mark_ratio": 0.0
+   }
+  },
+  "by_year_start": {
+   "2024": {
+    "papers": 6,
+    "n_q": 41,
+    "mean_bloom": 3.46,
+    "scenario_wrapper_pct_q": 63.4,
+    "scenario_wrapper_pct_marks": 65.6,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 42.2,
+    "num_trace_to_theory_mark_ratio": 0.0
+   },
+   "2025": {
+    "papers": 12,
+    "n_q": 89,
+    "mean_bloom": 3.84,
+    "scenario_wrapper_pct_q": 65.2,
+    "scenario_wrapper_pct_marks": 64.8,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 29.5,
+    "num_trace_to_theory_mark_ratio": 0.0
+   },
+   "2026": {
+    "papers": 4,
+    "n_q": 51,
+    "mean_bloom": 3.86,
+    "scenario_wrapper_pct_q": 84.3,
+    "scenario_wrapper_pct_marks": 86.2,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 22.1,
+    "num_trace_to_theory_mark_ratio": 0.0
+   }
+  }
+ },
+ "slot_pairs": [
+  {
+   "pair": "CAT2 A1->A2 2025",
+   "source": "BCSE355L-CAT-2-A1-2025-2026",
+   "target": "BCSE355L-CAT-2-A2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "4 of 5",
+    "Same module only": "1 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L-CAT-2-A2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-CAT-2-A1-2025-2026:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-CAT-2-A2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-A1-2025-2026:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-CAT-2-A2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-A1-2025-2026:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-CAT-2-A2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-A1-2025-2026:Q4",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE355L-CAT-2-A2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-A1-2025-2026:Q5",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 F1->F2 2024",
+   "source": "BCSE355L-CAT-2-F1-2024-2025",
+   "target": "BCSE355L-CAT-2-F2-2024-2025",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "4 of 5",
+    "Same module only": "1 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L-CAT-2-F2-2024-2025:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-F1-2024-2025:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-CAT-2-F2-2024-2025:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-F1-2024-2025:Q2a",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-CAT-2-F2-2024-2025:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-CAT-2-F1-2024-2025:Q3",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE355L-CAT-2-F2-2024-2025:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-F1-2024-2025:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L-CAT-2-F2-2024-2025:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-F1-2024-2025:Q4",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 G1->G2 2025",
+   "source": "BCSE355L-CAT-2-G1-2025-2026",
+   "target": "BCSE355L-CAT-2-G2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "3 of 5",
+    "Same module only": "2 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L-CAT-2-G2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-CAT-2-G1-2025-2026:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-CAT-2-G2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-G1-2025-2026:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L-CAT-2-G2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-G1-2025-2026:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-CAT-2-G2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-CAT-2-G1-2025-2026:Q4",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-CAT-2-G2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-CAT-2-G1-2025-2026:Q4",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "FAT A1->A2 2025",
+   "source": "BCSE355L-FAT-A1-2025-2026",
+   "target": "BCSE355L-FAT-A2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 12",
+    "Same concept new numbers": "7 of 12",
+    "Same module only": "5 of 12",
+    "Unrelated": "0 of 12"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q1",
+     "text_sim": 0.13
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q3",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q4",
+     "text_sim": 0.28
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q5a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q5b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q9",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q6",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q7",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q8a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q8a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q8b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q8b",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q9",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q4",
+     "text_sim": 0.22
+    },
+    {
+     "q": "BCSE355L-FAT-A2-2025-2026:Q10",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2025-2026:Q7",
+     "text_sim": 0.01
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 A1->A2 2025",
+   "source": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper",
+   "target": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "4 of 5",
+    "Same module only": "1 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q1",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q2",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q4",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q5",
+     "text_sim": 0.04
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 F1->F2 2024",
+   "source": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key",
+   "target": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "3 of 7",
+    "Same module only": "4 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q1",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q5",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q4",
+     "text_sim": 0.0
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q4",
+     "text_sim": 0.0
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q5",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5c",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q5",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 G1->G2 2025",
+   "source": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key",
+   "target": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "4 of 5",
+    "Same module only": "1 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q1a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q4",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q5",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "FAT A1->A2 2026",
+   "source": "BCSE355L-FAT-A1-2026-2027",
+   "target": "BCSE355L-FAT-A2-Fall-2026-2027",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "8 of 13",
+    "Same module only": "5 of 13",
+    "Unrelated": "0 of 13"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q2a",
+     "text_sim": 0.19
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q10b",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q3a",
+     "text_sim": 0.19
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q7",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q5",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q6i",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q6",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q6ii",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q6",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q7",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q4",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q8",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q8",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q9a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q2a",
+     "text_sim": 0.12
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q9b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q2b",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q10a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q9b",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q10b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-A1-2026-2027:Q9b",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "FAT B1->B2 2026",
+   "source": "BCSE355L-FAT-B1-2026-2027",
+   "target": "BCSE355L-FAT-B2-2026-2027",
+   "by_question": {
+    "Identical": "0 of 12",
+    "Same concept new numbers": "2 of 12",
+    "Same module only": "10 of 12",
+    "Unrelated": "0 of 12"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q9b",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q9a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q10b",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q4",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q6",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q6",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q7",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q8",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q10a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q9a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q4",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q9b",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q10a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q10a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L-FAT-B2-2026-2027:Q10b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-B1-2026-2027:Q8",
+     "text_sim": 0.06
+    }
+   ]
+  },
+  {
+   "pair": "FAT G1->G2 2025",
+   "source": "BCSE355L-FAT-G1-2025-2026",
+   "target": "BCSE355L-FAT-G2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 12",
+    "Same concept new numbers": "8 of 12",
+    "Same module only": "4 of 12",
+    "Unrelated": "0 of 12"
+   },
+   "detail": [
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q1",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q5",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q3",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q5a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q5",
+     "text_sim": 0.0
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q5b",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q10a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q6",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q7",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q8a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q8",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q8b",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q8",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q9",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q9b",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE355L-FAT-G2-2025-2026:Q10",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE355L-FAT-G1-2025-2026:Q10a",
+     "text_sim": 0.02
+    }
+   ]
+  }
+ ],
+ "slot_pairs_pooled": {
+  "n_questions": 81,
+  "n_pairs": 10,
+  "by_question": {
+   "Identical": "0 of 81",
+   "Same concept new numbers": "47 of 81",
+   "Same module only": "34 of 81",
+   "Unrelated": "0 of 81"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.58,
+   "Same module only": 0.42,
+   "Unrelated": 0.0
+  }
+ },
+ "cross_letter_pooled": {
+  "n_questions": 148,
+  "n_pairs": 18,
+  "by_question": {
+   "Identical": "0 of 148",
+   "Same concept new numbers": "89 of 148",
+   "Same module only": "47 of 148",
+   "Unrelated": "12 of 148"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.601,
+   "Same module only": 0.318,
+   "Unrelated": 0.081
+  }
+ },
+ "different_year_pooled_null": {
+  "n_questions": 814,
+  "n_pairs": 88,
+  "by_question": {
+   "Identical": "0 of 814",
+   "Same concept new numbers": "474 of 814",
+   "Same module only": "302 of 814",
+   "Unrelated": "38 of 814"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.582,
+   "Same module only": 0.371,
+   "Unrelated": 0.047
+  }
+ },
+ "sister_pairs": [],
+ "sister_pooled": {
+  "n_questions": 0,
+  "n_pairs": 0,
+  "by_question": {
+   "Identical": "0 of 0",
+   "Same concept new numbers": "0 of 0",
+   "Same module only": "0 of 0",
+   "Unrelated": "0 of 0"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.0,
+   "Same module only": 0.0,
+   "Unrelated": 0.0
+  }
+ },
+ "reuse_recent_vs_older": [
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q2a",
+   "best_older_match": "BCSE355L-FAT-F1-2024-2025:Q4ii",
+   "text_sim": 0.48
+  },
+  {
+   "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q8",
+   "best_older_match": "BCSE355L-FAT-G2-2025-2026:Q4",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q3a",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q6",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q9a",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q1",
+   "best_older_match": "BCSE355L-FAT-F1-2024-2025:Q4i",
+   "text_sim": 0.36
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q6",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1",
+   "text_sim": 0.36
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q8",
+   "best_older_match": "BCSE355L-FAT-G2-2025-2026:Q4",
+   "text_sim": 0.36
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q1",
+   "best_older_match": "BCSE355L-FAT-G2-2025-2026:Q4",
+   "text_sim": 0.36
+  },
+  {
+   "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q7",
+   "best_older_match": "BCSE355L-FAT-F1-2024-2025:Q4i",
+   "text_sim": 0.35
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q4",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.35
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q5",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q4",
+   "text_sim": 0.35
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q3",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.33
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q8",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q4",
+   "text_sim": 0.33
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q10a",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.33
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q2",
+   "best_older_match": "BCSE355L-FAT-G2-2025-2026:Q8b",
+   "text_sim": 0.32
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q4",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q4",
+   "text_sim": 0.32
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q4",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.32
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q5",
+   "best_older_match": "BCSE355L-FAT-G2-2025-2026:Q4",
+   "text_sim": 0.32
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q7",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.31
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q8",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q2",
+   "text_sim": 0.31
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q10b",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.31
+  },
+  {
+   "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q10a",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q4",
+   "text_sim": 0.3
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q3b",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.3
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q9a",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1",
+   "text_sim": 0.3
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q1",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.3
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q3",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.3
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q6",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.3
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q2",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.29
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q7",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.29
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q10a",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5a",
+   "text_sim": 0.28
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q9b",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.28
+  },
+  {
+   "q": "BCSE355L-FAT-B2-2026-2027:Q10b",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.28
+  },
+  {
+   "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q1",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1",
+   "text_sim": 0.27
+  },
+  {
+   "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q6ii",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.27
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q2b",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q4",
+   "text_sim": 0.27
+  },
+  {
+   "q": "BCSE355L-FAT-B1-2026-2027:Q9b",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.27
+  },
+  {
+   "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q6i",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.26
+  },
+  {
+   "q": "BCSE355L-FAT-A1-2026-2027:Q10a",
+   "best_older_match": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1",
+   "text_sim": 0.26
+  },
+  {
+   "q": "BCSE355L-FAT-A2-Fall-2026-2027:Q5",
+   "best_older_match": "BCSE355L-FAT-A1-2025-2026:Q5b",
+   "text_sim": 0.25
+  }
+ ],
+ "answer_key_rows": [
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q1",
+   "arch": "Cloud models / shared responsibility",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q2",
+   "arch": "Well-Architected pillars",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q3",
+   "arch": "Auto Scaling + ELB",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q4",
+   "arch": "S3 storage classes / lifecycle",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q5",
+   "arch": "Auto Scaling + ELB",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q1a",
+   "arch": "Cloud models / shared responsibility",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q1b",
+   "arch": "Cloud models / shared responsibility",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q2",
+   "arch": "IAM users/groups/roles/policies",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q3",
+   "arch": "S3 storage classes / lifecycle",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q4",
+   "arch": "EC2 instance types / launch / pricing",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  },
+  {
+   "q": "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q5",
+   "arch": "VPC design (subnets/IGW/NAT)",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "not stated",
+   "penalties": "not stated",
+   "key_final_answer": "not stated (file contains question paper only)"
+  }
+ ],
+ "row_archetypes": {
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q1": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q3": "EC2 instance types / launch / pricing",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q4": "S3 storage classes / lifecycle",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper:Q5": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q1": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q3": "EC2 instance types / launch / pricing",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q4": "S3 storage classes / lifecycle",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5a": "S3 storage classes / lifecycle",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5b": "EBS vs EFS vs S3",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F2 - 2024 - Answer Key:Q5c": "EBS vs EFS vs S3",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q1": "Global infrastructure / multi-region DR",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q2": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q3": "EC2 instance types / launch / pricing",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q4": "S3 storage classes / lifecycle",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2024 - Answer Key:Q5": "CloudFront",
+  "BCSE355L-CAT-2-A1-2025-2026:Q1": "RDS Multi-AZ / read replica",
+  "BCSE355L-CAT-2-A1-2025-2026:Q2": "SQS / SNS",
+  "BCSE355L-CAT-2-A1-2025-2026:Q3": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-CAT-2-A1-2025-2026:Q4": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-CAT-2-A1-2025-2026:Q5": "KMS / encryption",
+  "BCSE355L-CAT-2-A2-2025-2026:Q1": "DynamoDB",
+  "BCSE355L-CAT-2-A2-2025-2026:Q2": "RDS Multi-AZ / read replica",
+  "BCSE355L-CAT-2-A2-2025-2026:Q3": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-CAT-2-A2-2025-2026:Q4": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-CAT-2-A2-2025-2026:Q5": "KMS / encryption",
+  "BCSE355L-CAT-2-F1-2024-2025:Q1": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-CAT-2-F1-2024-2025:Q2a": "CloudFront",
+  "BCSE355L-CAT-2-F1-2024-2025:Q2b": "VPN / Direct Connect / VPC peering",
+  "BCSE355L-CAT-2-F1-2024-2025:Q3": "DynamoDB",
+  "BCSE355L-CAT-2-F1-2024-2025:Q4": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-CAT-2-F1-2024-2025:Q5": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-CAT-2-F2-2024-2025:Q1": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-CAT-2-F2-2024-2025:Q2": "CloudFront",
+  "BCSE355L-CAT-2-F2-2024-2025:Q3": "RDS Multi-AZ / read replica",
+  "BCSE355L-CAT-2-F2-2024-2025:Q4": "DynamoDB",
+  "BCSE355L-CAT-2-F2-2024-2025:Q5": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-CAT-2-G1-2025-2026:Q1": "VPN / Direct Connect / VPC peering",
+  "BCSE355L-CAT-2-G1-2025-2026:Q2": "RDS Multi-AZ / read replica",
+  "BCSE355L-CAT-2-G1-2025-2026:Q3": "DynamoDB",
+  "BCSE355L-CAT-2-G1-2025-2026:Q4": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-CAT-2-G1-2025-2026:Q5": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-CAT-2-G2-2025-2026:Q1": "SG vs NACL",
+  "BCSE355L-CAT-2-G2-2025-2026:Q2": "RDS Multi-AZ / read replica",
+  "BCSE355L-CAT-2-G2-2025-2026:Q3": "DynamoDB",
+  "BCSE355L-CAT-2-G2-2025-2026:Q4": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-CAT-2-G2-2025-2026:Q5": "Systems Manager features",
+  "BCSE355L-FAT-A1-2025-2026:Q1": "Cloud models / shared responsibility",
+  "BCSE355L-FAT-A1-2025-2026:Q2": "Auto Scaling + ELB",
+  "BCSE355L-FAT-A1-2025-2026:Q3": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-A1-2025-2026:Q4": "DynamoDB",
+  "BCSE355L-FAT-A1-2025-2026:Q5a": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-A1-2025-2026:Q5b": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-A1-2025-2026:Q6": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-A1-2025-2026:Q7": "Well-Architected pillars",
+  "BCSE355L-FAT-A1-2025-2026:Q8a": "DMS",
+  "BCSE355L-FAT-A1-2025-2026:Q8b": "Snow family",
+  "BCSE355L-FAT-A1-2025-2026:Q9": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-FAT-A1-2025-2026:Q10": "Well-Architected pillars",
+  "BCSE355L-FAT-A2-2025-2026:Q1": "IAM users/groups/roles/policies",
+  "BCSE355L-FAT-A2-2025-2026:Q2": "Auto Scaling + ELB",
+  "BCSE355L-FAT-A2-2025-2026:Q3": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-A2-2025-2026:Q4": "Aurora",
+  "BCSE355L-FAT-A2-2025-2026:Q5a": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-A2-2025-2026:Q5b": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-FAT-A2-2025-2026:Q6": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-A2-2025-2026:Q7": "Well-Architected pillars",
+  "BCSE355L-FAT-A2-2025-2026:Q8a": "Server migration / 6 Rs",
+  "BCSE355L-FAT-A2-2025-2026:Q8b": "Snow family",
+  "BCSE355L-FAT-A2-2025-2026:Q9": "RDS Multi-AZ / read replica",
+  "BCSE355L-FAT-A2-2025-2026:Q10": "SQS / SNS",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q1": "Global infrastructure / multi-region DR",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q2": "Auto Scaling + ELB",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q3": "RDS Multi-AZ / read replica",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q4": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q5": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q6i": "Step Functions / SWF",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q6ii": "Step Functions / SWF",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q7": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q8": "Well-Architected pillars",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q9a": "Route 53 routing policies",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q9b": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q10a": "Server migration / 6 Rs",
+  "BCSE355L-FAT-A2-Fall-2026-2027:Q10b": "Snow family",
+  "BCSE355L-FAT-F1-2024-2025:Q1": "Auto Scaling + ELB",
+  "BCSE355L-FAT-F1-2024-2025:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L-FAT-F1-2024-2025:Q3": "EBS vs EFS vs S3",
+  "BCSE355L-FAT-F1-2024-2025:Q4i": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-F1-2024-2025:Q4ii": "SG vs NACL",
+  "BCSE355L-FAT-F1-2024-2025:Q5": "RDS Multi-AZ / read replica",
+  "BCSE355L-FAT-F1-2024-2025:Q6": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-FAT-F1-2024-2025:Q7": "EC2 instance types / launch / pricing",
+  "BCSE355L-FAT-F1-2024-2025:Q8": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-F1-2024-2025:Q9a": "SQS / SNS",
+  "BCSE355L-FAT-F1-2024-2025:Q9b": "Step Functions / SWF",
+  "BCSE355L-FAT-F1-2024-2025:Q10a": "Server migration / 6 Rs",
+  "BCSE355L-FAT-F1-2024-2025:Q10b": "Snow family",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q1": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q3": "EC2 instance types / launch / pricing",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q4": "Auto Scaling + ELB",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A1 - 2025 - Question Paper:Q5": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q1": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q2": "Well-Architected pillars",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q3": "Auto Scaling + ELB",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q4": "S3 storage classes / lifecycle",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot F1 - 2024 - Answer Key:Q5": "Auto Scaling + ELB",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q1a": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q1b": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q3": "S3 storage classes / lifecycle",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q4": "EC2 instance types / launch / pricing",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G1 - 2025 - Answer Key:Q5": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q1": "Cloud models / shared responsibility",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q3": "EC2 instance types / launch / pricing",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q4": "EBS vs EFS vs S3",
+  "BCSE355L - AWS Solutions Architect - CAT-1 - Slot G2 - 2025 - Question Paper:Q5": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-A1-2026-2027:Q1": "Cloud models / shared responsibility",
+  "BCSE355L-FAT-A1-2026-2027:Q2a": "SG vs NACL",
+  "BCSE355L-FAT-A1-2026-2027:Q2b": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-A1-2026-2027:Q3a": "RDS Multi-AZ / read replica",
+  "BCSE355L-FAT-A1-2026-2027:Q3b": "Aurora",
+  "BCSE355L-FAT-A1-2026-2027:Q4": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-A1-2026-2027:Q5": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-A1-2026-2027:Q6": "SQS / SNS",
+  "BCSE355L-FAT-A1-2026-2027:Q7": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-FAT-A1-2026-2027:Q8": "Well-Architected pillars",
+  "BCSE355L-FAT-A1-2026-2027:Q9a": "DMS",
+  "BCSE355L-FAT-A1-2026-2027:Q9b": "Snow family",
+  "BCSE355L-FAT-A1-2026-2027:Q10a": "S3 storage classes / lifecycle",
+  "BCSE355L-FAT-A1-2026-2027:Q10b": "Auto Scaling + ELB",
+  "BCSE355L-FAT-B1-2026-2027:Q1": "IAM users/groups/roles/policies",
+  "BCSE355L-FAT-B1-2026-2027:Q2": "Auto Scaling + ELB",
+  "BCSE355L-FAT-B1-2026-2027:Q3": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-B1-2026-2027:Q4": "RDS Multi-AZ / read replica",
+  "BCSE355L-FAT-B1-2026-2027:Q5": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+  "BCSE355L-FAT-B1-2026-2027:Q6": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-B1-2026-2027:Q7": "SQS / SNS",
+  "BCSE355L-FAT-B1-2026-2027:Q8": "Snow family",
+  "BCSE355L-FAT-B1-2026-2027:Q9a": "S3 storage classes / lifecycle",
+  "BCSE355L-FAT-B1-2026-2027:Q9b": "IAM users/groups/roles/policies",
+  "BCSE355L-FAT-B1-2026-2027:Q10a": "Snow family",
+  "BCSE355L-FAT-B1-2026-2027:Q10b": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-B2-2026-2027:Q1": "IAM users/groups/roles/policies",
+  "BCSE355L-FAT-B2-2026-2027:Q2": "EC2 instance types / launch / pricing",
+  "BCSE355L-FAT-B2-2026-2027:Q3": "CloudFront",
+  "BCSE355L-FAT-B2-2026-2027:Q4": "DynamoDB",
+  "BCSE355L-FAT-B2-2026-2027:Q5": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-B2-2026-2027:Q6": "KMS / encryption",
+  "BCSE355L-FAT-B2-2026-2027:Q7": "Step Functions / SWF",
+  "BCSE355L-FAT-B2-2026-2027:Q8": "DMS",
+  "BCSE355L-FAT-B2-2026-2027:Q9a": "Aurora",
+  "BCSE355L-FAT-B2-2026-2027:Q9b": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-B2-2026-2027:Q10a": "Server migration / 6 Rs",
+  "BCSE355L-FAT-B2-2026-2027:Q10b": "Snow family",
+  "BCSE355L-FAT-G1-2025-2026:Q1": "Cloud models / shared responsibility",
+  "BCSE355L-FAT-G1-2025-2026:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L-FAT-G1-2025-2026:Q3": "EC2 instance types / launch / pricing",
+  "BCSE355L-FAT-G1-2025-2026:Q4": "EBS vs EFS vs S3",
+  "BCSE355L-FAT-G1-2025-2026:Q5": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-G1-2025-2026:Q6": "RDS Multi-AZ / read replica",
+  "BCSE355L-FAT-G1-2025-2026:Q7": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-G1-2025-2026:Q8": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-G1-2025-2026:Q9a": "SQS / SNS",
+  "BCSE355L-FAT-G1-2025-2026:Q9b": "Step Functions / SWF",
+  "BCSE355L-FAT-G1-2025-2026:Q10a": "Snow family",
+  "BCSE355L-FAT-G1-2025-2026:Q10b": "Server migration / 6 Rs",
+  "BCSE355L-FAT-G2-2025-2026:Q1": "Cloud models / shared responsibility",
+  "BCSE355L-FAT-G2-2025-2026:Q2": "IAM users/groups/roles/policies",
+  "BCSE355L-FAT-G2-2025-2026:Q3": "Auto Scaling + ELB",
+  "BCSE355L-FAT-G2-2025-2026:Q4": "EC2 instance types / launch / pricing",
+  "BCSE355L-FAT-G2-2025-2026:Q5a": "VPC design (subnets/IGW/NAT)",
+  "BCSE355L-FAT-G2-2025-2026:Q5b": "VPN / Direct Connect / VPC peering",
+  "BCSE355L-FAT-G2-2025-2026:Q6": "RDS Multi-AZ / read replica",
+  "BCSE355L-FAT-G2-2025-2026:Q7": "CloudWatch / CloudTrail / Config",
+  "BCSE355L-FAT-G2-2025-2026:Q8a": "WAF / Shield / GuardDuty",
+  "BCSE355L-FAT-G2-2025-2026:Q8b": "KMS / encryption",
+  "BCSE355L-FAT-G2-2025-2026:Q9": "Step Functions / SWF",
+  "BCSE355L-FAT-G2-2025-2026:Q10": "DMS"
+ },
+ "backtest": [
+  {
+   "target": "BCSE355L-FAT-A2-Fall-2026-2027",
+   "slot1_used": "BCSE355L-FAT-A1-2026-2027",
+   "train_papers": 19,
+   "predicted_top10": [
+    {
+     "topic": "WAF / Shield / GuardDuty",
+     "p": 0.889,
+     "ratio": "6 of 6",
+     "hit": true
+    },
+    {
+     "topic": "VPC design (subnets/IGW/NAT)",
+     "p": 0.889,
+     "ratio": "6 of 6",
+     "hit": true
+    },
+    {
+     "topic": "CloudWatch / CloudTrail / Config",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": true
+    },
+    {
+     "topic": "RDS Multi-AZ / read replica",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": true
+    },
+    {
+     "topic": "Snow family",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": true
+    },
+    {
+     "topic": "Auto Scaling + ELB",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": true
+    },
+    {
+     "topic": "Cloud models / shared responsibility",
+     "p": 0.667,
+     "ratio": "4 of 6",
+     "hit": false
+    },
+    {
+     "topic": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+     "p": 0.667,
+     "ratio": "4 of 6",
+     "hit": true
+    },
+    {
+     "topic": "SQS / SNS",
+     "p": 0.667,
+     "ratio": "4 of 6",
+     "hit": false
+    },
+    {
+     "topic": "IAM users/groups/roles/policies",
+     "p": 0.556,
+     "ratio": "4 of 6",
+     "hit": false
+    }
+   ],
+   "hits": 7,
+   "of": 10,
+   "precision": "7 of 10",
+   "recall": "7 of 12 distinct target topics",
+   "naive_older_fat_top10_hits": "7 of 10",
+   "slot1_topic_overlap": "8 of 12 target topics also in slot-1 FAT",
+   "missed_target_topics": [
+    "Global infrastructure / multi-region DR",
+    "Route 53 routing policies",
+    "Server migration / 6 Rs",
+    "Step Functions / SWF",
+    "Well-Architected pillars"
+   ]
+  },
+  {
+   "target": "BCSE355L-FAT-B2-2026-2027",
+   "slot1_used": "BCSE355L-FAT-B1-2026-2027",
+   "train_papers": 19,
+   "predicted_top10": [
+    {
+     "topic": "WAF / Shield / GuardDuty",
+     "p": 0.889,
+     "ratio": "6 of 6",
+     "hit": false
+    },
+    {
+     "topic": "VPC design (subnets/IGW/NAT)",
+     "p": 0.889,
+     "ratio": "6 of 6",
+     "hit": false
+    },
+    {
+     "topic": "RDS Multi-AZ / read replica",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": false
+    },
+    {
+     "topic": "Snow family",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": true
+    },
+    {
+     "topic": "IAM users/groups/roles/policies",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": true
+    },
+    {
+     "topic": "Auto Scaling + ELB",
+     "p": 0.778,
+     "ratio": "5 of 6",
+     "hit": false
+    },
+    {
+     "topic": "Cost tools (Budgets/Cost Explorer/Trusted Advisor)",
+     "p": 0.667,
+     "ratio": "4 of 6",
+     "hit": false
+    },
+    {
+     "topic": "SQS / SNS",
+     "p": 0.667,
+     "ratio": "4 of 6",
+     "hit": false
+    },
+    {
+     "topic": "CloudWatch / CloudTrail / Config",
+     "p": 0.556,
+     "ratio": "4 of 6",
+     "hit": true
+    },
+    {
+     "topic": "Cloud models / shared responsibility",
+     "p": 0.444,
+     "ratio": "3 of 6",
+     "hit": false
+    }
+   ],
+   "hits": 3,
+   "of": 10,
+   "precision": "3 of 10",
+   "recall": "3 of 11 distinct target topics",
+   "naive_older_fat_top10_hits": "3 of 10",
+   "slot1_topic_overlap": "2 of 11 target topics also in slot-1 FAT",
+   "missed_target_topics": [
+    "Aurora",
+    "CloudFront",
+    "DMS",
+    "DynamoDB",
+    "EC2 instance types / launch / pricing",
+    "KMS / encryption",
+    "Server migration / 6 Rs",
+    "Step Functions / SWF"
+   ]
+  }
+ ]
+}

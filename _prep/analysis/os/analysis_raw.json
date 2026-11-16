@@ -1,0 +1,3430 @@
+{
+ "subject": "os",
+ "core_code": "BCSE303L",
+ "student_slot": "-",
+ "coverage_windows": {
+  "CAT1": [
+   "M1",
+   "M2",
+   "M3"
+  ],
+  "CAT2": [
+   "M3",
+   "M4",
+   "M5"
+  ],
+  "FAT": [
+   "M1",
+   "M2",
+   "M3",
+   "M4",
+   "M5",
+   "M6",
+   "M7"
+  ]
+ },
+ "aliases_merged": {},
+ "papers_core": {
+  "BCSE303L-CAT-1-B1-2024-2025": {
+   "exam": "CAT1",
+   "slot": "B1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE303L-CAT-1-B2-2024-2025": {
+   "exam": "CAT1",
+   "slot": "B2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE303L-CAT-1-C1-2025-2026": {
+   "exam": "CAT1",
+   "slot": "C1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 10
+  },
+  "BCSE303L-CAT-1-C2-2025-2026": {
+   "exam": "CAT1",
+   "slot": "C2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 9
+  },
+  "BCSE303L-CAT-1-D1-2025-2026": {
+   "exam": "CAT1",
+   "slot": "D1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 8
+  },
+  "BCSE303L-CAT-1-D2-2023-2024": {
+   "exam": "CAT1",
+   "slot": "D2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 10
+  },
+  "BCSE303L-CAT-2-B1-2023-2024": {
+   "exam": "CAT2",
+   "slot": "B1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 10
+  },
+  "BCSE303L-CAT-2-B1-2024-2025": {
+   "exam": "CAT2",
+   "slot": "B1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 8
+  },
+  "BCSE303L-CAT-2-B2-2024-2025": {
+   "exam": "CAT2",
+   "slot": "B2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 10
+  },
+  "BCSE303L-CAT-2-C1-2025-2026": {
+   "exam": "CAT2",
+   "slot": "C1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 9
+  },
+  "BCSE303L-CAT-2-D2-2023-2024": {
+   "exam": "CAT2",
+   "slot": "D2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 9
+  },
+  "BCSE303L-FAT-B1-2024-2025": {
+   "exam": "FAT",
+   "slot": "B1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 17
+  },
+  "BCSE303L-FAT-B2-2024-2025": {
+   "exam": "FAT",
+   "slot": "B2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 12
+  },
+  "BCSE303L-FAT-B2-Fall-2026-27": {
+   "exam": "FAT",
+   "slot": "B2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 30
+  },
+  "BCSE303L-FAT-D1-2025-2026": {
+   "exam": "FAT",
+   "slot": "D1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 13
+  },
+  "BCSE303L-FAT-D2-2023-2024": {
+   "exam": "FAT",
+   "slot": "D2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 21
+  },
+  "BCSE303L-CAT-1-A1-2026-2027": {
+   "exam": "CAT1",
+   "slot": "A1",
+   "year": "2026",
+   "recent": true,
+   "n_q": 7
+  },
+  "BCSE303L-CAT-1-A2-2026-2027": {
+   "exam": "CAT1",
+   "slot": "A2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 7
+  },
+  "BCSE303L-CAT-1-B1-2023-2024": {
+   "exam": "CAT1",
+   "slot": "B1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE303L-CAT-2-C2-2025-2026": {
+   "exam": "CAT2",
+   "slot": "C2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 11
+  },
+  "BCSE303L-FAT-A1-2026-2027": {
+   "exam": "FAT",
+   "slot": "A1",
+   "year": "2026",
+   "recent": true,
+   "n_q": 27
+  },
+  "BCSE303L-FAT-A2-2026-2027": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 21
+  },
+  "BCSE303L-FAT-B1-2023-2024": {
+   "exam": "FAT",
+   "slot": "B1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 15
+  },
+  "BCSE303L-FAT-B1-2026-2027": {
+   "exam": "FAT",
+   "slot": "B1",
+   "year": "2026",
+   "recent": true,
+   "n_q": 25
+  },
+  "BCSE303L-FAT-C1-2025-2026": {
+   "exam": "FAT",
+   "slot": "C1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 15
+  },
+  "BCSE303L-FAT-C2-2025-2026": {
+   "exam": "FAT",
+   "slot": "C2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 13
+  }
+ },
+ "topic_stats": {
+  "CPU scheduling (FCFS/SJF/RR/priority)": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 7,
+    "n_older": 7,
+    "ratio": "10 of 11",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "7 of 7",
+    "probability": 0.824
+   },
+   "all": {
+    "k_recent": 5,
+    "n_recent": 6,
+    "k_older": 14,
+    "n_older": 20,
+    "ratio": "19 of 26",
+    "recent_ratio": "5 of 6",
+    "older_ratio": "14 of 20",
+    "probability": 0.735
+   },
+   "support": [
+    "BCSE303L-CAT-1-B1-2024-2025:Q4",
+    "BCSE303L-CAT-1-B1-2024-2025:Q5",
+    "BCSE303L-CAT-1-B2-2024-2025:Q4",
+    "BCSE303L-CAT-1-B2-2024-2025:Q5",
+    "BCSE303L-CAT-1-C1-2025-2026:Q4a",
+    "BCSE303L-CAT-1-C1-2025-2026:Q4b",
+    "BCSE303L-CAT-1-C1-2025-2026:Q4c",
+    "BCSE303L-CAT-1-C1-2025-2026:Q5",
+    "BCSE303L-CAT-1-C2-2025-2026:Q4a",
+    "BCSE303L-CAT-1-C2-2025-2026:Q4b",
+    "BCSE303L-CAT-1-C2-2025-2026:Q4c",
+    "BCSE303L-CAT-1-C2-2025-2026:Q5",
+    "BCSE303L-CAT-1-D1-2025-2026:Q4",
+    "BCSE303L-CAT-1-D1-2025-2026:Q5",
+    "BCSE303L-CAT-1-D2-2023-2024:Q4a",
+    "BCSE303L-CAT-1-D2-2023-2024:Q4b",
+    "BCSE303L-CAT-1-D2-2023-2024:Q5a",
+    "BCSE303L-CAT-1-D2-2023-2024:Q5b",
+    "BCSE303L-FAT-B1-2024-2025:Q3a",
+    "BCSE303L-FAT-B1-2024-2025:Q3b",
+    "BCSE303L-FAT-B2-2024-2025:Q3",
+    "BCSE303L-FAT-D1-2025-2026:Q8a",
+    "BCSE303L-FAT-D1-2025-2026:Q8b",
+    "BCSE303L-FAT-D1-2025-2026:Q8c",
+    "BCSE303L-FAT-D2-2023-2024:Q3i",
+    "BCSE303L-FAT-D2-2023-2024:Q3ii",
+    "BCSE303L-FAT-D2-2023-2024:Q3iii",
+    "BCSE303L-CAT-1-A1-2026-2027:Q5a",
+    "BCSE303L-CAT-1-A1-2026-2027:Q5b",
+    "BCSE303L-CAT-1-A1-2026-2027:Q5c",
+    "BCSE303L-CAT-1-A2-2026-2027:Q3a",
+    "BCSE303L-CAT-1-A2-2026-2027:Q3b",
+    "BCSE303L-CAT-1-A2-2026-2027:Q3c",
+    "BCSE303L-CAT-1-B1-2023-2024:Q4",
+    "BCSE303L-CAT-1-B1-2023-2024:Q5",
+    "BCSE303L-FAT-A1-2026-2027:Q3a",
+    "BCSE303L-FAT-A1-2026-2027:Q3b",
+    "BCSE303L-FAT-A1-2026-2027:Q3c",
+    "BCSE303L-FAT-A2-2026-2027:Q3",
+    "BCSE303L-FAT-B1-2023-2024:Q3",
+    "BCSE303L-FAT-B1-2026-2027:Q3(i)",
+    "BCSE303L-FAT-B1-2026-2027:Q3(ii)",
+    "BCSE303L-FAT-C1-2025-2026:Q3",
+    "BCSE303L-FAT-C2-2025-2026:Q3"
+   ],
+   "types": {
+    "trace": 23,
+    "theory": 4,
+    "numerical": 16,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.091
+  },
+  "Banker's algorithm": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "10 of 11",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "6 of 7",
+    "probability": 0.882
+   },
+   "all": {
+    "k_recent": 4,
+    "n_recent": 6,
+    "k_older": 12,
+    "n_older": 20,
+    "ratio": "16 of 26",
+    "recent_ratio": "4 of 6",
+    "older_ratio": "12 of 20",
+    "probability": 0.618
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q1a",
+    "BCSE303L-CAT-2-B1-2023-2024:Q1b",
+    "BCSE303L-CAT-2-B1-2024-2025:Q1a",
+    "BCSE303L-CAT-2-B1-2024-2025:Q1b",
+    "BCSE303L-CAT-2-B2-2024-2025:Q1a",
+    "BCSE303L-CAT-2-B2-2024-2025:Q1b",
+    "BCSE303L-CAT-2-B2-2024-2025:Q1c",
+    "BCSE303L-CAT-2-C1-2025-2026:Q1b",
+    "BCSE303L-CAT-2-D2-2023-2024:Q1b",
+    "BCSE303L-CAT-2-D2-2023-2024:Q1c",
+    "BCSE303L-CAT-2-D2-2023-2024:Q1d",
+    "BCSE303L-FAT-B1-2024-2025:Q4",
+    "BCSE303L-FAT-B2-2024-2025:Q4",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q3a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q3b",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q3c",
+    "BCSE303L-FAT-D2-2023-2024:Q5i",
+    "BCSE303L-FAT-D2-2023-2024:Q5ii",
+    "BCSE303L-FAT-D2-2023-2024:Q5iii",
+    "BCSE303L-CAT-2-C2-2025-2026:Q1a",
+    "BCSE303L-CAT-2-C2-2025-2026:Q1b",
+    "BCSE303L-FAT-A1-2026-2027:Q4a",
+    "BCSE303L-FAT-A1-2026-2027:Q4b",
+    "BCSE303L-FAT-A1-2026-2027:Q4c",
+    "BCSE303L-FAT-A2-2026-2027:Q4d",
+    "BCSE303L-FAT-B1-2023-2024:Q4",
+    "BCSE303L-FAT-B1-2026-2027:Q4(i)",
+    "BCSE303L-FAT-B1-2026-2027:Q4(ii)",
+    "BCSE303L-FAT-B1-2026-2027:Q4(iii)",
+    "BCSE303L-FAT-C1-2025-2026:Q4",
+    "BCSE303L-FAT-C2-2025-2026:Q4"
+   ],
+   "types": {
+    "trace": 10,
+    "numerical": 20,
+    "theory": 1
+   },
+   "marks_share_fat": 0.077
+  },
+  "OS structure / functions / types": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "7 of 11",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "3 of 7",
+    "probability": 0.706
+   },
+   "all": {
+    "k_recent": 6,
+    "n_recent": 6,
+    "k_older": 10,
+    "n_older": 14,
+    "ratio": "16 of 20",
+    "recent_ratio": "6 of 6",
+    "older_ratio": "10 of 14",
+    "probability": 0.821
+   },
+   "support": [
+    "BCSE303L-CAT-1-B1-2024-2025:Q1a",
+    "BCSE303L-CAT-1-B2-2024-2025:Q1a",
+    "BCSE303L-CAT-1-B2-2024-2025:Q1b",
+    "BCSE303L-CAT-1-C1-2025-2026:Q1a",
+    "BCSE303L-CAT-1-C1-2025-2026:Q1b",
+    "BCSE303L-CAT-1-C2-2025-2026:Q1a",
+    "BCSE303L-CAT-1-C2-2025-2026:Q1b",
+    "BCSE303L-CAT-1-D1-2025-2026:Q1a",
+    "BCSE303L-CAT-1-D1-2025-2026:Q1b",
+    "BCSE303L-CAT-1-D1-2025-2026:Q1c",
+    "BCSE303L-CAT-1-D2-2023-2024:Q1a",
+    "BCSE303L-CAT-1-D2-2023-2024:Q1b",
+    "BCSE303L-FAT-B1-2024-2025:Q1a",
+    "BCSE303L-FAT-B1-2024-2025:Q1b",
+    "BCSE303L-FAT-B2-2024-2025:Q1",
+    "BCSE303L-FAT-B2-2024-2025:Q2",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q2a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q2b",
+    "BCSE303L-CAT-1-A1-2026-2027:Q1",
+    "BCSE303L-CAT-1-A1-2026-2027:Q2",
+    "BCSE303L-CAT-1-A2-2026-2027:Q1",
+    "BCSE303L-CAT-1-A2-2026-2027:Q2",
+    "BCSE303L-CAT-1-B1-2023-2024:Q1",
+    "BCSE303L-FAT-A1-2026-2027:Q1a",
+    "BCSE303L-FAT-A1-2026-2027:Q1b",
+    "BCSE303L-FAT-A2-2026-2027:Q1",
+    "BCSE303L-FAT-B1-2023-2024:Q1a",
+    "BCSE303L-FAT-B1-2026-2027:Q1(i)",
+    "BCSE303L-FAT-B1-2026-2027:Q1(ii)",
+    "BCSE303L-FAT-B1-2026-2027:Q1(iii)",
+    "BCSE303L-FAT-B1-2026-2027:Q1(iv)"
+   ],
+   "types": {
+    "theory": 24,
+    "scenario": 7
+   },
+   "marks_share_fat": 0.062
+  },
+  "Critical section: Peterson / TSL / mutex / bakery": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "7 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "5 of 7",
+    "probability": 0.588
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 11,
+    "n_older": 13,
+    "ratio": "13 of 17",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "11 of 13",
+    "probability": 0.696
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q2a",
+    "BCSE303L-CAT-2-B1-2023-2024:Q2b",
+    "BCSE303L-CAT-2-B1-2024-2025:Q2b",
+    "BCSE303L-CAT-2-B2-2024-2025:Q2a",
+    "BCSE303L-CAT-2-C1-2025-2026:Q2a",
+    "BCSE303L-CAT-2-C1-2025-2026:Q2b",
+    "BCSE303L-CAT-2-D2-2023-2024:Q2",
+    "BCSE303L-FAT-B1-2024-2025:Q6b",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q9b(a)",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q9b(b)",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q9b(c)",
+    "BCSE303L-FAT-D2-2023-2024:Q2b",
+    "BCSE303L-CAT-2-C2-2025-2026:Q2a",
+    "BCSE303L-CAT-2-C2-2025-2026:Q2b",
+    "BCSE303L-CAT-2-C2-2025-2026:Q2c",
+    "BCSE303L-FAT-A1-2026-2027:Q6a(i)",
+    "BCSE303L-FAT-A1-2026-2027:Q6a(ii)",
+    "BCSE303L-FAT-B1-2023-2024:Q5a",
+    "BCSE303L-FAT-C1-2025-2026:Q5b",
+    "BCSE303L-FAT-C2-2025-2026:Q6"
+   ],
+   "types": {
+    "trace": 3,
+    "theory": 14,
+    "scenario": 1,
+    "numerical": 2
+   },
+   "marks_share_fat": 0.038
+  },
+  "Disk scheduling": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 7,
+    "n_older": 7,
+    "ratio": "11 of 11",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "7 of 7",
+    "probability": 0.941
+   },
+   "all": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 7,
+    "n_older": 7,
+    "ratio": "11 of 11",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "7 of 7",
+    "probability": 0.941
+   },
+   "support": [
+    "BCSE303L-FAT-B1-2024-2025:Q10",
+    "BCSE303L-FAT-B2-2024-2025:Q10a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q8b",
+    "BCSE303L-FAT-D1-2025-2026:Q6",
+    "BCSE303L-FAT-D2-2023-2024:Q8a",
+    "BCSE303L-FAT-D2-2023-2024:Q8b",
+    "BCSE303L-FAT-D2-2023-2024:Q8c",
+    "BCSE303L-FAT-D2-2023-2024:Q8d",
+    "BCSE303L-FAT-D2-2023-2024:Q8e",
+    "BCSE303L-FAT-A1-2026-2027:Q10a",
+    "BCSE303L-FAT-A2-2026-2027:Q10a",
+    "BCSE303L-FAT-B1-2023-2024:Q10",
+    "BCSE303L-FAT-B1-2026-2027:Q8(i)",
+    "BCSE303L-FAT-B1-2026-2027:Q8(ii)",
+    "BCSE303L-FAT-B1-2026-2027:Q8(iii)",
+    "BCSE303L-FAT-B1-2026-2027:Q8(iv)",
+    "BCSE303L-FAT-B1-2026-2027:Q8(v)",
+    "BCSE303L-FAT-C1-2025-2026:Q10b",
+    "BCSE303L-FAT-C2-2025-2026:Q8"
+   ],
+   "types": {
+    "numerical": 18,
+    "theory": 1
+   },
+   "marks_share_fat": 0.092
+  },
+  "Page replacement (FIFO/LRU/Optimal)": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "6 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "5 of 7",
+    "probability": 0.471
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 11,
+    "n_older": 13,
+    "ratio": "12 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "11 of 13",
+    "probability": 0.609
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q5a",
+    "BCSE303L-CAT-2-B1-2024-2025:Q4",
+    "BCSE303L-CAT-2-B2-2024-2025:Q5a",
+    "BCSE303L-CAT-2-B2-2024-2025:Q5b",
+    "BCSE303L-CAT-2-C1-2025-2026:Q5a",
+    "BCSE303L-CAT-2-D2-2023-2024:Q5a",
+    "BCSE303L-CAT-2-D2-2023-2024:Q5b",
+    "BCSE303L-FAT-B2-2024-2025:Q7",
+    "BCSE303L-FAT-D1-2025-2026:Q5",
+    "BCSE303L-FAT-D2-2023-2024:Q6a",
+    "BCSE303L-FAT-D2-2023-2024:Q6b",
+    "BCSE303L-CAT-2-C2-2025-2026:Q5a",
+    "BCSE303L-FAT-B1-2023-2024:Q8",
+    "BCSE303L-FAT-B1-2026-2027:Q6(i)",
+    "BCSE303L-FAT-B1-2026-2027:Q6(ii)",
+    "BCSE303L-FAT-B1-2026-2027:Q6(iii)",
+    "BCSE303L-FAT-C1-2025-2026:Q8"
+   ],
+   "types": {
+    "trace": 9,
+    "numerical": 6,
+    "theory": 2
+   },
+   "marks_share_fat": 0.056
+  },
+  "System calls / fork": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "5 of 11",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "5 of 7",
+    "probability": 0.353
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 6,
+    "k_older": 10,
+    "n_older": 14,
+    "ratio": "12 of 20",
+    "recent_ratio": "2 of 6",
+    "older_ratio": "10 of 14",
+    "probability": 0.536
+   },
+   "support": [
+    "BCSE303L-CAT-1-B1-2024-2025:Q2a",
+    "BCSE303L-CAT-1-C2-2025-2026:Q2",
+    "BCSE303L-CAT-1-C2-2025-2026:Q3a",
+    "BCSE303L-CAT-1-D1-2025-2026:Q2",
+    "BCSE303L-CAT-1-D2-2023-2024:Q2a",
+    "BCSE303L-CAT-1-D2-2023-2024:Q2b",
+    "BCSE303L-FAT-B1-2024-2025:Q2a",
+    "BCSE303L-FAT-D1-2025-2026:Q3",
+    "BCSE303L-CAT-1-A1-2026-2027:Q3",
+    "BCSE303L-CAT-1-A1-2026-2027:Q4",
+    "BCSE303L-CAT-1-A2-2026-2027:Q4",
+    "BCSE303L-CAT-1-B1-2023-2024:Q2a",
+    "BCSE303L-FAT-B1-2023-2024:Q2a",
+    "BCSE303L-FAT-C1-2025-2026:Q1a",
+    "BCSE303L-FAT-C2-2025-2026:Q1",
+    "BCSE303L-FAT-C2-2025-2026:Q2ii"
+   ],
+   "types": {
+    "theory": 13,
+    "trace": 1,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.032
+  },
+  "Protection / access matrix": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "7 of 11",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "3 of 7",
+    "probability": 0.706
+   },
+   "all": {
+    "k_recent": 4,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "7 of 11",
+    "recent_ratio": "4 of 4",
+    "older_ratio": "3 of 7",
+    "probability": 0.706
+   },
+   "support": [
+    "BCSE303L-CAT-1-B1-2024-2025:Q2b",
+    "BCSE303L-FAT-B2-2024-2025:Q10b",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q10b(a)",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q10b(b)",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q10b(c)",
+    "BCSE303L-FAT-A1-2026-2027:Q10b(i)",
+    "BCSE303L-FAT-A1-2026-2027:Q10b(ii)",
+    "BCSE303L-FAT-A1-2026-2027:Q10b(iii)",
+    "BCSE303L-FAT-A2-2026-2027:Q10b(b)",
+    "BCSE303L-FAT-A2-2026-2027:Q10b(c)",
+    "BCSE303L-FAT-A2-2026-2027:Q10b(d)",
+    "BCSE303L-FAT-B1-2026-2027:Q10b",
+    "BCSE303L-FAT-C1-2025-2026:Q10a",
+    "BCSE303L-FAT-C2-2025-2026:Q10a"
+   ],
+   "types": {
+    "theory": 8,
+    "numerical": 2,
+    "scenario": 4
+   },
+   "marks_share_fat": 0.054
+  },
+  "Threads / multithreading": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "7 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "5 of 7",
+    "probability": 0.588
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 6,
+    "k_older": 11,
+    "n_older": 14,
+    "ratio": "14 of 20",
+    "recent_ratio": "3 of 6",
+    "older_ratio": "11 of 14",
+    "probability": 0.643
+   },
+   "support": [
+    "BCSE303L-CAT-1-B1-2024-2025:Q3",
+    "BCSE303L-CAT-1-B2-2024-2025:Q2",
+    "BCSE303L-CAT-1-C1-2025-2026:Q3a",
+    "BCSE303L-CAT-1-C1-2025-2026:Q3b",
+    "BCSE303L-CAT-1-D1-2025-2026:Q3",
+    "BCSE303L-CAT-1-D2-2023-2024:Q3a",
+    "BCSE303L-CAT-1-D2-2023-2024:Q3b",
+    "BCSE303L-FAT-B1-2024-2025:Q2b",
+    "BCSE303L-FAT-D2-2023-2024:Q2a",
+    "BCSE303L-CAT-1-A2-2026-2027:Q5",
+    "BCSE303L-CAT-1-B1-2023-2024:Q3",
+    "BCSE303L-FAT-A2-2026-2027:Q2",
+    "BCSE303L-FAT-B1-2023-2024:Q2b",
+    "BCSE303L-FAT-B1-2026-2027:Q2a",
+    "BCSE303L-FAT-C1-2025-2026:Q2",
+    "BCSE303L-FAT-C2-2025-2026:Q2i"
+   ],
+   "types": {
+    "theory": 14,
+    "numerical": 1,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.037
+  },
+  "Semaphores / producer-consumer": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "7 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "6 of 7",
+    "probability": 0.529
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 10,
+    "n_older": 13,
+    "ratio": "11 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "10 of 13",
+    "probability": 0.565
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q3b",
+    "BCSE303L-CAT-2-B1-2024-2025:Q2a",
+    "BCSE303L-CAT-2-B2-2024-2025:Q3",
+    "BCSE303L-CAT-2-C1-2025-2026:Q3",
+    "BCSE303L-FAT-B1-2024-2025:Q6a",
+    "BCSE303L-FAT-B2-2024-2025:Q5",
+    "BCSE303L-FAT-D2-2023-2024:Q4a",
+    "BCSE303L-FAT-A2-2026-2027:Q5",
+    "BCSE303L-FAT-A2-2026-2027:Q6",
+    "BCSE303L-FAT-B1-2023-2024:Q5b",
+    "BCSE303L-FAT-C1-2025-2026:Q5a",
+    "BCSE303L-FAT-C2-2025-2026:Q5"
+   ],
+   "types": {
+    "trace": 2,
+    "theory": 7,
+    "numerical": 2,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.048
+  },
+  "File allocation methods": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "9 of 11",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "6 of 7",
+    "probability": 0.765
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "9 of 11",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "6 of 7",
+    "probability": 0.765
+   },
+   "support": [
+    "BCSE303L-FAT-B1-2024-2025:Q9",
+    "BCSE303L-FAT-B2-2024-2025:Q9b",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q7b",
+    "BCSE303L-FAT-D1-2025-2026:Q2",
+    "BCSE303L-FAT-A1-2026-2027:Q9a",
+    "BCSE303L-FAT-A1-2026-2027:Q9b",
+    "BCSE303L-FAT-A2-2026-2027:Q9b(b)",
+    "BCSE303L-FAT-A2-2026-2027:Q9b(c)",
+    "BCSE303L-FAT-A2-2026-2027:Q9b(d)",
+    "BCSE303L-FAT-B1-2023-2024:Q9b",
+    "BCSE303L-FAT-C1-2025-2026:Q9b",
+    "BCSE303L-FAT-C2-2025-2026:Q7"
+   ],
+   "types": {
+    "theory": 8,
+    "trace": 1,
+    "scenario": 3
+   },
+   "marks_share_fat": 0.062
+  },
+  "Contiguous allocation (first/best/worst fit)": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "4 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "3 of 7",
+    "probability": 0.353
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 9,
+    "n_older": 13,
+    "ratio": "10 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "9 of 13",
+    "probability": 0.522
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q4a",
+    "BCSE303L-CAT-2-B1-2024-2025:Q5",
+    "BCSE303L-CAT-2-B2-2024-2025:Q4a",
+    "BCSE303L-CAT-2-C1-2025-2026:Q4a",
+    "BCSE303L-CAT-2-D2-2023-2024:Q4",
+    "BCSE303L-FAT-B1-2024-2025:Q7b",
+    "BCSE303L-FAT-B1-2024-2025:Q8b",
+    "BCSE303L-FAT-B2-2024-2025:Q6",
+    "BCSE303L-CAT-2-C2-2025-2026:Q4b",
+    "BCSE303L-FAT-A1-2026-2027:Q7a",
+    "BCSE303L-FAT-B1-2023-2024:Q7b"
+   ],
+   "types": {
+    "trace": 5,
+    "numerical": 4,
+    "theory": 2
+   },
+   "marks_share_fat": 0.023
+  },
+  "Paging / address translation": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "5 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "3 of 7",
+    "probability": 0.471
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 13,
+    "ratio": "7 of 17",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "5 of 13",
+    "probability": 0.435
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q4b",
+    "BCSE303L-FAT-B1-2024-2025:Q7a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q4a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q4b",
+    "BCSE303L-CAT-2-C2-2025-2026:Q4a",
+    "BCSE303L-FAT-A1-2026-2027:Q7b",
+    "BCSE303L-FAT-C1-2025-2026:Q7a",
+    "BCSE303L-FAT-C1-2025-2026:Q7b",
+    "BCSE303L-FAT-C2-2025-2026:Q9a",
+    "BCSE303L-FAT-C2-2025-2026:Q9b"
+   ],
+   "types": {
+    "numerical": 9,
+    "theory": 1
+   },
+   "marks_share_fat": 0.037
+  },
+  "TLB / EAT": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "5 of 11",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "2 of 7",
+    "probability": 0.529
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 6,
+    "n_older": 13,
+    "ratio": "9 of 17",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "6 of 13",
+    "probability": 0.565
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q5b",
+    "BCSE303L-CAT-2-B2-2024-2025:Q4b",
+    "BCSE303L-CAT-2-C1-2025-2026:Q4b",
+    "BCSE303L-FAT-B1-2024-2025:Q8a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q4c",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q4d",
+    "BCSE303L-CAT-2-C2-2025-2026:Q5b",
+    "BCSE303L-FAT-A1-2026-2027:Q8a",
+    "BCSE303L-FAT-A2-2026-2027:Q7",
+    "BCSE303L-FAT-B1-2023-2024:Q7a"
+   ],
+   "types": {
+    "numerical": 9,
+    "theory": 1
+   },
+   "marks_share_fat": 0.023
+  },
+  "Virtual machines / hypervisor": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "8 of 11",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "5 of 7",
+    "probability": 0.706
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "8 of 11",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "5 of 7",
+    "probability": 0.706
+   },
+   "support": [
+    "BCSE303L-FAT-B2-2024-2025:Q8",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q6a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q6b",
+    "BCSE303L-FAT-D2-2023-2024:Q7a",
+    "BCSE303L-FAT-A2-2026-2027:Q9a",
+    "BCSE303L-FAT-B1-2023-2024:Q9a",
+    "BCSE303L-FAT-B1-2026-2027:Q9a",
+    "BCSE303L-FAT-B1-2026-2027:Q9b",
+    "BCSE303L-FAT-C1-2025-2026:Q9a",
+    "BCSE303L-FAT-C2-2025-2026:Q10b"
+   ],
+   "types": {
+    "theory": 7,
+    "numerical": 1,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.067
+  },
+  "Dining philosophers": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "2 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.294
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 13,
+    "ratio": "4 of 17",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "2 of 13",
+    "probability": 0.304
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2024-2025:Q3a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q9a(a)",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q9a(b)",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q9a(c)",
+    "BCSE303L-CAT-2-C2-2025-2026:Q3a",
+    "BCSE303L-FAT-A1-2026-2027:Q6b(i)",
+    "BCSE303L-FAT-A1-2026-2027:Q6b(ii)",
+    "BCSE303L-FAT-A1-2026-2027:Q6b(iii)"
+   ],
+   "types": {
+    "theory": 6,
+    "numerical": 1,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.016
+  },
+  "Readers-writers": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "4 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "3 of 7",
+    "probability": 0.353
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 5,
+    "n_older": 13,
+    "ratio": "6 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "5 of 13",
+    "probability": 0.348
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2023-2024:Q3a",
+    "BCSE303L-CAT-2-D2-2023-2024:Q3",
+    "BCSE303L-FAT-B1-2024-2025:Q5a",
+    "BCSE303L-FAT-A1-2026-2027:Q5a",
+    "BCSE303L-FAT-A1-2026-2027:Q5b",
+    "BCSE303L-FAT-B1-2023-2024:Q6",
+    "BCSE303L-FAT-C1-2025-2026:Q6"
+   ],
+   "types": {
+    "theory": 3,
+    "scenario": 2,
+    "trace": 2
+   },
+   "marks_share_fat": 0.032
+  },
+  "Process states / PCB": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "2 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.235
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 6,
+    "k_older": 4,
+    "n_older": 14,
+    "ratio": "5 of 20",
+    "recent_ratio": "1 of 6",
+    "older_ratio": "4 of 14",
+    "probability": 0.25
+   },
+   "support": [
+    "BCSE303L-CAT-1-B2-2024-2025:Q3b",
+    "BCSE303L-CAT-1-C1-2025-2026:Q2a",
+    "BCSE303L-CAT-1-C1-2025-2026:Q2b",
+    "BCSE303L-CAT-1-C2-2025-2026:Q3b",
+    "BCSE303L-FAT-A1-2026-2027:Q2a",
+    "BCSE303L-FAT-A1-2026-2027:Q2b",
+    "BCSE303L-FAT-C1-2025-2026:Q1b"
+   ],
+   "types": {
+    "theory": 6,
+    "trace": 1
+   },
+   "marks_share_fat": 0.011
+  },
+  "Deadlock detection / RAG": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "2 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.235
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 6,
+    "k_older": 1,
+    "n_older": 20,
+    "ratio": "2 of 26",
+    "recent_ratio": "1 of 6",
+    "older_ratio": "1 of 20",
+    "probability": 0.118
+   },
+   "support": [
+    "BCSE303L-FAT-D1-2025-2026:Q7a",
+    "BCSE303L-FAT-D1-2025-2026:Q7b",
+    "BCSE303L-FAT-D1-2025-2026:Q7c",
+    "BCSE303L-FAT-D1-2025-2026:Q7d",
+    "BCSE303L-FAT-A2-2026-2027:Q4a",
+    "BCSE303L-FAT-A2-2026-2027:Q4c"
+   ],
+   "types": {
+    "theory": 4,
+    "trace": 2
+   },
+   "marks_share_fat": 0.016
+  },
+  "Security threats": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "2 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.294
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "2 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.294
+   },
+   "support": [
+    "BCSE303L-CAT-1-B1-2024-2025:Q1b",
+    "BCSE303L-CAT-1-B2-2024-2025:Q3a",
+    "BCSE303L-CAT-1-D1-2025-2026:Q1d",
+    "BCSE303L-FAT-A2-2026-2027:Q10b(a)",
+    "BCSE303L-FAT-B1-2026-2027:Q10a"
+   ],
+   "types": {
+    "theory": 3,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.01
+  },
+  "Monitors": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "2 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.235
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 3,
+    "n_older": 13,
+    "ratio": "4 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "3 of 13",
+    "probability": 0.261
+   },
+   "support": [
+    "BCSE303L-CAT-2-B2-2024-2025:Q2b",
+    "BCSE303L-FAT-D1-2025-2026:Q4",
+    "BCSE303L-CAT-2-C2-2025-2026:Q3b",
+    "BCSE303L-FAT-B1-2026-2027:Q5"
+   ],
+   "types": {
+    "theory": 3,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.016
+  },
+  "Deadlock conditions/prevention": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "3 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "2 of 7",
+    "probability": 0.294
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 6,
+    "k_older": 4,
+    "n_older": 20,
+    "ratio": "5 of 26",
+    "recent_ratio": "1 of 6",
+    "older_ratio": "4 of 20",
+    "probability": 0.206
+   },
+   "support": [
+    "BCSE303L-CAT-2-C1-2025-2026:Q1a",
+    "BCSE303L-CAT-2-D2-2023-2024:Q1a",
+    "BCSE303L-FAT-B1-2024-2025:Q5b",
+    "BCSE303L-FAT-D2-2023-2024:Q4b",
+    "BCSE303L-FAT-A2-2026-2027:Q4b"
+   ],
+   "types": {
+    "theory": 4,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.014
+  },
+  "Segmentation": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "3 of 11",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.412
+   },
+   "all": {
+    "k_recent": 3,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 13,
+    "ratio": "4 of 17",
+    "recent_ratio": "3 of 4",
+    "older_ratio": "1 of 13",
+    "probability": 0.348
+   },
+   "support": [
+    "BCSE303L-CAT-2-C1-2025-2026:Q5b",
+    "BCSE303L-FAT-A1-2026-2027:Q8b",
+    "BCSE303L-FAT-A2-2026-2027:Q8",
+    "BCSE303L-FAT-B1-2026-2027:Q7"
+   ],
+   "types": {
+    "numerical": 2,
+    "theory": 2
+   },
+   "marks_share_fat": 0.02
+  },
+  "Directory structure": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "3 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.353
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "3 of 11",
+    "recent_ratio": "2 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.353
+   },
+   "support": [
+    "BCSE303L-FAT-B2-2024-2025:Q9a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q7a",
+    "BCSE303L-FAT-A2-2026-2027:Q9b(a)"
+   ],
+   "types": {
+    "theory": 2,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.013
+  },
+  "OS services": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "2 of 11",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "2 of 7",
+    "probability": 0.176
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 6,
+    "k_older": 2,
+    "n_older": 14,
+    "ratio": "2 of 20",
+    "recent_ratio": "0 of 6",
+    "older_ratio": "2 of 14",
+    "probability": 0.107
+   },
+   "support": [
+    "BCSE303L-FAT-D1-2025-2026:Q1",
+    "BCSE303L-FAT-D2-2023-2024:Q1a",
+    "BCSE303L-FAT-D2-2023-2024:Q1b"
+   ],
+   "types": {
+    "theory": 3
+   },
+   "marks_share_fat": 0.016
+  },
+  "Dual-mode operation": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 6,
+    "k_older": 0,
+    "n_older": 14,
+    "ratio": "1 of 20",
+    "recent_ratio": "1 of 6",
+    "older_ratio": "0 of 14",
+    "probability": 0.107
+   },
+   "support": [
+    "BCSE303L-FAT-B2-Fall-2026-27:Q1a",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q1b"
+   ],
+   "types": {
+    "theory": 2
+   },
+   "marks_share_fat": 0.008
+  },
+  "Distributed file systems": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "support": [
+    "BCSE303L-FAT-B2-Fall-2026-27:Q10a(a)",
+    "BCSE303L-FAT-B2-Fall-2026-27:Q10a(b)"
+   ],
+   "types": {
+    "theory": 2
+   },
+   "marks_share_fat": 0.008
+  },
+  "Dual mode / privileged instructions": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.118
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 6,
+    "k_older": 2,
+    "n_older": 14,
+    "ratio": "2 of 20",
+    "recent_ratio": "0 of 6",
+    "older_ratio": "2 of 14",
+    "probability": 0.107
+   },
+   "support": [
+    "BCSE303L-CAT-1-B1-2023-2024:Q2b",
+    "BCSE303L-FAT-B1-2023-2024:Q1b"
+   ],
+   "types": {
+    "theory": 2
+   },
+   "marks_share_fat": 0.002
+  },
+  "IPC": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 13,
+    "ratio": "2 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "1 of 13",
+    "probability": 0.174
+   },
+   "support": [
+    "BCSE303L-CAT-2-B1-2024-2025:Q3b",
+    "BCSE303L-FAT-B1-2026-2027:Q2b"
+   ],
+   "types": {
+    "theory": 1,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.004
+  },
+  "Demand paging": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 13,
+    "ratio": "1 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 13",
+    "probability": 0.13
+   },
+   "support": [
+    "BCSE303L-FAT-B2-Fall-2026-27:Q5a"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.004
+  },
+  "Thrashing / working set": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 13,
+    "ratio": "1 of 17",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 13",
+    "probability": 0.13
+   },
+   "support": [
+    "BCSE303L-FAT-B2-Fall-2026-27:Q5b"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.004
+  },
+  "Disk structure / addressing": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 4,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "1 of 4",
+    "older_ratio": "0 of 7",
+    "probability": 0.176
+   },
+   "support": [
+    "BCSE303L-FAT-B2-Fall-2026-27:Q8a"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.003
+  },
+  "File deletion policy": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.118
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 4,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 4",
+    "older_ratio": "1 of 7",
+    "probability": 0.118
+   },
+   "support": [
+    "BCSE303L-FAT-D2-2023-2024:Q7b"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.004
+  }
+ },
+ "ranking": [
+  "Disk scheduling",
+  "Banker's algorithm",
+  "CPU scheduling (FCFS/SJF/RR/priority)",
+  "File allocation methods",
+  "OS structure / functions / types",
+  "Virtual machines / hypervisor",
+  "Protection / access matrix",
+  "Critical section: Peterson / TSL / mutex / bakery",
+  "Threads / multithreading",
+  "Semaphores / producer-consumer",
+  "TLB / EAT",
+  "Page replacement (FIFO/LRU/Optimal)",
+  "Paging / address translation",
+  "Segmentation",
+  "System calls / fork",
+  "Contiguous allocation (first/best/worst fit)",
+  "Directory structure",
+  "Readers-writers",
+  "Dining philosophers",
+  "Security threats",
+  "Deadlock conditions/prevention",
+  "Monitors",
+  "Process states / PCB",
+  "Deadlock detection / RAG",
+  "Distributed file systems",
+  "Disk structure / addressing",
+  "IPC",
+  "Demand paging",
+  "Thrashing / working set",
+  "OS services",
+  "Dual-mode operation",
+  "File deletion policy",
+  "Dual mode / privileged instructions"
+ ],
+ "drift": {
+  "CAT1": {
+   "older": {
+    "papers": 7,
+    "n_q": 57,
+    "mean_bloom": 3.02,
+    "scenario_wrapper_pct_q": 22.8,
+    "scenario_wrapper_pct_marks": 19.7,
+    "computational_marks_pct": 36.6,
+    "theory_marks_pct": 63.4,
+    "num_trace_to_theory_mark_ratio": 0.58
+   },
+   "recent_2026_27": {
+    "papers": 2,
+    "n_q": 14,
+    "mean_bloom": 3.14,
+    "scenario_wrapper_pct_q": 57.1,
+    "scenario_wrapper_pct_marks": 60.0,
+    "computational_marks_pct": 18.0,
+    "theory_marks_pct": 42.0,
+    "num_trace_to_theory_mark_ratio": 0.43
+   }
+  },
+  "CAT2": {
+   "older": {
+    "papers": 6,
+    "n_q": 57,
+    "mean_bloom": 3.58,
+    "scenario_wrapper_pct_q": 52.6,
+    "scenario_wrapper_pct_marks": 52.8,
+    "computational_marks_pct": 66.9,
+    "theory_marks_pct": 31.1,
+    "num_trace_to_theory_mark_ratio": 2.15
+   },
+   "recent_2026_27": {
+    "papers": 0,
+    "n_q": 0,
+    "mean_bloom": 0.0,
+    "scenario_wrapper_pct_q": 0.0,
+    "scenario_wrapper_pct_marks": 0.0,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 0.0,
+    "num_trace_to_theory_mark_ratio": null
+   }
+  },
+  "FAT": {
+   "older": {
+    "papers": 7,
+    "n_q": 106,
+    "mean_bloom": 3.46,
+    "scenario_wrapper_pct_q": 34.0,
+    "scenario_wrapper_pct_marks": 32.9,
+    "computational_marks_pct": 46.9,
+    "theory_marks_pct": 47.9,
+    "num_trace_to_theory_mark_ratio": 0.98
+   },
+   "recent_2026_27": {
+    "papers": 4,
+    "n_q": 103,
+    "mean_bloom": 3.34,
+    "scenario_wrapper_pct_q": 60.2,
+    "scenario_wrapper_pct_marks": 65.2,
+    "computational_marks_pct": 38.3,
+    "theory_marks_pct": 37.1,
+    "num_trace_to_theory_mark_ratio": 1.03
+   }
+  },
+  "by_year_start": {
+   "2023": {
+    "papers": 6,
+    "n_q": 71,
+    "mean_bloom": 3.34,
+    "scenario_wrapper_pct_q": 40.8,
+    "scenario_wrapper_pct_marks": 37.1,
+    "computational_marks_pct": 51.1,
+    "theory_marks_pct": 48.9,
+    "num_trace_to_theory_mark_ratio": 1.04
+   },
+   "2024": {
+    "papers": 6,
+    "n_q": 61,
+    "mean_bloom": 3.64,
+    "scenario_wrapper_pct_q": 18.0,
+    "scenario_wrapper_pct_marks": 14.2,
+    "computational_marks_pct": 46.7,
+    "theory_marks_pct": 45.7,
+    "num_trace_to_theory_mark_ratio": 1.02
+   },
+   "2025": {
+    "papers": 8,
+    "n_q": 88,
+    "mean_bloom": 3.23,
+    "scenario_wrapper_pct_q": 44.3,
+    "scenario_wrapper_pct_marks": 44.3,
+    "computational_marks_pct": 47.4,
+    "theory_marks_pct": 50.0,
+    "num_trace_to_theory_mark_ratio": 0.95
+   },
+   "2026": {
+    "papers": 6,
+    "n_q": 117,
+    "mean_bloom": 3.32,
+    "scenario_wrapper_pct_q": 59.8,
+    "scenario_wrapper_pct_marks": 64.3,
+    "computational_marks_pct": 34.8,
+    "theory_marks_pct": 37.9,
+    "num_trace_to_theory_mark_ratio": 0.92
+   }
+  }
+ },
+ "slot_pairs": [
+  {
+   "pair": "CAT1 B1->B2 2024",
+   "source": "BCSE303L-CAT-1-B1-2024-2025",
+   "target": "BCSE303L-CAT-1-B2-2024-2025",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "6 of 7",
+    "Same module only": "1 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-CAT-1-B2-2024-2025:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-B1-2024-2025:Q1a",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE303L-CAT-1-B2-2024-2025:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-B1-2024-2025:Q1a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-CAT-1-B2-2024-2025:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-B1-2024-2025:Q3",
+     "text_sim": 0.22
+    },
+    {
+     "q": "BCSE303L-CAT-1-B2-2024-2025:Q3a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-B1-2024-2025:Q1b",
+     "text_sim": 0.43
+    },
+    {
+     "q": "BCSE303L-CAT-1-B2-2024-2025:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-1-B1-2024-2025:Q2a",
+     "text_sim": 0.42
+    },
+    {
+     "q": "BCSE303L-CAT-1-B2-2024-2025:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-B1-2024-2025:Q5",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-CAT-1-B2-2024-2025:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-B1-2024-2025:Q5",
+     "text_sim": 0.2
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 C1->C2 2025",
+   "source": "BCSE303L-CAT-1-C1-2025-2026",
+   "target": "BCSE303L-CAT-1-C2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 9",
+    "Same concept new numbers": "7 of 9",
+    "Same module only": "2 of 9",
+    "Unrelated": "0 of 9"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q1a",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q1b",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q1b",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q1b",
+     "text_sim": 0.15
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q3a",
+     "text_sim": 0.3
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q3a",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q3b",
+     "text_sim": 0.35
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q3b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q2b",
+     "text_sim": 0.39
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q4a",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q4b",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q4b",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q4b",
+     "text_sim": 0.51
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q4c",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q4b",
+     "text_sim": 0.52
+    },
+    {
+     "q": "BCSE303L-CAT-1-C2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-C1-2025-2026:Q4b",
+     "text_sim": 0.24
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 B1->B2 2024",
+   "source": "BCSE303L-CAT-2-B1-2024-2025",
+   "target": "BCSE303L-CAT-2-B2-2024-2025",
+   "by_question": {
+    "Identical": "0 of 10",
+    "Same concept new numbers": "8 of 10",
+    "Same module only": "2 of 10",
+    "Unrelated": "0 of 10"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q1a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q1a",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q1b",
+     "text_sim": 0.22
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q1c",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q1a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q2a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q2b",
+     "text_sim": 0.21
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q2b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q3b",
+     "text_sim": 0.36
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q3",
+     "marks": null,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q2a",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q4a",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q5",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q4b",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q5",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q5a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q4",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE303L-CAT-2-B2-2024-2025:Q5b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-B1-2024-2025:Q4",
+     "text_sim": 0.01
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 C1->C2 2025",
+   "source": "BCSE303L-CAT-2-C1-2025-2026",
+   "target": "BCSE303L-CAT-2-C2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 11",
+    "Same concept new numbers": "8 of 11",
+    "Same module only": "3 of 11",
+    "Unrelated": "0 of 11"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q1a",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q1b",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q1b",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q1b",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q2a",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q2a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q2b",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q2a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q2c",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q2a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q2a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q2b",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q4a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q5a",
+     "text_sim": 0.29
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q4b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q4a",
+     "text_sim": 0.39
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q5a",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q5a",
+     "text_sim": 0.46
+    },
+    {
+     "q": "BCSE303L-CAT-2-C2-2025-2026:Q5b",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-2-C1-2025-2026:Q4b",
+     "text_sim": 0.09
+    }
+   ]
+  },
+  {
+   "pair": "FAT B1->B2 2024",
+   "source": "BCSE303L-FAT-B1-2024-2025",
+   "target": "BCSE303L-FAT-B2-2024-2025",
+   "by_question": {
+    "Identical": "0 of 12",
+    "Same concept new numbers": "8 of 12",
+    "Same module only": "4 of 12",
+    "Unrelated": "0 of 12"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q1a",
+     "text_sim": 0.26
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q1a",
+     "text_sim": 0.16
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q3a",
+     "text_sim": 0.11
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q4",
+     "text_sim": 0.15
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q6a",
+     "text_sim": 0.19
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q7b",
+     "text_sim": 0.39
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q7b",
+     "text_sim": 0.11
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q8",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q9",
+     "text_sim": 0.31
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q9a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q9",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q9b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q9",
+     "text_sim": 0.42
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q10a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q10",
+     "text_sim": 0.15
+    },
+    {
+     "q": "BCSE303L-FAT-B2-2024-2025:Q10b",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2024-2025:Q10",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 A1->A2 2026",
+   "source": "BCSE303L-CAT-1-A1-2026-2027",
+   "target": "BCSE303L-CAT-1-A2-2026-2027",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "6 of 7",
+    "Same module only": "1 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-CAT-1-A2-2026-2027:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-A1-2026-2027:Q1",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE303L-CAT-1-A2-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-A1-2026-2027:Q2",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE303L-CAT-1-A2-2026-2027:Q3a",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-A1-2026-2027:Q5b",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE303L-CAT-1-A2-2026-2027:Q3b",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-A1-2026-2027:Q5a",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE303L-CAT-1-A2-2026-2027:Q3c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-A1-2026-2027:Q5b",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-CAT-1-A2-2026-2027:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-CAT-1-A1-2026-2027:Q3",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE303L-CAT-1-A2-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-CAT-1-A1-2026-2027:Q3",
+     "text_sim": 0.11
+    }
+   ]
+  },
+  {
+   "pair": "FAT A1->A2 2026",
+   "source": "BCSE303L-FAT-A1-2026-2027",
+   "target": "BCSE303L-FAT-A2-2026-2027",
+   "by_question": {
+    "Identical": "0 of 21",
+    "Same concept new numbers": "12 of 21",
+    "Same module only": "9 of 21",
+    "Unrelated": "0 of 21"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q1a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q2a",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q3b",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q4a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q4a",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q4b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q4a",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q4c",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q4a",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q4d",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q4a",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q5a",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q6",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q6a(i)",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q7",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q8a",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q8",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q8b",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q9a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q9a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q9b(a)",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q9b",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q9b(b)",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q9b",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q9b(c)",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q9b",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q9b(d)",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q9b",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q10a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q10a",
+     "text_sim": 0.19
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q10b(a)",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q10a",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q10b(b)",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q10b(i)",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q10b(c)",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q10b(i)",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE303L-FAT-A2-2026-2027:Q10b(d)",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-A1-2026-2027:Q10b(i)",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "FAT B1->B2 2026",
+   "source": "BCSE303L-FAT-B1-2026-2027",
+   "target": "BCSE303L-FAT-B2-Fall-2026-27",
+   "by_question": {
+    "Identical": "0 of 30",
+    "Same concept new numbers": "11 of 30",
+    "Same module only": "19 of 30",
+    "Unrelated": "0 of 30"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q1a",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q2a",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q1b",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q2a",
+     "text_sim": 0.28
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q2a",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q1(ii)",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q2b",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q1(ii)",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q3a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q4(i)",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q3b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q4(iii)",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q3c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q4(i)",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q4a",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q7",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q4b",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q7",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q4c",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q7",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q4d",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q7",
+     "text_sim": 0.37
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q5a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q7",
+     "text_sim": 0.21
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q5b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q7",
+     "text_sim": 0.3
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q6a",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q9b",
+     "text_sim": 0.33
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q6b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q9b",
+     "text_sim": 0.15
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q7a",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q9b",
+     "text_sim": 0.32
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q7b",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q9b",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q8a",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q8(i)",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q8b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q8(i)",
+     "text_sim": 0.14
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9a(a)",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9a(b)",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9a(c)",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9b(a)",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9b(b)",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9b(c)",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q5",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10a(a)",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q9b",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10a(b)",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q9b",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10b(a)",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q10b",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10b(b)",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q10b",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10b(c)",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-B1-2026-2027:Q10b",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "FAT C1->C2 2025",
+   "source": "BCSE303L-FAT-C1-2025-2026",
+   "target": "BCSE303L-FAT-C2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "13 of 13",
+    "Same module only": "0 of 13",
+    "Unrelated": "0 of 13"
+   },
+   "detail": [
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q1a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q2i",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q2ii",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q1a",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q3",
+     "text_sim": 0.12
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q5a",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q5b",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q9b",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q8",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q10b",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q9a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q7a",
+     "text_sim": 0.36
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q9b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q7a",
+     "text_sim": 0.35
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q10a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q10a",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE303L-FAT-C2-2025-2026:Q10b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE303L-FAT-C1-2025-2026:Q9a",
+     "text_sim": 0.02
+    }
+   ]
+  }
+ ],
+ "slot_pairs_pooled": {
+  "n_questions": 120,
+  "n_pairs": 9,
+  "by_question": {
+   "Identical": "0 of 120",
+   "Same concept new numbers": "79 of 120",
+   "Same module only": "41 of 120",
+   "Unrelated": "0 of 120"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.658,
+   "Same module only": 0.342,
+   "Unrelated": 0.0
+  }
+ },
+ "cross_letter_pooled": {
+  "n_questions": 192,
+  "n_pairs": 11,
+  "by_question": {
+   "Identical": "0 of 192",
+   "Same concept new numbers": "131 of 192",
+   "Same module only": "59 of 192",
+   "Unrelated": "2 of 192"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.682,
+   "Same module only": 0.307,
+   "Unrelated": 0.01
+  }
+ },
+ "different_year_pooled_null": {
+  "n_questions": 2332,
+  "n_pairs": 172,
+  "by_question": {
+   "Identical": "7 of 2332",
+   "Same concept new numbers": "1478 of 2332",
+   "Same module only": "810 of 2332",
+   "Unrelated": "37 of 2332"
+  },
+  "rate": {
+   "Identical": 0.003,
+   "Same concept new numbers": 0.634,
+   "Same module only": 0.347,
+   "Unrelated": 0.016
+  }
+ },
+ "sister_pairs": [],
+ "sister_pooled": {
+  "n_questions": 0,
+  "n_pairs": 0,
+  "by_question": {
+   "Identical": "0 of 0",
+   "Same concept new numbers": "0 of 0",
+   "Same module only": "0 of 0",
+   "Unrelated": "0 of 0"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.0,
+   "Same module only": 0.0,
+   "Unrelated": 0.0
+  }
+ },
+ "reuse_recent_vs_older": [
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q6(i)",
+   "best_older_match": "BCSE303L-CAT-2-C1-2025-2026:Q5a",
+   "text_sim": 0.67
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q6(ii)",
+   "best_older_match": "BCSE303L-CAT-2-C1-2025-2026:Q5a",
+   "text_sim": 0.67
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q6(iii)",
+   "best_older_match": "BCSE303L-CAT-2-C1-2025-2026:Q5a",
+   "text_sim": 0.66
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q3(ii)",
+   "best_older_match": "BCSE303L-FAT-B1-2023-2024:Q3",
+   "text_sim": 0.56
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q3c",
+   "best_older_match": "BCSE303L-CAT-2-B2-2024-2025:Q1c",
+   "text_sim": 0.54
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q2a",
+   "best_older_match": "BCSE303L-CAT-1-D1-2025-2026:Q1b",
+   "text_sim": 0.51
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q3b",
+   "best_older_match": "BCSE303L-CAT-2-B2-2024-2025:Q1b",
+   "text_sim": 0.5
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q7b",
+   "best_older_match": "BCSE303L-CAT-1-B1-2023-2024:Q1",
+   "text_sim": 0.5
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q4a",
+   "best_older_match": "BCSE303L-FAT-C1-2025-2026:Q7a",
+   "text_sim": 0.49
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q2b",
+   "best_older_match": "BCSE303L-CAT-1-B2-2024-2025:Q1a",
+   "text_sim": 0.48
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q7a",
+   "best_older_match": "BCSE303L-CAT-1-C1-2025-2026:Q1b",
+   "text_sim": 0.48
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q2a",
+   "best_older_match": "BCSE303L-CAT-1-D1-2025-2026:Q1c",
+   "text_sim": 0.48
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10a(a)",
+   "best_older_match": "BCSE303L-CAT-1-D2-2023-2024:Q2b",
+   "text_sim": 0.46
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10b(a)",
+   "best_older_match": "BCSE303L-CAT-2-B1-2023-2024:Q2b",
+   "text_sim": 0.46
+  },
+  {
+   "q": "BCSE303L-CAT-1-A2-2026-2027:Q5",
+   "best_older_match": "BCSE303L-CAT-1-B1-2024-2025:Q3",
+   "text_sim": 0.45
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q3a",
+   "best_older_match": "BCSE303L-CAT-2-C1-2025-2026:Q1a",
+   "text_sim": 0.44
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q3(i)",
+   "best_older_match": "BCSE303L-CAT-1-B2-2024-2025:Q4",
+   "text_sim": 0.44
+  },
+  {
+   "q": "BCSE303L-CAT-1-A2-2026-2027:Q1",
+   "best_older_match": "BCSE303L-CAT-1-B2-2024-2025:Q3a",
+   "text_sim": 0.43
+  },
+  {
+   "q": "BCSE303L-FAT-A1-2026-2027:Q7b",
+   "best_older_match": "BCSE303L-FAT-C1-2025-2026:Q7a",
+   "text_sim": 0.43
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q1b",
+   "best_older_match": "BCSE303L-CAT-1-D1-2025-2026:Q1c",
+   "text_sim": 0.42
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q5a",
+   "best_older_match": "BCSE303L-CAT-1-D1-2025-2026:Q1c",
+   "text_sim": 0.42
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q5b",
+   "best_older_match": "BCSE303L-FAT-D1-2025-2026:Q7c",
+   "text_sim": 0.42
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10a(b)",
+   "best_older_match": "BCSE303L-CAT-2-D2-2023-2024:Q1c",
+   "text_sim": 0.41
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q2b",
+   "best_older_match": "BCSE303L-CAT-2-B1-2024-2025:Q3b",
+   "text_sim": 0.41
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q4b",
+   "best_older_match": "BCSE303L-CAT-2-B2-2024-2025:Q5b",
+   "text_sim": 0.39
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q8a",
+   "best_older_match": "BCSE303L-FAT-D2-2023-2024:Q1b",
+   "text_sim": 0.39
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10b(b)",
+   "best_older_match": "BCSE303L-FAT-D2-2023-2024:Q1b",
+   "text_sim": 0.39
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q10a",
+   "best_older_match": "BCSE303L-CAT-1-B2-2024-2025:Q1b",
+   "text_sim": 0.39
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q4d",
+   "best_older_match": "BCSE303L-CAT-1-D1-2025-2026:Q1c",
+   "text_sim": 0.38
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9b(b)",
+   "best_older_match": "BCSE303L-FAT-B1-2024-2025:Q2b",
+   "text_sim": 0.38
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q9b(c)",
+   "best_older_match": "BCSE303L-CAT-1-C1-2025-2026:Q4b",
+   "text_sim": 0.38
+  },
+  {
+   "q": "BCSE303L-FAT-A2-2026-2027:Q4d",
+   "best_older_match": "BCSE303L-CAT-1-B2-2024-2025:Q3a",
+   "text_sim": 0.38
+  },
+  {
+   "q": "BCSE303L-FAT-B1-2026-2027:Q7",
+   "best_older_match": "BCSE303L-CAT-1-B1-2024-2025:Q3",
+   "text_sim": 0.38
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q10b(c)",
+   "best_older_match": "BCSE303L-FAT-D1-2025-2026:Q7c",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE303L-FAT-A1-2026-2027:Q2a",
+   "best_older_match": "BCSE303L-CAT-1-C1-2025-2026:Q2b",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE303L-FAT-A1-2026-2027:Q6a(ii)",
+   "best_older_match": "BCSE303L-FAT-D2-2023-2024:Q2b",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE303L-FAT-A2-2026-2027:Q6",
+   "best_older_match": "BCSE303L-CAT-1-B1-2024-2025:Q1b",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE303L-FAT-B2-Fall-2026-27:Q6b",
+   "best_older_match": "BCSE303L-CAT-1-B1-2023-2024:Q1",
+   "text_sim": 0.36
+  },
+  {
+   "q": "BCSE303L-CAT-1-A2-2026-2027:Q2",
+   "best_older_match": "BCSE303L-CAT-1-B2-2024-2025:Q3a",
+   "text_sim": 0.36
+  },
+  {
+   "q": "BCSE303L-CAT-1-A2-2026-2027:Q3c",
+   "best_older_match": "BCSE303L-CAT-2-B2-2024-2025:Q5b",
+   "text_sim": 0.36
+  }
+ ],
+ "answer_key_rows": [],
+ "row_archetypes": {
+  "BCSE303L-CAT-1-B1-2024-2025:Q1a": "OS structure / functions / types",
+  "BCSE303L-CAT-1-B1-2024-2025:Q1b": "Security threats",
+  "BCSE303L-CAT-1-B1-2024-2025:Q2a": "System calls / fork",
+  "BCSE303L-CAT-1-B1-2024-2025:Q2b": "Protection / access matrix",
+  "BCSE303L-CAT-1-B1-2024-2025:Q3": "Threads / multithreading",
+  "BCSE303L-CAT-1-B1-2024-2025:Q4": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-B1-2024-2025:Q5": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-B2-2024-2025:Q1a": "OS structure / functions / types",
+  "BCSE303L-CAT-1-B2-2024-2025:Q1b": "OS structure / functions / types",
+  "BCSE303L-CAT-1-B2-2024-2025:Q2": "Threads / multithreading",
+  "BCSE303L-CAT-1-B2-2024-2025:Q3a": "Security threats",
+  "BCSE303L-CAT-1-B2-2024-2025:Q3b": "Process states / PCB",
+  "BCSE303L-CAT-1-B2-2024-2025:Q4": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-B2-2024-2025:Q5": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C1-2025-2026:Q1a": "OS structure / functions / types",
+  "BCSE303L-CAT-1-C1-2025-2026:Q1b": "OS structure / functions / types",
+  "BCSE303L-CAT-1-C1-2025-2026:Q2a": "Process states / PCB",
+  "BCSE303L-CAT-1-C1-2025-2026:Q2b": "Process states / PCB",
+  "BCSE303L-CAT-1-C1-2025-2026:Q3a": "Threads / multithreading",
+  "BCSE303L-CAT-1-C1-2025-2026:Q3b": "Threads / multithreading",
+  "BCSE303L-CAT-1-C1-2025-2026:Q4a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C1-2025-2026:Q4b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C1-2025-2026:Q4c": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C1-2025-2026:Q5": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C2-2025-2026:Q1a": "OS structure / functions / types",
+  "BCSE303L-CAT-1-C2-2025-2026:Q1b": "OS structure / functions / types",
+  "BCSE303L-CAT-1-C2-2025-2026:Q2": "System calls / fork",
+  "BCSE303L-CAT-1-C2-2025-2026:Q3a": "System calls / fork",
+  "BCSE303L-CAT-1-C2-2025-2026:Q3b": "Process states / PCB",
+  "BCSE303L-CAT-1-C2-2025-2026:Q4a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C2-2025-2026:Q4b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C2-2025-2026:Q4c": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-C2-2025-2026:Q5": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-D1-2025-2026:Q1a": "OS structure / functions / types",
+  "BCSE303L-CAT-1-D1-2025-2026:Q1b": "OS structure / functions / types",
+  "BCSE303L-CAT-1-D1-2025-2026:Q1c": "OS structure / functions / types",
+  "BCSE303L-CAT-1-D1-2025-2026:Q1d": "Security threats",
+  "BCSE303L-CAT-1-D1-2025-2026:Q2": "System calls / fork",
+  "BCSE303L-CAT-1-D1-2025-2026:Q3": "Threads / multithreading",
+  "BCSE303L-CAT-1-D1-2025-2026:Q4": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-D1-2025-2026:Q5": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-D2-2023-2024:Q1a": "OS structure / functions / types",
+  "BCSE303L-CAT-1-D2-2023-2024:Q1b": "OS structure / functions / types",
+  "BCSE303L-CAT-1-D2-2023-2024:Q2a": "System calls / fork",
+  "BCSE303L-CAT-1-D2-2023-2024:Q2b": "System calls / fork",
+  "BCSE303L-CAT-1-D2-2023-2024:Q3a": "Threads / multithreading",
+  "BCSE303L-CAT-1-D2-2023-2024:Q3b": "Threads / multithreading",
+  "BCSE303L-CAT-1-D2-2023-2024:Q4a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-D2-2023-2024:Q4b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-D2-2023-2024:Q5a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-D2-2023-2024:Q5b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-2-B1-2023-2024:Q1a": "Banker's algorithm",
+  "BCSE303L-CAT-2-B1-2023-2024:Q1b": "Banker's algorithm",
+  "BCSE303L-CAT-2-B1-2023-2024:Q2a": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-B1-2023-2024:Q2b": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-B1-2023-2024:Q3a": "Readers-writers",
+  "BCSE303L-CAT-2-B1-2023-2024:Q3b": "Semaphores / producer-consumer",
+  "BCSE303L-CAT-2-B1-2023-2024:Q4a": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-CAT-2-B1-2023-2024:Q4b": "Paging / address translation",
+  "BCSE303L-CAT-2-B1-2023-2024:Q5a": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-CAT-2-B1-2023-2024:Q5b": "TLB / EAT",
+  "BCSE303L-CAT-2-B1-2024-2025:Q1a": "Banker's algorithm",
+  "BCSE303L-CAT-2-B1-2024-2025:Q1b": "Banker's algorithm",
+  "BCSE303L-CAT-2-B1-2024-2025:Q2a": "Semaphores / producer-consumer",
+  "BCSE303L-CAT-2-B1-2024-2025:Q2b": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-B1-2024-2025:Q3a": "Dining philosophers",
+  "BCSE303L-CAT-2-B1-2024-2025:Q3b": "IPC",
+  "BCSE303L-CAT-2-B1-2024-2025:Q4": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-CAT-2-B1-2024-2025:Q5": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-CAT-2-B2-2024-2025:Q1a": "Banker's algorithm",
+  "BCSE303L-CAT-2-B2-2024-2025:Q1b": "Banker's algorithm",
+  "BCSE303L-CAT-2-B2-2024-2025:Q1c": "Banker's algorithm",
+  "BCSE303L-CAT-2-B2-2024-2025:Q2a": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-B2-2024-2025:Q2b": "Monitors",
+  "BCSE303L-CAT-2-B2-2024-2025:Q3": "Semaphores / producer-consumer",
+  "BCSE303L-CAT-2-B2-2024-2025:Q4a": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-CAT-2-B2-2024-2025:Q4b": "TLB / EAT",
+  "BCSE303L-CAT-2-B2-2024-2025:Q5a": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-CAT-2-B2-2024-2025:Q5b": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-CAT-2-C1-2025-2026:Q1a": "Deadlock conditions/prevention",
+  "BCSE303L-CAT-2-C1-2025-2026:Q1b": "Banker's algorithm",
+  "BCSE303L-CAT-2-C1-2025-2026:Q2a": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-C1-2025-2026:Q2b": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-C1-2025-2026:Q3": "Semaphores / producer-consumer",
+  "BCSE303L-CAT-2-C1-2025-2026:Q4a": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-CAT-2-C1-2025-2026:Q4b": "TLB / EAT",
+  "BCSE303L-CAT-2-C1-2025-2026:Q5a": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-CAT-2-C1-2025-2026:Q5b": "Segmentation",
+  "BCSE303L-CAT-2-D2-2023-2024:Q1a": "Deadlock conditions/prevention",
+  "BCSE303L-CAT-2-D2-2023-2024:Q1b": "Banker's algorithm",
+  "BCSE303L-CAT-2-D2-2023-2024:Q1c": "Banker's algorithm",
+  "BCSE303L-CAT-2-D2-2023-2024:Q1d": "Banker's algorithm",
+  "BCSE303L-CAT-2-D2-2023-2024:Q2": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-D2-2023-2024:Q3": "Readers-writers",
+  "BCSE303L-CAT-2-D2-2023-2024:Q4": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-CAT-2-D2-2023-2024:Q5a": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-CAT-2-D2-2023-2024:Q5b": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-B1-2024-2025:Q1a": "OS structure / functions / types",
+  "BCSE303L-FAT-B1-2024-2025:Q1b": "OS structure / functions / types",
+  "BCSE303L-FAT-B1-2024-2025:Q2a": "System calls / fork",
+  "BCSE303L-FAT-B1-2024-2025:Q2b": "Threads / multithreading",
+  "BCSE303L-FAT-B1-2024-2025:Q3a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-B1-2024-2025:Q3b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-B1-2024-2025:Q4": "Banker's algorithm",
+  "BCSE303L-FAT-B1-2024-2025:Q5a": "Readers-writers",
+  "BCSE303L-FAT-B1-2024-2025:Q5b": "Deadlock conditions/prevention",
+  "BCSE303L-FAT-B1-2024-2025:Q6a": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-B1-2024-2025:Q6b": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-B1-2024-2025:Q7a": "Paging / address translation",
+  "BCSE303L-FAT-B1-2024-2025:Q7b": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-FAT-B1-2024-2025:Q8a": "TLB / EAT",
+  "BCSE303L-FAT-B1-2024-2025:Q8b": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-FAT-B1-2024-2025:Q9": "File allocation methods",
+  "BCSE303L-FAT-B1-2024-2025:Q10": "Disk scheduling",
+  "BCSE303L-FAT-B2-2024-2025:Q1": "OS structure / functions / types",
+  "BCSE303L-FAT-B2-2024-2025:Q2": "OS structure / functions / types",
+  "BCSE303L-FAT-B2-2024-2025:Q3": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-B2-2024-2025:Q4": "Banker's algorithm",
+  "BCSE303L-FAT-B2-2024-2025:Q5": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-B2-2024-2025:Q6": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-FAT-B2-2024-2025:Q7": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-B2-2024-2025:Q8": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-B2-2024-2025:Q9a": "Directory structure",
+  "BCSE303L-FAT-B2-2024-2025:Q9b": "File allocation methods",
+  "BCSE303L-FAT-B2-2024-2025:Q10a": "Disk scheduling",
+  "BCSE303L-FAT-B2-2024-2025:Q10b": "Protection / access matrix",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q1a": "Dual-mode operation",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q1b": "Dual-mode operation",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q2a": "OS structure / functions / types",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q2b": "OS structure / functions / types",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q3a": "Banker's algorithm",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q3b": "Banker's algorithm",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q3c": "Banker's algorithm",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q4a": "Paging / address translation",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q4b": "Paging / address translation",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q4c": "TLB / EAT",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q4d": "TLB / EAT",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q5a": "Demand paging",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q5b": "Thrashing / working set",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q6a": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q6b": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q7a": "Directory structure",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q7b": "File allocation methods",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q8a": "Disk structure / addressing",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q8b": "Disk scheduling",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q9a(a)": "Dining philosophers",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q9a(b)": "Dining philosophers",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q9a(c)": "Dining philosophers",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q9b(a)": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q9b(b)": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q9b(c)": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q10a(a)": "Distributed file systems",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q10a(b)": "Distributed file systems",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q10b(a)": "Protection / access matrix",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q10b(b)": "Protection / access matrix",
+  "BCSE303L-FAT-B2-Fall-2026-27:Q10b(c)": "Protection / access matrix",
+  "BCSE303L-FAT-D1-2025-2026:Q1": "OS services",
+  "BCSE303L-FAT-D1-2025-2026:Q2": "File allocation methods",
+  "BCSE303L-FAT-D1-2025-2026:Q3": "System calls / fork",
+  "BCSE303L-FAT-D1-2025-2026:Q4": "Monitors",
+  "BCSE303L-FAT-D1-2025-2026:Q5": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-D1-2025-2026:Q6": "Disk scheduling",
+  "BCSE303L-FAT-D1-2025-2026:Q7a": "Deadlock detection / RAG",
+  "BCSE303L-FAT-D1-2025-2026:Q7b": "Deadlock detection / RAG",
+  "BCSE303L-FAT-D1-2025-2026:Q7c": "Deadlock detection / RAG",
+  "BCSE303L-FAT-D1-2025-2026:Q7d": "Deadlock detection / RAG",
+  "BCSE303L-FAT-D1-2025-2026:Q8a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-D1-2025-2026:Q8b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-D1-2025-2026:Q8c": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-D2-2023-2024:Q1a": "OS services",
+  "BCSE303L-FAT-D2-2023-2024:Q1b": "OS services",
+  "BCSE303L-FAT-D2-2023-2024:Q2a": "Threads / multithreading",
+  "BCSE303L-FAT-D2-2023-2024:Q2b": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-D2-2023-2024:Q3i": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-D2-2023-2024:Q3ii": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-D2-2023-2024:Q3iii": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-D2-2023-2024:Q4a": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-D2-2023-2024:Q4b": "Deadlock conditions/prevention",
+  "BCSE303L-FAT-D2-2023-2024:Q5i": "Banker's algorithm",
+  "BCSE303L-FAT-D2-2023-2024:Q5ii": "Banker's algorithm",
+  "BCSE303L-FAT-D2-2023-2024:Q5iii": "Banker's algorithm",
+  "BCSE303L-FAT-D2-2023-2024:Q6a": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-D2-2023-2024:Q6b": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-D2-2023-2024:Q7a": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-D2-2023-2024:Q7b": "File deletion policy",
+  "BCSE303L-FAT-D2-2023-2024:Q8a": "Disk scheduling",
+  "BCSE303L-FAT-D2-2023-2024:Q8b": "Disk scheduling",
+  "BCSE303L-FAT-D2-2023-2024:Q8c": "Disk scheduling",
+  "BCSE303L-FAT-D2-2023-2024:Q8d": "Disk scheduling",
+  "BCSE303L-FAT-D2-2023-2024:Q8e": "Disk scheduling",
+  "BCSE303L-CAT-1-A1-2026-2027:Q1": "OS structure / functions / types",
+  "BCSE303L-CAT-1-A1-2026-2027:Q2": "OS structure / functions / types",
+  "BCSE303L-CAT-1-A1-2026-2027:Q3": "System calls / fork",
+  "BCSE303L-CAT-1-A1-2026-2027:Q4": "System calls / fork",
+  "BCSE303L-CAT-1-A1-2026-2027:Q5a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-A1-2026-2027:Q5b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-A1-2026-2027:Q5c": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-A2-2026-2027:Q1": "OS structure / functions / types",
+  "BCSE303L-CAT-1-A2-2026-2027:Q2": "OS structure / functions / types",
+  "BCSE303L-CAT-1-A2-2026-2027:Q3a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-A2-2026-2027:Q3b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-A2-2026-2027:Q3c": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-A2-2026-2027:Q4": "System calls / fork",
+  "BCSE303L-CAT-1-A2-2026-2027:Q5": "Threads / multithreading",
+  "BCSE303L-CAT-1-B1-2023-2024:Q1": "OS structure / functions / types",
+  "BCSE303L-CAT-1-B1-2023-2024:Q2a": "System calls / fork",
+  "BCSE303L-CAT-1-B1-2023-2024:Q2b": "Dual mode / privileged instructions",
+  "BCSE303L-CAT-1-B1-2023-2024:Q3": "Threads / multithreading",
+  "BCSE303L-CAT-1-B1-2023-2024:Q4": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-1-B1-2023-2024:Q5": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-CAT-2-C2-2025-2026:Q1a": "Banker's algorithm",
+  "BCSE303L-CAT-2-C2-2025-2026:Q1b": "Banker's algorithm",
+  "BCSE303L-CAT-2-C2-2025-2026:Q2a": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-C2-2025-2026:Q2b": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-C2-2025-2026:Q2c": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-CAT-2-C2-2025-2026:Q3a": "Dining philosophers",
+  "BCSE303L-CAT-2-C2-2025-2026:Q3b": "Monitors",
+  "BCSE303L-CAT-2-C2-2025-2026:Q4a": "Paging / address translation",
+  "BCSE303L-CAT-2-C2-2025-2026:Q4b": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-CAT-2-C2-2025-2026:Q5a": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-CAT-2-C2-2025-2026:Q5b": "TLB / EAT",
+  "BCSE303L-FAT-A1-2026-2027:Q1a": "OS structure / functions / types",
+  "BCSE303L-FAT-A1-2026-2027:Q1b": "OS structure / functions / types",
+  "BCSE303L-FAT-A1-2026-2027:Q2a": "Process states / PCB",
+  "BCSE303L-FAT-A1-2026-2027:Q2b": "Process states / PCB",
+  "BCSE303L-FAT-A1-2026-2027:Q3a": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-A1-2026-2027:Q3b": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-A1-2026-2027:Q3c": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-A1-2026-2027:Q4a": "Banker's algorithm",
+  "BCSE303L-FAT-A1-2026-2027:Q4b": "Banker's algorithm",
+  "BCSE303L-FAT-A1-2026-2027:Q4c": "Banker's algorithm",
+  "BCSE303L-FAT-A1-2026-2027:Q5a": "Readers-writers",
+  "BCSE303L-FAT-A1-2026-2027:Q5b": "Readers-writers",
+  "BCSE303L-FAT-A1-2026-2027:Q6a(i)": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-A1-2026-2027:Q6a(ii)": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-A1-2026-2027:Q6b(i)": "Dining philosophers",
+  "BCSE303L-FAT-A1-2026-2027:Q6b(ii)": "Dining philosophers",
+  "BCSE303L-FAT-A1-2026-2027:Q6b(iii)": "Dining philosophers",
+  "BCSE303L-FAT-A1-2026-2027:Q7a": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-FAT-A1-2026-2027:Q7b": "Paging / address translation",
+  "BCSE303L-FAT-A1-2026-2027:Q8a": "TLB / EAT",
+  "BCSE303L-FAT-A1-2026-2027:Q8b": "Segmentation",
+  "BCSE303L-FAT-A1-2026-2027:Q9a": "File allocation methods",
+  "BCSE303L-FAT-A1-2026-2027:Q9b": "File allocation methods",
+  "BCSE303L-FAT-A1-2026-2027:Q10a": "Disk scheduling",
+  "BCSE303L-FAT-A1-2026-2027:Q10b(i)": "Protection / access matrix",
+  "BCSE303L-FAT-A1-2026-2027:Q10b(ii)": "Protection / access matrix",
+  "BCSE303L-FAT-A1-2026-2027:Q10b(iii)": "Protection / access matrix",
+  "BCSE303L-FAT-A2-2026-2027:Q1": "OS structure / functions / types",
+  "BCSE303L-FAT-A2-2026-2027:Q2": "Threads / multithreading",
+  "BCSE303L-FAT-A2-2026-2027:Q3": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-A2-2026-2027:Q4a": "Deadlock detection / RAG",
+  "BCSE303L-FAT-A2-2026-2027:Q4b": "Deadlock conditions/prevention",
+  "BCSE303L-FAT-A2-2026-2027:Q4c": "Deadlock detection / RAG",
+  "BCSE303L-FAT-A2-2026-2027:Q4d": "Banker's algorithm",
+  "BCSE303L-FAT-A2-2026-2027:Q5": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-A2-2026-2027:Q6": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-A2-2026-2027:Q7": "TLB / EAT",
+  "BCSE303L-FAT-A2-2026-2027:Q8": "Segmentation",
+  "BCSE303L-FAT-A2-2026-2027:Q9a": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-A2-2026-2027:Q9b(a)": "Directory structure",
+  "BCSE303L-FAT-A2-2026-2027:Q9b(b)": "File allocation methods",
+  "BCSE303L-FAT-A2-2026-2027:Q9b(c)": "File allocation methods",
+  "BCSE303L-FAT-A2-2026-2027:Q9b(d)": "File allocation methods",
+  "BCSE303L-FAT-A2-2026-2027:Q10a": "Disk scheduling",
+  "BCSE303L-FAT-A2-2026-2027:Q10b(a)": "Security threats",
+  "BCSE303L-FAT-A2-2026-2027:Q10b(b)": "Protection / access matrix",
+  "BCSE303L-FAT-A2-2026-2027:Q10b(c)": "Protection / access matrix",
+  "BCSE303L-FAT-A2-2026-2027:Q10b(d)": "Protection / access matrix",
+  "BCSE303L-FAT-B1-2023-2024:Q1a": "OS structure / functions / types",
+  "BCSE303L-FAT-B1-2023-2024:Q1b": "Dual mode / privileged instructions",
+  "BCSE303L-FAT-B1-2023-2024:Q2a": "System calls / fork",
+  "BCSE303L-FAT-B1-2023-2024:Q2b": "Threads / multithreading",
+  "BCSE303L-FAT-B1-2023-2024:Q3": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-B1-2023-2024:Q4": "Banker's algorithm",
+  "BCSE303L-FAT-B1-2023-2024:Q5a": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-B1-2023-2024:Q5b": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-B1-2023-2024:Q6": "Readers-writers",
+  "BCSE303L-FAT-B1-2023-2024:Q7a": "TLB / EAT",
+  "BCSE303L-FAT-B1-2023-2024:Q7b": "Contiguous allocation (first/best/worst fit)",
+  "BCSE303L-FAT-B1-2023-2024:Q8": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-B1-2023-2024:Q9a": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-B1-2023-2024:Q9b": "File allocation methods",
+  "BCSE303L-FAT-B1-2023-2024:Q10": "Disk scheduling",
+  "BCSE303L-FAT-B1-2026-2027:Q1(i)": "OS structure / functions / types",
+  "BCSE303L-FAT-B1-2026-2027:Q1(ii)": "OS structure / functions / types",
+  "BCSE303L-FAT-B1-2026-2027:Q1(iii)": "OS structure / functions / types",
+  "BCSE303L-FAT-B1-2026-2027:Q1(iv)": "OS structure / functions / types",
+  "BCSE303L-FAT-B1-2026-2027:Q2a": "Threads / multithreading",
+  "BCSE303L-FAT-B1-2026-2027:Q2b": "IPC",
+  "BCSE303L-FAT-B1-2026-2027:Q3(i)": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-B1-2026-2027:Q3(ii)": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-B1-2026-2027:Q4(i)": "Banker's algorithm",
+  "BCSE303L-FAT-B1-2026-2027:Q4(ii)": "Banker's algorithm",
+  "BCSE303L-FAT-B1-2026-2027:Q4(iii)": "Banker's algorithm",
+  "BCSE303L-FAT-B1-2026-2027:Q5": "Monitors",
+  "BCSE303L-FAT-B1-2026-2027:Q6(i)": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-B1-2026-2027:Q6(ii)": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-B1-2026-2027:Q6(iii)": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-B1-2026-2027:Q7": "Segmentation",
+  "BCSE303L-FAT-B1-2026-2027:Q8(i)": "Disk scheduling",
+  "BCSE303L-FAT-B1-2026-2027:Q8(ii)": "Disk scheduling",
+  "BCSE303L-FAT-B1-2026-2027:Q8(iii)": "Disk scheduling",
+  "BCSE303L-FAT-B1-2026-2027:Q8(iv)": "Disk scheduling",
+  "BCSE303L-FAT-B1-2026-2027:Q8(v)": "Disk scheduling",
+  "BCSE303L-FAT-B1-2026-2027:Q9a": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-B1-2026-2027:Q9b": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-B1-2026-2027:Q10a": "Security threats",
+  "BCSE303L-FAT-B1-2026-2027:Q10b": "Protection / access matrix",
+  "BCSE303L-FAT-C1-2025-2026:Q1a": "System calls / fork",
+  "BCSE303L-FAT-C1-2025-2026:Q1b": "Process states / PCB",
+  "BCSE303L-FAT-C1-2025-2026:Q2": "Threads / multithreading",
+  "BCSE303L-FAT-C1-2025-2026:Q3": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-C1-2025-2026:Q4": "Banker's algorithm",
+  "BCSE303L-FAT-C1-2025-2026:Q5a": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-C1-2025-2026:Q5b": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-C1-2025-2026:Q6": "Readers-writers",
+  "BCSE303L-FAT-C1-2025-2026:Q7a": "Paging / address translation",
+  "BCSE303L-FAT-C1-2025-2026:Q7b": "Paging / address translation",
+  "BCSE303L-FAT-C1-2025-2026:Q8": "Page replacement (FIFO/LRU/Optimal)",
+  "BCSE303L-FAT-C1-2025-2026:Q9a": "Virtual machines / hypervisor",
+  "BCSE303L-FAT-C1-2025-2026:Q9b": "File allocation methods",
+  "BCSE303L-FAT-C1-2025-2026:Q10a": "Protection / access matrix",
+  "BCSE303L-FAT-C1-2025-2026:Q10b": "Disk scheduling",
+  "BCSE303L-FAT-C2-2025-2026:Q1": "System calls / fork",
+  "BCSE303L-FAT-C2-2025-2026:Q2i": "Threads / multithreading",
+  "BCSE303L-FAT-C2-2025-2026:Q2ii": "System calls / fork",
+  "BCSE303L-FAT-C2-2025-2026:Q3": "CPU scheduling (FCFS/SJF/RR/priority)",
+  "BCSE303L-FAT-C2-2025-2026:Q4": "Banker's algorithm",
+  "BCSE303L-FAT-C2-2025-2026:Q5": "Semaphores / producer-consumer",
+  "BCSE303L-FAT-C2-2025-2026:Q6": "Critical section: Peterson / TSL / mutex / bakery",
+  "BCSE303L-FAT-C2-2025-2026:Q7": "File allocation methods",
+  "BCSE303L-FAT-C2-2025-2026:Q8": "Disk scheduling",
+  "BCSE303L-FAT-C2-2025-2026:Q9a": "Paging / address translation",
+  "BCSE303L-FAT-C2-2025-2026:Q9b": "Paging / address translation",
+  "BCSE303L-FAT-C2-2025-2026:Q10a": "Protection / access matrix",
+  "BCSE303L-FAT-C2-2025-2026:Q10b": "Virtual machines / hypervisor"
+ },
+ "backtest": [
+  {
+   "target": "BCSE303L-FAT-A2-2026-2027",
+   "slot1_used": "BCSE303L-FAT-A1-2026-2027",
+   "train_papers": 23,
+   "predicted_top10": [
+    {
+     "topic": "Disk scheduling",
+     "p": 0.909,
+     "ratio": "8 of 8",
+     "hit": true
+    },
+    {
+     "topic": "CPU scheduling (FCFS/SJF/RR/priority)",
+     "p": 0.909,
+     "ratio": "8 of 8",
+     "hit": true
+    },
+    {
+     "topic": "File allocation methods",
+     "p": 0.818,
+     "ratio": "7 of 8",
+     "hit": true
+    },
+    {
+     "topic": "Banker's algorithm",
+     "p": 0.818,
+     "ratio": "7 of 8",
+     "hit": true
+    },
+    {
+     "topic": "Critical section: Peterson / TSL / mutex / bakery",
+     "p": 0.727,
+     "ratio": "6 of 8",
+     "hit": false
+    },
+    {
+     "topic": "Semaphores / producer-consumer",
+     "p": 0.636,
+     "ratio": "6 of 8",
+     "hit": true
+    },
+    {
+     "topic": "OS structure / functions / types",
+     "p": 0.545,
+     "ratio": "4 of 8",
+     "hit": true
+    },
+    {
+     "topic": "Page replacement (FIFO/LRU/Optimal)",
+     "p": 0.545,
+     "ratio": "5 of 8",
+     "hit": false
+    },
+    {
+     "topic": "Contiguous allocation (first/best/worst fit)",
+     "p": 0.545,
+     "ratio": "4 of 8",
+     "hit": false
+    },
+    {
+     "topic": "System calls / fork",
+     "p": 0.545,
+     "ratio": "5 of 8",
+     "hit": false
+    }
+   ],
+   "hits": 6,
+   "of": 10,
+   "precision": "6 of 10",
+   "recall": "6 of 15 distinct target topics",
+   "naive_older_fat_top10_hits": "7 of 10",
+   "slot1_topic_overlap": "8 of 15 target topics also in slot-1 FAT",
+   "missed_target_topics": [
+    "Deadlock conditions/prevention",
+    "Deadlock detection / RAG",
+    "Directory structure",
+    "Protection / access matrix",
+    "Security threats",
+    "Segmentation",
+    "TLB / EAT",
+    "Threads / multithreading",
+    "Virtual machines / hypervisor"
+   ]
+  },
+  {
+   "target": "BCSE303L-FAT-B2-Fall-2026-27",
+   "slot1_used": "BCSE303L-FAT-B1-2026-2027",
+   "train_papers": 23,
+   "predicted_top10": [
+    {
+     "topic": "Disk scheduling",
+     "p": 0.909,
+     "ratio": "8 of 8",
+     "hit": true
+    },
+    {
+     "topic": "CPU scheduling (FCFS/SJF/RR/priority)",
+     "p": 0.909,
+     "ratio": "8 of 8",
+     "hit": false
+    },
+    {
+     "topic": "Banker's algorithm",
+     "p": 0.818,
+     "ratio": "7 of 8",
+     "hit": true
+    },
+    {
+     "topic": "Page replacement (FIFO/LRU/Optimal)",
+     "p": 0.727,
+     "ratio": "6 of 8",
+     "hit": false
+    },
+    {
+     "topic": "Virtual machines / hypervisor",
+     "p": 0.727,
+     "ratio": "6 of 8",
+     "hit": true
+    },
+    {
+     "topic": "Threads / multithreading",
+     "p": 0.727,
+     "ratio": "6 of 8",
+     "hit": false
+    },
+    {
+     "topic": "Semaphores / producer-consumer",
+     "p": 0.636,
+     "ratio": "6 of 8",
+     "hit": false
+    },
+    {
+     "topic": "File allocation methods",
+     "p": 0.636,
+     "ratio": "6 of 8",
+     "hit": true
+    },
+    {
+     "topic": "OS structure / functions / types",
+     "p": 0.545,
+     "ratio": "4 of 8",
+     "hit": true
+    },
+    {
+     "topic": "Critical section: Peterson / TSL / mutex / bakery",
+     "p": 0.545,
+     "ratio": "5 of 8",
+     "hit": true
+    }
+   ],
+   "hits": 6,
+   "of": 10,
+   "precision": "6 of 10",
+   "recall": "6 of 16 distinct target topics",
+   "naive_older_fat_top10_hits": "5 of 10",
+   "slot1_topic_overlap": "5 of 16 target topics also in slot-1 FAT",
+   "missed_target_topics": [
+    "Demand paging",
+    "Dining philosophers",
+    "Directory structure",
+    "Disk structure / addressing",
+    "Distributed file systems",
+    "Dual-mode operation",
+    "Paging / address translation",
+    "Protection / access matrix",
+    "TLB / EAT",
+    "Thrashing / working set"
+   ]
+  }
+ ]
+}

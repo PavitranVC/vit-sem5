@@ -4,9 +4,9 @@
   "student_slot": "C2",
   "probability_formula": "probability = (2*k_recent + k_older + 1) / (2*n_recent + n_older + 2); k = papers containing the topic, n = papers; recent = 2026-27. Primary 'probability' uses BCSE306L FAT papers only (n_recent=1, n_older=6). 'probability_all_papers' uses CAT1/CAT2/FAT papers whose syllabus window covers the topic's module (CAT1=M1-M3, CAT2=M3-M5, FAT=M1-M7; observed).",
   "backtest_confidence": {
-   "tier": "pending (Phase 3)",
-   "hits": null,
-   "of": null
+   "tier": "Medium",
+   "hits": 22,
+   "of": 40
   },
   "papers_used": 25,
   "papers_used_detail": "25 distinct BCSE306L papers (7 FAT, 11 CAT1, 7 CAT2) after merging QP/AK duplicates; sister-course papers (BITE308L, BECE309L, CSI3003) used only for sister comparison",
@@ -29,7 +29,7 @@
    "probability_all_papers": 0.944,
    "appearance_ratio_all_papers": "14 of 14 papers whose syllabus window covers M4",
    "recent_ratio_all_papers": "2 of 2 2026-27 papers",
-   "fat_mark_share": 0.079,
+   "fat_mark_share": 0.076,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q3",
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q9a",
@@ -68,7 +68,7 @@
    "probability_all_papers": 0.88,
    "appearance_ratio_all_papers": "16 of 18 papers whose syllabus window covers M2",
    "recent_ratio_all_papers": "5 of 5 2026-27 papers",
-   "fat_mark_share": 0.086,
+   "fat_mark_share": 0.083,
    "supporting_files": [
     "BCSE306L-CAT1-B1-2026-2027-AK:Q5",
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q9a",
@@ -110,7 +110,7 @@
    "probability_all_papers": 0.833,
    "appearance_ratio_all_papers": "12 of 14 papers whose syllabus window covers M4",
    "recent_ratio_all_papers": "2 of 2 2026-27 papers",
-   "fat_mark_share": 0.062,
+   "fat_mark_share": 0.065,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q3",
     "BCSE306L-CAT2-B2-2026-2027:Q4",
@@ -149,7 +149,7 @@
    "probability_all_papers": 0.8,
    "appearance_ratio_all_papers": "6 of 7 papers whose syllabus window covers M7",
    "recent_ratio_all_papers": "1 of 1 2026-27 papers",
-   "fat_mark_share": 0.111,
+   "fat_mark_share": 0.107,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q8",
     "BCSE306L-FAT-B1-2026-2027:Q8",
@@ -179,7 +179,7 @@
    "probability_all_papers": 0.68,
    "appearance_ratio_all_papers": "13 of 18 papers whose syllabus window covers M2",
    "recent_ratio_all_papers": "3 of 5 2026-27 papers",
-   "fat_mark_share": 0.062,
+   "fat_mark_share": 0.065,
    "supporting_files": [
     "BCSE306L-CAT1-B1-2026-2027-AK:Q4a",
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q3",
@@ -221,7 +221,7 @@
    "probability_all_papers": 0.515,
    "appearance_ratio_all_papers": "14 of 25 papers whose syllabus window covers M3",
    "recent_ratio_all_papers": "2 of 6 2026-27 papers",
-   "fat_mark_share": 0.086,
+   "fat_mark_share": 0.083,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q10a",
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q10b",
@@ -262,7 +262,7 @@
    "probability_all_papers": 0.7,
    "appearance_ratio_all_papers": "6 of 7 papers whose syllabus window covers M6",
    "recent_ratio_all_papers": "0 of 1 2026-27 papers",
-   "fat_mark_share": 0.117,
+   "fat_mark_share": 0.113,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q6",
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q6",
@@ -292,7 +292,7 @@
    "probability_all_papers": 0.7,
    "appearance_ratio_all_papers": "5 of 7 papers whose syllabus window covers M6",
    "recent_ratio_all_papers": "1 of 1 2026-27 papers",
-   "fat_mark_share": 0.062,
+   "fat_mark_share": 0.06,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q7",
     "BCSE306L-FAT-B1-2026-2027:Q10a",
@@ -320,7 +320,7 @@
    "probability_all_papers": 0.556,
    "appearance_ratio_all_papers": "8 of 14 papers whose syllabus window covers M5",
    "recent_ratio_all_papers": "1 of 2 2026-27 papers",
-   "fat_mark_share": 0.074,
+   "fat_mark_share": 0.071,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q5",
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q10b",
@@ -357,7 +357,7 @@
    "probability_all_papers": 0.455,
    "appearance_ratio_all_papers": "11 of 25 papers whose syllabus window covers M3",
    "recent_ratio_all_papers": "3 of 6 2026-27 papers",
-   "fat_mark_share": 0.062,
+   "fat_mark_share": 0.06,
    "supporting_files": [
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q4",
     "BCSE306L-CAT1-C2-2026-2027:Q5a",
@@ -399,7 +399,7 @@
    "probability_all_papers": 0.84,
    "appearance_ratio_all_papers": "16 of 18 papers whose syllabus window covers M1",
    "recent_ratio_all_papers": "4 of 5 2026-27 papers",
-   "fat_mark_share": 0.062,
+   "fat_mark_share": 0.06,
    "supporting_files": [
     "BCSE306L-CAT1-B1-2026-2027-AK:Q2",
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q1",
@@ -439,7 +439,7 @@
    "probability_all_papers": 0.64,
    "appearance_ratio_all_papers": "11 of 18 papers whose syllabus window covers M2",
    "recent_ratio_all_papers": "4 of 5 2026-27 papers",
-   "fat_mark_share": 0.049,
+   "fat_mark_share": 0.048,
    "supporting_files": [
     "BCSE306L-CAT1-B1-2026-2027-AK:Q4b",
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q6",
@@ -477,7 +477,7 @@
    "probability_all_papers": 0.556,
    "appearance_ratio_all_papers": "9 of 14 papers whose syllabus window covers M5",
    "recent_ratio_all_papers": "0 of 2 2026-27 papers",
-   "fat_mark_share": 0.074,
+   "fat_mark_share": 0.071,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q4",
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q7",
@@ -513,7 +513,7 @@
    "probability_all_papers": 0.4,
    "appearance_ratio_all_papers": "8 of 18 papers whose syllabus window covers M1",
    "recent_ratio_all_papers": "1 of 5 2026-27 papers",
-   "fat_mark_share": 0.062,
+   "fat_mark_share": 0.06,
    "supporting_files": [
     "BCSE306L-CAT1-B1-2026-2027-AK:Q1",
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q1",
@@ -546,7 +546,7 @@
    "probability_all_papers": 0.76,
    "appearance_ratio_all_papers": "13 of 18 papers whose syllabus window covers M1",
    "recent_ratio_all_papers": "5 of 5 2026-27 papers",
-   "fat_mark_share": 0.042,
+   "fat_mark_share": 0.04,
    "supporting_files": [
     "BCSE306L-CAT1-B1-2026-2027-AK:Q3a",
     "BCSE306L-CAT1-B1-2026-2027-AK:Q3b",
@@ -586,7 +586,7 @@
    "probability_all_papers": 0.722,
    "appearance_ratio_all_papers": "11 of 14 papers whose syllabus window covers M4",
    "recent_ratio_all_papers": "1 of 2 2026-27 papers",
-   "fat_mark_share": 0.037,
+   "fat_mark_share": 0.042,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q2",
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q9b",
@@ -623,7 +623,7 @@
    "probability_all_papers": 0.611,
    "appearance_ratio_all_papers": "9 of 14 papers whose syllabus window covers M4",
    "recent_ratio_all_papers": "1 of 2 2026-27 papers",
-   "fat_mark_share": 0.02,
+   "fat_mark_share": 0.031,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q2",
     "BCSE306L-CAT2-B2-2026-2027:Q5a",
@@ -661,7 +661,7 @@
    "probability_all_papers": 0.52,
    "appearance_ratio_all_papers": "9 of 18 papers whose syllabus window covers M2",
    "recent_ratio_all_papers": "3 of 5 2026-27 papers",
-   "fat_mark_share": 0.025,
+   "fat_mark_share": 0.03,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q9a",
     "BCSE306L-CAT1-B2-2026-2027:Q5a",
@@ -702,7 +702,7 @@
    "probability_all_papers": 0.273,
    "appearance_ratio_all_papers": "7 of 25 papers whose syllabus window covers M3",
    "recent_ratio_all_papers": "1 of 6 2026-27 papers",
-   "fat_mark_share": 0.037,
+   "fat_mark_share": 0.036,
    "supporting_files": [
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q5",
     "BCSE306L-CAT1-C1-2026-2027:Q5",
@@ -735,7 +735,7 @@
    "probability_all_papers": 0.444,
    "appearance_ratio_all_papers": "7 of 14 papers whose syllabus window covers M5",
    "recent_ratio_all_papers": "0 of 2 2026-27 papers",
-   "fat_mark_share": 0.025,
+   "fat_mark_share": 0.024,
    "supporting_files": [
     "BCSE306L - FAT - E1 - 2024 - Question Paper:Q4",
     "BCSE306L-FAT-D1-2025-2026:Q8"
@@ -768,7 +768,7 @@
    "probability_all_papers": 0.3,
    "appearance_ratio_all_papers": "2 of 7 papers whose syllabus window covers M7",
    "recent_ratio_all_papers": "0 of 1 2026-27 papers",
-   "fat_mark_share": 0.025,
+   "fat_mark_share": 0.024,
    "supporting_files": [
     "BCSE306L - FAT - E2 - 2024 - Question Paper:Q8",
     "BCSE306L-FAT-D1-2025-2026:Q10b"
