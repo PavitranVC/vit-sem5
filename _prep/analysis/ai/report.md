@@ -14,6 +14,7 @@ Every claim cites `file:Qn`. **O** = observed (counted directly), **I** = inferr
 | Orchestrator re-read | 35 of 344 questions (10.2%): text 34/35, type 30/35, Bloom 30/35, scenario 33/35 (O); pooled tag agreement 0.886 |
 | Marks check | 33 of 37 papers sum to stated maximum; 4 flagged, all explained in `verification.md` (O) |
 | Unreadable pages | none fully unreadable; 23 rows ocr_flag=1 (O) |
+| Backtest confidence (OS + AWS, see ../backtest.md) | **Medium**: 22 of 40 top-10 topics hit across 4 slot-2 FATs; a naive frequency list also scores 22 of 40 (O) |
 | Two agents, same paper (B1 CAT-1 26-27 QP vs AK) | marks 7/7, module 7/7, Bloom 6/7, scenario 6/7, type 3/7 (O): **type is the least reliable tag** |
 
 ## 2. FAT blueprint (O, 7 FATs)

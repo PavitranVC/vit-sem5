@@ -1,0 +1,6124 @@
+{
+ "subject": "dbs",
+ "core_code": "BCSE302L",
+ "student_slot": "D2",
+ "coverage_windows": {
+  "CAT1": [
+   "M1",
+   "M2",
+   "M3"
+  ],
+  "CAT2": [
+   "M2",
+   "M3",
+   "M4"
+  ],
+  "FAT": [
+   "M1",
+   "M2",
+   "M3",
+   "M4",
+   "M5",
+   "M6",
+   "M7"
+  ]
+ },
+ "aliases_merged": {
+  "CSI1001-CAT1-B1-2025-2026-AK": "CSI1001-CAT1-B1-2025-2026"
+ },
+ "papers_core": {
+  "BCSE302L-CAT1-B1-2025-2026-AK": {
+   "exam": "CAT1",
+   "slot": "B1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 8
+  },
+  "BCSE302L-CAT1-B2-2025-2026-AK": {
+   "exam": "CAT1",
+   "slot": "B2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 8
+  },
+  "BCSE302L-CAT1-E1-2025-2026": {
+   "exam": "CAT1",
+   "slot": "E1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 13
+  },
+  "BCSE302L-CAT2-B1-2025-2026-AK": {
+   "exam": "CAT2",
+   "slot": "B1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE302L-CAT2-B2-2025-2026-AK": {
+   "exam": "CAT2",
+   "slot": "B2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE302L-CAT2-E1-2025-2026": {
+   "exam": "CAT2",
+   "slot": "E1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 15
+  },
+  "BCSE302L-FAT-B2-2025-2026": {
+   "exam": "FAT",
+   "slot": "B2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 13
+  },
+  "BCSE302L-FAT-E1-2025-2026": {
+   "exam": "FAT",
+   "slot": "E1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 21
+  },
+  "BCSE302L-CAT-1-A1-2023-2024": {
+   "exam": "CAT1",
+   "slot": "A1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE302L-CAT-1-A1-2024-2025": {
+   "exam": "CAT1",
+   "slot": "A1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE302L-CAT-1-A2-2024-2025": {
+   "exam": "CAT1",
+   "slot": "A2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 8
+  },
+  "BCSE302L-CAT-1-F2-2023-2024": {
+   "exam": "CAT1",
+   "slot": "F2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 9
+  },
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper": {
+   "exam": "CAT2",
+   "slot": "A1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 20
+  },
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key": {
+   "exam": "CAT2",
+   "slot": "A1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key": {
+   "exam": "CAT2",
+   "slot": "A2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 9
+  },
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper": {
+   "exam": "CAT2",
+   "slot": "B2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper": {
+   "exam": "CAT2",
+   "slot": "F2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 12
+  },
+  "BCSE302L-FAT-A1-2024-2025": {
+   "exam": "FAT",
+   "slot": "A1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 12
+  },
+  "BCSE302L-FAT-A2-2022-2023": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2022",
+   "recent": false,
+   "n_q": 16
+  },
+  "BCSE302L-FAT-A2-2024-2025": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 17
+  },
+  "BCSE302L-FAT-A2-2024": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 10
+  },
+  "BCSE302L-FAT-F2-2023-2024": {
+   "exam": "FAT",
+   "slot": "F2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 21
+  },
+  "BCSE302L-CAT1-D1-2026-2027": {
+   "exam": "CAT1",
+   "slot": "D1",
+   "year": "2026",
+   "recent": true,
+   "n_q": 7
+  },
+  "BCSE302L-CAT1-D2-2026-2027": {
+   "exam": "CAT1",
+   "slot": "D2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 8
+  },
+  "BCSE302L-FAT-B1-2025-2026": {
+   "exam": "FAT",
+   "slot": "B1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 18
+  },
+  "BCSE302L-CAT-1-B2-2025-2026": {
+   "exam": "CAT1",
+   "slot": "B2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper": {
+   "exam": "CAT2",
+   "slot": "B2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 5
+  },
+  "BCSE302L-FAT-A1-2023-2024": {
+   "exam": "FAT",
+   "slot": "A1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 16
+  },
+  "BCSE302L-FAT-B2-2022-2023": {
+   "exam": "FAT",
+   "slot": "B2",
+   "year": "2022",
+   "recent": false,
+   "n_q": 14
+  },
+  "BCSE302L-FAT-B2-2024-2025": {
+   "exam": "FAT",
+   "slot": "B2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 13
+  }
+ },
+ "topic_stats": {
+  "DBMS architecture / data independence": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 11,
+    "n_older": 11,
+    "ratio": "11 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "11 of 11",
+    "probability": 0.923
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 2,
+    "k_older": 19,
+    "n_older": 19,
+    "ratio": "21 of 21",
+    "recent_ratio": "2 of 2",
+    "older_ratio": "19 of 19",
+    "probability": 0.96
+   },
+   "support": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q1a",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q1b",
+    "BCSE302L-CAT1-E1-2025-2026:Q1b",
+    "BCSE302L-CAT1-E1-2025-2026:Q1c",
+    "BCSE302L-FAT-B2-2025-2026:Q1",
+    "BCSE302L-FAT-E1-2025-2026:Q1a",
+    "BCSE302L-FAT-E1-2025-2026:Q1b",
+    "BCSE302L-CAT-1-A1-2023-2024:Q1b",
+    "BCSE302L-CAT-1-A1-2023-2024:Q2",
+    "BCSE302L-CAT-1-A1-2024-2025:Q1",
+    "BCSE302L-CAT-1-A1-2024-2025:Q2a",
+    "BCSE302L-CAT-1-A1-2024-2025:Q2b",
+    "BCSE302L-CAT-1-A2-2024-2025:Q1b",
+    "BCSE302L-CAT-1-A2-2024-2025:Q2a",
+    "BCSE302L-CAT-1-A2-2024-2025:Q2b",
+    "BCSE302L-CAT-1-F2-2023-2024:Q2a",
+    "BCSE302L-CAT-1-F2-2023-2024:Q2b",
+    "BCSE302L-CAT-1-F2-2023-2024:Q4i",
+    "BCSE302L-CAT-1-F2-2023-2024:Q4ii",
+    "BCSE302L-FAT-A1-2024-2025:Q1",
+    "BCSE302L-FAT-A2-2022-2023:Q1a",
+    "BCSE302L-FAT-A2-2022-2023:Q1b",
+    "BCSE302L-FAT-A2-2024-2025:Q1a",
+    "BCSE302L-FAT-A2-2024-2025:Q1b",
+    "BCSE302L-FAT-A2-2024:Q1",
+    "BCSE302L-FAT-F2-2023-2024:Q1a",
+    "BCSE302L-FAT-F2-2023-2024:Q1b",
+    "BCSE302L-CAT1-D1-2026-2027:Q1a",
+    "BCSE302L-CAT1-D1-2026-2027:Q1b",
+    "BCSE302L-CAT1-D1-2026-2027:Q2",
+    "BCSE302L-CAT1-D2-2026-2027:Q1a",
+    "BCSE302L-CAT1-D2-2026-2027:Q1b",
+    "BCSE302L-CAT1-D2-2026-2027:Q2",
+    "BCSE302L-FAT-B1-2025-2026:Q1",
+    "BCSE302L-CAT-1-B2-2025-2026:Q1",
+    "BCSE302L-FAT-A1-2023-2024:Q1a",
+    "BCSE302L-FAT-A1-2023-2024:Q1b",
+    "BCSE302L-FAT-B2-2022-2023:Q1",
+    "BCSE302L-FAT-B2-2024-2025:Q1"
+   ],
+   "types": {
+    "theory": 27,
+    "scenario": 13
+   },
+   "marks_share_fat": 0.092
+  },
+  "Indexing / B+ tree": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 10,
+    "n_older": 11,
+    "ratio": "10 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "10 of 11",
+    "probability": 0.846
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 17,
+    "n_older": 20,
+    "ratio": "17 of 20",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "17 of 20",
+    "probability": 0.818
+   },
+   "support": [
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q3a",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q3b",
+    "BCSE302L-FAT-B2-2025-2026:Q5",
+    "BCSE302L-FAT-E1-2025-2026:Q5i",
+    "BCSE302L-FAT-E1-2025-2026:Q5ii",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(i)",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(ii)",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(iii)",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(iv)",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4d(i)",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4d(ii)",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4d(iii)",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q2",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2a",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2b",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2c",
+    "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q4",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q2b",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q2c",
+    "BCSE302L-FAT-A1-2024-2025:Q9a",
+    "BCSE302L-FAT-A2-2022-2023:Q5",
+    "BCSE302L-FAT-A2-2024-2025:Q5a",
+    "BCSE302L-FAT-A2-2024:Q4",
+    "BCSE302L-FAT-A2-2024:Q5",
+    "BCSE302L-FAT-B1-2025-2026:Q8i",
+    "BCSE302L-FAT-B1-2025-2026:Q8ii",
+    "BCSE302L-FAT-B1-2025-2026:Q8iii",
+    "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q3",
+    "BCSE302L-FAT-A1-2023-2024:Q6",
+    "BCSE302L-FAT-B2-2022-2023:Q7ii",
+    "BCSE302L-FAT-B2-2024-2025:Q5"
+   ],
+   "types": {
+    "trace": 16,
+    "theory": 7,
+    "numerical": 8
+   },
+   "marks_share_fat": 0.09
+  },
+  "SQL queries": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 11,
+    "ratio": "2 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 11",
+    "probability": 0.231
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 6,
+    "n_older": 28,
+    "ratio": "6 of 30",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "6 of 28",
+    "probability": 0.206
+   },
+   "support": [
+    "BCSE302L-CAT1-E1-2025-2026:Q3a",
+    "BCSE302L-CAT1-E1-2025-2026:Q3b",
+    "BCSE302L-CAT1-E1-2025-2026:Q3c",
+    "BCSE302L-CAT1-E1-2025-2026:Q3d",
+    "BCSE302L-CAT1-E1-2025-2026:Q3e",
+    "BCSE302L-CAT2-E1-2025-2026:Q3i",
+    "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+    "BCSE302L-CAT2-E1-2025-2026:Q3iii",
+    "BCSE302L-CAT2-E1-2025-2026:Q3iv",
+    "BCSE302L-CAT2-E1-2025-2026:Q3v",
+    "BCSE302L-CAT2-E1-2025-2026:Q4i",
+    "BCSE302L-CAT-1-F2-2023-2024:Q5i",
+    "BCSE302L-CAT-1-F2-2023-2024:Q5ii",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1a",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1b",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1c",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1d",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1e",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1f",
+    "BCSE302L-FAT-F2-2023-2024:Q6a",
+    "BCSE302L-FAT-F2-2023-2024:Q6b",
+    "BCSE302L-FAT-F2-2023-2024:Q6c",
+    "BCSE302L-FAT-F2-2023-2024:Q6d",
+    "BCSE302L-FAT-F2-2023-2024:Q6e",
+    "BCSE302L-FAT-F2-2023-2024:Q7a",
+    "BCSE302L-FAT-F2-2023-2024:Q7b",
+    "BCSE302L-FAT-B2-2022-2023:Q4"
+   ],
+   "types": {
+    "theory": 25,
+    "numerical": 2
+   },
+   "marks_share_fat": 0.025
+  },
+  "Normalization (1NF-BCNF)": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 10,
+    "n_older": 11,
+    "ratio": "10 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "10 of 11",
+    "probability": 0.846
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 2,
+    "k_older": 21,
+    "n_older": 28,
+    "ratio": "23 of 30",
+    "recent_ratio": "2 of 2",
+    "older_ratio": "21 of 28",
+    "probability": 0.765
+   },
+   "support": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q5b",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q5",
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+    "BCSE302L-CAT2-E1-2025-2026:Q1",
+    "BCSE302L-FAT-B2-2025-2026:Q4",
+    "BCSE302L-FAT-E1-2025-2026:Q4i",
+    "BCSE302L-FAT-E1-2025-2026:Q4ii",
+    "BCSE302L-CAT-1-A1-2023-2024:Q5",
+    "BCSE302L-CAT-1-A1-2024-2025:Q5",
+    "BCSE302L-CAT-1-A2-2024-2025:Q5a",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1a",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1b",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q3",
+    "BCSE302L-FAT-A1-2024-2025:Q5",
+    "BCSE302L-FAT-A2-2022-2023:Q4",
+    "BCSE302L-FAT-A2-2024-2025:Q3",
+    "BCSE302L-FAT-A2-2024:Q3",
+    "BCSE302L-FAT-F2-2023-2024:Q3",
+    "BCSE302L-CAT1-D1-2026-2027:Q5b",
+    "BCSE302L-CAT1-D2-2026-2027:Q5b",
+    "BCSE302L-FAT-A1-2023-2024:Q3a",
+    "BCSE302L-FAT-B2-2022-2023:Q6iic",
+    "BCSE302L-FAT-B2-2024-2025:Q4"
+   ],
+   "types": {
+    "numerical": 11,
+    "theory": 8,
+    "trace": 4,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.066
+  },
+  "ER to relational mapping": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 11,
+    "ratio": "6 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 11",
+    "probability": 0.538
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 2,
+    "k_older": 14,
+    "n_older": 28,
+    "ratio": "15 of 30",
+    "recent_ratio": "1 of 2",
+    "older_ratio": "14 of 28",
+    "probability": 0.5
+   },
+   "support": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q3",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q4a",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q4b",
+    "BCSE302L-CAT1-E1-2025-2026:Q4",
+    "BCSE302L-FAT-B2-2025-2026:Q3",
+    "BCSE302L-CAT-1-A1-2023-2024:Q3",
+    "BCSE302L-CAT-1-A1-2024-2025:Q3",
+    "BCSE302L-CAT-1-A2-2024-2025:Q4",
+    "BCSE302L-CAT-1-F2-2023-2024:Q1i",
+    "BCSE302L-FAT-A2-2022-2023:Q3a",
+    "BCSE302L-FAT-A2-2022-2023:Q3b",
+    "BCSE302L-FAT-A2-2024-2025:Q2b",
+    "BCSE302L-FAT-F2-2023-2024:Q2a",
+    "BCSE302L-CAT1-D2-2026-2027:Q4b",
+    "BCSE302L-CAT-1-B2-2025-2026:Q2",
+    "BCSE302L-FAT-B2-2022-2023:Q5ii",
+    "BCSE302L-FAT-B2-2024-2025:Q3"
+   ],
+   "types": {
+    "theory": 13,
+    "numerical": 1,
+    "trace": 1,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.045
+  },
+  "NoSQL types / CAP": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 9,
+    "n_older": 11,
+    "ratio": "9 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "9 of 11",
+    "probability": 0.769
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 9,
+    "n_older": 11,
+    "ratio": "9 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "9 of 11",
+    "probability": 0.769
+   },
+   "support": [
+    "BCSE302L-FAT-B2-2025-2026:Q10a",
+    "BCSE302L-FAT-B2-2025-2026:Q10b",
+    "BCSE302L-FAT-E1-2025-2026:Q10a",
+    "BCSE302L-FAT-E1-2025-2026:Q10b",
+    "BCSE302L-FAT-A1-2024-2025:Q8",
+    "BCSE302L-FAT-A2-2022-2023:Q10",
+    "BCSE302L-FAT-A2-2024-2025:Q10",
+    "BCSE302L-FAT-F2-2023-2024:Q5a",
+    "BCSE302L-FAT-F2-2023-2024:Q5b",
+    "BCSE302L-FAT-B1-2025-2026:Q7i",
+    "BCSE302L-FAT-B1-2025-2026:Q7ii",
+    "BCSE302L-FAT-B1-2025-2026:Q10a",
+    "BCSE302L-FAT-A1-2023-2024:Q10a",
+    "BCSE302L-FAT-A1-2023-2024:Q10b",
+    "BCSE302L-FAT-B2-2024-2025:Q10a",
+    "BCSE302L-FAT-B2-2024-2025:Q10b"
+   ],
+   "types": {
+    "theory": 14,
+    "scenario": 2
+   },
+   "marks_share_fat": 0.101
+  },
+  "ER diagram design": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 7,
+    "n_older": 11,
+    "ratio": "7 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "7 of 11",
+    "probability": 0.615
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 2,
+    "k_older": 11,
+    "n_older": 28,
+    "ratio": "12 of 30",
+    "recent_ratio": "1 of 2",
+    "older_ratio": "11 of 28",
+    "probability": 0.412
+   },
+   "support": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q2",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+    "BCSE302L-CAT1-E1-2025-2026:Q2",
+    "BCSE302L-FAT-B2-2025-2026:Q2",
+    "BCSE302L-CAT-1-A2-2024-2025:Q3",
+    "BCSE302L-FAT-A1-2024-2025:Q2",
+    "BCSE302L-FAT-A2-2022-2023:Q2a",
+    "BCSE302L-FAT-A2-2022-2023:Q2b",
+    "BCSE302L-FAT-A2-2024:Q2",
+    "BCSE302L-CAT1-D2-2026-2027:Q3",
+    "BCSE302L-FAT-B1-2025-2026:Q2",
+    "BCSE302L-FAT-A1-2023-2024:Q2",
+    "BCSE302L-FAT-B2-2022-2023:Q5i"
+   ],
+   "types": {
+    "scenario": 11,
+    "theory": 2
+   },
+   "marks_share_fat": 0.056
+  },
+  "2PL / locking": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 10,
+    "n_older": 11,
+    "ratio": "10 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "10 of 11",
+    "probability": 0.846
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 10,
+    "n_older": 11,
+    "ratio": "10 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "10 of 11",
+    "probability": 0.846
+   },
+   "support": [
+    "BCSE302L-FAT-B2-2025-2026:Q9a",
+    "BCSE302L-FAT-E1-2025-2026:Q8b",
+    "BCSE302L-FAT-A1-2024-2025:Q10a",
+    "BCSE302L-FAT-A2-2022-2023:Q8a",
+    "BCSE302L-FAT-A2-2024-2025:Q9a",
+    "BCSE302L-FAT-A2-2024-2025:Q9b",
+    "BCSE302L-FAT-A2-2024:Q10",
+    "BCSE302L-FAT-F2-2023-2024:Q9b",
+    "BCSE302L-FAT-B1-2025-2026:Q6i",
+    "BCSE302L-FAT-B1-2025-2026:Q6ii",
+    "BCSE302L-FAT-B2-2022-2023:Q8i",
+    "BCSE302L-FAT-B2-2024-2025:Q9a",
+    "BCSE302L-FAT-B2-2024-2025:Q9b"
+   ],
+   "types": {
+    "trace": 6,
+    "theory": 6,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.082
+  },
+  "Hashing": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 11,
+    "ratio": "5 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 11",
+    "probability": 0.462
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 8,
+    "n_older": 20,
+    "ratio": "8 of 20",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "8 of 20",
+    "probability": 0.409
+   },
+   "support": [
+    "BCSE302L-CAT2-E1-2025-2026:Q2i",
+    "BCSE302L-CAT2-E1-2025-2026:Q2ii",
+    "BCSE302L-CAT2-E1-2025-2026:Q2iii",
+    "BCSE302L-FAT-E1-2025-2026:Q6a",
+    "BCSE302L-FAT-E1-2025-2026:Q6bi",
+    "BCSE302L-FAT-E1-2025-2026:Q6bii",
+    "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q3",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q2a",
+    "BCSE302L-FAT-A1-2024-2025:Q9b",
+    "BCSE302L-FAT-A2-2024-2025:Q5bi",
+    "BCSE302L-FAT-A2-2024:Q6",
+    "BCSE302L-FAT-F2-2023-2024:Q8c"
+   ],
+   "types": {
+    "numerical": 6,
+    "trace": 5,
+    "theory": 1
+   },
+   "marks_share_fat": 0.034
+  },
+  "Relational algebra": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 11,
+    "ratio": "6 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 11",
+    "probability": 0.538
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 14,
+    "n_older": 28,
+    "ratio": "14 of 30",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "14 of 28",
+    "probability": 0.441
+   },
+   "support": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+    "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+    "BCSE302L-FAT-B2-2025-2026:Q6",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3a",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3b",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3c",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3d",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3e",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q3",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q3",
+    "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q1a",
+    "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q1b",
+    "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q1c",
+    "BCSE302L-FAT-A2-2022-2023:Q6a",
+    "BCSE302L-FAT-A2-2024-2025:Q5bii",
+    "BCSE302L-FAT-F2-2023-2024:Q8a",
+    "BCSE302L-FAT-B1-2025-2026:Q4",
+    "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+    "BCSE302L-FAT-B2-2024-2025:Q6"
+   ],
+   "types": {
+    "theory": 17,
+    "numerical": 3
+   },
+   "marks_share_fat": 0.036
+  },
+  "Query processing / optimization": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 11,
+    "n_older": 20,
+    "ratio": "11 of 20",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "11 of 20",
+    "probability": 0.545
+   },
+   "support": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q4",
+    "BCSE302L-CAT2-E1-2025-2026:Q4iii",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q4",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q4",
+    "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q5",
+    "BCSE302L-FAT-A2-2022-2023:Q6b",
+    "BCSE302L-FAT-F2-2023-2024:Q8b",
+    "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q4",
+    "BCSE302L-FAT-A1-2023-2024:Q5",
+    "BCSE302L-FAT-B2-2022-2023:Q7i"
+   ],
+   "types": {
+    "trace": 7,
+    "theory": 1,
+    "scenario": 1,
+    "numerical": 2
+   },
+   "marks_share_fat": 0.025
+  },
+  "Schedules / conflict serializability": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 8,
+    "n_older": 11,
+    "ratio": "8 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "8 of 11",
+    "probability": 0.692
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 8,
+    "n_older": 11,
+    "ratio": "8 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "8 of 11",
+    "probability": 0.692
+   },
+   "support": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q5",
+    "BCSE302L-CAT2-E1-2025-2026:Q5ai",
+    "BCSE302L-CAT2-E1-2025-2026:Q5aii",
+    "BCSE302L-FAT-B2-2025-2026:Q7",
+    "BCSE302L-FAT-E1-2025-2026:Q7a",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5a",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5b",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q5",
+    "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q2",
+    "BCSE302L-FAT-A2-2024-2025:Q6a",
+    "BCSE302L-FAT-A2-2024:Q7",
+    "BCSE302L-FAT-F2-2023-2024:Q9a",
+    "BCSE302L-FAT-B1-2025-2026:Q5",
+    "BCSE302L-FAT-B1-2025-2026:Q9a",
+    "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q5",
+    "BCSE302L-FAT-A1-2023-2024:Q7",
+    "BCSE302L-FAT-B2-2024-2025:Q7"
+   ],
+   "types": {
+    "numerical": 1,
+    "trace": 12,
+    "theory": 4,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.062
+  },
+  "EER / specialization": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 2,
+    "k_older": 8,
+    "n_older": 28,
+    "ratio": "10 of 30",
+    "recent_ratio": "2 of 2",
+    "older_ratio": "8 of 28",
+    "probability": 0.382
+   },
+   "support": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+    "BCSE302L-FAT-E1-2025-2026:Q2",
+    "BCSE302L-CAT-1-A1-2024-2025:Q4b",
+    "BCSE302L-CAT-1-F2-2023-2024:Q3",
+    "BCSE302L-FAT-A1-2024-2025:Q3",
+    "BCSE302L-FAT-A2-2024-2025:Q2a",
+    "BCSE302L-CAT1-D1-2026-2027:Q4",
+    "BCSE302L-CAT1-D2-2026-2027:Q4a",
+    "BCSE302L-CAT-1-B2-2025-2026:Q3",
+    "BCSE302L-FAT-B2-2024-2025:Q2"
+   ],
+   "types": {
+    "theory": 5,
+    "scenario": 5
+   },
+   "marks_share_fat": 0.034
+  },
+  "Functional dependencies / closure": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 2,
+    "k_older": 9,
+    "n_older": 28,
+    "ratio": "10 of 30",
+    "recent_ratio": "1 of 2",
+    "older_ratio": "9 of 28",
+    "probability": 0.353
+   },
+   "support": [
+    "BCSE302L-CAT1-E1-2025-2026:Q5aiii",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q1b",
+    "BCSE302L-FAT-E1-2025-2026:Q3b",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q1b",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q4b",
+    "BCSE302L-FAT-A2-2024-2025:Q4a",
+    "BCSE302L-CAT1-D1-2026-2027:Q5a",
+    "BCSE302L-FAT-B1-2025-2026:Q3",
+    "BCSE302L-CAT-1-B2-2025-2026:Q5",
+    "BCSE302L-FAT-A1-2023-2024:Q3b"
+   ],
+   "types": {
+    "numerical": 7,
+    "theory": 3
+   },
+   "marks_share_fat": 0.018
+  },
+  "Lossless / dependency-preserving decomposition": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 3,
+    "n_older": 11,
+    "ratio": "3 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "3 of 11",
+    "probability": 0.308
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 5,
+    "n_older": 28,
+    "ratio": "5 of 30",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "5 of 28",
+    "probability": 0.176
+   },
+   "support": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q4b",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1c",
+    "BCSE302L-FAT-A1-2024-2025:Q4",
+    "BCSE302L-FAT-A2-2024-2025:Q4b",
+    "BCSE302L-FAT-A1-2023-2024:Q4a",
+    "BCSE302L-FAT-A1-2023-2024:Q4b",
+    "BCSE302L-FAT-A1-2023-2024:Q4c"
+   ],
+   "types": {
+    "theory": 4,
+    "numerical": 3
+   },
+   "marks_share_fat": 0.022
+  },
+  "Candidate keys": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 2,
+    "k_older": 6,
+    "n_older": 28,
+    "ratio": "7 of 30",
+    "recent_ratio": "1 of 2",
+    "older_ratio": "6 of 28",
+    "probability": 0.265
+   },
+   "support": [
+    "BCSE302L-CAT1-E1-2025-2026:Q5ai",
+    "BCSE302L-CAT-1-A2-2024-2025:Q5b",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q1a(i)",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1a",
+    "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q4a",
+    "BCSE302L-CAT1-D2-2026-2027:Q5a",
+    "BCSE302L-FAT-B2-2022-2023:Q6iib"
+   ],
+   "types": {
+    "numerical": 7
+   },
+   "marks_share_fat": 0.003
+  },
+  "Log-based recovery / checkpoints": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "support": [
+    "BCSE302L-FAT-E1-2025-2026:Q7bi",
+    "BCSE302L-FAT-E1-2025-2026:Q7bii",
+    "BCSE302L-FAT-A2-2022-2023:Q9",
+    "BCSE302L-FAT-F2-2023-2024:Q4a",
+    "BCSE302L-FAT-F2-2023-2024:Q4b",
+    "BCSE302L-FAT-B1-2025-2026:Q9bi",
+    "BCSE302L-FAT-B1-2025-2026:Q9bii"
+   ],
+   "types": {
+    "trace": 3,
+    "numerical": 1,
+    "theory": 3
+   },
+   "marks_share_fat": 0.03
+  },
+  "Transactions ACID / states": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 11,
+    "ratio": "5 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 11",
+    "probability": 0.462
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 11,
+    "ratio": "5 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 11",
+    "probability": 0.462
+   },
+   "support": [
+    "BCSE302L-FAT-B2-2025-2026:Q8a",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q5",
+    "BCSE302L-FAT-A2-2022-2023:Q7a",
+    "BCSE302L-FAT-A2-2024-2025:Q6b",
+    "BCSE302L-FAT-A2-2024:Q8",
+    "BCSE302L-FAT-B2-2024-2025:Q8a"
+   ],
+   "types": {
+    "theory": 6
+   },
+   "marks_share_fat": 0.023
+  },
+  "Keys / constraints": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 2,
+    "k_older": 5,
+    "n_older": 28,
+    "ratio": "6 of 30",
+    "recent_ratio": "1 of 2",
+    "older_ratio": "5 of 28",
+    "probability": 0.235
+   },
+   "support": [
+    "BCSE302L-CAT-1-A1-2023-2024:Q4",
+    "BCSE302L-CAT-1-A1-2024-2025:Q4a",
+    "BCSE302L-CAT-1-F2-2023-2024:Q1ii",
+    "BCSE302L-FAT-F2-2023-2024:Q2b",
+    "BCSE302L-CAT1-D1-2026-2027:Q3",
+    "BCSE302L-CAT-1-B2-2025-2026:Q4"
+   ],
+   "types": {
+    "theory": 4,
+    "scenario": 1,
+    "numerical": 1
+   },
+   "marks_share_fat": 0.004
+  },
+  "Deadlock (wait-die / wound-wait)": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 11,
+    "ratio": "5 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 11",
+    "probability": 0.462
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 11,
+    "ratio": "5 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 11",
+    "probability": 0.462
+   },
+   "support": [
+    "BCSE302L-FAT-A2-2024-2025:Q8",
+    "BCSE302L-FAT-A2-2024:Q9",
+    "BCSE302L-FAT-B1-2025-2026:Q10bi",
+    "BCSE302L-FAT-B1-2025-2026:Q10bii",
+    "BCSE302L-FAT-A1-2023-2024:Q9b",
+    "BCSE302L-FAT-B2-2022-2023:Q8ii"
+   ],
+   "types": {
+    "theory": 5,
+    "trace": 1
+   },
+   "marks_share_fat": 0.036
+  },
+  "Minimal cover": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 11,
+    "ratio": "2 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 11",
+    "probability": 0.231
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 4,
+    "n_older": 28,
+    "ratio": "4 of 30",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "4 of 28",
+    "probability": 0.147
+   },
+   "support": [
+    "BCSE302L-CAT1-E1-2025-2026:Q5aii",
+    "BCSE302L-FAT-E1-2025-2026:Q3a",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q1a(ii)",
+    "BCSE302L-FAT-B2-2022-2023:Q6i",
+    "BCSE302L-FAT-B2-2022-2023:Q6iia"
+   ],
+   "types": {
+    "numerical": 5
+   },
+   "marks_share_fat": 0.012
+  },
+  "Timestamp ordering": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "support": [
+    "BCSE302L-FAT-E1-2025-2026:Q9a",
+    "BCSE302L-FAT-E1-2025-2026:Q9b",
+    "BCSE302L-FAT-A1-2024-2025:Q10b",
+    "BCSE302L-FAT-A2-2022-2023:Q8b",
+    "BCSE302L-FAT-A1-2023-2024:Q8"
+   ],
+   "types": {
+    "trace": 3,
+    "theory": 2
+   },
+   "marks_share_fat": 0.031
+  },
+  "DBMS vs file processing": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 11,
+    "ratio": "0 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 11",
+    "probability": 0.077
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 4,
+    "n_older": 19,
+    "ratio": "4 of 21",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "4 of 19",
+    "probability": 0.2
+   },
+   "support": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q1a",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+    "BCSE302L-CAT-1-A1-2023-2024:Q1a",
+    "BCSE302L-CAT-1-A2-2024-2025:Q1a"
+   ],
+   "types": {
+    "theory": 4
+   },
+   "marks_share_fat": 0.0
+  },
+  "ARIES / shadow paging": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 11,
+    "ratio": "4 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 11",
+    "probability": 0.385
+   },
+   "support": [
+    "BCSE302L-FAT-B2-2025-2026:Q8b",
+    "BCSE302L-FAT-A1-2024-2025:Q6",
+    "BCSE302L-FAT-A1-2023-2024:Q9a",
+    "BCSE302L-FAT-B2-2024-2025:Q8b"
+   ],
+   "types": {
+    "theory": 3,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.021
+  },
+  "4NF / MVD": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 11,
+    "ratio": "0 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 11",
+    "probability": 0.077
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 3,
+    "n_older": 28,
+    "ratio": "3 of 30",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "3 of 28",
+    "probability": 0.118
+   },
+   "support": [
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q2a",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q2b",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1b",
+    "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1"
+   ],
+   "types": {
+    "scenario": 2,
+    "theory": 1,
+    "numerical": 1
+   },
+   "marks_share_fat": 0.0
+  },
+  "File organization": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 11,
+    "ratio": "0 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 11",
+    "probability": 0.077
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 20,
+    "ratio": "2 of 20",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 20",
+    "probability": 0.136
+   },
+   "support": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q2",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4a",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4b"
+   ],
+   "types": {
+    "numerical": 3
+   },
+   "marks_share_fat": 0.0
+  },
+  "Recoverable / cascadeless schedules": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 3,
+    "n_older": 11,
+    "ratio": "3 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "3 of 11",
+    "probability": 0.308
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 3,
+    "n_older": 11,
+    "ratio": "3 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "3 of 11",
+    "probability": 0.308
+   },
+   "support": [
+    "BCSE302L-CAT2-E1-2025-2026:Q5b",
+    "BCSE302L-FAT-A2-2022-2023:Q7b",
+    "BCSE302L-FAT-A2-2024-2025:Q7",
+    "BCSE302L-FAT-B2-2022-2023:Q2"
+   ],
+   "types": {
+    "theory": 3,
+    "trace": 1
+   },
+   "marks_share_fat": 0.023
+  },
+  "Aggregation in ER/EER": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 11,
+    "ratio": "0 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 11",
+    "probability": 0.077
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 1,
+    "n_older": 28,
+    "ratio": "1 of 30",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "1 of 28",
+    "probability": 0.059
+   },
+   "support": [
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q3b"
+   ],
+   "types": {
+    "scenario": 1
+   },
+   "marks_share_fat": 0.0
+  },
+  "Data models (hierarchical/network/relational)": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 11,
+    "ratio": "0 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 11",
+    "probability": 0.077
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 1,
+    "n_older": 19,
+    "ratio": "1 of 21",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "1 of 19",
+    "probability": 0.08
+   },
+   "support": [
+    "BCSE302L-CAT1-E1-2025-2026:Q1a"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.0
+  },
+  "Multi-granularity locking (MGL)": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "support": [
+    "BCSE302L-FAT-B2-2025-2026:Q9b"
+   ],
+   "types": {
+    "trace": 1
+   },
+   "marks_share_fat": 0.008
+  },
+  "Deadlock (wait-for graph)": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "support": [
+    "BCSE302L-FAT-E1-2025-2026:Q8a"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.003
+  },
+  "Concurrency anomalies": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "support": [
+    "BCSE302L-FAT-A1-2024-2025:Q7"
+   ],
+   "types": {
+    "theory": 1
+   },
+   "marks_share_fat": 0.008
+  },
+  "MongoDB queries / aggregation": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 11,
+    "ratio": "1 of 11",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 11",
+    "probability": 0.154
+   },
+   "support": [
+    "BCSE302L-FAT-B2-2022-2023:Q3"
+   ],
+   "types": {
+    "scenario": 1
+   },
+   "marks_share_fat": 0.008
+  }
+ },
+ "ranking": [
+  "DBMS architecture / data independence",
+  "2PL / locking",
+  "Indexing / B+ tree",
+  "Normalization (1NF-BCNF)",
+  "NoSQL types / CAP",
+  "Schedules / conflict serializability",
+  "ER diagram design",
+  "ER to relational mapping",
+  "Relational algebra",
+  "Deadlock (wait-die / wound-wait)",
+  "Transactions ACID / states",
+  "Hashing",
+  "Query processing / optimization",
+  "Timestamp ordering",
+  "Log-based recovery / checkpoints",
+  "ARIES / shadow paging",
+  "EER / specialization",
+  "Functional dependencies / closure",
+  "Recoverable / cascadeless schedules",
+  "Lossless / dependency-preserving decomposition",
+  "SQL queries",
+  "Minimal cover",
+  "Candidate keys",
+  "Keys / constraints",
+  "Multi-granularity locking (MGL)",
+  "Concurrency anomalies",
+  "MongoDB queries / aggregation",
+  "Deadlock (wait-for graph)",
+  "DBMS vs file processing",
+  "File organization",
+  "4NF / MVD",
+  "Data models (hierarchical/network/relational)",
+  "Aggregation in ER/EER"
+ ],
+ "drift": {
+  "CAT1": {
+   "older": {
+    "papers": 8,
+    "n_q": 64,
+    "mean_bloom": 3.5,
+    "scenario_wrapper_pct_q": 29.7,
+    "scenario_wrapper_pct_marks": 33.3,
+    "computational_marks_pct": 12.8,
+    "theory_marks_pct": 61.9,
+    "num_trace_to_theory_mark_ratio": 0.21
+   },
+   "recent_2026_27": {
+    "papers": 2,
+    "n_q": 15,
+    "mean_bloom": 2.73,
+    "scenario_wrapper_pct_q": 53.3,
+    "scenario_wrapper_pct_marks": 65.0,
+    "computational_marks_pct": 25.0,
+    "theory_marks_pct": 10.0,
+    "num_trace_to_theory_mark_ratio": 2.5
+   }
+  },
+  "CAT2": {
+   "older": {
+    "papers": 9,
+    "n_q": 87,
+    "mean_bloom": 3.03,
+    "scenario_wrapper_pct_q": 35.6,
+    "scenario_wrapper_pct_marks": 31.9,
+    "computational_marks_pct": 63.3,
+    "theory_marks_pct": 31.1,
+    "num_trace_to_theory_mark_ratio": 2.04
+   },
+   "recent_2026_27": {
+    "papers": 0,
+    "n_q": 0,
+    "mean_bloom": 0.0,
+    "scenario_wrapper_pct_q": 0.0,
+    "scenario_wrapper_pct_marks": 0.0,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 0.0,
+    "num_trace_to_theory_mark_ratio": null
+   }
+  },
+  "FAT": {
+   "older": {
+    "papers": 11,
+    "n_q": 171,
+    "mean_bloom": 3.19,
+    "scenario_wrapper_pct_q": 24.6,
+    "scenario_wrapper_pct_marks": 26.7,
+    "computational_marks_pct": 33.7,
+    "theory_marks_pct": 53.0,
+    "num_trace_to_theory_mark_ratio": 0.64
+   },
+   "recent_2026_27": {
+    "papers": 0,
+    "n_q": 0,
+    "mean_bloom": 0.0,
+    "scenario_wrapper_pct_q": 0.0,
+    "scenario_wrapper_pct_marks": 0.0,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 0.0,
+    "num_trace_to_theory_mark_ratio": null
+   }
+  },
+  "by_year_start": {
+   "2022": {
+    "papers": 2,
+    "n_q": 30,
+    "mean_bloom": 3.2,
+    "scenario_wrapper_pct_q": 33.3,
+    "scenario_wrapper_pct_marks": 40.0,
+    "computational_marks_pct": 50.0,
+    "theory_marks_pct": 27.9,
+    "num_trace_to_theory_mark_ratio": 1.79
+   },
+   "2023": {
+    "papers": 7,
+    "n_q": 91,
+    "mean_bloom": 3.13,
+    "scenario_wrapper_pct_q": 28.6,
+    "scenario_wrapper_pct_marks": 26.4,
+    "computational_marks_pct": 32.0,
+    "theory_marks_pct": 51.1,
+    "num_trace_to_theory_mark_ratio": 0.63
+   },
+   "2024": {
+    "papers": 8,
+    "n_q": 83,
+    "mean_bloom": 3.23,
+    "scenario_wrapper_pct_q": 13.3,
+    "scenario_wrapper_pct_marks": 15.9,
+    "computational_marks_pct": 27.3,
+    "theory_marks_pct": 63.2,
+    "num_trace_to_theory_mark_ratio": 0.43
+   },
+   "2025": {
+    "papers": 11,
+    "n_q": 118,
+    "mean_bloom": 3.25,
+    "scenario_wrapper_pct_q": 38.1,
+    "scenario_wrapper_pct_marks": 40.2,
+    "computational_marks_pct": 40.6,
+    "theory_marks_pct": 44.9,
+    "num_trace_to_theory_mark_ratio": 0.9
+   },
+   "2026": {
+    "papers": 2,
+    "n_q": 15,
+    "mean_bloom": 2.73,
+    "scenario_wrapper_pct_q": 53.3,
+    "scenario_wrapper_pct_marks": 65.0,
+    "computational_marks_pct": 25.0,
+    "theory_marks_pct": 10.0,
+    "num_trace_to_theory_mark_ratio": 2.5
+   }
+  }
+ },
+ "slot_pairs": [
+  {
+   "pair": "CAT1 B1->B2 2025",
+   "source": "BCSE302L-CAT1-B1-2025-2026-AK",
+   "target": "BCSE302L-CAT1-B2-2025-2026-AK",
+   "by_question": {
+    "Identical": "0 of 8",
+    "Same concept new numbers": "7 of 8",
+    "Same module only": "1 of 8",
+    "Unrelated": "0 of 8"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1a",
+     "text_sim": 0.39
+    },
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.22
+    },
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q4a",
+     "marks": 8.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q4b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+     "text_sim": 0.13
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 B1->B2 2025",
+   "source": "BCSE302L-CAT1-B1-2025-2026-AK",
+   "target": "BCSE302L-CAT-1-B2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "3 of 5",
+    "Same module only": "2 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE302L-CAT-1-B2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-CAT-1-B2-2025-2026:Q3",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.11
+    },
+    {
+     "q": "BCSE302L-CAT-1-B2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+     "text_sim": 0.19
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 B1->B2 2025",
+   "source": "BCSE302L-CAT2-B1-2025-2026-AK",
+   "target": "BCSE302L-CAT2-B2-2025-2026-AK",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "4 of 7",
+    "Same module only": "3 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.16
+    },
+    {
+     "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q1b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.14
+    },
+    {
+     "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q3a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q3b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 B1->B2 2025",
+   "source": "BCSE302L-CAT2-B1-2025-2026-AK",
+   "target": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "3 of 5",
+    "Same module only": "2 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q3",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 A1->A2 2024",
+   "source": "BCSE302L-CAT-1-A1-2024-2025",
+   "target": "BCSE302L-CAT-1-A2-2024-2025",
+   "by_question": {
+    "Identical": "0 of 8",
+    "Same concept new numbers": "5 of 8",
+    "Same module only": "3 of 8",
+    "Unrelated": "0 of 8"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q1a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q1",
+     "text_sim": 0.41
+    },
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q2a",
+     "text_sim": 0.33
+    },
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q2a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q1",
+     "text_sim": 0.39
+    },
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q2b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q1",
+     "text_sim": 0.41
+    },
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q3",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q5a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q5",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-CAT-1-A2-2024-2025:Q5b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-A1-2024-2025:Q5",
+     "text_sim": 0.04
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 A1->A2 2024",
+   "source": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key",
+   "target": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key",
+   "by_question": {
+    "Identical": "0 of 9",
+    "Same concept new numbers": "7 of 9",
+    "Same module only": "2 of 9",
+    "Unrelated": "0 of 9"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1c",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2a",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2b",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2c",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q4",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5a",
+     "text_sim": 0.31
+    }
+   ]
+  },
+  {
+   "pair": "FAT A1->A2 2024",
+   "source": "BCSE302L-FAT-A1-2024-2025",
+   "target": "BCSE302L-FAT-A2-2024-2025",
+   "by_question": {
+    "Identical": "0 of 17",
+    "Same concept new numbers": "10 of 17",
+    "Same module only": "7 of 17",
+    "Unrelated": "0 of 17"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q1a",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q1",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q1b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q1",
+     "text_sim": 0.26
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q2a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q2b",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q5",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q4a",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q4",
+     "text_sim": 0.42
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q4b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q4",
+     "text_sim": 0.33
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q5a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q9a",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q5bi",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q9b",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q5bii",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q6a",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q10b",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q6b",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q6",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q6",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q8",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q10a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q9a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q10a",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q9b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q10a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024-2025:Q10",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q8",
+     "text_sim": 0.04
+    }
+   ]
+  },
+  {
+   "pair": "FAT A1->A2 2024",
+   "source": "BCSE302L-FAT-A1-2024-2025",
+   "target": "BCSE302L-FAT-A2-2024",
+   "by_question": {
+    "Identical": "0 of 10",
+    "Same concept new numbers": "7 of 10",
+    "Same module only": "3 of 10",
+    "Unrelated": "0 of 10"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q1",
+     "text_sim": 0.17
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q5",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q9a",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q9a",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q9b",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q10b",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q8",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q6",
+     "text_sim": 0.0
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q9",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q10a",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BCSE302L-FAT-A2-2024:Q10",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-A1-2024-2025:Q10a",
+     "text_sim": 0.07
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 D1->D2 2026",
+   "source": "BCSE302L-CAT1-D1-2026-2027",
+   "target": "BCSE302L-CAT1-D2-2026-2027",
+   "by_question": {
+    "Identical": "0 of 8",
+    "Same concept new numbers": "5 of 8",
+    "Same module only": "3 of 8",
+    "Unrelated": "0 of 8"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.31
+    },
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q4a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q4",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q4b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q5a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q5a",
+     "text_sim": 0.49
+    },
+    {
+     "q": "BCSE302L-CAT1-D2-2026-2027:Q5b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q5b",
+     "text_sim": 0.06
+    }
+   ]
+  },
+  {
+   "pair": "FAT B1->B2 2025",
+   "source": "BCSE302L-FAT-B1-2025-2026",
+   "target": "BCSE302L-FAT-B2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "8 of 13",
+    "Same module only": "5 of 13",
+    "Unrelated": "0 of 13"
+   },
+   "detail": [
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q1",
+     "text_sim": 0.28
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q3",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q8ii",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q4",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q5",
+     "text_sim": 0.2
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q8a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q9bi",
+     "text_sim": 0.28
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q8b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q9bii",
+     "text_sim": 0.4
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q9a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q6i",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q9b",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q10bii",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q10a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q7i",
+     "text_sim": 0.59
+    },
+    {
+     "q": "BCSE302L-FAT-B2-2025-2026:Q10b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q7i",
+     "text_sim": 0.27
+    }
+   ]
+  }
+ ],
+ "slot_pairs_pooled": {
+  "n_questions": 90,
+  "n_pairs": 10,
+  "by_question": {
+   "Identical": "0 of 90",
+   "Same concept new numbers": "59 of 90",
+   "Same module only": "31 of 90",
+   "Unrelated": "0 of 90"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.656,
+   "Same module only": 0.344,
+   "Unrelated": 0.0
+  }
+ },
+ "cross_letter_pooled": {
+  "n_questions": 240,
+  "n_pairs": 17,
+  "by_question": {
+   "Identical": "0 of 240",
+   "Same concept new numbers": "107 of 240",
+   "Same module only": "114 of 240",
+   "Unrelated": "19 of 240"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.446,
+   "Same module only": 0.475,
+   "Unrelated": 0.079
+  }
+ },
+ "different_year_pooled_null": {
+  "n_questions": 2453,
+  "n_pairs": 212,
+  "by_question": {
+   "Identical": "24 of 2453",
+   "Same concept new numbers": "1410 of 2453",
+   "Same module only": "937 of 2453",
+   "Unrelated": "82 of 2453"
+  },
+  "rate": {
+   "Identical": 0.01,
+   "Same concept new numbers": 0.575,
+   "Same module only": 0.382,
+   "Unrelated": 0.033
+  }
+ },
+ "sister_pairs": [
+  {
+   "pair": "BACSE202 CAT1 A1 2026 vs BCSE302L D1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT1-D1-2026-2027",
+   "target": "BACSE202-CAT1-A1-2026-2027",
+   "by_question": {
+    "Identical": "0 of 6",
+    "Same concept new numbers": "5 of 6",
+    "Same module only": "1 of 6",
+    "Unrelated": "0 of 6"
+   },
+   "detail": [
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.2
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.11
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q3",
+     "text_sim": 0.0
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.39
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q4",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q5a",
+     "text_sim": 0.14
+    }
+   ]
+  },
+  {
+   "pair": "BACSE202 CAT1 A1 2026 vs BCSE302L D2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT1-D2-2026-2027",
+   "target": "BACSE202-CAT1-A1-2026-2027",
+   "by_question": {
+    "Identical": "0 of 6",
+    "Same concept new numbers": "4 of 6",
+    "Same module only": "2 of 6",
+    "Unrelated": "0 of 6"
+   },
+   "detail": [
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q1a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q1b",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q1a",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BACSE202-CAT1-A1-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q5a",
+     "text_sim": 0.19
+    }
+   ]
+  },
+  {
+   "pair": "BACSE202 CAT1 A2 2026 vs BCSE302L D1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT1-D1-2026-2027",
+   "target": "BACSE202-CAT1-A2-2026-2027",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "3 of 7",
+    "Same module only": "4 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.37
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q2",
+     "text_sim": 0.17
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q3b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q4a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q4b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q5a",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D1-2026-2027:Q3",
+     "text_sim": 0.01
+    }
+   ]
+  },
+  {
+   "pair": "BACSE202 CAT1 A2 2026 vs BCSE302L D2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT1-D2-2026-2027",
+   "target": "BACSE202-CAT1-A2-2026-2027",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "3 of 7",
+    "Same module only": "4 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q1b",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q1b",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q4a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q4a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q3",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q4b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q5a",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BACSE202-CAT1-A2-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-D2-2026-2027:Q3",
+     "text_sim": 0.01
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT1 A1 2025 vs BCSE302L B1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT1-B1-2025-2026-AK",
+   "target": "BITE302L-CAT1-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "4 of 13",
+    "Same module only": "5 of 13",
+    "Unrelated": "4 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.47
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1a",
+     "text_sim": 0.76
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.37
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.21
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+     "text_sim": 0.63
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4b",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.13
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q8",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q9",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.31
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q10",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q11",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q5b",
+     "text_sim": 0.41
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q12",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.38
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT1 A1 2025 vs BCSE302L B2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT1-B2-2025-2026-AK",
+   "target": "BITE302L-CAT1-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "3 of 13",
+    "Same module only": "6 of 13",
+    "Unrelated": "4 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+     "text_sim": 0.26
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q5",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q5",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q8",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+     "text_sim": 0.19
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q9",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q10",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+     "text_sim": 0.19
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q11",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q12",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q4b",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT1 A1 2025 vs BCSE302L E1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT1-E1-2025-2026",
+   "target": "BITE302L-CAT1-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "3 of 13",
+    "Same module only": "6 of 13",
+    "Unrelated": "4 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q1b",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q1b",
+     "text_sim": 0.19
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q1b",
+     "text_sim": 0.22
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q3b",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q5ai",
+     "text_sim": 0.57
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q5ai",
+     "text_sim": 0.37
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q3e",
+     "text_sim": 0.2
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q8",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q5ai",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q9",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q3c",
+     "text_sim": 0.3
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q10",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q3c",
+     "text_sim": 0.29
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q11",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q1b",
+     "text_sim": 0.34
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q12",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-E1-2025-2026:Q3b",
+     "text_sim": 0.28
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT1 A1 2025 vs BCSE302L B2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT-1-B2-2025-2026",
+   "target": "BITE302L-CAT1-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "2 of 13",
+    "Same module only": "7 of 13",
+    "Unrelated": "4 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q2b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q5",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q5",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q8",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q9",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q10",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q11",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT1-A1-2025-2026:Q12",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L FAT A1 2025 vs BCSE302L B2",
+   "same_slot": false,
+   "source": "BCSE302L-FAT-B2-2025-2026",
+   "target": "BITE302L-FAT-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 21",
+    "Same concept new numbers": "13 of 21",
+    "Same module only": "8 of 21",
+    "Unrelated": "0 of 21"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q1a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q1b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q2",
+     "text_sim": 0.0
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q3",
+     "text_sim": 0.12
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q6",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q6",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4c",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q6",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4d",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q6",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q5b",
+     "marks": 8.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q6a",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q6b",
+     "marks": 7.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7a",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q3",
+     "text_sim": 0.17
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7b",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q3",
+     "text_sim": 0.26
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7c",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q3",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q8a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q9a",
+     "text_sim": 0.11
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q8b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q8b",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q9a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q5",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q9b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q5",
+     "text_sim": 0.16
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q10a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q7",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q10b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B2-2025-2026:Q7",
+     "text_sim": 0.21
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L FAT A1 2025 vs BCSE302L E1",
+   "same_slot": false,
+   "source": "BCSE302L-FAT-E1-2025-2026",
+   "target": "BITE302L-FAT-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 21",
+    "Same concept new numbers": "6 of 21",
+    "Same module only": "15 of 21",
+    "Unrelated": "0 of 21"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q1a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q1b",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q1b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q1b",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4b",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4c",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4d",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q4i",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q5b",
+     "marks": 8.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q4i",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q6a",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q4i",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q6b",
+     "marks": 7.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q4i",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7a",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7b",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7c",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q8a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q8b",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q8b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q7bii",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q9a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q5ii",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q9b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q5i",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q10a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q8a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q10b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-E1-2025-2026:Q7a",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L FAT A1 2025 vs BCSE302L B1",
+   "same_slot": false,
+   "source": "BCSE302L-FAT-B1-2025-2026",
+   "target": "BITE302L-FAT-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 21",
+    "Same concept new numbers": "9 of 21",
+    "Same module only": "12 of 21",
+    "Unrelated": "0 of 21"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q1a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q1",
+     "text_sim": 0.17
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q1b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q1",
+     "text_sim": 0.16
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q4",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q4",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4c",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q4",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q4d",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q4",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q3",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q5b",
+     "marks": 8.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q3",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q6a",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q3",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q6b",
+     "marks": 7.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q3",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7a",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7b",
+     "marks": 2.5,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q7c",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q8a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q6i",
+     "text_sim": 0.47
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q8b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q9bi",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q9a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q8i",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q9b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q8i",
+     "text_sim": 0.15
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q10a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q10bii",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BITE302L-FAT-A1-2025-2026:Q10b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q5",
+     "text_sim": 0.28
+    }
+   ]
+  },
+  {
+   "pair": "CSI1001 FAT B1 2025 vs BCSE302L B1",
+   "same_slot": true,
+   "source": "BCSE302L-FAT-B1-2025-2026",
+   "target": "CSI1001-FAT-B1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 12",
+    "Same concept new numbers": "6 of 12",
+    "Same module only": "6 of 12",
+    "Unrelated": "0 of 12"
+   },
+   "detail": [
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q1",
+     "text_sim": 0.39
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q4",
+     "text_sim": 0.07
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q3",
+     "text_sim": 0.3
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q6a",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q8i",
+     "text_sim": 0.16
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q6b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q5",
+     "text_sim": 0.24
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q8ii",
+     "text_sim": 0.28
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q8a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q8ii",
+     "text_sim": 0.23
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q8b",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q8iii",
+     "text_sim": 0.23
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q9",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q6i",
+     "text_sim": 0.2
+    },
+    {
+     "q": "CSI1001-FAT-B1-2025-2026:Q10",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-FAT-B1-2025-2026:Q9bi",
+     "text_sim": 0.4
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A1 2025 vs BCSE302L B1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT2-B1-2025-2026-AK",
+   "target": "BITE302L-CAT2-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 15",
+    "Same concept new numbers": "7 of 15",
+    "Same module only": "8 of 15",
+    "Unrelated": "0 of 15"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1a",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1b",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2d",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2e",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.16
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.11
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.09
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A1 2025 vs BCSE302L B2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT2-B2-2025-2026-AK",
+   "target": "BITE302L-CAT2-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 15",
+    "Same concept new numbers": "7 of 15",
+    "Same module only": "8 of 15",
+    "Unrelated": "0 of 15"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1a",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1b",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2d",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2e",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1b",
+     "text_sim": 0.36
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.26
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.36
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A1 2025 vs BCSE302L E1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT2-E1-2025-2026",
+   "target": "BITE302L-CAT2-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 15",
+    "Same concept new numbers": "12 of 15",
+    "Same module only": "3 of 15",
+    "Unrelated": "0 of 15"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1a",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.15
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1b",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3iii",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.26
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.22
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2d",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2e",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q1",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q1",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3v",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+     "text_sim": 0.17
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+     "text_sim": 0.24
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A1 2025 vs BCSE302L B2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper",
+   "target": "BITE302L-CAT2-A1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 15",
+    "Same concept new numbers": "5 of 15",
+    "Same module only": "3 of 15",
+    "Unrelated": "7 of 15"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1a",
+     "marks": 6.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q4",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q1b",
+     "marks": 4.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q4",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2d",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q2e",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A1-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.05
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A2 2025 vs BCSE302L B1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT2-B1-2025-2026-AK",
+   "target": "BITE302L-CAT2-A2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "5 of 13",
+    "Same module only": "8 of 13",
+    "Unrelated": "0 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2i",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2ii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iv",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+     "text_sim": 0.03
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A2 2025 vs BCSE302L B2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT2-B2-2025-2026-AK",
+   "target": "BITE302L-CAT2-A2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "5 of 13",
+    "Same module only": "8 of 13",
+    "Unrelated": "0 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2i",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2ii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iv",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.39
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1b",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.35
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A2 2025 vs BCSE302L E1",
+   "same_slot": false,
+   "source": "BCSE302L-CAT2-E1-2025-2026",
+   "target": "BITE302L-CAT2-A2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "10 of 13",
+    "Same module only": "3 of 13",
+    "Unrelated": "0 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2i",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.27
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2ii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iv",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q4ii",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q1",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q1",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q1",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3iii",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+     "text_sim": 0.25
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3iii",
+     "text_sim": 0.18
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3iii",
+     "text_sim": 0.15
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-E1-2025-2026:Q3ii",
+     "text_sim": 0.29
+    }
+   ]
+  },
+  {
+   "pair": "BITE302L CAT2 A2 2025 vs BCSE302L B2",
+   "same_slot": false,
+   "source": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper",
+   "target": "BITE302L-CAT2-A2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 13",
+    "Same concept new numbers": "4 of 13",
+    "Same module only": "3 of 13",
+    "Unrelated": "6 of 13"
+   },
+   "detail": [
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.05
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2i",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2ii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iii",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q2iv",
+     "marks": 2.5,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5a",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5b",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5c",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.08
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5d",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BITE302L-CAT2-A2-2025-2026:Q5e",
+     "marks": 2.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.07
+    }
+   ]
+  },
+  {
+   "pair": "CSI1001 CAT1 B1 2025 vs BCSE302L B1",
+   "same_slot": true,
+   "source": "BCSE302L-CAT1-B1-2025-2026-AK",
+   "target": "CSI1001-CAT1-B1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "5 of 7",
+    "Same module only": "2 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "CSI1001-CAT1-B1-2025-2026:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.31
+    },
+    {
+     "q": "CSI1001-CAT1-B1-2025-2026:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.34
+    },
+    {
+     "q": "CSI1001-CAT1-B1-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+     "text_sim": 0.22
+    },
+    {
+     "q": "CSI1001-CAT1-B1-2025-2026:Q3a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-CAT1-B1-2025-2026:Q3b",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q2",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-CAT1-B1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.09
+    },
+    {
+     "q": "CSI1001-CAT1-B1-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+     "text_sim": 0.09
+    }
+   ]
+  },
+  {
+   "pair": "CSI1001 CAT1 B2 2025 vs BCSE302L B2",
+   "same_slot": true,
+   "source": "BCSE302L-CAT1-B2-2025-2026-AK",
+   "target": "CSI1001-CAT1-B2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 8",
+    "Same concept new numbers": "7 of 8",
+    "Same module only": "1 of 8",
+    "Unrelated": "0 of 8"
+   },
+   "detail": [
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q1b",
+     "text_sim": 0.02
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q1b",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q2a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q1b",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q2b",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q1b",
+     "text_sim": 0.02
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q4a",
+     "text_sim": 0.05
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+     "text_sim": 0.03
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q5a",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q5b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT1-B2-2025-2026-AK:Q4a",
+     "text_sim": 0.01
+    }
+   ]
+  },
+  {
+   "pair": "CSI1001 CAT1 B2 2025 vs BCSE302L B2",
+   "same_slot": true,
+   "source": "BCSE302L-CAT-1-B2-2025-2026",
+   "target": "CSI1001-CAT1-B2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 8",
+    "Same concept new numbers": "5 of 8",
+    "Same module only": "3 of 8",
+    "Unrelated": "0 of 8"
+   },
+   "detail": [
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q1a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "text_sim": 0.04
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q1b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "text_sim": 0.0
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q2a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q2b",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q1",
+     "text_sim": 0.0
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.05
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q5a",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q4",
+     "text_sim": 0.02
+    },
+    {
+     "q": "CSI1001-CAT1-B2-2025-2026:Q5b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-1-B2-2025-2026:Q2",
+     "text_sim": 0.02
+    }
+   ]
+  },
+  {
+   "pair": "CSI1001 CAT2 B1 2025 vs BCSE302L B1",
+   "same_slot": true,
+   "source": "BCSE302L-CAT2-B1-2025-2026-AK",
+   "target": "CSI1001-CAT2-B1-2025-2026",
+   "by_question": {
+    "Identical": "0 of 8",
+    "Same concept new numbers": "3 of 8",
+    "Same module only": "5 of 8",
+    "Unrelated": "0 of 8"
+   },
+   "detail": [
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q2a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.21
+    },
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q2b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+     "text_sim": 0.14
+    },
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q3a",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+     "text_sim": 0.07
+    },
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q3b",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+     "text_sim": 0.14
+    },
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+     "text_sim": 0.03
+    },
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q5a",
+     "marks": 4.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+     "text_sim": 0.02
+    },
+    {
+     "q": "CSI1001-CAT2-B1-2025-2026:Q5b",
+     "marks": 6.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+     "text_sim": 0.01
+    }
+   ]
+  },
+  {
+   "pair": "CSI1001 CAT2 B2 2025 vs BCSE302L B2",
+   "same_slot": true,
+   "source": "BCSE302L-CAT2-B2-2025-2026-AK",
+   "target": "CSI1001-CAT2-B2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "2 of 5",
+    "Same module only": "2 of 5",
+    "Unrelated": "1 of 5"
+   },
+   "detail": [
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.32
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.16
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q3b",
+     "text_sim": 0.08
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q5",
+     "text_sim": 0.06
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+     "text_sim": 0.2
+    }
+   ]
+  },
+  {
+   "pair": "CSI1001 CAT2 B2 2025 vs BCSE302L B2",
+   "same_slot": true,
+   "source": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper",
+   "target": "CSI1001-CAT2-B2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "1 of 5",
+    "Same module only": "4 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.05
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q2",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1",
+     "text_sim": 0.04
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2",
+     "text_sim": 0.08
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q5",
+     "text_sim": 0.06
+    },
+    {
+     "q": "CSI1001-CAT2-B2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q5",
+     "text_sim": 0.02
+    }
+   ]
+  }
+ ],
+ "sister_pooled": {
+  "n_questions": 306,
+  "n_pairs": 26,
+  "by_question": {
+   "Identical": "0 of 306",
+   "Same concept new numbers": "139 of 306",
+   "Same module only": "137 of 306",
+   "Unrelated": "30 of 306"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.454,
+   "Same module only": 0.448,
+   "Unrelated": 0.098
+  }
+ },
+ "reuse_recent_vs_older": [
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q5a",
+   "best_older_match": "BCSE302L-CAT1-E1-2025-2026:Q5ai",
+   "text_sim": 0.66
+  },
+  {
+   "q": "BCSE302L-CAT1-D1-2026-2027:Q2",
+   "best_older_match": "BCSE302L-CAT-1-A1-2024-2025:Q1",
+   "text_sim": 0.51
+  },
+  {
+   "q": "BCSE302L-CAT1-D1-2026-2027:Q5a",
+   "best_older_match": "BCSE302L-CAT1-E1-2025-2026:Q5ai",
+   "text_sim": 0.48
+  },
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q1b",
+   "best_older_match": "BCSE302L-FAT-A2-2022-2023:Q1b",
+   "text_sim": 0.43
+  },
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q5b",
+   "best_older_match": "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q1a(i)",
+   "text_sim": 0.43
+  },
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q1a",
+   "best_older_match": "BCSE302L-FAT-B2-2022-2023:Q6iia",
+   "text_sim": 0.38
+  },
+  {
+   "q": "BCSE302L-CAT1-D1-2026-2027:Q1b",
+   "best_older_match": "BCSE302L-FAT-B1-2025-2026:Q7ii",
+   "text_sim": 0.33
+  },
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q4b",
+   "best_older_match": "BCSE302L-FAT-B2-2022-2023:Q6i",
+   "text_sim": 0.31
+  },
+  {
+   "q": "BCSE302L-CAT1-D1-2026-2027:Q3",
+   "best_older_match": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1b",
+   "text_sim": 0.3
+  },
+  {
+   "q": "BCSE302L-CAT1-D1-2026-2027:Q1a",
+   "best_older_match": "CSI1001-FAT-B1-2025-2026:Q10",
+   "text_sim": 0.29
+  },
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q2",
+   "best_older_match": "BCSE302L-FAT-A1-2024-2025:Q4",
+   "text_sim": 0.29
+  },
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q4a",
+   "best_older_match": "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q4a",
+   "text_sim": 0.26
+  },
+  {
+   "q": "BCSE302L-CAT1-D1-2026-2027:Q5b",
+   "best_older_match": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1b",
+   "text_sim": 0.24
+  },
+  {
+   "q": "BCSE302L-CAT1-D1-2026-2027:Q4",
+   "best_older_match": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1b",
+   "text_sim": 0.21
+  },
+  {
+   "q": "BCSE302L-CAT1-D2-2026-2027:Q3",
+   "best_older_match": "BCSE302L-FAT-A1-2024-2025:Q4",
+   "text_sim": 0.2
+  }
+ ],
+ "answer_key_rows": [
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q1a",
+   "arch": "DBMS vs file processing",
+   "marks": "6",
+   "step_marks": "not stated",
+   "required_keywords": "Controlling Redundancy; Restricting Unauthorized Access; Persistent Storage for Program Objects; Storage Structures and Search Techniques; Backup and Recovery; Multiple User Interfaces; Complex Relationships; Integrity Constraints; Rules and Triggers; very small data; high-speed embedded; static data",
+   "penalties": "not stated",
+   "key_final_answer": "DBMS advantages: redundancy control, access restriction, backup, integrity; avoid for tiny, embedded high-speed or static data."
+  },
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+   "arch": "DBMS architecture / data independence",
+   "marks": "4",
+   "step_marks": "not stated",
+   "required_keywords": "logical: change conceptual schema without changing external schemas or programs; physical: change internal schema without changing conceptual schema",
+   "penalties": "not stated",
+   "key_final_answer": "Logical independence: change conceptual schema without changing external schemas/programs; physical: change internal schema without changing conceptual schema."
+  },
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q2",
+   "arch": "ER diagram design",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "COURSE (PK Course_ID); COURSE_OFFERING (PK Offering_ID, FK Course_ID); STUDENT (PK Student_ID); INSTRUCTOR (PK Instructor_ID); PROCTOR subtype of INSTRUCTOR; enrolment with grade; prerequisite relationship on COURSE",
+   "penalties": "not stated",
+   "key_final_answer": "ER diagram with Course, Course_Offering, Student, Instructor, Proctor subtype, enrolment with grade, prerequisite and teaches/designs relationships; assumptions documented."
+  },
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q3",
+   "arch": "ER to relational mapping",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "PKs: P_ID, D_ID, N_ID, R_ID, Room_ID, Bill_ID, Report_ID, Record_No; FKs: P_ID in BILL and TEST_REPORT, D_ID in CONSULTS, Room_ID in ASSIGNED; CONSULTS M:N; ASSIGNED 1:M; GOVERNS M:N",
+   "penalties": "not stated",
+   "key_final_answer": "Relations PATIENT, DOCTOR, NURSE, RECEPTIONIST, ROOM, BILL, TEST_REPORT, RECORD plus CONSULTS, ASSIGNED, GOVERNS, with PKs and FKs listed."
+  },
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q4a",
+   "arch": "EER / specialization",
+   "marks": "6",
+   "step_marks": "not stated",
+   "required_keywords": "superclass/supertype; subclass/subtype; class/subclass relationship; EMPLOYEE with SECRETARY/TECHNICIAN; subclass member is the same real-world entity in a specific role",
+   "penalties": "not stated",
+   "key_final_answer": "EMPLOYEE supertype with subtypes such as SECRETARY and TECHNICIAN; subclass member is same real-world entity in a distinct role."
+  },
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q4b",
+   "arch": "Lossless / dependency-preserving decomposition",
+   "marks": "4",
+   "step_marks": "not stated",
+   "required_keywords": "nulls waste space; unclear meaning of attributes; join problems; aggregate COUNT/SUM ambiguity; spurious tuples; join on PK/FK equality",
+   "penalties": "not stated",
+   "key_final_answer": "Avoid nulls (space, meaning, joins, aggregates); design schemas joinable on PK/FK equality to avoid spurious tuples."
+  },
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+   "arch": "Normalization (1NF-BCNF)",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "ABD+ = all attributes; candidate key ABD; 3NF violated by AB->C, AD->GH, BD->EF, A->I, H->J; R1(AB,C) R2(AD,GH) R3(BD,EF) R4(A,I) R5(H,J) R6(ABD)",
+   "penalties": "not stated",
+   "key_final_answer": "Not in 3NF; candidate key ABD; decomposed into R1(AB,C), R2(AD,GH), R3(BD,EF), R4(A,I), R5(H,J), R6(ABD)."
+  },
+  {
+   "q": "BCSE302L-CAT1-B1-2025-2026-AK:Q5b",
+   "arch": "Normalization (1NF-BCNF)",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "insertion anomaly; deletion anomaly; update anomaly; examples",
+   "penalties": "not stated",
+   "key_final_answer": "Insertion, deletion and update anomalies, each explained with an example."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q1a",
+   "arch": "DBMS architecture / data independence",
+   "marks": "5",
+   "step_marks": "Situation a: 5 marks (three-tier justification and diagram)",
+   "required_keywords": "three-tier; client; application server; database system; business logic separated from database",
+   "penalties": "not stated",
+   "key_final_answer": "Situation a: three-tier architecture, with the application server holding business logic between client and database."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q1b",
+   "arch": "DBMS architecture / data independence",
+   "marks": "5",
+   "step_marks": "Situation b: 5 marks (two-tier justification and diagram)",
+   "required_keywords": "two-tier; client application; database system on server; network; no frequent updates",
+   "penalties": "not stated",
+   "key_final_answer": "Situation b: two-tier architecture, with the application on each desktop connecting directly to the database server."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+   "arch": "DBMS vs file processing",
+   "marks": "10",
+   "step_marks": "self-describing nature 2.5; insulation between programs and data with data abstraction 2.5; multiple views of data 2.5; sharing and multiuser transaction processing 2.5",
+   "required_keywords": "self-describing (catalog); data independence / abstraction; multiple views; sharing; multiuser transaction processing",
+   "penalties": "not stated",
+   "key_final_answer": "Four characteristics (self-describing, insulation/abstraction, multiple views, sharing/multiuser) at 2.5 marks each."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q3a",
+   "arch": "ER diagram design",
+   "marks": "5",
+   "step_marks": "5 marks ER diagram",
+   "required_keywords": "Exam (exam_id, time); Course (c-number, name, department); Section weak entity (partial key s-number, enrollment) identifying Course; Room (r-number, capacity, building, multivalued invigilator); cardinalities as stated",
+   "penalties": "not stated",
+   "key_final_answer": "ER diagram: Exam, Course, weak entity Section (partial key s-number), Room with multivalued invigilator; relationships as stated."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q3b",
+   "arch": "Aggregation in ER/EER",
+   "marks": "5",
+   "step_marks": "EER diagram + justification 5 marks",
+   "required_keywords": "Patient; Doctor; Medical machine; Diagnosis relationship aggregated as entity; Filling relationship; Patient History",
+   "penalties": "not stated",
+   "key_final_answer": "Aggregate the Diagnosis relationship (Patient, Doctor, Medical machine) as one entity, linked to Patient History via Filling."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q4a",
+   "arch": "ER to relational mapping",
+   "marks": "8",
+   "step_marks": "Part A 8 marks: strong, weak and relationship sets",
+   "required_keywords": "student(sid,name,program); instructor(iid,name,dept,title); course(courseno,title,credits,syllabus); course_offerings(courseno,time,secno,room,year,semester); is_offered (many-to-one); enrols(sid,courseno,time,secno,room,grade); teaches(iid,courseno,time,secno,room); is_offered redundant",
+   "penalties": "not stated",
+   "key_final_answer": "Strong: student, instructor, course; weak: course_offerings; enrols and teaches (M:N); is_offered is redundant."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q4b",
+   "arch": "ER to relational mapping",
+   "marks": "2",
+   "step_marks": "Part B 2 marks: multivalued mobile; composite address",
+   "required_keywords": "Student_mobile(sid, mobile_number); instructor(iid, name, dept, title, door_no, street, city, pincode)",
+   "penalties": "not stated",
+   "key_final_answer": "Student_mobile(sid, mobile_number); instructor(iid, name, dept, title, door_no, street, city, pincode)."
+  },
+  {
+   "q": "BCSE302L-CAT1-B2-2025-2026-AK:Q5",
+   "arch": "Normalization (1NF-BCNF)",
+   "marks": "10",
+   "step_marks": "1NF 3; 2NF 3; 3NF 4",
+   "required_keywords": "1NF: sph multivalued, Library_ph(srn,bid,sph); 2NF: partial dependencies srn->sname,hbn,hbname and bid->bname; Library1(srn,bid,bd,rd), Library2(srn,sname,hbn,hbname), Library3(bid,bname); 3NF: srn->hbn->hbname transitive; Library21(srn,sname,hbn), Library22(hbn,hbname)",
+   "penalties": "not stated",
+   "key_final_answer": "Final 3NF: Library1(srn,bid,bd,rd), Library21(srn,sname,hbn), Library22(hbn,hbname), Library3(bid,bname), Library_ph(srn,bid,sph)."
+  },
+  {
+   "q": "BCSE302L-CAT2-B1-2025-2026-AK:Q1",
+   "arch": "Normalization (1NF-BCNF)",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "candidate keys AD and BCD; BC->A violates BCNF; R1(ABC); R2(BCDE) split into R21(BDE) and R22(EC); BCD->E not preserved",
+   "penalties": "not stated",
+   "key_final_answer": "Not in BCNF; decomposed into R1(ABC), R21(BDE), R22(EC); BCD->E is not preserved."
+  },
+  {
+   "q": "BCSE302L-CAT2-B1-2025-2026-AK:Q2",
+   "arch": "File organization",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "records per block = 1000/100 = 10; total blocks = 10,000; splits = 2000/10 = 200; index entry 14 bytes, 71 entries per block, 141 index blocks; B+ tree suggested; fan-out 71; 1408 leaves; height 3; average insertion cost 3",
+   "penalties": "not stated",
+   "key_final_answer": "10 records per block, 10,000 blocks; 200 splits; 141 index blocks; B+ tree (height 3, insertion cost 3) suggested."
+  },
+  {
+   "q": "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+   "arch": "Relational algebra",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "(i) pi_AName(sigma_StName='Smith'(has_written join (borrows join Students))); (ii) pi_Title(Books join pi_BId(sigma_Keyword='database'(describes)) intersect pi_BId(sigma_Keyword='programming'(describes))); (iii) pi_StName(sigma_Age>30 and Major<>'Computer Science'(Students)); (iv) pi_Title(sigma_Publisher='McGraw-Hill' and Year<1990(Books))",
+   "penalties": "not stated",
+   "key_final_answer": "RA expressions for (i) to (iv) as given in the key."
+  },
+  {
+   "q": "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+   "arch": "Query processing / optimization",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "initial tree: pi ENAME over sigma over EMP x PROJ x ASG; push selections down to EMP, PROJ, ASG; join on PNO then ENO; project early; key query text differs from paper (Mohan Prakash, AI Based Resume Screener, DUR=12 or 36)",
+   "penalties": "not stated",
+   "key_final_answer": "Selections pushed to PROJ, ASG and EMP; joins PNO=PNO then ENO=ENO; project ENAME early (key applies it to the key's query variant)."
+  },
+  {
+   "q": "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+   "arch": "Schedules / conflict serializability",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "A = 230; B = 415.2; conflicts W-R (t4,t5), W-R (t10,t12), W-W (t10,t14); isolation at risk; dirty read; lost update discussed",
+   "penalties": "not stated",
+   "key_final_answer": "A = 230 and B = 415.2; conflicts exist; isolation at risk; dirty read (lost update noted)."
+  },
+  {
+   "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q1a",
+   "arch": "Normalization (1NF-BCNF)",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "key CDE; R2a(B,D), R2b(A,C,E), R2c(C,D,E); R2b not in BCNF; R2b1(A,E), R2b2(A,C)",
+   "penalties": "not stated",
+   "key_final_answer": "Key CDE; decomposed into R2a(B,D), R2b1(A,E), R2b2(A,C), R2c(C,D,E)."
+  },
+  {
+   "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q1b",
+   "arch": "Functional dependencies / closure",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "A+, D+, (AB)+ computed for F1 and F2; F1 covers F2; F2 covers F1; equivalent",
+   "penalties": "not stated",
+   "key_final_answer": "F1 and F2 are equivalent (each covers the other)."
+  },
+  {
+   "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+   "arch": "Relational algebra",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "a) pi make,model(sigma Year>=2020(Vehicles)); b) G AVG(daily_rate)(Vehicles); c) pi name,email(Renters join pi renter_id(Rentals join sigma make='Toyota'(Vehicles))); d) pi name(Renters join (Rentals join pickup_branchID=branch_id(branch_id,city='Chennai'(Branches))) with toyota vehicles)",
+   "penalties": "not stated",
+   "key_final_answer": "Four RA expressions (a) to (d) as given in the key."
+  },
+  {
+   "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q3a",
+   "arch": "Indexing / B+ tree",
+   "marks": "2",
+   "step_marks": "not stated",
+   "required_keywords": "tree after inserting 27 and 1: root 0015; internal 0003 0006 0010 and 0020 0027; leaves 0001 through 0030 linked in order",
+   "penalties": "not stated",
+   "key_final_answer": "After inserting 27 and 1: root 0015; internal 0003 0006 0010 and 0020 0027; leaf chain 0001 to 0030."
+  },
+  {
+   "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q3b",
+   "arch": "Indexing / B+ tree",
+   "marks": "3",
+   "step_marks": "not stated",
+   "required_keywords": "deletion of 20, 8, 15; root 0017; internal 0003 0006 0010 and 0025 0027; leaves 0001 to 0030 with 0017, 0025, 0027, 0030",
+   "penalties": "not stated",
+   "key_final_answer": "After deleting 20, 8, 15: root 0017; internal 0003 0006 0010 and 0025 0027; leaf chain 0001 to 0030."
+  },
+  {
+   "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q4",
+   "arch": "Query processing / optimization",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "selection sigma name='Tom Hanks' pushed to Actors; sigma year<2010 pushed to Movies; join Casts with Actors on actor_id and Movies on movie_id; project title and role early",
+   "penalties": "not stated",
+   "key_final_answer": "Optimized tree: project title and role over joins of sigma(name='Tom Hanks') Actors, sigma(year<2010) Movies and Casts."
+  },
+  {
+   "q": "BCSE302L-CAT2-B2-2025-2026-AK:Q5",
+   "arch": "Schedules / conflict serializability",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "S1 conflicts T2->T3, T2->T1, T3->T1, T3->T4, T1->T4, T2->T4; S1 precedence graph acyclic; equivalent serial T2 T3 T1 T4; S2 conflicts give cycle (T1->T4->T3->T1 and T1->T2->T4->T2); S2 not conflict-serializable",
+   "penalties": "not stated",
+   "key_final_answer": "S1 is equivalent to serial T2,T3,T1,T4 (acyclic graph); S2 is not, as its precedence graph is cyclic."
+  },
+  {
+   "q": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1a",
+   "arch": "Normalization (1NF-BCNF)",
+   "marks": "6",
+   "step_marks": "not stated",
+   "required_keywords": "R1 not in 3NF due to non-key dependency building_no→building_name; R1a(elevator_no, building_no, capacity) from elevator_no→building_no,capacity; R1b(building_no, building_name); R2 already in BCNF",
+   "penalties": "not stated",
+   "key_final_answer": "R1 decomposed into R1a(elevator_no, building_no, capacity) and R1b(building_no, building_name); R2 is in BCNF"
+  },
+  {
+   "q": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1b",
+   "arch": "4NF / MVD",
+   "marks": "4",
+   "step_marks": "not stated",
+   "required_keywords": "Name ->> Areacode, Phone; Name ->> likes, manufacturer",
+   "penalties": "not stated",
+   "key_final_answer": "R1(Name, Areacode, Phone) with Name->>Areacode,Phone; R2(Name, likes, manufacturer) with Name->>likes,manufacturer"
+  },
+  {
+   "q": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q2",
+   "arch": "Indexing / B+ tree",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "bfr=256/20=12; bfr_i=256/11=23 (5+6); bfr_i=256/9=28 (3+6); b=50000/12=4167; b_i=4167/23=181; b_i=500/28=18; log2 181=7 accesses; log2 18=4 accesses; B+ tree order p=29; leaf order 32",
+   "penalties": "not stated",
+   "key_final_answer": "Data file 4167 blocks; primary index 181 blocks (7 accesses); clustering index 18 blocks (4 accesses); B+ tree p=29, leaf order 32"
+  },
+  {
+   "q": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q3",
+   "arch": "Relational algebra",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "pi, sigma, rho, cross product; join of StarsIn and renamed MovieStar; SQL SELECT ... WHERE for iv and v",
+   "penalties": "not stated",
+   "key_final_answer": "i-ii: RA on MovieStar/StarsIn; iii: π fname,lname(σ dno=4∧salary>50000(employee)); iv-v: SQL SELECT with WHERE"
+  },
+  {
+   "q": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q4",
+   "arch": "Query processing / optimization",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "push selections down to Department; projections on P.Dnum and D.Dnumber; join P.Dnum=D.Dnumber; leaves Project and Department",
+   "penalties": "not stated",
+   "key_final_answer": "Tree: π P.Pnumber,P.Dnum,D.Address over join P.Dnum=D.Dnumber of π P.Dnum(Project) and π D.Dnumber(σ location='SJT'(σ name='CSE'(Department)))"
+  },
+  {
+   "q": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5a",
+   "arch": "Schedules / conflict serializability",
+   "marks": "6",
+   "step_marks": "precedence graph and explanation 6",
+   "required_keywords": "precedence graph with labelled conflict edges A, B, C; cycles T1-T3-T4 and T1-T2-T3-T4",
+   "penalties": "not stated",
+   "key_final_answer": "Precedence graph with labelled edges A, B, C; contains cycles T1-T3-T4 and T1-T2-T3-T4"
+  },
+  {
+   "q": "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5b",
+   "arch": "Schedules / conflict serializability",
+   "marks": "4",
+   "step_marks": "conflict serializable or not 4; equivalent serial schedules not stated",
+   "required_keywords": "cycles present so not conflict equivalent to any serial order; 4! = 24 candidate serial schedules, none equivalent",
+   "penalties": "not stated",
+   "key_final_answer": "Not conflict serializable (cycles present), so no equivalent serial schedule exists"
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1a",
+   "arch": "Candidate keys",
+   "marks": "2",
+   "step_marks": "2 candidate key",
+   "required_keywords": "attribute closure; AB+ = ABCD; BC+ = ABCD; candidate keys AB and BC",
+   "penalties": "not stated",
+   "key_final_answer": "Candidate keys: AB and BC (AB+ = BC+ = ABCD)."
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1b",
+   "arch": "Normalization (1NF-BCNF)",
+   "marks": "6",
+   "step_marks": "6 BCNF check and decomposition",
+   "required_keywords": "B -> D violates BCNF since B is not a key; (BD)(ABC); C -> A violates in ABC; (BD)(CA)(BC)",
+   "penalties": "not stated",
+   "key_final_answer": "Not in BCNF (B -> D violates); BCNF decomposition (BD)(CA)(BC)."
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1c",
+   "arch": "Lossless / dependency-preserving decomposition",
+   "marks": "2",
+   "step_marks": "2 dependency preservation",
+   "required_keywords": "AB -> C not preserved; check requires join; 3NF decomposition (BD)(ABC) preferred",
+   "penalties": "not stated",
+   "key_final_answer": "Not preserving: AB -> C is lost (needs a join to check); 3NF (BD)(ABC) would preserve it."
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2a",
+   "arch": "Indexing / B+ tree",
+   "marks": "4",
+   "step_marks": "4 B+ tree construction",
+   "required_keywords": "m=4 pointers; ascending-order insertion; node splits; separator keys",
+   "penalties": "not stated",
+   "key_final_answer": ""
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2b",
+   "arch": "Indexing / B+ tree",
+   "marks": "3",
+   "step_marks": "3 insertion of 9 and 10",
+   "required_keywords": "insert 9; insert 10; leaf split; key copied up",
+   "penalties": "not stated",
+   "key_final_answer": ""
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2c",
+   "arch": "Indexing / B+ tree",
+   "marks": "3",
+   "step_marks": "3 deletion of 19 and 23",
+   "required_keywords": "delete 19; delete 23; underflow handling; separator update",
+   "penalties": "not stated",
+   "key_final_answer": ""
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q3",
+   "arch": "Relational algebra",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "pi ename; sigma aname=Boeing; Aircraft join Certified join Employees; G sum(salary); rename R1; sigma range>3000; set difference; sigma from=Chennai and to=Delhi; pi aid; range>distance",
+   "penalties": "not stated",
+   "key_final_answer": "Five RA expressions; key uses range>3000 in (iv), typed copy of the question says 1500 miles."
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q4",
+   "arch": "Query processing / optimization",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "initial tree pi(sigma(Course x (Student x Grades))); push selections down; join conditions; project StudId, Fname",
+   "penalties": "not stated",
+   "key_final_answer": "Optimized tree: selections pushed to Student (Major=AI), Grades (Grade=S) and Course (Dept=DataScience); joins follow; project StudId, Fname."
+  },
+  {
+   "q": "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q5",
+   "arch": "Schedules / conflict serializability",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "precedence graph; conflicting operations on A, B, C; cycle detection; S1 acyclic; S2 has cycle between T1 and T2",
+   "penalties": "not stated",
+   "key_final_answer": "S1 is conflict serializable (acyclic precedence graph); S2 is not (cycle between T1 and T2)."
+  }
+ ],
+ "row_archetypes": {
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q1a": "DBMS vs file processing",
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q2": "ER diagram design",
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q3": "ER to relational mapping",
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q4a": "EER / specialization",
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q4b": "Lossless / dependency-preserving decomposition",
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q5a": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT1-B1-2025-2026-AK:Q5b": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q2": "DBMS vs file processing",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q3a": "ER diagram design",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q3b": "Aggregation in ER/EER",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q4a": "ER to relational mapping",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q4b": "ER to relational mapping",
+  "BCSE302L-CAT1-B2-2025-2026-AK:Q5": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT1-E1-2025-2026:Q1a": "Data models (hierarchical/network/relational)",
+  "BCSE302L-CAT1-E1-2025-2026:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-E1-2025-2026:Q1c": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-E1-2025-2026:Q2": "ER diagram design",
+  "BCSE302L-CAT1-E1-2025-2026:Q3a": "SQL queries",
+  "BCSE302L-CAT1-E1-2025-2026:Q3b": "SQL queries",
+  "BCSE302L-CAT1-E1-2025-2026:Q3c": "SQL queries",
+  "BCSE302L-CAT1-E1-2025-2026:Q3d": "SQL queries",
+  "BCSE302L-CAT1-E1-2025-2026:Q3e": "SQL queries",
+  "BCSE302L-CAT1-E1-2025-2026:Q4": "ER to relational mapping",
+  "BCSE302L-CAT1-E1-2025-2026:Q5ai": "Candidate keys",
+  "BCSE302L-CAT1-E1-2025-2026:Q5aii": "Minimal cover",
+  "BCSE302L-CAT1-E1-2025-2026:Q5aiii": "Functional dependencies / closure",
+  "BCSE302L-CAT2-B1-2025-2026-AK:Q1": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT2-B1-2025-2026-AK:Q2": "File organization",
+  "BCSE302L-CAT2-B1-2025-2026-AK:Q3": "Relational algebra",
+  "BCSE302L-CAT2-B1-2025-2026-AK:Q4": "Query processing / optimization",
+  "BCSE302L-CAT2-B1-2025-2026-AK:Q5": "Schedules / conflict serializability",
+  "BCSE302L-CAT2-B2-2025-2026-AK:Q1a": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT2-B2-2025-2026-AK:Q1b": "Functional dependencies / closure",
+  "BCSE302L-CAT2-B2-2025-2026-AK:Q2": "Relational algebra",
+  "BCSE302L-CAT2-B2-2025-2026-AK:Q3a": "Indexing / B+ tree",
+  "BCSE302L-CAT2-B2-2025-2026-AK:Q3b": "Indexing / B+ tree",
+  "BCSE302L-CAT2-B2-2025-2026-AK:Q4": "Query processing / optimization",
+  "BCSE302L-CAT2-B2-2025-2026-AK:Q5": "Schedules / conflict serializability",
+  "BCSE302L-CAT2-E1-2025-2026:Q1": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT2-E1-2025-2026:Q2i": "Hashing",
+  "BCSE302L-CAT2-E1-2025-2026:Q2ii": "Hashing",
+  "BCSE302L-CAT2-E1-2025-2026:Q2iii": "Hashing",
+  "BCSE302L-CAT2-E1-2025-2026:Q3i": "SQL queries",
+  "BCSE302L-CAT2-E1-2025-2026:Q3ii": "SQL queries",
+  "BCSE302L-CAT2-E1-2025-2026:Q3iii": "SQL queries",
+  "BCSE302L-CAT2-E1-2025-2026:Q3iv": "SQL queries",
+  "BCSE302L-CAT2-E1-2025-2026:Q3v": "SQL queries",
+  "BCSE302L-CAT2-E1-2025-2026:Q4i": "SQL queries",
+  "BCSE302L-CAT2-E1-2025-2026:Q4ii": "Relational algebra",
+  "BCSE302L-CAT2-E1-2025-2026:Q4iii": "Query processing / optimization",
+  "BCSE302L-CAT2-E1-2025-2026:Q5ai": "Schedules / conflict serializability",
+  "BCSE302L-CAT2-E1-2025-2026:Q5aii": "Schedules / conflict serializability",
+  "BCSE302L-CAT2-E1-2025-2026:Q5b": "Recoverable / cascadeless schedules",
+  "BCSE302L-FAT-B2-2025-2026:Q1": "DBMS architecture / data independence",
+  "BCSE302L-FAT-B2-2025-2026:Q2": "ER diagram design",
+  "BCSE302L-FAT-B2-2025-2026:Q3": "ER to relational mapping",
+  "BCSE302L-FAT-B2-2025-2026:Q4": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-B2-2025-2026:Q5": "Indexing / B+ tree",
+  "BCSE302L-FAT-B2-2025-2026:Q6": "Relational algebra",
+  "BCSE302L-FAT-B2-2025-2026:Q7": "Schedules / conflict serializability",
+  "BCSE302L-FAT-B2-2025-2026:Q8a": "Transactions ACID / states",
+  "BCSE302L-FAT-B2-2025-2026:Q8b": "ARIES / shadow paging",
+  "BCSE302L-FAT-B2-2025-2026:Q9a": "2PL / locking",
+  "BCSE302L-FAT-B2-2025-2026:Q9b": "Multi-granularity locking (MGL)",
+  "BCSE302L-FAT-B2-2025-2026:Q10a": "NoSQL types / CAP",
+  "BCSE302L-FAT-B2-2025-2026:Q10b": "NoSQL types / CAP",
+  "BCSE302L-FAT-E1-2025-2026:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-FAT-E1-2025-2026:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-FAT-E1-2025-2026:Q2": "EER / specialization",
+  "BCSE302L-FAT-E1-2025-2026:Q3a": "Minimal cover",
+  "BCSE302L-FAT-E1-2025-2026:Q3b": "Functional dependencies / closure",
+  "BCSE302L-FAT-E1-2025-2026:Q4i": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-E1-2025-2026:Q4ii": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-E1-2025-2026:Q5i": "Indexing / B+ tree",
+  "BCSE302L-FAT-E1-2025-2026:Q5ii": "Indexing / B+ tree",
+  "BCSE302L-FAT-E1-2025-2026:Q6a": "Hashing",
+  "BCSE302L-FAT-E1-2025-2026:Q6bi": "Hashing",
+  "BCSE302L-FAT-E1-2025-2026:Q6bii": "Hashing",
+  "BCSE302L-FAT-E1-2025-2026:Q7a": "Schedules / conflict serializability",
+  "BCSE302L-FAT-E1-2025-2026:Q7bi": "Log-based recovery / checkpoints",
+  "BCSE302L-FAT-E1-2025-2026:Q7bii": "Log-based recovery / checkpoints",
+  "BCSE302L-FAT-E1-2025-2026:Q8a": "Deadlock (wait-for graph)",
+  "BCSE302L-FAT-E1-2025-2026:Q8b": "2PL / locking",
+  "BCSE302L-FAT-E1-2025-2026:Q9a": "Timestamp ordering",
+  "BCSE302L-FAT-E1-2025-2026:Q9b": "Timestamp ordering",
+  "BCSE302L-FAT-E1-2025-2026:Q10a": "NoSQL types / CAP",
+  "BCSE302L-FAT-E1-2025-2026:Q10b": "NoSQL types / CAP",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ1": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ2": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ3": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ4": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ5": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ6": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ7": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ8": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ9": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ10": "MongoDB queries / aggregation",
+  "CSE302L Case Study – FoodRush Online Food Delivery (MongoDB):QQ11": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ1": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ2": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ3": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ4": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ5": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ6": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ7": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ8": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ9": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ10": "MongoDB queries / aggregation",
+  "FoodRush_Case_Study:QQ11": "MongoDB queries / aggregation",
+  "BCSE302L-CAT-1-A1-2023-2024:Q1a": "DBMS vs file processing",
+  "BCSE302L-CAT-1-A1-2023-2024:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A1-2023-2024:Q2": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A1-2023-2024:Q3": "ER to relational mapping",
+  "BCSE302L-CAT-1-A1-2023-2024:Q4": "Keys / constraints",
+  "BCSE302L-CAT-1-A1-2023-2024:Q5": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT-1-A1-2024-2025:Q1": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A1-2024-2025:Q2a": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A1-2024-2025:Q2b": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A1-2024-2025:Q3": "ER to relational mapping",
+  "BCSE302L-CAT-1-A1-2024-2025:Q4a": "Keys / constraints",
+  "BCSE302L-CAT-1-A1-2024-2025:Q4b": "EER / specialization",
+  "BCSE302L-CAT-1-A1-2024-2025:Q5": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT-1-A2-2024-2025:Q1a": "DBMS vs file processing",
+  "BCSE302L-CAT-1-A2-2024-2025:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A2-2024-2025:Q2a": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A2-2024-2025:Q2b": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-A2-2024-2025:Q3": "ER diagram design",
+  "BCSE302L-CAT-1-A2-2024-2025:Q4": "ER to relational mapping",
+  "BCSE302L-CAT-1-A2-2024-2025:Q5a": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT-1-A2-2024-2025:Q5b": "Candidate keys",
+  "BCSE302L-CAT-1-F2-2023-2024:Q1i": "ER to relational mapping",
+  "BCSE302L-CAT-1-F2-2023-2024:Q1ii": "Keys / constraints",
+  "BCSE302L-CAT-1-F2-2023-2024:Q2a": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-F2-2023-2024:Q2b": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-F2-2023-2024:Q3": "EER / specialization",
+  "BCSE302L-CAT-1-F2-2023-2024:Q4i": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-F2-2023-2024:Q4ii": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-F2-2023-2024:Q5i": "SQL queries",
+  "BCSE302L-CAT-1-F2-2023-2024:Q5ii": "SQL queries",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q1a(i)": "Candidate keys",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q1a(ii)": "Minimal cover",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q1b": "Functional dependencies / closure",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q2a": "4NF / MVD",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q2b": "4NF / MVD",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3a": "Relational algebra",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3b": "Relational algebra",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3c": "Relational algebra",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3d": "Relational algebra",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q3e": "Relational algebra",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4a": "File organization",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4b": "File organization",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(i)": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(ii)": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(iii)": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4c(iv)": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4d(i)": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4d(ii)": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4d(iii)": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q5": "Transactions ACID / states",
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1a": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1b": "4NF / MVD",
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q2": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q3": "Relational algebra",
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q4": "Query processing / optimization",
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5a": "Schedules / conflict serializability",
+  "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5b": "Schedules / conflict serializability",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1a": "Candidate keys",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1b": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1c": "Lossless / dependency-preserving decomposition",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2a": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2b": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2c": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q3": "Relational algebra",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q4": "Query processing / optimization",
+  "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q5": "Schedules / conflict serializability",
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q1a": "Relational algebra",
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q1b": "Relational algebra",
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q1c": "Relational algebra",
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q2": "Schedules / conflict serializability",
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q3": "Hashing",
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q4": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-B2-Winter-2023-2024-Question Paper:Q5": "Query processing / optimization",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1a": "SQL queries",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1b": "SQL queries",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1c": "SQL queries",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1d": "SQL queries",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1e": "SQL queries",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q1f": "SQL queries",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q2a": "Hashing",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q2b": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q2c": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q3": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q4a": "Candidate keys",
+  "BCSE302L-CAT-2-F2-Fall Inter-2023-2024-Question Paper:Q4b": "Functional dependencies / closure",
+  "BCSE302L-FAT-A1-2024-2025:Q1": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A1-2024-2025:Q2": "ER diagram design",
+  "BCSE302L-FAT-A1-2024-2025:Q3": "EER / specialization",
+  "BCSE302L-FAT-A1-2024-2025:Q4": "Lossless / dependency-preserving decomposition",
+  "BCSE302L-FAT-A1-2024-2025:Q5": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-A1-2024-2025:Q6": "ARIES / shadow paging",
+  "BCSE302L-FAT-A1-2024-2025:Q7": "Concurrency anomalies",
+  "BCSE302L-FAT-A1-2024-2025:Q8": "NoSQL types / CAP",
+  "BCSE302L-FAT-A1-2024-2025:Q9a": "Indexing / B+ tree",
+  "BCSE302L-FAT-A1-2024-2025:Q9b": "Hashing",
+  "BCSE302L-FAT-A1-2024-2025:Q10a": "2PL / locking",
+  "BCSE302L-FAT-A1-2024-2025:Q10b": "Timestamp ordering",
+  "BCSE302L-FAT-A2-2022-2023:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A2-2022-2023:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A2-2022-2023:Q2a": "ER diagram design",
+  "BCSE302L-FAT-A2-2022-2023:Q2b": "ER diagram design",
+  "BCSE302L-FAT-A2-2022-2023:Q3a": "ER to relational mapping",
+  "BCSE302L-FAT-A2-2022-2023:Q3b": "ER to relational mapping",
+  "BCSE302L-FAT-A2-2022-2023:Q4": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-A2-2022-2023:Q5": "Indexing / B+ tree",
+  "BCSE302L-FAT-A2-2022-2023:Q6a": "Relational algebra",
+  "BCSE302L-FAT-A2-2022-2023:Q6b": "Query processing / optimization",
+  "BCSE302L-FAT-A2-2022-2023:Q7a": "Transactions ACID / states",
+  "BCSE302L-FAT-A2-2022-2023:Q7b": "Recoverable / cascadeless schedules",
+  "BCSE302L-FAT-A2-2022-2023:Q8a": "2PL / locking",
+  "BCSE302L-FAT-A2-2022-2023:Q8b": "Timestamp ordering",
+  "BCSE302L-FAT-A2-2022-2023:Q9": "Log-based recovery / checkpoints",
+  "BCSE302L-FAT-A2-2022-2023:Q10": "NoSQL types / CAP",
+  "BCSE302L-FAT-A2-2024-2025:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A2-2024-2025:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A2-2024-2025:Q2a": "EER / specialization",
+  "BCSE302L-FAT-A2-2024-2025:Q2b": "ER to relational mapping",
+  "BCSE302L-FAT-A2-2024-2025:Q3": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-A2-2024-2025:Q4a": "Functional dependencies / closure",
+  "BCSE302L-FAT-A2-2024-2025:Q4b": "Lossless / dependency-preserving decomposition",
+  "BCSE302L-FAT-A2-2024-2025:Q5a": "Indexing / B+ tree",
+  "BCSE302L-FAT-A2-2024-2025:Q5bi": "Hashing",
+  "BCSE302L-FAT-A2-2024-2025:Q5bii": "Relational algebra",
+  "BCSE302L-FAT-A2-2024-2025:Q6a": "Schedules / conflict serializability",
+  "BCSE302L-FAT-A2-2024-2025:Q6b": "Transactions ACID / states",
+  "BCSE302L-FAT-A2-2024-2025:Q7": "Recoverable / cascadeless schedules",
+  "BCSE302L-FAT-A2-2024-2025:Q8": "Deadlock (wait-die / wound-wait)",
+  "BCSE302L-FAT-A2-2024-2025:Q9a": "2PL / locking",
+  "BCSE302L-FAT-A2-2024-2025:Q9b": "2PL / locking",
+  "BCSE302L-FAT-A2-2024-2025:Q10": "NoSQL types / CAP",
+  "BCSE302L-FAT-A2-2024:Q1": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A2-2024:Q2": "ER diagram design",
+  "BCSE302L-FAT-A2-2024:Q3": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-A2-2024:Q4": "Indexing / B+ tree",
+  "BCSE302L-FAT-A2-2024:Q5": "Indexing / B+ tree",
+  "BCSE302L-FAT-A2-2024:Q6": "Hashing",
+  "BCSE302L-FAT-A2-2024:Q7": "Schedules / conflict serializability",
+  "BCSE302L-FAT-A2-2024:Q8": "Transactions ACID / states",
+  "BCSE302L-FAT-A2-2024:Q9": "Deadlock (wait-die / wound-wait)",
+  "BCSE302L-FAT-A2-2024:Q10": "2PL / locking",
+  "BCSE302L-FAT-F2-2023-2024:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-FAT-F2-2023-2024:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-FAT-F2-2023-2024:Q2a": "ER to relational mapping",
+  "BCSE302L-FAT-F2-2023-2024:Q2b": "Keys / constraints",
+  "BCSE302L-FAT-F2-2023-2024:Q3": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-F2-2023-2024:Q4a": "Log-based recovery / checkpoints",
+  "BCSE302L-FAT-F2-2023-2024:Q4b": "Log-based recovery / checkpoints",
+  "BCSE302L-FAT-F2-2023-2024:Q5a": "NoSQL types / CAP",
+  "BCSE302L-FAT-F2-2023-2024:Q5b": "NoSQL types / CAP",
+  "BCSE302L-FAT-F2-2023-2024:Q6a": "SQL queries",
+  "BCSE302L-FAT-F2-2023-2024:Q6b": "SQL queries",
+  "BCSE302L-FAT-F2-2023-2024:Q6c": "SQL queries",
+  "BCSE302L-FAT-F2-2023-2024:Q6d": "SQL queries",
+  "BCSE302L-FAT-F2-2023-2024:Q6e": "SQL queries",
+  "BCSE302L-FAT-F2-2023-2024:Q7a": "SQL queries",
+  "BCSE302L-FAT-F2-2023-2024:Q7b": "SQL queries",
+  "BCSE302L-FAT-F2-2023-2024:Q8a": "Relational algebra",
+  "BCSE302L-FAT-F2-2023-2024:Q8b": "Query processing / optimization",
+  "BCSE302L-FAT-F2-2023-2024:Q8c": "Hashing",
+  "BCSE302L-FAT-F2-2023-2024:Q9a": "Schedules / conflict serializability",
+  "BCSE302L-FAT-F2-2023-2024:Q9b": "2PL / locking",
+  "BCSE302L-Model FAT-A1-2024-2025:Q1": "DBMS architecture / data independence",
+  "BCSE302L-Model FAT-A1-2024-2025:Q2": "DBMS architecture / data independence",
+  "BCSE302L-Model FAT-A1-2024-2025:Q3": "ER to relational mapping",
+  "BCSE302L-Model FAT-A1-2024-2025:Q4": "Keys / constraints",
+  "BCSE302L-Model FAT-A1-2024-2025:Q5": "Normalization (1NF-BCNF)",
+  "BCSE302L-Model FAT-A1-2024-2025:Q6a": "4NF / MVD",
+  "BCSE302L-Model FAT-A1-2024-2025:Q6b": "4NF / MVD",
+  "BCSE302L-Model FAT-A1-2024-2025:Q7": "Relational algebra",
+  "BCSE302L-Model FAT-A1-2024-2025:Q8": "Query processing / optimization",
+  "BCSE302L-Model FAT-A1-2024-2025:Q9": "Schedules / conflict serializability",
+  "BCSE302L-Model FAT-A1-2024-2025:Q10": "ARIES / shadow paging",
+  "BCSE302L-Model FAT-A1-2024-2025:Q11": "Timestamp ordering",
+  "BCSE302L-Model FAT-A1-2024-2025:Q12": "NoSQL types / CAP",
+  "BACSE202-CAT1-A1-2026-2027:Q1a": "DBMS architecture / data independence",
+  "BACSE202-CAT1-A1-2026-2027:Q1b": "DBMS architecture / data independence",
+  "BACSE202-CAT1-A1-2026-2027:Q2": "Keys / constraints",
+  "BACSE202-CAT1-A1-2026-2027:Q3": "DBMS architecture / data independence",
+  "BACSE202-CAT1-A1-2026-2027:Q4": "ER diagram design",
+  "BACSE202-CAT1-A1-2026-2027:Q5": "Functional dependencies / closure",
+  "BACSE202-CAT1-A2-2026-2027:Q1": "DBMS architecture / data independence",
+  "BACSE202-CAT1-A2-2026-2027:Q2": "Codd's rules / relational model",
+  "BACSE202-CAT1-A2-2026-2027:Q3a": "Data models (types)",
+  "BACSE202-CAT1-A2-2026-2027:Q3b": "Keys / constraints",
+  "BACSE202-CAT1-A2-2026-2027:Q4a": "ER diagram design",
+  "BACSE202-CAT1-A2-2026-2027:Q4b": "Functional dependencies / closure",
+  "BACSE202-CAT1-A2-2026-2027:Q5": "ER diagram design",
+  "BACSE202-CAT2-A1-2026-2027-AK:Q1": "Normalization (1NF-BCNF)",
+  "BACSE202-CAT2-A1-2026-2027-AK:Q2": "Hashing",
+  "BACSE202-CAT2-A1-2026-2027-AK:Q3a": "File organization",
+  "BACSE202-CAT2-A1-2026-2027-AK:Q3b": "SQL queries",
+  "BACSE202-CAT2-A1-2026-2027-AK:Q4": "Indexing / B+ tree",
+  "BACSE202-CAT2-A1-2026-2027-AK:Q5": "Schedules / conflict serializability",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q1a": "Hashing",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q1b": "Hashing",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q2a": "LSM-tree",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q2b": "LSM-tree",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q3a": "Indexing / B+ tree",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q3b": "Indexing / B+ tree",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q4a": "SQL queries",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q4b": "SQL queries",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q4c": "SQL queries",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q4d": "SQL queries",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q5i": "Transactions ACID / states",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q5ii": "Log-based recovery / checkpoints",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q5iiia": "Schedules / conflict serializability",
+  "BACSE202-CAT2-F2-2026-2027-AK:Q5iiib": "Schedules / conflict serializability",
+  "BITE302L-CAT1-A1-2025-2026:Q1": "DBMS architecture / data independence",
+  "BITE302L-CAT1-A1-2025-2026:Q2a": "DBMS vs file system",
+  "BITE302L-CAT1-A1-2025-2026:Q2b": "Database users & roles",
+  "BITE302L-CAT1-A1-2025-2026:Q3": "ER diagram design",
+  "BITE302L-CAT1-A1-2025-2026:Q4": "Relational algebra",
+  "BITE302L-CAT1-A1-2025-2026:Q5": "Normalization (1NF-BCNF)",
+  "BITE302L-CAT1-A1-2025-2026:Q6": "Lossless / dependency-preserving decomposition",
+  "BITE302L-CAT1-A1-2025-2026:Q7": "SQL queries",
+  "BITE302L-CAT1-A1-2025-2026:Q8": "Query processing / optimization",
+  "BITE302L-CAT1-A1-2025-2026:Q9": "Indexing / B+ tree",
+  "BITE302L-CAT1-A1-2025-2026:Q10": "Schedules / conflict serializability",
+  "BITE302L-CAT1-A1-2025-2026:Q11": "ARIES / shadow paging",
+  "BITE302L-CAT1-A1-2025-2026:Q12": "Keys / constraints",
+  "BITE302L-FAT-A1-2025-2026:Q1a": "DBMS architecture / data independence",
+  "BITE302L-FAT-A1-2025-2026:Q1b": "Schema vs instance",
+  "BITE302L-FAT-A1-2025-2026:Q2": "ER diagram design",
+  "BITE302L-FAT-A1-2025-2026:Q3": "ER to relational mapping",
+  "BITE302L-FAT-A1-2025-2026:Q4a": "Relational algebra",
+  "BITE302L-FAT-A1-2025-2026:Q4b": "Relational algebra",
+  "BITE302L-FAT-A1-2025-2026:Q4c": "Relational algebra",
+  "BITE302L-FAT-A1-2025-2026:Q4d": "Relational algebra",
+  "BITE302L-FAT-A1-2025-2026:Q5a": "Normalization (1NF-BCNF)",
+  "BITE302L-FAT-A1-2025-2026:Q5b": "Normalization (1NF-BCNF)",
+  "BITE302L-FAT-A1-2025-2026:Q6a": "Lossless / dependency-preserving decomposition",
+  "BITE302L-FAT-A1-2025-2026:Q6b": "Lossless / dependency-preserving decomposition",
+  "BITE302L-FAT-A1-2025-2026:Q7a": "SQL queries",
+  "BITE302L-FAT-A1-2025-2026:Q7b": "SQL queries",
+  "BITE302L-FAT-A1-2025-2026:Q7c": "SQL queries",
+  "BITE302L-FAT-A1-2025-2026:Q8a": "2PL / locking",
+  "BITE302L-FAT-A1-2025-2026:Q8b": "ARIES / shadow paging",
+  "BITE302L-FAT-A1-2025-2026:Q9a": "Query processing / optimization",
+  "BITE302L-FAT-A1-2025-2026:Q9b": "Indexing / B+ tree",
+  "BITE302L-FAT-A1-2025-2026:Q10a": "Recoverable / cascadeless schedules",
+  "BITE302L-FAT-A1-2025-2026:Q10b": "Schedules / conflict serializability",
+  "CSI1001-CAT1-B1-2025-2026-AK:Q1a": "Data models",
+  "CSI1001-CAT1-B1-2025-2026-AK:Q1b": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B1-2025-2026-AK:Q2": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B1-2025-2026-AK:Q3a": "ER diagram design",
+  "CSI1001-CAT1-B1-2025-2026-AK:Q3b": "ER diagram design",
+  "CSI1001-CAT1-B1-2025-2026-AK:Q4": "SQL queries",
+  "CSI1001-CAT1-B1-2025-2026-AK:Q5": "Relational algebra",
+  "CSI1001-FAT-B1-2025-2026:Q1": "Data models",
+  "CSI1001-FAT-B1-2025-2026:Q2": "Relational algebra",
+  "CSI1001-FAT-B1-2025-2026:Q3": "ER diagram design",
+  "CSI1001-FAT-B1-2025-2026:Q4": "Anomalies / redundancy",
+  "CSI1001-FAT-B1-2025-2026:Q5": "Normalization (1NF-BCNF)",
+  "CSI1001-FAT-B1-2025-2026:Q6a": "Query processing / optimization",
+  "CSI1001-FAT-B1-2025-2026:Q6b": "Schedules / conflict serializability",
+  "CSI1001-FAT-B1-2025-2026:Q7": "File organization",
+  "CSI1001-FAT-B1-2025-2026:Q8a": "Indexing / B+ tree",
+  "CSI1001-FAT-B1-2025-2026:Q8b": "Hashing",
+  "CSI1001-FAT-B1-2025-2026:Q9": "2PL / locking",
+  "CSI1001-FAT-B1-2025-2026:Q10": "Log-based recovery / checkpoints",
+  "BCSE302L-CAT1-D1-2026-2027:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-D1-2026-2027:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-D1-2026-2027:Q2": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-D1-2026-2027:Q3": "Keys / constraints",
+  "BCSE302L-CAT1-D1-2026-2027:Q4": "EER / specialization",
+  "BCSE302L-CAT1-D1-2026-2027:Q5a": "Functional dependencies / closure",
+  "BCSE302L-CAT1-D1-2026-2027:Q5b": "Normalization (1NF-BCNF)",
+  "BCSE302L-CAT1-D2-2026-2027:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-D2-2026-2027:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-D2-2026-2027:Q2": "DBMS architecture / data independence",
+  "BCSE302L-CAT1-D2-2026-2027:Q3": "ER diagram design",
+  "BCSE302L-CAT1-D2-2026-2027:Q4a": "EER / specialization",
+  "BCSE302L-CAT1-D2-2026-2027:Q4b": "ER to relational mapping",
+  "BCSE302L-CAT1-D2-2026-2027:Q5a": "Candidate keys",
+  "BCSE302L-CAT1-D2-2026-2027:Q5b": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-B1-2025-2026:Q1": "DBMS architecture / data independence",
+  "BCSE302L-FAT-B1-2025-2026:Q2": "ER diagram design",
+  "BCSE302L-FAT-B1-2025-2026:Q3": "Functional dependencies / closure",
+  "BCSE302L-FAT-B1-2025-2026:Q4": "Relational algebra",
+  "BCSE302L-FAT-B1-2025-2026:Q5": "Schedules / conflict serializability",
+  "BCSE302L-FAT-B1-2025-2026:Q6i": "2PL / locking",
+  "BCSE302L-FAT-B1-2025-2026:Q6ii": "2PL / locking",
+  "BCSE302L-FAT-B1-2025-2026:Q7i": "NoSQL types / CAP",
+  "BCSE302L-FAT-B1-2025-2026:Q7ii": "NoSQL types / CAP",
+  "BCSE302L-FAT-B1-2025-2026:Q8i": "Indexing / B+ tree",
+  "BCSE302L-FAT-B1-2025-2026:Q8ii": "Indexing / B+ tree",
+  "BCSE302L-FAT-B1-2025-2026:Q8iii": "Indexing / B+ tree",
+  "BCSE302L-FAT-B1-2025-2026:Q9a": "Schedules / conflict serializability",
+  "BCSE302L-FAT-B1-2025-2026:Q9bi": "Log-based recovery / checkpoints",
+  "BCSE302L-FAT-B1-2025-2026:Q9bii": "Log-based recovery / checkpoints",
+  "BCSE302L-FAT-B1-2025-2026:Q10a": "NoSQL types / CAP",
+  "BCSE302L-FAT-B1-2025-2026:Q10bi": "Deadlock (wait-die / wound-wait)",
+  "BCSE302L-FAT-B1-2025-2026:Q10bii": "Deadlock (wait-die / wound-wait)",
+  "BCSE302L-CAT-1-B2-2025-2026:Q1": "DBMS architecture / data independence",
+  "BCSE302L-CAT-1-B2-2025-2026:Q2": "ER to relational mapping",
+  "BCSE302L-CAT-1-B2-2025-2026:Q3": "EER / specialization",
+  "BCSE302L-CAT-1-B2-2025-2026:Q4": "Keys / constraints",
+  "BCSE302L-CAT-1-B2-2025-2026:Q5": "Functional dependencies / closure",
+  "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1": "4NF / MVD",
+  "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q2": "Relational algebra",
+  "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q3": "Indexing / B+ tree",
+  "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q4": "Query processing / optimization",
+  "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q5": "Schedules / conflict serializability",
+  "BCSE302L-FAT-A1-2023-2024:Q1a": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A1-2023-2024:Q1b": "DBMS architecture / data independence",
+  "BCSE302L-FAT-A1-2023-2024:Q2": "ER diagram design",
+  "BCSE302L-FAT-A1-2023-2024:Q3a": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-A1-2023-2024:Q3b": "Functional dependencies / closure",
+  "BCSE302L-FAT-A1-2023-2024:Q4a": "Lossless / dependency-preserving decomposition",
+  "BCSE302L-FAT-A1-2023-2024:Q4b": "Lossless / dependency-preserving decomposition",
+  "BCSE302L-FAT-A1-2023-2024:Q4c": "Lossless / dependency-preserving decomposition",
+  "BCSE302L-FAT-A1-2023-2024:Q5": "Query processing / optimization",
+  "BCSE302L-FAT-A1-2023-2024:Q6": "Indexing / B+ tree",
+  "BCSE302L-FAT-A1-2023-2024:Q7": "Schedules / conflict serializability",
+  "BCSE302L-FAT-A1-2023-2024:Q8": "Timestamp ordering",
+  "BCSE302L-FAT-A1-2023-2024:Q9a": "ARIES / shadow paging",
+  "BCSE302L-FAT-A1-2023-2024:Q9b": "Deadlock (wait-die / wound-wait)",
+  "BCSE302L-FAT-A1-2023-2024:Q10a": "NoSQL types / CAP",
+  "BCSE302L-FAT-A1-2023-2024:Q10b": "NoSQL types / CAP",
+  "BCSE302L-FAT-B2-2022-2023:Q1": "DBMS architecture / data independence",
+  "BCSE302L-FAT-B2-2022-2023:Q2": "Recoverable / cascadeless schedules",
+  "BCSE302L-FAT-B2-2022-2023:Q3": "MongoDB queries / aggregation",
+  "BCSE302L-FAT-B2-2022-2023:Q4": "SQL queries",
+  "BCSE302L-FAT-B2-2022-2023:Q5i": "ER diagram design",
+  "BCSE302L-FAT-B2-2022-2023:Q5ii": "ER to relational mapping",
+  "BCSE302L-FAT-B2-2022-2023:Q6i": "Minimal cover",
+  "BCSE302L-FAT-B2-2022-2023:Q6iia": "Minimal cover",
+  "BCSE302L-FAT-B2-2022-2023:Q6iib": "Candidate keys",
+  "BCSE302L-FAT-B2-2022-2023:Q6iic": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-B2-2022-2023:Q7i": "Query processing / optimization",
+  "BCSE302L-FAT-B2-2022-2023:Q7ii": "Indexing / B+ tree",
+  "BCSE302L-FAT-B2-2022-2023:Q8i": "2PL / locking",
+  "BCSE302L-FAT-B2-2022-2023:Q8ii": "Deadlock (wait-die / wound-wait)",
+  "BCSE302L-FAT-B2-2024-2025:Q1": "DBMS architecture / data independence",
+  "BCSE302L-FAT-B2-2024-2025:Q2": "EER / specialization",
+  "BCSE302L-FAT-B2-2024-2025:Q3": "ER to relational mapping",
+  "BCSE302L-FAT-B2-2024-2025:Q4": "Normalization (1NF-BCNF)",
+  "BCSE302L-FAT-B2-2024-2025:Q5": "Indexing / B+ tree",
+  "BCSE302L-FAT-B2-2024-2025:Q6": "Relational algebra",
+  "BCSE302L-FAT-B2-2024-2025:Q7": "Schedules / conflict serializability",
+  "BCSE302L-FAT-B2-2024-2025:Q8a": "Transactions ACID / states",
+  "BCSE302L-FAT-B2-2024-2025:Q8b": "ARIES / shadow paging",
+  "BCSE302L-FAT-B2-2024-2025:Q9a": "2PL / locking",
+  "BCSE302L-FAT-B2-2024-2025:Q9b": "2PL / locking",
+  "BCSE302L-FAT-B2-2024-2025:Q10a": "NoSQL types / CAP",
+  "BCSE302L-FAT-B2-2024-2025:Q10b": "NoSQL types / CAP",
+  "BACSE202-FAT-A1-2026-2027:Q1": "DBMS architecture / data independence",
+  "BACSE202-FAT-A1-2026-2027:Q2A": "Keys / constraints",
+  "BACSE202-FAT-A1-2026-2027:Q2B": "Normalization (1NF-BCNF)",
+  "BACSE202-FAT-A1-2026-2027:Q2C": "Keys / constraints",
+  "BACSE202-FAT-A1-2026-2027:Q3": "EER / specialization",
+  "BACSE202-FAT-A1-2026-2027:Q4A": "Normalization (1NF-BCNF)",
+  "BACSE202-FAT-A1-2026-2027:Q4B": "Lossless / dependency-preserving decomposition",
+  "BACSE202-FAT-A1-2026-2027:Q5aA": "Hashing",
+  "BACSE202-FAT-A1-2026-2027:Q5aB": "Hashing",
+  "BACSE202-FAT-A1-2026-2027:Q5b": "Indexing / B+ tree",
+  "BACSE202-FAT-A1-2026-2027:Q6A": "Query processing / optimization",
+  "BACSE202-FAT-A1-2026-2027:Q6B": "Query processing / optimization",
+  "BACSE202-FAT-A1-2026-2027:Q7A": "Schedules / conflict serializability",
+  "BACSE202-FAT-A1-2026-2027:Q7B": "Schedules / conflict serializability",
+  "BACSE202-FAT-A1-2026-2027:Q7C": "Recoverable / cascadeless schedules",
+  "BACSE202-FAT-A1-2026-2027:Q8aA": "Schedules / conflict serializability",
+  "BACSE202-FAT-A1-2026-2027:Q8aB": "2PL / locking",
+  "BACSE202-FAT-A1-2026-2027:Q8aC": "2PL / locking",
+  "BACSE202-FAT-A1-2026-2027:Q8bA": "Log-based recovery / checkpoints",
+  "BACSE202-FAT-A1-2026-2027:Q8bB": "Log-based recovery / checkpoints",
+  "BACSE202-FAT-A1-2026-2027:Q8bC": "Log-based recovery / checkpoints",
+  "BACSE202-FAT-A1-2026-2027:Q9A": "NoSQL types / CAP",
+  "BACSE202-FAT-A1-2026-2027:Q9B": "NoSQL types / CAP",
+  "BACSE202-FAT-A1-2026-2027:Q9C": "NoSQL types / CAP",
+  "BACSE202-FAT-A1-2026-2027:Q10A": "NoSQL types / CAP",
+  "BACSE202-FAT-A1-2026-2027:Q10B": "NoSQL types / CAP",
+  "BACSE202-FAT-A1-2026-2027:Q10C": "NoSQL types / CAP",
+  "BACSE202-FAT-A2-2026-2027:Q1": "DBMS architecture / data independence",
+  "BACSE202-FAT-A2-2026-2027:Q2": "Keys / constraints",
+  "BACSE202-FAT-A2-2026-2027:Q3": "EER / specialization",
+  "BACSE202-FAT-A2-2026-2027:Q4a": "Indexing / B+ tree",
+  "BACSE202-FAT-A2-2026-2027:Q4b": "Indexing / B+ tree",
+  "BACSE202-FAT-A2-2026-2027:Q4c": "Indexing / B+ tree",
+  "BACSE202-FAT-A2-2026-2027:Q4d": "Indexing / B+ tree",
+  "BACSE202-FAT-A2-2026-2027:Q5a": "Transactions ACID / states",
+  "BACSE202-FAT-A2-2026-2027:Q5b": "Schedules / conflict serializability",
+  "BACSE202-FAT-A2-2026-2027:Q6": "Deadlock (wait-die / wound-wait)",
+  "BACSE202-FAT-A2-2026-2027:Q7": "NoSQL types / CAP",
+  "BACSE202-FAT-A2-2026-2027:Q8a": "NoSQL types / CAP",
+  "BACSE202-FAT-A2-2026-2027:Q8b": "MongoDB queries / aggregation",
+  "BACSE202-FAT-A2-2026-2027:Q8c": "NoSQL types / CAP",
+  "BACSE202-FAT-A2-2026-2027:Q9a": "Normalization (1NF-BCNF)",
+  "BACSE202-FAT-A2-2026-2027:Q9b": "EER / specialization",
+  "BACSE202-FAT-A2-2026-2027:Q10a": "Indexing / B+ tree",
+  "BACSE202-FAT-A2-2026-2027:Q10b": "Query processing / optimization",
+  "BITE302L-CAT2-A1-2025-2026:Q1a": "ER to relational mapping",
+  "BITE302L-CAT2-A1-2025-2026:Q1b": "Keys / constraints",
+  "BITE302L-CAT2-A1-2025-2026:Q2a": "Relational algebra",
+  "BITE302L-CAT2-A1-2025-2026:Q2b": "Relational algebra",
+  "BITE302L-CAT2-A1-2025-2026:Q2c": "Relational algebra",
+  "BITE302L-CAT2-A1-2025-2026:Q2d": "Relational algebra",
+  "BITE302L-CAT2-A1-2025-2026:Q2e": "Relational algebra",
+  "BITE302L-CAT2-A1-2025-2026:Q3a": "Candidate keys",
+  "BITE302L-CAT2-A1-2025-2026:Q3b": "Normalization (1NF-BCNF)",
+  "BITE302L-CAT2-A1-2025-2026:Q4": "Normalization (1NF-BCNF)",
+  "BITE302L-CAT2-A1-2025-2026:Q5a": "SQL queries",
+  "BITE302L-CAT2-A1-2025-2026:Q5b": "SQL queries",
+  "BITE302L-CAT2-A1-2025-2026:Q5c": "SQL queries",
+  "BITE302L-CAT2-A1-2025-2026:Q5d": "SQL queries",
+  "BITE302L-CAT2-A1-2025-2026:Q5e": "SQL queries",
+  "BITE302L-CAT2-A2-2025-2026:Q1": "ER to relational mapping",
+  "BITE302L-CAT2-A2-2025-2026:Q2i": "Relational algebra",
+  "BITE302L-CAT2-A2-2025-2026:Q2ii": "Relational algebra",
+  "BITE302L-CAT2-A2-2025-2026:Q2iii": "Relational algebra",
+  "BITE302L-CAT2-A2-2025-2026:Q2iv": "Relational algebra",
+  "BITE302L-CAT2-A2-2025-2026:Q3a": "Minimal cover",
+  "BITE302L-CAT2-A2-2025-2026:Q3b": "Lossless / dependency-preserving decomposition",
+  "BITE302L-CAT2-A2-2025-2026:Q4": "Normalization (1NF-BCNF)",
+  "BITE302L-CAT2-A2-2025-2026:Q5a": "SQL queries",
+  "BITE302L-CAT2-A2-2025-2026:Q5b": "SQL queries",
+  "BITE302L-CAT2-A2-2025-2026:Q5c": "SQL queries",
+  "BITE302L-CAT2-A2-2025-2026:Q5d": "SQL queries",
+  "BITE302L-CAT2-A2-2025-2026:Q5e": "SQL queries",
+  "CBS1007-FAT-A2-2026-2027:Q1": "DBMS architecture / data independence",
+  "CBS1007-FAT-A2-2026-2027:Q2": "DBMS architecture / data independence",
+  "CBS1007-FAT-A2-2026-2027:Q3": "ER diagram design",
+  "CBS1007-FAT-A2-2026-2027:Q4a": "Candidate keys",
+  "CBS1007-FAT-A2-2026-2027:Q4b": "Normalization (1NF-BCNF)",
+  "CBS1007-FAT-A2-2026-2027:Q4c": "Normalization (1NF-BCNF)",
+  "CBS1007-FAT-A2-2026-2027:Q5i": "SQL queries",
+  "CBS1007-FAT-A2-2026-2027:Q5ii": "Relational algebra",
+  "CBS1007-FAT-A2-2026-2027:Q5iii": "Query processing / optimization",
+  "CBS1007-FAT-A2-2026-2027:Q5iv": "Query processing / optimization",
+  "CBS1007-FAT-A2-2026-2027:Q6": "Join algorithms / cost",
+  "CBS1007-FAT-A2-2026-2027:Q7ai": "Schedules / conflict serializability",
+  "CBS1007-FAT-A2-2026-2027:Q7aii": "2PL / locking",
+  "CBS1007-FAT-A2-2026-2027:Q7aiii": "2PL / locking",
+  "CBS1007-FAT-A2-2026-2027:Q7bi": "Schedules / conflict serializability",
+  "CBS1007-FAT-A2-2026-2027:Q7bii": "Schedules / conflict serializability",
+  "CBS1007-FAT-A2-2026-2027:Q7biii": "Schedules / conflict serializability",
+  "CBS1007-FAT-A2-2026-2027:Q8a": "DBMS architecture / data independence",
+  "CBS1007-FAT-A2-2026-2027:Q8bi": "DBMS architecture / data independence",
+  "CBS1007-FAT-A2-2026-2027:Q8bii": "DBMS architecture / data independence",
+  "CBS1007-FAT-A2-2026-2027:Q8biii": "DBMS architecture / data independence",
+  "CBS1007-FAT-A2-2026-2027:Q9i": "NoSQL types / CAP",
+  "CBS1007-FAT-A2-2026-2027:Q9ii": "NoSQL types / CAP",
+  "CBS1007-FAT-A2-2026-2027:Q9iii": "NoSQL types / CAP",
+  "CBS1007-FAT-A2-2026-2027:Q10i": "NoSQL types / CAP",
+  "CBS1007-FAT-A2-2026-2027:Q10ii": "NoSQL types / CAP",
+  "CSI1001-CAT1-B1-2025-2026:Q1a": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B1-2025-2026:Q1b": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B1-2025-2026:Q2": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B1-2025-2026:Q3a": "ER diagram design",
+  "CSI1001-CAT1-B1-2025-2026:Q3b": "ER diagram design",
+  "CSI1001-CAT1-B1-2025-2026:Q4": "SQL queries",
+  "CSI1001-CAT1-B1-2025-2026:Q5": "Relational algebra",
+  "CSI1001-CAT1-B2-2025-2026:Q1a": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B2-2025-2026:Q1b": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B2-2025-2026:Q2a": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B2-2025-2026:Q2b": "DBMS architecture / data independence",
+  "CSI1001-CAT1-B2-2025-2026:Q3": "Relational algebra",
+  "CSI1001-CAT1-B2-2025-2026:Q4": "ER diagram design",
+  "CSI1001-CAT1-B2-2025-2026:Q5a": "ER diagram design",
+  "CSI1001-CAT1-B2-2025-2026:Q5b": "ER to relational mapping",
+  "CSI1001-CAT2-B1-2025-2026:Q1": "Lossless / dependency-preserving decomposition",
+  "CSI1001-CAT2-B1-2025-2026:Q2a": "Functional dependencies / closure",
+  "CSI1001-CAT2-B1-2025-2026:Q2b": "Minimal cover",
+  "CSI1001-CAT2-B1-2025-2026:Q3a": "Query processing / optimization",
+  "CSI1001-CAT2-B1-2025-2026:Q3b": "Query processing / optimization",
+  "CSI1001-CAT2-B1-2025-2026:Q4": "Schedules / conflict serializability",
+  "CSI1001-CAT2-B1-2025-2026:Q5a": "2PL / locking",
+  "CSI1001-CAT2-B1-2025-2026:Q5b": "Deadlock (wait-die / wound-wait)",
+  "CSI1001-CAT2-B2-2025-2026:Q1": "Candidate keys",
+  "CSI1001-CAT2-B2-2025-2026:Q2": "Normalization (1NF-BCNF)",
+  "CSI1001-CAT2-B2-2025-2026:Q3": "Join algorithms / cost",
+  "CSI1001-CAT2-B2-2025-2026:Q4": "Schedules / conflict serializability",
+  "CSI1001-CAT2-B2-2025-2026:Q5": "Transactions ACID / states"
+ }
+}

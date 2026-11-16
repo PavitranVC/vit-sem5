@@ -1,0 +1,56 @@
+{
+ "blueprint": "10 x 10 FAT in 9 of 11; all 7 modules in 10 of 11 FATs. Typical order Q1 M1 (architecture / data independence, 11 of 11), Q2-Q3 M2 (ER/EER, mapping, relational algebra), Q3-Q4 M3 (normalization), Q5-Q6 M4 (indexing / B+ tree, query optimisation), Q7-Q8 M5-M6 (transactions, serializability, 2PL), Q9-Q10 M6-M7 (concurrency, NoSQL/CAP), with 'Q9 a or b; Q10 a or b' in 3 of 11. No 2026-27 BCSE302L FAT exists in the corpus; 2026-27 evidence is CAT-1 D1 and D2 (your slot letter) plus 3 sister FATs (BACSE202 A1/A2, CBS1007 A2).",
+ "small_n_warning": "No 2026-27 BCSE302L FAT exists (n_recent = 0 for the FAT formula). Use the 2026-27 CAT and sister-FAT columns as the recency signal. Probabilities are ranks, not calibrated chances.",
+ "traps": {
+  "Normalization (1NF-BCNF)": [
+   [
+    "1NF step first moves the multivalued attribute (phone numbers) to its own table before 2NF/3NF; key splits marks 1NF 3, 2NF 3, 3NF 4",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q5"
+   ],
+   [
+    "2NF question requires naming the candidate key AND each partial dependency",
+    "BCSE302L-CAT1-D2-2026-2027:Q5b"
+   ]
+  ],
+  "Schedules / conflict serializability": [
+   [
+    "Besides the precedence graph, the key also computes final data values (A = 230, B = 415.2) and names the anomaly (dirty read / lost update)",
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q5"
+   ]
+  ],
+  "Query processing / optimization": [
+   [
+    "Push selections (and projections) below joins before drawing the optimised tree",
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q4"
+   ]
+  ],
+  "Indexing / B+ tree": [
+   [
+    "Insertion and deletion asked in the same question; key draws the tree after each phase",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q3b"
+   ]
+  ],
+  "EER / specialization": [
+   [
+    "Must state total/partial and disjoint/overlapping constraints explicitly",
+    "BCSE302L-CAT1-D1-2026-2027:Q4"
+   ]
+  ],
+  "ER diagram design": [
+   [
+    "Business rules encode participation ('at least one', 'may or may not'); show total vs partial participation",
+    "BCSE302L-CAT1-D2-2026-2027:Q3"
+   ]
+  ]
+ },
+ "no_clear_pattern": [
+  "Slot-pair reuse: slot 1 -> slot 2 same-archetype rate 0.66 vs different-year baseline 0.58 (small lift, 90 questions)",
+  "2026-27 FAT style (no 2026-27 BCSE302L FAT in corpus)",
+  "SQL query writing in FATs: 2 of 11",
+  "FoodRush MongoDB case study: its 11 queries are an assignment, MongoDB aggregation appears in 1 of 11 FATs and in sister 2026-27 FATs",
+  "Step-mark splits are rarely stated in keys"
+ ],
+ "drift_note": "2026-27 CAT-1 (D1, D2): scenario-wrapped questions 53% vs 30% in older CAT-1s, mean Bloom 2.73 vs 3.50 (O, 2 papers). By start year the scenario share went 33, 29, 13, 38, 53%: rising since 2024 but not monotonic. Caveat (O from verification): the 2026-27 CAT-1 'theory % marks' of 10 is depressed because extractors tagged explain/identify questions with a narrative opener as type 'scenario' (4 of 15 verified rows); read the scenario-wrapper % instead.",
+ "pairs_note": "Slot 1 -> slot 2 shares the archetype for 0.66 of questions vs 0.58 between different years (O). A small lift; D1 2026-27 CAT-1 is a reasonable guide to D2-style questions but does not determine them. No verbatim reuse in 2026-27 (max similarity 0.66: CAT1-D2-2026-2027:Q5a vs CAT1-E1-2025-2026:Q5ai).",
+ "extra": "FoodRush case study (DBS/Case Study/FoodRush): 11 MongoDB query tasks, extracted in both PDF versions (rows with exam=CASE). Treat as M7 practice, not as FAT evidence."
+}

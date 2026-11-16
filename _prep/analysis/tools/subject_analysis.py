@@ -43,7 +43,11 @@ for r in R:
     r["m"] = num(r["marks"])
     r["recent"] = r["year"].startswith("2026")
     r["mod"] = r["syllabus_module"][:2] if re.match(r"M\d", r["syllabus_module"]) else "derived"
-    r["exam_n"] = "FAT" if r["exam"] in ("FAT", "ModelFAT") else r["exam"]
+    r["exam_n"] = r["exam"]  # ModelFAT (mock paper) stays separate and is not counted as a FAT
+
+
+def norm(t):
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", t.lower())).strip()
 
 
 def short(f):
@@ -70,8 +74,12 @@ for k, fs in groups.items():
     if k[1] in ("CASE",) or not k[2]:
         continue
     fs.sort(reverse=True)
+    keep = fs[0][1]
+    kt = " ".join(r["text"] for r in R if r["file_name"] == keep)[:3000]
     for _, f in fs[1:]:
-        ALIAS[f] = fs[0][1]
+        ft = " ".join(r["text"] for r in R if r["file_name"] == f)[:3000]
+        if difflib.SequenceMatcher(None, norm(kt), norm(ft)).ratio() >= 0.6:  # same paper (QP vs AK); else keep both
+            ALIAS[f] = keep
 
 rows_of = collections.defaultdict(list)
 for r in R:

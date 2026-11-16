@@ -1,0 +1,1063 @@
+{
+ "meta": {
+  "subject": "DBS (BCSE302L Database Systems)",
+  "student_slot": "D2",
+  "probability_formula": "probability = (2*k_recent + k_older + 1) / (2*n_recent + n_older + 2); k = papers containing the topic, n = papers; recent = 2026-27. Primary 'probability' uses BCSE302L FAT papers only (n_recent=0, n_older=11). 'probability_all_papers' uses CAT1/CAT2/FAT papers whose measured syllabus window covers the topic's module ({'CAT1': ['M1', 'M2', 'M3'], 'CAT2': ['M2', 'M3', 'M4'], 'FAT': ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7']}).",
+  "backtest_confidence": {
+   "tier": "Medium",
+   "hits": 22,
+   "of": 40
+  },
+  "papers_used": 30,
+  "tag_agreement_rate": 0.8,
+  "tag_agreement_detail": "15 questions re-read (BCSE302L-CAT1-D2-2026-2027 Q1a-Q5b, BCSE302L-CAT1-D1-2026-2027 Q1a-Q5b): text 15/15, type 11/15, bloom 12/15, scenario 13/15; pooled 36/45 = 0.80. Below the 10% target (585 rows) because of context limits; disagreements follow the AI pattern (agents tag explain/identify tasks with a narrative opener as 'scenario').",
+  "small_n_warning": "No 2026-27 BCSE302L FAT exists (n_recent = 0 for the FAT formula). Use the 2026-27 CAT and sister-FAT columns as the recency signal. Probabilities are ranks, not calibrated chances.",
+  "fat_blueprint_observed": "10 x 10 FAT in 9 of 11; all 7 modules in 10 of 11 FATs. Typical order Q1 M1 (architecture / data independence, 11 of 11), Q2-Q3 M2 (ER/EER, mapping, relational algebra), Q3-Q4 M3 (normalization), Q5-Q6 M4 (indexing / B+ tree, query optimisation), Q7-Q8 M5-M6 (transactions, serializability, 2PL), Q9-Q10 M6-M7 (concurrency, NoSQL/CAP), with 'Q9 a or b; Q10 a or b' in 3 of 11. No 2026-27 BCSE302L FAT exists in the corpus; 2026-27 evidence is CAT-1 D1 and D2 (your slot letter) plus 3 sister FATs (BACSE202 A1/A2, CBS1007 A2)."
+ },
+ "predicted_topics": [
+  {
+   "rank": 1,
+   "teach_order": 1,
+   "topic_name": "DBMS architecture / data independence",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.923,
+   "appearance_ratio": "11 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.96,
+   "appearance_ratio_all_papers": "21 of 21 papers covering M1",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "3 of 3",
+   "core_2026_27_cat_ratio": "2 of 2",
+   "fat_mark_share": 0.092,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q1",
+    "BCSE302L-FAT-E1-2025-2026:Q1a",
+    "BCSE302L-FAT-E1-2025-2026:Q1b",
+    "BCSE302L-FAT-A1-2024-2025:Q1",
+    "BCSE302L-FAT-A2-2022-2023:Q1a",
+    "BCSE302L-FAT-A2-2022-2023:Q1b",
+    "BCSE302L-FAT-A2-2024-2025:Q1a",
+    "BCSE302L-FAT-A2-2024-2025:Q1b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify suitable data model for multi-branch retail system; explain characteristics, benefits, user categories, DBA responsibilities (cite BCSE302L-CAT1-D1-2026-2027:Q1a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: logical: change conceptual schema without changing external schemas or programs; physical: change internal schema without changing conceptual schema [BCSE302L-CAT1-B1-2025-2026-AK:Q1b]",
+    "marks: Situation a: 5 marks (three-tier justification and diagram); key shows: three-tier; client; application server; database system; business logic separated from database [BCSE302L-CAT1-B2-2025-2026-AK:Q1a]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q1b",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q1a",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q1b"
+   ]
+  },
+  {
+   "rank": 2,
+   "teach_order": 4,
+   "topic_name": "2PL / locking",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.846,
+   "appearance_ratio": "10 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.846,
+   "appearance_ratio_all_papers": "10 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.082,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q9a",
+    "BCSE302L-FAT-E1-2025-2026:Q8b",
+    "BCSE302L-FAT-A1-2024-2025:Q10a",
+    "BCSE302L-FAT-A2-2022-2023:Q8a",
+    "BCSE302L-FAT-A2-2024-2025:Q9a",
+    "BCSE302L-FAT-A2-2024-2025:Q9b",
+    "BCSE302L-FAT-A2-2024:Q10",
+    "BCSE302L-FAT-F2-2023-2024:Q9b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Draw a 2PL schedule for T1, T2, T3, show where deadlock can occur and how to avoid or resolve it. (cite BCSE302L-FAT-B2-2025-2026:Q9a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 3,
+   "teach_order": 3,
+   "topic_name": "Indexing / B+ tree",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.846,
+   "appearance_ratio": "10 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.818,
+   "appearance_ratio_all_papers": "17 of 20 papers covering M4",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.09,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q5",
+    "BCSE302L-FAT-E1-2025-2026:Q5i",
+    "BCSE302L-FAT-E1-2025-2026:Q5ii",
+    "BCSE302L-FAT-A1-2024-2025:Q9a",
+    "BCSE302L-FAT-A2-2022-2023:Q5",
+    "BCSE302L-FAT-A2-2024-2025:Q5a",
+    "BCSE302L-FAT-A2-2024:Q4",
+    "BCSE302L-FAT-A2-2024:Q5"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Explain multilevel indexing techniques with real-world examples. (cite BCSE302L-FAT-B2-2025-2026:Q5)",
+   "observed_traps": [
+    "Insertion and deletion asked in the same question; key draws the tree after each phase [BCSE302L-CAT2-B2-2025-2026-AK:Q3b]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: tree after inserting 27 and 1: root 0015; internal 0003 0006 0010 and 0020 0027; leaves 0001 through 0030 linked in order [BCSE302L-CAT2-B2-2025-2026-AK:Q3a]",
+    "key shows: deletion of 20, 8, 15; root 0017; internal 0003 0006 0010 and 0025 0027; leaves 0001 to 0030 with 0017, 0025, 0027, 0030 [BCSE302L-CAT2-B2-2025-2026-AK:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q3a",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q3b",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q2",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q2a"
+   ]
+  },
+  {
+   "rank": 4,
+   "teach_order": 2,
+   "topic_name": "Normalization (1NF-BCNF)",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.846,
+   "appearance_ratio": "10 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.765,
+   "appearance_ratio_all_papers": "23 of 30 papers covering M3",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "3 of 3",
+   "core_2026_27_cat_ratio": "2 of 2",
+   "fat_mark_share": 0.066,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q4",
+    "BCSE302L-FAT-E1-2025-2026:Q4i",
+    "BCSE302L-FAT-E1-2025-2026:Q4ii",
+    "BCSE302L-FAT-A1-2024-2025:Q5",
+    "BCSE302L-FAT-A2-2022-2023:Q4",
+    "BCSE302L-FAT-A2-2024-2025:Q3",
+    "BCSE302L-FAT-A2-2024:Q3",
+    "BCSE302L-FAT-F2-2023-2024:Q3"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Check 2NF of ENROLLMENT, decompose to 2NF then 3NF, show relations with primary keys (cite BCSE302L-CAT1-D1-2026-2027:Q5b)",
+   "observed_traps": [
+    "1NF step first moves the multivalued attribute (phone numbers) to its own table before 2NF/3NF; key splits marks 1NF 3, 2NF 3, 3NF 4 [BCSE302L-CAT1-B2-2025-2026-AK:Q5]",
+    "2NF question requires naming the candidate key AND each partial dependency [BCSE302L-CAT1-D2-2026-2027:Q5b]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: ABD+ = all attributes; candidate key ABD; 3NF violated by AB->C, AD->GH, BD->EF, A->I, H->J; R1(AB,C) R2(AD,GH) R3(BD,EF) R4(A,I) R5(H,J) R6(ABD) [BCSE302L-CAT1-B1-2025-2026-AK:Q5a]",
+    "key shows: insertion anomaly; deletion anomaly; update anomaly; examples [BCSE302L-CAT1-B1-2025-2026-AK:Q5b]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q5a",
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q5b",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q5",
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q1"
+   ]
+  },
+  {
+   "rank": 5,
+   "teach_order": 5,
+   "topic_name": "NoSQL types / CAP",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.769,
+   "appearance_ratio": "9 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.769,
+   "appearance_ratio_all_papers": "9 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "3 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.101,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q10a",
+    "BCSE302L-FAT-B2-2025-2026:Q10b",
+    "BCSE302L-FAT-E1-2025-2026:Q10a",
+    "BCSE302L-FAT-E1-2025-2026:Q10b",
+    "BCSE302L-FAT-A1-2024-2025:Q8",
+    "BCSE302L-FAT-A2-2022-2023:Q10",
+    "BCSE302L-FAT-A2-2024-2025:Q10",
+    "BCSE302L-FAT-F2-2023-2024:Q5a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain the CAP theorem for NoSQL databases and its influence on distributed design trade-offs. (cite BCSE302L-FAT-B2-2025-2026:Q10a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 6,
+   "teach_order": 9,
+   "topic_name": "Schedules / conflict serializability",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.692,
+   "appearance_ratio": "8 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.692,
+   "appearance_ratio_all_papers": "8 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "3 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.062,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q7",
+    "BCSE302L-FAT-E1-2025-2026:Q7a",
+    "BCSE302L-FAT-A2-2024-2025:Q6a",
+    "BCSE302L-FAT-A2-2024:Q7",
+    "BCSE302L-FAT-F2-2023-2024:Q9a",
+    "BCSE302L-FAT-B1-2025-2026:Q5",
+    "BCSE302L-FAT-B1-2025-2026:Q9a",
+    "BCSE302L-FAT-A1-2023-2024:Q7"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Test conflict-serializability of S1, S2, S3, draw precedence graphs, build a serializable T1/T2 schedule and explain. (cite BCSE302L-FAT-B2-2025-2026:Q7)",
+   "observed_traps": [
+    "Besides the precedence graph, the key also computes final data values (A = 230, B = 415.2) and names the anomaly (dirty read / lost update) [BCSE302L-CAT2-B1-2025-2026-AK:Q5]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: A = 230; B = 415.2; conflicts W-R (t4,t5), W-R (t10,t12), W-W (t10,t14); isolation at risk; dirty read; lost update discussed [BCSE302L-CAT2-B1-2025-2026-AK:Q5]",
+    "key shows: S1 conflicts T2->T3, T2->T1, T3->T1, T3->T4, T1->T4, T2->T4; S1 precedence graph acyclic; equivalent serial T2 T3 T1 T4; S2 conflicts give cycle (T1->T4->T3->T1 [BCSE302L-CAT2-B2-2025-2026-AK:Q5]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q5",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q5",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5a",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q5b"
+   ]
+  },
+  {
+   "rank": 7,
+   "teach_order": 6,
+   "topic_name": "ER diagram design",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.615,
+   "appearance_ratio": "7 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.412,
+   "appearance_ratio_all_papers": "12 of 30 papers covering M2",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "1 of 2",
+   "fat_mark_share": 0.056,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q2",
+    "BCSE302L-FAT-A1-2024-2025:Q2",
+    "BCSE302L-FAT-A2-2022-2023:Q2a",
+    "BCSE302L-FAT-A2-2022-2023:Q2b",
+    "BCSE302L-FAT-A2-2024:Q2",
+    "BCSE302L-CAT1-D2-2026-2027:Q3",
+    "BCSE302L-FAT-B1-2025-2026:Q2",
+    "BCSE302L-FAT-A1-2023-2024:Q2"
+   ],
+   "core_type": "scenario",
+   "fluff_stripped_core_task": "Draw ER diagram with entities, attributes, keys, relationships, cardinality, participation for university (cite BCSE302L-CAT1-D2-2026-2027:Q3)",
+   "observed_traps": [
+    "Business rules encode participation ('at least one', 'may or may not'); show total vs partial participation [BCSE302L-CAT1-D2-2026-2027:Q3]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: COURSE (PK Course_ID); COURSE_OFFERING (PK Offering_ID, FK Course_ID); STUDENT (PK Student_ID); INSTRUCTOR (PK Instructor_ID); PROCTOR subtype of INSTRUCTOR; en [BCSE302L-CAT1-B1-2025-2026-AK:Q2]",
+    "marks: 5 marks ER diagram; key shows: Exam (exam_id, time); Course (c-number, name, department); Section weak entity (partial key s-number, enrollment) identifying Course; Room (r-number, capacity,  [BCSE302L-CAT1-B2-2025-2026-AK:Q3a]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q2",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q3a"
+   ]
+  },
+  {
+   "rank": 8,
+   "teach_order": 7,
+   "topic_name": "ER to relational mapping",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.538,
+   "appearance_ratio": "6 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.5,
+   "appearance_ratio_all_papers": "15 of 30 papers covering M2",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "1 of 2",
+   "fat_mark_share": 0.045,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q3",
+    "BCSE302L-FAT-A2-2022-2023:Q3a",
+    "BCSE302L-FAT-A2-2022-2023:Q3b",
+    "BCSE302L-FAT-A2-2024-2025:Q2b",
+    "BCSE302L-FAT-F2-2023-2024:Q2a",
+    "BCSE302L-CAT1-D2-2026-2027:Q4b",
+    "BCSE302L-FAT-B2-2022-2023:Q5ii",
+    "BCSE302L-FAT-B2-2024-2025:Q3"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Convert given customer-borrower-loan ER diagram into relational tables with primary and foreign keys (cite BCSE302L-CAT1-D2-2026-2027:Q4b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: PKs: P_ID, D_ID, N_ID, R_ID, Room_ID, Bill_ID, Report_ID, Record_No; FKs: P_ID in BILL and TEST_REPORT, D_ID in CONSULTS, Room_ID in ASSIGNED; CONSULTS M:N; ASS [BCSE302L-CAT1-B1-2025-2026-AK:Q3]",
+    "marks: Part A 8 marks: strong, weak and relationship sets; key shows: student(sid,name,program); instructor(iid,name,dept,title); course(courseno,title,credits,syllabus); course_offerings(courseno,time,secno,room,year,semester); i [BCSE302L-CAT1-B2-2025-2026-AK:Q4a]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q3",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q4a",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q4b"
+   ]
+  },
+  {
+   "rank": 9,
+   "teach_order": 8,
+   "topic_name": "Relational algebra",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.538,
+   "appearance_ratio": "6 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.441,
+   "appearance_ratio_all_papers": "14 of 30 papers covering M2",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.036,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q6",
+    "BCSE302L-FAT-A2-2022-2023:Q6a",
+    "BCSE302L-FAT-A2-2024-2025:Q5bii",
+    "BCSE302L-FAT-F2-2023-2024:Q8a",
+    "BCSE302L-FAT-B1-2025-2026:Q4",
+    "BCSE302L-FAT-B2-2024-2025:Q6"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Express five library queries (borrowers of Database Systems, Pearson titles, unreturned borrowers, publisher counts, never-borrowed titles) in relational algebra. (cite BCSE302L-FAT-B2-2025-2026:Q6)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: (i) pi_AName(sigma_StName='Smith'(has_written join (borrows join Students))); (ii) pi_Title(Books join pi_BId(sigma_Keyword='database'(describes)) intersect pi_ [BCSE302L-CAT2-B1-2025-2026-AK:Q3]",
+    "key shows: a) pi make,model(sigma Year>=2020(Vehicles)); b) G AVG(daily_rate)(Vehicles); c) pi name,email(Renters join pi renter_id(Rentals join sigma make='Toyota'(Vehicl [BCSE302L-CAT2-B2-2025-2026-AK:Q2]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q3",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q2",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q3",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q3"
+   ]
+  },
+  {
+   "rank": 10,
+   "teach_order": 28,
+   "topic_name": "Deadlock (wait-die / wound-wait)",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.462,
+   "appearance_ratio": "5 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.462,
+   "appearance_ratio_all_papers": "5 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.036,
+   "supporting_files": [
+    "BCSE302L-FAT-A2-2024-2025:Q8",
+    "BCSE302L-FAT-A2-2024:Q9",
+    "BCSE302L-FAT-B1-2025-2026:Q10bi",
+    "BCSE302L-FAT-B1-2025-2026:Q10bii",
+    "BCSE302L-FAT-A1-2023-2024:Q9b",
+    "BCSE302L-FAT-B2-2022-2023:Q8ii"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Analyze common causes of deadlocks in lock-based concurrency control (cite BCSE302L-FAT-B1-2025-2026:Q10bi)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 11,
+   "teach_order": 24,
+   "topic_name": "Transactions ACID / states",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.462,
+   "appearance_ratio": "5 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.462,
+   "appearance_ratio_all_papers": "5 of 11 papers covering M5",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.023,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q8a",
+    "BCSE302L-FAT-A2-2022-2023:Q7a",
+    "BCSE302L-FAT-A2-2024-2025:Q6b",
+    "BCSE302L-FAT-A2-2024:Q8",
+    "BCSE302L-FAT-B2-2024-2025:Q8a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Illustrate the various states of a database transaction. (cite BCSE302L-FAT-B2-2025-2026:Q8a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 12,
+   "teach_order": 21,
+   "topic_name": "Hashing",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.462,
+   "appearance_ratio": "5 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.409,
+   "appearance_ratio_all_papers": "8 of 20 papers covering M4",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.034,
+   "supporting_files": [
+    "BCSE302L-FAT-E1-2025-2026:Q6a",
+    "BCSE302L-FAT-E1-2025-2026:Q6bi",
+    "BCSE302L-FAT-E1-2025-2026:Q6bii",
+    "BCSE302L-FAT-A1-2024-2025:Q9b",
+    "BCSE302L-FAT-A2-2024-2025:Q5bi",
+    "BCSE302L-FAT-A2-2024:Q6",
+    "BCSE302L-FAT-F2-2023-2024:Q8c"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Insert Account_No keys into 7-bucket hash file (h(K)=K mod 7, two records per bucket); show buckets and overflow. (cite BCSE302L-FAT-E1-2025-2026:Q6a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 13,
+   "teach_order": 22,
+   "topic_name": "Query processing / optimization",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.545,
+   "appearance_ratio_all_papers": "11 of 20 papers covering M4",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "3 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.025,
+   "supporting_files": [
+    "BCSE302L-FAT-A2-2022-2023:Q6b",
+    "BCSE302L-FAT-F2-2023-2024:Q8b",
+    "BCSE302L-FAT-A1-2023-2024:Q5",
+    "BCSE302L-FAT-B2-2022-2023:Q7i"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Build initial and heuristically optimized query trees for the EMP/PROJ/ASG query. (cite BCSE302L-CAT2-B1-2025-2026-AK:Q4)",
+   "observed_traps": [
+    "Push selections (and projections) below joins before drawing the optimised tree [BCSE302L-CAT2-B1-2025-2026-AK:Q4]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: initial tree: pi ENAME over sigma over EMP x PROJ x ASG; push selections down to EMP, PROJ, ASG; join on PNO then ENO; project early; key query text differs fro [BCSE302L-CAT2-B1-2025-2026-AK:Q4]",
+    "key shows: selection sigma name='Tom Hanks' pushed to Actors; sigma year<2010 pushed to Movies; join Casts with Actors on actor_id and Movies on movie_id; project title an [BCSE302L-CAT2-B2-2025-2026-AK:Q4]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q4",
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q4",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q4",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q4"
+   ]
+  },
+  {
+   "rank": 14,
+   "teach_order": 29,
+   "topic_name": "Timestamp ordering",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.385,
+   "appearance_ratio_all_papers": "4 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.031,
+   "supporting_files": [
+    "BCSE302L-FAT-E1-2025-2026:Q9a",
+    "BCSE302L-FAT-E1-2025-2026:Q9b",
+    "BCSE302L-FAT-A1-2024-2025:Q10b",
+    "BCSE302L-FAT-A2-2022-2023:Q8b",
+    "BCSE302L-FAT-A1-2023-2024:Q8"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Trace BTO read/write timestamps for schedule, note rejections, and test conflict serializability with serial order. (cite BCSE302L-FAT-E1-2025-2026:Q9a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 15,
+   "teach_order": 25,
+   "topic_name": "Log-based recovery / checkpoints",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.385,
+   "appearance_ratio_all_papers": "4 of 11 papers covering M5",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.03,
+   "supporting_files": [
+    "BCSE302L-FAT-E1-2025-2026:Q7bi",
+    "BCSE302L-FAT-E1-2025-2026:Q7bii",
+    "BCSE302L-FAT-A2-2022-2023:Q9",
+    "BCSE302L-FAT-F2-2023-2024:Q4a",
+    "BCSE302L-FAT-F2-2023-2024:Q4b",
+    "BCSE302L-FAT-B1-2025-2026:Q9bi",
+    "BCSE302L-FAT-B1-2025-2026:Q9bii"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "List log entries for the timeline under NO-UNDO/REDO and UNDO/REDO; state redo/undo needs after crash. (cite BCSE302L-FAT-E1-2025-2026:Q7bi)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 16,
+   "teach_order": 26,
+   "topic_name": "ARIES / shadow paging",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.385,
+   "appearance_ratio_all_papers": "4 of 11 papers covering M5",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.021,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q8b",
+    "BCSE302L-FAT-A1-2024-2025:Q6",
+    "BCSE302L-FAT-A1-2023-2024:Q9a",
+    "BCSE302L-FAT-B2-2024-2025:Q8b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Discuss the shadow paging technique, its working and significance in detail. (cite BCSE302L-FAT-B2-2025-2026:Q8b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 17,
+   "teach_order": 12,
+   "topic_name": "EER / specialization",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.382,
+   "appearance_ratio_all_papers": "10 of 30 papers covering M2",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 3",
+   "core_2026_27_cat_ratio": "2 of 2",
+   "fat_mark_share": 0.034,
+   "supporting_files": [
+    "BCSE302L-FAT-E1-2025-2026:Q2",
+    "BCSE302L-FAT-A1-2024-2025:Q3",
+    "BCSE302L-FAT-A2-2024-2025:Q2a",
+    "BCSE302L-CAT1-D1-2026-2027:Q4",
+    "BCSE302L-CAT1-D2-2026-2027:Q4a",
+    "BCSE302L-FAT-B2-2024-2025:Q2"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Design EER diagram with specialization for bank customer hierarchy with constraints (cite BCSE302L-CAT1-D1-2026-2027:Q4)",
+   "observed_traps": [
+    "Must state total/partial and disjoint/overlapping constraints explicitly [BCSE302L-CAT1-D1-2026-2027:Q4]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: superclass/supertype; subclass/subtype; class/subclass relationship; EMPLOYEE with SECRETARY/TECHNICIAN; subclass member is the same real-world entity in a spec [BCSE302L-CAT1-B1-2025-2026-AK:Q4a]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q4a"
+   ]
+  },
+  {
+   "rank": 18,
+   "teach_order": 16,
+   "topic_name": "Functional dependencies / closure",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.353,
+   "appearance_ratio_all_papers": "10 of 30 papers covering M3",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "1 of 2",
+   "fat_mark_share": 0.018,
+   "supporting_files": [
+    "BCSE302L-FAT-E1-2025-2026:Q3b",
+    "BCSE302L-FAT-A2-2024-2025:Q4a",
+    "BCSE302L-CAT1-D1-2026-2027:Q5a",
+    "BCSE302L-FAT-B1-2025-2026:Q3",
+    "BCSE302L-FAT-A1-2023-2024:Q3b"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Derive AD->E from F using inference rules (cite BCSE302L-CAT1-D1-2026-2027:Q5a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: A+, D+, (AB)+ computed for F1 and F2; F1 covers F2; F2 covers F1; equivalent [BCSE302L-CAT2-B2-2025-2026-AK:Q1b]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT2-B2-2025-2026-AK:Q1b"
+   ]
+  },
+  {
+   "rank": 19,
+   "teach_order": 27,
+   "topic_name": "Recoverable / cascadeless schedules",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.308,
+   "appearance_ratio": "3 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.308,
+   "appearance_ratio_all_papers": "3 of 11 papers covering M5",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.023,
+   "supporting_files": [
+    "BCSE302L-FAT-A2-2022-2023:Q7b",
+    "BCSE302L-FAT-A2-2024-2025:Q7",
+    "BCSE302L-FAT-B2-2022-2023:Q2"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Determine whether schedule S2 is strict, cascadeless, recoverable or nonrecoverable, with justification. (cite BCSE302L-CAT2-E1-2025-2026:Q5b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 20,
+   "teach_order": 17,
+   "topic_name": "Lossless / dependency-preserving decomposition",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.308,
+   "appearance_ratio": "3 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.176,
+   "appearance_ratio_all_papers": "5 of 30 papers covering M3",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.022,
+   "supporting_files": [
+    "BCSE302L-FAT-A1-2024-2025:Q4",
+    "BCSE302L-FAT-A2-2024-2025:Q4b",
+    "BCSE302L-FAT-A1-2023-2024:Q4a",
+    "BCSE302L-FAT-A1-2023-2024:Q4b",
+    "BCSE302L-FAT-A1-2023-2024:Q4c"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain why nulls should be avoided and how spurious tuples are prevented. (cite BCSE302L-CAT1-B1-2025-2026-AK:Q4b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: nulls waste space; unclear meaning of attributes; join problems; aggregate COUNT/SUM ambiguity; spurious tuples; join on PK/FK equality [BCSE302L-CAT1-B1-2025-2026-AK:Q4b]",
+    "marks: 2 dependency preservation; key shows: AB -> C not preserved; check requires join; 3NF decomposition (BD)(ABC) preferred [BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1c]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q4b",
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1c"
+   ]
+  },
+  {
+   "rank": 21,
+   "teach_order": 13,
+   "topic_name": "SQL queries",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.231,
+   "appearance_ratio": "2 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.206,
+   "appearance_ratio_all_papers": "6 of 30 papers covering M2",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.025,
+   "supporting_files": [
+    "BCSE302L-FAT-F2-2023-2024:Q6a",
+    "BCSE302L-FAT-F2-2023-2024:Q6b",
+    "BCSE302L-FAT-F2-2023-2024:Q6c",
+    "BCSE302L-FAT-F2-2023-2024:Q6d",
+    "BCSE302L-FAT-F2-2023-2024:Q6e",
+    "BCSE302L-FAT-F2-2023-2024:Q7a",
+    "BCSE302L-FAT-F2-2023-2024:Q7b",
+    "BCSE302L-FAT-B2-2022-2023:Q4"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Write SQL to list names and countries of players who played on 2024-05-10. (cite BCSE302L-CAT1-E1-2025-2026:Q3a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 22,
+   "teach_order": 18,
+   "topic_name": "Minimal cover",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.231,
+   "appearance_ratio": "2 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.147,
+   "appearance_ratio_all_papers": "4 of 30 papers covering M3",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.012,
+   "supporting_files": [
+    "BCSE302L-FAT-E1-2025-2026:Q3a",
+    "BCSE302L-FAT-B2-2022-2023:Q6i",
+    "BCSE302L-FAT-B2-2022-2023:Q6iia"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Derive FDs from stated assumptions and compute the minimal cover step by step. (cite BCSE302L-FAT-E1-2025-2026:Q3a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 23,
+   "teach_order": 19,
+   "topic_name": "Candidate keys",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.265,
+   "appearance_ratio_all_papers": "7 of 30 papers covering M3",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "1 of 2",
+   "fat_mark_share": 0.003,
+   "supporting_files": [
+    "BCSE302L-CAT1-D2-2026-2027:Q5a",
+    "BCSE302L-FAT-B2-2022-2023:Q6iib"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Find candidate key(s) of R(A,B,C,D,E,H) under given FDs (cite BCSE302L-CAT1-D2-2026-2027:Q5a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "marks: 2 candidate key; key shows: attribute closure; AB+ = ABCD; BC+ = ABCD; candidate keys AB and BC [BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1a]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT-2-A2-Fall-2024-2025-Answer Key:Q1a"
+   ]
+  },
+  {
+   "rank": 24,
+   "teach_order": 14,
+   "topic_name": "Keys / constraints",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.235,
+   "appearance_ratio_all_papers": "6 of 30 papers covering M2",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 3",
+   "core_2026_27_cat_ratio": "1 of 2",
+   "fat_mark_share": 0.004,
+   "supporting_files": [
+    "BCSE302L-FAT-F2-2023-2024:Q2b",
+    "BCSE302L-CAT1-D1-2026-2027:Q3"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify candidate keys, primary key, foreign keys of hospital schema; discuss referential integrity on deletion (cite BCSE302L-CAT1-D1-2026-2027:Q3)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 25,
+   "teach_order": 30,
+   "topic_name": "Multi-granularity locking (MGL)",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.008,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2025-2026:Q9b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Show MGL lock request sequences for T1 and T2, explain how intention locks avoid deadlock, and why MGL improves concurrency. (cite BCSE302L-FAT-B2-2025-2026:Q9b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 26,
+   "teach_order": 31,
+   "topic_name": "Concurrency anomalies",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.008,
+   "supporting_files": [
+    "BCSE302L-FAT-A1-2024-2025:Q7"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify and justify lost update, dirty read and unrepeatable read in schedules S1, S2, S3. (cite BCSE302L-FAT-A1-2024-2025:Q7)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 27,
+   "teach_order": 33,
+   "topic_name": "MongoDB queries / aggregation",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.008,
+   "supporting_files": [
+    "BCSE302L-FAT-B2-2022-2023:Q3"
+   ],
+   "core_type": "scenario",
+   "fluff_stripped_core_task": "Create three MongoDB collections, insert documents, update, aggregate count descending, delete for club-house amenities (cite BCSE302L-FAT-B2-2022-2023:Q3)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 28,
+   "teach_order": 32,
+   "topic_name": "Deadlock (wait-for graph)",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.003,
+   "supporting_files": [
+    "BCSE302L-FAT-E1-2025-2026:Q8a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Draw wait-for graph for the given lock requests and state whether deadlock occurs, with justification. (cite BCSE302L-FAT-E1-2025-2026:Q8a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 29,
+   "teach_order": 10,
+   "topic_name": "DBMS vs file processing",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.2,
+   "appearance_ratio_all_papers": "4 of 21 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q1a",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q2",
+    "BCSE302L-CAT-1-A1-2023-2024:Q1a",
+    "BCSE302L-CAT-1-A2-2024-2025:Q1a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Justify choosing a DBMS over file storage and state when a DBMS is unnecessary. (cite BCSE302L-CAT1-B1-2025-2026-AK:Q1a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: Controlling Redundancy; Restricting Unauthorized Access; Persistent Storage for Program Objects; Storage Structures and Search Techniques; Backup and Recovery;  [BCSE302L-CAT1-B1-2025-2026-AK:Q1a]",
+    "marks: self-describing nature 2.5; insulation between programs and data with data abstraction 2.5; multiple views of data 2.5; ; key shows: self-describing (catalog); data independence / abstraction; multiple views; sharing; multiuser transaction processing [BCSE302L-CAT1-B2-2025-2026-AK:Q2]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B1-2025-2026-AK:Q1a",
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q2"
+   ]
+  },
+  {
+   "rank": 30,
+   "teach_order": 23,
+   "topic_name": "File organization",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.136,
+   "appearance_ratio_all_papers": "2 of 20 papers covering M4",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q2",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4a",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q4b"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Compute records per block, blocks, expected splits, index blocks, and suggest a B+ tree organization. (cite BCSE302L-CAT2-B1-2025-2026-AK:Q2)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: records per block = 1000/100 = 10; total blocks = 10,000; splits = 2000/10 = 200; index entry 14 bytes, 71 entries per block, 141 index blocks; B+ tree suggeste [BCSE302L-CAT2-B1-2025-2026-AK:Q2]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT2-B1-2025-2026-AK:Q2"
+   ]
+  },
+  {
+   "rank": 31,
+   "teach_order": 20,
+   "topic_name": "4NF / MVD",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.118,
+   "appearance_ratio_all_papers": "3 of 30 papers covering M3",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q2a",
+    "BCSE302L-CAT-2-A1-Fall-2023-2024-Question Paper:Q2b",
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1b",
+    "BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1"
+   ],
+   "core_type": "scenario",
+   "fluff_stripped_core_task": "Find candidate keys, explain 4NF violation, decompose stepwise into 4NF (cite BCSE302L-CAT-2-B2-Winter-2025-2026-Question Paper:Q1)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: Name ->> Areacode, Phone; Name ->> likes, manufacturer [BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1b]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT-2-A1-Fall-2024-2025-Answer Key:Q1b"
+   ]
+  },
+  {
+   "rank": 32,
+   "teach_order": 11,
+   "topic_name": "Data models (hierarchical/network/relational)",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.08,
+   "appearance_ratio_all_papers": "1 of 21 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE302L-CAT1-E1-2025-2026:Q1a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Describe how hierarchical, network and relational models structure E_TRAX entities and relationships. (cite BCSE302L-CAT1-E1-2025-2026:Q1a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 33,
+   "teach_order": 15,
+   "topic_name": "Aggregation in ER/EER",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.059,
+   "appearance_ratio_all_papers": "1 of 30 papers covering M2",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 3",
+   "core_2026_27_cat_ratio": "0 of 2",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q3b"
+   ],
+   "core_type": "scenario",
+   "fluff_stripped_core_task": "Model diagnosis details with an EER aggregation and justify why aggregation is needed. (cite BCSE302L-CAT1-B2-2025-2026-AK:Q3b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "marks: EER diagram + justification 5 marks; key shows: Patient; Doctor; Medical machine; Diagnosis relationship aggregated as entity; Filling relationship; Patient History [BCSE302L-CAT1-B2-2025-2026-AK:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE302L-CAT1-B2-2025-2026-AK:Q3b"
+   ]
+  }
+ ],
+ "no_clear_pattern": [
+  "Slot-pair reuse: slot 1 -> slot 2 same-archetype rate 0.66 vs different-year baseline 0.58 (small lift, 90 questions)",
+  "2026-27 FAT style (no 2026-27 BCSE302L FAT in corpus)",
+  "SQL query writing in FATs: 2 of 11",
+  "FoodRush MongoDB case study: its 11 queries are an assignment, MongoDB aggregation appears in 1 of 11 FATs and in sister 2026-27 FATs",
+  "Step-mark splits are rarely stated in keys"
+ ],
+ "slot_pair_hit_rates": {
+  "Identical": 0.0,
+  "Same concept new numbers": 0.656,
+  "Same module only": 0.344,
+  "Unrelated": 0.0,
+  "_n": "90 questions in 10 slot pairs",
+  "_baseline_different_year_same_concept": 0.575,
+  "_cross_letter_same_year_same_concept": 0.446,
+  "_sister_courses_same_concept": 0.454
+ }
+}
