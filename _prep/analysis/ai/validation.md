@@ -1,0 +1,49 @@
+# Validation: AI
+
+questions: 344 | papers with rows: 37 | paper records: 37 | ocr_flag=1: 23
+
+## Marks check (sum counts one alternative per OR group)
+
+| file | n_q | sum | stated | rows w/o marks | flag |
+|---|---|---|---|---|---|
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT1/BCSE306L-CAT1-B1-2026-2027-AK.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT1/BCSE306L-CAT1-B2-2026-2027.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT1/BCSE306L-CAT1-C1-2026-2027.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT1/BCSE306L-CAT1-C2-2026-2027.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT1/BCSE306L-CAT1-D1-2025-2026-AK.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT1/BCSE306L-CAT1-D2-2025-2026-AK.pdf | 5 | 10.0 | 50.0 | 4 | FLAG |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT2/BCSE306L-CAT2-B2-2026-2027.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT2/BCSE306L-CAT2-D1-2025-2026-AK.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/CAT2/BCSE306L-CAT2-D2-2025-2026-AK.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/FAT/BCSE306L-FAT-B1-2026-2027.pdf | 10 | 100.0 | 100.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BCSE306L/FAT/BCSE306L-FAT-D1-2025-2026.pdf | 10 | 90.0 | 100.0 | 2 | FLAG |
+| 2026-27 QPs/AI/PYQ/BCSE306L/FAT/BCSE306L-FAT-D2-2025-2026.pdf | 10 | 80.0 | 100.0 | 4 | FLAG |
+| 2026-27 QPs/AI/PYQ/BECE309L/CAT1/BECE309L-CAT1-E2-2026-2027.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BECE309L/CAT1/BECE309L-CAT1-G1-2025-2026.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BECE309L/CAT2/BECE309L-CAT2-G1-2025-2026.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BECE309L/CAT2/BECE309L-CAT2-G2-2025-2026.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BITE308L/CAT1/BITE308L-CAT1-D1-2025-2026.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BITE308L/CAT1/BITE308L-CAT1-D2-2025-2026.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BITE308L/CAT1/BITE308L-CAT1-E1-2026-2027.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BITE308L/CAT2/BITE308L-CAT2-D2-2025-2026.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/BITE308L/FAT/BITE308L-FAT-D2-2025-2026.pdf | 10 | 100.0 | 100.0 | 0 |  |
+| 2026-27 QPs/AI/PYQ/CSI3003/CAT2/CSI3003-CAT2-E1-2026-2027-AK.pdf | 5 | 10.0 | None | 4 | FLAG |
+| AI/PYQ/CAT1/BCSE306L-CAT-1-B1-2023-2024.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT1/BCSE306L-CAT-1-B1-2026-2027.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT1/BCSE306L-CAT-1-B2-2023-2024.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT1/BCSE306L-CAT-1-E1-2024-2025.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT1/BCSE306L-CAT-1-E2-2024-2025.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT1/BCSE306L-CAT-1-F2-2022-2023.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT1/BCSE306L-CAT1-C2-2025-2026-Key.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot E1 - 2024 - Answer Key.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot E2 - 2024 - Question Paper.pdf | 5 | 50.0 | 50.0 | 0 |  |
+| AI/PYQ/FAT/BCSE306L - FAT - E1 - 2024 - Question Paper.pdf | 10 | 100.0 | 100.0 | 0 |  |
+| AI/PYQ/FAT/BCSE306L - FAT - E2 - 2024 - Question Paper.pdf | 10 | 100.0 | 100.0 | 0 |  |
+| AI/PYQ/FAT/BCSE306L - FAT - G2 - 2025 - Question Paper.pdf | 10 | 100.0 | 100.0 | 0 |  |
+| AI/PYQ/FAT/BCSE306L-FAT-B1-2024-2025.pdf | 12 | 100.0 | 100.0 | 0 |  |
+
+## Schema/enum issues
+
+none

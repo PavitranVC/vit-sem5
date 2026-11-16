@@ -1,0 +1,2 @@
+- "AWS/PYQ/FAT/BCSE355L-FAT-G2-2025-2026.pdf" | subject=AWS | course_code=BCSE355L | year=2025-2026 | exam=FAT | slot=G2 | is_answer_key=0 | pages=3
+    page images: C:/Users/vcpav/AppData/Local/Temp/claude/2fa365656c2e3ffa/a912dd4c-d623-449a-bde6-8d6909810170/scratchpad/pages/22019903a1_p1.jpg, C:/Users/vcpav/AppData/Local/Temp/claude/2fa365656c2e3ffa/a912dd4c-d623-449a-bde6-8d6909810170/scratchpad/pages/22019903a1_p2.jpg, C:/Users/vcpav/AppData/Local/Temp/claude/2fa365656c2e3ffa/a912dd4c-d623-449a-bde6-8d6909810170/scratchpad/pages/22019903a1_p3.jpg

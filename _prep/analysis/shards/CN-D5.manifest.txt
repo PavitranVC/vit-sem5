@@ -1,0 +1,4 @@
+- "2026-27 QPs/CN/PYQ/BITE305L/CAT1/BITE305L-CAT1-B2-2025-2026.pdf" | subject=CN | course_code=BITE305L | year=2025-2026 | exam=CAT1 | slot=B2 | is_answer_key=0 | pages=2
+    page images: C:/Users/vcpav/AppData/Local/Temp/claude/2fa365656c2e3ffa/a912dd4c-d623-449a-bde6-8d6909810170/scratchpad/pages/c1a877169e_p1.jpg, C:/Users/vcpav/AppData/Local/Temp/claude/2fa365656c2e3ffa/a912dd4c-d623-449a-bde6-8d6909810170/scratchpad/pages/c1a877169e_p2.jpg
+- "2026-27 QPs/CN/PYQ/BITE305L/FAT/BITE305L-FAT-B2-2025-2026.pdf" | subject=CN | course_code=BITE305L | year=2025-2026 | exam=FAT | slot=B2 | is_answer_key=0 | pages=2
+    page images: C:/Users/vcpav/AppData/Local/Temp/claude/2fa365656c2e3ffa/a912dd4c-d623-449a-bde6-8d6909810170/scratchpad/pages/68cb4d69ff_p1.jpg, C:/Users/vcpav/AppData/Local/Temp/claude/2fa365656c2e3ffa/a912dd4c-d623-449a-bde6-8d6909810170/scratchpad/pages/68cb4d69ff_p2.jpg

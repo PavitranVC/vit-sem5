@@ -1,0 +1,8 @@
+- "2026-27 QPs/AI/PYQ/BECE309L/CAT1/BECE309L-CAT1-E2-2026-2027.pdf" | subject=AI | course_code=BECE309L | year=2026-2027 | exam=CAT1 | slot=E2 | is_answer_key=0 | pages=2 | text_layer=digital
+- "2026-27 QPs/AI/PYQ/BECE309L/CAT1/BECE309L-CAT1-G1-2025-2026.pdf" | subject=AI | course_code=BECE309L | year=2025-2026 | exam=CAT1 | slot=G1 | is_answer_key=0 | pages=3 | text_layer=digital
+- "2026-27 QPs/AI/PYQ/BECE309L/CAT2/BECE309L-CAT2-G1-2025-2026.pdf" | subject=AI | course_code=BECE309L | year=2025-2026 | exam=CAT2 | slot=G1 | is_answer_key=0 | pages=3 | text_layer=digital
+- "2026-27 QPs/AI/PYQ/BITE308L/CAT1/BITE308L-CAT1-D1-2025-2026.pdf" | subject=AI | course_code=BITE308L | year=2025-2026 | exam=CAT1 | slot=D1 | is_answer_key=0 | pages=2 | text_layer=digital
+- "2026-27 QPs/AI/PYQ/BITE308L/CAT1/BITE308L-CAT1-D2-2025-2026.pdf" | subject=AI | course_code=BITE308L | year=2025-2026 | exam=CAT1 | slot=D2 | is_answer_key=0 | pages=2 | text_layer=digital
+- "2026-27 QPs/AI/PYQ/BITE308L/CAT2/BITE308L-CAT2-D2-2025-2026.pdf" | subject=AI | course_code=BITE308L | year=2025-2026 | exam=CAT2 | slot=D2 | is_answer_key=0 | pages=2 | text_layer=digital
+- "2026-27 QPs/AI/PYQ/BITE308L/FAT/BITE308L-FAT-D2-2025-2026.pdf" | subject=AI | course_code=BITE308L | year=2025-2026 | exam=FAT | slot=D2 | is_answer_key=0 | pages=5 | text_layer=digital
+- "2026-27 QPs/AI/PYQ/CSI3003/CAT2/CSI3003-CAT2-E1-2026-2027-AK.pdf" | subject=AI | course_code=CSI3003 | year=2026-2027 | exam=CAT2 | slot=E1 | is_answer_key=1 | pages=9 | text_layer=digital

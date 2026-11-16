@@ -1,0 +1,6 @@
+- "AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key.pdf" | subject=AI | course_code=BCSE306L | year=2023 | exam=CAT2 | slot=B1 | is_answer_key=1 | pages=9 | text_layer=digital
+- "AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key.pdf" | subject=AI | course_code=BCSE306L | year=2023 | exam=CAT2 | slot=B2 | is_answer_key=1 | pages=6 | text_layer=digital
+- "AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot E1 - 2024 - Answer Key.pdf" | subject=AI | course_code=BCSE306L | year=2024 | exam=CAT2 | slot=E1 | is_answer_key=1 | pages=13 | text_layer=digital
+- "AI/PYQ/CAT2/BCSE306L - Artificial Intelligence - CAT-2 - Slot E2 - 2024 - Question Paper.pdf" | subject=AI | course_code=BCSE306L | year=2024 | exam=CAT2 | slot=E2 | is_answer_key=0 | pages=1 | text_layer=digital
+- "AI/PYQ/FAT/BCSE306L - FAT - E1 - 2024 - Question Paper.pdf" | subject=AI | course_code=BCSE306L | year=2024 | exam=FAT | slot=E1 | is_answer_key=0 | pages=5 | text_layer=digital
+- "AI/PYQ/FAT/BCSE306L - FAT - E2 - 2024 - Question Paper.pdf" | subject=AI | course_code=BCSE306L | year=2024 | exam=FAT | slot=E2 | is_answer_key=0 | pages=4 | text_layer=digital

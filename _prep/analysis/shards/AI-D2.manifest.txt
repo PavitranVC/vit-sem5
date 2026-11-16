@@ -1,0 +1,6 @@
+- "AI/PYQ/CAT1/BCSE306L-CAT-1-B1-2023-2024.pdf" | subject=AI | course_code=BCSE306L | year=2023-2024 | exam=CAT1 | slot=B1 | is_answer_key=0 | pages=10 | text_layer=digital
+- "AI/PYQ/CAT1/BCSE306L-CAT-1-B2-2023-2024.pdf" | subject=AI | course_code=BCSE306L | year=2023-2024 | exam=CAT1 | slot=B2 | is_answer_key=0 | pages=8 | text_layer=digital
+- "AI/PYQ/CAT1/BCSE306L-CAT-1-E1-2024-2025.pdf" | subject=AI | course_code=BCSE306L | year=2024-2025 | exam=CAT1 | slot=E1 | is_answer_key=0 | pages=4 | text_layer=digital
+- "AI/PYQ/CAT1/BCSE306L-CAT-1-E2-2024-2025.pdf" | subject=AI | course_code=BCSE306L | year=2024-2025 | exam=CAT1 | slot=E2 | is_answer_key=0 | pages=9 | text_layer=digital
+- "AI/PYQ/CAT1/BCSE306L-CAT-1-F2-2022-2023.pdf" | subject=AI | course_code=BCSE306L | year=2022-2023 | exam=CAT1 | slot=F2 | is_answer_key=0 | pages=2 | text_layer=digital
+- "AI/PYQ/CAT1/BCSE306L-CAT1-C2-2025-2026-Key.pdf" | subject=AI | course_code=BCSE306L | year=2025-2026 | exam=CAT1 | slot=C2 | is_answer_key=1 | pages=6 | text_layer=digital

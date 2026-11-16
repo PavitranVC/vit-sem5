@@ -1,0 +1,6 @@
+- "2026-27 QPs/AI/PYQ/BCSE306L/FAT/BCSE306L-FAT-D1-2025-2026.pdf" | subject=AI | course_code=BCSE306L | year=2025-2026 | exam=FAT | slot=D1 | is_answer_key=0 | pages=4 | text_layer=scanned
+- "2026-27 QPs/AI/PYQ/BCSE306L/FAT/BCSE306L-FAT-D2-2025-2026.pdf" | subject=AI | course_code=BCSE306L | year=2025-2026 | exam=FAT | slot=D2 | is_answer_key=0 | pages=4 | text_layer=scanned
+- "2026-27 QPs/AI/PYQ/BECE309L/CAT2/BECE309L-CAT2-G2-2025-2026.pdf" | subject=AI | course_code=BECE309L | year=2025-2026 | exam=CAT2 | slot=G2 | is_answer_key=0 | pages=2 | text_layer=scanned
+- "2026-27 QPs/AI/PYQ/BITE308L/CAT1/BITE308L-CAT1-E1-2026-2027.pdf" | subject=AI | course_code=BITE308L | year=2026-2027 | exam=CAT1 | slot=E1 | is_answer_key=0 | pages=2 | text_layer=scanned
+- "AI/PYQ/FAT/BCSE306L - FAT - G2 - 2025 - Question Paper.pdf" | subject=AI | course_code=BCSE306L | year=2025 | exam=FAT | slot=G2 | is_answer_key=0 | pages=6 | text_layer=scanned
+- "AI/PYQ/FAT/BCSE306L-FAT-B1-2024-2025.pdf" | subject=AI | course_code=BCSE306L | year=2024-2025 | exam=FAT | slot=B1 | is_answer_key=0 | pages=4 | text_layer=scanned
