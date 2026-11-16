@@ -1,0 +1,800 @@
+{
+ "meta": {
+  "subject": "AI (BCSE306L Artificial Intelligence)",
+  "student_slot": "C2",
+  "probability_formula": "probability = (2*k_recent + k_older + 1) / (2*n_recent + n_older + 2); k = papers containing the topic, n = papers; recent = 2026-27. Primary 'probability' uses BCSE306L FAT papers only (n_recent=1, n_older=6). 'probability_all_papers' uses CAT1/CAT2/FAT papers whose syllabus window covers the topic's module (CAT1=M1-M3, CAT2=M3-M5, FAT=M1-M7; observed).",
+  "backtest_confidence": {
+   "tier": "pending (Phase 3)",
+   "hits": null,
+   "of": null
+  },
+  "papers_used": 25,
+  "papers_used_detail": "25 distinct BCSE306L papers (7 FAT, 11 CAT1, 7 CAT2) after merging QP/AK duplicates; sister-course papers (BITE308L, BECE309L, CSI3003) used only for sister comparison",
+  "tag_agreement_rate": 0.886,
+  "tag_agreement_detail": "orchestrator re-read of 35/344 questions: type 30/35, bloom 30/35, scenario wrapper 33/35, text 34/35",
+  "small_n_warning": "Only one 2026-27 FAT (B1) exists, so 'recent' FAT evidence is a single paper. Treat probabilities as ranks, not calibrated chances.",
+  "fat_blueprint_observed": "10 questions x 10 marks; all 7 modules in 7 of 7 FATs; typical order Q1 M1, Q2-Q3 M2, Q4-Q5 M3, Q5-Q7 M4, Q7-Q8 M5, Q9 M6, Q10 M7; Q9 and Q10 each 'a OR b' in 4 of 7 (B1 2026-27, D1, D2 2025-26, G2 2025); B1 2024-25 was 'any 10 of 12'."
+ },
+ "predicted_topics": [
+  {
+   "rank": 1,
+   "teach_order": 4,
+   "topic_id": "FOL_REP",
+   "topic_name": "English to FOL / CNF conversion",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.9,
+   "appearance_ratio": "7 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.944,
+   "appearance_ratio_all_papers": "14 of 14 papers whose syllabus window covers M4",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "fat_mark_share": 0.079,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q3",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q9a",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q9b",
+    "BCSE306L-CAT2-B2-2026-2027:Q3a",
+    "BCSE306L-FAT-B1-2026-2027:Q7a",
+    "BCSE306L-FAT-B1-2026-2027:Q7b",
+    "BCSE306L-FAT-D1-2025-2026:Q6",
+    "BCSE306L-FAT-D2-2025-2026:Q6a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Translate statements a to e into First Order Logic (cite BCSE306L-FAT-B1-2026-2027:Q7a)",
+   "observed_traps": [
+    "'Exactly one' / 'only one' needs a uniqueness clause, not just an existential. [BCSE306L - Artificial Intelligence - CAT-2 - Slot E2 - 2024 - Question Paper:Q3A]"
+   ],
+   "rubric_mandatory_elements": [
+    "Eliminate implication, De Morgan, distribution when converting to CNF [BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q3c]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q2ai",
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q2aii",
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q2A",
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q2B"
+   ]
+  },
+  {
+   "rank": 2,
+   "teach_order": 1,
+   "topic_id": "INFORMED",
+   "topic_name": "Informed search: Greedy best-first / A* / heuristics",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.8,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.88,
+   "appearance_ratio_all_papers": "16 of 18 papers whose syllabus window covers M2",
+   "recent_ratio_all_papers": "5 of 5 2026-27 papers",
+   "fat_mark_share": 0.086,
+   "supporting_files": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q5",
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q9a",
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q9b",
+    "BCSE306L-CAT1-B2-2026-2027:Q5b",
+    "BCSE306L-CAT1-C1-2026-2027:Q4",
+    "BCSE306L-CAT1-C2-2026-2027:Q4a",
+    "BCSE306L-CAT1-C2-2026-2027:Q4b",
+    "BCSE306L-FAT-B1-2026-2027:Q4"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Give expansion order and returned path for DFS, BFS, A* graph search from S to G (cite BCSE306L-FAT-B1-2026-2027:Q4)",
+   "observed_traps": [
+    "A node can appear without a printed h value (node C has no h); state your assumption explicitly. [BCSE306L-FAT-B1-2026-2027:Q4]",
+    "Two heuristics compared: decide admissibility by comparing h with true cost h*. [BCSE306L-CAT1-D1-2025-2026-AK:Q4b]",
+    "15-puzzle A*: full solve is too long; key accepted following the A* flow with partial credit. [BCSE306L-CAT1-D2-2025-2026-AK:Q4]"
+   ],
+   "rubric_mandatory_elements": [
+    "Table: path to state expanded, path length, total estimated cost f=g+h, expanded list [BCSE306L-CAT1-B1-2026-2027-AK:Q5]",
+    "f(n)=g(n)+h(n) per node; path and cost per heuristic; admissibility vs h* [BCSE306L-CAT1-D1-2025-2026-AK:Q4a]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q5",
+    "BCSE306L-CAT1-D1-2025-2026-AK:Q4a",
+    "BCSE306L-CAT1-D1-2025-2026-AK:Q4b",
+    "BCSE306L-CAT1-D2-2025-2026-AK:Q4"
+   ]
+  },
+  {
+   "rank": 3,
+   "teach_order": 5,
+   "topic_id": "RESOLUTION",
+   "topic_name": "Resolution refutation proof (prop./FOL)",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.8,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.833,
+   "appearance_ratio_all_papers": "12 of 14 papers whose syllabus window covers M4",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "fat_mark_share": 0.062,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q3",
+    "BCSE306L-CAT2-B2-2026-2027:Q4",
+    "BCSE306L-FAT-B1-2026-2027:Q7c",
+    "BCSE306L-FAT-D1-2025-2026:Q6",
+    "BCSE306L-FAT-D2-2025-2026:Q6b",
+    "BCSE306L-FAT-D2-2025-2026:Q7b",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q6",
+    "BCSE306L-FAT-B1-2024-2025:Q5"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Use resolution refutation to prove Curiosity killed Tuna (cite BCSE306L-FAT-B1-2026-2027:Q7c)",
+   "observed_traps": [
+    "Negate the goal and add it to the clause set before resolving; keys show the unifier at each step down to the empty clause. [BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q2]"
+   ],
+   "rubric_mandatory_elements": [
+    "Predicate form, clause form, negated goal, unifiers, empty clause [BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q2]",
+    "CNF clauses listed and numbered, negated goal, derivation to empty clause [BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key:Q5a]"
+   ],
+   "worked_examples": [
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q2",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key:Q5a",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot E1 - 2024 - Answer Key:Q2"
+   ]
+  },
+  {
+   "rank": 4,
+   "teach_order": 6,
+   "topic_id": "NLP_IR",
+   "topic_name": "NLP, language models, information retrieval/extraction",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.8,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.8,
+   "appearance_ratio_all_papers": "6 of 7 papers whose syllabus window covers M7",
+   "recent_ratio_all_papers": "1 of 1 2026-27 papers",
+   "fat_mark_share": 0.111,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q8",
+    "BCSE306L-FAT-B1-2026-2027:Q8",
+    "BCSE306L-FAT-B1-2026-2027:Q10b",
+    "BCSE306L-FAT-D1-2025-2026:Q10a",
+    "BCSE306L-FAT-D2-2025-2026:Q10a",
+    "BCSE306L-FAT-D2-2025-2026:Q10b",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q10a",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q10b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain unigram, bigram, trigram language models with examples (cite BCSE306L-FAT-B1-2026-2027:Q8)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 5,
+   "teach_order": 2,
+   "topic_id": "UNINFORMED",
+   "topic_name": "Uninformed search trace (BFS/DFS/DLS/IDS)",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.8,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.68,
+   "appearance_ratio_all_papers": "13 of 18 papers whose syllabus window covers M2",
+   "recent_ratio_all_papers": "3 of 5 2026-27 papers",
+   "fat_mark_share": 0.062,
+   "supporting_files": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q4a",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q3",
+    "BCSE306L-CAT1-B2-2026-2027:Q4a",
+    "BCSE306L-CAT1-B2-2026-2027:Q4b",
+    "BCSE306L-FAT-B1-2026-2027:Q4",
+    "BCSE306L-FAT-D1-2025-2026:Q2",
+    "BCSE306L-FAT-D2-2025-2026:Q2b",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q2a"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Give expansion order and returned path for DFS, BFS, A* graph search from S to G (cite BCSE306L-FAT-B1-2026-2027:Q4)",
+   "observed_traps": [
+    "Ties broken alphabetically; in graph search a state is expanded only once (repeated states skipped). [BCSE306L-FAT-B1-2026-2027:Q4]",
+    "DFS can oscillate between two nodes (b-d-b-d); the key expects the loop to be noticed and BFS preferred. [BCSE306L-CAT-1-B2-2023-2024:Q3]",
+    "IDS restarts from the root at every depth limit; keys list the order for each iteration separately. [BCSE306L-CAT1-D2-2025-2026-AK:Q3]"
+   ],
+   "rubric_mandatory_elements": [
+    "Pop/expansion order per algorithm; 3 marks per algorithm (1.5 stack/queue + 1.5 traversal) [BCSE306L-CAT-1-B1-2023-2024:Q3a]",
+    "Completeness, optimality, time and space for each algorithm [BCSE306L-CAT-1-B1-2023-2024:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q4a",
+    "BCSE306L-CAT1-D2-2025-2026-AK:Q3",
+    "BCSE306L-CAT-1-B1-2023-2024:Q3a",
+    "BCSE306L-CAT-1-B1-2023-2024:Q3b"
+   ]
+  },
+  {
+   "rank": 6,
+   "teach_order": 3,
+   "topic_id": "ADVERSARIAL",
+   "topic_name": "Minimax + alpha-beta pruning",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.8,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.515,
+   "appearance_ratio_all_papers": "14 of 25 papers whose syllabus window covers M3",
+   "recent_ratio_all_papers": "2 of 6 2026-27 papers",
+   "fat_mark_share": 0.086,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q10a",
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q10b",
+    "BCSE306L-CAT2-B2-2026-2027:Q2a",
+    "BCSE306L-CAT2-B2-2026-2027:Q2b",
+    "BCSE306L-CAT2-B2-2026-2027:Q2c",
+    "BCSE306L-FAT-B1-2026-2027:Q6a",
+    "BCSE306L-FAT-B1-2026-2027:Q6b",
+    "BCSE306L-FAT-D1-2025-2026:Q4"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Apply minimax and give value of each internal node (cite BCSE306L-FAT-B1-2026-2027:Q6a)",
+   "observed_traps": [
+    "Root can be a MIN node ('Assume min takes the first call'). [BCSE306L - Artificial Intelligence - CAT-2 - Slot E2 - 2024 - Question Paper:Q1]",
+    "Pruned set changes with expansion order: left-to-right and right-to-left asked as separate parts. [BCSE306L-CAT2-D1-2025-2026-AK:Q1iii]"
+   ],
+   "rubric_mandatory_elements": [
+    "Backed-up value of every internal node and the chosen root move [BCSE306L-CAT2-D1-2025-2026-AK:Q1i]",
+    "List of pruned nodes with the alpha/beta values at each prune [BCSE306L-CAT2-D1-2025-2026-AK:Q1ii]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q1i",
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q1ii",
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q1iii",
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q1a"
+   ]
+  },
+  {
+   "rank": 7,
+   "teach_order": 13,
+   "topic_id": "PLANNING_STRIPS",
+   "topic_name": "STRIPS / classical planning (blocks world, POP, planning graph)",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.7,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.7,
+   "appearance_ratio_all_papers": "6 of 7 papers whose syllabus window covers M6",
+   "recent_ratio_all_papers": "0 of 1 2026-27 papers",
+   "fat_mark_share": 0.117,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q6",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q6",
+    "BCSE306L-FAT-D1-2025-2026:Q9a",
+    "BCSE306L-FAT-D1-2025-2026:Q9b",
+    "BCSE306L-FAT-D2-2025-2026:Q9a",
+    "BCSE306L-FAT-D2-2025-2026:Q9b",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q9a.1",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q9a.2"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Give STRIPS representation and a partial-order plan for the blocks world problem. (cite BCSE306L-FAT-D1-2025-2026:Q9a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 8,
+   "teach_order": 14,
+   "topic_id": "PLANNING_HTN",
+   "topic_name": "Hierarchical (HTN) planning, multi-agent planning",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.7,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.7,
+   "appearance_ratio_all_papers": "5 of 7 papers whose syllabus window covers M6",
+   "recent_ratio_all_papers": "1 of 1 2026-27 papers",
+   "fat_mark_share": 0.062,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q7",
+    "BCSE306L-FAT-B1-2026-2027:Q10a",
+    "BCSE306L-FAT-D1-2025-2026:Q9b",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q9b.1",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q9b.2",
+    "BCSE306L-FAT-B1-2024-2025:Q8"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain hierarchical planning and the role of high-level tasks and primitive actions (cite BCSE306L-FAT-B1-2026-2027:Q10a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 9,
+   "teach_order": 11,
+   "topic_id": "BAYESNET",
+   "topic_name": "Bayesian network inference (joint / conditional from CPTs)",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.7,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.556,
+   "appearance_ratio_all_papers": "8 of 14 papers whose syllabus window covers M5",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "fat_mark_share": 0.074,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q5",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q10b",
+    "BCSE306L-FAT-B1-2026-2027:Q9a",
+    "BCSE306L-FAT-B1-2026-2027:Q9b",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q8",
+    "BCSE306L-FAT-B1-2024-2025:Q7a",
+    "BCSE306L-FAT-B1-2024-2025:Q7b"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Compute joint probability A,J,M,~B,~E and probability J,M,A from the alarm network (cite BCSE306L-FAT-B1-2026-2027:Q9a)",
+   "observed_traps": [
+    "Joint probability includes negated variables (~B, ~E): use 1-P from the CPT. [BCSE306L-FAT-B1-2026-2027:Q9a]"
+   ],
+   "rubric_mandatory_elements": [
+    "Factorise the joint as a product of CPT entries; sum out hidden variables [BCSE306L-CAT2-D1-2025-2026-AK:Q5]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q5",
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q5",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q4b"
+   ]
+  },
+  {
+   "rank": 10,
+   "teach_order": 10,
+   "topic_id": "LOCAL",
+   "topic_name": "Hill climbing + simulated annealing",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.7,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.455,
+   "appearance_ratio_all_papers": "11 of 25 papers whose syllabus window covers M3",
+   "recent_ratio_all_papers": "3 of 6 2026-27 papers",
+   "fat_mark_share": 0.062,
+   "supporting_files": [
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q4",
+    "BCSE306L-CAT1-C2-2026-2027:Q5a",
+    "BCSE306L-CAT1-C2-2026-2027:Q5b",
+    "BCSE306L-CAT2-B2-2026-2027:Q1",
+    "BCSE306L-FAT-B1-2026-2027:Q5a",
+    "BCSE306L-FAT-B1-2026-2027:Q5b",
+    "BCSE306L-FAT-B1-2026-2027:Q5c",
+    "BCSE306L-FAT-D2-2025-2026:Q5"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Define local and global heuristic in hill climbing (cite BCSE306L-FAT-B1-2026-2027:Q5a)",
+   "observed_traps": [
+    "Asked whether hill climbing actually reaches the goal; answer from neighbour h values (it may stall). [BCSE306L-FAT-B1-2026-2027:Q5c]",
+    "Simulated annealing needs the acceptance formula with a numeric example (e^(-5/20)=0.779). [BCSE306L-CAT1-C2-2025-2026-Key:Q5b]"
+   ],
+   "rubric_mandatory_elements": [
+    "Algorithm (1.5) + why hill climbing fails (2); algorithm (1.5) + why simulated annealing succeeds (2) [BCSE306L-CAT1-D1-2025-2026-AK:Q5]",
+    "Local maximum, plateau/shoulder, ridge named with a labelled landscape diagram [BCSE306L-CAT1-C2-2025-2026-Key:Q5a]",
+    "P = exp(deltaV/T) and a cooling schedule T(k+1) = alpha*T(k) [BCSE306L-CAT1-C2-2025-2026-Key:Q5b]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-D1-2025-2026-AK:Q5",
+    "BCSE306L-CAT-1-B2-2023-2024:Q5b",
+    "BCSE306L-CAT-1-E1-2024-2025:Q5",
+    "BCSE306L-CAT-1-E2-2024-2025:Q5"
+   ]
+  },
+  {
+   "rank": 11,
+   "teach_order": 7,
+   "topic_id": "PEAS_ENV",
+   "topic_name": "PEAS + task-environment properties",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.6,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.84,
+   "appearance_ratio_all_papers": "16 of 18 papers whose syllabus window covers M1",
+   "recent_ratio_all_papers": "4 of 5 2026-27 papers",
+   "fat_mark_share": 0.062,
+   "supporting_files": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q2",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q1",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q7",
+    "BCSE306L-CAT1-B2-2026-2027:Q2",
+    "BCSE306L-CAT1-C1-2026-2027:Q1a",
+    "BCSE306L-CAT1-C1-2026-2027:Q1b",
+    "BCSE306L-CAT1-C1-2026-2027:Q2",
+    "BCSE306L-CAT1-C2-2026-2027:Q2a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Name AI subfields for healthcare assistant; give PEAS and environment properties. (cite BCSE306L-FAT-D1-2025-2026:Q1)",
+   "observed_traps": [
+    "A drone operating in a cooperative fleet is multi-agent; all SIX dimensions need a one-sentence justification each. [BCSE306L-CAT1-C2-2026-2027:Q2b]"
+   ],
+   "rubric_mandatory_elements": [
+    "4 PEAS components (4) + environment classification (3) + agent architecture diagram with justification (3) [BCSE306L-CAT1-D1-2025-2026-AK:Q1]",
+    "2.5 marks per agent: observable, agents, deterministic, episodic, static, discrete [BCSE306L-CAT-1-B1-2023-2024:Q2]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q2",
+    "BCSE306L-CAT1-D1-2025-2026-AK:Q1",
+    "BCSE306L-CAT1-D2-2025-2026-AK:Q1",
+    "BCSE306L-CAT-1-B1-2023-2024:Q2"
+   ]
+  },
+  {
+   "rank": 12,
+   "teach_order": 9,
+   "topic_id": "FORMULATION",
+   "topic_name": "Problem formulation / state space (8-puzzle heuristics & parity, river crossing, water jug, Hanoi)",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.6,
+   "appearance_ratio": "4 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.64,
+   "appearance_ratio_all_papers": "11 of 18 papers whose syllabus window covers M2",
+   "recent_ratio_all_papers": "4 of 5 2026-27 papers",
+   "fat_mark_share": 0.049,
+   "supporting_files": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q4b",
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q6",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q2",
+    "BCSE306L-CAT1-B2-2026-2027:Q3",
+    "BCSE306L-CAT1-C1-2026-2027:Q3a",
+    "BCSE306L-CAT2-B2-2026-2027:Q1",
+    "BCSE306L-FAT-B1-2026-2027:Q3",
+    "BCSE306L-FAT-B1-2024-2025:Q2"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Compute inversion parity, reachability and minimum moves with Manhattan heuristic for 8-puzzle (cite BCSE306L-FAT-B1-2026-2027:Q3)",
+   "observed_traps": [
+    "8-puzzle: inversion count ignores the blank; parity decides reachability before any moves. [BCSE306L-FAT-B1-2026-2027:Q3]"
+   ],
+   "rubric_mandatory_elements": [
+    "Initial state, state space, actions, goal test, path cost [BCSE306L-CAT1-B1-2026-2027-AK:Q4b]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q4b",
+    "BCSE306L-CAT-1-E1-2024-2025:Q4a",
+    "BCSE306L-CAT-1-E2-2024-2025:Q3a"
+   ]
+  },
+  {
+   "rank": 13,
+   "teach_order": 12,
+   "topic_id": "BAYES",
+   "topic_name": "Bayes' rule / conditional & total probability",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.6,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.556,
+   "appearance_ratio_all_papers": "9 of 14 papers whose syllabus window covers M5",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "fat_mark_share": 0.074,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q4",
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q7",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q10a",
+    "BCSE306L-FAT-D1-2025-2026:Q7a",
+    "BCSE306L-FAT-D1-2025-2026:Q7b",
+    "BCSE306L-FAT-D2-2025-2026:Q8",
+    "BCSE306L-FAT-B1-2024-2025:Q6a",
+    "BCSE306L-FAT-B1-2024-2025:Q6b"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Explain uncertainty, why Bayes' theorem is essential, with example. (cite BCSE306L-FAT-D1-2025-2026:Q7a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "Bayes formula with total probability in the denominator, numeric result [BCSE306L-CAT2-D2-2025-2026-AK:Q4A]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q4A",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key:Q4b",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key:Q5b"
+   ]
+  },
+  {
+   "rank": 14,
+   "teach_order": 8,
+   "topic_id": "INTRO",
+   "topic_name": "AI foundations, history, types of AI",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.6,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.4,
+   "appearance_ratio_all_papers": "8 of 18 papers whose syllabus window covers M1",
+   "recent_ratio_all_papers": "1 of 5 2026-27 papers",
+   "fat_mark_share": 0.062,
+   "supporting_files": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q1",
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q1",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q8",
+    "BCSE306L-FAT-D1-2025-2026:Q1",
+    "BCSE306L-FAT-D2-2025-2026:Q10a",
+    "BCSE306L-FAT-B1-2024-2025:Q10"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Name AI subfields for healthcare assistant; give PEAS and environment properties. (cite BCSE306L-FAT-D1-2025-2026:Q1)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "Four approaches (thinking/acting humanly/rationally, Turing test) (2) + timeline (3) [BCSE306L-CAT-1-B1-2023-2024:Q1a]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q1",
+    "BCSE306L-CAT-1-B1-2023-2024:Q1a"
+   ]
+  },
+  {
+   "rank": 15,
+   "teach_order": 15,
+   "topic_id": "AGENT",
+   "topic_name": "Agent types & architectures (reflex/model/goal/utility/learning, rationality)",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.5,
+   "appearance_ratio": "3 of 7 FATs",
+   "recent_ratio": "1 of 1 FATs 2026-27",
+   "probability_all_papers": 0.76,
+   "appearance_ratio_all_papers": "13 of 18 papers whose syllabus window covers M1",
+   "recent_ratio_all_papers": "5 of 5 2026-27 papers",
+   "fat_mark_share": 0.042,
+   "supporting_files": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q3a",
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q3b",
+    "BCSE306L-CAT1-B2-2026-2027:Q1i",
+    "BCSE306L-CAT1-B2-2026-2027:Q1ii",
+    "BCSE306L-CAT1-B2-2026-2027:Q1iii",
+    "BCSE306L-CAT1-C1-2026-2027:Q2",
+    "BCSE306L-CAT1-C2-2026-2027:Q1a",
+    "BCSE306L-CAT1-C2-2026-2027:Q1b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "State true/false with brief explanation for five assertions on rational agents (cite BCSE306L-FAT-B1-2026-2027:Q1)",
+   "observed_traps": [
+    "Scoring routes (penalise tolls, reward speed) means utility-based, not goal-based. [BCSE306L-CAT1-C2-2025-2026-Key:Q1a]"
+   ],
+   "rubric_mandatory_elements": [
+    "Diagram (2) + explanation (3) [BCSE306L-CAT1-D1-2025-2026-AK:Q2a]",
+    "Name the agent type and justify from cues in the scenario [BCSE306L-CAT1-C2-2025-2026-Key:Q1a]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q3a",
+    "BCSE306L-CAT1-B1-2026-2027-AK:Q3b",
+    "BCSE306L-CAT1-D1-2025-2026-AK:Q2a",
+    "BCSE306L-CAT1-D1-2025-2026-AK:Q2b"
+   ]
+  },
+  {
+   "rank": 16,
+   "teach_order": 18,
+   "topic_id": "PROP_INF",
+   "topic_name": "Propositional inference, truth tables, validity",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.5,
+   "appearance_ratio": "4 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.722,
+   "appearance_ratio_all_papers": "11 of 14 papers whose syllabus window covers M4",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "fat_mark_share": 0.037,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q2",
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q9b",
+    "BCSE306L-CAT2-B2-2026-2027:Q3b",
+    "BCSE306L-CAT2-B2-2026-2027:Q3c",
+    "BCSE306L-FAT-D1-2025-2026:Q5a",
+    "BCSE306L-FAT-B1-2024-2025:Q11a",
+    "BCSE306L-FAT-B1-2024-2025:Q11b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Prove validity of given argument using rules of inference. (cite BCSE306L-FAT-D1-2025-2026:Q5a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "Classify each formula as valid / satisfiable / unsatisfiable [BCSE306L-CAT2-D1-2025-2026-AK:Q2b]",
+    "Name the inference rule used at each step (Modus Ponens, conjunction introduction) [BCSE306L-CAT2-D2-2025-2026-AK:Q3B]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q2b",
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q3B",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q3b",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q3c"
+   ]
+  },
+  {
+   "rank": 17,
+   "teach_order": 19,
+   "topic_id": "CHAINING",
+   "topic_name": "Forward / backward chaining",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.5,
+   "appearance_ratio": "4 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.611,
+   "appearance_ratio_all_papers": "9 of 14 papers whose syllabus window covers M4",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "fat_mark_share": 0.02,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q2",
+    "BCSE306L-CAT2-B2-2026-2027:Q5a",
+    "BCSE306L-CAT2-B2-2026-2027:Q5b",
+    "BCSE306L-FAT-D1-2025-2026:Q5b",
+    "BCSE306L-FAT-D2-2025-2026:Q7a",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q7b",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q7c"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Use forward chaining to prove 'Curiosity killed the cat' from the knowledge base. (cite BCSE306L-FAT-D1-2025-2026:Q5b)",
+   "observed_traps": [
+    "A rule whose premise is unknown does not fire; keys note 'R2 not triggered'. [BCSE306L - Artificial Intelligence - CAT-2 - Slot E1 - 2024 - Answer Key:Q3]"
+   ],
+   "rubric_mandatory_elements": [
+    "Forward: rules fired in order with each new fact (A6, A7, ...); backward: goal-driven rule chain [BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key:Q3a]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q3",
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q3A",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key:Q3a",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot E1 - 2024 - Answer Key:Q3"
+   ]
+  },
+  {
+   "rank": 18,
+   "teach_order": 16,
+   "topic_id": "UCS",
+   "topic_name": "Uniform cost search",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.4,
+   "appearance_ratio": "3 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.52,
+   "appearance_ratio_all_papers": "9 of 18 papers whose syllabus window covers M2",
+   "recent_ratio_all_papers": "3 of 5 2026-27 papers",
+   "fat_mark_share": 0.025,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q9a",
+    "BCSE306L-CAT1-B2-2026-2027:Q5a",
+    "BCSE306L-CAT1-C1-2026-2027:Q3b",
+    "BCSE306L-CAT1-C2-2026-2027:Q3a",
+    "BCSE306L-CAT1-C2-2026-2027:Q3b",
+    "BCSE306L-FAT-D1-2025-2026:Q2",
+    "BCSE306L-FAT-D2-2025-2026:Q2a"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Run DFS, IDDFS and UCS from A to J; list traversal order and compare path costs. (cite BCSE306L-FAT-D1-2025-2026:Q2)",
+   "observed_traps": [
+    "Goal test happens when the goal is dequeued, not when generated; two paths can tie at the optimal cost (both cost 7). [BCSE306L-CAT1-C2-2025-2026-Key:Q3a]",
+    "Equal-cost frontier entries resolved alphabetically. [BCSE306L-CAT-1-B2-2023-2024:Q4]",
+    "Both the traversed (expansion) path and the actual solution path are asked. [BCSE306L-CAT-1-E2-2024-2025:Q3b]"
+   ],
+   "rubric_mandatory_elements": [
+    "Priority queue + visited per step (4), search tree per step (3), path and cost of each goal (2), minimum-cost goal (1) [BCSE306L-CAT-1-B2-2023-2024:Q4]",
+    "Frontier with g values after every expansion; goal test at dequeue [BCSE306L-CAT1-C2-2025-2026-Key:Q3a]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-D1-2025-2026-AK:Q3",
+    "BCSE306L-CAT-1-B2-2023-2024:Q4",
+    "BCSE306L-CAT-1-E2-2024-2025:Q3b",
+    "BCSE306L-CAT1-C2-2025-2026-Key:Q3a"
+   ]
+  },
+  {
+   "rank": 19,
+   "teach_order": 17,
+   "topic_id": "GA",
+   "topic_name": "Genetic algorithm",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.4,
+   "appearance_ratio": "3 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.273,
+   "appearance_ratio_all_papers": "7 of 25 papers whose syllabus window covers M3",
+   "recent_ratio_all_papers": "1 of 6 2026-27 papers",
+   "fat_mark_share": 0.037,
+   "supporting_files": [
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q5",
+    "BCSE306L-CAT1-C1-2026-2027:Q5",
+    "BCSE306L-FAT-D2-2025-2026:Q5",
+    "BCSE306L - FAT - G2 - 2025 - Question Paper:Q5"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain GA mechanics and four processes; give a problem where GA beats hill climbing and annealing. (cite BCSE306L-FAT-D2-2025-2026:Q5)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "Chromosome design, initialisation, fitness, selection, crossover, mutation, repeat [BCSE306L-CAT1-D2-2025-2026-AK:Q5]",
+    "Encoding example and fitness function (8-queens: non-attacking pairs) [BCSE306L-CAT-1-B1-2023-2024:Q5]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT1-D2-2025-2026-AK:Q5",
+    "BCSE306L-CAT-1-B1-2023-2024:Q5",
+    "BCSE306L-CAT-1-B2-2023-2024:Q5a"
+   ]
+  },
+  {
+   "rank": 20,
+   "teach_order": 20,
+   "topic_id": "NAIVE_BAYES",
+   "topic_name": "Naive Bayes classification",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.3,
+   "appearance_ratio": "2 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.444,
+   "appearance_ratio_all_papers": "7 of 14 papers whose syllabus window covers M5",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "fat_mark_share": 0.025,
+   "supporting_files": [
+    "BCSE306L - FAT - E1 - 2024 - Question Paper:Q4",
+    "BCSE306L-FAT-D1-2025-2026:Q8"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Classify X=(age<40, cibil=normal, Employed=yes) as accept/reject with Naive Bayes. (cite BCSE306L-FAT-D1-2025-2026:Q8)",
+   "observed_traps": [
+    "A zero conditional count makes the class score 0 (key shows P(Male,Fatigue,Cough|COVID-19)=0). [BCSE306L - Artificial Intelligence - CAT-2 - Slot E1 - 2024 - Answer Key:Q5]"
+   ],
+   "rubric_mandatory_elements": [
+    "Priors, per-class product of conditionals, compare classes [BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q5]"
+   ],
+   "worked_examples": [
+    "BCSE306L-CAT2-D1-2025-2026-AK:Q4",
+    "BCSE306L-CAT2-D2-2025-2026-AK:Q4B",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B1 - 2023 - Answer Key:Q5",
+    "BCSE306L - Artificial Intelligence - CAT-2 - Slot B2 - 2023 - Answer Key:Q4a"
+   ]
+  },
+  {
+   "rank": 21,
+   "teach_order": 21,
+   "topic_id": "VISION",
+   "topic_name": "Perception / object recognition / image retrieval",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.3,
+   "appearance_ratio": "2 of 7 FATs",
+   "recent_ratio": "0 of 1 FATs 2026-27",
+   "probability_all_papers": 0.3,
+   "appearance_ratio_all_papers": "2 of 7 papers whose syllabus window covers M7",
+   "recent_ratio_all_papers": "0 of 1 2026-27 papers",
+   "fat_mark_share": 0.025,
+   "supporting_files": [
+    "BCSE306L - FAT - E2 - 2024 - Question Paper:Q8",
+    "BCSE306L-FAT-D1-2025-2026:Q10b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain one object recognition method with diagrams and examples. (cite BCSE306L-FAT-D1-2025-2026:Q10b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  }
+ ],
+ "no_clear_pattern": [
+  "Which slot-1 question reappears in slot 2: slot-pair same-archetype rate 0.69 equals the different-year baseline 0.67 (observed), so C1 does not predict C2 beyond the syllabus",
+  "Verbatim reuse of older questions: 0 identical in 2026-27 papers (max text similarity 0.60)",
+  "Step-mark splits: stated in only 19 of 96 answer-key rows; penalty rules in 2 of 96",
+  "Knowledge representation (frames, semantic nets, expert systems): appears only in CAT1 E1 2024-25 Q2b and sister papers",
+  "Which M6 sub-type (STRIPS vs hierarchical) is asked: both occur, alternated via the Q9 OR choice"
+ ],
+ "slot_pair_hit_rates": {
+  "Identical": 0.0,
+  "Same concept new numbers": 0.689,
+  "Same module only": 0.311,
+  "Unrelated": 0.0,
+  "_n": "90 questions in 10 slot pairs",
+  "_baseline_different_year_same_concept": 0.669,
+  "_cross_letter_same_year_same_concept": 0.647,
+  "_sister_courses_same_concept": 0.603
+ }
+}
