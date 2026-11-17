@@ -57,7 +57,7 @@ Teach order (I): tier p >= 0.75 by module, then 0.50-0.75, then the rest (`teach
 | CAT1 | older | 7 | 3.36 | 6.4 | 4.5 | 21.0 |
 | CAT1 | recent_2026_27 | 2 | 3.1 | 50.0 | 10.0 | 9.0 |
 | CAT2 | older | 7 | 3.23 | 14.0 | 21.5 | 3.65 |
-| CAT2 | recent_2026_27 | 1 | 3.22 | 88.9 | 28.6 | 2.5 |
+| CAT2 | recent_2026_27 | 1 | 3.22 | 88.9 | 0.0 | None |
 | FAT | older | 7 | 3.24 | 18.0 | 35.4 | 1.75 |
 | all | scenario wrapper % by start year | 2023: 9.0, 2024: 13.2, 2025: 19.2, 2026: 68.4 | | | | |
 

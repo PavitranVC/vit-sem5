@@ -1,0 +1,53 @@
+{
+ "blueprint": "10 x 10 FAT in 9 of 11 (C2 2022-23 and A1 2025-26 printed 11-13 numbered questions); all 7 modules in 10 of 11. Typical order Q1 M1 (layers/topologies), Q2 M2 (switching/delay), Q3-Q4 M3 (error detection, MAC, flow control), Q4-Q6 M4 (IPv4 subnetting, fragmentation), Q6-Q7 M5 (routing), Q7-Q9 M6 (congestion, TCP), Q8-Q10 M7 (application layer). Your slot letter's last FATs (F1, F2 2025-26) moved M3 to Q9-Q10. No 2026-27 BCSE308L FAT in the corpus; 2026-27 evidence = CAT-1/CAT-2 C1 and C2 plus sister FATs BACSE203 B1 and CBS3001 C2.",
+ "small_n_warning": "No 2026-27 BCSE308L FAT exists (n_recent = 0 for the FAT formula). Use the 2026-27 CAT and sister-FAT columns as recency signal.",
+ "traps": {
+  "IPv4 addressing / subnetting / CIDR": [
+   [
+    "Allocate largest blocks first (50 hosts -> /26, 25 -> /27, 12 -> /28) and give exact ranges",
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q2"
+   ],
+   [
+    "After allocating all branches, also asked for the number of addresses left",
+    "BCSE308L-FAT-F2-2025-2026:Q4"
+   ]
+  ],
+  "IP fragmentation": [
+   [
+    "Different MTU per link: fragment at R1 and again at R2, then count fragments arriving at Host B; offsets in 8-byte units",
+    "BCSE308L-FAT-F2-2025-2026:Q3iv"
+   ],
+   [
+    "Header given in hex: decode IHL, TTL, protocol, DF/MF and offset before answering",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q3"
+   ]
+  ],
+  "Delay / throughput calculation": [
+   [
+    "Circuit-switched delay = setup/teardown bits + data bits over rate + propagation; compute for 3 data sizes then conclude on efficiency",
+    "BCSE308L-FAT-F2-2025-2026:Q2"
+   ]
+  ],
+  "MAC (ALOHA/CSMA/CD/CA)": [
+   [
+    "Collision detection is not feasible in wireless (hidden node), so CSMA/CA with RTS/CTS and ACK",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q1B"
+   ]
+  ],
+  "Leaky / token bucket": [
+   [
+    "Token bucket maximum burst equals bucket capacity (hint printed)",
+    "BCSE308L-FAT-F2-2025-2026:Q6iv"
+   ]
+  ]
+ },
+ "no_clear_pattern": [
+  "Exact question numbering of modules (F1/F2 2025-26 placed M3 last)",
+  "Application-layer protocol choice: DNS 5/11, HTTP 4/11, SMTP 3/11, FTP 3/11",
+  "Step-mark splits: rarely stated",
+  "2026-27 FAT style (no 2026-27 BCSE308L FAT)"
+ ],
+ "drift_note": "2026-27 CATs (C1, C2) carry more scenario-wrapped questions: CAT-1 64% vs 43% older, CAT-2 79% vs 28% older (O, 2 papers each; CN wrapper tags 9/13 accurate). Bloom flat for CAT-1 (3.14 vs 3.16), higher for CAT-2 (3.64 vs 2.97).",
+ "pairs_note": "Slot 1 -> slot 2 shares the archetype for 0.735 of questions vs 0.647 between different years: a modest lift (O). FAT F1 -> F2 2025-26: 15 of 25 same archetype. Whole CAT papers were shared across slot letters twice in 2023-24 (B1 = D1 CAT-1; D1 = F1 CAT-2), so same-session slots can receive the same paper.",
+ "extra": "Misfiled file excluded: `CN/PYQ/FAT/BCSE308L - FAT - B1 - 2024 - Question Paper (2).pdf` is an Optical Fiber Communications (BECE308L) paper."
+}

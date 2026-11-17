@@ -81,6 +81,21 @@ for k, fs in groups.items():
         if difflib.SequenceMatcher(None, norm(kt), norm(ft)).ratio() >= 0.6:  # same paper (QP vs AK); else keep both
             ALIAS[f] = keep
 
+# whole-paper duplicates shared across slot letters (same course, exam, year; text similarity >= 0.8)
+_pt = collections.defaultdict(str)
+for r in R:
+    _pt[r["file_name"]] += " " + r["text"]
+_meta0 = {}
+for r in R:
+    _meta0.setdefault(r["file_name"], (r["course_code"], r["exam_n"], r["slot"], yr(r["year"])))
+for f1, f2 in itertools.combinations(sorted(_meta0), 2):
+    a, b = _meta0[f1], _meta0[f2]
+    if f1 in ALIAS or f2 in ALIAS or a[0] != b[0] or a[1] != b[1] or a[3] != b[3] or a[2] == b[2] or a[1] == "CASE":
+        continue
+    if difflib.SequenceMatcher(None, norm(_pt[f1])[:4000], norm(_pt[f2])[:4000]).ratio() >= 0.8:
+        ALIAS[f2] = f1
+SHARED = {short(k): short(v) for k, v in ALIAS.items() if _meta0[k][2] != _meta0[v][2]}
+
 rows_of = collections.defaultdict(list)
 for r in R:
     if r["file_name"] not in ALIAS:
@@ -228,10 +243,11 @@ ak = [{"q": cite(r), "arch": r["arch"], "marks": r["marks"], "step_marks": r["st
 
 tt = topic_table(core_files)
 out = {"subject": SUBJ, "core_code": CORE, "student_slot": SLOT, "coverage_windows": {k: sorted(v) for k, v in COVER.items()},
-       "aliases_merged": {short(k): short(v) for k, v in ALIAS.items()},
+       "aliases_merged": {short(k): short(v) for k, v in ALIAS.items()}, "shared_papers_across_slots": SHARED,
        "papers_core": {short(f): {"exam": meta[f][1], "slot": meta[f][2], "year": meta[f][3], "recent": meta[f][4], "n_q": len(rows_of[f])} for f in core_files},
        "topic_stats": tt, "ranking": rank(tt), "drift": drift,
        "slot_pairs": slot_pairs, "slot_pairs_pooled": pool(slot_pairs), "cross_letter_pooled": pool(cross),
+       "identical_matches": [{"pair": p["pair"], **dd} for p in cross + slot_pairs for dd in p["detail"] if dd["category"] == "Identical"],
        "different_year_pooled_null": pool(diffyr), "sister_pairs": sister, "sister_pooled": pool(sister),
        "reuse_recent_vs_older": reuse[:40], "answer_key_rows": ak,
        "row_archetypes": {cite(r): r["arch"] for r in R}}

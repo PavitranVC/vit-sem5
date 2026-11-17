@@ -19,6 +19,9 @@ TYPES = {"numerical", "trace", "theory", "scenario"}
 EXCLUDE = {"CN/PYQ/FAT/BCSE308L - FAT - B1 - 2024 - Question Paper (2).pdf"}  # header: BECE308L Optical Fiber Communications
 # Rows corrected after orchestrator re-read (see <subject>/verification.md)
 ROW_OVERRIDES = {
+    ("CN/PYQ/FAT/BCSE308L - FAT - D2 - 2023 - Question Paper.pdf", "4"): {"marks": 10, "verification_note": "extractor wrote 41.0; paper is 10 x 10 and every other question sums to 10 (inferred)"},
+    ("CN/PYQ/FAT/BCSE308L - FAT - D2 - 2023 - Question Paper.pdf", "5"): {"marks": 10, "verification_note": "extractor wrote 41.0; paper is 10 x 10 and every other question sums to 10 (inferred)"},
+
     ("2026-27 QPs/CD/PYQ/BCSE307L/CAT2/BCSE307L-CAT2-G2-2026-2027.pdf", "3a"): {"marks": "", "verification_note": "Q3 total 10 marks; sub-part split not printed (extractor had 10 on each part)"},
     ("2026-27 QPs/CD/PYQ/BCSE307L/CAT2/BCSE307L-CAT2-G2-2026-2027.pdf", "3b"): {"marks": "", "verification_note": "Q3 total 10 marks; sub-part split not printed (extractor had 10 on each part)"},
     ("2026-27 QPs/CD/PYQ/BCSE307L/CAT2/BCSE307L-CAT2-G2-2026-2027.pdf", "3c"): {"marks": "", "verification_note": "Q3 total 10 marks; sub-part split not printed (extractor had 10 on each part)"},

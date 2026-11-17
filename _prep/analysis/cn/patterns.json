@@ -1,0 +1,1248 @@
+{
+ "meta": {
+  "subject": "CN (BCSE308L Computer Networks)",
+  "student_slot": "F2",
+  "probability_formula": "probability = (2*k_recent + k_older + 1) / (2*n_recent + n_older + 2); k = papers containing the topic, n = papers; recent = 2026-27. Primary 'probability' uses BCSE308L FAT papers only (n_recent=0, n_older=11). 'probability_all_papers' uses CAT1/CAT2/FAT papers whose measured syllabus window covers the topic's module ({'CAT1': ['M1', 'M2', 'M3'], 'CAT2': ['M3', 'M4', 'M5'], 'FAT': ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7']}).",
+  "backtest_confidence": {
+   "tier": "Medium",
+   "hits": 22,
+   "of": 40
+  },
+  "papers_used": 31,
+  "tag_agreement_rate": 0.846,
+  "tag_agreement_detail": "13 questions re-read (BCSE308L-FAT-F2-2025-2026 Q1a-Q6iv, pages 1-2): text 13/13, type 13/13, bloom 11/13, scenario 9/13; pooled 33/39 = 0.85.",
+  "small_n_warning": "No 2026-27 BCSE308L FAT exists (n_recent = 0 for the FAT formula). Use the 2026-27 CAT and sister-FAT columns as recency signal.",
+  "fat_blueprint_observed": "10 x 10 FAT in 9 of 11 (C2 2022-23 and A1 2025-26 printed 11-13 numbered questions); all 7 modules in 10 of 11. Typical order Q1 M1 (layers/topologies), Q2 M2 (switching/delay), Q3-Q4 M3 (error detection, MAC, flow control), Q4-Q6 M4 (IPv4 subnetting, fragmentation), Q6-Q7 M5 (routing), Q7-Q9 M6 (congestion, TCP), Q8-Q10 M7 (application layer). Your slot letter's last FATs (F1, F2 2025-26) moved M3 to Q9-Q10. No 2026-27 BCSE308L FAT in the corpus; 2026-27 evidence = CAT-1/CAT-2 C1 and C2 plus sister FATs BACSE203 B1 and CBS3001 C2."
+ },
+ "predicted_topics": [
+  {
+   "rank": 1,
+   "teach_order": 3,
+   "topic_name": "IPv4 addressing / subnetting / CIDR",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.923,
+   "appearance_ratio": "11 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.958,
+   "appearance_ratio_all_papers": "20 of 20 papers covering M4",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.112,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q10i",
+    "BCSE308L-FAT-A1-2025-2026:Q10iia",
+    "BCSE308L-FAT-A1-2025-2026:Q10iib",
+    "BCSE308L-FAT-F2-2025-2026:Q4",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q6",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q4a",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q4b",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q4c"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "For 205.80.60.0 split into 5 subnets, find hosts per subnet, subnet address, first/last host, direct/limited broadcast, subnet mask. (cite BCSE308L-CAT-2-C1-2026-2027-Question Paper:Q3A)",
+   "observed_traps": [
+    "Allocate largest blocks first (50 hosts -> /26, 25 -> /27, 12 -> /28) and give exact ranges [BCSE308L-CAT2-F1-2025-2026-AK:Q2]",
+    "After allocating all branches, also asked for the number of addresses left [BCSE308L-FAT-F2-2025-2026:Q4]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: 50 to /26 (.0-.63); 25 to /27 (.64-.95); 12 to /28 (.96-.111) [BCSE308L-CAT2-F1-2025-2026-AK:Q2]",
+    "key shows: class from first octet; default masks [BCSE308L-CAT2-F1-2025-2026-AK:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q2",
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q3b",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q2A",
+    "BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q2"
+   ]
+  },
+  {
+   "rank": 2,
+   "teach_order": 1,
+   "topic_name": "Circuit vs packet switching",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.769,
+   "appearance_ratio": "9 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.885,
+   "appearance_ratio_all_papers": "20 of 22 papers covering M2",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.046,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q2",
+    "BCSE308L-FAT-A1-2025-2026:Q6ii",
+    "BCSE308L-FAT-A1-2025-2026:Q6iii",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q2b",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q2b",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q2.i",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q2.iii",
+    "BCSE308L-FAT-C2-2022-2023:Q2"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Evaluate circuit vs packet switching for hospital operation-theatre communication and recommend one with justification. (cite BCSE308L-CAT1-C1-2026-2027:Q3a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: each user needs 1 Mbps [BCSE308L-CAT1-F1-2025-2026-AK:Q3i]",
+    "key shows: two users need 2 Mbps (no queue); three users need 3 Mbps above 2 Mbps link [BCSE308L-CAT1-F1-2025-2026-AK:Q3ii]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q3i",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q3ii",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q3iii",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q3iv"
+   ]
+  },
+  {
+   "rank": 3,
+   "teach_order": 2,
+   "topic_name": "MAC (ALOHA/CSMA/CD/CA)",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.769,
+   "appearance_ratio": "9 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.514,
+   "appearance_ratio_all_papers": "17 of 31 papers covering M3",
+   "recent_ratio_all_papers": "1 of 4 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 2",
+   "core_2026_27_cat_ratio": "1 of 4",
+   "fat_mark_share": 0.067,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q4i",
+    "BCSE308L-FAT-A1-2025-2026:Q4ii",
+    "BCSE308L-FAT-F2-2025-2026:Q10bii",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q3",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q9b.i",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q9b.ii",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q4",
+    "BCSE308L-FAT-C2-2022-2023:Q3"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Compare pure ALOHA, slotted ALOHA, CSMA, CSMA/CD on start rule, vulnerable time and post-collision behaviour; state wireless suitability. (cite BCSE308L-CAT-2-C1-2026-2027-Question Paper:Q2b)",
+   "observed_traps": [
+    "Collision detection is not feasible in wireless (hidden node), so CSMA/CA with RTS/CTS and ACK [BCSE308L-CAT2-F2-2025-2026-AK:Q1B]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: Tf=1 ms; slots per second 1000; S=G e^-G [BCSE308L-CAT2-F1-2025-2026-AK:Q1a]",
+    "key shows: collision detection not feasible in wireless; hidden-node problem; RTS/CTS; ACK [BCSE308L-CAT2-F2-2025-2026-AK:Q1B]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q1a",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q1B",
+    "BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q1b",
+    "BCSE308L-CAT-2-D1-2024-2025-Answer Key:Q1b"
+   ]
+  },
+  {
+   "rank": 4,
+   "teach_order": 4,
+   "topic_name": "Topologies / network types",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.692,
+   "appearance_ratio": "8 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.731,
+   "appearance_ratio_all_papers": "17 of 22 papers covering M1",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "1 of 4",
+   "fat_mark_share": 0.053,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q1",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q1a",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q1a",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q1.i",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q1.ii",
+    "BCSE308L-FAT-C2-2022-2023:Q1",
+    "BCSE308L-CAT1-C2-2026-2027:Q1",
+    "BCSE308L-FAT-F1-2025-2026:Q1i"
+   ],
+   "core_type": "scenario",
+   "fluff_stripped_core_task": "Identify topology of each network, I/O ports per device, dedicated links needed, and failure consequences for 240 devices. (cite BCSE308L-CAT1-C2-2026-2027:Q1)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: Library 10x15; Science 12x18; Administration 8x12 [BCSE308L-CAT1-F2-2025-2026-AK:Q1a]",
+    "key shows: single ring 40+35+45=120 m; dual ring 2x120 [BCSE308L-CAT1-F2-2025-2026-AK:Q1b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT1-F2-2025-2026-AK:Q1a",
+    "BCSE308L-CAT1-F2-2025-2026-AK:Q1b",
+    "BCSE308L-CAT1-F2-2025-2026-AK:Q1c",
+    "BCSE308L-CAT1-F2-2025-2026-AK:Q1d"
+   ]
+  },
+  {
+   "rank": 5,
+   "teach_order": 9,
+   "topic_name": "Distance vector routing",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.692,
+   "appearance_ratio": "8 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.708,
+   "appearance_ratio_all_papers": "15 of 20 papers covering M5",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "1 of 4",
+   "fat_mark_share": 0.065,
+   "supporting_files": [
+    "BCSE308L-FAT-F2-2025-2026:Q9bi",
+    "BCSE308L-FAT-F2-2025-2026:Q9bii",
+    "BCSE308L-FAT-F2-2025-2026:Q9biii",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q6a",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q6b",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q7.i",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q7.ii",
+    "BCSE308L-FAT-C2-2022-2023:Q5"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Show step-by-step distance vector operation for R1 with iteration table, shortest path tree for R1 and routing table entries. (cite BCSE308L-CAT-2-C2-2026-2027-Question Paper:Q5)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: Bellman-Ford steps; n-1 = 5; next-hop tables [BCSE308L-CAT2-F1-2025-2026-AK:Q5]",
+    "key shows: d_x(y) = min over neighbours {c(x,v)+d_v(y)} [BCSE308L-CAT2-F2-2025-2026-AK:Q5]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q5",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q5",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q5a",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q5b"
+   ]
+  },
+  {
+   "rank": 6,
+   "teach_order": 11,
+   "topic_name": "TCP congestion control",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.692,
+   "appearance_ratio": "8 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.692,
+   "appearance_ratio_all_papers": "8 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.084,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q8ia",
+    "BCSE308L-FAT-A1-2025-2026:Q8ib",
+    "BCSE308L-FAT-A1-2025-2026:Q8ic",
+    "BCSE308L-FAT-A1-2025-2026:Q8id",
+    "BCSE308L-FAT-A1-2025-2026:Q8ie",
+    "BCSE308L-FAT-A1-2025-2026:Q8ii",
+    "BCSE308L-FAT-F2-2025-2026:Q5",
+    "BCSE308L-FAT-C2-2022-2023:Q12"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify time intervals of TCP slow start from Figure 3 (cite BCSE308L-FAT-A1-2025-2026:Q8ia)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 7,
+   "teach_order": 10,
+   "topic_name": "Link state / Dijkstra",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.692,
+   "appearance_ratio": "8 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.667,
+   "appearance_ratio_all_papers": "14 of 20 papers covering M5",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "1 of 4",
+   "fat_mark_share": 0.068,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q11i",
+    "BCSE308L-FAT-A1-2025-2026:Q11ii",
+    "BCSE308L-FAT-A1-2025-2026:Q11iii",
+    "BCSE308L-FAT-F2-2025-2026:Q9a",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q7",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q10b",
+    "BCSE308L-FAT-F1-2025-2026:Q10b",
+    "BCSE308L-FAT-G2-2025-2026:Q7"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Write LSAs of A, C, F; explain identical domain picture; run Dijkstra from A with permanent/tentative lists; draw tree and routing table. (cite BCSE308L-CAT-2-C1-2026-2027-Question Paper:Q5)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: F-E 1; F-B 4; E-D 4; D-C 1 [BCSE308L-CAT2-F1-2025-2026-AK:Q4]",
+    "key shows: A-C 1; A-C-D 3; A-C-D-E 4; A-C-D-B 6 [BCSE308L-CAT2-F2-2025-2026-AK:Q4]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q4",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q4",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q4a",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q4b"
+   ]
+  },
+  {
+   "rank": 8,
+   "teach_order": 7,
+   "topic_name": "Error detection (CRC/checksum/parity)",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.692,
+   "appearance_ratio": "8 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.541,
+   "appearance_ratio_all_papers": "17 of 31 papers covering M3",
+   "recent_ratio_all_papers": "2 of 4 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.06,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q3i",
+    "BCSE308L-FAT-A1-2025-2026:Q3ii",
+    "BCSE308L-FAT-A1-2025-2026:Q5iii",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q9a.i",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q9a.ii",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q3b.i",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q3b.ii",
+    "BCSE308L-CAT1-C1-2026-2027:Q4"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Compute checksum for seven 8-bit words with specified bit flips, form packets, verify, decide acceptance, explain one's complement arithmetic. (cite BCSE308L-CAT1-C1-2026-2027:Q4)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: divisor 1001; remainder 011; codeword 11001001011; non-zero remainder at receiver [BCSE308L-CAT1-F1-2025-2026-AK:Q4]",
+    "marks: VRC 2.5; LRC 2.5; CRC 2.5; Checksum 2.5 [BCSE308L-CAT1-F2-2025-2026-AK:Q4a]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q4",
+    "BCSE308L-CAT1-F2-2025-2026-AK:Q4a",
+    "BCSE308L-CAT1-F2-2025-2026-AK:Q4b",
+    "BCSE308L-CAT1-F2-2025-2026-AK:Q4c"
+   ]
+  },
+  {
+   "rank": 9,
+   "teach_order": 6,
+   "topic_name": "Delay / throughput calculation",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.615,
+   "appearance_ratio": "7 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.769,
+   "appearance_ratio_all_papers": "17 of 22 papers covering M2",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.046,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q6i",
+    "BCSE308L-FAT-F2-2025-2026:Q2",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q2a",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q2a.i",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q2a.ii",
+    "BCSE308L-FAT-C2-2022-2023:Q8",
+    "BCSE308L-CAT1-C1-2026-2027:Q3b",
+    "BCSE308L-CAT1-C2-2026-2027:Q4a"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Compute end-to-end delay per packet for circuit switching, packet switching and all switching types given links, rates and queuing delay. (cite BCSE308L-CAT1-C1-2026-2027:Q3b)",
+   "observed_traps": [
+    "Circuit-switched delay = setup/teardown bits + data bits over rate + propagation; compute for 3 data sizes then conclude on efficiency [BCSE308L-FAT-F2-2025-2026:Q2]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: store-and-forward; L/R1; L/R2 [BCSE308L-CAT1-F1-2025-2026-AK:Q2a]",
+    "key shows: bottleneck link; 4x10^6x8 bits; 500 kbps; 100 Kbps [BCSE308L-CAT1-F1-2025-2026-AK:Q2b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q2a",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q2b",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q2c",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q2d"
+   ]
+  },
+  {
+   "rank": 10,
+   "teach_order": 8,
+   "topic_name": "IP fragmentation",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.615,
+   "appearance_ratio": "7 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.667,
+   "appearance_ratio_all_papers": "13 of 20 papers covering M4",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.052,
+   "supporting_files": [
+    "BCSE308L-FAT-F2-2025-2026:Q3i",
+    "BCSE308L-FAT-F2-2025-2026:Q3ii",
+    "BCSE308L-FAT-F2-2025-2026:Q3iii",
+    "BCSE308L-FAT-F2-2025-2026:Q3iv",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q5",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q10a.i",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q10a.ii",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q10a.iii"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Decode 20-byte IPv4 header fields and analyse fragmentation for a link of MTU 576. (cite BCSE308L-CAT-2-C1-2026-2027-Question Paper:Q3B)",
+   "observed_traps": [
+    "Different MTU per link: fragment at R1 and again at R2, then count fragments arriving at Host B; offsets in 8-byte units [BCSE308L-FAT-F2-2025-2026:Q3iv]",
+    "Header given in hex: decode IHL, TTL, protocol, DF/MF and offset before answering [BCSE308L-CAT2-F2-2025-2026-AK:Q3]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: IHL=7; TTL 0x20; protocol 0x06; DF=1; ID 3 [BCSE308L-CAT2-F2-2025-2026-AK:Q3]",
+    "key shows: not fragmented (offset 0, flag 0); data = 84-20 = 64 bytes; TTL 0x20 so 32 more routers; identification 0003; offset 0; source 124.78.3.2; destination 180.14.15 [BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q3",
+    "BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q3b",
+    "BCSE308L-CAT-2-D1-2024-2025-Answer Key:Q3a",
+    "BCSE308L-CAT-2-D1-2024-2025-Answer Key:Q3b"
+   ]
+  },
+  {
+   "rank": 11,
+   "teach_order": 5,
+   "topic_name": "OSI vs TCP/IP layers",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.538,
+   "appearance_ratio": "6 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.654,
+   "appearance_ratio_all_papers": "14 of 22 papers covering M1",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.044,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q5i",
+    "BCSE308L-FAT-A1-2025-2026:Q5ii",
+    "BCSE308L-FAT-F2-2025-2026:Q1a",
+    "BCSE308L-FAT-F2-2025-2026:Q1b",
+    "BCSE308L-FAT-C2-2022-2023:Q7",
+    "BCSE308L-CAT1-C1-2026-2027:Q2",
+    "BCSE308L-CAT1-C2-2026-2027:Q2",
+    "BCSE308L-FAT-F1-2025-2026:Q2a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Draw layered model for air-travel activities mapped to a communication layer, explain each layer, discuss layering advantages and disadvantages. (cite BCSE308L-CAT1-C1-2026-2027:Q2)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: fault tolerance-network layer; speed matching-link and transport; data integrity-link and transport (CRC/checksum); segmentation-transport; node-MAC; host-IP; p [BCSE308L-CAT1-F1-2025-2026-AK:Q1a]",
+    "key shows: NL-1, DL-1, PL-1 per intermediate router [BCSE308L-CAT1-F1-2025-2026-AK:Q1b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q1a",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q1b"
+   ]
+  },
+  {
+   "rank": 12,
+   "teach_order": 30,
+   "topic_name": "DNS",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.462,
+   "appearance_ratio": "5 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.462,
+   "appearance_ratio_all_papers": "5 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.028,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q9i",
+    "BCSE308L-FAT-A1-2025-2026:Q9ii",
+    "BCSE308L-FAT-F2-2025-2026:Q7i",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q8a",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q8b",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q8a",
+    "BCSE308L-FAT-F1-2025-2026:Q8ii"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Name labels, hierarchy levels, FQDN/PQDN, domain type of ece.chennai.vit.ac.in and why DNS (cite BCSE308L-FAT-A1-2025-2026:Q9i)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "marks: iterative 5; key shows: iterative query; referral; diagram [BCSE308L - FAT - D1 - 2023 - Answer Key:Q8a]",
+    "marks: recursive 5; key shows: recursive query; delegation to servers; diagram [BCSE308L - FAT - D1 - 2023 - Answer Key:Q8b]"
+   ],
+   "worked_examples": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q8a",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q8b"
+   ]
+  },
+  {
+   "rank": 13,
+   "teach_order": 17,
+   "topic_name": "Flow control (stop-and-wait/GBN/SR)",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.462,
+   "appearance_ratio": "5 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.405,
+   "appearance_ratio_all_papers": "12 of 31 papers covering M3",
+   "recent_ratio_all_papers": "2 of 4 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.038,
+   "supporting_files": [
+    "BCSE308L-FAT-A1-2025-2026:Q7i",
+    "BCSE308L-FAT-A1-2025-2026:Q7ii",
+    "BCSE308L-FAT-A1-2025-2026:Q7iii",
+    "BCSE308L-FAT-A1-2025-2026:Q7iv",
+    "BCSE308L-FAT-A1-2025-2026:Q7v",
+    "BCSE308L-FAT-F2-2025-2026:Q10bi",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q3",
+    "BCSE308L-FAT-C2-2022-2023:Q9"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Construct sender/receiver state flow diagram for Stop-and-Wait ARQ with 11 frames, every 4th lost, and count transmissions. (cite BCSE308L-CAT-2-C1-2026-2027-Question Paper:Q2a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: Td=4.096 ms; Tp=22.5 ms; eta=Td/(Td+2Tp) [BCSE308L-CAT2-F1-2025-2026-AK:Q1b]",
+    "key shows: WS=8; range 0-511; expected 100 [BCSE308L-CAT2-F2-2025-2026-AK:Q1Aa]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q1b",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q1Aa",
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q1Ab",
+    "BCSE308L-CAT-2-D1-2024-2025-Answer Key:Q1a"
+   ]
+  },
+  {
+   "rank": 14,
+   "teach_order": 22,
+   "topic_name": "IPv6",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.462,
+   "appearance_ratio": "5 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.375,
+   "appearance_ratio_all_papers": "8 of 20 papers covering M4",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.022,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q5a",
+    "BCSE308L-FAT-C2-2022-2023:Q4.iii",
+    "BCSE308L-FAT-C2-2022-2023:Q4.iv",
+    "BCSE308L-FAT-F1-2025-2026:Q5ii",
+    "BCSE308L - FAT - B1 - 2024 - Question Paper:Q4b(ii)",
+    "BCSE308L-FAT-D2-2024-2025:Q5"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Check whether two IPv6 address notations are valid. (cite BCSE308L-FAT-F1-2025-2026:Q5ii)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: address space 32 vs 128 bit; auto-configuration; fixed 40-byte header; IPsec optional vs built-in; no broadcast [BCSE308L-CAT2-F1-2025-2026-AK:Q3a]",
+    "key shows: any six of: 32-bit vs 128-bit address; dotted decimal vs hexadecimal; IPv6 has no classes; no VLSM in IPv6; fragmentation by senders only in IPv6; no checksum i [BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q3a]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F1-2025-2026-AK:Q3a",
+    "BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q3a"
+   ]
+  },
+  {
+   "rank": 15,
+   "teach_order": 18,
+   "topic_name": "Hamming code",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.405,
+   "appearance_ratio_all_papers": "12 of 31 papers covering M3",
+   "recent_ratio_all_papers": "2 of 4 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "2 of 4",
+   "fat_mark_share": 0.025,
+   "supporting_files": [
+    "BCSE308L-FAT-F2-2025-2026:Q10ai",
+    "BCSE308L-FAT-F2-2025-2026:Q10aii",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q4a",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q3a",
+    "BCSE308L-CAT-2-C1-2026-2027-Question Paper:Q1a",
+    "BCSE308L-CAT-2-C2-2026-2027-Question Paper:Q1B",
+    "BCSE308L - FAT - B1 - 2024 - Question Paper:Q10"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Find redundancy bits for 16-bit data and build 11-bit even-parity Hamming codeword for K (1001011); then locate/correct error in 10011110110. (cite BCSE308L-CAT-2-C1-2026-2027-Question Paper:Q1a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: check bits C1 C2 C4 C8; syndrome [BCSE308L-CAT1-F1-2025-2026-AK:Q5a]",
+    "key shows: 8-bit data words; column by column transmission [BCSE308L-CAT1-F1-2025-2026-AK:Q5b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q5a",
+    "BCSE308L-CAT1-F1-2025-2026-AK:Q5b",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q4a"
+   ]
+  },
+  {
+   "rank": 16,
+   "teach_order": 31,
+   "topic_name": "HTTP",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.385,
+   "appearance_ratio": "4 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.385,
+   "appearance_ratio_all_papers": "4 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.023,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q8b",
+    "BCSE308L-FAT-C2-2022-2023:Q13a",
+    "BCSE308L-FAT-C2-2022-2023:Q13b",
+    "BCSE308L-FAT-G2-2025-2026:Q10a",
+    "BCSE308L-FAT-D2-2024-2025:Q8ii"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Trace DNS, HTTP, SMTP, TCP, IP interaction for simultaneous web download and email and explain cross-layer cooperation. (cite BCSE308L-FAT-G2-2025-2026:Q10a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 17,
+   "teach_order": 25,
+   "topic_name": "Congestion control (open/closed loop)",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.308,
+   "appearance_ratio": "3 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.308,
+   "appearance_ratio_all_papers": "3 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.028,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q9a",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q9b",
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q7",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q2.ii",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q8a",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q8b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain congestion control techniques used to improve QoS. (cite BCSE308L - FAT - D1 - 2024 - Question Paper:Q7)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "marks: closed loop 5; key shows: two closed-loop mechanisms [BCSE308L - FAT - D1 - 2023 - Answer Key:Q9a]",
+    "marks: open loop 5; key shows: two open-loop mechanisms [BCSE308L - FAT - D1 - 2023 - Answer Key:Q9b]"
+   ],
+   "worked_examples": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q9a",
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q9b"
+   ]
+  },
+  {
+   "rank": 18,
+   "teach_order": 32,
+   "topic_name": "Network security basics",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.308,
+   "appearance_ratio": "3 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.308,
+   "appearance_ratio_all_papers": "3 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.025,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q10",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q10a",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q10b",
+    "BCSE308L-FAT-G2-2025-2026:Q10b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Specify features of an IoT application-layer protocol (low bandwidth, scalability, security, latency) and compare with HTTP or MQTT. (cite BCSE308L-FAT-G2-2025-2026:Q10b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "marks: any 5 measures, 2 marks each; key shows: any five IoT cloud security measures [BCSE308L - FAT - D1 - 2023 - Answer Key:Q10]"
+   ],
+   "worked_examples": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q10"
+   ]
+  },
+  {
+   "rank": 19,
+   "teach_order": 33,
+   "topic_name": "FTP",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.308,
+   "appearance_ratio": "3 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.308,
+   "appearance_ratio_all_papers": "3 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.017,
+   "supporting_files": [
+    "BCSE308L-FAT-F1-2025-2026:Q8i",
+    "BCSE308L - FAT - B1 - 2024 - Question Paper:Q8a",
+    "BCSE308L - FAT - B1 - 2024 - Question Paper:Q8b",
+    "BCSE308L-FAT-D2-2024-2025:Q8i"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Describe the two FTP connections, transferable file types, and three transmission modes. (cite BCSE308L-FAT-F1-2025-2026:Q8i)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 20,
+   "teach_order": 34,
+   "topic_name": "SMTP / POP / IMAP",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.308,
+   "appearance_ratio": "3 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.308,
+   "appearance_ratio_all_papers": "3 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.014,
+   "supporting_files": [
+    "BCSE308L-FAT-F2-2025-2026:Q7ii",
+    "BCSE308L - FAT - B1 - 2024 - Question Paper:Q9",
+    "BCSE308L-FAT-D2-2024-2025:Q8iii"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Illustrate with diagram SMTP over TCP transfer of Alice's email to Bob's mailbox (cite BCSE308L-FAT-F2-2025-2026:Q7ii)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 21,
+   "teach_order": 26,
+   "topic_name": "TCP header / handshake",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.231,
+   "appearance_ratio": "2 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.231,
+   "appearance_ratio_all_papers": "2 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "2 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.009,
+   "supporting_files": [
+    "BCSE308L-FAT-C2-2022-2023:Q6",
+    "BCSE308L-FAT-F1-2025-2026:Q7i"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Decode TCP header hex dump: source port, seq, ack, header length, segment type, window. (cite BCSE308L-FAT-F1-2025-2026:Q7i)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 22,
+   "teach_order": 35,
+   "topic_name": "Application & transport protocols",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.231,
+   "appearance_ratio": "2 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.231,
+   "appearance_ratio_all_papers": "2 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.007,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q1b",
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q9b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify four application and transport protocols with their purposes. (cite BCSE308L - FAT - D1 - 2023 - Answer Key:Q1b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "marks: TCP,UDP 2; FTP,SMTP 2; key shows: TCP; UDP; FTP; SMTP [BCSE308L - FAT - D1 - 2023 - Answer Key:Q1b]"
+   ],
+   "worked_examples": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q1b"
+   ]
+  },
+  {
+   "rank": 23,
+   "teach_order": 23,
+   "topic_name": "NAT / DHCP / ARP / ICMP",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.231,
+   "appearance_ratio": "2 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.208,
+   "appearance_ratio_all_papers": "4 of 20 papers covering M4",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.012,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q5b",
+    "BCSE308L - FAT - B1 - 2022 - Question Paper:Q8"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain NAT/PAT translation for private network to single public IP with table (cite BCSE308L-CAT2-F2-2025-2026-AK:Q2B)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: PAT; private ports 50000-50002; public ports 40001-40003 [BCSE308L-CAT2-F2-2025-2026-AK:Q2B]",
+    "key shows: Network Address Translation (NAT); key gives only the name, explanation marked 'to be explained' [BCSE308L-CAT-2-D2-2024-2025-Answer Key:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT2-F2-2025-2026-AK:Q2B",
+    "BCSE308L-CAT-2-D2-2024-2025-Answer Key:Q3b"
+   ]
+  },
+  {
+   "rank": 24,
+   "teach_order": 27,
+   "topic_name": "Leaky / token bucket",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.008,
+   "supporting_files": [
+    "BCSE308L-FAT-F2-2025-2026:Q6i",
+    "BCSE308L-FAT-F2-2025-2026:Q6ii",
+    "BCSE308L-FAT-F2-2025-2026:Q6iii",
+    "BCSE308L-FAT-F2-2025-2026:Q6iv"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Compute packets dropped by leaky bucket of capacity 100 leaking 10/s under 50/s arrivals (cite BCSE308L-FAT-F2-2025-2026:Q6i)",
+   "observed_traps": [
+    "Token bucket maximum burst equals bucket capacity (hint printed) [BCSE308L-FAT-F2-2025-2026:Q6iv]"
+   ],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 25,
+   "teach_order": 36,
+   "topic_name": "SNMP / network management",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.008,
+   "supporting_files": [
+    "BCSE308L-FAT-F2-2025-2026:Q8i",
+    "BCSE308L-FAT-F2-2025-2026:Q8ii"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify and explain each SNMP functional component in the TRAP scenario (cite BCSE308L-FAT-F2-2025-2026:Q8i)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 26,
+   "teach_order": 37,
+   "topic_name": "SNMP network monitoring",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.008,
+   "supporting_files": [
+    "BCSE308L - FAT - B1 - 2022 - Question Paper:Q2a",
+    "BCSE308L - FAT - B1 - 2022 - Question Paper:Q2b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Draw and explain SNMP-based network monitoring architecture. (cite BCSE308L - FAT - B1 - 2022 - Question Paper:Q2a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 27,
+   "teach_order": 38,
+   "topic_name": "Network management (SNMP)",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.005,
+   "supporting_files": [
+    "BCSE308L - FAT - D2 - 2023 - Question Paper:Q9a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Brief network management functionalities and the application-layer protocol that renders them. (cite BCSE308L - FAT - D2 - 2023 - Question Paper:Q9a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 28,
+   "teach_order": 39,
+   "topic_name": "Bluetooth / short-range wireless",
+   "module": "derived",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering derived",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.003,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q4b"
+   ],
+   "core_type": "scenario",
+   "fluff_stripped_core_task": "Identify the short-range wireless standard in the phone safety device and its features. (cite BCSE308L - FAT - D1 - 2023 - Answer Key:Q4b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: Bluetooth [BCSE308L - FAT - D1 - 2023 - Answer Key:Q4b]"
+   ],
+   "worked_examples": [
+    "BCSE308L - FAT - D1 - 2023 - Answer Key:Q4b"
+   ]
+  },
+  {
+   "rank": 29,
+   "teach_order": 28,
+   "topic_name": "TCP flow control / RTT",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.002,
+   "supporting_files": [
+    "BCSE308L-FAT-F1-2025-2026:Q2b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Analyse issues from disabling transport-layer error checking assuming data link layer reliability. (cite BCSE308L-FAT-F1-2025-2026:Q2b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 30,
+   "teach_order": 29,
+   "topic_name": "UDP",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.154,
+   "appearance_ratio_all_papers": "1 of 11 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.002,
+   "supporting_files": [
+    "BCSE308L-FAT-F1-2025-2026:Q6i"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain why voice and video traffic is often sent over TCP rather than UDP. (cite BCSE308L-FAT-F1-2025-2026:Q6i)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 31,
+   "teach_order": 24,
+   "topic_name": "RIP / OSPF / BGP",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.083,
+   "appearance_ratio_all_papers": "1 of 20 papers covering M5",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.008,
+   "supporting_files": [
+    "BCSE308L-FAT-C2-2022-2023:Q11"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Compute R1's initial and RIP-converged routing tables from Fig. 2 and illustrate RIP steps. (cite BCSE308L-FAT-C2-2022-2023:Q11)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 32,
+   "teach_order": 19,
+   "topic_name": "Sliding window efficiency",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.081,
+   "appearance_ratio_all_papers": "2 of 31 papers covering M3",
+   "recent_ratio_all_papers": "0 of 4 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.005,
+   "supporting_files": [
+    "BCSE308L-FAT-F1-2025-2026:Q9a.i"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Compute channel utilization of stop-and-wait on 64 Mbps link to a planet 9x10^10 m away with 32 KB frames. (cite BCSE308L-FAT-F1-2025-2026:Q9a.i)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: GBN timing diagram; every 5th frame lost; timeout retransmission of window; 18 frames sent in total; efficiency 10/18 [BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q1a(i)]",
+    "key shows: SR timing diagram; every 5th frame lost; only lost frames retransmitted; 12 frames sent in total; efficiency 10/12 [BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q1a(ii)]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q1a(i)",
+    "BCSE308L-CAT-2-D1-2023-2024-Answer Key:Q1a(ii)"
+   ]
+  },
+  {
+   "rank": 33,
+   "teach_order": 12,
+   "topic_name": "Transmission impairment",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.077,
+   "appearance_ratio_all_papers": "1 of 22 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.004,
+   "supporting_files": [
+    "BCSE308L - FAT - B1 - 2024 - Question Paper:Q2b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Define transmission impairment; explain effects of attenuation, noise, distortion. (cite BCSE308L - FAT - B1 - 2024 - Question Paper:Q2b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 34,
+   "teach_order": 13,
+   "topic_name": "Protocols & standards",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.154,
+   "appearance_ratio": "1 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.077,
+   "appearance_ratio_all_papers": "1 of 22 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.002,
+   "supporting_files": [
+    "BCSE308L - FAT - D1 - 2024 - Question Paper:Q1b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Discuss the need for protocols and standards. (cite BCSE308L - FAT - D1 - 2024 - Question Paper:Q1b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 35,
+   "teach_order": 14,
+   "topic_name": "Network design criteria",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.115,
+   "appearance_ratio_all_papers": "1 of 22 papers covering M1",
+   "recent_ratio_all_papers": "1 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "1 of 4",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE308L-CAT1-C1-2026-2027:Q1"
+   ],
+   "core_type": "scenario",
+   "fluff_stripped_core_task": "Identify three essential network criteria, explain how each is reflected, and recommend improvement of one criterion without affecting others. (cite BCSE308L-CAT1-C1-2026-2027:Q1)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 36,
+   "teach_order": 15,
+   "topic_name": "Network devices by layer",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.077,
+   "appearance_ratio_all_papers": "1 of 22 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE308L-CAT-1-B1-2023-2024:Q2b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify hardware devices used when sending email from VIT to a Stanford professor (cite BCSE308L-CAT-1-B1-2023-2024:Q2b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 37,
+   "teach_order": 16,
+   "topic_name": "Communication model components",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.077,
+   "appearance_ratio_all_papers": "1 of 22 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE308L-CAT-1-D1-2024-2025:Q1a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain components of a communications model with a suitable diagram (cite BCSE308L-CAT-1-D1-2024-2025:Q1a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 38,
+   "teach_order": 20,
+   "topic_name": "Ethernet / switching / VLAN",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.054,
+   "appearance_ratio_all_papers": "1 of 31 papers covering M3",
+   "recent_ratio_all_papers": "0 of 4 2026-27 papers",
+   "sister_2026_27_fat_ratio": "1 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE308L-CAT1-A1-2025-2026:Q4a"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Illustrate switch MAC learning and forwarding for PC1 to PC5 exchange and hub responses (cite BCSE308L-CAT1-A1-2025-2026:Q4a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 39,
+   "teach_order": 21,
+   "topic_name": "Wireless LAN (802.11) BSS/ESS",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.077,
+   "appearance_ratio": "0 of 11 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.054,
+   "appearance_ratio_all_papers": "1 of 31 papers covering M3",
+   "recent_ratio_all_papers": "0 of 4 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 2",
+   "core_2026_27_cat_ratio": "0 of 4",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE308L-CAT-2-D2-2024-2025-Answer Key:Q1b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Name the IEEE standard for airline Wi-Fi and enumerate the BSS and ESS architecture. (cite BCSE308L-CAT-2-D2-2024-2025-Answer Key:Q1b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "marks: 1 mark IEEE 802.11; 4 marks architecture; key shows: IEEE 802.11 wireless LAN; basic service set (BSS); access point (AP); distribution system (DS); extended service set (ESS); portal to IEEE 802.x LAN; same MAC p [BCSE308L-CAT-2-D2-2024-2025-Answer Key:Q1b]"
+   ],
+   "worked_examples": [
+    "BCSE308L-CAT-2-D2-2024-2025-Answer Key:Q1b"
+   ]
+  }
+ ],
+ "no_clear_pattern": [
+  "Exact question numbering of modules (F1/F2 2025-26 placed M3 last)",
+  "Application-layer protocol choice: DNS 5/11, HTTP 4/11, SMTP 3/11, FTP 3/11",
+  "Step-mark splits: rarely stated",
+  "2026-27 FAT style (no 2026-27 BCSE308L FAT)"
+ ],
+ "slot_pair_hit_rates": {
+  "Identical": 0.0,
+  "Same concept new numbers": 0.735,
+  "Same module only": 0.258,
+  "Unrelated": 0.008,
+  "_n": "132 questions in 9 slot pairs",
+  "_baseline_different_year_same_concept": 0.647,
+  "_cross_letter_same_year_same_concept": 0.649,
+  "_sister_courses_same_concept": 0.586
+ }
+}

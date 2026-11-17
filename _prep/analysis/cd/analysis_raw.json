@@ -23,6 +23,7 @@
   ]
  },
  "aliases_merged": {},
+ "shared_papers_across_slots": {},
  "papers_core": {
   "BCSE307L-CAT1-A1-2025-2026-AK": {
    "exam": "CAT1",
@@ -1431,10 +1432,10 @@
     "n_q": 9,
     "mean_bloom": 3.22,
     "scenario_wrapper_pct_q": 88.9,
-    "scenario_wrapper_pct_marks": 85.7,
-    "computational_marks_pct": 71.4,
-    "theory_marks_pct": 28.6,
-    "num_trace_to_theory_mark_ratio": 2.5
+    "scenario_wrapper_pct_marks": 75.0,
+    "computational_marks_pct": 100.0,
+    "theory_marks_pct": 0.0,
+    "num_trace_to_theory_mark_ratio": null
    }
   },
   "FAT": {
@@ -1495,10 +1496,10 @@
     "n_q": 19,
     "mean_bloom": 3.16,
     "scenario_wrapper_pct_q": 68.4,
-    "scenario_wrapper_pct_marks": 64.7,
-    "computational_marks_pct": 82.4,
-    "theory_marks_pct": 17.6,
-    "num_trace_to_theory_mark_ratio": 4.67
+    "scenario_wrapper_pct_marks": 57.1,
+    "computational_marks_pct": 92.9,
+    "theory_marks_pct": 7.1,
+    "num_trace_to_theory_mark_ratio": 13.0
    }
   }
  },
@@ -2130,6 +2131,16 @@
    "Unrelated": 0.058
   }
  },
+ "identical_matches": [
+  {
+   "pair": "FAT A2->E1 2025",
+   "q": "BCSE307L-FAT-E1-2025-2026:Q4",
+   "marks": 10.0,
+   "category": "Identical",
+   "best_match": "BCSE307L-FAT-A2-2025-2026:Q7",
+   "text_sim": 1.0
+  }
+ ],
  "different_year_pooled_null": {
   "n_questions": 1199,
   "n_pairs": 132,

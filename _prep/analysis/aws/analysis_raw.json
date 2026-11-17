@@ -25,6 +25,7 @@
   ]
  },
  "aliases_merged": {},
+ "shared_papers_across_slots": {},
  "papers_core": {
   "BCSE355L - AWS Solutions Architect - CAT-1 - Slot A2 - 2025 - Question Paper": {
    "exam": "CAT1",
@@ -2001,6 +2002,7 @@
    "Unrelated": 0.081
   }
  },
+ "identical_matches": [],
  "different_year_pooled_null": {
   "n_questions": 814,
   "n_pairs": 88,
