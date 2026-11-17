@@ -15,8 +15,14 @@ COLS = ["subject", "course_code", "year", "exam", "slot", "q_no", "marks", "syll
         "penalties", "key_final_answer", "batch_id", "marks_imputed"]
 TYPES = {"numerical", "trace", "theory", "scenario"}
 # Files whose filename year is wrong (verified from the printed header). Never rename the PDFs.
+# Files excluded after header check (misfiled; PDFs untouched)
+EXCLUDE = {"CN/PYQ/FAT/BCSE308L - FAT - B1 - 2024 - Question Paper (2).pdf"}  # header: BECE308L Optical Fiber Communications
 # Rows corrected after orchestrator re-read (see <subject>/verification.md)
-ROW_OVERRIDES = {("AI/PYQ/FAT/BCSE306L - FAT - E2 - 2024 - Question Paper.pdf", "3"):
+ROW_OVERRIDES = {
+    ("2026-27 QPs/CD/PYQ/BCSE307L/CAT2/BCSE307L-CAT2-G2-2026-2027.pdf", "3a"): {"marks": "", "verification_note": "Q3 total 10 marks; sub-part split not printed (extractor had 10 on each part)"},
+    ("2026-27 QPs/CD/PYQ/BCSE307L/CAT2/BCSE307L-CAT2-G2-2026-2027.pdf", "3b"): {"marks": "", "verification_note": "Q3 total 10 marks; sub-part split not printed (extractor had 10 on each part)"},
+    ("2026-27 QPs/CD/PYQ/BCSE307L/CAT2/BCSE307L-CAT2-G2-2026-2027.pdf", "3c"): {"marks": "", "verification_note": "Q3 total 10 marks; sub-part split not printed (extractor had 10 on each part)"},
+("AI/PYQ/FAT/BCSE306L - FAT - E2 - 2024 - Question Paper.pdf", "3"):
                  {"ocr_flag": 1, "verification_note": "figure edge 'A->G 2' doubtful; label 2 is likely C->A. Check image."}}
 YEAR_OVERRIDES = {"AI/PYQ/CAT1/BCSE306L-CAT1-C2-2025-2026-Key.pdf": "2026-2027"}
 
@@ -43,6 +49,8 @@ def load(prefix):
                 errs.append(f"{bid} line {i+1}: bad JSON ({e})")
                 continue
             o["batch_id"] = bid.replace("_papers", "")
+            if o.get("file_name") in EXCLUDE:
+                continue
             o.update(ROW_OVERRIDES.get((o.get("file_name"), str(o.get("q_no"))), {}))
             if o.get("file_name") in YEAR_OVERRIDES:
                 o["year"] = YEAR_OVERRIDES[o["file_name"]]

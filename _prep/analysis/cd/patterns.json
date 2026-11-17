@@ -1,0 +1,996 @@
+{
+ "meta": {
+  "subject": "CD (BCSE307L Compiler Design)",
+  "student_slot": "G2",
+  "probability_formula": "probability = (2*k_recent + k_older + 1) / (2*n_recent + n_older + 2); k = papers containing the topic, n = papers; recent = 2026-27. Primary 'probability' uses BCSE307L FAT papers only (n_recent=0, n_older=7). 'probability_all_papers' uses CAT1/CAT2/FAT papers whose measured syllabus window covers the topic's module ({'CAT1': ['M1', 'M2'], 'CAT2': ['M2', 'M3', 'M4'], 'FAT': ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7']}).",
+  "backtest_confidence": {
+   "tier": "Medium",
+   "hits": 22,
+   "of": 40
+  },
+  "papers_used": 24,
+  "tag_agreement_rate": 0.595,
+  "tag_agreement_detail": "14 questions re-read (BCSE307L-CAT2-G2-2026-2027 Q1-Q5b, BCSE307L-CAT1-G2-2026-2027 Q1-Q5): text 14/14, type 10/14, bloom 13/14, scenario wrapper 2/14; pooled 25/42 = 0.60. Scenario-wrapper tags are unreliable for CD (extractors counted code listings, grammars and 'Assume...' blocks as narrative).",
+  "small_n_warning": "No 2026-27 BCSE307L FAT exists (n_recent = 0 for the FAT formula); only 7 FATs in total. Use the 2026-27 CAT column (your slot's G2 papers) as the recency signal.",
+  "fat_blueprint_observed": "10-question FATs (A2 2023-24 and E1 2025-26 have 8-9 numbered questions with sub-parts); all 7 modules in 4 of 7 FATs, 6 modules in the other 3. Order is roughly syllabus order (Q1-Q2 M1 phases/lexical, Q3-Q4 M2 parsing, then M3 SDT, M4 intermediate code, M5 optimisation, M6 code generation, M7 parallelism) but shuffled in E1 2025-26 and C1 2024; 'Q9 a or b; Q10 a or b' in 3 of 7. No 2026-27 BCSE307L FAT in the corpus; 2026-27 evidence = CAT-1 G1, CAT-1 G2 and CAT-2 G2 (your slot)."
+ },
+ "predicted_topics": [
+  {
+   "rank": 1,
+   "teach_order": 2,
+   "topic_name": "SDD / SDT / annotated parse tree",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.889,
+   "appearance_ratio": "7 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.833,
+   "appearance_ratio_all_papers": "14 of 15 papers covering M3",
+   "recent_ratio_all_papers": "0 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.074,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q1a",
+    "BCSE307L-FAT-E1-2025-2026:Q1b",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q10b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5a",
+    "BCSE307L-FAT-A2-2023-2024:Q3a",
+    "BCSE307L-FAT-A2-2023-2024:Q3b",
+    "BCSE307L-FAT-A1-2025-2026:Q4a",
+    "BCSE307L-FAT-A2-2025-2026:Q4i"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Design SDD generating prefix form with type checking and type promotion [printed CO3/K3] (cite BCSE307L-FAT-E1-2025-2026:Q1a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: S.val = S1.val * T.val [BCSE307L-CAT2-A1-2025-2026-AK:Q2a]",
+    "key shows: parse tree for the expression 20 # 10 % 5 # 8 % 2 % 2 [BCSE307L-CAT2-A1-2025-2026-AK:Q2c]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2a",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2c",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2d",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q4a"
+   ]
+  },
+  {
+   "rank": 2,
+   "teach_order": 1,
+   "topic_name": "Phases of compiler",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.778,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.9,
+   "appearance_ratio_all_papers": "15 of 16 papers covering M1",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "2 of 3",
+   "fat_mark_share": 0.071,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q5a",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q1",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2a",
+    "BCSE307L-CAT1-G1-2026-2027:Q1",
+    "BCSE307L-CAT1-G2-2026-2027:Q1",
+    "BCSE307L-FAT-A1-2025-2026:Q2",
+    "BCSE307L-FAT-A2-2025-2026:Q2a",
+    "BCSE307L-FAT-C1-2023-2024:Q2"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Explain how analysis and synthesis phases process the discriminant statement. (cite BCSE307L-CAT1-G1-2026-2027:Q1)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: lexical tokens; syntax tree; semantic check; intermediate code; optimization; code generation [BCSE307L-CAT1-A1-2025-2026-AK:Q1]",
+    "key shows: tokens; parse tree/AST; semantic checks; three-address code; optimization; machine code [BCSE307L-CAT1-A2-2025-2026-AK:Q1]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q1",
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q1"
+   ]
+  },
+  {
+   "rank": 3,
+   "teach_order": 3,
+   "topic_name": "Three-address code / quadruples / triples",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.778,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.833,
+   "appearance_ratio_all_papers": "13 of 15 papers covering M4",
+   "recent_ratio_all_papers": "1 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.091,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q3",
+    "BCSE307L-FAT-E1-2025-2026:Q8a",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q4",
+    "BCSE307L-FAT-A2-2023-2024:Q4a",
+    "BCSE307L-FAT-A2-2023-2024:Q4b",
+    "BCSE307L-FAT-A2-2023-2024:Q9a",
+    "BCSE307L-CAT2-G2-2026-2027:Q4",
+    "BCSE307L-FAT-A1-2025-2026:Q10a"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Generate TAC for nested loops with break, quadruples and triples for sum computation, and decide placement of result statement. (cite BCSE307L-CAT2-G2-2026-2027:Q4)",
+   "observed_traps": [
+    "Decide from the braces whether result = sum + i*2 runs per inner iteration, per outer iteration or once; quadruples/triples only for the conditional sum part [BCSE307L-CAT2-G2-2026-2027:Q4]"
+   ],
+   "rubric_mandatory_elements": [
+    "marks: SDT to generate intermediate code 2; backpatching explanation 2; key shows: quadruples; triples; indirect triples; label L2; backpatching for forward jumps [BCSE307L-CAT2-A1-2025-2026-AK:Q3]",
+    "marks: three-address code 4; key shows: labels L1..; conditional gotos; count++; s = sqrt(n); inner loop j=2*i [BCSE307L-CAT2-A1-2025-2026-AK:Q5a]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q3",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q5a",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q3",
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q3"
+   ]
+  },
+  {
+   "rank": 4,
+   "teach_order": 6,
+   "topic_name": "Code generation / register allocation",
+   "module": "M6",
+   "status": "observed",
+   "probability": 0.778,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.778,
+   "appearance_ratio_all_papers": "6 of 7 papers covering M6",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.078,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q4",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q7",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9a",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9b",
+    "BCSE307L-FAT-A2-2023-2024:Q6b",
+    "BCSE307L-FAT-A2-2025-2026:Q7",
+    "BCSE307L-FAT-A2-2025-2026:Q8",
+    "BCSE307L-FAT-C1-2023-2024:Q9a"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain issues in code generation phase with an example for each [CO5/K2] (cite BCSE307L-FAT-E1-2025-2026:Q4)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 5,
+   "teach_order": 5,
+   "topic_name": "Code optimization (CSE/constant folding/loop)",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.778,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.778,
+   "appearance_ratio_all_papers": "6 of 7 papers covering M5",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.059,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q2",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8b",
+    "BCSE307L-FAT-A2-2023-2024:Q9c",
+    "BCSE307L-FAT-A1-2025-2026:Q6",
+    "BCSE307L-FAT-A2-2025-2026:Q6",
+    "BCSE307L-FAT-C1-2023-2024:Q9b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify all applicable optimizations in a C snippet and write the fully optimized code [CO5/K3] (cite BCSE307L-FAT-E1-2025-2026:Q2)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: Common Subexpression Elimination; Loop-Invariant Code Motion; Strength Reduction; Induction Variable Optimization; Copy Propagation [BCSE307L-CAT2-A2-2025-2026-AK:Q5]",
+    "key shows: loop unrolling; reduced loop control overhead; time complexity O(n^3); space unaffected [BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5b]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q5",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5b"
+   ]
+  },
+  {
+   "rank": 6,
+   "teach_order": 4,
+   "topic_name": "Basic blocks / flow graph",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.778,
+   "appearance_ratio": "6 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.667,
+   "appearance_ratio_all_papers": "10 of 15 papers covering M4",
+   "recent_ratio_all_papers": "1 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.074,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q8b",
+    "BCSE307L-FAT-E1-2025-2026:Q8c",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q5",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q7",
+    "BCSE307L-FAT-A2-2023-2024:Q9b",
+    "BCSE307L-CAT2-G2-2026-2027:Q5b",
+    "BCSE307L-FAT-A1-2025-2026:Q5",
+    "BCSE307L-FAT-A2-2025-2026:Q5"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Generate numbered TAC, find leaders, partition into basic blocks, justify block boundary for a=a+2. (cite BCSE307L-CAT2-G2-2026-2027:Q5b)",
+   "observed_traps": [
+    "Decide whether a = a + 2 and b = b - 1 share a block with the result > 100 test using leader rules; no CFG or optimisation asked [BCSE307L-CAT2-G2-2026-2027:Q5b]"
+   ],
+   "rubric_mandatory_elements": [
+    "marks: basic blocks 3; key shows: leaders; basic block boundaries [BCSE307L-CAT2-A1-2025-2026-AK:Q5b]",
+    "marks: flow graph 3; key shows: flow graph edges between basic blocks [BCSE307L-CAT2-A1-2025-2026-AK:Q5c]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q5b",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q5c",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q4",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q4"
+   ]
+  },
+  {
+   "rank": 7,
+   "teach_order": 13,
+   "topic_name": "Instruction scheduling / ILP",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.667,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.667,
+   "appearance_ratio_all_papers": "5 of 7 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.059,
+   "supporting_files": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q8",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10a",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10b",
+    "BCSE307L-FAT-A2-2023-2024:Q7a",
+    "BCSE307L-FAT-A1-2025-2026:Q8",
+    "BCSE307L-FAT-C1-2023-2024:Q10"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Explain role and significance of instruction scheduling with examples. (cite BCSE307L-FAT-A1-2025-2026:Q8)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 8,
+   "teach_order": 11,
+   "topic_name": "Backpatching",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.667,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.556,
+   "appearance_ratio_all_papers": "9 of 15 papers covering M4",
+   "recent_ratio_all_papers": "0 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.069,
+   "supporting_files": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q3",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6a",
+    "BCSE307L-FAT-A2-2023-2024:Q5a",
+    "BCSE307L-FAT-A2-2023-2024:Q5b",
+    "BCSE307L-FAT-A1-2025-2026:Q10b",
+    "BCSE307L-FAT-A2-2025-2026:Q9b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Explain backpatching for given if-else with compound condition. (cite BCSE307L-FAT-A1-2025-2026:Q10b)",
+   "observed_traps": [
+    "Testing c != d before a < b may keep the final value but breaks left-to-right short-circuit order and side effects [BCSE307L-CAT2-G2-2026-2027:Q3c]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: true list; false list; back patch table; labels L2-L9, Lend [BCSE307L-CAT2-A2-2025-2026-AK:Q4]",
+    "key shows: truelist; falselist; backpatch; goto targets; param/call printf [BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q3]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q4",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q3"
+   ]
+  },
+  {
+   "rank": 9,
+   "teach_order": 8,
+   "topic_name": "CLR / LALR parsing",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.667,
+   "appearance_ratio": "5 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.483,
+   "appearance_ratio_all_papers": "12 of 24 papers covering M2",
+   "recent_ratio_all_papers": "1 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.055,
+   "supporting_files": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q2",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q4",
+    "BCSE307L-FAT-A2-2023-2024:Q2a",
+    "BCSE307L-CAT2-G2-2026-2027:Q1",
+    "BCSE307L-FAT-A1-2025-2026:Q3",
+    "BCSE307L-FAT-C1-2023-2024:Q4a"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Build canonical LR(1) sets, ACTION/GOTO, decide CLR(1), explain e-reduction conflict, trace parse of switch(x){case 1:y=z;}. (cite BCSE307L-CAT2-G2-2026-2027:Q1)",
+   "observed_traps": [
+    "Asked which LR(1) item's lookahead lets Cases -> epsilon reduce only at the right place, and what conflict appears if that reduction were entered under all terminals [BCSE307L-CAT2-G2-2026-2027:Q1]"
+   ],
+   "rubric_mandatory_elements": [
+    "marks: Representation of canonical LR(1) items 3; parsing table 3; justification and parse trace 2 plus 2; key shows: productions Stmt->DeclStmt, DeclStmt->Type IdList ;, Type->char, IdList->identifier IdListTail, IdListTail->, identifier IdListTail, IdListTail->e; LR(1) item s [BCSE307L-CAT2-A1-2025-2026-AK:Q1]",
+    "key shows: LR(1) items I0-I12 with lookaheads {$} and {end}; LR(1) parsing table; DFA diagram; stat'->.stat,{$} [BCSE307L-CAT2-A2-2025-2026-AK:Q1]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q1",
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q1",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q1"
+   ]
+  },
+  {
+   "rank": 10,
+   "teach_order": 7,
+   "topic_name": "Direct RE to DFA",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.556,
+   "appearance_ratio": "4 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.8,
+   "appearance_ratio_all_papers": "13 of 16 papers covering M1",
+   "recent_ratio_all_papers": "2 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "2 of 3",
+   "fat_mark_share": 0.059,
+   "supporting_files": [
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q1",
+    "BCSE307L-FAT-A2-2023-2024:Q8a",
+    "BCSE307L-FAT-A2-2023-2024:Q8b",
+    "BCSE307L-FAT-A2-2023-2024:Q8c",
+    "BCSE307L-CAT1-G1-2026-2027:Q2",
+    "BCSE307L-CAT1-G2-2026-2027:Q2",
+    "BCSE307L-FAT-A1-2025-2026:Q1",
+    "BCSE307L-FAT-A2-2025-2026:Q1"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Direct-method DFA for (a+e+b)* a* b+ a # with syntax tree, firstpos/lastpos, followpos, transition table. (cite BCSE307L-CAT1-G1-2026-2027:Q2)",
+   "observed_traps": [
+    "Augment the expression with the end marker # and number positions before firstpos/lastpos/followpos [BCSE307L-CAT1-A1-2025-2026-AK:Q2]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: augmented regex with end marker; firstpos/lastpos/followpos; DFA states; accepting states [BCSE307L-CAT1-A1-2025-2026-AK:Q2]",
+    "key shows: regex a?(ab)*b?; positions numbered; firstpos/lastpos/followpos sets [BCSE307L-CAT1-A2-2025-2026-AK:Q2]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q2",
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q2"
+   ]
+  },
+  {
+   "rank": 11,
+   "teach_order": 12,
+   "topic_name": "Syntax tree / DAG",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.556,
+   "appearance_ratio": "4 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.5,
+   "appearance_ratio_all_papers": "7 of 15 papers covering M4",
+   "recent_ratio_all_papers": "1 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.028,
+   "supporting_files": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q6",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6b",
+    "BCSE307L-FAT-A2-2023-2024:Q6a",
+    "BCSE307L-CAT2-G2-2026-2027:Q2a",
+    "BCSE307L-FAT-A1-2025-2026:Q4b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Construct DAG for 10-statement basic block, value numbers, identify common subexpressions and d's node. (cite BCSE307L-CAT2-G2-2026-2027:Q2a)",
+   "observed_traps": [
+    "b + c in statements 1 and 7 is NOT a common subexpression once b is redefined in statement 6; the question asks which occurrence cannot share the node [BCSE307L-CAT2-G2-2026-2027:Q2a]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: newNode; newLeaf; E.node/T.node/F.node; * and / nodes under - root [BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2b]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2b"
+   ]
+  },
+  {
+   "rank": 12,
+   "teach_order": 9,
+   "topic_name": "LL(1) parsing table",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.556,
+   "appearance_ratio": "4 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.448,
+   "appearance_ratio_all_papers": "11 of 24 papers covering M2",
+   "recent_ratio_all_papers": "1 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.049,
+   "supporting_files": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q9a",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3c",
+    "BCSE307L-FAT-A2-2023-2024:Q1a",
+    "BCSE307L-FAT-A2-2023-2024:Q1b",
+    "BCSE307L-CAT1-G2-2026-2027:Q4",
+    "BCSE307L-FAT-A2-2025-2026:Q3"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Compute FIRST/FOLLOW, LL(1) table, and trace parse of xx+zz?. (cite BCSE307L-CAT1-G2-2026-2027:Q4)",
+   "observed_traps": [
+    "Left recursion must be removed before FIRST/FOLLOW; key removes it for B [BCSE307L-CAT1-A1-2025-2026-AK:Q4]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: FIRST and FOLLOW sets; parsing table; left recursion removal for B; stack trace for abbc [BCSE307L-CAT1-A1-2025-2026-AK:Q4]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q4"
+   ]
+  },
+  {
+   "rank": 13,
+   "teach_order": 10,
+   "topic_name": "LR(0) / SLR parsing",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.556,
+   "appearance_ratio": "4 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.448,
+   "appearance_ratio_all_papers": "10 of 24 papers covering M2",
+   "recent_ratio_all_papers": "2 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "2 of 3",
+   "fat_mark_share": 0.045,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q6a",
+    "BCSE307L-FAT-E1-2025-2026:Q6c",
+    "BCSE307L-CAT1-G1-2026-2027:Q5",
+    "BCSE307L-CAT1-G2-2026-2027:Q5",
+    "BCSE307L-FAT-A1-2025-2026:Q9a",
+    "BCSE307L-FAT-A2-2025-2026:Q10a",
+    "BCSE307L-FAT-C1-2023-2024:Q4b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Build canonical LR(0) collection and SLR(1) table; parse cabbab. (cite BCSE307L-CAT1-G1-2026-2027:Q5)",
+   "observed_traps": [
+    "SLR reduce entries go under FOLLOW of the head only (key: FOLLOW(E) = {$, =}) [BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1]"
+   ],
+   "rubric_mandatory_elements": [
+    "key shows: augmented grammar S'->S; states I0-I5; FOLLOW(S)={+,*,$}; action table [BCSE307L-CAT1-A2-2025-2026-AK:Q5]",
+    "key shows: augmented grammar; LR(0) item sets I0-I8; FOLLOW(E)={$,=}; SLR action and goto table; shift-reduce stack trace [BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q5",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1"
+   ]
+  },
+  {
+   "rank": 14,
+   "teach_order": 14,
+   "topic_name": "Tokens / lexemes / LEX",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.444,
+   "appearance_ratio": "3 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.4,
+   "appearance_ratio_all_papers": "7 of 16 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.015,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q5b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2b",
+    "BCSE307L-FAT-A2-2025-2026:Q2b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Write a Lex program that checks and displays whether input contains digits, alphabets or special characters [CO1/K2] (cite BCSE307L-FAT-E1-2025-2026:Q5b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 15,
+   "teach_order": 17,
+   "topic_name": "FIRST / FOLLOW",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.444,
+   "appearance_ratio": "3 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.241,
+   "appearance_ratio_all_papers": "5 of 24 papers covering M2",
+   "recent_ratio_all_papers": "1 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.021,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q6b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3a",
+    "BCSE307L-CAT1-G1-2026-2027:Q4",
+    "BCSE307L-FAT-C1-2023-2024:Q3"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Compute FIRST/FOLLOW, build LL(1) table, decide with justification if G is LL(1), locate conflicts. (cite BCSE307L-CAT1-G1-2026-2027:Q4)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 16,
+   "teach_order": 30,
+   "topic_name": "Loop parallelism",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.333,
+   "appearance_ratio": "2 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.333,
+   "appearance_ratio_all_papers": "2 of 7 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.015,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q7c",
+    "BCSE307L-FAT-E1-2025-2026:Q7d",
+    "BCSE307L-FAT-A2-2023-2024:Q7b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify the most likely candidate in the code for parallelization and explain why (cite BCSE307L-FAT-E1-2025-2026:Q7c)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 17,
+   "teach_order": 23,
+   "topic_name": "S-attributed / L-attributed",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.333,
+   "appearance_ratio": "2 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.222,
+   "appearance_ratio_all_papers": "3 of 15 papers covering M3",
+   "recent_ratio_all_papers": "0 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.017,
+   "supporting_files": [
+    "BCSE307L-FAT-A2-2025-2026:Q4ii",
+    "BCSE307L-FAT-C1-2023-2024:Q5"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Differentiate synthesized and inherited attributes with examples. (cite BCSE307L-FAT-A2-2025-2026:Q4ii)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: B.val=0/1; Y.val=Y1.val*2+B.val; Y.len=Y1.len+1; X.val=Y1.val+(Y2.val/(2^Y2.len)); X.val=Y.val [BCSE307L-CAT2-A2-2025-2026-AK:Q2a]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q2a"
+   ]
+  },
+  {
+   "rank": 18,
+   "teach_order": 18,
+   "topic_name": "Recursive descent",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.333,
+   "appearance_ratio": "2 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.207,
+   "appearance_ratio_all_papers": "5 of 24 papers covering M2",
+   "recent_ratio_all_papers": "0 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.026,
+   "supporting_files": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q9b",
+    "BCSE307L-FAT-A1-2025-2026:Q9b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Eliminate left factoring and write recursive descent functions for transformed grammar. (cite BCSE307L-FAT-A1-2025-2026:Q9b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: left recursion removal; left factoring; procedures A, A', B, B', C, C'; match and error calls [BCSE307L-CAT1-A1-2025-2026-AK:Q3a]",
+    "key shows: stepwise derivation; string not parsed at the point where no rule applies [BCSE307L-CAT1-A1-2025-2026-AK:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q3a",
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q3b"
+   ]
+  },
+  {
+   "rank": 19,
+   "teach_order": 24,
+   "topic_name": "Symbol table",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.333,
+   "appearance_ratio": "2 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.167,
+   "appearance_ratio_all_papers": "2 of 15 papers covering M3",
+   "recent_ratio_all_papers": "0 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.016,
+   "supporting_files": [
+    "BCSE307L-FAT-A2-2023-2024:Q3c",
+    "BCSE307L-FAT-A1-2025-2026:Q7"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Draw activation record, explain its fields, and draw memory layout for fact(4) and fact(2). (cite BCSE307L-FAT-A1-2025-2026:Q7)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 20,
+   "teach_order": 19,
+   "topic_name": "Operator precedence parsing",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.31,
+   "appearance_ratio_all_papers": "7 of 24 papers covering M2",
+   "recent_ratio_all_papers": "1 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.013,
+   "supporting_files": [
+    "BCSE307L-CAT1-G2-2026-2027:Q3",
+    "BCSE307L-FAT-A2-2025-2026:Q10bi",
+    "BCSE307L-FAT-A2-2025-2026:Q10bii"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Build operator-precedence table and parse id and (id or id) showing stack and input. (cite BCSE307L-CAT1-G2-2026-2027:Q3)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: precedence relation table; precedence functions f and g; shift/reduce trace; stack and input columns [BCSE307L-CAT1-A1-2025-2026-AK:Q5]",
+    "key shows: precedence of % over #; left associativity of both [BCSE307L-CAT2-A1-2025-2026-AK:Q2b]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q5",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2b"
+   ]
+  },
+  {
+   "rank": 21,
+   "teach_order": 25,
+   "topic_name": "Type checking",
+   "module": "M3",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.222,
+   "appearance_ratio_all_papers": "2 of 15 papers covering M3",
+   "recent_ratio_all_papers": "1 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.013,
+   "supporting_files": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q10a",
+    "BCSE307L-CAT2-G2-2026-2027:Q2b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Do semantic type analysis of array references, derive row-major addresses and combined bounds condition on i and j. (cite BCSE307L-CAT2-G2-2026-2027:Q2b)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 22,
+   "teach_order": 28,
+   "topic_name": "Data-flow analysis",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.222,
+   "appearance_ratio_all_papers": "1 of 7 papers covering M5",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.013,
+   "supporting_files": [
+    "BCSE307L-FAT-C1-2023-2024:Q8"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Draw DFG, dominator tree, loops and back edges, apply constant propagation, identify loop invariants at lines 8 and 16. (cite BCSE307L-FAT-C1-2023-2024:Q8)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 23,
+   "teach_order": 31,
+   "topic_name": "Parallelism (legacy code)",
+   "module": "M7",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.222,
+   "appearance_ratio_all_papers": "1 of 7 papers covering M7",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.012,
+   "supporting_files": [
+    "BCSE307L-FAT-E1-2025-2026:Q7a",
+    "BCSE307L-FAT-E1-2025-2026:Q7b",
+    "BCSE307L-FAT-E1-2025-2026:Q7e"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Identify two primary reasons the serial Fortran application is no longer adequate [CO5/K3] (cite BCSE307L-FAT-E1-2025-2026:Q7a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 24,
+   "teach_order": 29,
+   "topic_name": "Peephole optimization",
+   "module": "M5",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.222,
+   "appearance_ratio_all_papers": "1 of 7 papers covering M5",
+   "recent_ratio_all_papers": "0 of 0 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.007,
+   "supporting_files": [
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8a",
+    "BCSE307L-CAT2-G2-2026-2027:Q5a"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Apply peephole optimization to the 20-line target code and justify each class of change. (cite BCSE307L-CAT2-G2-2026-2027:Q5a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: redundant instruction removal; algebraic simplification; use machine idioms; unreachable code removal; flow of control optimization [BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5b]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5b"
+   ]
+  },
+  {
+   "rank": 25,
+   "teach_order": 20,
+   "topic_name": "Shift-reduce parsing",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.138,
+   "appearance_ratio_all_papers": "3 of 24 papers covering M2",
+   "recent_ratio_all_papers": "0 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.004,
+   "supporting_files": [
+    "BCSE307L-FAT-A2-2023-2024:Q2b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Identify handles and perform handle pruning with shift-reduce parser for aaccdde. (cite BCSE307L-CAT1-E2-2025-2026:Q4a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 26,
+   "teach_order": 26,
+   "topic_name": "Activation tree",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.111,
+   "appearance_ratio_all_papers": "1 of 15 papers covering M4",
+   "recent_ratio_all_papers": "0 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.003,
+   "supporting_files": [
+    "BCSE307L-FAT-A2-2023-2024:Q6c"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Construct the activation tree for the main, average and sum functions. (cite BCSE307L-FAT-A2-2023-2024:Q6c)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 27,
+   "teach_order": 15,
+   "topic_name": "Regular expression to NFA (Thompson)",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.222,
+   "appearance_ratio": "1 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.1,
+   "appearance_ratio_all_papers": "1 of 16 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.013,
+   "supporting_files": [
+    "BCSE307L-FAT-C1-2023-2024:Q1a",
+    "BCSE307L-FAT-C1-2023-2024:Q1b"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "Determine which of three regular expressions are ambiguous. (cite BCSE307L-FAT-C1-2023-2024:Q1a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 28,
+   "teach_order": 27,
+   "topic_name": "SDT / backpatching (label-based SDT)",
+   "module": "M4",
+   "status": "observed",
+   "probability": 0.111,
+   "appearance_ratio": "0 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.167,
+   "appearance_ratio_all_papers": "1 of 15 papers covering M4",
+   "recent_ratio_all_papers": "1 of 1 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE307L-CAT2-G2-2026-2027:Q3a",
+    "BCSE307L-CAT2-G2-2026-2027:Q3b",
+    "BCSE307L-CAT2-G2-2026-2027:Q3c"
+   ],
+   "core_type": "theory",
+   "fluff_stripped_core_task": "State grammar productions and semantic actions for relational, &&,   and if-else using label-based SDT. (cite BCSE307L-CAT2-G2-2026-2027:Q3a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  },
+  {
+   "rank": 29,
+   "teach_order": 21,
+   "topic_name": "Ambiguous grammar",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.111,
+   "appearance_ratio": "0 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.138,
+   "appearance_ratio_all_papers": "3 of 24 papers covering M2",
+   "recent_ratio_all_papers": "0 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q3a",
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q3b",
+    "BCSE307L-CAT-1-C1-2023-2024:Q3a",
+    "BCSE307L-CAT-1-C1-2023-2024:Q3b",
+    "BCSE307L-CAT1-E2-2025-2026:Q4b"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Give leftmost, rightmost derivations and parse tree for (a+a)*a; argue ambiguity (cite BCSE307L-CAT1-A2-2025-2026-AK:Q3a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: leftmost derivation; rightmost derivation; parse tree; ambiguity argument [BCSE307L-CAT1-A2-2025-2026-AK:Q3a]",
+    "key shows: leftmost derivation; rightmost derivation; parse tree; unambiguity argument [BCSE307L-CAT1-A2-2025-2026-AK:Q3b]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q3a",
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q3b"
+   ]
+  },
+  {
+   "rank": 30,
+   "teach_order": 22,
+   "topic_name": "Left recursion / left factoring",
+   "module": "M2",
+   "status": "observed",
+   "probability": 0.111,
+   "appearance_ratio": "0 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.138,
+   "appearance_ratio_all_papers": "2 of 24 papers covering M2",
+   "recent_ratio_all_papers": "1 of 3 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "1 of 3",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE307L-CAT1-G1-2026-2027:Q3"
+   ],
+   "core_type": "trace",
+   "fluff_stripped_core_task": "Remove left recursion, left-factor, write recursive-descent functions, trace id[id+id]. (cite BCSE307L-CAT1-G1-2026-2027:Q3)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": [
+    "key shows: left recursion elimination; left factoring cA X; shift-reduce table; stuck state S+ [BCSE307L-CAT1-A2-2025-2026-AK:Q4]"
+   ],
+   "worked_examples": [
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q4"
+   ]
+  },
+  {
+   "rank": 31,
+   "teach_order": 16,
+   "topic_name": "NFA to DFA (subset construction)",
+   "module": "M1",
+   "status": "observed",
+   "probability": 0.111,
+   "appearance_ratio": "0 of 7 FATs",
+   "recent_ratio": "0 of 0 FATs 2026-27",
+   "probability_all_papers": 0.1,
+   "appearance_ratio_all_papers": "1 of 16 papers covering M1",
+   "recent_ratio_all_papers": "0 of 2 2026-27 papers",
+   "sister_2026_27_fat_ratio": "0 of 0",
+   "core_2026_27_cat_ratio": "0 of 3",
+   "fat_mark_share": 0.0,
+   "supporting_files": [
+    "BCSE307L-CAT-1-C1-2024-2025:Q3a"
+   ],
+   "core_type": "numerical",
+   "fluff_stripped_core_task": "Construct FA for strings over (0+1) with no consecutive zeros and test two strings. (cite BCSE307L-CAT-1-C1-2024-2025:Q3a)",
+   "observed_traps": [],
+   "rubric_mandatory_elements": null,
+   "worked_examples": []
+  }
+ ],
+ "no_clear_pattern": [
+  "Slot-pair reuse: slot 1 -> slot 2 same-archetype 0.51 vs different-year baseline 0.59 (70 questions): slot pairing gives no lift",
+  "Scenario-wrapper drift: tags unreliable for CD (2/14 agreement)",
+  "Exact FAT question order (shuffled in 2 of 7)",
+  "M7 parallelism question type (ILP vs loop parallelism vs legacy-code parallelisation all occur)"
+ ],
+ "slot_pair_hit_rates": {
+  "Identical": 0.0,
+  "Same concept new numbers": 0.514,
+  "Same module only": 0.443,
+  "Unrelated": 0.043,
+  "_n": "70 questions in 8 slot pairs",
+  "_baseline_different_year_same_concept": 0.585,
+  "_cross_letter_same_year_same_concept": 0.595,
+  "_sister_courses_same_concept": null
+ }
+}

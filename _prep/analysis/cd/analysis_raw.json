@@ -1,0 +1,2897 @@
+{
+ "subject": "cd",
+ "core_code": "BCSE307L",
+ "student_slot": "G2",
+ "coverage_windows": {
+  "CAT1": [
+   "M1",
+   "M2"
+  ],
+  "CAT2": [
+   "M2",
+   "M3",
+   "M4"
+  ],
+  "FAT": [
+   "M1",
+   "M2",
+   "M3",
+   "M4",
+   "M5",
+   "M6",
+   "M7"
+  ]
+ },
+ "aliases_merged": {},
+ "papers_core": {
+  "BCSE307L-CAT1-A1-2025-2026-AK": {
+   "exam": "CAT1",
+   "slot": "A1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE307L-CAT1-A2-2025-2026-AK": {
+   "exam": "CAT1",
+   "slot": "A2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE307L-CAT1-E1-2025-2026": {
+   "exam": "CAT1",
+   "slot": "E1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 8
+  },
+  "BCSE307L-CAT2-A1-2025-2026-AK": {
+   "exam": "CAT2",
+   "slot": "A1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 13
+  },
+  "BCSE307L-FAT-E1-2025-2026": {
+   "exam": "FAT",
+   "slot": "E1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 18
+  },
+  "BCSE307L-CAT-1-C1-2023-2024": {
+   "exam": "CAT1",
+   "slot": "C1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper": {
+   "exam": "CAT2",
+   "slot": "A2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 8
+  },
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper": {
+   "exam": "CAT2",
+   "slot": "C1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 10
+  },
+  "BCSE307L-CAT-2-C1-2024-2025-Answer Key": {
+   "exam": "CAT2",
+   "slot": "C1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE307L - FAT - C1 - 2024 - Question Paper": {
+   "exam": "FAT",
+   "slot": "C1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 12
+  },
+  "BCSE307L - FAT - C2 - 2023 - Question Paper": {
+   "exam": "FAT",
+   "slot": "C2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 18
+  },
+  "BCSE307L-FAT-A2-2023-2024": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2023",
+   "recent": false,
+   "n_q": 22
+  },
+  "BCSE307L-CAT1-E2-2025-2026": {
+   "exam": "CAT1",
+   "slot": "E2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE307L-CAT1-G1-2026-2027": {
+   "exam": "CAT1",
+   "slot": "G1",
+   "year": "2026",
+   "recent": true,
+   "n_q": 5
+  },
+  "BCSE307L-CAT1-G2-2026-2027": {
+   "exam": "CAT1",
+   "slot": "G2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 5
+  },
+  "BCSE307L-CAT2-A2-2025-2026-AK": {
+   "exam": "CAT2",
+   "slot": "A2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE307L-CAT2-E2-2025-2026": {
+   "exam": "CAT2",
+   "slot": "E2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE307L-CAT2-G2-2026-2027": {
+   "exam": "CAT2",
+   "slot": "G2",
+   "year": "2026",
+   "recent": true,
+   "n_q": 9
+  },
+  "BCSE307L-FAT-A1-2025-2026": {
+   "exam": "FAT",
+   "slot": "A1",
+   "year": "2025",
+   "recent": false,
+   "n_q": 13
+  },
+  "BCSE307L-FAT-A2-2025-2026": {
+   "exam": "FAT",
+   "slot": "A2",
+   "year": "2025",
+   "recent": false,
+   "n_q": 15
+  },
+  "BCSE307L-CAT-1-C1-2024-2025": {
+   "exam": "CAT1",
+   "slot": "C1",
+   "year": "2024",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE307L-CAT-1-C2-2024-2025": {
+   "exam": "CAT1",
+   "slot": "C2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 6
+  },
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key": {
+   "exam": "CAT2",
+   "slot": "C2",
+   "year": "2024",
+   "recent": false,
+   "n_q": 7
+  },
+  "BCSE307L-FAT-C1-2023-2024": {
+   "exam": "FAT",
+   "slot": "C1",
+   "year": "2023",
+   "recent": false,
+   "n_q": 13
+  }
+ },
+ "topic_stats": {
+  "SDD / SDT / annotated parse tree": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 7,
+    "n_older": 7,
+    "ratio": "7 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "7 of 7",
+    "probability": 0.889
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 1,
+    "k_older": 14,
+    "n_older": 14,
+    "ratio": "14 of 15",
+    "recent_ratio": "0 of 1",
+    "older_ratio": "14 of 14",
+    "probability": 0.833
+   },
+   "support": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2a",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2c",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2d",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q4a",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q4b",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q4c",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q4d",
+    "BCSE307L-FAT-E1-2025-2026:Q1a",
+    "BCSE307L-FAT-E1-2025-2026:Q1b",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q2a",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q2b",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q2c",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q3",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q2",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5a",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q10b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5a",
+    "BCSE307L-FAT-A2-2023-2024:Q3a",
+    "BCSE307L-FAT-A2-2023-2024:Q3b",
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q2b",
+    "BCSE307L-CAT2-E2-2025-2026:Q2",
+    "BCSE307L-FAT-A1-2025-2026:Q4a",
+    "BCSE307L-FAT-A2-2025-2026:Q4i",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2a",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5a",
+    "BCSE307L-FAT-C1-2023-2024:Q6"
+   ],
+   "types": {
+    "theory": 7,
+    "trace": 15,
+    "numerical": 3,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.074
+  },
+  "Three-address code / quadruples / triples": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "6 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 7",
+    "probability": 0.778
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 1,
+    "k_older": 12,
+    "n_older": 14,
+    "ratio": "13 of 15",
+    "recent_ratio": "1 of 1",
+    "older_ratio": "12 of 14",
+    "probability": 0.833
+   },
+   "support": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q3",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q5a",
+    "BCSE307L-FAT-E1-2025-2026:Q3",
+    "BCSE307L-FAT-E1-2025-2026:Q8a",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q3a",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q3b",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q4",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q4",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q5a",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q3",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q4",
+    "BCSE307L-FAT-A2-2023-2024:Q4a",
+    "BCSE307L-FAT-A2-2023-2024:Q4b",
+    "BCSE307L-FAT-A2-2023-2024:Q9a",
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q3",
+    "BCSE307L-CAT2-E2-2025-2026:Q3b",
+    "BCSE307L-CAT2-G2-2026-2027:Q4",
+    "BCSE307L-FAT-A1-2025-2026:Q10a",
+    "BCSE307L-FAT-A2-2025-2026:Q9a",
+    "BCSE307L-FAT-C1-2023-2024:Q7"
+   ],
+   "types": {
+    "trace": 15,
+    "numerical": 5
+   },
+   "marks_share_fat": 0.091
+  },
+  "CLR / LALR parsing": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "5 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 7",
+    "probability": 0.667
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 3,
+    "k_older": 11,
+    "n_older": 21,
+    "ratio": "12 of 24",
+    "recent_ratio": "1 of 3",
+    "older_ratio": "11 of 21",
+    "probability": 0.483
+   },
+   "support": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q1",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q1a",
+    "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q1b",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q2a",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q2b",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q2c",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q2",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q4",
+    "BCSE307L-FAT-A2-2023-2024:Q2a",
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q1",
+    "BCSE307L-CAT2-E2-2025-2026:Q1a",
+    "BCSE307L-CAT2-E2-2025-2026:Q1b",
+    "BCSE307L-CAT2-G2-2026-2027:Q1",
+    "BCSE307L-FAT-A1-2025-2026:Q3",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q1",
+    "BCSE307L-FAT-C1-2023-2024:Q4a"
+   ],
+   "types": {
+    "trace": 10,
+    "theory": 4,
+    "numerical": 2
+   },
+   "marks_share_fat": 0.055
+  },
+  "Phases of compiler": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "6 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 7",
+    "probability": 0.778
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 2,
+    "k_older": 13,
+    "n_older": 14,
+    "ratio": "15 of 16",
+    "recent_ratio": "2 of 2",
+    "older_ratio": "13 of 14",
+    "probability": 0.9
+   },
+   "support": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q1",
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q1",
+    "BCSE307L-CAT1-E1-2025-2026:Q1",
+    "BCSE307L-FAT-E1-2025-2026:Q5a",
+    "BCSE307L-CAT-1-C1-2023-2024:Q1a",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q1",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2a",
+    "BCSE307L-CAT1-E2-2025-2026:Q1",
+    "BCSE307L-CAT1-G1-2026-2027:Q1",
+    "BCSE307L-CAT1-G2-2026-2027:Q1",
+    "BCSE307L-FAT-A1-2025-2026:Q2",
+    "BCSE307L-FAT-A2-2025-2026:Q2a",
+    "BCSE307L-CAT-1-C1-2024-2025:Q1",
+    "BCSE307L-CAT-1-C2-2024-2025:Q3",
+    "BCSE307L-FAT-C1-2023-2024:Q2"
+   ],
+   "types": {
+    "trace": 10,
+    "theory": 5
+   },
+   "marks_share_fat": 0.071
+  },
+  "Direct RE to DFA": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 7,
+    "ratio": "4 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 7",
+    "probability": 0.556
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 2,
+    "k_older": 11,
+    "n_older": 14,
+    "ratio": "13 of 16",
+    "recent_ratio": "2 of 2",
+    "older_ratio": "11 of 14",
+    "probability": 0.8
+   },
+   "support": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q2",
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q2",
+    "BCSE307L-CAT1-E1-2025-2026:Q2",
+    "BCSE307L-CAT-1-C1-2023-2024:Q2",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q1",
+    "BCSE307L-FAT-A2-2023-2024:Q8a",
+    "BCSE307L-FAT-A2-2023-2024:Q8b",
+    "BCSE307L-FAT-A2-2023-2024:Q8c",
+    "BCSE307L-CAT1-E2-2025-2026:Q2a",
+    "BCSE307L-CAT1-G1-2026-2027:Q2",
+    "BCSE307L-CAT1-G2-2026-2027:Q2",
+    "BCSE307L-FAT-A1-2025-2026:Q1",
+    "BCSE307L-FAT-A2-2025-2026:Q1",
+    "BCSE307L-CAT-1-C1-2024-2025:Q2",
+    "BCSE307L-CAT-1-C2-2024-2025:Q1"
+   ],
+   "types": {
+    "trace": 9,
+    "numerical": 6
+   },
+   "marks_share_fat": 0.059
+  },
+  "LL(1) parsing table": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 7,
+    "ratio": "4 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 7",
+    "probability": 0.556
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 3,
+    "k_older": 10,
+    "n_older": 21,
+    "ratio": "11 of 24",
+    "recent_ratio": "1 of 3",
+    "older_ratio": "10 of 21",
+    "probability": 0.448
+   },
+   "support": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q4",
+    "BCSE307L-CAT1-E1-2025-2026:Q3c",
+    "BCSE307L-CAT-1-C1-2023-2024:Q5",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q9a",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3c",
+    "BCSE307L-FAT-A2-2023-2024:Q1a",
+    "BCSE307L-FAT-A2-2023-2024:Q1b",
+    "BCSE307L-CAT1-E2-2025-2026:Q3",
+    "BCSE307L-CAT1-G2-2026-2027:Q4",
+    "BCSE307L-FAT-A2-2025-2026:Q3",
+    "BCSE307L-CAT-1-C1-2024-2025:Q4",
+    "BCSE307L-CAT-1-C2-2024-2025:Q4"
+   ],
+   "types": {
+    "trace": 9,
+    "numerical": 3,
+    "theory": 1
+   },
+   "marks_share_fat": 0.049
+  },
+  "LR(0) / SLR parsing": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 7,
+    "ratio": "4 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 7",
+    "probability": 0.556
+   },
+   "all": {
+    "k_recent": 2,
+    "n_recent": 3,
+    "k_older": 8,
+    "n_older": 21,
+    "ratio": "10 of 24",
+    "recent_ratio": "2 of 3",
+    "older_ratio": "8 of 21",
+    "probability": 0.448
+   },
+   "support": [
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q5",
+    "BCSE307L-FAT-E1-2025-2026:Q6a",
+    "BCSE307L-FAT-E1-2025-2026:Q6c",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q1a",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q1b",
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q1c",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1",
+    "BCSE307L-CAT1-E2-2025-2026:Q5",
+    "BCSE307L-CAT1-G1-2026-2027:Q5",
+    "BCSE307L-CAT1-G2-2026-2027:Q5",
+    "BCSE307L-FAT-A1-2025-2026:Q9a",
+    "BCSE307L-FAT-A2-2025-2026:Q10a",
+    "BCSE307L-FAT-C1-2023-2024:Q4b"
+   ],
+   "types": {
+    "trace": 10,
+    "numerical": 2,
+    "theory": 1
+   },
+   "marks_share_fat": 0.045
+  },
+  "Backpatching": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "5 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 7",
+    "probability": 0.667
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 1,
+    "k_older": 9,
+    "n_older": 14,
+    "ratio": "9 of 15",
+    "recent_ratio": "0 of 1",
+    "older_ratio": "9 of 14",
+    "probability": 0.556
+   },
+   "support": [
+    "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q5b",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q3",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6a",
+    "BCSE307L-FAT-A2-2023-2024:Q5a",
+    "BCSE307L-FAT-A2-2023-2024:Q5b",
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q4",
+    "BCSE307L-CAT2-E2-2025-2026:Q4",
+    "BCSE307L-FAT-A1-2025-2026:Q10b",
+    "BCSE307L-FAT-A2-2025-2026:Q9b",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q3"
+   ],
+   "types": {
+    "theory": 1,
+    "trace": 10
+   },
+   "marks_share_fat": 0.069
+  },
+  "Operator precedence parsing": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 3,
+    "k_older": 6,
+    "n_older": 21,
+    "ratio": "7 of 24",
+    "recent_ratio": "1 of 3",
+    "older_ratio": "6 of 21",
+    "probability": 0.31
+   },
+   "support": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q5",
+    "BCSE307L-CAT1-E1-2025-2026:Q4a",
+    "BCSE307L-CAT1-E1-2025-2026:Q4b",
+    "BCSE307L-CAT1-E1-2025-2026:Q4c",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q2b",
+    "BCSE307L-CAT1-G2-2026-2027:Q3",
+    "BCSE307L-FAT-A2-2025-2026:Q10bi",
+    "BCSE307L-FAT-A2-2025-2026:Q10bii",
+    "BCSE307L-CAT-1-C1-2024-2025:Q5b",
+    "BCSE307L-CAT-1-C2-2024-2025:Q2b"
+   ],
+   "types": {
+    "trace": 5,
+    "theory": 3,
+    "numerical": 2
+   },
+   "marks_share_fat": 0.013
+  },
+  "Code optimization (CSE/constant folding/loop)": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "6 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 7",
+    "probability": 0.778
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "6 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 7",
+    "probability": 0.778
+   },
+   "support": [
+    "BCSE307L-FAT-E1-2025-2026:Q2",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8b",
+    "BCSE307L-FAT-A2-2023-2024:Q9c",
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q5",
+    "BCSE307L-CAT2-E2-2025-2026:Q5",
+    "BCSE307L-FAT-A1-2025-2026:Q6",
+    "BCSE307L-FAT-A2-2025-2026:Q6",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5b",
+    "BCSE307L-FAT-C1-2023-2024:Q9b"
+   ],
+   "types": {
+    "theory": 7,
+    "trace": 2
+   },
+   "marks_share_fat": 0.059
+  },
+  "Basic blocks / flow graph": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "6 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 7",
+    "probability": 0.778
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 1,
+    "k_older": 9,
+    "n_older": 14,
+    "ratio": "10 of 15",
+    "recent_ratio": "1 of 1",
+    "older_ratio": "9 of 14",
+    "probability": 0.667
+   },
+   "support": [
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q5b",
+    "BCSE307L-CAT2-A1-2025-2026-AK:Q5c",
+    "BCSE307L-FAT-E1-2025-2026:Q8b",
+    "BCSE307L-FAT-E1-2025-2026:Q8c",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q4",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q5",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q7",
+    "BCSE307L-FAT-A2-2023-2024:Q9b",
+    "BCSE307L-CAT2-G2-2026-2027:Q5b",
+    "BCSE307L-FAT-A1-2025-2026:Q5",
+    "BCSE307L-FAT-A2-2025-2026:Q5",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q4"
+   ],
+   "types": {
+    "trace": 8,
+    "theory": 3,
+    "numerical": 1
+   },
+   "marks_share_fat": 0.074
+  },
+  "Code generation / register allocation": {
+   "module": "M6",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "6 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 7",
+    "probability": 0.778
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 6,
+    "n_older": 7,
+    "ratio": "6 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "6 of 7",
+    "probability": 0.778
+   },
+   "support": [
+    "BCSE307L-FAT-E1-2025-2026:Q4",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q7",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9a",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9b",
+    "BCSE307L-FAT-A2-2023-2024:Q6b",
+    "BCSE307L-FAT-A2-2025-2026:Q7",
+    "BCSE307L-FAT-A2-2025-2026:Q8",
+    "BCSE307L-FAT-C1-2023-2024:Q9a"
+   ],
+   "types": {
+    "theory": 4,
+    "trace": 4
+   },
+   "marks_share_fat": 0.078
+  },
+  "Tokens / lexemes / LEX": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "3 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "3 of 7",
+    "probability": 0.444
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 7,
+    "n_older": 14,
+    "ratio": "7 of 16",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "7 of 14",
+    "probability": 0.4
+   },
+   "support": [
+    "BCSE307L-FAT-E1-2025-2026:Q5b",
+    "BCSE307L-CAT-1-C1-2023-2024:Q1b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2b",
+    "BCSE307L-CAT1-E2-2025-2026:Q2b",
+    "BCSE307L-FAT-A2-2025-2026:Q2b",
+    "BCSE307L-CAT-1-C1-2024-2025:Q3b",
+    "BCSE307L-CAT-1-C2-2024-2025:Q2a"
+   ],
+   "types": {
+    "theory": 3,
+    "trace": 2,
+    "numerical": 2
+   },
+   "marks_share_fat": 0.015
+  },
+  "Recursive descent": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "2 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 7",
+    "probability": 0.333
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 3,
+    "k_older": 5,
+    "n_older": 21,
+    "ratio": "5 of 24",
+    "recent_ratio": "0 of 3",
+    "older_ratio": "5 of 21",
+    "probability": 0.207
+   },
+   "support": [
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q3a",
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q3b",
+    "BCSE307L-CAT-1-C1-2023-2024:Q4",
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q9b",
+    "BCSE307L-FAT-A1-2025-2026:Q9b",
+    "BCSE307L-CAT-1-C2-2024-2025:Q5"
+   ],
+   "types": {
+    "trace": 4,
+    "theory": 2
+   },
+   "marks_share_fat": 0.026
+  },
+  "FIRST / FOLLOW": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 3,
+    "n_older": 7,
+    "ratio": "3 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "3 of 7",
+    "probability": 0.444
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 3,
+    "k_older": 4,
+    "n_older": 21,
+    "ratio": "5 of 24",
+    "recent_ratio": "1 of 3",
+    "older_ratio": "4 of 21",
+    "probability": 0.241
+   },
+   "support": [
+    "BCSE307L-CAT1-E1-2025-2026:Q3a",
+    "BCSE307L-CAT1-E1-2025-2026:Q3b",
+    "BCSE307L-FAT-E1-2025-2026:Q6b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3a",
+    "BCSE307L-CAT1-G1-2026-2027:Q4",
+    "BCSE307L-FAT-C1-2023-2024:Q3"
+   ],
+   "types": {
+    "numerical": 6
+   },
+   "marks_share_fat": 0.021
+  },
+  "Ambiguous grammar": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "0 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 7",
+    "probability": 0.111
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 3,
+    "k_older": 3,
+    "n_older": 21,
+    "ratio": "3 of 24",
+    "recent_ratio": "0 of 3",
+    "older_ratio": "3 of 21",
+    "probability": 0.138
+   },
+   "support": [
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q3a",
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q3b",
+    "BCSE307L-CAT-1-C1-2023-2024:Q3a",
+    "BCSE307L-CAT-1-C1-2023-2024:Q3b",
+    "BCSE307L-CAT1-E2-2025-2026:Q4b"
+   ],
+   "types": {
+    "trace": 4,
+    "numerical": 1
+   },
+   "marks_share_fat": 0.0
+  },
+  "Instruction scheduling / ILP": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "5 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 7",
+    "probability": 0.667
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 5,
+    "n_older": 7,
+    "ratio": "5 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "5 of 7",
+    "probability": 0.667
+   },
+   "support": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q8",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10a",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10b",
+    "BCSE307L-FAT-A2-2023-2024:Q7a",
+    "BCSE307L-FAT-A1-2025-2026:Q8",
+    "BCSE307L-FAT-C1-2023-2024:Q10"
+   ],
+   "types": {
+    "theory": 6
+   },
+   "marks_share_fat": 0.059
+  },
+  "Syntax tree / DAG": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 4,
+    "n_older": 7,
+    "ratio": "4 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "4 of 7",
+    "probability": 0.556
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 1,
+    "k_older": 6,
+    "n_older": 14,
+    "ratio": "7 of 15",
+    "recent_ratio": "1 of 1",
+    "older_ratio": "6 of 14",
+    "probability": 0.5
+   },
+   "support": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q6",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6b",
+    "BCSE307L-FAT-A2-2023-2024:Q6a",
+    "BCSE307L-CAT2-E2-2025-2026:Q3a",
+    "BCSE307L-CAT2-G2-2026-2027:Q2a",
+    "BCSE307L-FAT-A1-2025-2026:Q4b",
+    "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2b"
+   ],
+   "types": {
+    "trace": 3,
+    "numerical": 3,
+    "theory": 1
+   },
+   "marks_share_fat": 0.028
+  },
+  "Parallelism (legacy code)": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "support": [
+    "BCSE307L-FAT-E1-2025-2026:Q7a",
+    "BCSE307L-FAT-E1-2025-2026:Q7b",
+    "BCSE307L-FAT-E1-2025-2026:Q7e"
+   ],
+   "types": {
+    "theory": 3
+   },
+   "marks_share_fat": 0.012
+  },
+  "Loop parallelism": {
+   "module": "M7",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "2 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 7",
+    "probability": 0.333
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "2 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 7",
+    "probability": 0.333
+   },
+   "support": [
+    "BCSE307L-FAT-E1-2025-2026:Q7c",
+    "BCSE307L-FAT-E1-2025-2026:Q7d",
+    "BCSE307L-FAT-A2-2023-2024:Q7b"
+   ],
+   "types": {
+    "theory": 2,
+    "trace": 1
+   },
+   "marks_share_fat": 0.015
+  },
+  "Shift-reduce parsing": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 3,
+    "k_older": 3,
+    "n_older": 21,
+    "ratio": "3 of 24",
+    "recent_ratio": "0 of 3",
+    "older_ratio": "3 of 21",
+    "probability": 0.138
+   },
+   "support": [
+    "BCSE307L-FAT-A2-2023-2024:Q2b",
+    "BCSE307L-CAT1-E2-2025-2026:Q4a",
+    "BCSE307L-CAT-1-C1-2024-2025:Q5a"
+   ],
+   "types": {
+    "trace": 3
+   },
+   "marks_share_fat": 0.004
+  },
+  "S-attributed / L-attributed": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "2 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 7",
+    "probability": 0.333
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 1,
+    "k_older": 3,
+    "n_older": 14,
+    "ratio": "3 of 15",
+    "recent_ratio": "0 of 1",
+    "older_ratio": "3 of 14",
+    "probability": 0.222
+   },
+   "support": [
+    "BCSE307L-CAT2-A2-2025-2026-AK:Q2a",
+    "BCSE307L-FAT-A2-2025-2026:Q4ii",
+    "BCSE307L-FAT-C1-2023-2024:Q5"
+   ],
+   "types": {
+    "theory": 2,
+    "scenario": 1
+   },
+   "marks_share_fat": 0.017
+  },
+  "SDT / backpatching (label-based SDT)": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "0 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 7",
+    "probability": 0.111
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 1,
+    "k_older": 0,
+    "n_older": 14,
+    "ratio": "1 of 15",
+    "recent_ratio": "1 of 1",
+    "older_ratio": "0 of 14",
+    "probability": 0.167
+   },
+   "support": [
+    "BCSE307L-CAT2-G2-2026-2027:Q3a",
+    "BCSE307L-CAT2-G2-2026-2027:Q3b",
+    "BCSE307L-CAT2-G2-2026-2027:Q3c"
+   ],
+   "types": {
+    "theory": 2,
+    "numerical": 1
+   },
+   "marks_share_fat": 0.0
+  },
+  "Left recursion / left factoring": {
+   "module": "M2",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "0 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 7",
+    "probability": 0.111
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 3,
+    "k_older": 1,
+    "n_older": 21,
+    "ratio": "2 of 24",
+    "recent_ratio": "1 of 3",
+    "older_ratio": "1 of 21",
+    "probability": 0.138
+   },
+   "support": [
+    "BCSE307L-CAT1-A2-2025-2026-AK:Q4",
+    "BCSE307L-CAT1-G1-2026-2027:Q3"
+   ],
+   "types": {
+    "trace": 2
+   },
+   "marks_share_fat": 0.0
+  },
+  "Peephole optimization": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "support": [
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5b",
+    "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8a",
+    "BCSE307L-CAT2-G2-2026-2027:Q5a"
+   ],
+   "types": {
+    "trace": 3
+   },
+   "marks_share_fat": 0.007
+  },
+  "Type checking": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 1,
+    "n_recent": 1,
+    "k_older": 1,
+    "n_older": 14,
+    "ratio": "2 of 15",
+    "recent_ratio": "1 of 1",
+    "older_ratio": "1 of 14",
+    "probability": 0.222
+   },
+   "support": [
+    "BCSE307L - FAT - C1 - 2024 - Question Paper:Q10a",
+    "BCSE307L-CAT2-G2-2026-2027:Q2b"
+   ],
+   "types": {
+    "theory": 1,
+    "numerical": 1
+   },
+   "marks_share_fat": 0.013
+  },
+  "Symbol table": {
+   "module": "M3",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 2,
+    "n_older": 7,
+    "ratio": "2 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "2 of 7",
+    "probability": 0.333
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 1,
+    "k_older": 2,
+    "n_older": 14,
+    "ratio": "2 of 15",
+    "recent_ratio": "0 of 1",
+    "older_ratio": "2 of 14",
+    "probability": 0.167
+   },
+   "support": [
+    "BCSE307L-FAT-A2-2023-2024:Q3c",
+    "BCSE307L-FAT-A1-2025-2026:Q7"
+   ],
+   "types": {
+    "trace": 1,
+    "theory": 1
+   },
+   "marks_share_fat": 0.016
+  },
+  "Regular expression to NFA (Thompson)": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 1,
+    "n_older": 14,
+    "ratio": "1 of 16",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "1 of 14",
+    "probability": 0.1
+   },
+   "support": [
+    "BCSE307L-FAT-C1-2023-2024:Q1a",
+    "BCSE307L-FAT-C1-2023-2024:Q1b"
+   ],
+   "types": {
+    "theory": 1,
+    "trace": 1
+   },
+   "marks_share_fat": 0.013
+  },
+  "Activation tree": {
+   "module": "M4",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 1,
+    "k_older": 1,
+    "n_older": 14,
+    "ratio": "1 of 15",
+    "recent_ratio": "0 of 1",
+    "older_ratio": "1 of 14",
+    "probability": 0.111
+   },
+   "support": [
+    "BCSE307L-FAT-A2-2023-2024:Q6c"
+   ],
+   "types": {
+    "trace": 1
+   },
+   "marks_share_fat": 0.003
+  },
+  "NFA to DFA (subset construction)": {
+   "module": "M1",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 0,
+    "n_older": 7,
+    "ratio": "0 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "0 of 7",
+    "probability": 0.111
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 2,
+    "k_older": 1,
+    "n_older": 14,
+    "ratio": "1 of 16",
+    "recent_ratio": "0 of 2",
+    "older_ratio": "1 of 14",
+    "probability": 0.1
+   },
+   "support": [
+    "BCSE307L-CAT-1-C1-2024-2025:Q3a"
+   ],
+   "types": {
+    "numerical": 1
+   },
+   "marks_share_fat": 0.0
+  },
+  "Data-flow analysis": {
+   "module": "M5",
+   "fat": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "all": {
+    "k_recent": 0,
+    "n_recent": 0,
+    "k_older": 1,
+    "n_older": 7,
+    "ratio": "1 of 7",
+    "recent_ratio": "0 of 0",
+    "older_ratio": "1 of 7",
+    "probability": 0.222
+   },
+   "support": [
+    "BCSE307L-FAT-C1-2023-2024:Q8"
+   ],
+   "types": {
+    "trace": 1
+   },
+   "marks_share_fat": 0.013
+  }
+ },
+ "ranking": [
+  "SDD / SDT / annotated parse tree",
+  "Phases of compiler",
+  "Three-address code / quadruples / triples",
+  "Code generation / register allocation",
+  "Code optimization (CSE/constant folding/loop)",
+  "Basic blocks / flow graph",
+  "Instruction scheduling / ILP",
+  "Backpatching",
+  "CLR / LALR parsing",
+  "Direct RE to DFA",
+  "Syntax tree / DAG",
+  "LL(1) parsing table",
+  "LR(0) / SLR parsing",
+  "Tokens / lexemes / LEX",
+  "FIRST / FOLLOW",
+  "Loop parallelism",
+  "S-attributed / L-attributed",
+  "Recursive descent",
+  "Symbol table",
+  "Operator precedence parsing",
+  "Type checking",
+  "Data-flow analysis",
+  "Parallelism (legacy code)",
+  "Peephole optimization",
+  "Shift-reduce parsing",
+  "Activation tree",
+  "Regular expression to NFA (Thompson)",
+  "SDT / backpatching (label-based SDT)",
+  "Ambiguous grammar",
+  "Left recursion / left factoring",
+  "NFA to DFA (subset construction)"
+ ],
+ "drift": {
+  "CAT1": {
+   "older": {
+    "papers": 7,
+    "n_q": 47,
+    "mean_bloom": 3.36,
+    "scenario_wrapper_pct_q": 6.4,
+    "scenario_wrapper_pct_marks": 2.6,
+    "computational_marks_pct": 95.5,
+    "theory_marks_pct": 4.5,
+    "num_trace_to_theory_mark_ratio": 21.0
+   },
+   "recent_2026_27": {
+    "papers": 2,
+    "n_q": 10,
+    "mean_bloom": 3.1,
+    "scenario_wrapper_pct_q": 50.0,
+    "scenario_wrapper_pct_marks": 50.0,
+    "computational_marks_pct": 90.0,
+    "theory_marks_pct": 10.0,
+    "num_trace_to_theory_mark_ratio": 9.0
+   }
+  },
+  "CAT2": {
+   "older": {
+    "papers": 7,
+    "n_q": 57,
+    "mean_bloom": 3.23,
+    "scenario_wrapper_pct_q": 14.0,
+    "scenario_wrapper_pct_marks": 19.4,
+    "computational_marks_pct": 78.5,
+    "theory_marks_pct": 21.5,
+    "num_trace_to_theory_mark_ratio": 3.65
+   },
+   "recent_2026_27": {
+    "papers": 1,
+    "n_q": 9,
+    "mean_bloom": 3.22,
+    "scenario_wrapper_pct_q": 88.9,
+    "scenario_wrapper_pct_marks": 85.7,
+    "computational_marks_pct": 71.4,
+    "theory_marks_pct": 28.6,
+    "num_trace_to_theory_mark_ratio": 2.5
+   }
+  },
+  "FAT": {
+   "older": {
+    "papers": 7,
+    "n_q": 111,
+    "mean_bloom": 3.24,
+    "scenario_wrapper_pct_q": 18.0,
+    "scenario_wrapper_pct_marks": 16.4,
+    "computational_marks_pct": 62.0,
+    "theory_marks_pct": 35.4,
+    "num_trace_to_theory_mark_ratio": 1.75
+   },
+   "recent_2026_27": {
+    "papers": 0,
+    "n_q": 0,
+    "mean_bloom": 0.0,
+    "scenario_wrapper_pct_q": 0.0,
+    "scenario_wrapper_pct_marks": 0.0,
+    "computational_marks_pct": 0.0,
+    "theory_marks_pct": 0.0,
+    "num_trace_to_theory_mark_ratio": null
+   }
+  },
+  "by_year_start": {
+   "2023": {
+    "papers": 6,
+    "n_q": 78,
+    "mean_bloom": 3.33,
+    "scenario_wrapper_pct_q": 9.0,
+    "scenario_wrapper_pct_marks": 13.3,
+    "computational_marks_pct": 74.7,
+    "theory_marks_pct": 20.9,
+    "num_trace_to_theory_mark_ratio": 3.57
+   },
+   "2024": {
+    "papers": 5,
+    "n_q": 38,
+    "mean_bloom": 3.74,
+    "scenario_wrapper_pct_q": 13.2,
+    "scenario_wrapper_pct_marks": 13.1,
+    "computational_marks_pct": 77.0,
+    "theory_marks_pct": 23.0,
+    "num_trace_to_theory_mark_ratio": 3.36
+   },
+   "2025": {
+    "papers": 10,
+    "n_q": 99,
+    "mean_bloom": 3.03,
+    "scenario_wrapper_pct_q": 19.2,
+    "scenario_wrapper_pct_marks": 15.0,
+    "computational_marks_pct": 70.5,
+    "theory_marks_pct": 29.5,
+    "num_trace_to_theory_mark_ratio": 2.39
+   },
+   "2026": {
+    "papers": 3,
+    "n_q": 19,
+    "mean_bloom": 3.16,
+    "scenario_wrapper_pct_q": 68.4,
+    "scenario_wrapper_pct_marks": 64.7,
+    "computational_marks_pct": 82.4,
+    "theory_marks_pct": 17.6,
+    "num_trace_to_theory_mark_ratio": 4.67
+   }
+  }
+ },
+ "slot_pairs": [
+  {
+   "pair": "CAT1 A1->A2 2025",
+   "source": "BCSE307L-CAT1-A1-2025-2026-AK",
+   "target": "BCSE307L-CAT1-A2-2025-2026-AK",
+   "by_question": {
+    "Identical": "0 of 6",
+    "Same concept new numbers": "2 of 6",
+    "Same module only": "4 of 6",
+    "Unrelated": "0 of 6"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q1",
+     "marks": null,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-A1-2025-2026-AK:Q1",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q2",
+     "marks": null,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-A1-2025-2026-AK:Q2",
+     "text_sim": 0.3
+    },
+    {
+     "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q3a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-A1-2025-2026-AK:Q3a",
+     "text_sim": 0.36
+    },
+    {
+     "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-A1-2025-2026-AK:Q3b",
+     "text_sim": 0.31
+    },
+    {
+     "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q4",
+     "marks": null,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-A1-2025-2026-AK:Q3a",
+     "text_sim": 0.41
+    },
+    {
+     "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q5",
+     "marks": null,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-A1-2025-2026-AK:Q3b",
+     "text_sim": 0.35
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 E1->E2 2025",
+   "source": "BCSE307L-CAT1-E1-2025-2026",
+   "target": "BCSE307L-CAT1-E2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "3 of 7",
+    "Same module only": "4 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L-CAT1-E2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-E1-2025-2026:Q1",
+     "text_sim": 0.44
+    },
+    {
+     "q": "BCSE307L-CAT1-E2-2025-2026:Q2a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-E1-2025-2026:Q2",
+     "text_sim": 0.72
+    },
+    {
+     "q": "BCSE307L-CAT1-E2-2025-2026:Q2b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-E1-2025-2026:Q2",
+     "text_sim": 0.22
+    },
+    {
+     "q": "BCSE307L-CAT1-E2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-E1-2025-2026:Q3c",
+     "text_sim": 0.32
+    },
+    {
+     "q": "BCSE307L-CAT1-E2-2025-2026:Q4a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-E1-2025-2026:Q3a",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BCSE307L-CAT1-E2-2025-2026:Q4b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-E1-2025-2026:Q3c",
+     "text_sim": 0.26
+    },
+    {
+     "q": "BCSE307L-CAT1-E2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-E1-2025-2026:Q4a",
+     "text_sim": 0.52
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 A1->A2 2025",
+   "source": "BCSE307L-CAT2-A1-2025-2026-AK",
+   "target": "BCSE307L-CAT2-A2-2025-2026-AK",
+   "by_question": {
+    "Identical": "0 of 6",
+    "Same concept new numbers": "3 of 6",
+    "Same module only": "2 of 6",
+    "Unrelated": "1 of 6"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT2-A1-2025-2026-AK:Q1",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q2a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT2-A1-2025-2026-AK:Q4d",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q2b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT2-A1-2025-2026-AK:Q4a",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT2-A1-2025-2026-AK:Q5a",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT2-A1-2025-2026-AK:Q5b",
+     "text_sim": 0.16
+    },
+    {
+     "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q5",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE307L-CAT2-A1-2025-2026-AK:Q5b",
+     "text_sim": 0.28
+    }
+   ]
+  },
+  {
+   "pair": "CAT2 C1->C2 2024",
+   "source": "BCSE307L-CAT-2-C1-2024-2025-Answer Key",
+   "target": "BCSE307L-CAT-2-C2-2024-2025-Answer Key",
+   "by_question": {
+    "Identical": "0 of 7",
+    "Same concept new numbers": "3 of 7",
+    "Same module only": "4 of 7",
+    "Unrelated": "0 of 7"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1",
+     "text_sim": 0.16
+    },
+    {
+     "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q2",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q2",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q3",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q4",
+     "text_sim": 0.07
+    },
+    {
+     "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q2",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5b",
+     "text_sim": 0.08
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 G1->G2 2026",
+   "source": "BCSE307L-CAT1-G1-2026-2027",
+   "target": "BCSE307L-CAT1-G2-2026-2027",
+   "by_question": {
+    "Identical": "0 of 5",
+    "Same concept new numbers": "3 of 5",
+    "Same module only": "2 of 5",
+    "Unrelated": "0 of 5"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L-CAT1-G2-2026-2027:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-G1-2026-2027:Q1",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE307L-CAT1-G2-2026-2027:Q2",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-G1-2026-2027:Q2",
+     "text_sim": 0.1
+    },
+    {
+     "q": "BCSE307L-CAT1-G2-2026-2027:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-G1-2026-2027:Q3",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE307L-CAT1-G2-2026-2027:Q4",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT1-G1-2026-2027:Q3",
+     "text_sim": 0.04
+    },
+    {
+     "q": "BCSE307L-CAT1-G2-2026-2027:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT1-G1-2026-2027:Q5",
+     "text_sim": 0.07
+    }
+   ]
+  },
+  {
+   "pair": "FAT A1->A2 2025",
+   "source": "BCSE307L-FAT-A1-2025-2026",
+   "target": "BCSE307L-FAT-A2-2025-2026",
+   "by_question": {
+    "Identical": "0 of 15",
+    "Same concept new numbers": "8 of 15",
+    "Same module only": "5 of 15",
+    "Unrelated": "2 of 15"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q1",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q2a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q2",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q2b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q1",
+     "text_sim": 0.23
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q3",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q3",
+     "text_sim": 0.53
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q4i",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q4a",
+     "text_sim": 0.21
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q4ii",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q4a",
+     "text_sim": 0.31
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q5",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q5",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q6",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q6",
+     "text_sim": 0.21
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q7",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q8",
+     "text_sim": 0.43
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q8",
+     "marks": 10.0,
+     "category": "Unrelated",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q8",
+     "text_sim": 0.41
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q9a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q10a",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q9b",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q10b",
+     "text_sim": 0.28
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q10a",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q9a",
+     "text_sim": 0.2
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q10bi",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q9b",
+     "text_sim": 0.35
+    },
+    {
+     "q": "BCSE307L-FAT-A2-2025-2026:Q10bii",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-A1-2025-2026:Q3",
+     "text_sim": 0.44
+    }
+   ]
+  },
+  {
+   "pair": "CAT1 C1->C2 2024",
+   "source": "BCSE307L-CAT-1-C1-2024-2025",
+   "target": "BCSE307L-CAT-1-C2-2024-2025",
+   "by_question": {
+    "Identical": "0 of 6",
+    "Same concept new numbers": "5 of 6",
+    "Same module only": "1 of 6",
+    "Unrelated": "0 of 6"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L-CAT-1-C2-2024-2025:Q1",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-1-C1-2024-2025:Q2",
+     "text_sim": 0.14
+    },
+    {
+     "q": "BCSE307L-CAT-1-C2-2024-2025:Q2a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-1-C1-2024-2025:Q3b",
+     "text_sim": 0.01
+    },
+    {
+     "q": "BCSE307L-CAT-1-C2-2024-2025:Q2b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-1-C1-2024-2025:Q5b",
+     "text_sim": 0.38
+    },
+    {
+     "q": "BCSE307L-CAT-1-C2-2024-2025:Q3",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-1-C1-2024-2025:Q1",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE307L-CAT-1-C2-2024-2025:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-CAT-1-C1-2024-2025:Q4",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE307L-CAT-1-C2-2024-2025:Q5",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-CAT-1-C1-2024-2025:Q5a",
+     "text_sim": 0.28
+    }
+   ]
+  },
+  {
+   "pair": "FAT C1->C2 2023",
+   "source": "BCSE307L-FAT-C1-2023-2024",
+   "target": "BCSE307L - FAT - C2 - 2023 - Question Paper",
+   "by_question": {
+    "Identical": "0 of 18",
+    "Same concept new numbers": "9 of 18",
+    "Same module only": "9 of 18",
+    "Unrelated": "0 of 18"
+   },
+   "detail": [
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q1",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q1b",
+     "text_sim": 0.24
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2a",
+     "marks": 7.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q2",
+     "text_sim": 0.43
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q1b",
+     "text_sim": 0.36
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3a",
+     "marks": 3.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q3",
+     "text_sim": 0.0
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q4a",
+     "text_sim": 0.54
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3c",
+     "marks": 2.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q4a",
+     "text_sim": 0.53
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q4",
+     "marks": 10.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q4a",
+     "text_sim": 0.5
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q6",
+     "text_sim": 0.09
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5b",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q7",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6a",
+     "marks": 7.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q7",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6b",
+     "marks": 3.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q7",
+     "text_sim": 0.03
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q7",
+     "marks": 10.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q7",
+     "text_sim": 0.02
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8a",
+     "marks": 5.0,
+     "category": "Same module only",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q9b",
+     "text_sim": 0.12
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q9b",
+     "text_sim": 0.12
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9a",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q9a",
+     "text_sim": 0.06
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9b",
+     "marks": 5.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q9a",
+     "text_sim": 0.12
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10a",
+     "marks": 4.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q10",
+     "text_sim": 0.3
+    },
+    {
+     "q": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10b",
+     "marks": 6.0,
+     "category": "Same concept new numbers",
+     "best_match": "BCSE307L-FAT-C1-2023-2024:Q10",
+     "text_sim": 0.29
+    }
+   ]
+  }
+ ],
+ "slot_pairs_pooled": {
+  "n_questions": 70,
+  "n_pairs": 8,
+  "by_question": {
+   "Identical": "0 of 70",
+   "Same concept new numbers": "36 of 70",
+   "Same module only": "31 of 70",
+   "Unrelated": "3 of 70"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.514,
+   "Same module only": 0.443,
+   "Unrelated": 0.043
+  }
+ },
+ "cross_letter_pooled": {
+  "n_questions": 121,
+  "n_pairs": 11,
+  "by_question": {
+   "Identical": "1 of 121",
+   "Same concept new numbers": "72 of 121",
+   "Same module only": "41 of 121",
+   "Unrelated": "7 of 121"
+  },
+  "rate": {
+   "Identical": 0.008,
+   "Same concept new numbers": 0.595,
+   "Same module only": 0.339,
+   "Unrelated": 0.058
+  }
+ },
+ "different_year_pooled_null": {
+  "n_questions": 1199,
+  "n_pairs": 132,
+  "by_question": {
+   "Identical": "4 of 1199",
+   "Same concept new numbers": "702 of 1199",
+   "Same module only": "458 of 1199",
+   "Unrelated": "35 of 1199"
+  },
+  "rate": {
+   "Identical": 0.003,
+   "Same concept new numbers": 0.585,
+   "Same module only": 0.382,
+   "Unrelated": 0.029
+  }
+ },
+ "sister_pairs": [],
+ "sister_pooled": {
+  "n_questions": 0,
+  "n_pairs": 0,
+  "by_question": {
+   "Identical": "0 of 0",
+   "Same concept new numbers": "0 of 0",
+   "Same module only": "0 of 0",
+   "Unrelated": "0 of 0"
+  },
+  "rate": {
+   "Identical": 0.0,
+   "Same concept new numbers": 0.0,
+   "Same module only": 0.0,
+   "Unrelated": 0.0
+  }
+ },
+ "reuse_recent_vs_older": [
+  {
+   "q": "BCSE307L-CAT1-G1-2026-2027:Q2",
+   "best_older_match": "BCSE307L-FAT-A1-2025-2026:Q1",
+   "text_sim": 0.54
+  },
+  {
+   "q": "BCSE307L-CAT1-G1-2026-2027:Q5",
+   "best_older_match": "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q2a",
+   "text_sim": 0.5
+  },
+  {
+   "q": "BCSE307L-CAT1-G2-2026-2027:Q5",
+   "best_older_match": "BCSE307L-CAT1-E2-2025-2026:Q5",
+   "text_sim": 0.48
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q3b",
+   "best_older_match": "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q2c",
+   "text_sim": 0.47
+  },
+  {
+   "q": "BCSE307L-CAT1-G1-2026-2027:Q4",
+   "best_older_match": "BCSE307L-FAT-A1-2025-2026:Q9a",
+   "text_sim": 0.43
+  },
+  {
+   "q": "BCSE307L-CAT1-G1-2026-2027:Q3",
+   "best_older_match": "BCSE307L-FAT-A1-2025-2026:Q9b",
+   "text_sim": 0.42
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q3a",
+   "best_older_match": "BCSE307L-FAT-A2-2023-2024:Q1b",
+   "text_sim": 0.38
+  },
+  {
+   "q": "BCSE307L-CAT1-G2-2026-2027:Q4",
+   "best_older_match": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3c",
+   "text_sim": 0.37
+  },
+  {
+   "q": "BCSE307L-CAT1-G1-2026-2027:Q1",
+   "best_older_match": "BCSE307L-CAT1-E2-2025-2026:Q1",
+   "text_sim": 0.36
+  },
+  {
+   "q": "BCSE307L-CAT1-G2-2026-2027:Q2",
+   "best_older_match": "BCSE307L-FAT-A2-2025-2026:Q10bii",
+   "text_sim": 0.35
+  },
+  {
+   "q": "BCSE307L-CAT1-G2-2026-2027:Q3",
+   "best_older_match": "BCSE307L-CAT-1-C2-2024-2025:Q2b",
+   "text_sim": 0.34
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q3c",
+   "best_older_match": "BCSE307L-CAT2-A1-2025-2026-AK:Q4c",
+   "text_sim": 0.34
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q5b",
+   "best_older_match": "BCSE307L-FAT-A2-2023-2024:Q9b",
+   "text_sim": 0.34
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q1",
+   "best_older_match": "BCSE307L-FAT-A2-2025-2026:Q10bii",
+   "text_sim": 0.28
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q2a",
+   "best_older_match": "BCSE307L-FAT-A1-2025-2026:Q9a",
+   "text_sim": 0.28
+  },
+  {
+   "q": "BCSE307L-CAT1-G2-2026-2027:Q1",
+   "best_older_match": "BCSE307L - FAT - C1 - 2024 - Question Paper:Q1",
+   "text_sim": 0.25
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q2b",
+   "best_older_match": "BCSE307L-FAT-A2-2023-2024:Q1a",
+   "text_sim": 0.24
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q4",
+   "best_older_match": "BCSE307L-FAT-A2-2023-2024:Q1a",
+   "text_sim": 0.22
+  },
+  {
+   "q": "BCSE307L-CAT2-G2-2026-2027:Q5a",
+   "best_older_match": "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8a",
+   "text_sim": 0.18
+  }
+ ],
+ "answer_key_rows": [
+  {
+   "q": "BCSE307L-CAT1-A1-2025-2026-AK:Q1",
+   "arch": "Phases of compiler",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "lexical tokens; syntax tree; semantic check; intermediate code; optimization; code generation",
+   "penalties": "not stated",
+   "key_final_answer": "Handwritten phase-by-phase walk-through (lexical tokens, if-then-else syntax tree, semantic check, three-address code, optimized code, assembly)"
+  },
+  {
+   "q": "BCSE307L-CAT1-A1-2025-2026-AK:Q2",
+   "arch": "Direct RE to DFA",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "augmented regex with end marker; firstpos/lastpos/followpos; DFA states; accepting states",
+   "penalties": "not stated",
+   "key_final_answer": "DFA drawn for ((a+ b+c*)*)abc with accepting state S5 (green)"
+  },
+  {
+   "q": "BCSE307L-CAT1-A1-2025-2026-AK:Q3a",
+   "arch": "Recursive descent",
+   "marks": "7",
+   "step_marks": "not stated",
+   "required_keywords": "left recursion removal; left factoring; procedures A, A', B, B', C, C'; match and error calls",
+   "penalties": "not stated",
+   "key_final_answer": "Transformed grammar A->yA', A'->xA' e, B->cdB', B'->e f, C->dC', C'->abC' acC' e with recursive procedures"
+  },
+  {
+   "q": "BCSE307L-CAT1-A1-2025-2026-AK:Q3b",
+   "arch": "Recursive descent",
+   "marks": "3",
+   "step_marks": "not stated",
+   "required_keywords": "stepwise derivation; string not parsed at the point where no rule applies",
+   "penalties": "not stated",
+   "key_final_answer": "String is not parsed: derivation stalls at y x x x (cdfdabacab$) with no matching rule"
+  },
+  {
+   "q": "BCSE307L-CAT1-A1-2025-2026-AK:Q4",
+   "arch": "LL(1) parsing table",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "FIRST and FOLLOW sets; parsing table; left recursion removal for B; stack trace for abbc",
+   "penalties": "not stated",
+   "key_final_answer": "Table built; key notes conflict for B (B->bB e) on b, so grammar judged not LL(1) after left recursion removal; stack trace for abbc shown"
+  },
+  {
+   "q": "BCSE307L-CAT1-A1-2025-2026-AK:Q5",
+   "arch": "Operator precedence parsing",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "precedence relation table; precedence functions f and g; shift/reduce trace; stack and input columns",
+   "penalties": "not stated",
+   "key_final_answer": "Relation table realised by f(i)=8,f(-)=3,f(/)=5,f(()=0,f())=9,f($)=0 and g(i)=6,g(-)=2,g(/)=4,g(()=7,g())=0,g($)=0; i-i/i parsed with / reduced first"
+  },
+  {
+   "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q1",
+   "arch": "Phases of compiler",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "tokens; parse tree/AST; semantic checks; three-address code; optimization; machine code",
+   "penalties": "not stated",
+   "key_final_answer": "Phase-by-phase answer with token list, AST for ternary expression, three-address code t1..t4, optimisation notes, x86-like code; marks not printed on key"
+  },
+  {
+   "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q2",
+   "arch": "Direct RE to DFA",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "regex a?(ab)*b?; positions numbered; firstpos/lastpos/followpos sets",
+   "penalties": "not stated",
+   "key_final_answer": "Regex a?(ab)*b? with positions 1-12; followpos e.g. pos1->{2}, pos6->{5,7}, pos9->{8,10}; marks not printed on key"
+  },
+  {
+   "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q3a",
+   "arch": "Ambiguous grammar",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "leftmost derivation; rightmost derivation; parse tree; ambiguity argument",
+   "penalties": "not stated",
+   "key_final_answer": "Derivations and tree given for (a+a)*a; grammar argued ambiguous (a+a*a has two trees)"
+  },
+  {
+   "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q3b",
+   "arch": "Ambiguous grammar",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "leftmost derivation; rightmost derivation; parse tree; unambiguity argument",
+   "penalties": "not stated",
+   "key_final_answer": "Derivations and tree given for {{}{}}; grammar argued unambiguous"
+  },
+  {
+   "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q4",
+   "arch": "Left recursion / left factoring",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "left recursion elimination; left factoring cA X; shift-reduce table; stuck state S+",
+   "penalties": "not stated",
+   "key_final_answer": "Left-factored grammar S->cAX, X->dS' eS', S'->aS' bS' e, A->f g; shift-reduce parse of aaa*a++ gets stuck at S + (not reducible)"
+  },
+  {
+   "q": "BCSE307L-CAT1-A2-2025-2026-AK:Q5",
+   "arch": "LR(0) / SLR parsing",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "augmented grammar S'->S; states I0-I5; FOLLOW(S)={+,*,$}; action table",
+   "penalties": "not stated",
+   "key_final_answer": "Six LR(0) states I0-I5, FOLLOW(S)={+,*,$}, no conflicts in table; grammar reported suitable for SLR"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q1",
+   "arch": "CLR / LALR parsing",
+   "marks": "10",
+   "step_marks": "Representation of canonical LR(1) items 3; parsing table 3; justification and parse trace 2 plus 2",
+   "required_keywords": "productions Stmt->DeclStmt, DeclStmt->Type IdList ;, Type->char, IdList->identifier IdListTail, IdListTail->, identifier IdListTail, IdListTail->e; LR(1) item sets; LALR justification",
+   "penalties": "not stated",
+   "key_final_answer": "Grammar stated with six productions; key claims LALR(1) with shift/reduce table I0-I11; parse of a valid declaration shown"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q2a",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "2.5",
+   "step_marks": "not stated",
+   "required_keywords": "S.val = S1.val * T.val",
+   "penalties": "not stated",
+   "key_final_answer": "S -> S1 # T { S.val = S1.val * T.val }; T -> T1 % R { T.val = T1.val / R.val }"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q2b",
+   "arch": "Operator precedence parsing",
+   "marks": "2.5",
+   "step_marks": "not stated",
+   "required_keywords": "precedence of % over #; left associativity of both",
+   "penalties": "not stated",
+   "key_final_answer": "% has higher precedence than #; both left associative"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q2c",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "2.5",
+   "step_marks": "not stated",
+   "required_keywords": "parse tree for the expression 20 # 10 % 5 # 8 % 2 % 2",
+   "penalties": "not stated",
+   "key_final_answer": "Parse tree built for 20 # 10 % 5 # 8 % 2 % 2 (S.val = 80)"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q2d",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "2.5",
+   "step_marks": "not stated",
+   "required_keywords": "bottom-up evaluation steps; S.val = 80",
+   "penalties": "not stated",
+   "key_final_answer": "Bottom-up evaluation yields S.val = 80"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q3",
+   "arch": "Three-address code / quadruples / triples",
+   "marks": "10",
+   "step_marks": "SDT to generate intermediate code 2; backpatching explanation 2",
+   "required_keywords": "quadruples; triples; indirect triples; label L2; backpatching for forward jumps",
+   "penalties": "not stated",
+   "key_final_answer": "Quadruples, triples and indirect triples given for the loop; backpatching required because jump targets are unknown at generation time"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q4a",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "2",
+   "step_marks": "not stated",
+   "required_keywords": "D -> T ID [NUM1][NUM2][NUM3];",
+   "penalties": "not stated",
+   "key_final_answer": "D -> T ID [NUM1] [NUM2] [NUM3] ; with T -> int   float   char"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q4b",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "3",
+   "step_marks": "not stated",
+   "required_keywords": "D.size = D.d1 x D.d2 x D.d3 x D.width; T.width int 4, float 8, char 1",
+   "penalties": "not stated",
+   "key_final_answer": "D.size = D.d1*D.d2*D.d3*D.width with T.width 4/8/1"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q4c",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "3",
+   "step_marks": "not stated",
+   "required_keywords": "T.width=4; D.d1=2; D.d2=3; D.d3=4; D.width=4; D.size=96",
+   "penalties": "not stated",
+   "key_final_answer": "D.size = 2*3*4*4 = 96 bytes"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q4d",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "2",
+   "step_marks": "not stated",
+   "required_keywords": "synthesized attributes T.width, NUM1.val, NUM2.val, NUM3.val, D.size",
+   "penalties": "not stated",
+   "key_final_answer": "T.width, NUM1.val, NUM2.val, NUM3.val and D.size are synthesized attributes"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q5a",
+   "arch": "Three-address code / quadruples / triples",
+   "marks": "4",
+   "step_marks": "three-address code 4",
+   "required_keywords": "labels L1..; conditional gotos; count++; s = sqrt(n); inner loop j=2*i",
+   "penalties": "not stated",
+   "key_final_answer": "Three-address code with labelled loops and conditional jumps (key shows code outline)"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q5b",
+   "arch": "Basic blocks / flow graph",
+   "marks": "3",
+   "step_marks": "basic blocks 3",
+   "required_keywords": "leaders; basic block boundaries",
+   "penalties": "not stated",
+   "key_final_answer": "Basic blocks identified (key does not reproduce the partition in text)"
+  },
+  {
+   "q": "BCSE307L-CAT2-A1-2025-2026-AK:Q5c",
+   "arch": "Basic blocks / flow graph",
+   "marks": "3",
+   "step_marks": "flow graph 3",
+   "required_keywords": "flow graph edges between basic blocks",
+   "penalties": "not stated",
+   "key_final_answer": "Flow graph constructed (key does not reproduce the edges in text)"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1",
+   "arch": "LR(0) / SLR parsing",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "augmented grammar; LR(0) item sets I0-I8; FOLLOW(E)={$,=}; SLR action and goto table; shift-reduce stack trace",
+   "penalties": "not stated",
+   "key_final_answer": "Grammar is SLR(1); input *ptr1 = ptr2 is accepted (ACCEPT on state 1 with $)."
+  },
+  {
+   "q": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q2",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "SDD rules for E, T, F and B; B.val == True; S1.execute; S2 not executed; num.lexval; annotated parse tree",
+   "penalties": "not stated",
+   "key_final_answer": "(3+4)=7 > 5 is True, so S1 runs and sets x = 10; S2 (x = 20) is not executed."
+  },
+  {
+   "q": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q3",
+   "arch": "Three-address code / quadruples / triples",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "t1 = size*4; arr = alloc(t1); L1: if i >= size goto L2; *t3 = t2; L3: if i >= n goto L4; t5 = *t4; sum = sum + t5",
+   "penalties": "not stated",
+   "key_final_answer": "allocateAndFillArray: t1 = size*4, arr = alloc(t1), loop stores 2i into arr[i]; main sums p[i] in the L3/L4 loop and returns sum."
+  },
+  {
+   "q": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q4",
+   "arch": "Basic blocks / flow graph",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "leaders: 1, L1, j=0, L2, t1=3*i, L3, L5, L6; back edges to L2 and L1; 9 basic blocks",
+   "penalties": "not stated",
+   "key_final_answer": "Nine blocks: {1},{2},{3},{4},{5-12},{13-17},{18-19},{20-21},{22}; loops go back to L2 and L1 in the flow graph."
+  },
+  {
+   "q": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5a",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "t1 = x; if t1==1 goto L1; if t1==2 goto L2; if t1==3 goto L3; goto L4; case bodies with goto L5; L5: NOP; annotated tree nodes Switch-stmt, CaseList, Case 1-3, default",
+   "penalties": "not stated",
+   "key_final_answer": "Two accepted forms (both shown): compare-jump chain on t1 or test-at-end; x=5 hits default, so result = x = 5."
+  },
+  {
+   "q": "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5b",
+   "arch": "Peephole optimization",
+   "marks": "",
+   "step_marks": "not stated",
+   "required_keywords": "redundant instruction removal; algebraic simplification; use machine idioms; unreachable code removal; flow of control optimization",
+   "penalties": "not stated",
+   "key_final_answer": "MOV R1,R2; JMP L1; L1: MOV R6,R7; CMP R8,R9; JNE L2; L2: NOP."
+  },
+  {
+   "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q1",
+   "arch": "CLR / LALR parsing",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "LR(1) items I0-I12 with lookaheads {$} and {end}; LR(1) parsing table; DFA diagram; stat'->.stat,{$}",
+   "penalties": "not stated",
+   "key_final_answer": "13 states I0-I12; string 1 Accepted; string 2 (begin a end end) Not Accepted"
+  },
+  {
+   "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q2a",
+   "arch": "S-attributed / L-attributed",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "B.val=0/1; Y.val=Y1.val*2+B.val; Y.len=Y1.len+1; X.val=Y1.val+(Y2.val/(2^Y2.len)); X.val=Y.val",
+   "penalties": "not stated",
+   "key_final_answer": "X.val = Y1.val + (Y2.val / (2 ^ Y2.len)); 111.001 evaluates to 7.125"
+  },
+  {
+   "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q2b",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "annotated parse tree; Y.val 7 for 111; Y.val 1 for 001 with length 3 giving 0.125",
+   "penalties": "not stated",
+   "key_final_answer": "Annotated tree gives X.val = 7.125"
+  },
+  {
+   "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q3",
+   "arch": "Three-address code / quadruples / triples",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "t1 = tolower(ch); if t1 == 'a' goto L1 (e,i,o,u); L1 print vowel; t2 = isdigit(ch); triples table (1)-(25)",
+   "penalties": "not stated",
+   "key_final_answer": "TAC steps 1-15 with labels L1-L8 and Lend; triples indexed (1)-(25) (entry (18) blank in key)"
+  },
+  {
+   "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q4",
+   "arch": "Backpatching",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "true list; false list; back patch table; labels L2-L9, Lend",
+   "penalties": "not stated",
+   "key_final_answer": "Back patch table: i<t1 true L3 false Lend; j<t2 true L5 false L9; arr[j]>arr[j+1] true L6 false L7"
+  },
+  {
+   "q": "BCSE307L-CAT2-A2-2025-2026-AK:Q5",
+   "arch": "Code optimization (CSE/constant folding/loop)",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "Common Subexpression Elimination; Loop-Invariant Code Motion; Strength Reduction; Induction Variable Optimization; Copy Propagation",
+   "penalties": "not stated",
+   "key_final_answer": "Optimized code hoists t1=a+b,t2=c+d,t3,t4,t5,t6 out of loops; ti2/tj2 incremented by 2 for i*2,j*2"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q1",
+   "arch": "CLR / LALR parsing",
+   "marks": "10",
+   "step_marks": "4 canonical items; 3 parsing table; 3 parsing string with stack",
+   "required_keywords": "augmented grammar S'->P; canonical items I0-I12; ACTION/GOTO table; stack trace id(id);",
+   "penalties": "not stated",
+   "key_final_answer": "Grammar is LALR(1)/conflict-free; string id(id); parsed and accepted via shift/reduce steps ending in Accept"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2a",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "synthesized attributes; bottom-up evaluation; I.val=2; F.val=0.375",
+   "penalties": "not stated",
+   "key_final_answer": "N.val = 2.375"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2b",
+   "arch": "Syntax tree / DAG",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "newNode; newLeaf; E.node/T.node/F.node; * and / nodes under - root",
+   "penalties": "not stated",
+   "key_final_answer": "Syntax tree with root - ; left subtree *(3,4); right subtree /(7,2)"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q3",
+   "arch": "Backpatching",
+   "marks": "10",
+   "step_marks": "not stated",
+   "required_keywords": "truelist; falselist; backpatch; goto targets; param/call printf",
+   "penalties": "not stated",
+   "key_final_answer": "Three-address code numbered 101-138 with if-goto jumps patched; final goto 138"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q4",
+   "arch": "Basic blocks / flow graph",
+   "marks": "10",
+   "step_marks": "5 basic block formation; 5 control flow diagram",
+   "required_keywords": "leaders; basic blocks B1-B14; CATCH, FIN, FBEGIN, T2, T3, F2, F3, FEXIT labels; flow edges",
+   "penalties": "not stated",
+   "key_final_answer": "CFG with 14 basic blocks B1-B14 linked by conditional and unconditional jumps"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5a",
+   "arch": "SDD / SDT / annotated parse tree",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "Statement->id=exp; exp->array; array->id[exp]   id[exp][exp]; exp->id num; semantic actions; annotated parse tree",
+   "penalties": "not stated",
+   "key_final_answer": "Annotated parse tree with semantic actions on the given array grammar (students write actions)"
+  },
+  {
+   "q": "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5b",
+   "arch": "Code optimization (CSE/constant folding/loop)",
+   "marks": "5",
+   "step_marks": "not stated",
+   "required_keywords": "loop unrolling; reduced loop control overhead; time complexity O(n^3); space unaffected",
+   "penalties": "not stated",
+   "key_final_answer": "Loop unrolling (k+=4) cuts iterations and overhead; time complexity O(n^3); space complexity unaffected"
+  }
+ ],
+ "row_archetypes": {
+  "BCSE307L-CAT1-A1-2025-2026-AK:Q1": "Phases of compiler",
+  "BCSE307L-CAT1-A1-2025-2026-AK:Q2": "Direct RE to DFA",
+  "BCSE307L-CAT1-A1-2025-2026-AK:Q3a": "Recursive descent",
+  "BCSE307L-CAT1-A1-2025-2026-AK:Q3b": "Recursive descent",
+  "BCSE307L-CAT1-A1-2025-2026-AK:Q4": "LL(1) parsing table",
+  "BCSE307L-CAT1-A1-2025-2026-AK:Q5": "Operator precedence parsing",
+  "BCSE307L-CAT1-A2-2025-2026-AK:Q1": "Phases of compiler",
+  "BCSE307L-CAT1-A2-2025-2026-AK:Q2": "Direct RE to DFA",
+  "BCSE307L-CAT1-A2-2025-2026-AK:Q3a": "Ambiguous grammar",
+  "BCSE307L-CAT1-A2-2025-2026-AK:Q3b": "Ambiguous grammar",
+  "BCSE307L-CAT1-A2-2025-2026-AK:Q4": "Left recursion / left factoring",
+  "BCSE307L-CAT1-A2-2025-2026-AK:Q5": "LR(0) / SLR parsing",
+  "BCSE307L-CAT1-E1-2025-2026:Q1": "Phases of compiler",
+  "BCSE307L-CAT1-E1-2025-2026:Q2": "Direct RE to DFA",
+  "BCSE307L-CAT1-E1-2025-2026:Q3a": "FIRST / FOLLOW",
+  "BCSE307L-CAT1-E1-2025-2026:Q3b": "FIRST / FOLLOW",
+  "BCSE307L-CAT1-E1-2025-2026:Q3c": "LL(1) parsing table",
+  "BCSE307L-CAT1-E1-2025-2026:Q4a": "Operator precedence parsing",
+  "BCSE307L-CAT1-E1-2025-2026:Q4b": "Operator precedence parsing",
+  "BCSE307L-CAT1-E1-2025-2026:Q4c": "Operator precedence parsing",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q1": "CLR / LALR parsing",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q2a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q2b": "Operator precedence parsing",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q2c": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q2d": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q3": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q4a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q4b": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q4c": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q4d": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q5a": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q5b": "Basic blocks / flow graph",
+  "BCSE307L-CAT2-A1-2025-2026-AK:Q5c": "Basic blocks / flow graph",
+  "BCSE307L-FAT-E1-2025-2026:Q1a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-FAT-E1-2025-2026:Q1b": "SDD / SDT / annotated parse tree",
+  "BCSE307L-FAT-E1-2025-2026:Q2": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-FAT-E1-2025-2026:Q3": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-E1-2025-2026:Q4": "Code generation / register allocation",
+  "BCSE307L-FAT-E1-2025-2026:Q5a": "Phases of compiler",
+  "BCSE307L-FAT-E1-2025-2026:Q5b": "Tokens / lexemes / LEX",
+  "BCSE307L-FAT-E1-2025-2026:Q6a": "LR(0) / SLR parsing",
+  "BCSE307L-FAT-E1-2025-2026:Q6b": "FIRST / FOLLOW",
+  "BCSE307L-FAT-E1-2025-2026:Q6c": "LR(0) / SLR parsing",
+  "BCSE307L-FAT-E1-2025-2026:Q7a": "Parallelism (legacy code)",
+  "BCSE307L-FAT-E1-2025-2026:Q7b": "Parallelism (legacy code)",
+  "BCSE307L-FAT-E1-2025-2026:Q7c": "Loop parallelism",
+  "BCSE307L-FAT-E1-2025-2026:Q7d": "Loop parallelism",
+  "BCSE307L-FAT-E1-2025-2026:Q7e": "Parallelism (legacy code)",
+  "BCSE307L-FAT-E1-2025-2026:Q8a": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-E1-2025-2026:Q8b": "Basic blocks / flow graph",
+  "BCSE307L-FAT-E1-2025-2026:Q8c": "Basic blocks / flow graph",
+  "BCSE307L-CAT-1-C1-2023-2024:Q1a": "Phases of compiler",
+  "BCSE307L-CAT-1-C1-2023-2024:Q1b": "Tokens / lexemes / LEX",
+  "BCSE307L-CAT-1-C1-2023-2024:Q2": "Direct RE to DFA",
+  "BCSE307L-CAT-1-C1-2023-2024:Q3a": "Ambiguous grammar",
+  "BCSE307L-CAT-1-C1-2023-2024:Q3b": "Ambiguous grammar",
+  "BCSE307L-CAT-1-C1-2023-2024:Q4": "Recursive descent",
+  "BCSE307L-CAT-1-C1-2023-2024:Q5": "LL(1) parsing table",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q1a": "CLR / LALR parsing",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q1b": "CLR / LALR parsing",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q2a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q2b": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q2c": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q3a": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q3b": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT-2-A2-2023-2024-Question Paper:Q4": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q1a": "LR(0) / SLR parsing",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q1b": "LR(0) / SLR parsing",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q1c": "LR(0) / SLR parsing",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q2a": "CLR / LALR parsing",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q2b": "CLR / LALR parsing",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q2c": "CLR / LALR parsing",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q3": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q4": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q5a": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT-2-C1-2023-2024-Question Paper:Q5b": "Backpatching",
+  "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1": "LR(0) / SLR parsing",
+  "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q2": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q3": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q4": "Basic blocks / flow graph",
+  "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q5b": "Peephole optimization",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q1": "Phases of compiler",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q2": "CLR / LALR parsing",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q3": "Backpatching",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q4": "Three-address code / quadruples / triples",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q5": "Basic blocks / flow graph",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q6": "Syntax tree / DAG",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q7": "Code generation / register allocation",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q8": "Instruction scheduling / ILP",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q9a": "LL(1) parsing table",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q9b": "Recursive descent",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q10a": "Type checking",
+  "BCSE307L - FAT - C1 - 2024 - Question Paper:Q10b": "SDD / SDT / annotated parse tree",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q1": "Direct RE to DFA",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2a": "Phases of compiler",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q2b": "Tokens / lexemes / LEX",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3a": "FIRST / FOLLOW",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3b": "LL(1) parsing table",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q3c": "LL(1) parsing table",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q4": "CLR / LALR parsing",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5a": "SDD / SDT / annotated parse tree",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q5b": "Backpatching",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6a": "Backpatching",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q6b": "Syntax tree / DAG",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q7": "Basic blocks / flow graph",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8a": "Peephole optimization",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q8b": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9a": "Code generation / register allocation",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q9b": "Code generation / register allocation",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10a": "Instruction scheduling / ILP",
+  "BCSE307L - FAT - C2 - 2023 - Question Paper:Q10b": "Instruction scheduling / ILP",
+  "BCSE307L-FAT-A2-2023-2024:Q1a": "LL(1) parsing table",
+  "BCSE307L-FAT-A2-2023-2024:Q1b": "LL(1) parsing table",
+  "BCSE307L-FAT-A2-2023-2024:Q2a": "CLR / LALR parsing",
+  "BCSE307L-FAT-A2-2023-2024:Q2b": "Shift-reduce parsing",
+  "BCSE307L-FAT-A2-2023-2024:Q3a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-FAT-A2-2023-2024:Q3b": "SDD / SDT / annotated parse tree",
+  "BCSE307L-FAT-A2-2023-2024:Q3c": "Symbol table",
+  "BCSE307L-FAT-A2-2023-2024:Q4a": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-A2-2023-2024:Q4b": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-A2-2023-2024:Q5a": "Backpatching",
+  "BCSE307L-FAT-A2-2023-2024:Q5b": "Backpatching",
+  "BCSE307L-FAT-A2-2023-2024:Q6a": "Syntax tree / DAG",
+  "BCSE307L-FAT-A2-2023-2024:Q6b": "Code generation / register allocation",
+  "BCSE307L-FAT-A2-2023-2024:Q6c": "Activation tree",
+  "BCSE307L-FAT-A2-2023-2024:Q7a": "Instruction scheduling / ILP",
+  "BCSE307L-FAT-A2-2023-2024:Q7b": "Loop parallelism",
+  "BCSE307L-FAT-A2-2023-2024:Q8a": "Direct RE to DFA",
+  "BCSE307L-FAT-A2-2023-2024:Q8b": "Direct RE to DFA",
+  "BCSE307L-FAT-A2-2023-2024:Q8c": "Direct RE to DFA",
+  "BCSE307L-FAT-A2-2023-2024:Q9a": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-A2-2023-2024:Q9b": "Basic blocks / flow graph",
+  "BCSE307L-FAT-A2-2023-2024:Q9c": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-CAT1-E2-2025-2026:Q1": "Phases of compiler",
+  "BCSE307L-CAT1-E2-2025-2026:Q2a": "Direct RE to DFA",
+  "BCSE307L-CAT1-E2-2025-2026:Q2b": "Tokens / lexemes / LEX",
+  "BCSE307L-CAT1-E2-2025-2026:Q3": "LL(1) parsing table",
+  "BCSE307L-CAT1-E2-2025-2026:Q4a": "Shift-reduce parsing",
+  "BCSE307L-CAT1-E2-2025-2026:Q4b": "Ambiguous grammar",
+  "BCSE307L-CAT1-E2-2025-2026:Q5": "LR(0) / SLR parsing",
+  "BCSE307L-CAT1-G1-2026-2027:Q1": "Phases of compiler",
+  "BCSE307L-CAT1-G1-2026-2027:Q2": "Direct RE to DFA",
+  "BCSE307L-CAT1-G1-2026-2027:Q3": "Left recursion / left factoring",
+  "BCSE307L-CAT1-G1-2026-2027:Q4": "FIRST / FOLLOW",
+  "BCSE307L-CAT1-G1-2026-2027:Q5": "LR(0) / SLR parsing",
+  "BCSE307L-CAT1-G2-2026-2027:Q1": "Phases of compiler",
+  "BCSE307L-CAT1-G2-2026-2027:Q2": "Direct RE to DFA",
+  "BCSE307L-CAT1-G2-2026-2027:Q3": "Operator precedence parsing",
+  "BCSE307L-CAT1-G2-2026-2027:Q4": "LL(1) parsing table",
+  "BCSE307L-CAT1-G2-2026-2027:Q5": "LR(0) / SLR parsing",
+  "BCSE307L-CAT2-A2-2025-2026-AK:Q1": "CLR / LALR parsing",
+  "BCSE307L-CAT2-A2-2025-2026-AK:Q2a": "S-attributed / L-attributed",
+  "BCSE307L-CAT2-A2-2025-2026-AK:Q2b": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-A2-2025-2026-AK:Q3": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT2-A2-2025-2026-AK:Q4": "Backpatching",
+  "BCSE307L-CAT2-A2-2025-2026-AK:Q5": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-CAT2-E2-2025-2026:Q1a": "CLR / LALR parsing",
+  "BCSE307L-CAT2-E2-2025-2026:Q1b": "CLR / LALR parsing",
+  "BCSE307L-CAT2-E2-2025-2026:Q2": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT2-E2-2025-2026:Q3a": "Syntax tree / DAG",
+  "BCSE307L-CAT2-E2-2025-2026:Q3b": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT2-E2-2025-2026:Q4": "Backpatching",
+  "BCSE307L-CAT2-E2-2025-2026:Q5": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-CAT2-G2-2026-2027:Q1": "CLR / LALR parsing",
+  "BCSE307L-CAT2-G2-2026-2027:Q2a": "Syntax tree / DAG",
+  "BCSE307L-CAT2-G2-2026-2027:Q2b": "Type checking",
+  "BCSE307L-CAT2-G2-2026-2027:Q3a": "SDT / backpatching (label-based SDT)",
+  "BCSE307L-CAT2-G2-2026-2027:Q3b": "SDT / backpatching (label-based SDT)",
+  "BCSE307L-CAT2-G2-2026-2027:Q3c": "SDT / backpatching (label-based SDT)",
+  "BCSE307L-CAT2-G2-2026-2027:Q4": "Three-address code / quadruples / triples",
+  "BCSE307L-CAT2-G2-2026-2027:Q5a": "Peephole optimization",
+  "BCSE307L-CAT2-G2-2026-2027:Q5b": "Basic blocks / flow graph",
+  "BCSE307L-FAT-A1-2025-2026:Q1": "Direct RE to DFA",
+  "BCSE307L-FAT-A1-2025-2026:Q2": "Phases of compiler",
+  "BCSE307L-FAT-A1-2025-2026:Q3": "CLR / LALR parsing",
+  "BCSE307L-FAT-A1-2025-2026:Q4a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-FAT-A1-2025-2026:Q4b": "Syntax tree / DAG",
+  "BCSE307L-FAT-A1-2025-2026:Q5": "Basic blocks / flow graph",
+  "BCSE307L-FAT-A1-2025-2026:Q6": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-FAT-A1-2025-2026:Q7": "Symbol table",
+  "BCSE307L-FAT-A1-2025-2026:Q8": "Instruction scheduling / ILP",
+  "BCSE307L-FAT-A1-2025-2026:Q9a": "LR(0) / SLR parsing",
+  "BCSE307L-FAT-A1-2025-2026:Q9b": "Recursive descent",
+  "BCSE307L-FAT-A1-2025-2026:Q10a": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-A1-2025-2026:Q10b": "Backpatching",
+  "BCSE307L-FAT-A2-2025-2026:Q1": "Direct RE to DFA",
+  "BCSE307L-FAT-A2-2025-2026:Q2a": "Phases of compiler",
+  "BCSE307L-FAT-A2-2025-2026:Q2b": "Tokens / lexemes / LEX",
+  "BCSE307L-FAT-A2-2025-2026:Q3": "LL(1) parsing table",
+  "BCSE307L-FAT-A2-2025-2026:Q4i": "SDD / SDT / annotated parse tree",
+  "BCSE307L-FAT-A2-2025-2026:Q4ii": "S-attributed / L-attributed",
+  "BCSE307L-FAT-A2-2025-2026:Q5": "Basic blocks / flow graph",
+  "BCSE307L-FAT-A2-2025-2026:Q6": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-FAT-A2-2025-2026:Q7": "Code generation / register allocation",
+  "BCSE307L-FAT-A2-2025-2026:Q8": "Code generation / register allocation",
+  "BCSE307L-FAT-A2-2025-2026:Q9a": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-A2-2025-2026:Q9b": "Backpatching",
+  "BCSE307L-FAT-A2-2025-2026:Q10a": "LR(0) / SLR parsing",
+  "BCSE307L-FAT-A2-2025-2026:Q10bi": "Operator precedence parsing",
+  "BCSE307L-FAT-A2-2025-2026:Q10bii": "Operator precedence parsing",
+  "BCSE307L-CAT-1-C1-2024-2025:Q1": "Phases of compiler",
+  "BCSE307L-CAT-1-C1-2024-2025:Q2": "Direct RE to DFA",
+  "BCSE307L-CAT-1-C1-2024-2025:Q3a": "NFA to DFA (subset construction)",
+  "BCSE307L-CAT-1-C1-2024-2025:Q3b": "Tokens / lexemes / LEX",
+  "BCSE307L-CAT-1-C1-2024-2025:Q4": "LL(1) parsing table",
+  "BCSE307L-CAT-1-C1-2024-2025:Q5a": "Shift-reduce parsing",
+  "BCSE307L-CAT-1-C1-2024-2025:Q5b": "Operator precedence parsing",
+  "BCSE307L-CAT-1-C2-2024-2025:Q1": "Direct RE to DFA",
+  "BCSE307L-CAT-1-C2-2024-2025:Q2a": "Tokens / lexemes / LEX",
+  "BCSE307L-CAT-1-C2-2024-2025:Q2b": "Operator precedence parsing",
+  "BCSE307L-CAT-1-C2-2024-2025:Q3": "Phases of compiler",
+  "BCSE307L-CAT-1-C2-2024-2025:Q4": "LL(1) parsing table",
+  "BCSE307L-CAT-1-C2-2024-2025:Q5": "Recursive descent",
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q1": "CLR / LALR parsing",
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q2b": "Syntax tree / DAG",
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q3": "Backpatching",
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q4": "Basic blocks / flow graph",
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5a": "SDD / SDT / annotated parse tree",
+  "BCSE307L-CAT-2-C2-2024-2025-Answer Key:Q5b": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-FAT-C1-2023-2024:Q1a": "Regular expression to NFA (Thompson)",
+  "BCSE307L-FAT-C1-2023-2024:Q1b": "Regular expression to NFA (Thompson)",
+  "BCSE307L-FAT-C1-2023-2024:Q2": "Phases of compiler",
+  "BCSE307L-FAT-C1-2023-2024:Q3": "FIRST / FOLLOW",
+  "BCSE307L-FAT-C1-2023-2024:Q4a": "CLR / LALR parsing",
+  "BCSE307L-FAT-C1-2023-2024:Q4b": "LR(0) / SLR parsing",
+  "BCSE307L-FAT-C1-2023-2024:Q5": "S-attributed / L-attributed",
+  "BCSE307L-FAT-C1-2023-2024:Q6": "SDD / SDT / annotated parse tree",
+  "BCSE307L-FAT-C1-2023-2024:Q7": "Three-address code / quadruples / triples",
+  "BCSE307L-FAT-C1-2023-2024:Q8": "Data-flow analysis",
+  "BCSE307L-FAT-C1-2023-2024:Q9a": "Code generation / register allocation",
+  "BCSE307L-FAT-C1-2023-2024:Q9b": "Code optimization (CSE/constant folding/loop)",
+  "BCSE307L-FAT-C1-2023-2024:Q10": "Instruction scheduling / ILP"
+ }
+}

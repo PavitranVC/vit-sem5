@@ -1,0 +1,63 @@
+{
+ "blueprint": "10-question FATs (A2 2023-24 and E1 2025-26 have 8-9 numbered questions with sub-parts); all 7 modules in 4 of 7 FATs, 6 modules in the other 3. Order is roughly syllabus order (Q1-Q2 M1 phases/lexical, Q3-Q4 M2 parsing, then M3 SDT, M4 intermediate code, M5 optimisation, M6 code generation, M7 parallelism) but shuffled in E1 2025-26 and C1 2024; 'Q9 a or b; Q10 a or b' in 3 of 7. No 2026-27 BCSE307L FAT in the corpus; 2026-27 evidence = CAT-1 G1, CAT-1 G2 and CAT-2 G2 (your slot).",
+ "small_n_warning": "No 2026-27 BCSE307L FAT exists (n_recent = 0 for the FAT formula); only 7 FATs in total. Use the 2026-27 CAT column (your slot's G2 papers) as the recency signal.",
+ "traps": {
+  "CLR / LALR parsing": [
+   [
+    "Asked which LR(1) item's lookahead lets Cases -> epsilon reduce only at the right place, and what conflict appears if that reduction were entered under all terminals",
+    "BCSE307L-CAT2-G2-2026-2027:Q1"
+   ]
+  ],
+  "Syntax tree / DAG": [
+   [
+    "b + c in statements 1 and 7 is NOT a common subexpression once b is redefined in statement 6; the question asks which occurrence cannot share the node",
+    "BCSE307L-CAT2-G2-2026-2027:Q2a"
+   ]
+  ],
+  "Backpatching": [
+   [
+    "Testing c != d before a < b may keep the final value but breaks left-to-right short-circuit order and side effects",
+    "BCSE307L-CAT2-G2-2026-2027:Q3c"
+   ]
+  ],
+  "Three-address code / quadruples / triples": [
+   [
+    "Decide from the braces whether result = sum + i*2 runs per inner iteration, per outer iteration or once; quadruples/triples only for the conditional sum part",
+    "BCSE307L-CAT2-G2-2026-2027:Q4"
+   ]
+  ],
+  "Basic blocks / flow graph": [
+   [
+    "Decide whether a = a + 2 and b = b - 1 share a block with the result > 100 test using leader rules; no CFG or optimisation asked",
+    "BCSE307L-CAT2-G2-2026-2027:Q5b"
+   ]
+  ],
+  "LL(1) parsing table": [
+   [
+    "Left recursion must be removed before FIRST/FOLLOW; key removes it for B",
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q4"
+   ]
+  ],
+  "Direct RE to DFA": [
+   [
+    "Augment the expression with the end marker # and number positions before firstpos/lastpos/followpos",
+    "BCSE307L-CAT1-A1-2025-2026-AK:Q2"
+   ]
+  ],
+  "LR(0) / SLR parsing": [
+   [
+    "SLR reduce entries go under FOLLOW of the head only (key: FOLLOW(E) = {$, =})",
+    "BCSE307L-CAT-2-C1-2024-2025-Answer Key:Q1"
+   ]
+  ]
+ },
+ "no_clear_pattern": [
+  "Slot-pair reuse: slot 1 -> slot 2 same-archetype 0.51 vs different-year baseline 0.59 (70 questions): slot pairing gives no lift",
+  "Scenario-wrapper drift: tags unreliable for CD (2/14 agreement)",
+  "Exact FAT question order (shuffled in 2 of 7)",
+  "M7 parallelism question type (ILP vs loop parallelism vs legacy-code parallelisation all occur)"
+ ],
+ "drift_note": "Bloom: 2026-27 CAT-1 mean 3.10 vs 3.36 older; CAT-2 3.22 vs 3.23 (O). Scenario-wrapper figures are excluded (verification 2/14). 2026-27 G2 CAT-2 questions are long multi-part prompts that ask for a justification after the construction (Q1, Q2a, Q3c, Q4: O).",
+ "pairs_note": "Slot 1 -> slot 2 shares the archetype for 0.51 of questions vs 0.59 between different years (O): no slot rule. No verbatim reuse in 2026-27 (max similarity 0.54).",
+ "extra": ""
+}
