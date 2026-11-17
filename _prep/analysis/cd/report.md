@@ -71,7 +71,7 @@ Bloom: 2026-27 CAT-1 mean 3.10 vs 3.36 older; CAT-2 3.22 vs 3.23 (O). Scenario-w
 | different letter, same year (11 pairs) | 121 | 0.008 | 0.595 | 0.339 | 0.058 |
 | baseline: same exam, different year (132 pairs) | 1199 | 0.003 | 0.585 | 0.382 | 0.029 |
 
-Slot 1 -> slot 2 shares the archetype for 0.51 of questions vs 0.59 between different years (O): no slot rule. No verbatim reuse in 2026-27 (max similarity 0.54).
+Slot 1 -> slot 2 shares the archetype for 0.51 of questions vs 0.58 between different years (O): no slot rule. No verbatim reuse in 2026-27 (max similarity 0.54).
 
 ## 6. Answer keys: what earns marks (O)
 
@@ -110,7 +110,7 @@ Slot 1 -> slot 2 shares the archetype for 0.51 of questions vs 0.59 between diff
 
 ## 8. No clear pattern
 
-- Slot-pair reuse: slot 1 -> slot 2 same-archetype 0.51 vs different-year baseline 0.59 (70 questions): slot pairing gives no lift
+- Slot-pair reuse: slot 1 -> slot 2 same-archetype 0.51 vs different-year baseline 0.58 (70 questions): slot pairing gives no lift
 - Scenario-wrapper drift: tags unreliable for CD (2/14 agreement)
 - Exact FAT question order (shuffled in 2 of 7)
 - M7 parallelism question type (ILP vs loop parallelism vs legacy-code parallelisation all occur)

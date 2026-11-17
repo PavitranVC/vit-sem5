@@ -108,7 +108,7 @@ Slot 1 -> slot 2 shares the archetype for 0.66 of questions vs 0.58 between diff
 
 ## 8. No clear pattern
 
-- Slot-pair reuse: slot 1 -> slot 2 same-archetype rate 0.66 vs different-year baseline 0.58 (small lift, 90 questions)
+- Slot-pair reuse: slot 1 -> slot 2 same-archetype rate 0.66 vs different-year baseline 0.57 (small lift, 90 questions)
 - 2026-27 FAT style (no 2026-27 BCSE302L FAT in corpus)
 - SQL query writing in FATs: 2 of 11
 - FoodRush MongoDB case study: its 11 queries are an assignment, MongoDB aggregation appears in 1 of 11 FATs and in sister 2026-27 FATs
