@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BCSE306L AI FAT Master Cheat Sheet | Slot C2</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-border: #1f293d;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent-blue: #38bdf8;
+      --accent-green: #34d399;
+      --accent-amber: #fbbf24;
+      --accent-purple: #c084fc;
+      --accent-rose: #fb7185;
+      --badge-bg: rgba(56, 189, 248, 0.12);
+      --code-bg: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      font-size: 15px;
+      padding-bottom: 80px;
+    }
+
+    /* Sticky Mobile Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(9, 13, 22, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 12px 16px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .course-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent-blue);
+      letter-spacing: -0.3px;
+    }
+
+    .badge-c2 {
+      background: var(--accent-green);
+      color: #064e3b;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+    }
+
+    /* Search Bar */
+    .search-box {
+      width: 100%;
+      background: #1e293b;
+      border: 1px solid var(--card-border);
+      color: #fff;
+      padding: 9px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.2s;
+    }
+    .search-box:focus {
+      border-color: var(--accent-blue);
+    }
+
+    /* Filter Pills */
+    .filter-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 16px;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+    .filter-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pill {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 13px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pill.active {
+      background: var(--accent-blue);
+      color: #0c4a6e;
+      border-color: var(--accent-blue);
+    }
+
+    /* Content Area */
+    .container {
+      padding: 12px 16px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    .card-header {
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid transparent;
+      user-select: none;
+    }
+    .card.open .card-header {
+      border-bottom-color: var(--card-border);
+    }
+
+    .card-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .module-tag {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 7px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+    .tag-m1 { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); }
+    .tag-m2 { background: rgba(52, 211, 153, 0.15); color: var(--accent-green); }
+    .tag-m3 { background: rgba(251, 191, 36, 0.15); color: var(--accent-amber); }
+    .tag-m4 { background: rgba(192, 132, 252, 0.15); color: var(--accent-purple); }
+    .tag-m5 { background: rgba(251, 113, 133, 0.15); color: var(--accent-rose); }
+    .tag-m6 { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); }
+    .tag-m7 { background: rgba(52, 211, 153, 0.15); color: var(--accent-green); }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .marks-badge {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-amber);
+      background: rgba(251, 191, 36, 0.1);
+      padding: 2px 7px;
+      border-radius: 6px;
+      border: 1px solid rgba(251, 191, 36, 0.25);
+    }
+
+    .chevron {
+      color: var(--text-muted);
+      font-size: 12px;
+      transition: transform 0.25s;
+    }
+    .card.open .chevron {
+      transform: rotate(180deg);
+    }
+
+    .card-body {
+      display: none;
+      padding: 16px;
+    }
+    .card.open .card-body {
+      display: block;
+    }
+
+    /* Subheadings and Callouts */
+    h4 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent-blue);
+      margin: 14px 0 6px 0;
+    }
+    h4:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--text-main);
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 3px solid var(--accent-blue);
+      padding: 10px 12px;
+      border-radius: 0 8px 8px 0;
+      margin: 10px 0;
+      font-size: 13.5px;
+    }
+    .warning-box {
+      background: rgba(251, 191, 36, 0.08);
+      border-left: 3px solid var(--accent-amber);
+      padding: 10px 12px;
+      border-radius: 0 8px 8px 0;
+      margin: 10px 0;
+      font-size: 13.5px;
+    }
+
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+    th {
+      background: #1e293b;
+      color: var(--text-main);
+      padding: 8px 10px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--card-border);
+    }
+    td {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--card-border);
+      color: #cbd5e1;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Steps list */
+    ol, ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    li {
+      margin-bottom: 5px;
+      font-size: 13.5px;
+      color: #e2e8f0;
+    }
+
+    .formula {
+      background: var(--code-bg);
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      color: var(--accent-green);
+      font-size: 13px;
+      display: inline-block;
+      margin: 3px 0;
+    }
+
+    /* Bottom Quick Nav Bar */
+    .floating-summary {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(9, 13, 22, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--card-border);
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 40;
+    }
+    .score-target {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+    .quick-actions button {
+      background: var(--accent-blue);
+      color: #082f49;
+      border: none;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="header-top">
+      <div>
+        <span class="course-title">BCSE306L Artificial Intelligence</span>
+        <span style="font-size: 11px; color: var(--text-muted); display: block;">Slot C2+TC2 Final Assessment Test</span>
+      </div>
+      <span class="badge-c2">FAT 100M</span>
+    </div>
+    <input type="text" id="searchInput" class="search-box" placeholder="Search topics (e.g., A*, Inversion, Bayes, Alpha-Beta)...">
+  </header>
+
+  <!-- Filter Pills -->
+  <div class="filter-scroll">
+    <div class="pill active" onclick="filterCards('all')">All (100M)</div>
+    <div class="pill" onclick="filterCards('m2')">Mod 2: Search & 8-Puzzle</div>
+    <div class="pill" onclick="filterCards('m3')">Mod 3: Games & Local Search</div>
+    <div class="pill" onclick="filterCards('m4')">Mod 4: Logic & MGU</div>
+    <div class="pill" onclick="filterCards('m5')">Mod 5: Bayes Nets</div>
+    <div class="pill" onclick="filterCards('m7')">Mod 7: NLP & IR</div>
+    <div class="pill" onclick="filterCards('m1')">Mod 1: Agents & PEAS</div>
+    <div class="pill" onclick="filterCards('m6')">Mod 6: Planning</div>
+  </div>
+
+  <div class="container">
+
+    <!-- ==================== MODULE 2 ==================== -->
+    <div class="card open" data-module="m2" data-keywords="a* astar search heuristic frontier open closed ucs">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m2">Mod 2</span>
+          <span class="card-title">A* Search & UCS Algorithm</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>Core Formula</h4>
+        <p><span class="formula">f(n) = g(n) + h(n)</span></p>
+        <ul>
+          <li><strong>g(n):</strong> Exact cumulative path cost from start node S to current node n.</li>
+          <li><strong>h(n):</strong> Heuristic estimated cost from node n to Goal. (In UCS, <span class="formula">h(n) = 0</span>).</li>
+        </ul>
+
+        <div class="warning-box">
+          🚨 <strong>#1 Answer Key Trap:</strong> Goal test is executed <strong>when the Goal node is DEQUEUED (expanded)</strong> from the OPEN list, NOT when it is generated!
+        </div>
+
+        <h4>5-Column Trace Table Template</h4>
+        <div class="table-container">
+          <table>
+            <tr><th>Step</th><th>Popped Node</th><th>g(n)</th><th>h(n)</th><th>f(n)</th><th>OPEN List (Priority Queue)</th><th>CLOSED</th></tr>
+            <tr><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>{S: (0+h = f)}</td><td>{}</td></tr>
+            <tr><td>1</td><td>S</td><td>0</td><td>h(S)</td><td>f(S)</td><td>{A: (g+h=f), B: (g+h=f)}</td><td>{S}</td></tr>
+            <tr><td>2</td><td>A (lowest f)</td><td>g(A)</td><td>h(A)</td><td>f(A)</td><td>Update children with lower cost</td><td>{S, A}</td></tr>
+          </table>
+        </div>
+
+        <h4>Admissibility & Consistency (HOT Questions)</h4>
+        <ul>
+          <li><strong>Admissible:</strong> <span class="formula">h(n) &le; h*(n)</span> (Never overestimates true cost. Guarantees optimality in tree search).</li>
+          <li><strong>Consistent (Monotonic):</strong> <span class="formula">h(n) &le; c(n, a, n') + h(n')</span> (Triangle inequality. Guarantees that nodes never need to be reopened from CLOSED list).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 8-PUZZLE -->
+    <div class="card open" data-module="m2" data-keywords="8 puzzle eight puzzle inversion misplaced manhattan solvability">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m2">Mod 2</span>
+          <span class="card-title">8-Puzzle Solvability & Heuristics</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>1. Solvability Rule (Inversion Parity)</h4>
+        <div class="highlight-box">
+          <strong>Rule:</strong> Flatten grid into a row, <strong>completely ignore the blank tile (_)</strong>. Count how many times a larger number appears before a smaller number.<br>
+          <span class="formula">Inversions(Initial) &equiv; Inversions(Goal) (mod 2)</span><br>
+          <strong>Both EVEN or both ODD &implies; SOLVABLE.</strong> One Even and one Odd &implies; IMPOSSIBLE!
+        </div>
+
+        <h4>2. The Two Heuristics: h1 vs h2</h4>
+        <ul>
+          <li><strong>h1 (Misplaced Tiles):</strong> Count how many tiles (1 to 8) are NOT in their assigned goal chair.</li>
+          <li><strong>h2 (Manhattan Distance):</strong> For each tile, count grid steps (horizontal + vertical) to reach its goal position: <span class="formula">|r1 - r2| + |c1 - c2|</span>. Sum for all 8 tiles.</li>
+        </ul>
+        <p><strong>Dominance Proof:</strong> <span class="formula">h2(n) &ge; h1(n)</span> for all states. Therefore, Manhattan distance <strong>dominates</strong> misplaced tiles &implies; A* expands fewer nodes and runs faster.</p>
+      </div>
+    </div>
+
+    <!-- UNINFORMED SEARCH -->
+    <div class="card" data-module="m2" data-keywords="bfs dfs ids dls depth limited iterative deepening uninformed">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m2">Mod 2</span>
+          <span class="card-title">Uninformed Search (BFS vs DFS vs IDS)</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>Comparison Table</h4>
+        <div class="table-container">
+          <table>
+            <tr><th>Algorithm</th><th>Data Structure</th><th>Complete?</th><th>Optimal?</th><th>Time</th><th>Space</th></tr>
+            <tr><td><strong>BFS</strong></td><td>Queue (FIFO)</td><td>Yes</td><td>Yes (unit cost)</td><td>O(b^d)</td><td><strong>O(b^d)</strong> (Huge RAM flaw)</td></tr>
+            <tr><td><strong>DFS</strong></td><td>Stack (LIFO)</td><td>No (loops)</td><td>No</td><td>O(b^m)</td><td><strong>O(bm)</strong> (Linear RAM)</td></tr>
+            <tr><td><strong>IDS</strong></td><td>Call Stack (DFS)</td><td><strong>Yes</strong></td><td><strong>Yes</strong></td><td>O(b^d)</td><td><strong>O(bd)</strong> (Best of both!)</td></tr>
+          </table>
+        </div>
+        <p><strong>IDS Mechanism:</strong> Runs Depth-Limited Search repeatedly with limit L = 0, 1, 2, ..., d. Bottom level has majority of nodes, so overhead is only ~11%.</p>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 3 ==================== -->
+    <div class="card open" data-module="m3" data-keywords="alpha beta pruning minimax game tree cutoff move ordering">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m3">Mod 3</span>
+          <span class="card-title">Minimax & Alpha-Beta Pruning</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>The 2 Rules of Alpha-Beta Pruning</h4>
+        <ul>
+          <li><strong>&alpha; (Alpha):</strong> Best guaranteed score for MAX so far (initially <span class="formula">&alpha; = -&infin;</span>). Updated only at <strong>MAX nodes</strong>: <span class="formula">&alpha; = max(&alpha;, child)</span>.</li>
+          <li><strong>&beta; (Beta):</strong> Best guaranteed score for MIN so far (initially <span class="formula">&beta; = +&infin;</span>). Updated only at <strong>MIN nodes</strong>: <span class="formula">&beta; = min(&beta;, child)</span>.</li>
+        </ul>
+
+        <div class="highlight-box">
+          ✂️ <strong>THE CUTOFF CONDITION:</strong> Whenever <span class="formula">&alpha; &ge; &beta;</span>, <strong>PRUNE immediately!</strong> Do not evaluate remaining children of that node. Put a slash on your diagram.
+        </div>
+
+        <h4>Move Ordering Complexity (HOT Question)</h4>
+        <ul>
+          <li><strong>Worst Case (Worst moves evaluated first):</strong> No pruning &implies; <span class="formula">O(b^d)</span>.</li>
+          <li><strong>Best Case (Best moves evaluated first):</strong> Maximum pruning &implies; <span class="formula">O(b^(d/2))</span> (Doubles search depth!).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HILL CLIMBING -->
+    <div class="card" data-module="m3" data-keywords="hill climbing local search local maximum plateau ridge blocks world">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m3">Mod 3</span>
+          <span class="card-title">Hill Climbing & Failure Modes</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>Core Mechanism</h4>
+        <p>Greedy local search. Keeps <strong>only 1 state in memory</strong>. Evaluates neighbors and steps toward whichever neighbor is higher. Stops when no neighbor is higher.</p>
+        
+        <h4>3 Failure Modes (Draw these on exam!)</h4>
+        <ul>
+          <li><strong>Local Maximum:</strong> Peak higher than all neighbors, but lower than global maximum. Search gets trapped.</li>
+          <li><strong>Plateau / Shoulder:</strong> Flat area where all neighbors have equal value (gradient = 0). Search wanders or halts.</li>
+          <li><strong>Ridge:</strong> Narrow slope with steep drops on both sides. Single orthogonal steps fail to climb.</li>
+        </ul>
+
+        <h4>Simulated Annealing (Escaping Traps)</h4>
+        <p>Occasionally accepts <strong>worse moves</strong> with probability: <span class="formula">P = e^(&Delta;E / T)</span>.</p>
+        <p>As Temperature <span class="formula">T &rarr; 0</span> (cooling schedule), <span class="formula">P &rarr; 0</span> &implies; behaves as pure hill climbing.</p>
+      </div>
+    </div>
+
+    <!-- GENETIC ALGORITHMS & CSP -->
+    <div class="card" data-module="m3" data-keywords="genetic algorithm ga roulette wheel crossover mutation csp mrv constraint">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m3">Mod 3</span>
+          <span class="card-title">Genetic Algorithms & CSP</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>Genetic Algorithm: 5 Steps</h4>
+        <ol>
+          <li><strong>Population:</strong> Set of chromosomes (bit strings).</li>
+          <li><strong>Fitness Function f(x):</strong> Evaluates chromosome quality.</li>
+          <li><strong>Selection:</strong> Roulette Wheel probability <span class="formula">P(i) = f(i) / &sum;f</span>.</li>
+          <li><strong>Crossover:</strong> Swap bits between parents at split point (e.g. 11|00 + 00|11 &rarr; 1111).</li>
+          <li><strong>Mutation:</strong> Randomly flip a bit (prob ~0.01) to maintain genetic diversity.</li>
+        </ol>
+
+        <h4>Constraint Satisfaction Problems (CSP)</h4>
+        <p>Defined by Variables X, Domains D, Constraints C (e.g. Map Coloring: adjacent regions &ne; same color).</p>
+        <ul>
+          <li><strong>MRV (Minimum Remaining Values):</strong> Choose variable with fewest legal values left ("fail-first").</li>
+          <li><strong>Degree Heuristic:</strong> Choose variable with most constraints on other unassigned variables.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 4 ==================== -->
+    <div class="card open" data-module="m4" data-keywords="fol first order logic unification mgu resolution cnf translation">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m4">Mod 4</span>
+          <span class="card-title">FOL Translation & Unification (MGU)</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">20 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>The Golden Rule of FOL Translation</h4>
+        <div class="highlight-box">
+          &bull; <strong>&forall;x (All/Every) ALWAYS pairs with &rarr; (Implication):</strong><br>
+          <em>"Every student likes AI"</em> &implies; <span class="formula">&forall;x (Student(x) &rarr; LikesAI(x))</span><br><br>
+          &bull; <strong>&exist;x (Some/There is) ALWAYS pairs with &and; (And):</strong><br>
+          <em>"Some student likes AI"</em> &implies; <span class="formula">&exist;x (Student(x) &and; LikesAI(x))</span>
+        </div>
+
+        <h4>Unification Algorithm (Finding MGU) - 3 Rules:</h4>
+        <ol>
+          <li><strong>Predicate Match:</strong> Outer predicate name and argument count must be identical. (Father vs Mother &implies; FAIL).</li>
+          <li><strong>Constant Clash:</strong> Two different constants CANNOT unify. (John vs Mary &implies; FAIL).</li>
+          <li><strong>Occurs Check:</strong> A variable cannot be unified with a term containing itself! (x vs Father(x) &implies; FAIL).</li>
+        </ol>
+
+        <h4>Resolution Refutation Proof (4 Steps)</h4>
+        <ol>
+          <li>Convert all KB premises to CNF clauses.</li>
+          <li><strong>Negate the Goal:</strong> Add &not;Goal to clause set.</li>
+          <li>Resolve complementary literal pairs: <span class="formula">(A &or; B)</span> and <span class="formula">(&not;B &or; C) &implies; (A &or; C)</span>.</li>
+          <li>Derive Empty Clause <span class="formula">&square; (Contradiction)</span> &implies; Goal is proven true!</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 5 ==================== -->
+    <div class="card open" data-module="m5" data-keywords="bayes bayesian network joint probability conditional cpt rejection sampling">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m5">Mod 5</span>
+          <span class="card-title">Bayesian Networks & Joint Probability</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>1. Joint Probability Factorization</h4>
+        <p>Multiply each variable conditioned on its direct arrows (parents):</p>
+        <p><span class="formula">P(X1, X2, ..., Xn) = &prod; P(Xi | Parents(Xi))</span></p>
+        <p><em>For chain A &rarr; B &rarr; C:</em> <span class="formula">P(A, B, C) = P(A) &times; P(B|A) &times; P(C|B)</span></p>
+
+        <h4>2. Bayes' Rule Formula</h4>
+        <p><span class="formula">P(A=T | B=T) = [P(B=T | A=T) &times; P(A=T)] / P(B=T)</span></p>
+        <p>Denominator <span class="formula">P(B=T) = P(B=T|A=T)P(A=T) + P(B=T|A=F)P(A=F)</span></p>
+
+        <h4>3. Rejection Sampling (Theory Points)</h4>
+        <ul>
+          <li>Generate thousands of random samples through network.</li>
+          <li>Reject (throw away) any sample where evidence condition (B=T) does not match.</li>
+          <li>Estimate probability = (matching survivors) / (total survivors).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 7 ==================== -->
+    <div class="card open" data-module="m7" data-keywords="nlp n-gram bigram laplace smoothing ir ie tf-idf pagerank">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m7">Mod 7</span>
+          <span class="card-title">NLP N-grams & Information Retrieval</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>1. Bigram & Sentence Probability</h4>
+        <p><span class="formula">P(w2 | w1) = Count(w1, w2) / Count(w1)</span></p>
+        <p>Sentence: <span class="formula">P(&lt;s&gt; I like AI &lt;/s&gt;) = P(I|&lt;s&gt;) &times; P(like|I) &times; P(AI|like)</span></p>
+
+        <h4>2. Laplace (Add-1) Smoothing</h4>
+        <div class="highlight-box">
+          Fixes the <strong>Zero Probability Problem</strong> (where an unseen word pair zeroes out the entire sentence):<br>
+          <span class="formula">P_Laplace(w2 | w1) = [Count(w1, w2) + 1] / [Count(w1) + V]</span><br>
+          <em>(where V = total distinct vocabulary size).</em>
+        </div>
+
+        <h4>3. Information Retrieval (IR) vs Information Extraction (IE)</h4>
+        <ul>
+          <li><strong>IR (Google Search):</strong> Returns ranked list of relevant <em>documents/webpages</em> for a keyword query. Uses Inverted Index, TF-IDF, PageRank.</li>
+          <li><strong>IE (Fact Extraction):</strong> Pulls structured entities (Name, Date, Price) from unstructured text into database tables.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 1 ==================== -->
+    <div class="card" data-module="m1" data-keywords="peas agent types reflex goal utility environment dimensions">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m1">Mod 1</span>
+          <span class="card-title">Agents & PEAS Specification</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>1. PEAS Specification (Autonomous Drone / Car)</h4>
+        <ul>
+          <li><strong>P (Performance):</strong> Safety, speed, battery efficiency, delivery accuracy.</li>
+          <li><strong>E (Environment):</strong> Farmland/roads, obstacles, weather, GPS signals, other drones.</li>
+          <li><strong>A (Actuators):</strong> Motors, propellers, steering, camera gimbals, transmitters.</li>
+          <li><strong>S (Sensors):</strong> Cameras, LiDAR, GPS, IMU (gyro/accelerometer), altimeter.</li>
+        </ul>
+
+        <h4>2. The 4 Agent Types (Ladder of Intelligence)</h4>
+        <ol>
+          <li><strong>Simple Reflex:</strong> Knee-jerk IF-THEN rules on current percept only. Zero memory. (Automatic door).</li>
+          <li><strong>Model-Based:</strong> Maintains internal memory of unobserved world state. (Roomba vacuum).</li>
+          <li><strong>Goal-Based:</strong> Uses search/planning to achieve a destination target. (Google Maps navigation).</li>
+          <li><strong>Utility-Based:</strong> Evaluates trade-offs using a utility function to maximize preference/score. (Smart cab balancing time vs toll cost).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ==================== MODULE 6 ==================== -->
+    <div class="card" data-module="m6" data-keywords="planning strips pddl progression regression sensorless htn">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-title-group">
+          <span class="module-tag tag-m6">Mod 6</span>
+          <span class="card-title">STRIPS & Classical Planning</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="marks-badge">10 Marks</span>
+          <span class="chevron">▼</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4>1. STRIPS Action Representation (3 Components)</h4>
+        <ul>
+          <li><strong>Preconditions:</strong> What must be true BEFORE action executes.</li>
+          <li><strong>Add List:</strong> Facts that become TRUE after action.</li>
+          <li><strong>Delete List:</strong> Facts that become FALSE after action.</li>
+        </ul>
+        <p><em>Example: Action Move(x, y) &implies; Pre: At(x), Add: At(y), Del: At(x).</em></p>
+
+        <h4>2. Progression vs Regression Planning</h4>
+        <ul>
+          <li><strong>Progression (Forward):</strong> Searches from Initial State &rarr; Goal. High branching factor.</li>
+          <li><strong>Regression (Backward):</strong> Searches backward from Goal &rarr; Initial State. Only considers relevant actions &implies; smaller branching factor!</li>
+          <li><strong>Sensorless (Belief-State) Planning:</strong> Agent has zero sensors; plans across a set of all possible initial worlds simultaneously.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Floating Summary -->
+  <div class="floating-summary">
+    <div>
+      <span class="score-target">Target: 75 &ndash; 85+ Marks</span>
+      <span style="font-size: 11px; color: var(--text-muted); display: block;">6 Algorithms + Verified Theory</span>
+    </div>
+    <div class="quick-actions">
+      <button onclick="expandAll()">Expand All</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleCard(header) {
+      const card = header.parentElement;
+      card.classList.toggle('open');
+    }
+
+    function expandAll() {
+      document.querySelectorAll('.card').forEach(c => c.classList.add('open'));
+    }
+
+    function filterCards(module) {
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      event.target.classList.add('active');
+
+      document.querySelectorAll('.card').forEach(card => {
+        if (module === 'all' || card.dataset.module === module) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Live search filter
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const query = e.target.value.toLowerCase().trim();
+      document.querySelectorAll('.card').forEach(card => {
+        const text = (card.innerText + ' ' + (card.dataset.keywords || '')).toLowerCase();
+        if (text.includes(query)) {
+          card.style.display = 'block';
+          if (query.length > 2) card.classList.add('open');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
